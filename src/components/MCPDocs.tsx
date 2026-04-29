@@ -1,5 +1,3 @@
-const SERVER_PATH = '/Users/art/Desktop/claude-projects/ai-regulation-db'
-
 const TOOLS = [
   {
     name: 'list_regulations',
@@ -24,7 +22,7 @@ const TOOLS = [
   {
     name: 'compare_regulations',
     description: 'Side-by-side comparison of provisions, penalties, scope, and issue positions.',
-    example: '{"ids": ["eu-eu-aiact-2024", "us-co-sb24205-2024", "br-br-aiact-2025"]}',
+    example: '{"ids": ["eu-eu-aiact-2024", "us-co-sb205-2024", "br-br-aiact-2025"]}',
   },
   {
     name: 'get_stats',
@@ -49,23 +47,37 @@ export function MCPDocs() {
   return (
     <div className="max-w-3xl space-y-0">
       <div className="panel p-6 mb-6">
-        <h1 className="text-base font-semibold text-odl-text mb-1">AI Regulation DB — MCP Server</h1>
+        <h1 className="text-base font-semibold text-odl-text mb-1">GAIA — MCP Server</h1>
         <p className="text-sm text-odl-muted leading-relaxed">
-          This repository ships an MCP (Model Context Protocol) server that gives Claude — or any MCP-compatible agent — structured access to the full regulation database, including legal text, metadata, provisions, penalties, and issue-level analysis.
+          GAIA ships an <a href="https://modelcontextprotocol.io" target="_blank" rel="noreferrer" className="odl-link">MCP (Model Context Protocol)</a> server
+          that gives Claude — or any MCP-compatible agent — structured access to the full regulation database,
+          including legal text, metadata, provisions, penalties, and issue-level analysis.
+          The server reads from the local <code className="text-xs bg-odl-surface border border-odl-border rounded px-1.5 py-0.5">data/</code> directory and exposes six tools.
         </p>
       </div>
 
-      <SectionHead>Setup</SectionHead>
+      <SectionHead>Setup — Claude Desktop</SectionHead>
       <div className="space-y-3">
-        <p className="text-sm text-odl-muted">The server is already wired into Claude's project config. To use it in a new Claude Code session, add this to <code className="text-xs bg-odl-surface border border-odl-border rounded px-1.5 py-0.5">~/.claude.json</code> under <code className="text-xs bg-odl-surface border border-odl-border rounded px-1.5 py-0.5">projects["/path/to/project"].mcpServers</code>:</p>
-        <Code>{`"ai-regulation-db": {
-  "command": "npx",
-  "args": ["tsx", "${SERVER_PATH}/mcp/server.ts"],
-  "type": "stdio"
+        <p className="text-sm text-odl-muted">
+          Add this to <code className="text-xs bg-odl-surface border border-odl-border rounded px-1.5 py-0.5">~/Library/Application Support/Claude/claude_desktop_config.json</code>:
+        </p>
+        <Code>{`{
+  "mcpServers": {
+    "gaia": {
+      "command": "npx",
+      "args": ["tsx", "/path/to/global-ai-atlas/mcp/server.ts"]
+    }
+  }
 }`}</Code>
+        <p className="text-xs text-odl-subtle">Replace <code>/path/to/global-ai-atlas</code> with the directory where you cloned the repo. Restart Claude Desktop after saving.</p>
+      </div>
 
-        <p className="text-sm text-odl-muted mt-4">Or run it directly to test:</p>
-        <Code>{`cd ${SERVER_PATH}
+      <SectionHead>Setup — Claude Code (CLI)</SectionHead>
+      <div className="space-y-3">
+        <Code>{`claude mcp add gaia -- npx tsx /path/to/global-ai-atlas/mcp/server.ts`}</Code>
+        <p className="text-sm text-odl-muted">Or start the server directly to test it:</p>
+        <Code>{`cd /path/to/global-ai-atlas
+npm install
 npm run mcp`}</Code>
       </div>
 
@@ -89,11 +101,11 @@ npm run mcp`}</Code>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
           {[
             ['id, short_name, full_name', 'Identifiers'],
-            ['jurisdiction, jurisdiction_type, region', 'Geography'],
-            ['enacted_date, effective_date, status', 'Timeline'],
-            ['instrument_type, legal_family, scope', 'Classification'],
+            ['country, jurisdiction, jurisdiction_type', 'Geography'],
+            ['enacted_date, effective_date, operative_dates, status', 'Timeline'],
+            ['primary_category, categories, legal_family', 'Classification'],
             ['provisions (17 boolean flags)', 'What the law requires'],
-            ['issue_positions (11 structured positions)', 'Policy stance analysis'],
+            ['issue_positions (structured policy stances)', 'Issue-level analysis'],
             ['max_penalty, max_penalty_usd_approx', 'Enforcement'],
             ['key_obligations, topics, sector_tags', 'Semantic metadata'],
             ['inspired_by, influenced', 'Legislative lineage'],
@@ -127,8 +139,10 @@ npm run mcp`}</Code>
 
       <SectionHead>Open Source</SectionHead>
       <p className="text-sm text-odl-muted leading-relaxed">
-        This database and MCP server are open source under the MIT License. The regulation data, full legal texts, metadata schema, and MCP server are all included in the repository.
-        Contributions — new laws, metadata corrections, text updates — are welcome via pull request.
+        GAIA is open source under the MIT License.{' '}
+        <a href="https://github.com/artvana/global-ai-atlas" target="_blank" rel="noreferrer" className="odl-link">github.com/artvana/global-ai-atlas</a>
+        {' '}— regulation data, full legal texts, metadata schema, and MCP server are all included.
+        Contributions are welcome via pull request: new laws, metadata corrections, text updates, or schema improvements.
       </p>
     </div>
   )
