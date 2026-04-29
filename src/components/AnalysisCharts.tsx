@@ -1,331 +1,398 @@
 import { useMemo } from 'react'
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts'
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, ReferenceLine } from 'recharts'
 import type { AILaw } from '../types'
 import { CATEGORY_LABELS, LEGAL_FAMILY_LABELS } from '../data/regulations'
 
 interface Props { laws: AILaw[] }
 
-const PROVISION_LABELS: Record<string, string> = {
-  ai_interaction_disclosure:    'AI Disclosure',
-  training_data_disclosure:     'Training Data Disclosure',
-  content_labelling:            'Content Labelling',
-  risk_classification_system:   'Risk Classification',
-  impact_assessment_required:   'Impact Assessment',
-  anti_discrimination:          'Anti-Discrimination',
-  human_review_right:           'Human Review',
-  opt_out_right:                'Opt-Out',
-  biometric_protection:         'Biometric Protection',
-  voice_likeness_protection:    'Voice/Likeness',
-  data_rights_re_training:      'Data Rights (Training)',
-  private_right_of_action:      'Private Right of Action',
-  safe_harbor:                  'Safe Harbor',
-  prohibited_categories:        'Prohibited Categories',
-  agentic_ai_addressed:         'Agentic AI',
-  algorithmic_pricing_addressed:'Algorithmic Pricing',
-  training_data_compensation:   'Training Compensation',
-}
+const ACCENT   = '#1870D5'
+const MUTED    = '#D4D4D8'
+const GREEN    = '#16A34A'
+const axisStyle = { fill: '#71717A', fontSize: 11 }
 
-const BLUE_SCALE  = ['#1870D5', '#3B82F6', '#60A5FA', '#93C5FD', '#BFDBFE']
-const GREEN_SCALE = ['#16A34A', '#22C55E', '#4ADE80', '#86EFAC', '#BBF7D0']
+// ── small reusable components ───────────────────────────────────────────────
 
-function StatCard({ label, value, sub }: { label: string; value: string | number; sub?: string }) {
+function StatCard({ value, label, sub }: { value: string | number; label: string; sub?: string }) {
   return (
-    <div className="bg-white border border-odl-border rounded-card p-4">
-      <div className="text-2xl font-bold text-odl-accent">{value}</div>
-      <div className="text-sm text-odl-text mt-0.5">{label}</div>
-      {sub && <div className="text-xs text-odl-muted mt-0.5">{sub}</div>}
+    <div className="panel p-5">
+      <div className="text-3xl font-bold text-odl-accent font-mono leading-none">{value}</div>
+      <div className="text-sm font-medium text-odl-text mt-2">{label}</div>
+      {sub && <div className="text-xs text-odl-subtle mt-1">{sub}</div>}
     </div>
   )
 }
 
-const TT = ({ active, payload, label }: { active?: boolean; payload?: { value: number }[]; label?: string }) => {
-  if (!active || !payload?.length) return null
+function Section({ title, insight, children }: { title: string; insight?: string; children: React.ReactNode }) {
   return (
-    <div className="bg-white border border-odl-border rounded shadow-sm px-3 py-2 text-xs">
-      <p className="text-odl-text font-medium">{label}</p>
-      <p className="text-odl-accent">{payload[0].value}{typeof payload[0].value === 'number' && payload[0].value <= 100 ? '%' : ''}</p>
-    </div>
-  )
-}
-
-function SectionHead({ children }: { children: React.ReactNode }) {
-  return <h2 className="text-xs font-semibold text-odl-subtle uppercase tracking-wider mb-3">{children}</h2>
-}
-
-function ChartWrap({ children, height = 280 }: { children: React.ReactNode; height?: number }) {
-  return (
-    <div className="bg-white border border-odl-border rounded-card p-4" style={{ height }}>
+    <div>
+      <div className="pb-2.5 mb-1 border-b border-odl-border">
+        <h2 className="text-xs font-semibold text-odl-subtle uppercase tracking-wider">{title}</h2>
+      </div>
+      {insight && <p className="text-xs text-odl-muted leading-relaxed mt-2.5 mb-4">{insight}</p>}
       {children}
     </div>
   )
 }
 
-export function AnalysisCharts({ laws }: Props) {
-  const activeLaws = useMemo(() => laws.filter(l => l.status !== 'superseded'), [laws])
-  const n = activeLaws.length
-
-  const provisionStats = useMemo(() =>
-    Object.keys(PROVISION_LABELS).map(key => {
-      const count = activeLaws.filter(l => (l.provisions as unknown as Record<string, unknown>)[key] === true).length
-      return { key, label: PROVISION_LABELS[key], count, pct: n > 0 ? Math.round((count / n) * 100) : 0 }
-    }).sort((a, b) => b.pct - a.pct),
-  [activeLaws, n])
-
-  const byCategory = useMemo(() => {
-    const counts: Record<string, number> = {}
-    activeLaws.forEach(l => { counts[l.primary_category] = (counts[l.primary_category] ?? 0) + 1 })
-    return Object.entries(counts).map(([k, v]) => ({ label: CATEGORY_LABELS[k] ?? k, count: v })).sort((a, b) => b.count - a.count)
-  }, [activeLaws])
-
-  const byFamily = useMemo(() => {
-    const counts: Record<string, number> = {}
-    activeLaws.forEach(l => { counts[l.legal_family] = (counts[l.legal_family] ?? 0) + 1 })
-    return Object.entries(counts).map(([k, v]) => ({ label: LEGAL_FAMILY_LABELS[k] ?? k, count: v })).sort((a, b) => b.count - a.count)
-  }, [activeLaws])
-
-  const byYear = useMemo(() => {
-    const counts: Record<string, number> = {}
-    activeLaws.forEach(l => { const yr = l.enacted_date?.slice(0, 4); if (yr) counts[yr] = (counts[yr] ?? 0) + 1 })
-    return Object.entries(counts).sort().map(([k, v]) => ({ label: k, count: v }))
-  }, [activeLaws])
-
-  const byJurisdictionType = useMemo(() => {
-    const counts: Record<string, number> = {}
-    activeLaws.forEach(l => { counts[l.jurisdiction_type] = (counts[l.jurisdiction_type] ?? 0) + 1 })
-    return counts
-  }, [activeLaws])
-
-  const aiSpecificCount = activeLaws.filter(l => l.ai_specific).length
-  const bindingCount = activeLaws.filter(l => l.instrument_binding).length
-  const praLaws = activeLaws.filter(l => l.provisions.private_right_of_action)
-  const highPenalty = [...activeLaws]
-    .filter(l => l.max_penalty_usd_approx != null)
-    .sort((a, b) => (b.max_penalty_usd_approx ?? 0) - (a.max_penalty_usd_approx ?? 0))
-    .slice(0, 6)
-
-  const convergenceHigh = provisionStats.filter(p => p.pct >= 70)
-  const convergenceMed  = provisionStats.filter(p => p.pct >= 30 && p.pct < 70)
-  const convergenceLow  = provisionStats.filter(p => p.pct > 0 && p.pct < 30)
-  const absent          = provisionStats.filter(p => p.pct === 0)
-
-  const axisStyle = { fill: '#71717A', fontSize: 11 }
-
+function ChartTip({ active, payload, label, unit = '' }: {
+  active?: boolean; payload?: { value: number }[]; label?: string; unit?: string
+}) {
+  if (!active || !payload?.length) return null
   return (
-    <div className="space-y-8">
-      {/* Stat Cards */}
-      <div>
-        <SectionHead>Corpus Overview</SectionHead>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-          <StatCard label="Active Laws" value={n} sub="excl. superseded" />
-          <StatCard label="Private Right of Action" value={`${Math.round((praLaws.length / n) * 100)}%`} sub={`${praLaws.length} of ${n} laws`} />
-          <StatCard label="In Force" value={activeLaws.filter(l => l.status === 'in_force').length} sub={`${activeLaws.filter(l => l.status !== 'in_force').length} not yet effective`} />
-          <StatCard
-            label="By Jurisdiction"
-            value={`${byJurisdictionType.supranational ?? 0} supranational`}
-            sub={`${byJurisdictionType.national ?? 0} national · ${byJurisdictionType.subnational ?? 0} subnational · ${byJurisdictionType.agency ?? 0} agency`}
-          />
-        </div>
-      </div>
-
-      {/* Provision Prevalence */}
-      <div>
-        <SectionHead>Provision Prevalence — % of active laws</SectionHead>
-        <ChartWrap height={360}>
-          <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={provisionStats} layout="vertical" margin={{ left: 150, right: 50, top: 0, bottom: 0 }}>
-              <XAxis type="number" domain={[0, 100]} tick={axisStyle} tickFormatter={v => `${v}%`} />
-              <YAxis type="category" dataKey="label" tick={axisStyle} width={145} />
-              <Tooltip content={<TT />} />
-              <Bar dataKey="pct" radius={[0, 3, 3, 0]}>
-                {provisionStats.map(entry => (
-                  <Cell key={entry.key} fill={entry.pct >= 70 ? '#16A34A' : entry.pct >= 30 ? '#1870D5' : '#D4D4D8'} />
-                ))}
-              </Bar>
-            </BarChart>
-          </ResponsiveContainer>
-          <div className="flex gap-5 mt-2 text-xs text-odl-muted">
-            <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-odl-green inline-block" /> ≥70% high convergence</span>
-            <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-odl-accent inline-block" /> 30–69% medium</span>
-            <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-odl-border-strong inline-block" /> &lt;30% low</span>
-          </div>
-        </ChartWrap>
-      </div>
-
-      {/* Category + Year */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div>
-          <SectionHead>By Primary Category</SectionHead>
-          <ChartWrap height={260}>
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={byCategory} layout="vertical" margin={{ left: 140, right: 20, top: 0, bottom: 0 }}>
-                <XAxis type="number" tick={axisStyle} />
-                <YAxis type="category" dataKey="label" tick={axisStyle} width={135} />
-                <Tooltip content={<TT />} />
-                <Bar dataKey="count" radius={[0, 3, 3, 0]}>
-                  {byCategory.map((_e, i) => <Cell key={_e.label} fill={BLUE_SCALE[i % BLUE_SCALE.length]} />)}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </ChartWrap>
-        </div>
-        <div>
-          <SectionHead>Enacted by Year</SectionHead>
-          <ChartWrap height={260}>
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={byYear} margin={{ left: 0, right: 10, top: 0, bottom: 0 }}>
-                <XAxis dataKey="label" tick={axisStyle} />
-                <YAxis tick={axisStyle} />
-                <Tooltip content={<TT />} />
-                <Bar dataKey="count" radius={[3, 3, 0, 0]}>
-                  {byYear.map((ye, i) => <Cell key={ye.label} fill={GREEN_SCALE[Math.min(i, GREEN_SCALE.length - 1)]} />)}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </ChartWrap>
-        </div>
-      </div>
-
-      {/* Legal Family */}
-      <div>
-        <SectionHead>By Legal Family</SectionHead>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
-          {byFamily.map(({ label, count }) => (
-            <div key={label} className="bg-white border border-odl-border rounded-card p-3 flex items-center justify-between">
-              <span className="text-sm text-odl-muted">{label}</span>
-              <span className="text-xl font-bold text-odl-accent">{count}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* AI-specific + Binding split */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div>
-          <SectionHead>AI-Specific vs. General Law (AI-Applicable)</SectionHead>
-          <div className="bg-white border border-odl-border rounded-card p-4">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="flex-1">
-                <div className="flex justify-between text-xs text-odl-muted mb-1">
-                  <span>AI-Specific</span>
-                  <span className="font-mono">{aiSpecificCount} / {n}</span>
-                </div>
-                <div className="h-2.5 bg-odl-surface rounded-full overflow-hidden">
-                  <div className="h-full bg-odl-accent rounded-full" style={{ width: `${Math.round((aiSpecificCount / n) * 100)}%` }} />
-                </div>
-              </div>
-              <span className="text-xl font-bold text-odl-accent font-mono w-12 text-right">{Math.round((aiSpecificCount / n) * 100)}%</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="flex-1">
-                <div className="flex justify-between text-xs text-odl-muted mb-1">
-                  <span>General Law (AI-Applicable)</span>
-                  <span className="font-mono">{n - aiSpecificCount} / {n}</span>
-                </div>
-                <div className="h-2.5 bg-odl-surface rounded-full overflow-hidden">
-                  <div className="h-full bg-odl-border-strong rounded-full" style={{ width: `${Math.round(((n - aiSpecificCount) / n) * 100)}%` }} />
-                </div>
-              </div>
-              <span className="text-xl font-bold text-odl-subtle font-mono w-12 text-right">{Math.round(((n - aiSpecificCount) / n) * 100)}%</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <SectionHead>Legally Binding vs. Soft Law / Voluntary</SectionHead>
-          <div className="bg-white border border-odl-border rounded-card p-4">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="flex-1">
-                <div className="flex justify-between text-xs text-odl-muted mb-1">
-                  <span>Legally Binding</span>
-                  <span className="font-mono">{bindingCount} / {n}</span>
-                </div>
-                <div className="h-2.5 bg-odl-surface rounded-full overflow-hidden">
-                  <div className="h-full bg-odl-green rounded-full" style={{ width: `${Math.round((bindingCount / n) * 100)}%` }} />
-                </div>
-              </div>
-              <span className="text-xl font-bold text-odl-green font-mono w-12 text-right">{Math.round((bindingCount / n) * 100)}%</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="flex-1">
-                <div className="flex justify-between text-xs text-odl-muted mb-1">
-                  <span>Soft Law / Voluntary</span>
-                  <span className="font-mono">{n - bindingCount} / {n}</span>
-                </div>
-                <div className="h-2.5 bg-odl-surface rounded-full overflow-hidden">
-                  <div className="h-full bg-odl-yellow rounded-full" style={{ width: `${Math.round(((n - bindingCount) / n) * 100)}%` }} />
-                </div>
-              </div>
-              <span className="text-xl font-bold text-odl-yellow font-mono w-12 text-right">{Math.round(((n - bindingCount) / n) * 100)}%</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Convergence */}
-      <div>
-        <SectionHead>Provision Convergence</SectionHead>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-          <ConvergenceBlock label="High ≥70%" items={convergenceHigh} color="text-odl-green" />
-          <ConvergenceBlock label="Medium 30–69%" items={convergenceMed}  color="text-odl-accent" />
-          <ConvergenceBlock label="Low <30%"   items={convergenceLow}  color="text-odl-subtle" />
-          <ConvergenceBlock label="Absent 0%"  items={absent}          color="text-odl-subtle" />
-        </div>
-      </div>
-
-      {/* Top Penalties */}
-      <div>
-        <SectionHead>Highest Maximum Penalties</SectionHead>
-        <div className="panel overflow-hidden">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-odl-border">
-                <th className="text-left px-4 py-2.5 text-odl-subtle font-medium text-xs">Law</th>
-                <th className="text-left px-4 py-2.5 text-odl-subtle font-medium text-xs">Jurisdiction</th>
-                <th className="text-left px-4 py-2.5 text-odl-subtle font-medium text-xs">Amount</th>
-                <th className="text-right px-4 py-2.5 text-odl-subtle font-medium text-xs">Approx. USD</th>
-              </tr>
-            </thead>
-            <tbody>
-              {highPenalty.map(law => (
-                <tr key={law.id} className="border-b border-odl-border/60 last:border-0">
-                  <td className="px-4 py-2.5 text-odl-text text-xs">{law.short_name}</td>
-                  <td className="px-4 py-2.5 text-odl-muted text-xs">{law.jurisdiction}</td>
-                  <td className="px-4 py-2.5 text-odl-muted text-xs">{law.max_penalty}</td>
-                  <td className="px-4 py-2.5 text-odl-accent text-xs text-right font-mono font-medium">
-                    ${(law.max_penalty_usd_approx ?? 0).toLocaleString()}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      {/* PRA */}
-      {praLaws.length > 0 && (
-        <div>
-          <SectionHead>Laws with Private Right of Action ({praLaws.length})</SectionHead>
-          <div className="flex flex-wrap gap-1.5">
-            {praLaws.map(l => (
-              <span key={l.id} className="badge text-odl-green bg-odl-green-bg border-green-200">{l.short_name}</span>
-            ))}
-          </div>
-        </div>
-      )}
+    <div className="bg-white border border-odl-border rounded shadow-sm px-3 py-2 text-xs">
+      <p className="text-odl-text font-medium mb-0.5">{label}</p>
+      <p className="text-odl-accent font-mono">{payload[0].value}{unit}</p>
     </div>
   )
 }
 
-function ConvergenceBlock({ label, items, color }: { label: string; items: { key: string; label: string; pct: number }[]; color: string }) {
+// ── main component ───────────────────────────────────────────────────────────
+
+export function AnalysisCharts({ laws }: Props) {
+  const active = useMemo(() => laws.filter(l => l.status !== 'superseded'), [laws])
+  const n = active.length
+
+  // headline numbers
+  const inForce    = active.filter(l => l.status === 'in_force').length
+  const binding    = active.filter(l => l.instrument_binding).length
+  const aiSpecific = active.filter(l => l.ai_specific).length
+  const pra        = active.filter(l => l.provisions?.private_right_of_action).length
+
+  // countries (non-global, top 12)
+  const byCountry = useMemo(() => {
+    const counts: Record<string, number> = {}
+    active.forEach(l => {
+      if (l.country && l.country !== 'Global / Regional') {
+        counts[l.country] = (counts[l.country] ?? 0) + 1
+      }
+    })
+    return Object.entries(counts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 12)
+      .map(([name, count]) => ({ name, count }))
+  }, [active])
+
+  // year-by-year (2018 onwards)
+  const byYear = useMemo(() => {
+    const counts: Record<string, number> = {}
+    active.forEach(l => {
+      const yr = l.enacted_date?.slice(0, 4)
+      if (yr && parseInt(yr) >= 2018) counts[yr] = (counts[yr] ?? 0) + 1
+    })
+    return Object.entries(counts).sort().map(([yr, count]) => ({ yr, count }))
+  }, [active])
+
+  const preBoom = useMemo(() =>
+    active.filter(l => {
+      const yr = l.enacted_date?.slice(0, 4)
+      return yr && parseInt(yr) < 2018
+    }).length
+  , [active])
+
+  // legal family
+  const byFamily = useMemo(() => {
+    const counts: Record<string, number> = {}
+    active.forEach(l => { counts[l.legal_family] = (counts[l.legal_family] ?? 0) + 1 })
+    return Object.entries(counts)
+      .sort((a, b) => b[1] - a[1])
+      .map(([k, count]) => ({ name: LEGAL_FAMILY_LABELS[k] ?? k, count }))
+  }, [active])
+
+  // subject matter
+  const byCategory = useMemo(() => {
+    const counts: Record<string, number> = {}
+    active.forEach(l => { counts[l.primary_category] = (counts[l.primary_category] ?? 0) + 1 })
+    return Object.entries(counts)
+      .sort((a, b) => b[1] - a[1])
+      .map(([k, count]) => ({ name: CATEGORY_LABELS[k] ?? k, count }))
+  }, [active])
+
+  // provisions
+  const PROVISION_LABELS: Record<string, string> = {
+    prohibited_categories:      'Prohibited use categories',
+    impact_assessment_required: 'Impact assessment required',
+    human_review_right:         'Right to human review',
+    risk_classification_system: 'Risk classification system',
+    anti_discrimination:        'Anti-discrimination rules',
+    content_labelling:          'AI content labelling',
+    ai_interaction_disclosure:  'AI interaction disclosure',
+    biometric_protection:       'Biometric data protection',
+    opt_out_right:              'Right to opt out',
+    training_data_disclosure:   'Training data disclosure',
+    voice_likeness_protection:  'Voice / likeness protection',
+    private_right_of_action:    'Private right of action',
+    safe_harbor:                'Safe harbor provision',
+    agentic_ai_addressed:       'Agentic AI addressed',
+    algorithmic_pricing_addressed: 'Algorithmic pricing',
+    training_data_compensation: 'Training data compensation',
+    data_rights_re_training:    'Data rights re: training',
+  }
+
+  const provisions = useMemo(() =>
+    Object.entries(PROVISION_LABELS).map(([key, label]) => {
+      const count = active.filter(l => (l.provisions as unknown as Record<string, unknown>)?.[key] === true).length
+      return { label, pct: n > 0 ? Math.round((count / n) * 100) : 0, count }
+    }).sort((a, b) => b.pct - a.pct)
+  , [active, n])
+
+  // top penalties
+  const penalties = useMemo(() =>
+    [...active]
+      .filter(l => l.max_penalty_usd_approx != null && (l.max_penalty_usd_approx ?? 0) > 0)
+      .sort((a, b) => (b.max_penalty_usd_approx ?? 0) - (a.max_penalty_usd_approx ?? 0))
+      .slice(0, 8)
+  , [active])
+
+  const maxPenalty = penalties[0]?.max_penalty_usd_approx ?? 1
+
   return (
-    <div className="bg-white border border-odl-border rounded-card p-3">
-      <div className={`text-xs font-semibold mb-2 ${color}`}>{label}</div>
-      {items.length === 0
-        ? <div className="text-xs text-odl-subtle italic">None</div>
-        : <ul className="space-y-1">{items.map(i => (
-            <li key={i.key} className="text-xs text-odl-muted flex justify-between gap-2">
-              <span>{i.label}</span><span className="text-odl-subtle">{i.pct}%</span>
-            </li>
-          ))}</ul>}
+    <div className="space-y-10 max-w-screen-lg">
+
+      {/* ── Headline stats ── */}
+      <Section title="Global snapshot">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <StatCard value={n} label="Active instruments" sub={`${preBoom} enacted before 2018`} />
+          <StatCard value={active.filter(l => l.country !== 'Global / Regional').length > 0
+            ? new Set(active.filter(l => l.country !== 'Global / Regional').map(l => l.country)).size
+            : 0}
+            label="Jurisdictions covered"
+            sub={`${active.filter(l => l.jurisdiction_type === 'supranational').length} supranational bodies`}
+          />
+          <StatCard
+            value={`${Math.round((binding / n) * 100)}%`}
+            label="Legally binding"
+            sub={`${n - binding} soft law or voluntary`}
+          />
+          <StatCard
+            value={`${Math.round((inForce / n) * 100)}%`}
+            label="Currently in force"
+            sub={`${n - inForce} enacted but not yet effective`}
+          />
+        </div>
+      </Section>
+
+      {/* ── Legislative timeline ── */}
+      <Section
+        title="Legislative timeline"
+        insight={`AI regulation accelerated sharply from 2023. The 47 laws enacted in 2024 alone exceed the entire output of every year before 2021 combined. The pace has not slowed: 2025 matched 2024 almost exactly.`}
+      >
+        <div className="panel p-5" style={{ height: 240 }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={byYear} margin={{ left: 0, right: 16, top: 8, bottom: 0 }}>
+              <XAxis dataKey="yr" tick={axisStyle} axisLine={false} tickLine={false} />
+              <YAxis tick={axisStyle} axisLine={false} tickLine={false} />
+              <Tooltip content={<ChartTip />} />
+              <ReferenceLine y={0} stroke="#E4E4E7" />
+              <Bar dataKey="count" radius={[3, 3, 0, 0]} maxBarSize={48}>
+                {byYear.map(d => (
+                  <Cell
+                    key={d.yr}
+                    fill={parseInt(d.yr) >= 2023 ? ACCENT : '#93C5FD'}
+                  />
+                ))}
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+        <div className="flex gap-5 mt-3 text-xs text-odl-subtle">
+          <span className="flex items-center gap-1.5">
+            <span className="w-3 h-3 rounded-sm inline-block" style={{ background: ACCENT }} />
+            2023 onwards
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="w-3 h-3 rounded-sm inline-block bg-blue-200" />
+            Before 2023
+          </span>
+        </div>
+      </Section>
+
+      {/* ── Country + Legal family ── */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <Section
+          title="Most active jurisdictions"
+          insight="The United States accounts for 44% of all tracked instruments, driven by state-level legislation. No country comes close."
+        >
+          <div className="panel p-4" style={{ height: 320 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={byCountry} layout="vertical" margin={{ left: 8, right: 36, top: 0, bottom: 0 }}>
+                <XAxis type="number" tick={axisStyle} axisLine={false} tickLine={false} />
+                <YAxis type="category" dataKey="name" tick={axisStyle} width={110} axisLine={false} tickLine={false} />
+                <Tooltip content={<ChartTip />} />
+                <Bar dataKey="count" radius={[0, 3, 3, 0]} maxBarSize={18}>
+                  {byCountry.map((d, i) => (
+                    <Cell key={d.name} fill={i === 0 ? ACCENT : '#93C5FD'} />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </Section>
+
+        <Section
+          title="Legislative genealogy"
+          insight="The US consumer protection model is the dominant global template, followed by the EU risk-based approach. Most non-Western jurisdictions adopt hybrid or standalone frameworks."
+        >
+          <div className="panel p-4" style={{ height: 320 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={byFamily} layout="vertical" margin={{ left: 8, right: 36, top: 0, bottom: 0 }}>
+                <XAxis type="number" tick={axisStyle} axisLine={false} tickLine={false} />
+                <YAxis type="category" dataKey="name" tick={axisStyle} width={150} axisLine={false} tickLine={false} />
+                <Tooltip content={<ChartTip />} />
+                <Bar dataKey="count" radius={[0, 3, 3, 0]} maxBarSize={18}>
+                  {byFamily.map((d, i) => (
+                    <Cell key={d.name} fill={i === 0 ? ACCENT : i === 1 ? '#3B82F6' : '#93C5FD'} />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </Section>
+
+      </div>
+
+      {/* ── Subject matter ── */}
+      <Section
+        title="Subject matter"
+        insight="General AI governance frameworks, data protection, and synthetic media collectively account for three quarters of all instruments. Sector-specific laws remain a small minority."
+      >
+        <div className="panel p-5" style={{ height: 300 }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={byCategory} layout="vertical" margin={{ left: 8, right: 40, top: 0, bottom: 0 }}>
+              <XAxis type="number" tick={axisStyle} axisLine={false} tickLine={false} />
+              <YAxis type="category" dataKey="name" tick={axisStyle} width={175} axisLine={false} tickLine={false} />
+              <Tooltip content={<ChartTip />} />
+              <Bar dataKey="count" fill={ACCENT} radius={[0, 3, 3, 0]} maxBarSize={18} />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+      </Section>
+
+      {/* ── Key ratios ── */}
+      <Section title="Instrument characteristics">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {[
+            {
+              label: 'AI-specific legislation',
+              value: aiSpecific,
+              pct: Math.round((aiSpecific / n) * 100),
+              sub: `${n - aiSpecific} laws are general-purpose statutes that apply to AI`,
+              color: ACCENT,
+            },
+            {
+              label: 'Legally binding',
+              value: binding,
+              pct: Math.round((binding / n) * 100),
+              sub: `${n - binding} instruments are voluntary frameworks or soft guidance`,
+              color: GREEN,
+            },
+            {
+              label: 'Private right of action',
+              value: pra,
+              pct: Math.round((pra / n) * 100),
+              sub: `Most enforcement is government-only; individuals cannot sue directly`,
+              color: '#D97706',
+            },
+          ].map(item => (
+            <div key={item.label} className="panel p-5">
+              <div className="flex items-end justify-between mb-3">
+                <div className="text-2xl font-bold font-mono" style={{ color: item.color }}>{item.pct}%</div>
+                <div className="text-xs text-odl-subtle font-mono">{item.value} / {n}</div>
+              </div>
+              <div className="h-1.5 bg-odl-surface rounded-full overflow-hidden mb-3">
+                <div className="h-full rounded-full" style={{ width: `${item.pct}%`, background: item.color }} />
+              </div>
+              <div className="text-xs font-semibold text-odl-text mb-1">{item.label}</div>
+              <div className="text-xs text-odl-subtle leading-relaxed">{item.sub}</div>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* ── Provision adoption ── */}
+      <Section
+        title="What laws actually require"
+        insight={`Prohibited use categories (${provisions.find(p => p.label === 'Prohibited use categories')?.pct ?? 0}%) and impact assessments (${provisions.find(p => p.label === 'Impact assessment required')?.pct ?? 0}%) are the most widely adopted AI-specific obligations. Only ${provisions.find(p => p.label === 'Right to human review')?.pct ?? 0}% of laws guarantee a right to human review of automated decisions.`}
+      >
+        <div className="panel p-5" style={{ height: 420 }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={provisions} layout="vertical" margin={{ left: 8, right: 52, top: 0, bottom: 0 }}>
+              <XAxis
+                type="number"
+                domain={[0, 100]}
+                tick={axisStyle}
+                tickFormatter={v => `${v}%`}
+                axisLine={false}
+                tickLine={false}
+              />
+              <YAxis type="category" dataKey="label" tick={axisStyle} width={192} axisLine={false} tickLine={false} />
+              <Tooltip content={<ChartTip unit="%" />} formatter={(v) => [`${v}%`, 'Laws']} />
+              <Bar dataKey="pct" radius={[0, 3, 3, 0]} maxBarSize={16}>
+                {provisions.map(p => (
+                  <Cell
+                    key={p.label}
+                    fill={p.pct >= 30 ? ACCENT : p.pct > 0 ? '#93C5FD' : MUTED}
+                  />
+                ))}
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+        <div className="flex gap-5 mt-3 text-xs text-odl-subtle">
+          <span className="flex items-center gap-1.5">
+            <span className="w-3 h-3 rounded-sm inline-block" style={{ background: ACCENT }} />
+            Adopted by 30%+ of laws
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="w-3 h-3 rounded-sm inline-block bg-blue-200" />
+            Adopted by fewer than 30%
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="w-3 h-3 rounded-sm inline-block" style={{ background: MUTED }} />
+            Rare or absent
+          </span>
+        </div>
+      </Section>
+
+      {/* ── Top penalties ── */}
+      <Section
+        title="Maximum financial penalties"
+        insight="The EU AI Act's penalty structure cascades through all 27 member states via national implementation laws, making European instruments dominate this table. Figures are approximate USD equivalents."
+      >
+        <div className="panel overflow-hidden">
+          <table className="w-full">
+            <thead>
+              <tr className="border-b border-odl-border bg-odl-surface">
+                <th className="text-left px-4 py-3 text-xs font-semibold text-odl-subtle">Law</th>
+                <th className="text-left px-4 py-3 text-xs font-semibold text-odl-subtle hidden sm:table-cell">Jurisdiction</th>
+                <th className="text-right px-4 py-3 text-xs font-semibold text-odl-subtle">Max. penalty (approx. USD)</th>
+                <th className="text-right px-4 py-3 text-xs font-semibold text-odl-subtle w-32 hidden md:table-cell">Scale</th>
+              </tr>
+            </thead>
+            <tbody>
+              {penalties.map((law, i) => {
+                const usd = law.max_penalty_usd_approx ?? 0
+                const pct = Math.round((usd / maxPenalty) * 100)
+                return (
+                  <tr key={law.id} className={`border-b border-odl-border/60 last:border-0 ${i === 0 ? 'bg-blue-50/40' : ''}`}>
+                    <td className="px-4 py-3 text-xs text-odl-text font-medium">{law.short_name}</td>
+                    <td className="px-4 py-3 text-xs text-odl-muted hidden sm:table-cell">{law.jurisdiction}</td>
+                    <td className="px-4 py-3 text-xs text-odl-accent font-mono font-semibold text-right">
+                      ${usd.toLocaleString()}
+                    </td>
+                    <td className="px-4 py-3 hidden md:table-cell">
+                      <div className="h-1.5 bg-odl-surface rounded-full overflow-hidden">
+                        <div className="h-full rounded-full" style={{ width: `${pct}%`, background: ACCENT }} />
+                      </div>
+                    </td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        </div>
+      </Section>
+
     </div>
   )
 }
