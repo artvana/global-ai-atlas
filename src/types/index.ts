@@ -364,14 +364,6 @@ export type RuleCategory =
   | 'general_governance'
   | 'enforcement_penalties'
   | 'private_redress'
-  // Legacy slugs — present until reclassify-categories.py has been run
-  | 'prohibited_uses'
-  | 'impact_assessment'
-  | 'human_review'
-  | 'data_rights'
-  | 'transparency'
-  | 'enforcement'
-  | 'training_data'
 
 export const RULE_CATEGORY_LABELS: Record<RuleCategory, string> = {
   // Prohibitions & Risk Framework
@@ -401,14 +393,6 @@ export const RULE_CATEGORY_LABELS: Record<RuleCategory, string> = {
   general_governance:        'Jurisdictional Scope & Definitions',
   enforcement_penalties:     'Enforcement Powers & Penalties',
   private_redress:           'Civil Liability & Private Redress',
-  // Legacy mappings
-  prohibited_uses:   'Prohibited AI Applications',
-  impact_assessment: 'Conformity & Impact Assessment',
-  human_review:      'Human Oversight & Control',
-  data_rights:       'Data Subject Rights',
-  transparency:      'Transparency & Disclosure',
-  enforcement:       'Enforcement & Liability',
-  training_data:     'Training Data',
 }
 
 // How a specific law stands relative to the canonical rule.

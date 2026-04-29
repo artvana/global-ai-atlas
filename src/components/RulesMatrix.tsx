@@ -66,14 +66,6 @@ const CAT_COLOR: Partial<Record<RuleCategory, string>> = {
   general_governance:        '#64748B',
   enforcement_penalties:     '#B45309',
   private_redress:           '#92400E',
-  // Legacy fallbacks
-  prohibited_uses:   '#DC2626',
-  impact_assessment: '#D97706',
-  human_review:      '#0891B2',
-  data_rights:       '#059669',
-  transparency:      '#2563EB',
-  enforcement:       '#B45309',
-  training_data:     '#16A34A',
 }
 
 // ── region / jurisdiction helpers ─────────────────────────────────────────────
