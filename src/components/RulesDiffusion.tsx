@@ -26,6 +26,25 @@ const CAT_COLORS: Record<string, string> = {
   foundation_models:  '#0EA5E9',
 }
 
+// ── custom tooltip (avoids recharts v3 .color crash on Cell-colored bars) ────
+function ChartTip({ active, payload, label }: {
+  active?: boolean
+  payload?: { name?: string; value?: number; color?: string }[]
+  label?: string
+}) {
+  if (!active || !payload?.length) return null
+  return (
+    <div className="bg-white border border-odl-border rounded shadow-sm px-3 py-2 text-xs max-w-[220px]">
+      {label && <p className="text-odl-text font-medium mb-1 truncate">{label}</p>}
+      {payload.map((p, i) => (
+        <p key={i} className="text-odl-muted" style={{ color: p.color ?? '#64748B' }}>
+          {p.name ? `${p.name}: ` : ''}{p.value}
+        </p>
+      ))}
+    </div>
+  )
+}
+
 // ── helpers ───────────────────────────────────────────────────────────────────
 
 function adoptionCount(rule: { instances: { relationship: string }[] }): number {
@@ -62,10 +81,7 @@ function IntroductionTimeline() {
         <BarChart data={data} margin={{ top: 4, right: 8, bottom: 4, left: 0 }}>
           <XAxis dataKey="year" tick={{ fontSize: 10 }} />
           <YAxis tick={{ fontSize: 10 }} width={28} />
-          <Tooltip
-            contentStyle={{ fontSize: 11 }}
-            formatter={(v, name) => [v, RULE_CATEGORY_LABELS[String(name) as RuleCategory] ?? String(name)]}
-          />
+          <Tooltip content={<ChartTip />} />
           <Legend
             iconSize={8}
             wrapperStyle={{ fontSize: 9, paddingTop: 8 }}
@@ -117,7 +133,7 @@ function BindingVsSoftTimeline() {
         <BarChart data={data} margin={{ top: 4, right: 8, bottom: 4, left: 0 }}>
           <XAxis dataKey="year" tick={{ fontSize: 10 }} />
           <YAxis tick={{ fontSize: 10 }} width={28} />
-          <Tooltip contentStyle={{ fontSize: 11 }} />
+          <Tooltip content={<ChartTip />} />
           <Legend iconSize={8} wrapperStyle={{ fontSize: 9, paddingTop: 8 }} />
           <Bar dataKey="Binding law origin" fill="#1D4ED8" stackId="a" />
           <Bar dataKey="Soft-law origin" fill="#94A3B8" stackId="a" />
@@ -308,11 +324,8 @@ function TopAdoptedRules() {
             width={340}
             tick={{ fontSize: 9 }}
           />
-          <Tooltip
-            contentStyle={{ fontSize: 11 }}
-            formatter={(v) => [v, 'Laws adopted']}
-          />
-          <Bar dataKey="adoptions" radius={[0, 3, 3, 0]}>
+          <Tooltip content={<ChartTip />} />
+          <Bar dataKey="adoptions" fill="#94A3B8" radius={[0, 3, 3, 0]}>
             {data.map((entry, i) => (
               <Cell key={i} fill={entry.fill} />
             ))}
