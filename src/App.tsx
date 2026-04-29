@@ -46,7 +46,7 @@ function App() {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <span className="text-sm font-semibold text-odl-text">GAIA</span>
-              <span className="text-odl-subtle text-xs">Global AI Atlas · Art Abal</span>
+              <span className="text-odl-subtle text-xs">Global AI Atlas</span>
             </div>
             <div className="h-4 w-px bg-odl-border" />
             <nav className="flex gap-0.5">
@@ -89,7 +89,7 @@ function App() {
 
       <footer className="border-t border-odl-border mt-16 py-6">
         <div className="max-w-screen-xl mx-auto px-6 flex items-center justify-between text-xs text-odl-subtle">
-          <span>GAIA — Global AI Atlas · Art Abal · v1.0 · April 2026</span>
+          <span>GAIA — Global AI Atlas · v1.0 · April 2026</span>
           <div className="flex items-center gap-4">
             <a href="./docs/methodology.md" className="odl-link">Methodology</a>
             <span>MIT License</span>

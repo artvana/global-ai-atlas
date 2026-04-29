@@ -337,36 +337,78 @@ export type SortDir = 'asc' | 'desc'
 // ─── Rules Matrix ────────────────────────────────────────────────────────────
 
 export type RuleCategory =
+  // Prohibitions & Risk Framework
+  | 'prohibited_applications'
+  | 'risk_classification'
   | 'biometric_data'
+  // Individual Rights
+  | 'data_subject_rights'
+  | 'consent'
+  | 'human_oversight'
+  | 'explainability'
+  // Transparency & Documentation
+  | 'disclosure'
+  | 'technical_documentation'
+  // Ex Ante Obligations
+  | 'conformity_assessment'
+  | 'registration_notification'
+  // Data & Model Governance
+  | 'training_data_quality'
+  | 'data_provenance'
+  | 'foundation_models'
+  | 'synthetic_media'
+  // Sector-Specific
+  | 'employment_ai'
+  // Institutional & Enforcement
+  | 'accountability_governance'
+  | 'general_governance'
+  | 'enforcement_penalties'
+  | 'private_redress'
+  // Legacy slugs — present until reclassify-categories.py has been run
   | 'prohibited_uses'
   | 'impact_assessment'
   | 'human_review'
   | 'data_rights'
   | 'transparency'
-  | 'synthetic_media'
   | 'enforcement'
-  | 'risk_classification'
   | 'training_data'
-  | 'foundation_models'
-  | 'consent'
-  | 'employment_ai'
-  | 'general_governance'
 
 export const RULE_CATEGORY_LABELS: Record<RuleCategory, string> = {
-  biometric_data:    'Biometric Data',
-  prohibited_uses:   'Prohibited Uses',
-  impact_assessment: 'Impact Assessment',
-  human_review:      'Human Review Rights',
-  data_rights:       'Individual Data Rights',
+  // Prohibitions & Risk Framework
+  prohibited_applications:  'Prohibited AI Applications',
+  risk_classification:       'Risk Classification & Tiering',
+  biometric_data:            'Biometric Data Processing',
+  // Individual Rights
+  data_subject_rights:       'Data Subject Rights',
+  consent:                   'Consent Requirements',
+  human_oversight:           'Human Oversight & Control',
+  explainability:            'Explainability & Right to Explanation',
+  // Transparency & Documentation
+  disclosure:                'Transparency & Disclosure to Users',
+  technical_documentation:   'Technical Documentation & Audit Requirements',
+  // Ex Ante Obligations
+  conformity_assessment:     'Conformity & Impact Assessment',
+  registration_notification: 'Registration, Licensing & Notification',
+  // Data & Model Governance
+  training_data_quality:     'Training Data Quality & Governance',
+  data_provenance:           'Data Provenance, IP & Copyright',
+  foundation_models:         'Foundation Models & GPAI',
+  synthetic_media:           'Synthetic Media & Deepfakes',
+  // Sector-Specific
+  employment_ai:             'AI in Employment & the Workplace',
+  // Institutional & Enforcement
+  accountability_governance: 'Accountability & Governance Obligations',
+  general_governance:        'Jurisdictional Scope & Definitions',
+  enforcement_penalties:     'Enforcement Powers & Penalties',
+  private_redress:           'Civil Liability & Private Redress',
+  // Legacy mappings
+  prohibited_uses:   'Prohibited AI Applications',
+  impact_assessment: 'Conformity & Impact Assessment',
+  human_review:      'Human Oversight & Control',
+  data_rights:       'Data Subject Rights',
   transparency:      'Transparency & Disclosure',
-  synthetic_media:   'Synthetic Media',
   enforcement:       'Enforcement & Liability',
-  risk_classification: 'Risk Classification',
   training_data:     'Training Data',
-  foundation_models: 'Foundation Models / GPAI',
-  consent:           'Consent',
-  employment_ai:     'Employment AI',
-  general_governance:'General AI Governance',
 }
 
 // How a specific law stands relative to the canonical rule.

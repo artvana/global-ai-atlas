@@ -39,20 +39,41 @@ const REL_PRIORITY: Record<RelOrAbsent, number> = {
 // ── category colors ───────────────────────────────────────────────────────────
 
 const CAT_COLOR: Partial<Record<RuleCategory, string>> = {
-  biometric_data:      '#7C3AED',
-  prohibited_uses:     '#DC2626',
-  impact_assessment:   '#D97706',
-  human_review:        '#0891B2',
-  data_rights:         '#059669',
-  transparency:        '#0284C7',
-  synthetic_media:     '#9333EA',
-  enforcement:         '#B45309',
-  risk_classification: '#BE123C',
-  training_data:       '#15803D',
-  foundation_models:   '#6D28D9',
-  consent:             '#0F766E',
-  employment_ai:       '#1D4ED8',
-  general_governance:  '#475569',
+  // Prohibitions & Risk Framework
+  prohibited_applications:  '#DC2626',
+  risk_classification:       '#9F1239',
+  biometric_data:            '#C026D3',
+  // Individual Rights
+  data_subject_rights:       '#059669',
+  consent:                   '#0F766E',
+  human_oversight:           '#0891B2',
+  explainability:            '#0369A1',
+  // Transparency & Documentation
+  disclosure:                '#2563EB',
+  technical_documentation:   '#4F46E5',
+  // Ex Ante Obligations
+  conformity_assessment:     '#D97706',
+  registration_notification: '#EA580C',
+  // Data & Model Governance
+  training_data_quality:     '#16A34A',
+  data_provenance:           '#15803D',
+  foundation_models:         '#6D28D9',
+  synthetic_media:           '#9333EA',
+  // Sector-Specific
+  employment_ai:             '#7C3AED',
+  // Institutional & Enforcement
+  accountability_governance: '#475569',
+  general_governance:        '#64748B',
+  enforcement_penalties:     '#B45309',
+  private_redress:           '#92400E',
+  // Legacy fallbacks
+  prohibited_uses:   '#DC2626',
+  impact_assessment: '#D97706',
+  human_review:      '#0891B2',
+  data_rights:       '#059669',
+  transparency:      '#2563EB',
+  enforcement:       '#B45309',
+  training_data:     '#16A34A',
 }
 
 // ── region / jurisdiction helpers ─────────────────────────────────────────────
