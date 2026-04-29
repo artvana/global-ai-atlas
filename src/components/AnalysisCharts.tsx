@@ -58,7 +58,7 @@ export function AnalysisCharts({ laws }: Props) {
   const aiSpecific = active.filter(l => l.ai_specific).length
   const pra        = active.filter(l => l.provisions?.private_right_of_action).length
 
-  // countries (non-global, top 12)
+  // countries (non-global, top 10)
   const byCountry = useMemo(() => {
     const counts: Record<string, number> = {}
     active.forEach(l => {
@@ -68,7 +68,7 @@ export function AnalysisCharts({ laws }: Props) {
     })
     return Object.entries(counts)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 12)
+      .slice(0, 10)
       .map(([name, count]) => ({ name, count }))
   }, [active])
 
@@ -132,7 +132,7 @@ export function AnalysisCharts({ laws }: Props) {
     Object.entries(PROVISION_LABELS).map(([key, label]) => {
       const count = active.filter(l => (l.provisions as unknown as Record<string, unknown>)?.[key] === true).length
       return { label, pct: n > 0 ? Math.round((count / n) * 100) : 0, count }
-    }).sort((a, b) => b.pct - a.pct)
+    }).filter(p => p.count > 0).sort((a, b) => b.pct - a.pct)
   , [active, n])
 
   // top penalties
@@ -213,11 +213,11 @@ export function AnalysisCharts({ laws }: Props) {
           title="Most active jurisdictions"
           insight="The United States accounts for 44% of all tracked instruments, driven by state-level legislation. No country comes close."
         >
-          <div className="panel p-4" style={{ height: 320 }}>
+          <div className="panel p-4" style={{ height: 380 }}>
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={byCountry} layout="vertical" margin={{ left: 8, right: 36, top: 0, bottom: 0 }}>
+              <BarChart data={byCountry} layout="vertical" margin={{ left: 8, right: 36, top: 4, bottom: 4 }}>
                 <XAxis type="number" tick={axisStyle} axisLine={false} tickLine={false} />
-                <YAxis type="category" dataKey="name" tick={axisStyle} width={110} axisLine={false} tickLine={false} />
+                <YAxis type="category" dataKey="name" tick={axisStyle} width={120} axisLine={false} tickLine={false} />
                 <Tooltip content={<ChartTip />} />
                 <Bar dataKey="count" radius={[0, 3, 3, 0]} maxBarSize={18}>
                   {byCountry.map((d, i) => (
@@ -233,9 +233,9 @@ export function AnalysisCharts({ laws }: Props) {
           title="Legislative genealogy"
           insight="The US consumer protection model is the dominant global template, followed by the EU risk-based approach. Most non-Western jurisdictions adopt hybrid or standalone frameworks."
         >
-          <div className="panel p-4" style={{ height: 320 }}>
+          <div className="panel p-4" style={{ height: 380 }}>
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={byFamily} layout="vertical" margin={{ left: 8, right: 36, top: 0, bottom: 0 }}>
+              <BarChart data={byFamily} layout="vertical" margin={{ left: 8, right: 36, top: 4, bottom: 4 }}>
                 <XAxis type="number" tick={axisStyle} axisLine={false} tickLine={false} />
                 <YAxis type="category" dataKey="name" tick={axisStyle} width={150} axisLine={false} tickLine={false} />
                 <Tooltip content={<ChartTip />} />
@@ -314,9 +314,9 @@ export function AnalysisCharts({ laws }: Props) {
         title="What laws actually require"
         insight={`Prohibited use categories (${provisions.find(p => p.label === 'Prohibited use categories')?.pct ?? 0}%) and impact assessments (${provisions.find(p => p.label === 'Impact assessment required')?.pct ?? 0}%) are the most widely adopted AI-specific obligations. Only ${provisions.find(p => p.label === 'Right to human review')?.pct ?? 0}% of laws guarantee a right to human review of automated decisions.`}
       >
-        <div className="panel p-5" style={{ height: 420 }}>
+        <div className="panel p-5" style={{ height: 500 }}>
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={provisions} layout="vertical" margin={{ left: 8, right: 52, top: 0, bottom: 0 }}>
+            <BarChart data={provisions} layout="vertical" margin={{ left: 8, right: 52, top: 4, bottom: 4 }}>
               <XAxis
                 type="number"
                 domain={[0, 100]}
@@ -325,7 +325,7 @@ export function AnalysisCharts({ laws }: Props) {
                 axisLine={false}
                 tickLine={false}
               />
-              <YAxis type="category" dataKey="label" tick={axisStyle} width={192} axisLine={false} tickLine={false} />
+              <YAxis type="category" dataKey="label" tick={axisStyle} width={196} axisLine={false} tickLine={false} />
               <Tooltip content={<ChartTip unit="%" />} formatter={(v) => [`${v}%`, 'Laws']} />
               <Bar dataKey="pct" radius={[0, 3, 3, 0]} maxBarSize={16}>
                 {provisions.map(p => (

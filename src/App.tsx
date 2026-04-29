@@ -35,7 +35,7 @@ class ErrorBoundary extends Component<{ children: ReactNode }, { error: Error | 
 }
 
 function App() {
-  const [tab, setTab] = useState<Tab>('laws')
+  const [tab, setTab] = useState<Tab>('stats')
 
   return (
     <div className="min-h-screen bg-odl-surface">
@@ -48,7 +48,7 @@ function App() {
             </div>
             <div className="h-4 w-px bg-odl-border" />
             <nav className="flex gap-0.5">
-              {(['laws', 'map', 'stats', 'enforcement', 'mcp'] as Tab[]).map(t => (
+              {(['stats', 'map', 'laws', 'enforcement', 'mcp'] as Tab[]).map(t => (
                 <button
                   key={t}
                   onClick={() => setTab(t)}
