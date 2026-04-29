@@ -298,7 +298,7 @@ type InstrumentFilter = 'all' | 'binding' | 'soft'
 export function RulesMatrix() {
   const [selectedCategory, setSelectedCategory] = useState<RuleCategory | 'all'>('all')
   const [ruleSearch, setRuleSearch] = useState('')
-  const [instrumentFilter, setInstrumentFilter] = useState<InstrumentFilter>('all')
+  const [instrumentFilter, setInstrumentFilter] = useState<InstrumentFilter>('binding')
   const [semanticResults, setSemanticResults] = useState<SearchResult[] | null>(null)
   const [popover, setPopover] = useState<PopoverData | null>(null)
 
