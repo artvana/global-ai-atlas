@@ -60,9 +60,8 @@ const CAT_COLOR: Partial<Record<RuleCategory, string>> = {
 const REGION_ORDER = ['Supranational', 'Americas', 'Europe', 'Asia-Pacific', 'Middle East & Africa', 'Other']
 
 const COUNTRY_REGION: Record<string, string> = {
-  'United States': 'Americas',   'Canada': 'Americas',    'Brazil': 'Americas',
-  'Mexico': 'Americas',          'Argentina': 'Americas', 'Chile': 'Americas',
-  'Colombia': 'Americas',        'Peru': 'Americas',
+  'Canada': 'Americas',    'Brazil': 'Americas',  'Mexico': 'Americas',
+  'Argentina': 'Americas', 'Chile': 'Americas',   'Colombia': 'Americas', 'Peru': 'Americas',
   'United Kingdom': 'Europe',    'France': 'Europe',      'Spain': 'Europe',
   'Italy': 'Europe',             'Denmark': 'Europe',     'Finland': 'Europe',
   'Ireland': 'Europe',           'Switzerland': 'Europe', 'Hungary': 'Europe',
@@ -88,19 +87,53 @@ const REGIONAL_LABELS: Record<string, string> = {
   International: 'International / UN', APAC: 'APAC Regional', Africa: 'African Union',
 }
 
+// US federal region code = 'US'; state codes = 'US-CA', 'US-TX', etc.
+const US_STATE_NAMES: Record<string, string> = {
+  'US-AR': 'Arkansas',       'US-CA': 'California',     'US-CO': 'Colorado',
+  'US-CT': 'Connecticut',    'US-FL': 'Florida',        'US-GA': 'Georgia',
+  'US-ID': 'Idaho',          'US-IL': 'Illinois',       'US-IN': 'Indiana',
+  'US-KY': 'Kentucky',       'US-MD': 'Maryland',       'US-ME': 'Maine',
+  'US-MI': 'Michigan',       'US-MN': 'Minnesota',      'US-MT': 'Montana',
+  'US-NC': 'North Carolina', 'US-NE': 'Nebraska',       'US-NH': 'New Hampshire',
+  'US-NV': 'Nevada',         'US-NY': 'New York',       'US-OR': 'Oregon',
+  'US-TN': 'Tennessee',      'US-TX': 'Texas',          'US-UT': 'Utah',
+  'US-WA': 'Washington',
+}
+
 function lawColKey(law: AILaw): string {
   if (law.country === 'Global / Regional') return `regional:${law.region}`
+  if (law.country === 'United States') return law.region === 'US' ? 'US-FED' : law.region
   return law.country
 }
 
+// Full display name used in popover titles and tooltips
 function colLabel(key: string): string {
   if (key.startsWith('regional:')) return REGIONAL_LABELS[key.slice(9)] ?? key.slice(9)
+  if (key === 'US-FED') return 'US Federal'
+  if (key.startsWith('US-')) return `${US_STATE_NAMES[key] ?? key.slice(3)}`
+  return key
+}
+
+// Short label used in vertical column headers
+function colHeaderLabel(key: string): string {
+  if (key.startsWith('regional:')) return REGIONAL_LABELS[key.slice(9)] ?? key.slice(9)
+  if (key === 'US-FED') return 'Federal'
+  if (key.startsWith('US-')) return US_STATE_NAMES[key] ?? key.slice(3)
   return key
 }
 
 function colRegion(key: string): string {
   if (key.startsWith('regional:')) return 'Supranational'
+  if (key === 'US-FED' || key.startsWith('US-')) return 'Americas'
   return COUNTRY_REGION[key] ?? 'Other'
+}
+
+// Sort key: puts US-FED first in Americas, then US states, then other Americas
+function colSortKey(key: string): string {
+  const r = REGION_ORDER.indexOf(colRegion(key)).toString().padStart(2, '0')
+  if (key === 'US-FED') return `${r}_US_0`
+  if (key.startsWith('US-')) return `${r}_US_1_${colLabel(key)}`
+  return `${r}_ZZ_${colLabel(key)}`
 }
 
 // ── dot component ─────────────────────────────────────────────────────────────
@@ -285,11 +318,7 @@ export function RulesMatrix() {
   // Ordered country columns: Supranational first, then by region, then alpha
   const displayCols = useMemo(() => {
     const keys = [...new Set(regulations.map(l => lawColKey(l)))]
-    return keys.sort((a, b) => {
-      const ra = REGION_ORDER.indexOf(colRegion(a)), rb = REGION_ORDER.indexOf(colRegion(b))
-      if (ra !== rb) return ra - rb
-      return colLabel(a).localeCompare(colLabel(b))
-    })
+    return keys.sort((a, b) => colSortKey(a).localeCompare(colSortKey(b)))
   }, [])
 
   // Region groups for the column header row
@@ -304,11 +333,18 @@ export function RulesMatrix() {
     return groups
   }, [displayCols])
 
-  // Indices where a new region starts (for column separators in body)
+  // Column separator indices: region changes + US sub-group transitions
   const regionBoundary = useMemo(() => {
     const s = new Set<number>()
     displayCols.forEach((key, i) => {
-      if (i > 0 && colRegion(key) !== colRegion(displayCols[i - 1])) s.add(i)
+      if (i === 0) return
+      const prev = displayCols[i - 1]
+      // Region-level boundary
+      if (colRegion(key) !== colRegion(prev)) { s.add(i); return }
+      // US-FED → first US state
+      if (prev === 'US-FED' && key.startsWith('US-')) { s.add(i); return }
+      // Last US state → first non-US Americas
+      if (prev.startsWith('US-') && !key.startsWith('US-') && key !== 'US-FED') s.add(i)
     })
     return s
   }, [displayCols])
@@ -493,30 +529,63 @@ export function RulesMatrix() {
                 ))}
               </tr>
 
-              {/* Country column headers */}
+              {/* US sub-group header row: "United States" spanning FED + all states */}
+              {(() => {
+                const fedIdx = displayCols.indexOf('US-FED')
+                const usCount = displayCols.filter(k => k === 'US-FED' || k.startsWith('US-')).length
+                if (fedIdx < 0 || usCount === 0) return null
+                const preSpan = fedIdx
+                const postSpan = displayCols.length - fedIdx - usCount
+                return (
+                  <tr>
+                    <th style={{ width: CAT_COL, minWidth: CAT_COL, padding: 0, borderBottom: '1px solid #E4E4E7' }} />
+                    {preSpan > 0 && <th colSpan={preSpan} style={{ padding: 0, borderBottom: '1px solid #E4E4E7' }} />}
+                    <th colSpan={usCount}
+                      style={{
+                        padding: '1px 0', textAlign: 'center',
+                        borderBottom: '1px solid #E4E4E7',
+                        borderLeft: '2px solid rgba(59,130,246,0.35)',
+                        borderRight: '2px solid rgba(59,130,246,0.35)',
+                        fontSize: 7, fontWeight: 700, color: '#1D4ED8',
+                        textTransform: 'uppercase', letterSpacing: '0.07em',
+                        background: 'rgba(219,234,254,0.25)',
+                      }}>
+                      United States
+                    </th>
+                    {postSpan > 0 && <th colSpan={postSpan} style={{ padding: 0, borderBottom: '1px solid #E4E4E7' }} />}
+                  </tr>
+                )
+              })()}
+
+              {/* Jurisdiction column headers */}
               <tr>
                 <th style={{ width: CAT_COL, minWidth: CAT_COL, padding: 0, borderBottom: '2px solid #E4E4E7', borderRight: '1px solid #D4D4D8' }} />
-                {displayCols.map((key, ci) => (
-                  <th key={key}
-                    style={{
-                      width: CELL, minWidth: CELL, padding: 0,
-                      borderBottom: '2px solid #E4E4E7',
-                      borderRight: '1px solid rgba(228,228,231,0.35)',
-                      borderLeft: regionBoundary.has(ci) ? '2px solid rgba(59,130,246,0.3)' : undefined,
-                    }}
-                    title={colLabel(key)}>
-                    <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', height: HEADER_H, paddingBottom: 5 }}>
-                      <span style={{
-                        writingMode: 'vertical-rl',
-                        transform: 'rotate(180deg)',
-                        fontSize: 9, fontWeight: 600, color: '#52525B',
-                        letterSpacing: '0.03em', whiteSpace: 'nowrap',
-                      }}>
-                        {colLabel(key)}
-                      </span>
-                    </div>
-                  </th>
-                ))}
+                {displayCols.map((key, ci) => {
+                  const isUS = key === 'US-FED' || key.startsWith('US-')
+                  return (
+                    <th key={key}
+                      style={{
+                        width: CELL, minWidth: CELL, padding: 0,
+                        borderBottom: '2px solid #E4E4E7',
+                        borderRight: '1px solid rgba(228,228,231,0.35)',
+                        borderLeft: regionBoundary.has(ci) ? '2px solid rgba(59,130,246,0.3)' : undefined,
+                        background: isUS ? 'rgba(219,234,254,0.15)' : undefined,
+                      }}
+                      title={`${colLabel(key)}${isUS ? ' (United States)' : ''}`}>
+                      <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', height: HEADER_H, paddingBottom: 5 }}>
+                        <span style={{
+                          writingMode: 'vertical-rl',
+                          transform: 'rotate(180deg)',
+                          fontSize: 9, fontWeight: 600,
+                          color: isUS ? '#1D4ED8' : '#52525B',
+                          letterSpacing: '0.03em', whiteSpace: 'nowrap',
+                        }}>
+                          {colHeaderLabel(key)}
+                        </span>
+                      </div>
+                    </th>
+                  )
+                })}
               </tr>
             </thead>
 
@@ -536,12 +605,14 @@ export function RulesMatrix() {
                       </td>
                       {displayCols.map((key, ci) => {
                         const cell = rm?.get(key)
+                        const isUS = key === 'US-FED' || key.startsWith('US-')
                         return (
                           <td key={key}
-                            className="group/cell p-0 cursor-pointer hover:bg-blue-50/50 border-r border-odl-border/15"
+                            className="group/cell p-0 cursor-pointer hover:bg-blue-100/60 border-r border-odl-border/15"
                             style={{
                               width: CELL, minWidth: CELL,
                               borderLeft: regionBoundary.has(ci) ? '2px solid rgba(59,130,246,0.2)' : undefined,
+                              background: isUS ? 'rgba(219,234,254,0.12)' : undefined,
                             }}
                             onClick={e => handleCellClick(rule, key, e)}
                             title={cell ? `${colLabel(key)} · ${cell.rel} · hover for law` : `${colLabel(key)} · No legislation`}>
@@ -581,12 +652,14 @@ export function RulesMatrix() {
                           {/* Country cells */}
                           {displayCols.map((key, ci) => {
                             const cell = rm?.get(key)
+                            const isUS = key === 'US-FED' || key.startsWith('US-')
                             return (
                               <td key={key}
-                                className="group/cell p-0 cursor-pointer hover:bg-blue-50/50 border-r border-odl-border/15"
+                                className="group/cell p-0 cursor-pointer hover:bg-blue-100/60 border-r border-odl-border/15"
                                 style={{
                                   width: CELL, minWidth: CELL,
                                   borderLeft: regionBoundary.has(ci) ? '2px solid rgba(59,130,246,0.2)' : undefined,
+                                  background: isUS ? 'rgba(219,234,254,0.12)' : undefined,
                                 }}
                                 onClick={e => handleCellClick(rule, key, e)}
                                 title={cell
