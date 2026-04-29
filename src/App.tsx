@@ -3,17 +3,19 @@ import { SearchInterface } from './components/SearchInterface'
 import { AnalysisCharts } from './components/AnalysisCharts'
 import { EnforcementView } from './components/EnforcementView'
 import { MCPDocs } from './components/MCPDocs'
+import { RulesMatrix } from './components/RulesMatrix'
 import { regulations } from './data/regulations'
 
 // Lazy-load the map so a react-simple-maps compat error doesn't crash the whole app
 const GAIAMap = lazy(() => import('./components/GAIAMap').then(m => ({ default: m.GAIAMap })))
 
-type Tab = 'laws' | 'map' | 'stats' | 'enforcement' | 'mcp'
+type Tab = 'stats' | 'rules' | 'map' | 'laws' | 'enforcement' | 'mcp'
 
 const TAB_LABELS: Record<Tab, string> = {
-  laws:        'Laws Database',
-  map:         'GAIA Map',
   stats:       'Summary Stats',
+  rules:       'Rules Matrix',
+  map:         'GAIA Map',
+  laws:        'Laws Database',
   enforcement: 'Enforcement',
   mcp:         'MCP Server',
 }
@@ -48,7 +50,7 @@ function App() {
             </div>
             <div className="h-4 w-px bg-odl-border" />
             <nav className="flex gap-0.5">
-              {(['stats', 'map', 'laws', 'enforcement', 'mcp'] as Tab[]).map(t => (
+              {(['stats', 'rules', 'map', 'laws', 'enforcement', 'mcp'] as Tab[]).map(t => (
                 <button
                   key={t}
                   onClick={() => setTab(t)}
@@ -79,6 +81,7 @@ function App() {
             </Suspense>
           )}
           {tab === 'stats'       && <AnalysisCharts laws={regulations} />}
+          {tab === 'rules'       && <RulesMatrix />}
           {tab === 'enforcement' && <EnforcementView />}
           {tab === 'mcp'         && <MCPDocs />}
         </ErrorBoundary>

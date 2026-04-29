@@ -334,6 +334,73 @@ export interface ValidationError {
 export type SortField = 'enacted_date' | 'effective_date' | 'max_penalty_usd_approx' | 'jurisdiction' | 'short_name'
 export type SortDir = 'asc' | 'desc'
 
+// ─── Rules Matrix ────────────────────────────────────────────────────────────
+
+export type RuleCategory =
+  | 'biometric_data'
+  | 'prohibited_uses'
+  | 'impact_assessment'
+  | 'human_review'
+  | 'data_rights'
+  | 'transparency'
+  | 'synthetic_media'
+  | 'enforcement'
+  | 'risk_classification'
+  | 'training_data'
+  | 'foundation_models'
+  | 'consent'
+  | 'employment_ai'
+  | 'general_governance'
+
+export const RULE_CATEGORY_LABELS: Record<RuleCategory, string> = {
+  biometric_data:    'Biometric Data',
+  prohibited_uses:   'Prohibited Uses',
+  impact_assessment: 'Impact Assessment',
+  human_review:      'Human Review Rights',
+  data_rights:       'Individual Data Rights',
+  transparency:      'Transparency & Disclosure',
+  synthetic_media:   'Synthetic Media',
+  enforcement:       'Enforcement & Liability',
+  risk_classification: 'Risk Classification',
+  training_data:     'Training Data',
+  foundation_models: 'Foundation Models / GPAI',
+  consent:           'Consent',
+  employment_ai:     'Employment AI',
+  general_governance:'General AI Governance',
+}
+
+// How a specific law stands relative to the canonical rule
+export type RuleRelationship =
+  | 'origin'    // this law is the first instance — establishes the rule
+  | 'agrees'    // adopts substantially the same obligation / prohibition / right
+  | 'similar'   // addresses the same concept but with meaningful differences
+  | 'opposed'   // explicitly contradicts or rejects the premise
+  // absent is implicit when a law does not appear in the instances array
+
+export interface RuleLawInstance {
+  law_id: string
+  relationship: RuleRelationship
+  citation: string   // e.g. "§ 15(b)" or "Art. 5(1)(h)"
+  notes: string      // one sentence on what differs or why it matches
+}
+
+export interface RuleFirstInstance {
+  law_id: string
+  law_name: string   // full citation-friendly name
+  citation: string
+  date: string       // ISO date — used to determine primacy chronologically
+}
+
+export interface Rule {
+  rule_id: string                  // anchored to first instance: "{law_id}-{section_slug}"
+  rule_text: string                // plain English premise, 1-3 sentences
+  rule_text_technical: string      // precise legal framing
+  category: RuleCategory
+  tags: string[]
+  first_instance: RuleFirstInstance
+  instances: RuleLawInstance[]     // all non-absent laws; absent is the default
+}
+
 export interface FilterState {
   search: string
   country: string

@@ -1,0 +1,815 @@
+[
+  {
+    "rule_id": "us-il-bipa-2008-s15a",
+    "rule_text": "Organizations that collect biometric data must publish a written retention schedule and destruction policy before collecting any data, and must actually destroy the data when the purpose expires or within three years, whichever comes first.",
+    "rule_text_technical": "No private entity may collect, capture, purchase, receive through trade, or otherwise obtain a person's biometric identifier or biometric information unless it first develops a written policy, made available to the public, establishing a retention schedule and guidelines for permanently destroying biometric identifiers and biometric information.",
+    "category": "biometric_data",
+    "tags": ["biometric", "retention", "destruction", "written_policy"],
+    "first_instance": {
+      "law_id": "us-il-bipa-2008",
+      "law_name": "Illinois Biometric Information Privacy Act, 740 ILCS 14/15(a)",
+      "citation": "§ 15(a)",
+      "date": "2008-10-03"
+    },
+    "instances": [
+      {
+        "law_id": "us-il-bipa-2008",
+        "relationship": "origin",
+        "citation": "§ 15(a)",
+        "notes": "First law globally requiring a publicly available written retention and destruction schedule before biometric data collection begins."
+      },
+      {
+        "law_id": "eu-eu-gdpr-2016",
+        "relationship": "similar",
+        "citation": "Art. 5(1)(e)",
+        "notes": "Storage limitation principle requires data to be kept no longer than necessary, but does not require a publicly published schedule."
+      },
+      {
+        "law_id": "br-br-lgpd-2018",
+        "relationship": "similar",
+        "citation": "Art. 16",
+        "notes": "Requires deletion after processing purpose is fulfilled, but no pre-collection public policy requirement."
+      }
+    ]
+  },
+  {
+    "rule_id": "us-il-bipa-2008-s15b",
+    "rule_text": "You must obtain written informed consent from a person before collecting, capturing, or otherwise obtaining their biometric identifiers or biometric information. The person must be told what is being collected, why, and for how long.",
+    "rule_text_technical": "No private entity may collect, capture, purchase, receive through trade, or otherwise obtain a person's biometric identifier or biometric information unless it first informs the subject in writing of the specific purpose and length of term for which such identifier or information is being collected, stored and used, and receives a written release executed by the subject.",
+    "category": "biometric_data",
+    "tags": ["biometric", "consent", "written_consent", "opt_in"],
+    "first_instance": {
+      "law_id": "us-il-bipa-2008",
+      "law_name": "Illinois Biometric Information Privacy Act, 740 ILCS 14/15(b)",
+      "citation": "§ 15(b)",
+      "date": "2008-10-03"
+    },
+    "instances": [
+      {
+        "law_id": "us-il-bipa-2008",
+        "relationship": "origin",
+        "citation": "§ 15(b)",
+        "notes": "First law globally requiring affirmative written opt-in consent before any biometric data collection by a private entity."
+      },
+      {
+        "law_id": "eu-eu-gdpr-2016",
+        "relationship": "similar",
+        "citation": "Art. 9(2)(a)",
+        "notes": "Requires explicit consent for biometric processing as sensitive data, but allows other legal bases (employment, vital interests) and does not require written form."
+      },
+      {
+        "law_id": "us-ca-ccpa-cpra-2018",
+        "relationship": "similar",
+        "citation": "§ 1798.121",
+        "notes": "Provides opt-out right for use/sharing of sensitive personal information (including biometrics) rather than opt-in consent before collection."
+      },
+      {
+        "law_id": "br-br-lgpd-2018",
+        "relationship": "similar",
+        "citation": "Art. 11, 17",
+        "notes": "Requires consent for sensitive personal data including biometrics, but consent can be implied in some employment contexts."
+      },
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "similar",
+        "citation": "Art. 5(1)(h)",
+        "notes": "Prohibits real-time remote biometric identification in public spaces without explicit authorisation; does not establish a general pre-collection consent rule."
+      },
+      {
+        "law_id": "cn-cn-genai-2023",
+        "relationship": "opposed",
+        "citation": "Art. 4",
+        "notes": "Permits biometric data collection and processing for state security and social management purposes without individual consent."
+      }
+    ]
+  },
+  {
+    "rule_id": "us-il-bipa-2008-s15c",
+    "rule_text": "Organizations may not sell, lease, trade, or otherwise profit from a person's biometric data. Biometric data must not be disclosed to third parties without consent.",
+    "rule_text_technical": "No private entity in possession of a biometric identifier or biometric information may sell, lease, trade, or otherwise profit from a person's or a customer's biometric identifier or biometric information.",
+    "category": "biometric_data",
+    "tags": ["biometric", "no_sale", "data_monetization", "third_party_disclosure"],
+    "first_instance": {
+      "law_id": "us-il-bipa-2008",
+      "law_name": "Illinois Biometric Information Privacy Act, 740 ILCS 14/15(c)",
+      "citation": "§ 15(c)",
+      "date": "2008-10-03"
+    },
+    "instances": [
+      {
+        "law_id": "us-il-bipa-2008",
+        "relationship": "origin",
+        "citation": "§ 15(c)",
+        "notes": "First law to categorically prohibit monetisation of biometric data regardless of consent."
+      },
+      {
+        "law_id": "eu-eu-gdpr-2016",
+        "relationship": "similar",
+        "citation": "Art. 5(1)(b), Art. 9",
+        "notes": "Purpose limitation and special category protections restrict commercial use, but do not impose a categorical sale prohibition."
+      },
+      {
+        "law_id": "us-ca-ccpa-cpra-2018",
+        "relationship": "similar",
+        "citation": "§ 1798.120",
+        "notes": "Consumers can opt out of sale/sharing of sensitive personal information but no outright prohibition on selling biometrics."
+      }
+    ]
+  },
+  {
+    "rule_id": "us-il-bipa-2008-s20",
+    "rule_text": "Any person whose biometric privacy rights are violated can sue the collector directly and recover $1,000 to $5,000 per violation (plus attorney's fees) without proving actual harm. Class actions are permitted.",
+    "rule_text_technical": "Any person aggrieved by a violation of BIPA shall have a right of action in a State circuit court and may recover liquidated damages of $1,000 or actual damages, whichever is greater, for negligent violations; $5,000 or actual damages for intentional or reckless violations; plus reasonable attorneys' fees and costs and injunctive or other appropriate equitable relief.",
+    "category": "enforcement",
+    "tags": ["private_right_of_action", "statutory_damages", "class_action", "no_harm_required"],
+    "first_instance": {
+      "law_id": "us-il-bipa-2008",
+      "law_name": "Illinois Biometric Information Privacy Act, 740 ILCS 14/20",
+      "citation": "§ 20",
+      "date": "2008-10-03"
+    },
+    "instances": [
+      {
+        "law_id": "us-il-bipa-2008",
+        "relationship": "origin",
+        "citation": "§ 20",
+        "notes": "First statutory damages + no-actual-harm-required private right of action for biometric privacy in the world; enabled the landmark $650M Facebook settlement."
+      },
+      {
+        "law_id": "eu-eu-gdpr-2016",
+        "relationship": "similar",
+        "citation": "Art. 82",
+        "notes": "Allows individuals to sue for material and non-material damage but requires proof of actual harm; no statutory per-violation amount."
+      },
+      {
+        "law_id": "us-ca-ccpa-cpra-2018",
+        "relationship": "similar",
+        "citation": "§ 1798.150",
+        "notes": "Limited private right of action for data breaches only ($100–$750 statutory damages); no broader PRA for biometric-specific violations."
+      },
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "opposed",
+        "citation": "Art. 99",
+        "notes": "EU AI Act relies on government-only regulatory fines; no private right of action for individuals."
+      },
+      {
+        "law_id": "us-co-sb205-2024",
+        "relationship": "opposed",
+        "citation": "§ 6-1-1704",
+        "notes": "Enforcement is exclusively by the Colorado Attorney General; no private right of action."
+      }
+    ]
+  },
+  {
+    "rule_id": "eu-eu-gdpr-2016-art22",
+    "rule_text": "Individuals have the right not to be subject to a decision based solely on automated processing — including profiling — that produces a legal or similarly significant effect on them, unless they have given explicit consent or it is necessary for a contract.",
+    "rule_text_technical": "Data subjects shall have the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning them or similarly significantly affects them, except where the processing is necessary for a contract, authorised by Union or Member State law, or based on the data subject's explicit consent.",
+    "category": "human_review",
+    "tags": ["automated_decision", "profiling", "right_to_human_review", "legal_effects"],
+    "first_instance": {
+      "law_id": "eu-eu-gdpr-2016",
+      "law_name": "General Data Protection Regulation, Art. 22",
+      "citation": "Art. 22(1)",
+      "date": "2016-04-14"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-gdpr-2016",
+        "relationship": "origin",
+        "citation": "Art. 22(1)",
+        "notes": "First binding right not to be subject to solely automated consequential decisions; concept traces to France's 1978 Loi Informatique et Libertés."
+      },
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "agrees",
+        "citation": "Art. 14",
+        "notes": "High-risk AI systems must enable effective human oversight and intervention; functionally implements Art. 22 at the product level."
+      },
+      {
+        "law_id": "us-co-sb205-2024",
+        "relationship": "similar",
+        "citation": "§ 6-1-1703(3)",
+        "notes": "Individuals may request that a consequential decision made by high-risk AI be reviewed by a human; limited to 'high-risk AI' contexts."
+      },
+      {
+        "law_id": "br-br-aiact-2025",
+        "relationship": "similar",
+        "citation": "Art. 22",
+        "notes": "Right to request review of automated decisions that significantly affect individual rights."
+      },
+      {
+        "law_id": "us-nyc-ll144-2021",
+        "relationship": "similar",
+        "citation": "§ 20-871",
+        "notes": "Requires notice when AI is used in employment decisions but does not grant a right to human review."
+      },
+      {
+        "law_id": "cn-cn-genai-2023",
+        "relationship": "opposed",
+        "citation": "Art. 4",
+        "notes": "China's framework does not recognize a right against automated consequential decisions; state decisions are expressly permitted."
+      }
+    ]
+  },
+  {
+    "rule_id": "eu-eu-gdpr-2016-art35",
+    "rule_text": "Before deploying any AI system that poses high risks to individuals' rights, the operator must first complete a Data Protection Impact Assessment documenting the risks and mitigation measures.",
+    "rule_text_technical": "Where a type of processing using new technologies and taking into account the nature, scope, context and purposes of the processing is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall carry out an assessment of the impact of the envisaged processing operations on the protection of personal data prior to the processing.",
+    "category": "impact_assessment",
+    "tags": ["dpia", "pre_deployment_assessment", "high_risk", "new_technologies"],
+    "first_instance": {
+      "law_id": "eu-eu-gdpr-2016",
+      "law_name": "General Data Protection Regulation, Art. 35",
+      "citation": "Art. 35",
+      "date": "2016-04-14"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-gdpr-2016",
+        "relationship": "origin",
+        "citation": "Art. 35",
+        "notes": "First binding pre-deployment impact assessment requirement for high-risk data processing; AI systems using personal data trigger this requirement."
+      },
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "agrees",
+        "citation": "Art. 9 (FRIA for high-risk)",
+        "notes": "High-risk AI deployers in public contexts must conduct a Fundamental Rights Impact Assessment; explicitly builds on GDPR Art. 35."
+      },
+      {
+        "law_id": "us-co-sb205-2024",
+        "relationship": "similar",
+        "citation": "§ 6-1-1703(2)",
+        "notes": "Requires an algorithmic impact assessment (AIA) for high-risk AI; must cover bias, civil rights impacts, and data governance."
+      },
+      {
+        "law_id": "us-nyc-ll144-2021",
+        "relationship": "similar",
+        "citation": "§ 20-871",
+        "notes": "Requires annual independent bias audit of automated employment decision tools, published publicly; narrower than DPIA."
+      },
+      {
+        "law_id": "br-br-aiact-2025",
+        "relationship": "similar",
+        "citation": "Art. 15",
+        "notes": "High-risk AI systems must undergo an impact assessment covering societal and individual rights risks before deployment."
+      },
+      {
+        "law_id": "us-ca-ccpa-cpra-2018",
+        "relationship": "similar",
+        "citation": "§ 1798.185(a)(16)",
+        "notes": "CPRA regulations require risk assessments for AI using personal data that presents significant privacy risks."
+      },
+      {
+        "law_id": "cn-cn-genai-2023",
+        "relationship": "similar",
+        "citation": "Art. 17",
+        "notes": "Generative AI services must undergo a security assessment filed with Chinese regulators before public release."
+      }
+    ]
+  },
+  {
+    "rule_id": "eu-eu-gdpr-2016-art17",
+    "rule_text": "Individuals have the right to request deletion of their personal data, and this right extends to data used to train AI systems.",
+    "rule_text_technical": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay where the personal data are no longer necessary in relation to the purposes for which they were collected or processed, or the data subject withdraws consent.",
+    "category": "data_rights",
+    "tags": ["right_to_erasure", "right_to_delete", "training_data", "personal_data"],
+    "first_instance": {
+      "law_id": "eu-eu-gdpr-2016",
+      "law_name": "General Data Protection Regulation, Art. 17",
+      "citation": "Art. 17",
+      "date": "2016-04-14"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-gdpr-2016",
+        "relationship": "origin",
+        "citation": "Art. 17",
+        "notes": "First codified 'right to be forgotten' as a binding legal entitlement; enforced against AI training datasets by DPAs since 2023."
+      },
+      {
+        "law_id": "us-ca-ccpa-cpra-2018",
+        "relationship": "agrees",
+        "citation": "§ 1798.105",
+        "notes": "Provides a consumer right to deletion of personal information; applies to data held by AI developers and deployers."
+      },
+      {
+        "law_id": "br-br-lgpd-2018",
+        "relationship": "agrees",
+        "citation": "Art. 18(VI)",
+        "notes": "Right to anonymization, blocking, or elimination of unnecessary or unlawful data; similar scope to GDPR Art. 17."
+      },
+      {
+        "law_id": "us-co-sb205-2024",
+        "relationship": "similar",
+        "citation": "§ 6-1-1703(3)",
+        "notes": "Right to correct data used in high-risk AI decisions but no standalone deletion right."
+      }
+    ]
+  },
+  {
+    "rule_id": "us-ca-ccpa-cpra-2018-s1798120",
+    "rule_text": "Consumers have the right to opt out of the sale or sharing of their personal data, including data used to train AI systems or for targeted advertising.",
+    "rule_text_technical": "A consumer shall have the right, at any time, to direct a business that sells personal information about the consumer to third parties not to sell the consumer's personal information (opt-out right). Amended by CPRA to also cover sharing of personal information for cross-context behavioral advertising.",
+    "category": "data_rights",
+    "tags": ["opt_out", "data_sale", "sharing", "ai_training", "advertising"],
+    "first_instance": {
+      "law_id": "us-ca-ccpa-cpra-2018",
+      "law_name": "California Consumer Privacy Act / CPRA, § 1798.120",
+      "citation": "§ 1798.120",
+      "date": "2018-06-28"
+    },
+    "instances": [
+      {
+        "law_id": "us-ca-ccpa-cpra-2018",
+        "relationship": "origin",
+        "citation": "§ 1798.120",
+        "notes": "First US law granting a general opt-out right against data sale and sharing; extended by CPRA to cover sharing for behavioral advertising."
+      },
+      {
+        "law_id": "eu-eu-gdpr-2016",
+        "relationship": "similar",
+        "citation": "Art. 21",
+        "notes": "Right to object to processing for direct marketing (absolute) and other purposes (qualified); opt-out rather than opt-in for most processing."
+      },
+      {
+        "law_id": "br-br-lgpd-2018",
+        "relationship": "similar",
+        "citation": "Art. 18(IV)",
+        "notes": "Right to object to processing based on legitimate interest or public interest, but no explicit opt-out from data sale."
+      }
+    ]
+  },
+  {
+    "rule_id": "us-nyc-ll144-2021-s1",
+    "rule_text": "Employers using automated tools to screen or rank job candidates must notify candidates before the interview that such a tool is being used, and must publish an annual independent bias audit of the tool.",
+    "rule_text_technical": "It shall be unlawful for an employer or employment agency to use an automated employment decision tool (AEDT) to screen a candidate or employee in the city of New York unless: (1) the tool has been the subject of a bias audit conducted no more than one year prior; (2) a summary of the results of the most recent bias audit has been made publicly available; (3) the employer has notified candidates of the use of such tool.",
+    "category": "employment_ai",
+    "tags": ["employment", "hiring", "bias_audit", "aedt", "notice_requirement"],
+    "first_instance": {
+      "law_id": "us-nyc-ll144-2021",
+      "law_name": "New York City Local Law 144, § 20-871",
+      "citation": "§ 20-871",
+      "date": "2021-11-10"
+    },
+    "instances": [
+      {
+        "law_id": "us-nyc-ll144-2021",
+        "relationship": "origin",
+        "citation": "§ 20-871",
+        "notes": "First binding annual-audit + public-disclosure requirement for AI hiring tools; used 'bias audit' framing that influenced subsequent state laws."
+      },
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "similar",
+        "citation": "Annex III, Art. 43",
+        "notes": "Employment AI is classified as high-risk; requires conformity assessment and documentation before deployment, but no mandatory annual external audit."
+      },
+      {
+        "law_id": "us-co-sb205-2024",
+        "relationship": "similar",
+        "citation": "§ 6-1-1703",
+        "notes": "High-risk AI in employment requires algorithmic impact assessment and candidate notice, but assessment is internal rather than independent."
+      },
+      {
+        "law_id": "us-il-hb3773-2024",
+        "relationship": "similar",
+        "citation": "§ 2-102(A-10)",
+        "notes": "Prohibits AI-driven employment discrimination in Illinois; strict liability for disparate impact — stronger substantive standard than NYC LL 144's transparency-only approach."
+      }
+    ]
+  },
+  {
+    "rule_id": "eu-eu-aiact-2024-art5c",
+    "rule_text": "AI systems that evaluate or classify people based on their social behaviour or personal characteristics in order to assign a social score used to restrict or harm them are absolutely prohibited.",
+    "rule_text_technical": "The placing on the market, putting into service and use of AI systems that evaluate or classify natural persons or groups of persons over a certain period of time based on their social behaviour or known, inferred or predicted personal or personality characteristics, with the social score leading to either detrimental or unfavourable treatment of those persons or groups in social contexts unrelated to the contexts in which the data was originally generated, shall be prohibited.",
+    "category": "prohibited_uses",
+    "tags": ["social_scoring", "social_credit", "prohibited_ai", "mass_surveillance"],
+    "first_instance": {
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "EU AI Act, Art. 5(1)(c)",
+      "citation": "Art. 5(1)(c)",
+      "date": "2024-08-01"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "origin",
+        "citation": "Art. 5(1)(c)",
+        "notes": "First binding prohibition on AI social scoring systems in any major jurisdiction."
+      },
+      {
+        "law_id": "us-tx-hb149-2025",
+        "relationship": "agrees",
+        "citation": "§ 552A.052(a)(3)",
+        "notes": "TRAIGA prohibits AI systems that create or implement social credit scores affecting individual rights or opportunities."
+      },
+      {
+        "law_id": "cn-cn-genai-2023",
+        "relationship": "opposed",
+        "citation": "Art. 4",
+        "notes": "China's framework permits and deploys social credit and social scoring as a state governance mechanism — the exact practice the EU prohibition targets."
+      },
+      {
+        "law_id": "br-br-aiact-2025",
+        "relationship": "similar",
+        "citation": "Art. 16(III)",
+        "notes": "Brazil prohibits AI systems used for social scoring resulting in discriminatory harm, but framing focuses on discrimination rather than the categorical EU ban."
+      }
+    ]
+  },
+  {
+    "rule_id": "eu-eu-aiact-2024-art5a",
+    "rule_text": "AI systems that use subliminal techniques, deceptive tactics, or psychological manipulation to influence people's decisions in ways that harm them are absolutely prohibited.",
+    "rule_text_technical": "The placing on the market, putting into service and use of AI systems that deploy subliminal techniques beyond a person's consciousness or purposefully manipulative or deceptive techniques, with the objective or the effect of materially distorting the behaviour of a person or a group of persons by appreciably impairing their ability to make an informed decision, thereby causing them to take a decision they would not have otherwise taken in a manner that causes or is reasonably likely to cause that person significant harm, shall be prohibited.",
+    "category": "prohibited_uses",
+    "tags": ["manipulation", "subliminal", "deception", "prohibited_ai", "consumer_protection"],
+    "first_instance": {
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "EU AI Act, Art. 5(1)(a)",
+      "citation": "Art. 5(1)(a)",
+      "date": "2024-08-01"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "origin",
+        "citation": "Art. 5(1)(a)",
+        "notes": "First binding prohibition on AI-powered subliminal manipulation techniques in any major jurisdiction."
+      },
+      {
+        "law_id": "br-br-aiact-2025",
+        "relationship": "similar",
+        "citation": "Art. 16(I)",
+        "notes": "Prohibits AI systems designed to manipulate individuals through psychological mechanisms that impair free decision-making."
+      },
+      {
+        "law_id": "us-tx-hb149-2025",
+        "relationship": "similar",
+        "citation": "§ 552A.052(a)(1)",
+        "notes": "Prohibits AI designed to manipulate an individual through psychological exploitation; requires intentional design element."
+      }
+    ]
+  },
+  {
+    "rule_id": "eu-eu-aiact-2024-art5h",
+    "rule_text": "Real-time remote biometric identification of individuals in publicly accessible spaces by law enforcement AI is prohibited, except under narrow judicial-authorised exceptions for specific serious crimes.",
+    "rule_text_technical": "The use by or on behalf of competent authorities of 'real-time' remote biometric identification systems in publicly accessible spaces for the purpose of law enforcement shall be prohibited unless strictly necessary for limited objectives, including the search for missing victims, prevention of specific terrorist threats, or prosecution of criminals for serious offences listed in Annex II, and subject to prior judicial authorisation.",
+    "category": "prohibited_uses",
+    "tags": ["facial_recognition", "biometric_surveillance", "law_enforcement", "public_space", "real_time"],
+    "first_instance": {
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "EU AI Act, Art. 5(1)(h)",
+      "citation": "Art. 5(1)(h)",
+      "date": "2024-08-01"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "origin",
+        "citation": "Art. 5(1)(h)",
+        "notes": "First binding prohibition on real-time public biometric surveillance by law enforcement in any major jurisdiction."
+      },
+      {
+        "law_id": "us-il-bipa-2008",
+        "relationship": "similar",
+        "citation": "§ 15(b)",
+        "notes": "Consent-first rule effectively prohibits mass public biometric collection, but applies to private entities only, not law enforcement."
+      },
+      {
+        "law_id": "cn-cn-genai-2023",
+        "relationship": "opposed",
+        "citation": "Art. 4",
+        "notes": "China operates one of the world's largest public biometric surveillance systems; no prohibition on real-time identification."
+      }
+    ]
+  },
+  {
+    "rule_id": "eu-eu-aiact-2024-art14",
+    "rule_text": "High-risk AI systems must be designed so that humans can effectively oversee, monitor, and intervene or override the system's outputs. Oversight must be more than nominal.",
+    "rule_text_technical": "High-risk AI systems shall be designed and developed in such a way, including with appropriate human-machine interface tools, that they can be effectively overseen by natural persons during the period in which the AI system is in use. Providers shall ensure that operators can intervene, override, or stop the system.",
+    "category": "human_review",
+    "tags": ["human_oversight", "human_in_the_loop", "override", "high_risk_ai"],
+    "first_instance": {
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "EU AI Act, Art. 14",
+      "citation": "Art. 14",
+      "date": "2024-08-01"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "origin",
+        "citation": "Art. 14",
+        "notes": "First product-level design requirement for meaningful human oversight of high-risk AI systems."
+      },
+      {
+        "law_id": "eu-eu-gdpr-2016",
+        "relationship": "similar",
+        "citation": "Art. 22(3)",
+        "notes": "GDPR requires that automated decisions under Art. 22 must allow human intervention and contest; AI Act operationalises this at the system design level."
+      },
+      {
+        "law_id": "us-co-sb205-2024",
+        "relationship": "similar",
+        "citation": "§ 6-1-1703(3)(a)",
+        "notes": "High-risk AI deployers must provide a mechanism for consumers to appeal or review AI decisions; does not specify design requirements."
+      },
+      {
+        "law_id": "br-br-aiact-2025",
+        "relationship": "agrees",
+        "citation": "Art. 14",
+        "notes": "High-risk AI must include human oversight mechanisms and allow operators to override or stop outputs."
+      }
+    ]
+  },
+  {
+    "rule_id": "eu-eu-aiact-2024-art50a",
+    "rule_text": "Users must be clearly informed when they are interacting with an AI system, not a human. This applies to chatbots, voice assistants, and any AI designed for direct human interaction.",
+    "rule_text_technical": "Providers of AI systems intended to interact directly with natural persons shall ensure that those natural persons are informed that they are interacting with an AI system, unless this is obvious from the context.",
+    "category": "transparency",
+    "tags": ["chatbot_disclosure", "ai_identity", "transparency", "consumer_awareness"],
+    "first_instance": {
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "EU AI Act, Art. 50(1)",
+      "citation": "Art. 50(1)",
+      "date": "2024-08-01"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "origin",
+        "citation": "Art. 50(1)",
+        "notes": "First major binding chatbot/AI interaction disclosure requirement in a comprehensive AI governance law."
+      },
+      {
+        "law_id": "us-tx-hb149-2025",
+        "relationship": "agrees",
+        "citation": "§ 552A.053",
+        "notes": "Requires operators of AI systems that interact with consumers to clearly disclose when a consumer is interacting with AI."
+      },
+      {
+        "law_id": "cn-cn-genai-2023",
+        "relationship": "agrees",
+        "citation": "Art. 9",
+        "notes": "Generative AI services must prominently label AI-generated content and notify users of AI system interactions."
+      },
+      {
+        "law_id": "br-br-aiact-2025",
+        "relationship": "agrees",
+        "citation": "Art. 20",
+        "notes": "AI systems that interact directly with users must identify themselves as AI."
+      }
+    ]
+  },
+  {
+    "rule_id": "eu-eu-aiact-2024-art50d",
+    "rule_text": "AI-generated images, audio, and video must be marked with a machine-readable watermark or provenance label so that the content's artificial origin can be detected.",
+    "rule_text_technical": "Providers of general-purpose AI models shall ensure that AI-generated content is marked in a machine-readable format, and is detectable as artificially generated or manipulated using automated means, through technical solutions such as watermarks, metadata identifications, or cryptographic methods.",
+    "category": "synthetic_media",
+    "tags": ["watermark", "content_provenance", "synthetic_media", "ai_generated_content", "deepfake"],
+    "first_instance": {
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "EU AI Act, Art. 50(4)",
+      "citation": "Art. 50(4)",
+      "date": "2024-08-01"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "origin",
+        "citation": "Art. 50(4)",
+        "notes": "First binding machine-readable watermarking / provenance requirement for AI-generated content."
+      },
+      {
+        "law_id": "cn-cn-genai-2023",
+        "relationship": "agrees",
+        "citation": "Art. 12",
+        "notes": "Requires AI-generated content to be marked with conspicuous labels and to embed machine-readable watermarks."
+      },
+      {
+        "law_id": "us-wa-hb1170-2026",
+        "relationship": "agrees",
+        "citation": "§ 3(1)",
+        "notes": "Requires AI-generated content to include invisible cryptographic watermarks detectable by a free public tool."
+      },
+      {
+        "law_id": "us-fed-take-it-down-2026",
+        "relationship": "similar",
+        "citation": "§ 3",
+        "notes": "Requires platforms to remove non-consensual intimate AI content but does not mandate watermarking at generation."
+      }
+    ]
+  },
+  {
+    "rule_id": "eu-eu-aiact-2024-art53c",
+    "rule_text": "Providers of general-purpose AI models must comply with EU copyright law when training their models, and must make available a summary of the training data used to allow copyright holders to assess whether their works were included.",
+    "rule_text_technical": "Providers of general-purpose AI models shall put in place a policy to comply with Union copyright law, and in particular to identify and comply with opt-out reservations expressed pursuant to Article 4(3) of Directive 2019/790 on copyright in the Digital Single Market; and make publicly available a sufficiently detailed summary of the content used for training.",
+    "category": "training_data",
+    "tags": ["training_data", "copyright", "gpai", "opt_out_mechanism", "transparency"],
+    "first_instance": {
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "EU AI Act, Art. 53(1)(c)–(d)",
+      "citation": "Art. 53(1)(c)–(d)",
+      "date": "2024-08-01"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "origin",
+        "citation": "Art. 53(1)(c)–(d)",
+        "notes": "First binding requirement combining copyright opt-out compliance with public training data summary disclosure for GPAI providers."
+      },
+      {
+        "law_id": "us-ca-ab2013-2024",
+        "relationship": "similar",
+        "citation": "§ 22603",
+        "notes": "Requires AI developers to publish a training data card publicly, but does not address copyright opt-out compliance specifically."
+      },
+      {
+        "law_id": "cn-cn-genai-2023",
+        "relationship": "similar",
+        "citation": "Art. 7",
+        "notes": "Training data must comply with intellectual property law; no opt-out mechanism or public summary requirement."
+      }
+    ]
+  },
+  {
+    "rule_id": "eu-eu-aiact-2024-art55",
+    "rule_text": "Developers of the most powerful AI models (systemic-risk GPAI) must conduct adversarial testing and red-teaming before releasing the model, and must report serious incidents to regulators.",
+    "rule_text_technical": "Providers of general-purpose AI models posing systemic risk shall perform model evaluations in accordance with standardised protocols and adversarial testing of the model to identify and mitigate systemic risks; assess and mitigate possible systemic risks; keep track of, document and report serious incidents and possible corrective measures.",
+    "category": "foundation_models",
+    "tags": ["gpai", "red_teaming", "systemic_risk", "incident_reporting", "evaluation"],
+    "first_instance": {
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "EU AI Act, Art. 55",
+      "citation": "Art. 55",
+      "date": "2024-08-01"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "origin",
+        "citation": "Art. 55",
+        "notes": "First binding pre-release adversarial testing and incident-reporting requirement for frontier AI models."
+      },
+      {
+        "law_id": "us-ca-sb53-2025",
+        "relationship": "similar",
+        "citation": "§ 22603",
+        "notes": "Frontier model developers must publish safety policies and conduct pre-deployment safety evaluations, but no formal redteaming requirement."
+      },
+      {
+        "law_id": "us-co-sb205-2024",
+        "relationship": "similar",
+        "citation": "§ 6-1-1703(2)",
+        "notes": "Requires algorithmic impact assessment prior to deployment but focused on discrimination/bias, not broader systemic safety risks."
+      }
+    ]
+  },
+  {
+    "rule_id": "us-co-sb205-2024-s3",
+    "rule_text": "A 'high-risk AI system' is any AI that makes or materially influences consequential decisions affecting someone's education, employment, financial services, healthcare, housing, insurance, or legal rights.",
+    "rule_text_technical": "A 'high-risk artificial intelligence system' means an artificial intelligence system that is specifically intended to autonomously make, or be a substantial factor in making, a consequential decision. A 'consequential decision' means a decision that has a material legal or similarly significant effect on the provision or denial to any consumer of education, employment, financial or lending services, essential government services, healthcare, housing, insurance, or legal services.",
+    "category": "risk_classification",
+    "tags": ["high_risk_definition", "consequential_decision", "risk_tiers", "scope"],
+    "first_instance": {
+      "law_id": "us-co-sb205-2024",
+      "law_name": "Colorado SB 24-205 (Colorado AI Act), § 6-1-1702",
+      "citation": "§ 6-1-1702 (definitions)",
+      "date": "2024-05-17"
+    },
+    "instances": [
+      {
+        "law_id": "us-co-sb205-2024",
+        "relationship": "origin",
+        "citation": "§ 6-1-1702",
+        "notes": "First US state 'high-risk AI' definition anchored to consequential decision domains; influenced subsequent state bills."
+      },
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "similar",
+        "citation": "Art. 6, Annex III",
+        "notes": "EU uses a sector-and-use-case list (Annex III) rather than a consequential-decision definition; covers similar domains but is more prescriptive."
+      },
+      {
+        "law_id": "us-tx-hb149-2025",
+        "relationship": "agrees",
+        "citation": "§ 552A.001",
+        "notes": "Texas TRAIGA adopts the same consequential-decision framing across the same sector list."
+      },
+      {
+        "law_id": "us-wa-hb2225-2026",
+        "relationship": "agrees",
+        "citation": "§ 2(7)",
+        "notes": "Washington AI Act uses substantially the same consequential-decision definition covering the same sectors."
+      },
+      {
+        "law_id": "br-br-aiact-2025",
+        "relationship": "similar",
+        "citation": "Art. 9",
+        "notes": "High-risk AI defined by potential for severe, widespread, or irreversible harm, plus sectoral lists; similar domains, different framing."
+      }
+    ]
+  },
+  {
+    "rule_id": "us-tn-elvisa-2024-s3",
+    "rule_text": "Performers have the right to control and be compensated for any AI-generated reproduction of their voice, likeness, or digital replica. Using a performer's voice or likeness in AI-generated content without consent is a civil offence.",
+    "rule_text_technical": "No person shall use an algorithm, artificial intelligence, digital replica or other technology to perform a recorded action of a performing artist without the express written consent of the performing artist or the artist's representative in connection with a commercial recording, audiovisual work or transmission.",
+    "category": "synthetic_media",
+    "tags": ["voice_cloning", "likeness_rights", "performer_rights", "digital_replica", "right_of_publicity"],
+    "first_instance": {
+      "law_id": "us-tn-elvisa-2024",
+      "law_name": "Tennessee ELVIS Act, § 47-25-1103",
+      "citation": "§ 47-25-1103",
+      "date": "2024-03-21"
+    },
+    "instances": [
+      {
+        "law_id": "us-tn-elvisa-2024",
+        "relationship": "origin",
+        "citation": "§ 47-25-1103",
+        "notes": "First US law specifically protecting performer voice and likeness against AI-generated reproduction; triggered by the proliferation of AI voice cloning tools."
+      },
+      {
+        "law_id": "us-wa-hb1205-2025",
+        "relationship": "agrees",
+        "citation": "§ 63.60.070",
+        "notes": "Washington law grants individuals the right against AI-generated digital replicas of their voice or likeness without consent."
+      },
+      {
+        "law_id": "us-fed-take-it-down-2026",
+        "relationship": "similar",
+        "citation": "§ 2",
+        "notes": "TAKE IT DOWN Act focuses specifically on intimate images; broader voice/likeness protection is out of scope."
+      },
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "similar",
+        "citation": "Art. 50(3)",
+        "notes": "AI-generated deepfakes must be disclosed; no performer-specific right of control, but transparency obligation applies."
+      }
+    ]
+  },
+  {
+    "rule_id": "us-fed-take-it-down-2026-s2",
+    "rule_text": "Creating or publishing non-consensual intimate AI-generated images of a real person is a federal crime. Online platforms must take down such images within 48 hours of a valid notice from the victim.",
+    "rule_text_technical": "It shall be unlawful to knowingly publish an intimate visual depiction of an identifiable individual without consent, including synthetic depictions created by AI. Interactive computer services must remove or disable access to covered material no later than 48 hours after receiving a valid notice from the depicted individual.",
+    "category": "synthetic_media",
+    "tags": ["ncii", "deepfake", "non_consensual", "platform_takedown", "criminal_offence"],
+    "first_instance": {
+      "law_id": "us-fed-take-it-down-2026",
+      "law_name": "TAKE IT DOWN Act, § 2",
+      "citation": "§ 2",
+      "date": "2026-04-28"
+    },
+    "instances": [
+      {
+        "law_id": "us-fed-take-it-down-2026",
+        "relationship": "origin",
+        "citation": "§ 2",
+        "notes": "First US federal law criminalising AI-generated non-consensual intimate images and imposing a 48-hour platform takedown obligation."
+      },
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "similar",
+        "citation": "Art. 50(3)",
+        "notes": "EU AI Act requires labelling of deepfakes; a separate EU CSAM regulation addresses intimate content, but no 48-hour takedown rule for AI-NCII specifically."
+      }
+    ]
+  },
+  {
+    "rule_id": "us-ca-ab2013-2024-s1",
+    "rule_text": "Developers of AI systems trained on datasets exceeding a minimum size threshold must publicly publish a summary of the training data used, including sources, collection methods, and known limitations.",
+    "rule_text_technical": "A developer of an AI system that uses a covered dataset shall post on its website documentation of the covered dataset, including a high-level summary of the types of data in the covered dataset, the sources of the data, how it was collected and processed, whether the data includes personal information or sensitive personal information, and any known limitations.",
+    "category": "training_data",
+    "tags": ["training_data", "transparency", "dataset_documentation", "public_disclosure"],
+    "first_instance": {
+      "law_id": "us-ca-ab2013-2024",
+      "law_name": "California AB 2013 (Training Data Transparency Act), § 22603",
+      "citation": "§ 22603",
+      "date": "2024-09-28"
+    },
+    "instances": [
+      {
+        "law_id": "us-ca-ab2013-2024",
+        "relationship": "origin",
+        "citation": "§ 22603",
+        "notes": "First US law mandating public training data disclosure (summary card) for AI developers; focuses on transparency rather than content compliance."
+      },
+      {
+        "law_id": "eu-eu-aiact-2024",
+        "relationship": "similar",
+        "citation": "Art. 53(1)(d)",
+        "notes": "GPAI providers must publish a training data summary, but it is filed with regulators rather than publicly; also requires copyright opt-out compliance."
+      },
+      {
+        "law_id": "cn-cn-genai-2023",
+        "relationship": "similar",
+        "citation": "Art. 7",
+        "notes": "Training data must comply with content standards and intellectual property law; documentation filed with regulators, not published publicly."
+      }
+    ]
+  }
+]
