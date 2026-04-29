@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useCallback, Fragment } from 'react'
-import type { Rule, RuleCategory, RuleRelationship } from '../types'
+import type { Rule, RuleCategory, RuleRelationship, AILaw } from '../types'
 import { RULE_CATEGORY_LABELS } from '../types'
 import { rules as allRules } from '../data/rules'
 import { embeddings as precomputedEmbeddings } from '../data/embeddings'
@@ -15,6 +15,13 @@ import {
   type SearchResult,
 } from '../lib/semanticSearch'
 
+// ── layout ────────────────────────────────────────────────────────────────────
+
+const DOT = 12
+const CELL = 18
+const REGION_COL = 22   // rotated region label column
+const COUNTRY_COL = 116 // country name column
+
 // ── relationship config ───────────────────────────────────────────────────────
 
 type RelOrAbsent = RuleRelationship | 'absent'
@@ -25,43 +32,99 @@ const REL_CONFIG: Record<RelOrAbsent, { label: string; color: string; border?: s
   agrees:   { label: 'Identical / agrees',      color: '#16A34A' },
   similar:  { label: 'Similar',                 color: '#D97706' },
   opposed:  { label: 'Opposed',                 color: '#DC2626' },
-  absent:   { label: 'Silent / absent',         color: 'transparent', border: '#D4D4D8' },
+  absent:   { label: 'No legislation found',   color: 'transparent' },
 }
 
-// Legend de-duplicates identical/agrees into one entry
-const LEGEND_ITEMS: RelOrAbsent[] = ['origin', 'identical', 'similar', 'opposed', 'absent']
+const LEGEND_ITEMS: RelOrAbsent[] = ['origin', 'identical', 'similar', 'opposed']
 
-const DEFAULT_LAW_IDS = [
-  'eu-eu-aiact-2024',
-  'eu-eu-gdpr-2016',
-  'us-il-bipa-2008',
-  'us-ca-ccpa-cpra-2018',
-  'us-co-sb205-2024',
-  'us-nyc-ll144-2021',
-  'us-tx-hb149-2025',
-  'us-wa-hb2225-2026',
-  'br-br-aiact-2025',
-  'br-br-lgpd-2018',
-  'cn-cn-genai-2023',
-  'us-tn-elvisa-2024',
-  'us-ca-ab2013-2024',
-  'us-ca-sb53-2025',
-  'us-fed-take-it-down-2026',
-]
+const REL_PRIORITY: Record<RelOrAbsent, number> = {
+  origin: 5, identical: 4, agrees: 4, similar: 3, opposed: 2, absent: 0,
+}
 
-const DOT = 12   // dot diameter px
-const CELL = 18  // cell width/height px
+// ── category colors ───────────────────────────────────────────────────────────
+
+const CAT_COLOR: Partial<Record<RuleCategory, string>> = {
+  biometric_data:      '#7C3AED',
+  prohibited_uses:     '#DC2626',
+  impact_assessment:   '#D97706',
+  human_review:        '#0891B2',
+  data_rights:         '#059669',
+  transparency:        '#0284C7',
+  synthetic_media:     '#9333EA',
+  enforcement:         '#B45309',
+  risk_classification: '#BE123C',
+  training_data:       '#15803D',
+  foundation_models:   '#6D28D9',
+  consent:             '#0F766E',
+  employment_ai:       '#1D4ED8',
+  general_governance:  '#475569',
+}
+
+// ── region mapping ────────────────────────────────────────────────────────────
+
+const COUNTRY_REGION: Record<string, string> = {
+  // Supranational (handled separately via 'regional:' prefix keys)
+  // Americas
+  'United States': 'Americas', 'Canada': 'Americas', 'Brazil': 'Americas',
+  'Mexico': 'Americas', 'Argentina': 'Americas', 'Chile': 'Americas',
+  'Colombia': 'Americas', 'Peru': 'Americas',
+  // Europe
+  'United Kingdom': 'Europe', 'France': 'Europe', 'Spain': 'Europe',
+  'Italy': 'Europe', 'Denmark': 'Europe', 'Finland': 'Europe',
+  'Ireland': 'Europe', 'Switzerland': 'Europe', 'Hungary': 'Europe',
+  'Serbia': 'Europe', 'Ukraine': 'Europe', 'Russia': 'Europe',
+  'Turkey': 'Europe',
+  // Asia-Pacific
+  'China': 'Asia-Pacific', 'Japan': 'Asia-Pacific', 'South Korea': 'Asia-Pacific',
+  'Australia': 'Asia-Pacific', 'New Zealand': 'Asia-Pacific', 'Singapore': 'Asia-Pacific',
+  'India': 'Asia-Pacific', 'Indonesia': 'Asia-Pacific', 'Malaysia': 'Asia-Pacific',
+  'Philippines': 'Asia-Pacific', 'Thailand': 'Asia-Pacific', 'Vietnam': 'Asia-Pacific',
+  'Taiwan': 'Asia-Pacific', 'Bangladesh': 'Asia-Pacific', 'Pakistan': 'Asia-Pacific',
+  'Sri Lanka': 'Asia-Pacific', 'Kazakhstan': 'Asia-Pacific', 'Uzbekistan': 'Asia-Pacific',
+  // Middle East & Africa
+  'United Arab Emirates': 'Middle East & Africa', 'Saudi Arabia': 'Middle East & Africa',
+  'Qatar': 'Middle East & Africa', 'Israel': 'Middle East & Africa',
+  'Egypt': 'Middle East & Africa', 'Morocco': 'Middle East & Africa',
+  'Tunisia': 'Middle East & Africa', 'South Africa': 'Middle East & Africa',
+  'Nigeria': 'Middle East & Africa', 'Kenya': 'Middle East & Africa',
+  'Rwanda': 'Middle East & Africa', 'Mauritius': 'Middle East & Africa',
+  'Ethiopia': 'Middle East & Africa',
+}
+
+const REGIONAL_LABELS: Record<string, string> = {
+  EU: 'European Union', CoE: 'Council of Europe',
+  International: 'International / UN', APAC: 'APAC Regional', Africa: 'African Union',
+}
+
+const REGION_ORDER = ['Supranational', 'Americas', 'Europe', 'Asia-Pacific', 'Middle East & Africa', 'Other']
+
+// ── row key helpers ───────────────────────────────────────────────────────────
+// Laws with country='Global / Regional' are disambiguated by region field.
+
+function lawRowKey(law: AILaw): string {
+  if (law.country === 'Global / Regional') return `regional:${law.region}`
+  return law.country
+}
+
+function rowLabel(key: string): string {
+  if (key.startsWith('regional:')) return REGIONAL_LABELS[key.slice(9)] ?? key.slice(9)
+  return key
+}
+
+function rowRegion(key: string): string {
+  if (key.startsWith('regional:')) return 'Supranational'
+  return COUNTRY_REGION[key] ?? 'Other'
+}
 
 // ── dot component ─────────────────────────────────────────────────────────────
 
 function RelDot({ rel, size = DOT }: { rel: RelOrAbsent; size?: number }) {
   const cfg = REL_CONFIG[rel]
+  if (rel === 'absent') return null
   return (
-    <div
-      className="flex-shrink-0 transition-transform duration-100 group-hover/cell:scale-110"
+    <div className="flex-shrink-0 transition-transform duration-100 group-hover/cell:scale-110"
       style={{
-        width: size,
-        height: size,
+        width: size, height: size,
         background: cfg.color,
         borderRadius: '50%',
         border: cfg.border ? `1.5px solid ${cfg.border}` : undefined,
@@ -73,71 +136,90 @@ function RelDot({ rel, size = DOT }: { rel: RelOrAbsent; size?: number }) {
 
 // ── cell popover ──────────────────────────────────────────────────────────────
 
-interface CellDetail { rule: Rule; lawId: string; lawName: string; x: number; y: number }
+interface PopoverData {
+  x: number; y: number
+  rowKey: string
+  mode: 'category' | 'rule'
+  // category mode
+  cat?: string
+  catEntries?: Array<{ rule: Rule; rel: RelOrAbsent; lawId: string; lawName: string; citation?: string }>
+  // rule mode
+  rule?: Rule
+  rel?: RelOrAbsent
+  lawId?: string
+  lawName?: string
+  citation?: string
+  notes?: string
+}
 
-function CellPopover({ d, onClose }: { d: CellDetail; onClose: () => void }) {
-  const inst = d.rule.instances.find(i => i.law_id === d.lawId)
-  const rel: RelOrAbsent = inst ? inst.relationship : 'absent'
-  const cfg = REL_CONFIG[rel]
-  const consensus = useMemo(() => computeConsensus(d.rule), [d.rule])
+function CellPopover({ d, onClose }: { d: PopoverData; onClose: () => void }) {
+  const label = rowLabel(d.rowKey)
 
   return (
     <div
-      className="fixed z-50 bg-white border border-odl-border rounded-lg shadow-2xl p-4 text-xs max-w-xs pointer-events-auto"
-      style={{ left: Math.min(d.x + 10, window.innerWidth - 320), top: Math.min(d.y + 10, window.innerHeight - 260) }}
+      className="fixed z-50 bg-white border border-odl-border rounded-lg shadow-2xl p-4 text-xs max-w-sm pointer-events-auto"
+      style={{ left: Math.min(d.x + 12, window.innerWidth - 340), top: Math.min(d.y + 12, window.innerHeight - 300) }}
       onClick={e => e.stopPropagation()}
     >
       <button className="absolute top-2 right-2 text-odl-subtle hover:text-odl-text text-base leading-none" onClick={onClose}>×</button>
 
-      {/* Relationship badge */}
-      <div className="flex items-center gap-1.5 mb-2">
-        <RelDot rel={rel} size={10} />
-        <span className="font-semibold text-[10px] uppercase tracking-wide" style={{ color: cfg.color === 'transparent' ? '#A1A1AA' : cfg.color }}>
-          {cfg.label}
-        </span>
-      </div>
+      <div className="font-semibold text-odl-text mb-1 pr-4">{label}</div>
 
-      {/* Rule text */}
-      <p className="text-odl-text leading-snug mb-2.5 text-[11px]">{d.rule.rule_text}</p>
-
-      {/* Category + tags */}
-      <div className="flex flex-wrap gap-1 mb-3">
-        <span className="bg-odl-surface border border-odl-border rounded px-1.5 py-px text-[9px] text-odl-subtle font-medium">
-          {RULE_CATEGORY_LABELS[d.rule.category as RuleCategory] ?? d.rule.category}
-        </span>
-        {d.rule.tags.slice(0, 2).map(t => (
-          <span key={t} className="bg-odl-surface border border-odl-border/60 rounded px-1.5 py-px text-[9px] text-odl-subtle">{t}</span>
-        ))}
-      </div>
-
-      {inst ? (
-        <div className="space-y-1 text-odl-muted border-t border-odl-border pt-2.5">
-          <div className="flex items-center gap-1.5 flex-wrap">
-            <span className="font-medium text-odl-text">{d.lawName}</span>
-            {inst.instrument_type && (
-              <span className={`text-[8px] font-bold px-1.5 py-px rounded ${inst.instrument_binding !== false ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-600'}`}>
-                {inst.instrument_binding !== false ? 'BINDING' : 'SOFT LAW'}
-              </span>
-            )}
+      {d.mode === 'category' && d.cat !== undefined && (
+        <>
+          <div className="text-[10px] text-odl-subtle uppercase tracking-wide mb-2 font-medium">
+            {RULE_CATEGORY_LABELS[d.cat as RuleCategory] ?? d.cat}
           </div>
-          <div><span className="font-medium text-odl-text">Citation:</span> {inst.citation}</div>
-          {inst.variant_of && <div><span className="font-medium text-odl-text">Copied from:</span> {inst.variant_of}</div>}
-          {inst.notes && <p className="text-odl-subtle leading-relaxed mt-1">{inst.notes}</p>}
-        </div>
-      ) : (
-        <p className="text-odl-subtle border-t border-odl-border pt-2.5">This law is silent on this rule.</p>
+          {(!d.catEntries || d.catEntries.length === 0) ? (
+            <p className="text-odl-subtle">No legislation found in this category.</p>
+          ) : (
+            <div className="space-y-2 max-h-64 overflow-y-auto">
+              {d.catEntries.map((e, i) => (
+                <div key={i} className="border-t border-odl-border/40 pt-1.5 first:border-0 first:pt-0">
+                  <div className="flex items-center gap-1.5 mb-0.5">
+                    <RelDot rel={e.rel} size={8} />
+                    <span className="font-medium text-odl-text text-[10px]">{e.lawName}</span>
+                  </div>
+                  <p className="text-odl-muted leading-snug text-[10px] pl-4">{e.rule.rule_text.slice(0, 120)}{e.rule.rule_text.length > 120 ? '…' : ''}</p>
+                  {e.citation && <p className="text-odl-subtle text-[9px] pl-4 mt-0.5">{e.citation}</p>}
+                </div>
+              ))}
+            </div>
+          )}
+        </>
       )}
 
-      <div className="mt-2.5 pt-2 border-t border-odl-border space-y-0.5 text-[9px] text-odl-subtle">
-        <div><span className="font-medium">First:</span> {d.rule.first_instance.law_name} ({d.rule.first_instance.date.slice(0, 4)})</div>
-        {consensus.adoptions > 0 && (
-          <div>
-            <span className="font-medium">Consensus:</span> {consensus.law_id}
-            <span className="ml-1 text-odl-subtle">({consensus.adoptions} adopted)</span>
-            {!consensus.isFirstInstance && <span className="ml-1 text-amber-600 font-medium">★ later</span>}
-          </div>
-        )}
-      </div>
+      {d.mode === 'rule' && d.rule && (
+        <>
+          {d.rel && d.rel !== 'absent' ? (
+            <div className="flex items-center gap-1.5 mb-2">
+              <RelDot rel={d.rel} size={8} />
+              <span className="text-[10px] font-medium" style={{ color: REL_CONFIG[d.rel].color }}>
+                {REL_CONFIG[d.rel].label}
+              </span>
+            </div>
+          ) : (
+            <p className="text-odl-subtle mb-2">No legislation found for this rule.</p>
+          )}
+          <p className="text-odl-text leading-snug mb-2 text-[11px]">{d.rule.rule_text}</p>
+          {d.lawName && (
+            <div className="border-t border-odl-border pt-2 space-y-0.5 text-[10px] text-odl-muted">
+              <div><span className="font-medium text-odl-text">{d.lawName}</span></div>
+              {d.citation && <div>{d.citation}</div>}
+              {d.notes && <p className="text-odl-subtle mt-1">{d.notes}</p>}
+            </div>
+          )}
+          {(() => {
+            const consensus = computeConsensus(d.rule)
+            return consensus.adoptions > 0 ? (
+              <div className="mt-1.5 text-[9px] text-odl-subtle">
+                <span className="font-medium">Consensus:</span> {consensus.law_id}
+                <span className="ml-1">({consensus.adoptions} adopted)</span>
+              </div>
+            ) : null
+          })()}
+        </>
+      )}
     </div>
   )
 }
@@ -158,10 +240,8 @@ function SemanticSearchPanel({ onResults, onClear }: { onResults: (r: SearchResu
       await initModel((p: LoadProgress) => setModelProgress(Math.round(p.pct)))
     }
     setStatus('searching')
-    try {
-      const results = await semanticSearch(query.trim(), allRules)
-      onResults(results)
-    } finally { setStatus('idle') }
+    try { onResults(await semanticSearch(query.trim(), allRules)) }
+    finally { setStatus('idle') }
   }, [query, hasEmb, onResults, onClear])
 
   return (
@@ -188,7 +268,7 @@ function SemanticSearchPanel({ onResults, onClear }: { onResults: (r: SearchResu
           </div>
         </div>
       )}
-      {(status === 'no-embeddings' || (!hasEmb && status === 'idle')) && (
+      {!hasEmb && status === 'idle' && (
         <p className="text-xs text-odl-subtle">
           Semantic search requires <code className="font-mono bg-odl-surface border border-odl-border rounded px-1">npm run embed-rules</code>.
         </p>
@@ -199,11 +279,6 @@ function SemanticSearchPanel({ onResults, onClear }: { onResults: (r: SearchResu
 
 // ── export helpers ────────────────────────────────────────────────────────────
 
-function escCsv(s: string): string {
-  const str = String(s ?? '')
-  return str.includes(',') || str.includes('"') || str.includes('\n') ? `"${str.replace(/"/g, '""')}"` : str
-}
-
 function downloadFile(content: string, filename: string, mime: string) {
   const blob = new Blob([content], { type: mime })
   const url = URL.createObjectURL(blob)
@@ -211,185 +286,196 @@ function downloadFile(content: string, filename: string, mime: string) {
   URL.revokeObjectURL(url)
 }
 
-function ExportButtons({ rules, laws }: { rules: Rule[]; laws: { id: string; short_name: string }[] }) {
-  function exportJson() {
-    downloadFile(JSON.stringify(rules, null, 2), 'gaia-rules.json', 'application/json')
-  }
-  function exportCsv() {
-    const lawIds = laws.map(l => l.id)
-    const headers = ['rule_id','category','rule_text','rule_text_technical','tags','first_law_id','first_law_name','first_citation','first_date','total_instances','binding_instances','adoptions',...lawIds.map(id=>`rel:${id}`)]
-    const rows = rules.map(r => {
-      const instMap = new Map(r.instances.map(i => [i.law_id, i]))
-      const adoptions = r.instances.filter(i => i.relationship === 'identical' || i.relationship === 'agrees').length
-      const bindingInst = r.instances.filter(i => i.instrument_binding !== false).length
-      return [r.rule_id,r.category,r.rule_text,r.rule_text_technical,r.tags.join('; '),r.first_instance.law_id,r.first_instance.law_name,r.first_instance.citation,r.first_instance.date,String(r.instances.length),String(bindingInst),String(adoptions),...lawIds.map(id=>instMap.get(id)?.relationship??'absent')].map(escCsv).join(',')
-    })
-    downloadFile([headers.join(','),...rows].join('\n'), 'gaia-rules.csv', 'text/csv')
-  }
-  return (
-    <div className="flex gap-1">
-      <button className="px-2 py-1.5 text-xs border border-odl-border rounded text-odl-muted hover:text-odl-text hover:bg-odl-surface" onClick={exportCsv} title={`Export ${rules.length} rules to CSV`}>↓ CSV</button>
-      <button className="px-2 py-1.5 text-xs border border-odl-border rounded text-odl-muted hover:text-odl-text hover:bg-odl-surface" onClick={exportJson} title={`Export ${rules.length} rules to JSON`}>↓ JSON</button>
-    </div>
-  )
+function escCsv(s: string): string {
+  const str = String(s ?? '')
+  return str.includes(',') || str.includes('"') || str.includes('\n') ? `"${str.replace(/"/g, '""')}"` : str
 }
 
 // ── instrument filter ─────────────────────────────────────────────────────────
 
 type InstrumentFilter = 'all' | 'binding' | 'soft'
 
+// ── matrix cell data ──────────────────────────────────────────────────────────
+
+interface BestCell {
+  rel: RelOrAbsent
+  lawId: string
+  lawName: string
+  citation?: string
+  notes?: string
+}
+
 // ── main component ────────────────────────────────────────────────────────────
 
 export function RulesMatrix() {
   const [selectedCategory, setSelectedCategory] = useState<RuleCategory | 'all'>('all')
   const [ruleSearch, setRuleSearch] = useState('')
-  const [selectedLawIds, setSelectedLawIds] = useState<Set<string>>(new Set(DEFAULT_LAW_IDS))
-  const [showLawPicker, setShowLawPicker] = useState(false)
-  const [lawSearch, setLawSearch] = useState('')
   const [instrumentFilter, setInstrumentFilter] = useState<InstrumentFilter>('all')
-  const [groupLawsByCountry, setGroupLawsByCountry] = useState(false)
-  const [popover, setPopover] = useState<CellDetail | null>(null)
   const [semanticResults, setSemanticResults] = useState<SearchResult[] | null>(null)
+  const [popover, setPopover] = useState<PopoverData | null>(null)
 
   useEffect(() => { loadEmbeddingData(precomputedEmbeddings) }, [])
 
-  const lawMap = useMemo(() => {
-    const m = new Map<string, { short_name: string; enacted_date: string; instrument_binding: boolean; instrument_type: string; country: string }>()
+  // law metadata lookup
+  const lawMeta = useMemo(() => {
+    const m = new Map<string, { short_name: string; instrument_binding: boolean; rowKey: string }>()
     regulations.forEach(l => m.set(l.id, {
       short_name: l.short_name,
-      enacted_date: l.enacted_date,
       instrument_binding: l.instrument_binding ?? true,
-      instrument_type: l.instrument_type ?? 'statute',
-      country: (l as unknown as { country?: string }).country ?? 'Other',
+      rowKey: lawRowKey(l),
     }))
     return m
   }, [])
 
-  const displayLaws = useMemo(() => {
-    const laws = [...selectedLawIds]
-      .map(id => ({ id, ...(lawMap.get(id) ?? { short_name: id, enacted_date: '0000', instrument_binding: true, instrument_type: 'statute', country: 'Other' }) }))
-      .filter(l => instrumentFilter === 'binding' ? l.instrument_binding : instrumentFilter === 'soft' ? !l.instrument_binding : true)
-
-    if (groupLawsByCountry) {
-      laws.sort((a, b) => {
-        if (a.country !== b.country) return a.country.localeCompare(b.country)
-        return a.enacted_date.localeCompare(b.enacted_date)
-      })
-    } else {
-      laws.sort((a, b) => a.enacted_date.localeCompare(b.enacted_date))
-    }
-    return laws
-  }, [selectedLawIds, lawMap, instrumentFilter, groupLawsByCountry])
-
-  // Country group spans for the column header row
-  const countryGroups = useMemo(() => {
-    if (!groupLawsByCountry) return null
-    const groups: { country: string; span: number }[] = []
-    for (const law of displayLaws) {
-      const last = groups[groups.length - 1]
-      if (last && last.country === law.country) last.span++
-      else groups.push({ country: law.country, span: 1 })
-    }
-    return groups
-  }, [displayLaws, groupLawsByCountry])
-
-  // Indices where a new country group begins (for left-border separators)
-  const countryBoundaryIndices = useMemo(() => {
-    if (!groupLawsByCountry) return new Set<number>()
-    const s = new Set<number>()
-    displayLaws.forEach((law, i) => {
-      if (i > 0 && law.country !== displayLaws[i - 1].country) s.add(i)
-    })
-    return s
-  }, [displayLaws, groupLawsByCountry])
-
-  const displayRules = useMemo(() => {
-    if (semanticResults) return semanticResults.map(r => r.rule)
-    let r = allRules
-    if (instrumentFilter !== 'all') r = r.filter(rl => {
-      const b = lawMap.get(rl.first_instance.law_id)?.instrument_binding ?? true
-      return instrumentFilter === 'binding' ? b : !b
-    })
-    if (selectedCategory !== 'all') r = r.filter(rl => rl.category === selectedCategory)
-    if (ruleSearch.trim()) {
-      const q = ruleSearch.trim().toLowerCase()
-      r = r.filter(rl => rl.rule_text.toLowerCase().includes(q) || rl.rule_text_technical.toLowerCase().includes(q) || rl.tags.some(t => t.includes(q)))
-    }
-    return r.sort((a, b) => a.category !== b.category ? a.category.localeCompare(b.category) : a.first_instance.date.localeCompare(b.first_instance.date))
-  }, [selectedCategory, ruleSearch, semanticResults, instrumentFilter, lawMap])
-
-  const grouped = useMemo(() => {
-    if (semanticResults) return null
-    const map = new Map<string, Rule[]>()
-    for (const rule of displayRules) {
-      const list = map.get(rule.category) ?? []; list.push(rule); map.set(rule.category, list)
-    }
-    return map
-  }, [displayRules, semanticResults])
-
-  const categories = useMemo(() => {
-    const cats = new Set(allRules.map(r => r.category as RuleCategory))
-    return ['all' as const, ...([...cats].sort())]
+  // all unique row keys (one per country/supranational body)
+  const allRowKeys = useMemo(() => {
+    const s = new Set<string>()
+    regulations.forEach(l => s.add(lawRowKey(l)))
+    return [...s]
   }, [])
 
-  const allLawsSorted = useMemo(() =>
-    [...regulations].sort((a,b) => a.enacted_date.localeCompare(b.enacted_date))
-      .filter(l => !lawSearch.trim() || l.short_name.toLowerCase().includes(lawSearch.toLowerCase()) || l.jurisdiction.toLowerCase().includes(lawSearch.toLowerCase()))
-  , [lawSearch])
+  // row groups: region → sorted row keys
+  const rowGroups = useMemo(() => {
+    const map = new Map<string, string[]>()
+    for (const key of allRowKeys) {
+      const r = rowRegion(key)
+      if (!map.has(r)) map.set(r, [])
+      map.get(r)!.push(key)
+    }
+    for (const [, keys] of map) keys.sort((a, b) => rowLabel(a).localeCompare(rowLabel(b)))
+    return REGION_ORDER.map(r => ({ region: r, keys: map.get(r) ?? [] })).filter(g => g.keys.length > 0)
+  }, [allRowKeys])
 
-  function toggleLaw(id: string) {
-    setSelectedLawIds(prev => { const n = new Set(prev); n.has(id) ? n.delete(id) : n.add(id); return n })
+  // filtered rules for column mode (specific category / search)
+  const colRules = useMemo(() => {
+    if (semanticResults) return semanticResults.map(r => r.rule)
+    if (selectedCategory === 'all') return []  // use category aggregate mode
+    let r = allRules.filter(rl => rl.category === selectedCategory)
+    if (ruleSearch.trim()) {
+      const q = ruleSearch.trim().toLowerCase()
+      r = r.filter(rl => rl.rule_text.toLowerCase().includes(q) || rl.tags.some(t => t.includes(q)))
+    }
+    if (instrumentFilter !== 'all') {
+      r = r.filter(rl => {
+        const b = lawMeta.get(rl.first_instance.law_id)?.instrument_binding ?? true
+        return instrumentFilter === 'binding' ? b : !b
+      })
+    }
+    return r.sort((a, b) => a.first_instance.date.localeCompare(b.first_instance.date))
+  }, [selectedCategory, ruleSearch, semanticResults, instrumentFilter, lawMeta])
+
+  const isCategoryMode = selectedCategory === 'all' && !semanticResults
+
+  // all distinct categories (for category mode columns)
+  const allCategories = useMemo(() =>
+    [...new Set(allRules.map(r => r.category as RuleCategory))].sort()
+  , [])
+
+  // Pre-compute matrix: rowKey → (cat or rule_id) → BestCell
+  const matrix = useMemo(() => {
+    const m = new Map<string, Map<string, BestCell>>()
+
+    const rulesSource = isCategoryMode ? allRules : colRules
+    const getKey = isCategoryMode
+      ? (rule: Rule) => rule.category
+      : (rule: Rule) => rule.rule_id
+
+    for (const rule of rulesSource) {
+      const colKey = getKey(rule)
+      for (const inst of rule.instances) {
+        if (instrumentFilter !== 'all') {
+          const b = lawMeta.get(inst.law_id)?.instrument_binding ?? true
+          if (instrumentFilter === 'binding' && !b) continue
+          if (instrumentFilter === 'soft'    &&  b) continue
+        }
+        const meta = lawMeta.get(inst.law_id)
+        if (!meta) continue
+        const rowKey = meta.rowKey
+
+        if (!m.has(rowKey)) m.set(rowKey, new Map())
+        const rm = m.get(rowKey)!
+
+        const rel = (inst.relationship ?? 'absent') as RelOrAbsent
+        const existing = rm.get(colKey)
+        if (!existing || REL_PRIORITY[rel] > REL_PRIORITY[existing.rel]) {
+          rm.set(colKey, {
+            rel, lawId: inst.law_id, lawName: meta.short_name,
+            citation: inst.citation, notes: inst.notes,
+          })
+        }
+      }
+    }
+    return m
+  }, [isCategoryMode, colRules, instrumentFilter, lawMeta])
+
+  // For category popover: all entries in that category for a rowKey
+  function getCatEntries(rowKey: string, cat: string) {
+    const entries: PopoverData['catEntries'] = []
+    const catRules = allRules.filter(r => r.category === cat)
+    for (const rule of catRules) {
+      for (const inst of rule.instances) {
+        const meta = lawMeta.get(inst.law_id)
+        if (!meta || meta.rowKey !== rowKey) continue
+        entries.push({
+          rule,
+          rel: (inst.relationship ?? 'absent') as RelOrAbsent,
+          lawId: inst.law_id,
+          lawName: meta.short_name,
+          citation: inst.citation,
+        })
+      }
+    }
+    entries.sort((a, b) => REL_PRIORITY[b.rel] - REL_PRIORITY[a.rel])
+    return entries
   }
 
-  function handleCellClick(rule: Rule, lawId: string, e: React.MouseEvent) {
+  function handleCellClick(e: React.MouseEvent, rowKey: string, colKey: string, rule?: Rule) {
     e.stopPropagation()
-    setPopover({ rule, lawId, lawName: lawMap.get(lawId)?.short_name ?? lawId, x: e.clientX, y: e.clientY })
+    const cell = matrix.get(rowKey)?.get(colKey)
+
+    if (isCategoryMode) {
+      setPopover({
+        x: e.clientX, y: e.clientY,
+        rowKey, mode: 'category', cat: colKey,
+        catEntries: getCatEntries(rowKey, colKey),
+      })
+    } else {
+      setPopover({
+        x: e.clientX, y: e.clientY,
+        rowKey, mode: 'rule', rule,
+        rel: cell?.rel ?? 'absent',
+        lawId: cell?.lawId,
+        lawName: cell?.lawName,
+        citation: cell?.citation,
+        notes: cell?.notes,
+      })
+    }
   }
 
-  // Flat rows for semantic search mode (no category grouping)
-  function FlatRows({ rules }: { rules: Rule[] }) {
-    return (
-      <>
-        {rules.map(rule => {
-          const instMap = new Map(rule.instances.map(i => [i.law_id, i]))
-          return (
-            <tr key={rule.rule_id}>
-              <td className="p-0 border-r border-odl-border/40" style={{ width: 28, minWidth: 28 }}>
-                <div className="flex items-center justify-center" style={{ height: CELL }}>
-                  <div className="w-1.5 h-1.5 rounded-sm" style={{ background: '#94A3B8' }} title={RULE_CATEGORY_LABELS[rule.category as RuleCategory] ?? rule.category} />
-                </div>
-              </td>
-              {displayLaws.map((law, lIdx) => {
-                const inst = instMap.get(law.id)
-                const rel: RelOrAbsent = inst ? inst.relationship : 'absent'
-                const isCountryBoundary = countryBoundaryIndices.has(lIdx)
-                return (
-                  <td key={law.id} className="p-0 group/cell cursor-pointer hover:bg-blue-50/40"
-                    style={{ width: CELL, minWidth: CELL, borderLeft: isCountryBoundary ? '2px solid #3B82F620' : undefined }}
-                    onClick={e => handleCellClick(rule, law.id, e)}
-                    title={`${rule.rule_text.slice(0, 80)}… · ${law.short_name} · ${REL_CONFIG[rel].label}`}>
-                    <div className="flex items-center justify-center" style={{ height: CELL }}>
-                      <RelDot rel={rel} />
-                    </div>
-                  </td>
-                )
-              })}
-            </tr>
-          )
-        })}
-      </>
-    )
+  function exportCsv() {
+    const cols = isCategoryMode
+      ? allCategories.map(c => ({ key: c, label: RULE_CATEGORY_LABELS[c] ?? c }))
+      : colRules.map(r => ({ key: r.rule_id, label: r.rule_text.slice(0, 60) }))
+    const header = ['region', 'jurisdiction', ...cols.map(c => escCsv(c.label))].join(',')
+    const rows = rowGroups.flatMap(g => g.keys.map(key => {
+      const rm = matrix.get(key)
+      return [g.region, escCsv(rowLabel(key)), ...cols.map(c => rm?.get(c.key)?.rel ?? 'absent')].join(',')
+    }))
+    downloadFile([header, ...rows].join('\n'), 'gaia-comparative.csv', 'text/csv')
   }
+
+  const totalCountries = rowGroups.reduce((s, g) => s + g.keys.length, 0)
+  const colCount = isCategoryMode ? allCategories.length : colRules.length
 
   return (
-    <div className="flex flex-col gap-4 max-w-screen-2xl" onClick={() => popover && setPopover(null)}>
+    <div className="flex flex-col gap-4 max-w-screen-2xl" onClick={() => setPopover(null)}>
 
       {/* Header */}
       <div>
-        <h2 className="text-sm font-semibold text-odl-text mb-1">Rules Matrix</h2>
+        <h2 className="text-sm font-semibold text-odl-text mb-1">Rules Matrix — Comparative View</h2>
         <p className="text-xs text-odl-muted leading-relaxed">
-          Each row is a distinct legal rule. Dots show how each law relates to it — click any dot for details.
-          Rules are grouped by category. Hover column headers for law name. Separator lines divide categories.
+          Rows are jurisdictions grouped by region. Columns are rule categories (overview) or individual rules (select a category).
+          Dots show the strongest relationship any law in that jurisdiction has for each rule. Click a dot for details.
         </p>
       </div>
 
@@ -400,17 +486,15 @@ export function RulesMatrix() {
           return (
             <span key={rel} className="flex items-center gap-1.5">
               <div style={{
-                width: 10, height: 10,
-                background: cfg.color,
-                borderRadius: '50%',
+                width: 10, height: 10, background: cfg.color, borderRadius: '50%',
                 border: cfg.border ? `1.5px solid ${cfg.border}` : undefined,
-                flexShrink: 0,
-                boxSizing: 'border-box',
+                flexShrink: 0, boxSizing: 'border-box',
               }} />
               {cfg.label}
             </span>
           )
         })}
+        <span className="text-odl-subtle">Empty cell = no legislation</span>
       </div>
 
       {/* Semantic search */}
@@ -418,207 +502,161 @@ export function RulesMatrix() {
 
       {/* Controls */}
       <div className="flex flex-wrap gap-2 items-center">
-        <input
-          className="border border-odl-border rounded px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-odl-accent w-44"
-          placeholder="Keyword filter…"
-          value={ruleSearch}
-          onChange={e => { setRuleSearch(e.target.value); setSemanticResults(null) }}
-        />
         <select
           className="border border-odl-border rounded px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-odl-accent"
           value={selectedCategory}
           onChange={e => { setSelectedCategory(e.target.value as RuleCategory | 'all'); setSemanticResults(null) }}>
-          <option value="all">All categories</option>
-          {categories.filter(c => c !== 'all').map(c => (
+          <option value="all">All categories (overview)</option>
+          {allCategories.map(c => (
             <option key={c} value={c}>{RULE_CATEGORY_LABELS[c as RuleCategory]}</option>
           ))}
         </select>
+        {selectedCategory !== 'all' && (
+          <input
+            className="border border-odl-border rounded px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-odl-accent w-44"
+            placeholder="Filter rules…"
+            value={ruleSearch}
+            onChange={e => { setRuleSearch(e.target.value); setSemanticResults(null) }}
+          />
+        )}
         <div className="flex items-center rounded border border-odl-border overflow-hidden">
           {(['all','binding','soft'] as InstrumentFilter[]).map(f => (
             <button key={f}
               className={`px-2.5 py-1.5 text-xs transition-colors ${instrumentFilter === f ? 'bg-odl-accent text-white' : 'text-odl-muted hover:bg-odl-surface'}`}
-              onClick={() => { setInstrumentFilter(f); setSemanticResults(null) }}>
+              onClick={() => setInstrumentFilter(f)}>
               {f === 'all' ? 'All' : f === 'binding' ? '⚖ Binding' : '📋 Soft law'}
             </button>
           ))}
         </div>
-        <button
-          className={`border rounded px-2.5 py-1.5 text-xs transition-colors ${groupLawsByCountry ? 'bg-odl-accent text-white border-odl-accent' : 'border-odl-border text-odl-muted hover:text-odl-text hover:bg-odl-surface'}`}
-          onClick={() => setGroupLawsByCountry(v => !v)}
-          title="Group law columns by country">
-          🌍 Group by country
-        </button>
-        <button
-          className="border border-odl-border rounded px-3 py-1.5 text-xs text-odl-muted hover:text-odl-text hover:bg-odl-surface"
-          onClick={e => { e.stopPropagation(); setShowLawPicker(v => !v) }}>
-          Laws ({selectedLawIds.size})
-        </button>
         <span className="text-xs text-odl-subtle">
-          {semanticResults ? `${semanticResults.length} matches` : `${displayRules.length} rules · ${displayLaws.length} laws`}
+          {totalCountries} jurisdictions · {colCount} {isCategoryMode ? 'categories' : 'rules'}
         </span>
-        <ExportButtons rules={displayRules} laws={displayLaws} />
+        <button
+          className="px-2 py-1.5 text-xs border border-odl-border rounded text-odl-muted hover:text-odl-text hover:bg-odl-surface"
+          onClick={exportCsv}>↓ CSV</button>
       </div>
-
-      {/* Law picker */}
-      {showLawPicker && (
-        <div className="panel p-4 max-h-64 overflow-y-auto" onClick={e => e.stopPropagation()}>
-          <div className="flex items-center gap-3 mb-3">
-            <input
-              className="border border-odl-border rounded px-3 py-1.5 text-xs flex-1 focus:outline-none focus:ring-1 focus:ring-odl-accent"
-              placeholder="Search laws…" value={lawSearch} onChange={e => setLawSearch(e.target.value)} />
-            <button className="text-xs text-odl-accent" onClick={() => setSelectedLawIds(new Set(DEFAULT_LAW_IDS))}>Reset</button>
-            <button className="text-xs text-odl-subtle" onClick={() => setSelectedLawIds(new Set(regulations.map(l => l.id)))}>All</button>
-            <button className="text-xs text-odl-subtle" onClick={() => setSelectedLawIds(new Set())}>None</button>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-1">
-            {allLawsSorted.map(l => (
-              <label key={l.id} className="flex items-center gap-1.5 text-xs text-odl-muted cursor-pointer hover:text-odl-text py-0.5">
-                <input type="checkbox" checked={selectedLawIds.has(l.id)} onChange={() => toggleLaw(l.id)} className="accent-odl-accent" />
-                <span className={`text-[8px] font-bold px-1 rounded leading-none flex-shrink-0 ${l.instrument_binding ?? true ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-500'}`}>{l.instrument_binding ?? true ? 'B' : 'S'}</span>
-                <span className="truncate" title={l.short_name}>{l.short_name}</span>
-              </label>
-            ))}
-          </div>
-        </div>
-      )}
 
       {/* ── Matrix ── */}
       <div className="panel overflow-hidden">
-        <div className="overflow-auto max-h-[calc(100vh-300px)]">
+        <div className="overflow-auto max-h-[calc(100vh-280px)]">
           <table className="border-collapse" style={{ tableLayout: 'fixed' }}>
             <thead className="sticky top-0 z-20 bg-white">
-              {/* Country group row (only when groupLawsByCountry) */}
-              {groupLawsByCountry && countryGroups && (
-                <tr>
-                  <th style={{ width: 28, minWidth: 28, padding: 0 }} />
-                  {countryGroups.map((g, gi) => (
-                    <th key={`${g.country}-${gi}`} colSpan={g.span}
-                      style={{
-                        padding: '2px 1px',
-                        borderBottom: '1px solid #E4E4E7',
-                        borderLeft: gi > 0 ? '2px solid #3B82F650' : undefined,
-                        textAlign: 'center',
-                        fontSize: 8,
-                        fontWeight: 700,
-                        color: '#52525B',
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.05em',
-                        overflow: 'hidden',
-                        whiteSpace: 'nowrap',
-                        maxWidth: g.span * CELL,
-                      }}>
-                      <span style={{ display: 'block', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                        {g.country}
-                      </span>
-                    </th>
-                  ))}
-                </tr>
-              )}
-              {/* Law column headers */}
               <tr>
-                {/* Category label column header (empty corner) */}
-                <th style={{ width: 28, minWidth: 28, borderBottom: '1px solid #E4E4E7', borderRight: '1px solid #E4E4E7', padding: 0 }} />
-                {displayLaws.map((law, lIdx) => {
-                  const isCountryBoundary = countryBoundaryIndices.has(lIdx)
-                  return (
-                    <th key={law.id}
-                      style={{
-                        width: CELL, minWidth: CELL, padding: 0,
-                        borderBottom: '1px solid #E4E4E7',
-                        borderRight: '1px solid rgba(228,228,231,0.4)',
-                        borderLeft: isCountryBoundary ? '2px solid #3B82F650' : undefined,
-                      }}
-                      title={`${law.short_name} · ${law.enacted_date.slice(0,4)} · ${law.instrument_binding ? 'Binding' : 'Soft law'}${groupLawsByCountry ? ` · ${law.country}` : ''}`}>
-                      <div className="flex items-center justify-center py-1">
-                        <div style={{ width: DOT, height: DOT, background: '#18181B', borderRadius: 3 }} />
+                {/* Corner: region + country columns */}
+                <th style={{ width: REGION_COL, minWidth: REGION_COL, borderBottom: '1px solid #E4E4E7', padding: 0 }} />
+                <th style={{ width: COUNTRY_COL, minWidth: COUNTRY_COL, borderBottom: '1px solid #E4E4E7', borderRight: '1px solid #D4D4D8', padding: 0 }} />
+
+                {isCategoryMode ? (
+                  // Category mode: vertical rotated labels
+                  allCategories.map(cat => (
+                    <th key={cat}
+                      style={{ width: CELL, minWidth: CELL, padding: 0, borderBottom: '1px solid #E4E4E7', borderRight: '1px solid rgba(228,228,231,0.4)' }}
+                      title={RULE_CATEGORY_LABELS[cat] ?? cat}>
+                      <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', height: 96, paddingBottom: 4 }}>
+                        <span style={{
+                          writingMode: 'vertical-rl',
+                          transform: 'rotate(180deg)',
+                          fontSize: 8, fontWeight: 700, letterSpacing: '0.07em',
+                          color: CAT_COLOR[cat] ?? '#52525B',
+                          textTransform: 'uppercase',
+                          whiteSpace: 'nowrap',
+                        }}>
+                          {RULE_CATEGORY_LABELS[cat] ?? cat}
+                        </span>
                       </div>
                     </th>
-                  )
-                })}
+                  ))
+                ) : (
+                  // Rule mode: tiny colored squares, hover for rule text
+                  colRules.map(rule => (
+                    <th key={rule.rule_id}
+                      style={{ width: CELL, minWidth: CELL, padding: 0, borderBottom: '1px solid #E4E4E7', borderRight: '1px solid rgba(228,228,231,0.4)' }}
+                      title={rule.rule_text.slice(0, 140)}>
+                      <div className="flex items-center justify-center py-1">
+                        <div style={{ width: DOT, height: DOT, background: CAT_COLOR[rule.category as RuleCategory] ?? '#94A3B8', borderRadius: 2 }} />
+                      </div>
+                    </th>
+                  ))
+                )}
               </tr>
             </thead>
 
             <tbody>
-              {semanticResults ? (
-                // ── Flat / semantic search mode ──
-                <FlatRows rules={displayRules} />
-              ) : grouped ? (
-                // ── Grouped by category ──
-                [...grouped.entries()].map(([cat, catRules], gIdx, arr) => (
-                  <Fragment key={cat}>
-                    {catRules.map((rule, rIdx) => {
-                      const instMap = new Map(rule.instances.map(i => [i.law_id, i]))
-                      return (
-                        <tr key={rule.rule_id} className="group">
-                          {/* Category label — rowspan covers all rules in this group */}
-                          {rIdx === 0 && (
-                            <td
-                              rowSpan={catRules.length}
-                              className="border-r border-odl-border/50 select-none"
-                              style={{
-                                writingMode: 'vertical-rl',
-                                transform: 'rotate(180deg)',
-                                textAlign: 'center',
-                                verticalAlign: 'middle',
-                                fontSize: 8,
-                                fontWeight: 700,
-                                letterSpacing: '0.08em',
-                                color: '#71717A',
-                                textTransform: 'uppercase',
-                                width: 28,
-                                minWidth: 28,
-                                padding: '4px 2px',
-                                whiteSpace: 'nowrap',
-                              }}
-                            >
-                              {RULE_CATEGORY_LABELS[cat as RuleCategory] ?? cat}
-                            </td>
-                          )}
-                          {/* Law cells */}
-                          {displayLaws.map((law, lIdx) => {
-                            const inst = instMap.get(law.id)
-                            const rel: RelOrAbsent = inst ? inst.relationship : 'absent'
-                            const isCountryBoundary = countryBoundaryIndices.has(lIdx)
-                            return (
-                              <td
-                                key={law.id}
-                                className="group/cell p-0 cursor-pointer hover:bg-blue-50/50 border-r border-odl-border/20"
-                                style={{
-                                  width: CELL, minWidth: CELL,
-                                  borderLeft: isCountryBoundary ? '2px solid #3B82F630' : undefined,
-                                }}
-                                onClick={e => handleCellClick(rule, law.id, e)}
-                                title={`${rule.rule_text.slice(0, 80)}… · ${law.short_name} · ${REL_CONFIG[rel].label}`}
-                              >
-                                <div className="flex items-center justify-center" style={{ height: CELL }}>
-                                  <RelDot rel={rel} />
-                                </div>
-                              </td>
-                            )
-                          })}
-                        </tr>
-                      )
-                    })}
-                    {/* Category separator */}
-                    {gIdx < arr.length - 1 && (
-                      <tr>
+              {rowGroups.map((group, gIdx) => (
+                <Fragment key={group.region}>
+                  {group.keys.map((rowKey, rIdx) => (
+                    <tr key={rowKey} className="group hover:bg-blue-50/20">
+                      {/* Region label — rowspan over all countries in this group */}
+                      {rIdx === 0 && (
                         <td
-                          colSpan={1 + displayLaws.length}
-                          style={{ height: 3, background: '#3B82F6', padding: 0, opacity: 0.35 }}
-                        />
-                      </tr>
-                    )}
-                  </Fragment>
-                ))
-              ) : null}
+                          rowSpan={group.keys.length}
+                          className="border-r border-odl-border/30 select-none bg-white"
+                          style={{
+                            width: REGION_COL, minWidth: REGION_COL,
+                            writingMode: 'vertical-rl',
+                            transform: 'rotate(180deg)',
+                            textAlign: 'center', verticalAlign: 'middle',
+                            fontSize: 8, fontWeight: 700, letterSpacing: '0.1em',
+                            color: '#A1A1AA', textTransform: 'uppercase',
+                            padding: '4px 2px', whiteSpace: 'nowrap',
+                            borderBottom: '1px solid #E4E4E7',
+                          }}>
+                          {group.region}
+                        </td>
+                      )}
 
-              {displayRules.length === 0 && (
-                <tr>
-                  <td colSpan={1 + displayLaws.length} className="px-4 py-10 text-center text-xs text-odl-subtle">
-                    No rules match.{allRules.length === 0 && <span> Run <code className="font-mono bg-odl-surface border border-odl-border rounded px-1">npm run extract-rules</code> to populate.</span>}
-                  </td>
-                </tr>
-              )}
+                      {/* Country name */}
+                      <td className="border-r border-odl-border/50 px-2 py-0 select-none"
+                        style={{ width: COUNTRY_COL, minWidth: COUNTRY_COL, height: CELL }}>
+                        <span className="text-[10px] text-odl-text font-medium truncate block leading-none"
+                          style={{ lineHeight: `${CELL}px` }}>
+                          {rowLabel(rowKey)}
+                        </span>
+                      </td>
+
+                      {/* Data cells */}
+                      {isCategoryMode ? (
+                        allCategories.map(cat => {
+                          const cell = matrix.get(rowKey)?.get(cat)
+                          return (
+                            <td key={cat}
+                              className="group/cell p-0 cursor-pointer hover:bg-blue-50/60 border-r border-odl-border/15"
+                              style={{ width: CELL, minWidth: CELL }}
+                              onClick={e => handleCellClick(e, rowKey, cat)}
+                              title={cell ? `${rowLabel(rowKey)} · ${RULE_CATEGORY_LABELS[cat as RuleCategory]} · ${REL_CONFIG[cell.rel].label} · ${cell.lawName}` : `${rowLabel(rowKey)} · ${RULE_CATEGORY_LABELS[cat as RuleCategory]} · No legislation`}>
+                              <div className="flex items-center justify-center" style={{ height: CELL }}>
+                                {cell && <RelDot rel={cell.rel} />}
+                              </div>
+                            </td>
+                          )
+                        })
+                      ) : (
+                        colRules.map(rule => {
+                          const cell = matrix.get(rowKey)?.get(rule.rule_id)
+                          return (
+                            <td key={rule.rule_id}
+                              className="group/cell p-0 cursor-pointer hover:bg-blue-50/60 border-r border-odl-border/15"
+                              style={{ width: CELL, minWidth: CELL }}
+                              onClick={e => handleCellClick(e, rowKey, rule.rule_id, rule)}
+                              title={cell ? `${rowLabel(rowKey)} · ${cell.lawName} · ${REL_CONFIG[cell.rel].label}` : `${rowLabel(rowKey)} · No legislation`}>
+                              <div className="flex items-center justify-center" style={{ height: CELL }}>
+                                {cell && <RelDot rel={cell.rel} />}
+                              </div>
+                            </td>
+                          )
+                        })
+                      )}
+                    </tr>
+                  ))}
+
+                  {/* Region separator */}
+                  {gIdx < rowGroups.length - 1 && (
+                    <tr>
+                      <td colSpan={2 + colCount} style={{ height: 3, background: '#3B82F6', opacity: 0.3, padding: 0 }} />
+                    </tr>
+                  )}
+                </Fragment>
+              ))}
             </tbody>
           </table>
         </div>
@@ -628,9 +666,9 @@ export function RulesMatrix() {
       {popover && <CellPopover d={popover} onClose={() => setPopover(null)} />}
 
       {/* Footer */}
-      <div className="text-[10px] text-odl-subtle space-y-0.5">
-        <p>Click any dot for rule text, citation, and relationship details. Hover for a quick preview.</p>
-        <p>Semantic search: <code className="font-mono bg-odl-surface border border-odl-border rounded px-1">npm run embed-rules</code> · Extract rules: <code className="font-mono bg-odl-surface border border-odl-border rounded px-1">ANTHROPIC_API_KEY=… npm run extract-rules</code></p>
+      <div className="text-[10px] text-odl-subtle">
+        Overview: 14 category columns, each showing the strongest relationship any law in that jurisdiction has.
+        Select a category to drill into individual rules. Click any dot for law details.
       </div>
     </div>
   )
