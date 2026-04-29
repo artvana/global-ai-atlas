@@ -29,7 +29,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          claude --print --dangerously-skip-permissions "
+          claude --print --dangerously-skip-permissions --allowedTools "WebSearch,Read,Write" "
           You are the weekly curator for GAIA — Global AI Atlas.
           The database is at data/regulations.json in the current directory.
           Today is $(date +%Y-%m-%d). Search the web for AI regulations enacted in the past 7 days.

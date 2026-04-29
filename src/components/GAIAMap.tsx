@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react'
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from 'react-simple-maps'
 import type { AILaw } from '../types'
 import { regulations } from '../data/regulations'
+import topoData from 'world-atlas/countries-110m.json'
 
 // ISO 3166-1 numeric codes — what world-atlas uses as geo.id
 const COUNTRY_TO_ISO_NUMERIC: Record<string, string> = {
@@ -70,7 +71,6 @@ const EU_MEMBER_ISO = new Set([
   '616','620','642','703','705','724','752',
 ])
 
-const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'
 
 function getColor(count: number): string {
   if (count === 0)   return '#E9ECEF'
@@ -174,7 +174,7 @@ export function GAIAMap() {
           style={{ width: '100%', height: 'auto' }}
         >
           <ZoomableGroup zoom={zoom} minZoom={1} maxZoom={4}>
-            <Geographies geography={GEO_URL}>
+            <Geographies geography={topoData}>
               {({ geographies }: { geographies: { id: string; rsmKey: string; properties: Record<string, string> }[] }) =>
                 geographies.map(geo => {
                   const iso = String(geo.id).padStart(3, '0')

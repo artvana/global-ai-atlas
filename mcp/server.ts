@@ -10,6 +10,7 @@ import * as path from 'path'
 
 const DATA_DIR = path.resolve(import.meta.dirname, '../data')
 const REGULATIONS_PATH = path.join(DATA_DIR, 'regulations.json')
+const PROJECT_ROOT = path.resolve(DATA_DIR, '..')
 
 type Law = Record<string, unknown>
 
@@ -20,18 +21,28 @@ function loadData() {
   regulations = JSON.parse(raw)
 }
 
+// Prevents path traversal: text_path must resolve inside the project root
 function getTextPath(law: Law): string | null {
-  const tp = law.text_path as string | undefined
-  if (!tp) return null
-  return path.resolve(DATA_DIR, '..', tp)
+  const tp = law.text_path
+  if (!tp || typeof tp !== 'string') return null
+  const resolved = path.resolve(PROJECT_ROOT, tp)
+  if (!resolved.startsWith(PROJECT_ROOT + path.sep)) return null
+  return resolved
 }
+
+// Only allow known schema fields as filter keys to prevent prototype probing
+const ALLOWED_FILTER_KEYS = new Set([
+  'id', 'short_name', 'full_name', 'country', 'jurisdiction', 'jurisdiction_type',
+  'region', 'status', 'primary_category', 'legal_family', 'instrument_binding',
+  'ai_specific', 'enacted_date', 'effective_date', 'instrument_type', 'scope',
+])
 
 function matchesFilter(law: Law, filters: Record<string, string>): boolean {
   for (const [key, value] of Object.entries(filters)) {
+    if (!ALLOWED_FILTER_KEYS.has(key)) continue
+    if (!Object.hasOwn(law, key)) continue
     const v = value.toLowerCase()
-    const field = law[key]
-    if (field === undefined) continue
-    const fieldStr = JSON.stringify(field).toLowerCase()
+    const fieldStr = JSON.stringify(law[key]).toLowerCase()
     if (!fieldStr.includes(v)) return false
   }
   return true
@@ -59,6 +70,15 @@ function searchLaw(law: Law, query: string): boolean {
 function stripMetadata(law: Law): Law {
   const { text_path: _tp, ...rest } = law
   return rest
+}
+
+function asString(v: unknown, fallback: string): string {
+  return typeof v === 'string' ? v : fallback
+}
+
+function asInt(v: unknown, fallback: number): number {
+  const n = typeof v === 'number' ? Math.floor(v) : parseInt(String(v), 10)
+  return isFinite(n) ? n : fallback
 }
 
 const server = new Server(
@@ -162,8 +182,10 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
   try {
     if (name === 'list_regulations') {
-      const filters = (args.filters as Record<string, string>) ?? {}
-      const limit = (args.limit as number) ?? 50
+      const filters = (args.filters != null && typeof args.filters === 'object' && !Array.isArray(args.filters))
+        ? args.filters as Record<string, string>
+        : {}
+      const limit = Math.min(asInt(args.limit, 50), 500)
       const results = regulations
         .filter((l) => matchesFilter(l, filters))
         .slice(0, limit)
@@ -179,8 +201,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     }
 
     if (name === 'search_regulations') {
-      const query = args.query as string
-      const limit = (args.limit as number) ?? 20
+      const query = asString(args.query, '')
+      if (!query) return { content: [{ type: 'text', text: 'query is required' }], isError: true }
+      const limit = Math.min(asInt(args.limit, 20), 200)
       const results = regulations
         .filter((l) => searchLaw(l, query))
         .slice(0, limit)
@@ -205,7 +228,8 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     }
 
     if (name === 'get_regulation') {
-      const id = args.id as string
+      const id = asString(args.id, '')
+      if (!id) return { content: [{ type: 'text', text: 'id is required' }], isError: true }
       const law = regulations.find((l) => l.id === id)
       if (!law) {
         return {
@@ -239,9 +263,10 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     }
 
     if (name === 'get_regulation_text') {
-      const id = args.id as string
-      const offset = (args.offset as number) ?? 0
-      const limit = Math.min((args.limit as number) ?? 50000, 200000)
+      const id = asString(args.id, '')
+      if (!id) return { content: [{ type: 'text', text: 'id is required' }], isError: true }
+      const offset = Math.max(0, asInt(args.offset, 0))
+      const limit = Math.min(asInt(args.limit, 50000), 200000)
       const law = regulations.find((l) => l.id === id)
       if (!law) {
         return {
@@ -292,14 +317,6 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         return acc
       }, {})
 
-      const regions = new Set(regulations.map((l) => l.region as string)).size
-      const jurisdictions = new Set(regulations.map((l) => l.jurisdiction as string)).size
-      const countries = new Set(
-        regulations
-          .filter((l) => l.jurisdiction_type !== 'international' && l.jurisdiction_type !== 'federal')
-          .map((l) => l.region as string)
-      ).size
-
       return {
         content: [
           {
@@ -307,13 +324,14 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
             text: JSON.stringify(
               {
                 total_instruments: regulations.length,
-                unique_regions: regions,
-                unique_jurisdictions: jurisdictions,
-                unique_countries_subnational: countries,
+                unique_jurisdictions: new Set(regulations.map((l) => l.jurisdiction)).size,
+                unique_countries: new Set(
+                  regulations.filter((l) => l.jurisdiction_type !== 'supranational').map((l) => l.country)
+                ).size,
                 by_status: counter('status'),
                 by_jurisdiction_type: counter('jurisdiction_type'),
                 by_primary_category: counter('primary_category'),
-                by_instrument_type: counter('instrument_type'),
+                by_legal_family: counter('legal_family'),
                 by_region: counter('region'),
                 by_year_enacted: byYear,
               },
@@ -326,7 +344,8 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     }
 
     if (name === 'compare_regulations') {
-      const ids = args.ids as string[]
+      const ids = Array.isArray(args.ids) ? (args.ids as unknown[]).filter(v => typeof v === 'string') as string[] : []
+      if (ids.length === 0) return { content: [{ type: 'text', text: 'ids must be a non-empty array of strings' }], isError: true }
       const results = ids.map((id) => {
         const law = regulations.find((l) => l.id === id)
         if (!law) return { id, error: 'not found' }
@@ -365,6 +384,12 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   }
 })
 
-loadData()
+try {
+  loadData()
+} catch (err) {
+  process.stderr.write(`[ai-regulation-db] Fatal: could not load regulations.json — ${err}\n`)
+  process.exit(1)
+}
+
 const transport = new StdioServerTransport()
 await server.connect(transport)
