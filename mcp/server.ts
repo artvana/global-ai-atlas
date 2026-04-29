@@ -10,15 +10,20 @@ import * as path from 'path'
 
 const DATA_DIR = path.resolve(import.meta.dirname, '../data')
 const REGULATIONS_PATH = path.join(DATA_DIR, 'regulations.json')
+const RULES_PATH = path.join(DATA_DIR, 'rules.json')
 const PROJECT_ROOT = path.resolve(DATA_DIR, '..')
 
 type Law = Record<string, unknown>
+type RuleData = Record<string, unknown>
 
 let regulations: Law[] = []
+let rulesList: RuleData[] = []
 
 function loadData() {
   const raw = fs.readFileSync(REGULATIONS_PATH, 'utf-8')
   regulations = JSON.parse(raw)
+  const rulesRaw = fs.readFileSync(RULES_PATH, 'utf-8')
+  rulesList = JSON.parse(rulesRaw)
 }
 
 // Prevents path traversal: text_path must resolve inside the project root
@@ -171,6 +176,56 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({
             items: { type: 'string' },
             description: 'Array of regulation IDs to compare',
           },
+        },
+      },
+    },
+    {
+      name: 'list_rule_categories',
+      description:
+        'List all 14 canonical rule categories with their rule counts, sorted by count descending.',
+      inputSchema: { type: 'object', properties: {} },
+    },
+    {
+      name: 'search_rules',
+      description:
+        'Keyword search over rule_text, rule_text_technical, tags, and category. Returns rule_id, category, rule_text, first_instance, and adoption_count per result.',
+      inputSchema: {
+        type: 'object',
+        required: ['query'],
+        properties: {
+          query: { type: 'string', description: 'Search query' },
+          category: {
+            type: 'string',
+            description: 'Optional exact-match filter on category (e.g. "transparency")',
+          },
+          limit: { type: 'number', description: 'Max results to return (default 20)' },
+        },
+      },
+    },
+    {
+      name: 'get_rule',
+      description:
+        'Get a specific rule by rule_id. Returns the full rule including all law instances, adoption_count, and total_instances.',
+      inputSchema: {
+        type: 'object',
+        required: ['rule_id'],
+        properties: {
+          rule_id: { type: 'string', description: 'Rule ID (e.g. "eu-eu-aiact-2024-art50d")' },
+        },
+      },
+    },
+    {
+      name: 'get_rule_consensus',
+      description:
+        'Get the most widely adopted rules sorted by adoption count (identical + agrees instances). Optionally filter by category.',
+      inputSchema: {
+        type: 'object',
+        properties: {
+          category: {
+            type: 'string',
+            description: 'Optional exact-match filter on category',
+          },
+          limit: { type: 'number', description: 'Max results to return (default 20)' },
         },
       },
     },
@@ -369,6 +424,127 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       })
       return {
         content: [{ type: 'text', text: JSON.stringify(results, null, 2) }],
+      }
+    }
+
+    if (name === 'list_rule_categories') {
+      const counts = rulesList.reduce<Record<string, number>>((acc, r) => {
+        const cat = typeof r.category === 'string' ? r.category : 'unknown'
+        acc[cat] = (acc[cat] ?? 0) + 1
+        return acc
+      }, {})
+      const categories = Object.entries(counts)
+        .sort((a, b) => b[1] - a[1])
+        .map(([category, count]) => ({ category, count }))
+      return {
+        content: [
+          {
+            type: 'text',
+            text: JSON.stringify({ total_rules: rulesList.length, categories }, null, 2),
+          },
+        ],
+      }
+    }
+
+    if (name === 'search_rules') {
+      const query = asString(args.query, '')
+      if (!query) return { content: [{ type: 'text', text: 'query is required' }], isError: true }
+      const category = asString(args.category, '')
+      const limit = Math.min(asInt(args.limit, 20), 200)
+      const q = query.toLowerCase()
+      const results = rulesList
+        .filter((r) => {
+          if (category && r.category !== category) return false
+          const searchable = [
+            r.rule_text,
+            r.rule_text_technical,
+            r.category,
+            Array.isArray(r.tags) ? r.tags.join(' ') : '',
+          ].join(' ').toLowerCase()
+          return searchable.includes(q)
+        })
+        .slice(0, limit)
+        .map((r) => {
+          const instances = Array.isArray(r.instances) ? r.instances as Array<Record<string, unknown>> : []
+          const adoption_count = instances.filter(
+            (i) => i.relationship === 'identical' || i.relationship === 'agrees'
+          ).length
+          return {
+            rule_id: r.rule_id,
+            category: r.category,
+            rule_text: r.rule_text,
+            first_instance: r.first_instance,
+            adoption_count,
+          }
+        })
+      return {
+        content: [
+          {
+            type: 'text',
+            text: JSON.stringify({ count: results.length, results }, null, 2),
+          },
+        ],
+      }
+    }
+
+    if (name === 'get_rule') {
+      const rule_id = asString(args.rule_id, '')
+      if (!rule_id) return { content: [{ type: 'text', text: 'rule_id is required' }], isError: true }
+      const rule = rulesList.find((r) => r.rule_id === rule_id)
+      if (!rule) {
+        return {
+          content: [{ type: 'text', text: `No rule found with rule_id: ${rule_id}` }],
+          isError: true,
+        }
+      }
+      const instances = Array.isArray(rule.instances) ? rule.instances as Array<Record<string, unknown>> : []
+      const adoption_count = instances.filter(
+        (i) => i.relationship === 'identical' || i.relationship === 'agrees'
+      ).length
+      return {
+        content: [
+          {
+            type: 'text',
+            text: JSON.stringify(
+              { ...rule, adoption_count, total_instances: instances.length },
+              null,
+              2
+            ),
+          },
+        ],
+      }
+    }
+
+    if (name === 'get_rule_consensus') {
+      const category = asString(args.category, '')
+      const limit = Math.min(asInt(args.limit, 20), 200)
+      const scored = rulesList
+        .filter((r) => !category || r.category === category)
+        .map((r) => {
+          const instances = Array.isArray(r.instances) ? r.instances as Array<Record<string, unknown>> : []
+          const adoption_count = instances.filter(
+            (i) => i.relationship === 'identical' || i.relationship === 'agrees'
+          ).length
+          const fi = r.first_instance as Record<string, unknown> | undefined
+          return {
+            rule_id: r.rule_id,
+            category: r.category,
+            rule_text: r.rule_text,
+            first_instance_date: fi?.date,
+            first_instance_law_name: fi?.law_name,
+            adoption_count,
+            total_instances: instances.length,
+          }
+        })
+        .sort((a, b) => (b.adoption_count as number) - (a.adoption_count as number))
+        .slice(0, limit)
+      return {
+        content: [
+          {
+            type: 'text',
+            text: JSON.stringify({ count: scored.length, results: scored }, null, 2),
+          },
+        ],
       }
     }
 

@@ -369,36 +369,46 @@ export const RULE_CATEGORY_LABELS: Record<RuleCategory, string> = {
   general_governance:'General AI Governance',
 }
 
-// How a specific law stands relative to the canonical rule
+// How a specific law stands relative to the canonical rule.
+// Ordered from strongest agreement to strongest opposition:
 export type RuleRelationship =
-  | 'origin'    // this law is the first instance — establishes the rule
-  | 'agrees'    // adopts substantially the same obligation / prohibition / right
-  | 'similar'   // addresses the same concept but with meaningful differences
-  | 'opposed'   // explicitly contradicts or rejects the premise
-  // absent is implicit when a law does not appear in the instances array
+  | 'origin'      // this law invented the rule — chronological first instance
+  | 'identical'   // near-verbatim copy or copy-paste adoption; functionally indistinguishable
+  | 'agrees'      // independently adopted the same substantive requirement
+  | 'similar'     // same concept but with meaningful differences in standard, scope, or burden
+  | 'opposed'     // explicitly contradicts or rejects the premise of the rule
+  // 'absent' is the implicit default when a law does not appear in the instances array
 
 export interface RuleLawInstance {
   law_id: string
   relationship: RuleRelationship
-  citation: string   // e.g. "§ 15(b)" or "Art. 5(1)(h)"
-  notes: string      // one sentence on what differs or why it matches
+  citation: string       // e.g. "§ 15(b)" or "Art. 5(1)(h)"
+  notes: string          // one sentence on what differs or why it matches
+  variant_of?: string    // law_id whose version this one most closely follows;
+                         // used to compute the de-facto consensus
+  instrument_binding?: boolean       // whether this law creates legally binding obligations
+  instrument_type?: InstrumentType   // statute | voluntary_framework | policy_framework | …
 }
 
 export interface RuleFirstInstance {
   law_id: string
   law_name: string   // full citation-friendly name
   citation: string
-  date: string       // ISO date — used to determine primacy chronologically
+  date: string       // ISO date — chronological primacy
 }
 
 export interface Rule {
-  rule_id: string                  // anchored to first instance: "{law_id}-{section_slug}"
+  rule_id: string                  // "{first_law_id}-{section_slug}"
   rule_text: string                // plain English premise, 1-3 sentences
   rule_text_technical: string      // precise legal framing
   category: RuleCategory
   tags: string[]
   first_instance: RuleFirstInstance
   instances: RuleLawInstance[]     // all non-absent laws; absent is the default
+  // De-facto consensus: computed at runtime from adoption counts.
+  // The law whose version is most widely adopted (most identical + agrees).
+  // May differ from first_instance when a later law became the dominant template.
+  consensus_law_id?: string        // override if known (e.g. set by extraction script)
 }
 
 export interface FilterState {

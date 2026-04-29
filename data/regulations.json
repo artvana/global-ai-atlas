@@ -16655,7 +16655,8 @@
     },
     "instrument_binding": true,
     "country": "China",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/cn-cn-facialrec-2024.md"
   },
   {
     "id": "cn-cn-sciethics-2023",
@@ -16784,7 +16785,8 @@
     },
     "instrument_binding": true,
     "country": "China",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/cn-cn-sciethics-2023.md"
   },
   {
     "id": "cn-sz-aipromotion-2022",
@@ -16917,7 +16919,8 @@
     },
     "instrument_binding": true,
     "country": "China",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/cn-sz-aipromotion-2022.md"
   },
   {
     "id": "pe-pe-ailaw-2023",
@@ -17050,7 +17053,8 @@
     },
     "instrument_binding": true,
     "country": "Peru",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/pe-pe-ailaw-2023.md"
   },
   {
     "id": "ca-fed-admdirective-2019",
@@ -17181,7 +17185,8 @@
     },
     "instrument_binding": false,
     "country": "Canada",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/ca-fed-admdirective-2019.md"
   },
   {
     "id": "eu-eu-dataact-2023",
@@ -17319,7 +17324,8 @@
     },
     "instrument_binding": true,
     "country": "Global / Regional",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/eu-eu-dataact-2023.md"
   },
   {
     "id": "bd-bd-pdpo-2025",
@@ -17452,7 +17458,8 @@
     },
     "instrument_binding": true,
     "country": "Bangladesh",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/bd-bd-pdpo-2025.md"
   },
   {
     "id": "co-co-dpa-2012",
@@ -17583,7 +17590,8 @@
     },
     "instrument_binding": true,
     "country": "Colombia",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/co-co-dpa-2012.md"
   },
   {
     "id": "mu-mu-fsrules-2021",
@@ -17714,7 +17722,8 @@
     },
     "instrument_binding": false,
     "country": "Mauritius",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/mu-mu-fsrules-2021.md"
   },
   {
     "id": "ae-difc-reg10-2020",
@@ -17847,7 +17856,8 @@
     },
     "instrument_binding": true,
     "country": "United Arab Emirates",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/ae-difc-reg10-2020.md"
   },
   {
     "id": "pe-pe-airegulation-2025",
@@ -17984,7 +17994,8 @@
     },
     "instrument_binding": true,
     "country": "Peru",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/pe-pe-airegulation-2025.md"
   },
   {
     "id": "mx-mx-lfpdppp-2025",
@@ -18117,7 +18128,8 @@
     },
     "instrument_binding": true,
     "country": "Mexico",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/mx-mx-lfpdppp-2025.md"
   },
   {
     "id": "in-in-itrules-2026",
@@ -18253,7 +18265,8 @@
     },
     "instrument_binding": true,
     "country": "India",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/in-in-itrules-2026.md"
   },
   {
     "id": "cn-cn-cybersecamend-2025",
@@ -18389,7 +18402,8 @@
     },
     "instrument_binding": true,
     "country": "China",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/cn-cn-cybersecamend-2025.md"
   },
   {
     "id": "et-et-pdpp-2024",
@@ -18522,7 +18536,8 @@
     },
     "instrument_binding": true,
     "country": "Ethiopia",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/et-et-pdpp-2024.md"
   },
   {
     "id": "co-co-aicrimes-2025",
@@ -18654,7 +18669,8 @@
     },
     "instrument_binding": true,
     "country": "Colombia",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/co-co-aicrimes-2025.md"
   },
   {
     "id": "br-br-aicrimes-2025",
@@ -18789,7 +18805,8 @@
     },
     "instrument_binding": true,
     "country": "Brazil",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/br-br-aicrimes-2025.md"
   },
   {
     "id": "ru-ru-aiexperiment-2020",
@@ -18926,7 +18943,8 @@
     },
     "instrument_binding": true,
     "country": "Russia",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/ru-ru-aiexperiment-2020.md"
   },
   {
     "id": "pk-pk-pdpa-2023",
@@ -19059,7 +19077,8 @@
     },
     "instrument_binding": true,
     "country": "Pakistan",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/pk-pk-pdpa-2023.md"
   },
   {
     "id": "qa-qa-pdppl-2016",
@@ -19190,7 +19209,8 @@
     },
     "instrument_binding": true,
     "country": "Qatar",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/qa-qa-pdppl-2016.md"
   },
   {
     "id": "uz-uz-aiamend-2024",
@@ -19323,7 +19343,8 @@
     },
     "instrument_binding": true,
     "country": "Uzbekistan",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/uz-uz-aiamend-2024.md"
   },
   {
     "id": "oecd-oecd-aiprinciples-2019",
@@ -19461,7 +19482,8 @@
     },
     "instrument_binding": false,
     "country": "Global / Regional",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/oecd-oecd-aiprinciples-2019.md"
   },
   {
     "id": "unesco-unesco-airecommendation-2021",
@@ -19601,7 +19623,8 @@
     },
     "instrument_binding": false,
     "country": "Global / Regional",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/unesco-unesco-airecommendation-2021.md"
   },
   {
     "id": "g7-g7-hiroshimaprocess-2023",
@@ -19737,7 +19760,8 @@
     },
     "instrument_binding": false,
     "country": "Global / Regional",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/g7-g7-hiroshimaprocess-2023.md"
   },
   {
     "id": "un-un-airesolution-2024",
@@ -19870,7 +19894,8 @@
     },
     "instrument_binding": false,
     "country": "Global / Regional",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/un-un-airesolution-2024.md"
   },
   {
     "id": "nist-us-airmf-2023",
@@ -20011,7 +20036,8 @@
     },
     "instrument_binding": false,
     "country": "United States",
-    "operative_dates": "Published Jan 2023. Living document; Generative AI Profile (NIST AI 600-1) released Jul 2024 as supplementary guidance."
+    "operative_dates": "Published Jan 2023. Living document; Generative AI Profile (NIST AI 600-1) released Jul 2024 as supplementary guidance.",
+    "text_path": "data/texts/nist-us-airmf-2023.md"
   },
   {
     "id": "iso-iso-42001-2023",
@@ -20148,7 +20174,8 @@
     },
     "instrument_binding": false,
     "country": "Global / Regional",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/iso-iso-42001-2023.md"
   },
   {
     "id": "iso-iso-23894-2023",
@@ -20281,7 +20308,8 @@
     },
     "instrument_binding": false,
     "country": "Global / Regional",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/iso-iso-23894-2023.md"
   },
   {
     "id": "eu-eu-aioffice-prohibited-2025",
@@ -20421,7 +20449,8 @@
     },
     "instrument_binding": true,
     "country": "Global / Regional",
-    "operative_dates": "Guidelines issued Feb 2025 on the prohibited AI practices provisions of the EU AI Act, which became applicable 2 Feb 2025."
+    "operative_dates": "Guidelines issued Feb 2025 on the prohibited AI practices provisions of the EU AI Act, which became applicable 2 Feb 2025.",
+    "text_path": "data/texts/eu-eu-aioffice-prohibited-2025.md"
   },
   {
     "id": "eu-eu-gpai-cop-2025",
@@ -20572,7 +20601,8 @@
     ],
     "instrument_binding": false,
     "country": "Global / Regional",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/eu-eu-gpai-cop-2025.md"
   },
   {
     "id": "ar-ar-aidecree-2024",
@@ -20705,7 +20735,8 @@
     },
     "instrument_binding": false,
     "country": "Argentina",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/ar-ar-aidecree-2024.md"
   },
   {
     "id": "ca-fed-genaicode-2023",
@@ -20841,7 +20872,8 @@
     },
     "instrument_binding": false,
     "country": "Canada",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/ca-fed-genaicode-2023.md"
   },
   {
     "id": "ch-ch-fadp-2023",
@@ -20974,7 +21006,8 @@
     },
     "instrument_binding": true,
     "country": "Switzerland",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/ch-ch-fadp-2023.md"
   },
   {
     "id": "ua-ua-aidraft-2024",
@@ -21121,7 +21154,8 @@
     ],
     "instrument_binding": false,
     "country": "Ukraine",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/ua-ua-aidraft-2024.md"
   },
   {
     "id": "rs-rs-pdpl-2023",
@@ -21252,7 +21286,8 @@
     },
     "instrument_binding": true,
     "country": "Serbia",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/rs-rs-pdpl-2023.md"
   },
   {
     "id": "tn-tn-datastrategy-2024",
@@ -21385,7 +21420,8 @@
     },
     "instrument_binding": false,
     "country": "Tunisia",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/tn-tn-datastrategy-2024.md"
   },
   {
     "id": "ma-ma-cnpdai-2024",
@@ -21519,7 +21555,8 @@
     },
     "instrument_binding": true,
     "country": "Morocco",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/ma-ma-cnpdai-2024.md"
   },
   {
     "id": "cn-sh-aiordinance-2022",
@@ -21658,7 +21695,8 @@
     },
     "instrument_binding": true,
     "country": "China",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/cn-sh-aiordinance-2022.md"
   },
   {
     "id": "cn-bj-genai-2023",
@@ -21796,7 +21834,8 @@
     },
     "instrument_binding": true,
     "country": "China",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/cn-bj-genai-2023.md"
   },
   {
     "id": "cn-gd-aiindustry-2024",
@@ -21933,7 +21972,8 @@
     },
     "instrument_binding": true,
     "country": "China",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/cn-gd-aiindustry-2024.md"
   },
   {
     "id": "asean-asean-aigovernance-2023",
@@ -22072,7 +22112,8 @@
     },
     "instrument_binding": false,
     "country": "Global / Regional",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/asean-asean-aigovernance-2023.md"
   },
   {
     "id": "afu-afu-aistrategy-2024",
@@ -22209,7 +22250,8 @@
     },
     "instrument_binding": false,
     "country": "Global / Regional",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/afu-afu-aistrategy-2024.md"
   },
   {
     "id": "us-ftc-aipolicy-2023",
@@ -22345,7 +22387,8 @@
     },
     "instrument_binding": true,
     "country": "United States",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/us-ftc-aipolicy-2023.md"
   },
   {
     "id": "us-cfpb-aicircular-2023",
@@ -22478,7 +22521,8 @@
     },
     "instrument_binding": true,
     "country": "United States",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/us-cfpb-aicircular-2023.md"
   },
   {
     "id": "us-eeoc-aitechnical-2023",
@@ -22611,7 +22655,8 @@
     },
     "instrument_binding": true,
     "country": "United States",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/us-eeoc-aitechnical-2023.md"
   },
   {
     "id": "us-fda-aimlsasp-2021",
@@ -22744,7 +22789,8 @@
     },
     "instrument_binding": true,
     "country": "United States",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/us-fda-aimlsasp-2021.md"
   },
   {
     "id": "us-sec-aiconflict-2023",
@@ -22875,6 +22921,7 @@
     },
     "instrument_binding": false,
     "country": "United States",
-    "operative_dates": null
+    "operative_dates": null,
+    "text_path": "data/texts/us-sec-aiconflict-2023.md"
   }
 ]

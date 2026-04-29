@@ -135,6 +135,34 @@ const URL_OVERRIDES: Record<string, string> = {
   'es-es-aisandbox-2023': 'https://www.boe.es/eli/es/rd/2023/11/08/817/dof/eng',
   // Denmark AI Supplementary — retsinformation.dk JS-rendered; use Wayback snapshot (2026-02-15)
   'dk-dk-aisupplementary-2025': 'https://web.archive.org/web/20260215182844if_/https://www.retsinformation.dk/eli/lta/2025/467',
+  // EU Data Act — EUR-LEX homepage is JS-rendered; use direct HTML endpoint
+  'eu-eu-dataact-2023':         'https://web.archive.org/web/20250101000000if_/https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R2854',
+  // NIST AI RMF — airc.nist.gov is a JS SPA; use the direct PDF publication
+  'nist-us-airmf-2023':         'https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf',
+  // G7 Hiroshima — meti.go.jp 404; use OECD copy of the code of conduct
+  'g7-g7-hiroshimaprocess-2023':'https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/artificial-intelligence/G7-Hiroshima-Process-International-Guiding-Principles.pdf',
+  // OECD AI Principles — JS-rendered; use the PDF version from OECD
+  'oecd-oecd-aiprinciples-2019':'https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/artificial-intelligence/OECD-AI-Principles-2019.pdf',
+  // UNESCO AI Recommendation — JS-rendered; use the PDF from UNESCO
+  'unesco-unesco-airecommendation-2021': 'https://unesdoc.unesco.org/ark:/48223/pf0000381137/PDF/381137eng.pdf.multi',
+  // UN Resolution — direct PDF
+  'un-un-airesolution-2024':    'https://documents.un.org/doc/undoc/gen/n24/065/92/pdf/n2406592.pdf',
+  // Beijing GenAI — cac.gov.cn blocked; use ChinaLawTranslate
+  'cn-bj-genai-2023':           'https://www.chinalawtranslate.com/en/beijing-generative-ai-services/',
+  // China Facial Recognition — use ChinaLawTranslate English translation
+  'cn-cn-facialrec-2024':       'https://www.chinalawtranslate.com/en/facial-recognition-security-measures/',
+  // ASEAN AI Governance — use Wayback snapshot of the PDF
+  'asean-asean-aigovernance-2023': 'https://web.archive.org/web/20240101000000if_/https://asean.org/wp-content/uploads/2023/11/ASEAN-Guide-on-AI-Governance-and-Ethics_2nd-Ed.pdf',
+  // FTC AI Policy — the ftc.gov/policy URL is a 404; use the TechFTC blog post
+  'us-ftc-aipolicy-2023':       'https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2023/11/generative-ai-raises-competition-concerns',
+  // CFPB Circular — correct URL for the circular text page
+  'us-cfpb-aicircular-2023':    'https://files.consumerfinance.gov/f/documents/cfpb_circular-2023-03_explainability-requirements-for-adverse-action-notices_2023-09.pdf',
+  // SEC AI Conflict — use the Federal Register HTML version
+  'us-sec-aiconflict-2023':     'https://www.federalregister.gov/documents/2023/08/09/2023-16742/conflicts-of-interest-associated-with-the-use-of-predictive-data-analytics-by-broker-dealers-and',
+  // Canada Voluntary GenAI Code — use Wayback Machine snapshot
+  'ca-fed-genaicode-2023':      'https://web.archive.org/web/20241201000000if_/https://ised-isde.canada.ca/site/ised/en/voluntary-code-conduct-responsible-development-and-management-advanced-generative-ai-systems',
+  // Switzerland FADP — fedlex direct link (may need Wayback)
+  'ch-ch-fadp-2023':            'https://web.archive.org/web/20240101000000if_/https://www.fedlex.admin.ch/eli/cc/2022/491/en',
 }
 
 // ─── Domains with TLS cert issues that curl handles but Node.js rejects ───────

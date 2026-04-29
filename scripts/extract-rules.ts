@@ -42,6 +42,9 @@ interface RuleLawInstance {
   relationship: RuleRelationship
   citation: string
   notes: string
+  variant_of?: string
+  instrument_binding?: boolean
+  instrument_type?: string
 }
 
 interface Rule {
@@ -69,6 +72,8 @@ interface Law {
   key_obligations?: string[]
   text_path?: string
   status?: string
+  instrument_binding?: boolean
+  instrument_type?: string
 }
 
 interface ExtractedRule {
@@ -80,9 +85,11 @@ interface ExtractedRule {
 }
 
 interface MatchResult {
-  citation: string
+  index: number
+  citation?: string
   matched_rule_id: string | null
-  relationship: 'agrees' | 'similar' | 'opposed' | null
+  relationship: 'identical' | 'agrees' | 'similar' | 'opposed' | null
+  variant_of?: string
   notes: string
   is_new: boolean
   rule_text?: string
@@ -102,11 +109,19 @@ function writeJSON(p: string, data: unknown): void {
   fs.writeFileSync(p, JSON.stringify(data, null, 2) + '\n', 'utf8')
 }
 
+const MIN_TEXT_LENGTH = 1000 // files below this are treated as placeholder/error pages
+
 function readFullText(law: Law): string | null {
   if (!law.text_path) return null
   const resolved = path.resolve(PROJECT_ROOT, law.text_path)
   if (!resolved.startsWith(PROJECT_ROOT + path.sep)) return null
-  try { return fs.readFileSync(resolved, 'utf8') } catch { return null }
+  try {
+    const text = fs.readFileSync(resolved, 'utf8')
+    // Reject placeholder files and fetch-error stubs
+    if (text.length < MIN_TEXT_LENGTH) return null
+    if (text.includes('Text not yet available') || text.includes('Text pending')) return null
+    return text
+  } catch { return null }
 }
 
 function slugify(s: string): string {
@@ -148,13 +163,19 @@ function buildExtractionPrompt(law: Law, text: string | null): string {
     ? `FULL LEGAL TEXT (first 12000 chars):\n${text.slice(0, 12000)}`
     : `SUMMARY: ${law.summary}\n\nKEY OBLIGATIONS:\n${(law.key_obligations ?? []).join('\n')}`
 
-  return `You are building a global AI-law comparative database. Your task is to extract every distinct legal RULE from the following law.
+  const instrumentContext = law.instrument_binding === false
+    ? `INSTRUMENT TYPE: ${law.instrument_type ?? 'policy_framework'} — this is VOLUNTARY / SOFT LAW. Rules from this instrument are recommendations or best practices, not legally enforceable mandates. Still extract each distinct normative standard as a rule, but note in rule_text that it is a recommendation (e.g. "Organizations should...", "It is recommended that...").`
+    : `INSTRUMENT TYPE: ${law.instrument_type ?? 'statute'} — this is a BINDING LEGAL INSTRUMENT. Extract enforceable obligations, prohibitions, and rights.`
 
-A RULE is a specific, enforceable legal obligation, prohibition, right, or standard — not a policy goal or aspiration. Examples:
-- Obligations ("must obtain written consent before collecting biometric data")
-- Prohibitions ("may not use AI for social scoring")
-- Rights ("individuals have the right to appeal an AI decision")
-- Technical requirements ("AI systems must include human override capability")
+  return `You are building a global AI-law comparative database. Your task is to extract every distinct RULE from the following law.
+
+${instrumentContext}
+
+A RULE is a specific normative standard — an obligation, prohibition, right, or recommended practice. Examples:
+- Binding obligations ("You must obtain written consent before collecting biometric data")
+- Binding prohibitions ("AI may not be used for social scoring")
+- Rights ("Individuals have the right to appeal an AI decision")
+- Voluntary recommendations ("Organizations should conduct a risk assessment before deployment")
 
 Law: ${law.full_name}
 Jurisdiction: ${law.jurisdiction}
@@ -178,45 +199,54 @@ Return ONLY a valid JSON array of rule objects. No commentary, no markdown fence
 
 function buildMatchingPrompt(law: Law, extracted: ExtractedRule[], existing: Rule[]): string {
   const existingList = existing.map(r =>
-    `  { "rule_id": "${r.rule_id}", "rule_text": "${r.rule_text.slice(0, 120).replace(/"/g, "'")}" }`
+    `  { "rule_id": "${r.rule_id}", "first_law": "${r.first_instance.law_id}", "rule_text": "${r.rule_text.slice(0, 120).replace(/"/g, "'")}" }`
   ).join('\n')
 
   const newList = extracted.map((r, i) =>
     `  [${i}] citation="${r.citation}" rule_text="${r.rule_text.slice(0, 120).replace(/"/g, "'")}"`
   ).join('\n')
 
+  const instrumentNote = law.instrument_binding === false
+    ? `NOTE: This is a SOFT LAW / VOLUNTARY instrument (${law.instrument_type}). Its rules are recommendations, not binding mandates. When matching to existing rules from binding laws, use "similar" rather than "agrees" unless the voluntary standard is substantively identical in scope and content.`
+    : `NOTE: This is a BINDING LEGAL INSTRUMENT (${law.instrument_type ?? 'statute'}).`
+
   return `You are maintaining a cross-jurisdictional AI-law rules database. Below are rules already in the database, followed by rules newly extracted from a new law.
 
-For each newly extracted rule, determine:
-1. Does it match an existing rule in the database (same legal concept)?
-   - "agrees": substantially the same obligation / prohibition / right (possibly different penalty or scope)
-   - "similar": same concept but with meaningful differences in standard, burden, or coverage
-   - "opposed": explicitly contradicts or rejects the premise of the existing rule
-   - null if no match (it is a genuinely new rule not yet in the database)
+For each newly extracted rule, determine whether it matches an existing rule and what the relationship is.
 
-2. If it is a new rule, confirm its category.
+RELATIONSHIP TYPES (use the most precise one):
+- "identical": near-verbatim copy or copy-paste adoption — the new law's text is functionally the same as an existing rule, just reworded slightly. Use when the law clearly borrowed directly from another.
+- "agrees": independently adopted the same substantive requirement, but drafted it differently (different phrasing, structure, or minor scope variation). Use even if one is binding and one is voluntary, as long as the substantive standard is the same.
+- "similar": same underlying concept but with meaningful differences in standard, threshold, coverage, or burden. Use when comparing binding vs. voluntary instruments where scope or obligation level differs significantly.
+- "opposed": explicitly contradicts or rejects the premise of the existing rule.
+- null: genuinely new rule not yet in the database.
 
-New law being processed: ${law.full_name} (${law.jurisdiction}, ${law.enacted_date})
+For "identical" relationships, also return variant_of: the first_law value from the existing rule whose text this one most closely copies.
 
-EXISTING RULES IN DATABASE (${existing.length} total):
+${instrumentNote}
+
+New law: ${law.full_name} (${law.jurisdiction}, ${law.enacted_date})
+
+EXISTING RULES (${existing.length}):
 ${existingList || '  (none yet)'}
 
-NEWLY EXTRACTED RULES FROM THIS LAW (${extracted.length} total):
+NEW RULES FROM THIS LAW (${extracted.length}):
 ${newList}
 
-Return a JSON array with one object per newly extracted rule, in the same order:
+Return a JSON array, one object per new rule, in the same order:
 [
   {
     "index": 0,
-    "matched_rule_id": "<rule_id from existing database, or null if new>",
-    "relationship": "agrees" | "similar" | "opposed" | null,
-    "notes": "one sentence explaining the match (what differs, why it matches, what makes it distinct)",
+    "matched_rule_id": "<existing rule_id or null>",
+    "relationship": "identical" | "agrees" | "similar" | "opposed" | null,
+    "variant_of": "<first_law id, only when relationship is identical>",
+    "notes": "one sentence on what matches, what differs, or what is new",
     "is_new": true | false,
-    "category": "<category — required if is_new is true, optional otherwise>"
+    "category": "<required when is_new is true>"
   }
 ]
 
-Return ONLY a valid JSON array. No commentary, no markdown fences.`
+Return ONLY valid JSON. No markdown, no commentary.`
 }
 
 // ── main ──────────────────────────────────────────────────────────────────────
@@ -265,8 +295,8 @@ async function main() {
       const extractionPrompt = buildExtractionPrompt(law, fullText)
       const rawExtraction = await callWithRetry(async () => {
         const msg = await client.messages.create({
-          model: 'claude-opus-4-7',
-          max_tokens: 4096,
+          model: 'claude-sonnet-4-6',
+          max_tokens: 16000,
           messages: [{ role: 'user', content: extractionPrompt }],
         })
         const content = msg.content[0]
@@ -301,8 +331,8 @@ async function main() {
       const matchingPrompt = buildMatchingPrompt(law, extracted, rules)
       const rawMatches = await callWithRetry(async () => {
         const msg = await client.messages.create({
-          model: 'claude-opus-4-7',
-          max_tokens: 4096,
+          model: 'claude-sonnet-4-6',
+          max_tokens: 16000,
           messages: [{ role: 'user', content: matchingPrompt }],
         })
         const content = msg.content[0]
@@ -331,19 +361,28 @@ async function main() {
 
       if (!match) continue
 
+      const instBase = {
+        instrument_binding: law.instrument_binding ?? true,
+        instrument_type: law.instrument_type,
+      }
+
       if (!match.is_new && match.matched_rule_id) {
         // Add an instance to an existing rule
         const existing = rules.find(r => r.rule_id === match.matched_rule_id)
         if (existing) {
-          // Avoid duplicate instances for the same law
           const alreadyHas = existing.instances.some(inst => inst.law_id === law.id)
           if (!alreadyHas && match.relationship) {
-            existing.instances.push({
+            const inst: RuleLawInstance = {
               law_id: law.id,
               relationship: match.relationship,
               citation: ext.citation,
               notes: match.notes,
-            })
+              ...instBase,
+            }
+            if (match.relationship === 'identical' && match.variant_of) {
+              inst.variant_of = match.variant_of
+            }
+            existing.instances.push(inst)
             matchedRules++
           }
         }
@@ -371,6 +410,7 @@ async function main() {
               relationship: 'origin',
               citation: ext.citation,
               notes: `Rule introduced in ${law.short_name} (${law.jurisdiction}, ${law.enacted_date}).`,
+              ...instBase,
             },
           ],
         }
@@ -394,6 +434,9 @@ async function main() {
 
   console.log()
   console.log(`Done. rules.json now contains ${rules.length} rules across ${processed.size} processed laws.`)
+  console.log('Generating embeddings for all rules...')
+  console.log('Run "npm run embed-rules" to generate/refresh embeddings separately.')
+  console.log('This enables semantic similarity search in the UI.')
 }
 
 main().catch(err => {
