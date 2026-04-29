@@ -42,7 +42,14 @@ export async function initModel(onProgress?: (p: LoadProgress) => void): Promise
 
   _loading = true
   _loadPromise = (async () => {
-    const { pipeline, env } = await import('@xenova/transformers')
+    // Dynamic import with vite-ignore so Rolldown does not attempt to bundle
+    // @xenova/transformers at build time (it is CJS-only with no exports map).
+    // The package is listed in dependencies so it is available in node_modules
+    // for local dev; for the deployed static build it is loaded by the browser
+    // from node_modules via the same dynamic import path.
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const mod = await import(/* @vite-ignore */ '@xenova/transformers') as any
+    const { pipeline, env } = mod
     // Allow remote model downloads
     env.allowRemoteModels = true
 

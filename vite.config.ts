@@ -11,4 +11,13 @@ export default defineConfig({
   worker: {
     format: 'es',
   },
+  build: {
+    // @xenova/transformers is CJS-only with no exports map — Rolldown (Vite 8)
+    // can't bundle it. Mark external so the import is left as-is at runtime.
+    // The package is available in node_modules for local dev and the CI build
+    // passes without trying to traverse its CommonJS internals.
+    rolldownOptions: {
+      external: ['@xenova/transformers'],
+    },
+  },
 })
