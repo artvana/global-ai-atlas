@@ -5,6 +5,98 @@ import { CATEGORY_LABELS, LEGAL_FAMILY_LABELS } from '../data/regulations'
 
 interface Props { laws: AILaw[] }
 
+// Population in millions (2024 estimates). US combines federal + state.
+// Supranational bodies (EU, OECD) are excluded from this chart.
+const POPULATION_M: Record<string, number> = {
+  'United States':        335,
+  'China':               1410,
+  'India':               1440,
+  'Brazil':               215,
+  'Indonesia':            280,
+  'Pakistan':             230,
+  'Bangladesh':           170,
+  'Nigeria':              225,
+  'Russia':               145,
+  'Ethiopia':             130,
+  'Mexico':               130,
+  'Japan':                125,
+  'Philippines':          115,
+  'Egypt':                106,
+  'Vietnam':               98,
+  'Turkey':                85,
+  'Iran':                  88,
+  'Thailand':              72,
+  'United Kingdom':        68,
+  'France':                68,
+  'Tanzania':              65,
+  'South Africa':          60,
+  'Colombia':              52,
+  'South Korea':           52,
+  'Kenya':                 56,
+  'Spain':                 47,
+  'Argentina':             46,
+  'Ukraine':               40,
+  'Canada':                40,
+  'Algeria':               46,
+  'Sudan':                 46,
+  'Iraq':                  42,
+  'Morocco':               37,
+  'Saudi Arabia':          35,
+  'Peru':                  33,
+  'Uzbekistan':            36,
+  'Malaysia':              34,
+  'Angola':                35,
+  'Ghana':                 33,
+  'Venezuela':             28,
+  'Australia':             26,
+  'Kazakhstan':            19,
+  'Chile':                 19,
+  'Cameroon':              28,
+  'Netherlands':           18,
+  'Sri Lanka':             22,
+  'Côte d\'Ivoire':        27,
+  'Romania':               19,
+  'Ecuador':               18,
+  'Guatemala':             18,
+  'Cambodia':              17,
+  'Zimbabwe':              16,
+  'Senegal':               17,
+  'Rwanda':                14,
+  'Bolivia':               12,
+  'Belgium':               11,
+  'Tunisia':               12,
+  'Sweden':                10,
+  'Czech Republic':        11,
+  'Portugal':              10,
+  'Hungary':               10,
+  'United Arab Emirates':  10,
+  'Israel':                 9,
+  'Switzerland':            9,
+  'Tajikistan':            10,
+  'Hong Kong':              7,
+  'Laos':                   7,
+  'Serbia':                 7,
+  'Singapore':              6,
+  'Denmark':                6,
+  'Finland':                5,
+  'Norway':                 5,
+  'New Zealand':            5,
+  'Ireland':                5,
+  'Costa Rica':             5,
+  'Panama':                 4,
+  'Croatia':                4,
+  'Bosnia':                 3,
+  'Albania':                3,
+  'Armenia':                3,
+  'Lithuania':              3,
+  'Uruguay':                3,
+  'Mongolia':               3,
+  'Qatar':                  3,
+  'Jamaica':                3,
+  'Mauritius':              1,
+  'Taiwan':                23,
+}
+
 const ACCENT   = '#1870D5'
 const MUTED    = '#D4D4D8'
 const GREEN    = '#16A34A'
@@ -70,6 +162,26 @@ export function AnalysisCharts({ laws }: Props) {
       .sort((a, b) => b[1] - a[1])
       .slice(0, 10)
       .map(([name, count]) => ({ name, count }))
+  }, [active])
+
+  // per-capita: laws per million people, US treated as single country (federal+state combined)
+  // supranational bodies excluded (no national population to normalize against)
+  const byCountryNorm = useMemo(() => {
+    const counts: Record<string, number> = {}
+    active.forEach(l => {
+      if (!l.country || l.country === 'Global / Regional') return
+      if (!(l.country in POPULATION_M)) return   // skip unmapped / supranational
+      counts[l.country] = (counts[l.country] ?? 0) + 1
+    })
+    return Object.entries(counts)
+      .map(([name, count]) => ({
+        name,
+        count,
+        perMillion: parseFloat((count / POPULATION_M[name]).toFixed(2)),
+      }))
+      .filter(d => d.perMillion > 0)
+      .sort((a, b) => b.perMillion - a.perMillion)
+      .slice(0, 12)
   }, [active])
 
   // year-by-year (2018 onwards)
@@ -221,6 +333,41 @@ export function AnalysisCharts({ laws }: Props) {
                 <Tooltip content={<ChartTip />} />
                 <Bar dataKey="count" radius={[0, 3, 3, 0]} maxBarSize={18}>
                   {byCountry.map((d, i) => (
+                    <Cell key={d.name} fill={i === 0 ? ACCENT : '#93C5FD'} />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+
+          <div className="mt-6 pb-2.5 mb-1 border-b border-odl-border">
+            <h3 className="text-xs font-semibold text-odl-subtle uppercase tracking-wider">Per-capita regulatory intensity</h3>
+          </div>
+          <p className="text-xs text-odl-muted leading-relaxed mt-2.5 mb-4">
+            Laws per million residents. US federal and state laws are counted together against the full US population (335M),
+            avoiding double-counting. Supranational instruments (EU, OECD, G7) are excluded as they have no single national population.
+            Small jurisdictions with active AI programs stand out here even if absent from the raw-count chart.
+          </p>
+          <div className="panel p-4" style={{ height: 360 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={byCountryNorm} layout="vertical" margin={{ left: 8, right: 52, top: 4, bottom: 4 }}>
+                <XAxis type="number" tick={axisStyle} axisLine={false} tickLine={false} tickFormatter={v => `${v}`} />
+                <YAxis type="category" dataKey="name" tick={axisStyle} width={130} axisLine={false} tickLine={false} />
+                <Tooltip
+                  content={({ active, payload, label }) => {
+                    if (!active || !payload?.length) return null
+                    const d = byCountryNorm.find(x => x.name === label)
+                    return (
+                      <div className="bg-white border border-odl-border rounded shadow-sm px-3 py-2 text-xs">
+                        <p className="font-medium text-odl-text mb-0.5">{label}</p>
+                        <p className="text-odl-accent font-mono">{payload[0].value} per million</p>
+                        {d && <p className="text-odl-subtle mt-0.5">{d.count} laws · pop. {POPULATION_M[d.name]}M</p>}
+                      </div>
+                    )
+                  }}
+                />
+                <Bar dataKey="perMillion" radius={[0, 3, 3, 0]} maxBarSize={18}>
+                  {byCountryNorm.map((d, i) => (
                     <Cell key={d.name} fill={i === 0 ? ACCENT : '#93C5FD'} />
                   ))}
                 </Bar>
