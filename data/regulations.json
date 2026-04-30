@@ -22923,5 +22923,157 @@
     "country": "United States",
     "operative_dates": null,
     "text_path": "data/texts/us-sec-aiconflict-2023.md"
+  },
+  {
+    "id": "ru-ru-ailaw-2025",
+    "jurisdiction": "Russia",
+    "jurisdiction_type": "national",
+    "region": "Eastern Europe & Central Asia",
+    "short_name": "Russia AI Foundations Law",
+    "full_name": "Federal Law on the Foundations of State Regulation of Areas of Application of Artificial Intelligence Technologies in the Russian Federation",
+    "instrument_type": "statute",
+    "bill_number": "Draft Federal Law",
+    "enacted_date": null,
+    "effective_date": "2027-09-01",
+    "status": "draft",
+    "superseded_by": null,
+    "categories": [
+      "general_ai_governance",
+      "transparency",
+      "accountability_governance",
+      "prohibited_applications",
+      "training_data",
+      "enforcement"
+    ],
+    "primary_category": "general_ai_governance",
+    "scope": "horizontal",
+    "who_regulated": [
+      "developers",
+      "deployers",
+      "operators",
+      "users"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": true,
+      "training_data_disclosure": true,
+      "content_labelling": true,
+      "risk_classification_system": true,
+      "impact_assessment_required": true,
+      "anti_discrimination": true,
+      "anti_discrimination_standard": "behavioral and personal characteristics",
+      "human_review_right": true,
+      "opt_out_right": true,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": true,
+      "private_right_of_action": true,
+      "safe_harbor": true,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Authorized body in the field of artificial intelligence",
+      "Federal executive authorities"
+    ],
+    "max_penalty": "Administrative and criminal liability under existing legislation",
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": "Federal law; preempts inconsistent regional regulations",
+    "legal_family": "standalone",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://sozd.duma.gov.ru/",
+    "summary_url": null,
+    "last_verified": "2026-04-30",
+    "ai_specific": true,
+    "summary": "Russia's draft comprehensive AI governance framework law, submitted by the Government. Establishes foundational principles for AI development and deployment including risk-based regulation, disclosure obligations, data localisation requirements for trusted AI models, a register of certified trusted AI models for use in state systems, and liability provisions. Emphasises technological sovereignty and Russian value alignment. A sovereign AI model development programme supports domestic large foundation models. Mandatory human-in-the-loop rights for autonomous decisions affecting citizens. Watermarking/labelling requirements for AI-generated content. Enters into force 1 September 2027.",
+    "notable": "Russia's first comprehensive horizontal AI law, replacing the 2020 Moscow sandbox as the primary AI governance framework. Introduces a 'trusted AI models' register for state procurement, sovereignty requirements for state-adjacent AI systems, and an explicit 'traditional values' compliance criterion — a globally distinctive feature. Draft status: submitted by government, not yet enacted.",
+    "legal_citation": "Draft Federal Law submitted by the Government of the Russian Federation (2025/2026)",
+    "topics": [
+      "AI governance",
+      "trusted AI",
+      "technological sovereignty",
+      "AI disclosure",
+      "synthetic media labelling",
+      "AI liability",
+      "data localisation",
+      "foundation models"
+    ],
+    "sector_tags": [
+      "government_services",
+      "critical_infrastructure",
+      "commercial_ai"
+    ],
+    "technology_tags": [
+      "large_language_models",
+      "computer_vision",
+      "speech_recognition",
+      "autonomous_systems",
+      "decision_support_systems"
+    ],
+    "key_obligations": [
+      "Disclose to users when AI is used in service delivery (Article 9)",
+      "Notify citizens when autonomous AI decisions affect their rights (Article 9)",
+      "Provide opt-out from AI for service delivery where feasible (Article 9)",
+      "Allow pre-trial appeal of AI-assisted government decisions (Article 9)",
+      "Developers must document model architecture and conduct risk modelling (Article 10)",
+      "Operators must appoint AI safety officers and record incidents (Article 10)",
+      "Service owners must label all AI-generated content in human- and machine-readable formats (Article 12)",
+      "Only certified trusted AI models permitted in state information systems (Article 8)",
+      "Data processing for trusted AI models must remain within Russian territory (Article 8)",
+      "Training data text/data mining permitted without IP rights holder consent if lawfully acquired (Article 13)"
+    ],
+    "issue_positions": {
+      "impact_assessment": {
+        "position": "risk_based_assessment",
+        "detail": "Risk-oriented approach; risk assessment required prior to deployment, scaled to probability and scale of potential harm (Articles 5, 10)"
+      },
+      "prohibited_categories": {
+        "position": "not_addressed",
+        "detail": "No explicit prohibited AI application categories in this framework law; sector-specific prohibitions may be established by subordinate legislation"
+      },
+      "human_review_rights": {
+        "position": "right_to_appeal",
+        "detail": "Citizens have right to pre-trial appeal of AI-assisted government decisions; opt-out from AI service delivery in certain cases (Article 9)"
+      },
+      "private_right_of_action": {
+        "position": "civil_liability",
+        "detail": "Citizens have right to compensation for harm from unlawful AI use under civil legislation (Article 9); fault-based liability for developers/operators/service owners (Article 11)"
+      },
+      "synthetic_media": {
+        "position": "mandatory_labelling",
+        "detail": "Mandatory human- and machine-readable watermark/label on all AI-generated audio, visual, and other content; platforms with >100k daily users must verify presence or remove (Article 12)"
+      },
+      "biometric_data": {
+        "position": "not_addressed",
+        "detail": "Not specifically addressed in this framework law"
+      },
+      "training_data_transparency": {
+        "position": "disclosure_to_users",
+        "detail": "Service owners must inform users of lawfulness of training data origins; developers must guarantee no IP rights violations in training data (Article 13)"
+      },
+      "content_labeling": {
+        "position": "mandatory_labelling",
+        "detail": "All AI-generated content must carry perceptible-to-humans and machine-readable warning; removal of labels is a specific administrative offense (Article 12)"
+      },
+      "anti_discrimination": {
+        "position": "prohibition",
+        "detail": "Developers must eliminate model features capable of leading to discrimination based on behaviour or personal characteristics (Article 10)"
+      },
+      "risk_classification": {
+        "position": "risk_based_tiered",
+        "detail": "Risk-oriented approach mandated by Article 5; specific risk tiers to be established by subordinate legislation based on autonomy, legal significance, and information sensitivity"
+      },
+      "enforcement_model": {
+        "position": "regulatory_supervision",
+        "detail": "Authorized federal AI body can initiate inspections and issue mandatory corrective instructions; admin and criminal liability under existing codes; recourse claims available between operators and developers (Articles 11, 14)"
+      }
+    },
+    "instrument_binding": true,
+    "country": "Russia",
+    "operative_dates": null,
+    "text_path": "data/texts/ru-ru-ailaw-2025.md"
   }
 ]

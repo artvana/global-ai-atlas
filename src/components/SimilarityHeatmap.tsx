@@ -22,39 +22,91 @@ function stanceLabel(score: number): string {
 // ── region / jurisdiction helpers ─────────────────────────────────────────────
 
 const REGION_ORDER = [
-  'Supranational', 'United States', 'Americas', 'Europe', 'Asia-Pacific', 'Middle East & Africa', 'Other',
+  'Supranational',
+  'USA',
+  'Canada',
+  'Latin America',
+  'Western Europe',
+  'Eastern Europe & Central Asia',
+  'East Asia',
+  'South Asia',
+  'Southeast Asia',
+  'Pacific',
+  'Middle East & North Africa',
+  'Sub-Saharan Africa',
+  'Other',
 ]
 
 const REGION_COLORS: Record<string, string> = {
-  Supranational:           '#6D28D9',
-  'United States':         '#0369A1',
-  Americas:                '#0D9488',
-  Europe:                  '#059669',
-  'Asia-Pacific':          '#D97706',
-  'Middle East & Africa':  '#DC2626',
-  Other:                   '#64748B',
+  Supranational:                   '#6D28D9',
+  USA:                             '#1D4ED8',
+  Canada:                          '#0891B2',
+  'Latin America':                 '#0D9488',
+  'Western Europe':                '#059669',
+  'Eastern Europe & Central Asia': '#4D7C0F',
+  'East Asia':                     '#D97706',
+  'South Asia':                    '#A16207',
+  'Southeast Asia':                '#B45309',
+  Pacific:                         '#0C4A6E',
+  'Middle East & North Africa':    '#DC2626',
+  'Sub-Saharan Africa':            '#9D174D',
+  Other:                           '#64748B',
 }
 
 const COUNTRY_REGION: Record<string, string> = {
-  Canada: 'Americas', Brazil: 'Americas', Mexico: 'Americas',
-  Argentina: 'Americas', Chile: 'Americas', Colombia: 'Americas', Peru: 'Americas',
-  'United Kingdom': 'Europe', France: 'Europe', Spain: 'Europe',
-  Italy: 'Europe', Denmark: 'Europe', Finland: 'Europe',
-  Ireland: 'Europe', Switzerland: 'Europe', Hungary: 'Europe',
-  Serbia: 'Europe', Ukraine: 'Europe', Russia: 'Europe', Turkey: 'Europe',
-  China: 'Asia-Pacific', Japan: 'Asia-Pacific', 'South Korea': 'Asia-Pacific',
-  Australia: 'Asia-Pacific', 'New Zealand': 'Asia-Pacific', Singapore: 'Asia-Pacific',
-  India: 'Asia-Pacific', Indonesia: 'Asia-Pacific', Malaysia: 'Asia-Pacific',
-  Philippines: 'Asia-Pacific', Thailand: 'Asia-Pacific', Vietnam: 'Asia-Pacific',
-  Taiwan: 'Asia-Pacific', Bangladesh: 'Asia-Pacific', Pakistan: 'Asia-Pacific',
-  'Sri Lanka': 'Asia-Pacific', Kazakhstan: 'Asia-Pacific', Uzbekistan: 'Asia-Pacific',
-  'United Arab Emirates': 'Middle East & Africa', 'Saudi Arabia': 'Middle East & Africa',
-  Qatar: 'Middle East & Africa', Israel: 'Middle East & Africa',
-  Egypt: 'Middle East & Africa', Morocco: 'Middle East & Africa',
-  Tunisia: 'Middle East & Africa', 'South Africa': 'Middle East & Africa',
-  Nigeria: 'Middle East & Africa', Kenya: 'Middle East & Africa',
-  Rwanda: 'Middle East & Africa', Mauritius: 'Middle East & Africa',
-  Ethiopia: 'Middle East & Africa',
+  // Canada
+  Canada: 'Canada',
+  // Latin America & Caribbean
+  Brazil: 'Latin America', Mexico: 'Latin America', Argentina: 'Latin America',
+  Chile: 'Latin America', Colombia: 'Latin America', Peru: 'Latin America',
+  Ecuador: 'Latin America', Uruguay: 'Latin America', Panama: 'Latin America',
+  // Western Europe (non-EU members; EU members handled via EU_MEMBER_COUNTRIES)
+  'United Kingdom': 'Western Europe',
+  Switzerland:      'Western Europe',
+  Norway:           'Western Europe',
+  Iceland:          'Western Europe',
+  // Eastern Europe & Central Asia
+  Russia:     'Eastern Europe & Central Asia',
+  Ukraine:    'Eastern Europe & Central Asia',
+  Serbia:     'Eastern Europe & Central Asia',
+  Turkey:     'Eastern Europe & Central Asia',
+  Kazakhstan: 'Eastern Europe & Central Asia',
+  Uzbekistan: 'Eastern Europe & Central Asia',
+  // East Asia
+  China:        'East Asia',
+  Japan:        'East Asia',
+  'South Korea': 'East Asia',
+  Taiwan:       'East Asia',
+  // South Asia
+  India:       'South Asia',
+  Bangladesh:  'South Asia',
+  Pakistan:    'South Asia',
+  'Sri Lanka': 'South Asia',
+  // Southeast Asia
+  Singapore:   'Southeast Asia',
+  Indonesia:   'Southeast Asia',
+  Malaysia:    'Southeast Asia',
+  Philippines: 'Southeast Asia',
+  Thailand:    'Southeast Asia',
+  Vietnam:     'Southeast Asia',
+  // Pacific
+  Australia:    'Pacific',
+  'New Zealand': 'Pacific',
+  // Middle East & North Africa
+  'United Arab Emirates': 'Middle East & North Africa',
+  'Saudi Arabia':         'Middle East & North Africa',
+  Qatar:                  'Middle East & North Africa',
+  Israel:                 'Middle East & North Africa',
+  Egypt:                  'Middle East & North Africa',
+  Morocco:                'Middle East & North Africa',
+  Tunisia:                'Middle East & North Africa',
+  // Sub-Saharan Africa
+  'South Africa': 'Sub-Saharan Africa',
+  Nigeria:        'Sub-Saharan Africa',
+  Kenya:          'Sub-Saharan Africa',
+  Rwanda:         'Sub-Saharan Africa',
+  Mauritius:      'Sub-Saharan Africa',
+  Ethiopia:       'Sub-Saharan Africa',
 }
 
 const REGIONAL_LABELS: Record<string, string> = {
@@ -98,10 +150,10 @@ const EU_MEMBER_COUNTRIES = new Set([
 ])
 
 function colRegion(key: string): string {
-  if (key === 'regional:EU') return 'Europe'
+  if (key === 'regional:EU') return 'Western Europe'
   if (key.startsWith('regional:')) return 'Supranational'
-  if (key === 'US-FED' || key.startsWith('US-')) return 'United States'
-  if (EU_MEMBER_COUNTRIES.has(key)) return 'Europe'
+  if (key === 'US-FED' || key.startsWith('US-')) return 'USA'
+  if (EU_MEMBER_COUNTRIES.has(key)) return 'Western Europe'
   return COUNTRY_REGION[key] ?? 'Other'
 }
 
