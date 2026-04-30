@@ -263,19 +263,6 @@ export function SimilarityHeatmap() {
     }
   }, [comparedPair, scores])
 
-  // ── score badge ──
-  function ScoreBadge({ score }: { score: number }) {
-    const colors: Record<number, string> = {
-      5: 'bg-green-100 text-green-800', 4: 'bg-green-100 text-green-700',
-      3: 'bg-amber-100 text-amber-700', 2: 'bg-red-100 text-red-700', 0: 'bg-slate-100 text-slate-500',
-    }
-    return (
-      <span className={`text-[9px] font-medium px-1 py-0.5 rounded flex-shrink-0 ${colors[score] ?? colors[0]}`}>
-        {REL_LABEL[score] ?? 'Absent'}
-      </span>
-    )
-  }
-
   return (
     <div>
       {/* ── header + controls ── */}
@@ -548,6 +535,8 @@ export function SimilarityHeatmap() {
                     <div className="space-y-2">
                       {comparison.shared.map(({ ruleIdx, si, sj }) => {
                         const rule = allRules[ruleIdx]
+                        const labelA = colLabel(cols[comparedPair.i])
+                        const labelB = colLabel(cols[comparedPair.j])
                         return (
                           <div key={rule.rule_id} className="text-[10px] border-l-2 border-emerald-300 pl-2">
                             <div className="text-[8px] text-emerald-600 font-medium mb-0.5">
@@ -556,9 +545,9 @@ export function SimilarityHeatmap() {
                             <div className="text-odl-muted leading-snug mb-1">
                               {rule.rule_text.slice(0, 110)}{rule.rule_text.length > 110 ? '…' : ''}
                             </div>
-                            <div className="flex gap-1 flex-wrap">
-                              <ScoreBadge score={si} />
-                              <ScoreBadge score={sj} />
+                            <div className="flex flex-col gap-0.5 text-[9px]">
+                              <span className="text-odl-subtle">{labelA}: <span className="font-medium text-odl-text">{REL_LABEL[si]}</span></span>
+                              <span className="text-odl-subtle">{labelB}: <span className="font-medium text-odl-text">{REL_LABEL[sj]}</span></span>
                             </div>
                           </div>
                         )
@@ -576,6 +565,8 @@ export function SimilarityHeatmap() {
                     <div className="space-y-2">
                       {comparison.onlyI.map(({ ruleIdx, si }) => {
                         const rule = allRules[ruleIdx]
+                        const labelA = colLabel(cols[comparedPair.i])
+                        const labelB = colLabel(cols[comparedPair.j])
                         return (
                           <div key={rule.rule_id} className="text-[10px] border-l-2 border-sky-300 pl-2">
                             <div className="text-[8px] text-sky-600 font-medium mb-0.5">
@@ -584,7 +575,10 @@ export function SimilarityHeatmap() {
                             <div className="text-odl-muted leading-snug mb-1">
                               {rule.rule_text.slice(0, 90)}{rule.rule_text.length > 90 ? '…' : ''}
                             </div>
-                            <ScoreBadge score={si} />
+                            <div className="flex flex-col gap-0.5 text-[9px]">
+                              <span className="text-odl-subtle">{labelA}: <span className="font-medium text-odl-text">{REL_LABEL[si]}</span></span>
+                              <span className="text-odl-subtle">{labelB}: <span className="font-medium text-slate-400">Absent</span></span>
+                            </div>
                           </div>
                         )
                       })}
@@ -601,6 +595,8 @@ export function SimilarityHeatmap() {
                     <div className="space-y-2">
                       {comparison.onlyJ.map(({ ruleIdx, sj }) => {
                         const rule = allRules[ruleIdx]
+                        const labelA = colLabel(cols[comparedPair.i])
+                        const labelB = colLabel(cols[comparedPair.j])
                         return (
                           <div key={rule.rule_id} className="text-[10px] border-l-2 border-amber-300 pl-2">
                             <div className="text-[8px] text-amber-600 font-medium mb-0.5">
@@ -609,7 +605,10 @@ export function SimilarityHeatmap() {
                             <div className="text-odl-muted leading-snug mb-1">
                               {rule.rule_text.slice(0, 90)}{rule.rule_text.length > 90 ? '…' : ''}
                             </div>
-                            <ScoreBadge score={sj} />
+                            <div className="flex flex-col gap-0.5 text-[9px]">
+                              <span className="text-odl-subtle">{labelA}: <span className="font-medium text-slate-400">Absent</span></span>
+                              <span className="text-odl-subtle">{labelB}: <span className="font-medium text-odl-text">{REL_LABEL[sj]}</span></span>
+                            </div>
                           </div>
                         )
                       })}
