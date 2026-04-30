@@ -305,7 +305,11 @@ export function SimilarityHeatmap() {
           }}>
 
             {/* corner */}
-            <div style={{ height: HEADER_H }} />
+            <div style={{
+              height: HEADER_H,
+              position: 'sticky', top: 0, left: 0,
+              zIndex: 4, background: 'white',
+            }} />
 
             {/* column headers */}
             {order.map((origIdx, pos) => {
@@ -325,6 +329,8 @@ export function SimilarityHeatmap() {
                   opacity: selected !== null && !isSelCol ? 0.3 : 1,
                   transition: 'opacity 0.15s',
                   cursor: 'pointer',
+                  position: 'sticky', top: 0,
+                  zIndex: 3, background: 'white',
                 }}
                   onClick={() => setSelected(p => p === origIdx ? null : origIdx)}
                 >
@@ -364,6 +370,8 @@ export function SimilarityHeatmap() {
                       opacity: selected !== null && !isSelRow ? 0.3 : 1,
                       transition: 'opacity 0.15s',
                       cursor: 'pointer',
+                      position: 'sticky', left: 0,
+                      zIndex: 2, background: 'white',
                     }}
                     onClick={() => setSelected(p => p === rowOrig ? null : rowOrig)}
                   >
