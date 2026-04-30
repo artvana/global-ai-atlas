@@ -170,25 +170,37 @@ export function SimilarityHeatmap() {
   const [hover, setHover]           = useState<HoverState | null>(null)
   const [comparedPair, setCompared]     = useState<ComparedPair | null>(null)
   const [expanded, setExpanded]         = useState<Set<string>>(new Set())
-  const [euTip, setEuTip]               = useState<{ x: number; y: number } | null>(null)
 
   // ── compute coverage vectors + cosine similarity ──
   const { cols, simMatrix, scores, atRiskCols, insights } = useMemo(() => {
     const bindingLaws = regulations.filter(l => l.instrument_binding)
-    const colKeySet   = new Set<string>()
-    bindingLaws.forEach(l => colKeySet.add(lawColKey(l)))
-    // Force all 27 EU member states into the column set even if they have no
-    // domestic binding law — the EU expansion will populate their vectors with the
-    // EU baseline, making the full 27-country bloc visible as a dense cluster.
+    const lawById = new Map(regulations.map(l => [l.id, l]))
+    const m = allRules.length
+
+    // EU is not shown as a column — its 27 member states form the visible bloc.
+    // Compute EU baseline scores separately for use as a floor in the expansion.
+    const euScoreVec = new Array(m).fill(0) as number[]
+    allRules.forEach((rule, rIdx) => {
+      rule.instances.forEach(inst => {
+        const law = lawById.get(inst.law_id)
+        if (!law?.instrument_binding || lawColKey(law) !== 'regional:EU') return
+        const sc = REL_SCORE[inst.relationship] ?? 0
+        if (sc > 0 && sc > euScoreVec[rIdx]) euScoreVec[rIdx] = sc
+        else if (sc < 0 && euScoreVec[rIdx] === 0) euScoreVec[rIdx] = sc
+      })
+    })
+
+    const colKeySet = new Set<string>()
+    bindingLaws.forEach(l => {
+      const k = lawColKey(l)
+      if (k !== 'regional:EU') colKeySet.add(k)
+    })
     EU_MEMBER_COUNTRIES.forEach(c => colKeySet.add(c))
     const cols = [...colKeySet].sort((a, b) => colSortKey(a).localeCompare(colSortKey(b)))
     const n    = cols.length
     const ci   = new Map(cols.map((c, i) => [c, i]))
-    const lawById = new Map(regulations.map(l => [l.id, l]))
-    const m    = allRules.length
 
     // scores[col][rule]: positive = adopted (3–4), negative (−1) = explicitly opposes, 0 = absent
-    // Positive adoption wins over opposition if a jurisdiction has both.
     const scores: number[][] = Array.from({ length: n }, () => new Array(m).fill(0))
     allRules.forEach((rule, rIdx) => {
       rule.instances.forEach(inst => {
@@ -197,22 +209,18 @@ export function SimilarityHeatmap() {
         const cIdx = ci.get(lawColKey(law))
         if (cIdx === undefined) return
         const sc = REL_SCORE[inst.relationship] ?? 0
-        if (sc > 0 && sc > scores[cIdx][rIdx]) scores[cIdx][rIdx] = sc        // best positive adoption wins
-        else if (sc < 0 && scores[cIdx][rIdx] === 0) scores[cIdx][rIdx] = sc  // opposition only when no adoption
+        if (sc > 0 && sc > scores[cIdx][rIdx]) scores[cIdx][rIdx] = sc
+        else if (sc < 0 && scores[cIdx][rIdx] === 0) scores[cIdx][rIdx] = sc
       })
     })
 
-    // EU law is directly applicable in all 27 member states — use EU scores as a
-    // floor for each member state so their vectors reflect the full regulatory baseline.
-    const euColIdx = ci.get('regional:EU')
-    if (euColIdx !== undefined) {
-      const euMemberIdxs = cols.map((c, i) => EU_MEMBER_COUNTRIES.has(c) ? i : -1).filter(i => i >= 0)
-      for (let rIdx = 0; rIdx < m; rIdx++) {
-        const euSc = scores[euColIdx][rIdx]
-        if (euSc <= 0) continue
-        for (const mIdx of euMemberIdxs) {
-          if (scores[mIdx][rIdx] < euSc) scores[mIdx][rIdx] = euSc
-        }
+    // EU expansion: apply EU baseline as floor for all 27 member state columns
+    const euMemberIdxs = cols.map((c, i) => EU_MEMBER_COUNTRIES.has(c) ? i : -1).filter(i => i >= 0)
+    for (let rIdx = 0; rIdx < m; rIdx++) {
+      const euSc = euScoreVec[rIdx]
+      if (euSc <= 0) continue
+      for (const mIdx of euMemberIdxs) {
+        if (scores[mIdx][rIdx] < euSc) scores[mIdx][rIdx] = euSc
       }
     }
 
@@ -256,10 +264,14 @@ export function SimilarityHeatmap() {
     const globalAvg   = avgSim.reduce((s, x) => s + x, 0) / n
     const isolatedIdx = avgSim.indexOf(Math.min(...avgSim))
 
+    // Exclude intra-EU pairs from "most aligned" — their similarity is structural
+    // (shared EU law), not an independent policy convergence signal.
     let topSim = 0, topI = 0, topJ = 1
     for (let i = 0; i < n; i++)
-      for (let j = i + 1; j < n; j++)
+      for (let j = i + 1; j < n; j++) {
+        if (EU_MEMBER_COUNTRIES.has(cols[i]) && EU_MEMBER_COUNTRIES.has(cols[j])) continue
         if (sim[i][j] > topSim) { topSim = sim[i][j]; topI = i; topJ = j }
+      }
 
     const colRegionOf = cols.map(c => colRegion(c))
     let withinSum = 0, withinCnt = 0, crossSum = 0, crossCnt = 0
@@ -398,28 +410,43 @@ export function SimilarityHeatmap() {
       </div>
 
       {/* ── legend ── */}
-      <div className="flex items-center gap-5 mb-3 flex-wrap">
-        <div className="flex items-center gap-1.5">
-          <div className="h-2.5 w-36 rounded-sm" style={{ background: 'linear-gradient(to right, rgb(255,60,60), #F8FAFC, #38BDF8, #075985)' }} />
-          <div className="flex gap-4 text-[9px] text-odl-subtle"><span>Conflict</span><span>Neutral</span><span className="ml-4">Convergent</span></div>
-        </div>
-        <div className="flex items-center gap-1.5">
-          <div className="h-2.5 w-2.5 rounded-sm border border-odl-border" style={{ background: DIAG_COL }} />
-          <span className="text-[10px] text-odl-subtle">Same jurisdiction</span>
-        </div>
-        {sortMode === 'region' && (
+      <div className="panel p-3 mb-4 space-y-2">
+        <div className="flex items-center gap-6 flex-wrap">
+          {/* colour scale */}
+          <div className="flex items-center gap-2">
+            <span className="text-[9px] font-semibold text-red-500">Conflict</span>
+            <div className="h-2.5 w-32 rounded-sm" style={{ background: 'linear-gradient(to right, rgb(255,60,60), #F8FAFC, #38BDF8, #075985)' }} />
+            <span className="text-[9px] font-semibold text-sky-700">Convergent</span>
+          </div>
+          {/* diagonal */}
           <div className="flex items-center gap-1.5">
-            <div className="h-2.5 border-l-2 border-slate-400" />
-            <span className="text-[10px] text-odl-subtle">Region boundary</span>
+            <div className="h-3 w-3 rounded-sm border border-odl-border" style={{ background: DIAG_COL }} />
+            <span className="text-[9px] text-odl-subtle">Same jurisdiction</span>
           </div>
-        )}
-        <span className="text-[10px] text-odl-subtle">· Click a label to rank · Click a cell to compare rules</span>
-        {Object.entries(REGION_COLORS).map(([r, c]) => (
-          <div key={r} className="flex items-center gap-1">
-            <div className="h-2 w-2 rounded-sm" style={{ background: c }} />
-            <span className="text-[9px] text-odl-subtle">{r}</span>
+          {/* region boundary */}
+          {sortMode === 'region' && (
+            <div className="flex items-center gap-1.5">
+              <div className="h-3 border-l-2 border-slate-400" />
+              <span className="text-[9px] text-odl-subtle">Region boundary</span>
+            </div>
+          )}
+          {/* preemption */}
+          <div className="flex items-center gap-1">
+            <span className="text-[9px]">⚠</span>
+            <span className="text-[9px] text-odl-subtle">Federal preemption risk</span>
           </div>
-        ))}
+          {/* interaction hint */}
+          <span className="text-[9px] text-odl-subtle italic ml-auto">Click a label to rank · Click a cell to compare rules</span>
+        </div>
+        {/* region key */}
+        <div className="flex flex-wrap gap-x-4 gap-y-1 pt-1 border-t border-odl-border">
+          {Object.entries(REGION_COLORS).map(([r, c]) => (
+            <div key={r} className="flex items-center gap-1.5">
+              <div className="h-2.5 w-2.5 rounded-sm flex-shrink-0" style={{ background: c }} />
+              <span className="text-[9px] text-odl-muted">{r}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* ── main layout ── */}
@@ -434,10 +461,9 @@ export function SimilarityHeatmap() {
 
             {/* column headers */}
             {order.map((origIdx, pos) => {
-              const key       = cols[origIdx]
-              const isSelCol  = selected === origIdx
-              const isEU      = key === 'regional:EU'
-              const isAtRisk  = atRiskCols.has(key)
+              const key      = cols[origIdx]
+              const isSelCol = selected === origIdx
+              const isAtRisk = atRiskCols.has(key)
               return (
                 <div key={key} style={{
                   height: HEADER_H, width: CELL, display: 'flex',
@@ -448,17 +474,14 @@ export function SimilarityHeatmap() {
                   position: 'sticky', top: 0, zIndex: 3, background: 'white',
                 }}
                   onClick={() => setSelected(p => p === origIdx ? null : origIdx)}
-                  onMouseEnter={isEU ? e => setEuTip({ x: e.clientX, y: e.clientY }) : undefined}
-                  onMouseMove={isEU ? e => setEuTip({ x: e.clientX, y: e.clientY }) : undefined}
-                  onMouseLeave={isEU ? () => setEuTip(null) : undefined}
                 >
                   <span style={{
                     writingMode: 'vertical-rl', transform: 'rotate(180deg)',
                     fontSize: 9, whiteSpace: 'nowrap',
                     color: isSelCol ? '#0369A1' : REGION_COLORS[colRegion(key)] ?? '#64748B',
-                    fontWeight: isSelCol || isEU ? 700 : 400,
+                    fontWeight: isSelCol ? 700 : 400,
                   }}>
-                    {colLabel(key)}{isEU ? ' ★' : ''}{isAtRisk ? ' ⚠' : ''}
+                    {colLabel(key)}{isAtRisk ? ' ⚠' : ''}
                   </span>
                 </div>
               )
@@ -766,26 +789,6 @@ export function SimilarityHeatmap() {
         )
       })()}
 
-      {/* ── EU column tooltip ── */}
-      {euTip && (
-        <div style={{
-          position: 'fixed',
-          left: Math.min(euTip.x + 14, window.innerWidth - 320),
-          top:  Math.min(euTip.y + 14, window.innerHeight - 120),
-          zIndex: 9999, background: 'white', border: '1px solid #E2E8F0',
-          borderRadius: 8, padding: '10px 12px',
-          boxShadow: '0 4px 20px rgba(0,0,0,0.13)',
-          pointerEvents: 'none', width: 300,
-        }}>
-          <div className="text-[11px] font-semibold text-violet-700 mb-1.5">European Union ★</div>
-          <p className="text-[10px] text-odl-muted leading-relaxed">
-            This column represents EU-level binding instruments (AI Act, GDPR, etc.) that are <span className="font-medium text-odl-text">directly applicable</span> across all 27 member states.
-          </p>
-          <p className="text-[10px] text-odl-muted leading-relaxed mt-1.5">
-            Member states that appear separately have enacted <span className="font-medium text-odl-text">domestic legislation that supplements or diverges from the EU baseline</span>. Their columns reflect only that domestic law — shared EU coverage is captured by this column.
-          </p>
-        </div>
-      )}
     </div>
   )
 }

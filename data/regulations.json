@@ -6005,7 +6005,7 @@
     },
     "text_path": "data/texts/us-ct-pa25113-2025.md",
     "ai_specific": false,
-    "instrument_binding": true,
+    "instrument_binding": false,
     "country": "United States",
     "operative_dates": null
   },
