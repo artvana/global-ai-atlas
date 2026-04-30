@@ -86,8 +86,18 @@ function colLabel(key: string): string {
   return key
 }
 
+// EU member states are represented by the EU column. Their domestic laws may
+// supplement EU law but don't warrant separate columns in a global convergence map.
+const EU_MEMBER_COUNTRIES = new Set([
+  'Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic',
+  'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary',
+  'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta',
+  'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia',
+  'Spain', 'Sweden',
+])
+
 function colRegion(key: string): string {
-  if (key === 'regional:EU') return 'Europe'          // EU is a European body, not a global one
+  if (key === 'regional:EU') return 'Europe'
   if (key.startsWith('regional:')) return 'Supranational'
   if (key === 'US-FED' || key.startsWith('US-')) return 'Americas'
   return COUNTRY_REGION[key] ?? 'Other'
@@ -161,7 +171,11 @@ export function SimilarityHeatmap() {
     const bindingLaws = regulations.filter(l => l.instrument_binding)
     const colKeySet   = new Set<string>()
     bindingLaws.forEach(l => colKeySet.add(lawColKey(l)))
-    const cols = [...colKeySet].sort((a, b) => colSortKey(a).localeCompare(colSortKey(b)))
+    // EU member states are rolled into the EU column — their domestic laws may
+    // complement EU law but showing them separately inflates inter-EU similarity.
+    const cols = [...colKeySet]
+      .filter(c => !EU_MEMBER_COUNTRIES.has(c))
+      .sort((a, b) => colSortKey(a).localeCompare(colSortKey(b)))
     const n    = cols.length
     const ci   = new Map(cols.map((c, i) => [c, i]))
     const lawById = new Map(regulations.map(l => [l.id, l]))
