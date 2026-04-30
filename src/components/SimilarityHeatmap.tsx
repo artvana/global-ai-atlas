@@ -151,6 +151,7 @@ export function SimilarityHeatmap() {
   const [selected, setSelected]     = useState<number | null>(null)
   const [hover, setHover]           = useState<HoverState | null>(null)
   const [comparedPair, setCompared] = useState<ComparedPair | null>(null)
+  const [expanded, setExpanded]     = useState<Set<string>>(new Set())
 
   // ── compute coverage vectors + cosine similarity ──
   const { cols, simMatrix, scores, insights } = useMemo(() => {
@@ -547,22 +548,34 @@ export function SimilarityHeatmap() {
 
                   function RuleCard({ ruleIdx, si, sj, borderColor }: { ruleIdx: number; si: number; sj: number; borderColor: string }) {
                     const rule = allRules[ruleIdx]
+                    const isExpanded = expanded.has(rule.rule_id)
+                    const truncated = rule.rule_text.length > 100
                     return (
-                      <div className="text-[10px] pl-2" style={{ borderLeft: `2px solid ${borderColor}` }}>
+                      <div
+                        className="text-[10px] pl-2 cursor-pointer"
+                        style={{ borderLeft: `2px solid ${borderColor}` }}
+                        onClick={() => setExpanded(prev => {
+                          const next = new Set(prev)
+                          next.has(rule.rule_id) ? next.delete(rule.rule_id) : next.add(rule.rule_id)
+                          return next
+                        })}
+                      >
                         <div className="text-[8px] font-medium mb-0.5" style={{ color: borderColor }}>
                           {RULE_CATEGORY_LABELS[rule.category as keyof typeof RULE_CATEGORY_LABELS] ?? rule.category}
                         </div>
                         <div className="text-odl-muted leading-snug mb-1">
-                          {rule.rule_text.slice(0, 100)}{rule.rule_text.length > 100 ? '…' : ''}
+                          {isExpanded ? rule.rule_text : rule.rule_text.slice(0, 100)}
+                          {!isExpanded && truncated && <span className="text-odl-subtle"> …<span className="underline decoration-dotted ml-0.5">more</span></span>}
+                          {isExpanded && truncated && <span className="text-odl-subtle ml-0.5 underline decoration-dotted">less</span>}
                         </div>
                         <div className="flex flex-col gap-0.5 text-[9px]">
                           <span className="text-odl-subtle">
-                            {labelA}: <span className={`font-medium ${si >= 3 ? 'text-odl-text' : si === 2 ? 'text-red-600' : 'text-slate-400'}`}>
+                            {labelA}: <span className={`font-medium ${si >= 3 ? 'text-odl-text' : si < 0 ? 'text-red-600' : 'text-slate-400'}`}>
                               {stanceLabel(si)}
                             </span>
                           </span>
                           <span className="text-odl-subtle">
-                            {labelB}: <span className={`font-medium ${sj >= 3 ? 'text-odl-text' : sj === 2 ? 'text-red-600' : 'text-slate-400'}`}>
+                            {labelB}: <span className={`font-medium ${sj >= 3 ? 'text-odl-text' : sj < 0 ? 'text-red-600' : 'text-slate-400'}`}>
                               {stanceLabel(sj)}
                             </span>
                           </span>
