@@ -86,15 +86,6 @@ function colLabel(key: string): string {
   return key
 }
 
-// All 27 EU member states — used to expand EU law scores into member state vectors
-const EU_MEMBER_COUNTRIES = new Set([
-  'Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic',
-  'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary',
-  'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta',
-  'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia',
-  'Spain', 'Sweden',
-])
-
 function colRegion(key: string): string {
   if (key === 'regional:EU') return 'Europe'          // EU is a European body, not a global one
   if (key.startsWith('regional:')) return 'Supranational'
@@ -190,21 +181,6 @@ export function SimilarityHeatmap() {
         else if (sc < 0 && scores[cIdx][rIdx] === 0) scores[cIdx][rIdx] = sc  // opposition only when no adoption
       })
     })
-
-    // EU law is directly applicable in member states — expand EU scores as a floor.
-    // Where a member state has a national law that goes further, the higher score wins.
-    // Where national law conflicts with EU law, EU supremacy applies (EU score overrides -1).
-    const euColIdx = ci.get('regional:EU')
-    if (euColIdx !== undefined) {
-      const euMemberIdxs = cols.map((c, i) => EU_MEMBER_COUNTRIES.has(c) ? i : -1).filter(i => i >= 0)
-      for (let rIdx = 0; rIdx < m; rIdx++) {
-        const euSc = scores[euColIdx][rIdx]
-        if (euSc <= 0) continue
-        for (const mIdx of euMemberIdxs) {
-          if (scores[mIdx][rIdx] < euSc) scores[mIdx][rIdx] = euSc
-        }
-      }
-    }
 
     // cosine similarity: clamp negatives to 0 so opposition doesn't inflate similarity
     // (conflict ≠ agreement; absence and opposition both contribute 0)
@@ -755,14 +731,10 @@ export function SimilarityHeatmap() {
         }}>
           <div className="text-[11px] font-semibold text-violet-700 mb-1.5">European Union ★</div>
           <p className="text-[10px] text-odl-muted leading-relaxed">
-            EU regulations (AI Act, GDPR, etc.) are <span className="font-medium text-odl-text">directly applicable</span> in
-            all 27 member states without domestic legislation. This column represents the EU-level baseline
-            that applies across the bloc.
+            This column represents EU-level binding instruments (AI Act, GDPR, etc.) that are <span className="font-medium text-odl-text">directly applicable</span> across all 27 member states.
           </p>
           <p className="text-[10px] text-odl-muted leading-relaxed mt-1.5">
-            Where a member state appears separately in this matrix, it indicates <span className="font-medium text-odl-text">domestic legislation
-            that supplements or diverges from the EU baseline</span>. Where a member state is not listed,
-            EU law alone governs.
+            Member states that appear separately have enacted <span className="font-medium text-odl-text">domestic legislation that supplements or diverges from the EU baseline</span>. Their columns reflect only that domestic law — shared EU coverage is captured by this column.
           </p>
         </div>
       )}
