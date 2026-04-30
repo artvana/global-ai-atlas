@@ -22,12 +22,13 @@ function stanceLabel(score: number): string {
 // ── region / jurisdiction helpers ─────────────────────────────────────────────
 
 const REGION_ORDER = [
-  'Supranational', 'Americas', 'Europe', 'Asia-Pacific', 'Middle East & Africa', 'Other',
+  'Supranational', 'United States', 'Americas', 'Europe', 'Asia-Pacific', 'Middle East & Africa', 'Other',
 ]
 
 const REGION_COLORS: Record<string, string> = {
   Supranational:           '#6D28D9',
-  Americas:                '#0369A1',
+  'United States':         '#0369A1',
+  Americas:                '#0D9488',
   Europe:                  '#059669',
   'Asia-Pacific':          '#D97706',
   'Middle East & Africa':  '#DC2626',
@@ -99,7 +100,7 @@ const EU_MEMBER_COUNTRIES = new Set([
 function colRegion(key: string): string {
   if (key === 'regional:EU') return 'Europe'
   if (key.startsWith('regional:')) return 'Supranational'
-  if (key === 'US-FED' || key.startsWith('US-')) return 'Americas'
+  if (key === 'US-FED' || key.startsWith('US-')) return 'United States'
   return COUNTRY_REGION[key] ?? 'Other'
 }
 
@@ -114,6 +115,11 @@ function colSortKey(key: string): string {
 // ── color mapping ─────────────────────────────────────────────────────────────
 
 function simToColor(v: number): string {
+  if (v < 0) {
+    // Red for active conflict — saturates around -0.2
+    const t = Math.pow(Math.min(1, -v * 5), 0.7)
+    return `rgb(255,${Math.round(255 - t * 195)},${Math.round(255 - t * 195)})`
+  }
   const t = Math.pow(Math.max(0, Math.min(1, v)), 0.65)
   if (t < 0.5) {
     const s = t / 0.5
@@ -167,15 +173,13 @@ export function SimilarityHeatmap() {
   const [euTip, setEuTip]               = useState<{ x: number; y: number } | null>(null)
 
   // ── compute coverage vectors + cosine similarity ──
-  const { cols, simMatrix, scores, insights } = useMemo(() => {
+  const { cols, simMatrix, scores, atRiskCols, insights } = useMemo(() => {
     const bindingLaws = regulations.filter(l => l.instrument_binding)
     const colKeySet   = new Set<string>()
     bindingLaws.forEach(l => colKeySet.add(lawColKey(l)))
-    // EU member states are rolled into the EU column — their domestic laws may
-    // complement EU law but showing them separately inflates inter-EU similarity.
-    const cols = [...colKeySet]
-      .filter(c => !EU_MEMBER_COUNTRIES.has(c))
-      .sort((a, b) => colSortKey(a).localeCompare(colSortKey(b)))
+    // EU member states appear as separate columns — the dense Europe cluster they
+    // form makes regional concordance visually legible on the heatmap.
+    const cols = [...colKeySet].sort((a, b) => colSortKey(a).localeCompare(colSortKey(b)))
     const n    = cols.length
     const ci   = new Map(cols.map((c, i) => [c, i]))
     const lawById = new Map(regulations.map(l => [l.id, l]))
@@ -196,8 +200,33 @@ export function SimilarityHeatmap() {
       })
     })
 
-    // cosine similarity: clamp negatives to 0 so opposition doesn't inflate similarity
-    // (conflict ≠ agreement; absence and opposition both contribute 0)
+    // EU law is directly applicable in all 27 member states — use EU scores as a
+    // floor for each member state so their vectors reflect the full regulatory baseline.
+    const euColIdx = ci.get('regional:EU')
+    if (euColIdx !== undefined) {
+      const euMemberIdxs = cols.map((c, i) => EU_MEMBER_COUNTRIES.has(c) ? i : -1).filter(i => i >= 0)
+      for (let rIdx = 0; rIdx < m; rIdx++) {
+        const euSc = scores[euColIdx][rIdx]
+        if (euSc <= 0) continue
+        for (const mIdx of euMemberIdxs) {
+          if (scores[mIdx][rIdx] < euSc) scores[mIdx][rIdx] = euSc
+        }
+      }
+    }
+
+    // Columns with at-risk preemption status (US state laws that may be federally preempted)
+    const atRiskCols = new Set<string>()
+    regulations.forEach(l => {
+      if ((l as any).preemption_status === 'at_risk' && l.instrument_binding) {
+        const k = lawColKey(l)
+        if (ci.has(k)) atRiskCols.add(k)
+      }
+    })
+
+    // Similarity: norms use only positive (adoption) scores so opposition doesn't
+    // inflate the denominator. Dot product weights conflict 3× to distinguish
+    // active disagreement from mere absence.
+    const CONFLICT_WEIGHT = 3
     const pos = (x: number) => Math.max(0, x)
     const norms = scores.map(v => Math.sqrt(v.reduce((s, x) => s + pos(x) ** 2, 0)))
     const sim: number[][] = Array.from({ length: n }, () => new Array(n).fill(0))
@@ -206,7 +235,13 @@ export function SimilarityHeatmap() {
       for (let j = i + 1; j < n; j++) {
         if (!norms[i] || !norms[j]) continue
         let dot = 0
-        for (let k = 0; k < m; k++) dot += pos(scores[i][k]) * pos(scores[j][k])
+        for (let k = 0; k < m; k++) {
+          const si = scores[i][k], sj = scores[j][k]
+          if      (si > 0 && sj > 0) dot += si * sj                       // agreement
+          else if (si > 0 && sj < 0) dot += CONFLICT_WEIGHT * si * sj     // conflict (negative)
+          else if (si < 0 && sj > 0) dot += CONFLICT_WEIGHT * si * sj     // conflict (negative)
+          else if (si < 0 && sj < 0) dot += si * sj                       // shared opposition: weak positive
+        }
         sim[i][j] = sim[j][i] = dot / (norms[i] * norms[j])
       }
     }
@@ -224,11 +259,7 @@ export function SimilarityHeatmap() {
       for (let j = i + 1; j < n; j++)
         if (sim[i][j] > topSim) { topSim = sim[i][j]; topI = i; topJ = j }
 
-    const colRegionOf = cols.map(c =>
-      c.startsWith('regional:') ? 'Supranational'
-      : (c === 'US-FED' || c.startsWith('US-')) ? 'Americas'
-      : COUNTRY_REGION[c] ?? 'Other'
-    )
+    const colRegionOf = cols.map(c => colRegion(c))
     let withinSum = 0, withinCnt = 0, crossSum = 0, crossCnt = 0
     for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) {
       if (i === j) continue
@@ -245,7 +276,7 @@ export function SimilarityHeatmap() {
     const usStateAvg = usCnt ? usSum / usCnt : 0
 
     return {
-      cols, simMatrix: sim, scores,
+      cols, simMatrix: sim, scores, atRiskCols,
       insights: { globalAvg, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, avgSim },
     }
   }, [])
@@ -367,8 +398,8 @@ export function SimilarityHeatmap() {
       {/* ── legend ── */}
       <div className="flex items-center gap-5 mb-3 flex-wrap">
         <div className="flex items-center gap-1.5">
-          <div className="h-2.5 w-28 rounded-sm" style={{ background: 'linear-gradient(to right, #F8FAFC, #38BDF8, #075985)' }} />
-          <div className="flex gap-6 text-[9px] text-odl-subtle"><span>0%</span><span>50%</span><span>100%</span></div>
+          <div className="h-2.5 w-36 rounded-sm" style={{ background: 'linear-gradient(to right, rgb(255,60,60), #F8FAFC, #38BDF8, #075985)' }} />
+          <div className="flex gap-4 text-[9px] text-odl-subtle"><span>Conflict</span><span>Neutral</span><span className="ml-4">Convergent</span></div>
         </div>
         <div className="flex items-center gap-1.5">
           <div className="h-2.5 w-2.5 rounded-sm border border-odl-border" style={{ background: DIAG_COL }} />
@@ -401,9 +432,10 @@ export function SimilarityHeatmap() {
 
             {/* column headers */}
             {order.map((origIdx, pos) => {
-              const key      = cols[origIdx]
-              const isSelCol = selected === origIdx
-              const isEU = key === 'regional:EU'
+              const key       = cols[origIdx]
+              const isSelCol  = selected === origIdx
+              const isEU      = key === 'regional:EU'
+              const isAtRisk  = atRiskCols.has(key)
               return (
                 <div key={key} style={{
                   height: HEADER_H, width: CELL, display: 'flex',
@@ -424,7 +456,7 @@ export function SimilarityHeatmap() {
                     color: isSelCol ? '#0369A1' : REGION_COLORS[colRegion(key)] ?? '#64748B',
                     fontWeight: isSelCol || isEU ? 700 : 400,
                   }}>
-                    {colLabel(key)}{isEU ? ' ★' : ''}
+                    {colLabel(key)}{isEU ? ' ★' : ''}{isAtRisk ? ' ⚠' : ''}
                   </span>
                 </div>
               )
@@ -439,7 +471,7 @@ export function SimilarityHeatmap() {
               return (
                 <Fragment key={rowKey}>
                   {/* row label */}
-                  <div title={colLabel(rowKey)} style={{
+                  <div title={`${colLabel(rowKey)}${atRiskCols.has(rowKey) ? ' ⚠ Some laws have federal preemption risk' : ''}`} style={{
                     height: CELL, display: 'flex', alignItems: 'center',
                     justifyContent: 'flex-end', paddingRight: 5, borderTop: bTop,
                     opacity: selected !== null && !isSelRow ? 0.3 : 1,
@@ -455,7 +487,7 @@ export function SimilarityHeatmap() {
                       fontWeight: isSelRow ? 700 : 400,
                       direction: 'rtl', unicodeBidi: 'plaintext',
                     }}>
-                      {colLabel(rowKey)}
+                      {colLabel(rowKey)}{atRiskCols.has(rowKey) ? ' ⚠' : ''}
                     </span>
                   </div>
 
