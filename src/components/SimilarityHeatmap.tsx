@@ -86,7 +86,17 @@ function colLabel(key: string): string {
   return key
 }
 
+// All 27 EU member states — used to expand EU law scores into member state vectors
+const EU_MEMBER_COUNTRIES = new Set([
+  'Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic',
+  'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary',
+  'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta',
+  'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia',
+  'Spain', 'Sweden',
+])
+
 function colRegion(key: string): string {
+  if (key === 'regional:EU') return 'Europe'          // EU is a European body, not a global one
   if (key.startsWith('regional:')) return 'Supranational'
   if (key === 'US-FED' || key.startsWith('US-')) return 'Americas'
   return COUNTRY_REGION[key] ?? 'Other'
@@ -94,6 +104,7 @@ function colRegion(key: string): string {
 
 function colSortKey(key: string): string {
   const r = REGION_ORDER.indexOf(colRegion(key)).toString().padStart(2, '0')
+  if (key === 'regional:EU') return `${r}_AA_European Union`  // EU sorts first within Europe
   if (key === 'US-FED') return `${r}_US_0`
   if (key.startsWith('US-')) return `${r}_US_1_${colLabel(key)}`
   return `${r}_ZZ_${colLabel(key)}`
@@ -150,8 +161,9 @@ export function SimilarityHeatmap() {
   const [sortMode, setSortMode]     = useState<'region' | 'cluster'>('region')
   const [selected, setSelected]     = useState<number | null>(null)
   const [hover, setHover]           = useState<HoverState | null>(null)
-  const [comparedPair, setCompared] = useState<ComparedPair | null>(null)
-  const [expanded, setExpanded]     = useState<Set<string>>(new Set())
+  const [comparedPair, setCompared]     = useState<ComparedPair | null>(null)
+  const [expanded, setExpanded]         = useState<Set<string>>(new Set())
+  const [euTip, setEuTip]               = useState<{ x: number; y: number } | null>(null)
 
   // ── compute coverage vectors + cosine similarity ──
   const { cols, simMatrix, scores, insights } = useMemo(() => {
@@ -179,6 +191,21 @@ export function SimilarityHeatmap() {
       })
     })
 
+    // EU law is directly applicable in member states — expand EU scores as a floor.
+    // Where a member state has a national law that goes further, the higher score wins.
+    // Where national law conflicts with EU law, EU supremacy applies (EU score overrides -1).
+    const euColIdx = ci.get('regional:EU')
+    if (euColIdx !== undefined) {
+      const euMemberIdxs = cols.map((c, i) => EU_MEMBER_COUNTRIES.has(c) ? i : -1).filter(i => i >= 0)
+      for (let rIdx = 0; rIdx < m; rIdx++) {
+        const euSc = scores[euColIdx][rIdx]
+        if (euSc <= 0) continue
+        for (const mIdx of euMemberIdxs) {
+          if (scores[mIdx][rIdx] < euSc) scores[mIdx][rIdx] = euSc
+        }
+      }
+    }
+
     // cosine similarity: clamp negatives to 0 so opposition doesn't inflate similarity
     // (conflict ≠ agreement; absence and opposition both contribute 0)
     const pos = (x: number) => Math.max(0, x)
@@ -199,8 +226,7 @@ export function SimilarityHeatmap() {
       let s = 0; for (let j = 0; j < n; j++) if (i !== j) s += sim[i][j]
       return s / Math.max(n - 1, 1)
     })
-    const globalAvg  = avgSim.reduce((s, x) => s + x, 0) / n
-    const centralIdx = avgSim.indexOf(Math.max(...avgSim))
+    const globalAvg   = avgSim.reduce((s, x) => s + x, 0) / n
     const isolatedIdx = avgSim.indexOf(Math.min(...avgSim))
 
     let topSim = 0, topI = 0, topJ = 1
@@ -230,12 +256,12 @@ export function SimilarityHeatmap() {
 
     return {
       cols, simMatrix: sim, scores,
-      insights: { globalAvg, centralIdx, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, avgSim },
+      insights: { globalAvg, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, avgSim },
     }
   }, [])
 
   const n = cols.length
-  const { globalAvg, centralIdx, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg } = insights
+  const { globalAvg, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg } = insights
 
   // ── ordered display ──
   const order = useMemo(
@@ -263,7 +289,7 @@ export function SimilarityHeatmap() {
     for (let k = 0; k < allRules.length; k++) {
       const si = scores[i][k], sj = scores[j][k]
       const iCovered = si >= 3, jCovered = sj >= 3
-      const iOpposes = si === 2, jOpposes = sj === 2
+      const iOpposes = si < 0, jOpposes = sj < 0
 
       if (iCovered && jCovered)                         agreed.push({ ruleIdx: k, si, sj })
       else if (iCovered && jOpposes)                    conflict.push({ ruleIdx: k, si, sj })
@@ -305,7 +331,7 @@ export function SimilarityHeatmap() {
       {/* ── key findings ── */}
       <div className="panel p-4 mb-4">
         <div className="text-[10px] font-semibold text-odl-subtle uppercase tracking-wider mb-3">Key Findings</div>
-        <div className="grid grid-cols-5 divide-x divide-odl-border gap-0">
+        <div className="grid grid-cols-4 divide-x divide-odl-border gap-0">
 
           <div className="pr-4">
             <div className="text-2xl font-semibold text-odl-text">{(globalAvg * 100).toFixed(0)}%</div>
@@ -320,12 +346,6 @@ export function SimilarityHeatmap() {
               {(topSim * 100).toFixed(0)}% similar
             </div>
             <div className="text-[10px] text-odl-subtle mt-0.5">most aligned pair globally</div>
-          </div>
-
-          <div className="px-4">
-            <div className="text-xs font-semibold text-violet-700 leading-tight">{colLabel(cols[centralIdx])}</div>
-            <div className="text-[10px] font-bold text-violet-600 mt-0.5">{(insights.avgSim[centralIdx] * 100).toFixed(0)}% avg</div>
-            <div className="text-[10px] text-odl-subtle mt-0.5">most influential — highest avg similarity to all others</div>
           </div>
 
           <div className="px-4">
@@ -393,8 +413,9 @@ export function SimilarityHeatmap() {
             {order.map((origIdx, pos) => {
               const key      = cols[origIdx]
               const isSelCol = selected === origIdx
+              const isEU = key === 'regional:EU'
               return (
-                <div key={key} title={colLabel(key)} style={{
+                <div key={key} style={{
                   height: HEADER_H, width: CELL, display: 'flex',
                   alignItems: 'flex-end', justifyContent: 'center', paddingBottom: 3,
                   borderLeft: regionBounds.has(pos) ? '2px solid #CBD5E1' : undefined,
@@ -403,14 +424,17 @@ export function SimilarityHeatmap() {
                   position: 'sticky', top: 0, zIndex: 3, background: 'white',
                 }}
                   onClick={() => setSelected(p => p === origIdx ? null : origIdx)}
+                  onMouseEnter={isEU ? e => setEuTip({ x: e.clientX, y: e.clientY }) : undefined}
+                  onMouseMove={isEU ? e => setEuTip({ x: e.clientX, y: e.clientY }) : undefined}
+                  onMouseLeave={isEU ? () => setEuTip(null) : undefined}
                 >
                   <span style={{
                     writingMode: 'vertical-rl', transform: 'rotate(180deg)',
                     fontSize: 9, whiteSpace: 'nowrap',
                     color: isSelCol ? '#0369A1' : REGION_COLORS[colRegion(key)] ?? '#64748B',
-                    fontWeight: isSelCol ? 700 : 400,
+                    fontWeight: isSelCol || isEU ? 700 : 400,
                   }}>
-                    {colLabel(key)}
+                    {colLabel(key)}{isEU ? ' ★' : ''}
                   </span>
                 </div>
               )
@@ -717,6 +741,31 @@ export function SimilarityHeatmap() {
           </div>
         )
       })()}
+
+      {/* ── EU column tooltip ── */}
+      {euTip && (
+        <div style={{
+          position: 'fixed',
+          left: Math.min(euTip.x + 14, window.innerWidth - 320),
+          top:  Math.min(euTip.y + 14, window.innerHeight - 120),
+          zIndex: 9999, background: 'white', border: '1px solid #E2E8F0',
+          borderRadius: 8, padding: '10px 12px',
+          boxShadow: '0 4px 20px rgba(0,0,0,0.13)',
+          pointerEvents: 'none', width: 300,
+        }}>
+          <div className="text-[11px] font-semibold text-violet-700 mb-1.5">European Union ★</div>
+          <p className="text-[10px] text-odl-muted leading-relaxed">
+            EU regulations (AI Act, GDPR, etc.) are <span className="font-medium text-odl-text">directly applicable</span> in
+            all 27 member states without domestic legislation. This column represents the EU-level baseline
+            that applies across the bloc.
+          </p>
+          <p className="text-[10px] text-odl-muted leading-relaxed mt-1.5">
+            Where a member state appears separately in this matrix, it indicates <span className="font-medium text-odl-text">domestic legislation
+            that supplements or diverges from the EU baseline</span>. Where a member state is not listed,
+            EU law alone governs.
+          </p>
+        </div>
+      )}
     </div>
   )
 }
