@@ -101,6 +101,7 @@ function colRegion(key: string): string {
   if (key === 'regional:EU') return 'Europe'
   if (key.startsWith('regional:')) return 'Supranational'
   if (key === 'US-FED' || key.startsWith('US-')) return 'United States'
+  if (EU_MEMBER_COUNTRIES.has(key)) return 'Europe'
   return COUNTRY_REGION[key] ?? 'Other'
 }
 
