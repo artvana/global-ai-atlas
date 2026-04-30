@@ -177,8 +177,10 @@ export function SimilarityHeatmap() {
     const bindingLaws = regulations.filter(l => l.instrument_binding)
     const colKeySet   = new Set<string>()
     bindingLaws.forEach(l => colKeySet.add(lawColKey(l)))
-    // EU member states appear as separate columns — the dense Europe cluster they
-    // form makes regional concordance visually legible on the heatmap.
+    // Force all 27 EU member states into the column set even if they have no
+    // domestic binding law — the EU expansion will populate their vectors with the
+    // EU baseline, making the full 27-country bloc visible as a dense cluster.
+    EU_MEMBER_COUNTRIES.forEach(c => colKeySet.add(c))
     const cols = [...colKeySet].sort((a, b) => colSortKey(a).localeCompare(colSortKey(b)))
     const n    = cols.length
     const ci   = new Map(cols.map((c, i) => [c, i]))
