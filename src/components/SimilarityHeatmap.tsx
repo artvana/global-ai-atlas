@@ -7,13 +7,12 @@ import { regulations } from '../data/regulations'
 // ── relationship → numeric score ──────────────────────────────────────────────
 
 const REL_SCORE: Record<string, number> = {
-  origin: 5, identical: 4, agrees: 4, similar: 3, opposed: 2, absent: 0,
+  origin: 4, identical: 4, agrees: 4, similar: 3, opposed: 2, absent: 0,
 }
 
 // Pairwise-meaningful stance labels — describes a jurisdiction's own position,
 // not its relationship to a canonical origin rule
 function stanceLabel(score: number): string {
-  if (score >= 5) return 'Adopted (originating)'
   if (score >= 4) return 'Fully adopted'
   if (score >= 3) return 'Partially adopted'
   if (score === 2) return 'Explicitly opposes'
