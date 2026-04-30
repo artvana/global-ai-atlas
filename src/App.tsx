@@ -3,19 +3,17 @@ import { SearchInterface } from './components/SearchInterface'
 import { AnalysisCharts } from './components/AnalysisCharts'
 import { EnforcementView } from './components/EnforcementView'
 import { MCPDocs } from './components/MCPDocs'
-import { RulesMatrix } from './components/RulesMatrix'
 import { SimilarityHeatmap } from './components/SimilarityHeatmap'
 import { regulations } from './data/regulations'
 
 // Lazy-load the map so a react-simple-maps compat error doesn't crash the whole app
 const GAIAMap = lazy(() => import('./components/GAIAMap').then(m => ({ default: m.GAIAMap })))
 
-type Tab = 'stats' | 'rules' | 'convergence' | 'map' | 'laws' | 'enforcement' | 'mcp'
+type Tab = 'convergence' | 'stats' | 'map' | 'laws' | 'enforcement' | 'mcp'
 
 const TAB_LABELS: Record<Tab, string> = {
-  stats:       'Summary Stats',
-  rules:       'Rules Matrix',
   convergence: 'Convergence Map',
+  stats:       'Summary Stats',
   map:         'GAIA Map',
   laws:        'Laws Database',
   enforcement: 'Enforcement',
@@ -39,7 +37,7 @@ class ErrorBoundary extends Component<{ children: ReactNode }, { error: Error | 
 }
 
 function App() {
-  const [tab, setTab] = useState<Tab>('stats')
+  const [tab, setTab] = useState<Tab>('convergence')
 
   return (
     <div className="min-h-screen bg-odl-surface">
@@ -52,7 +50,7 @@ function App() {
             </div>
             <div className="h-4 w-px bg-odl-border" />
             <nav className="flex gap-0.5">
-              {(['stats', 'rules', 'convergence', 'map', 'laws', 'enforcement', 'mcp'] as Tab[]).map(t => (
+              {(['convergence', 'stats', 'map', 'laws', 'enforcement', 'mcp'] as Tab[]).map(t => (
                 <button
                   key={t}
                   onClick={() => setTab(t)}
@@ -76,6 +74,7 @@ function App() {
 
       <main className="max-w-screen-xl mx-auto px-6 py-6">
         <ErrorBoundary>
+          {tab === 'convergence' && <SimilarityHeatmap />}
           {tab === 'laws'        && <SearchInterface />}
           {tab === 'map'         && (
             <Suspense fallback={<div className="py-16 text-center text-xs text-odl-subtle">Loading map…</div>}>
@@ -83,8 +82,6 @@ function App() {
             </Suspense>
           )}
           {tab === 'stats'       && <AnalysisCharts laws={regulations} />}
-          {tab === 'rules'       && <RulesMatrix />}
-          {tab === 'convergence' && <SimilarityHeatmap />}
           {tab === 'enforcement' && <EnforcementView />}
           {tab === 'mcp'         && <MCPDocs />}
         </ErrorBoundary>
