@@ -7,7 +7,7 @@ import { regulations } from '../data/regulations'
 // ── relationship → numeric score ──────────────────────────────────────────────
 
 const REL_SCORE: Record<string, number> = {
-  origin: 4, identical: 4, agrees: 4, similar: 3, opposed: 2, absent: 0,
+  origin: 4, identical: 4, agrees: 4, similar: 3, opposed: -1, absent: 0,
 }
 
 // Pairwise-meaningful stance labels — describes a jurisdiction's own position,
@@ -15,7 +15,7 @@ const REL_SCORE: Record<string, number> = {
 function stanceLabel(score: number): string {
   if (score >= 4) return 'Fully adopted'
   if (score >= 3) return 'Partially adopted'
-  if (score === 2) return 'Explicitly opposes'
+  if (score < 0)  return 'Explicitly opposes'
   return 'Not regulated'
 }
 
@@ -163,7 +163,8 @@ export function SimilarityHeatmap() {
     const lawById = new Map(regulations.map(l => [l.id, l]))
     const m    = allRules.length
 
-    // scores[col][rule] = best relationship score
+    // scores[col][rule]: positive = adopted (3–4), negative (−1) = explicitly opposes, 0 = absent
+    // Positive adoption wins over opposition if a jurisdiction has both.
     const scores: number[][] = Array.from({ length: n }, () => new Array(m).fill(0))
     allRules.forEach((rule, rIdx) => {
       rule.instances.forEach(inst => {
@@ -172,19 +173,22 @@ export function SimilarityHeatmap() {
         const cIdx = ci.get(lawColKey(law))
         if (cIdx === undefined) return
         const sc = REL_SCORE[inst.relationship] ?? 0
-        if (sc > scores[cIdx][rIdx]) scores[cIdx][rIdx] = sc
+        if (sc > 0 && sc > scores[cIdx][rIdx]) scores[cIdx][rIdx] = sc        // best positive adoption wins
+        else if (sc < 0 && scores[cIdx][rIdx] === 0) scores[cIdx][rIdx] = sc  // opposition only when no adoption
       })
     })
 
-    // cosine similarity matrix
-    const norms = scores.map(v => Math.sqrt(v.reduce((s, x) => s + x * x, 0)))
+    // cosine similarity: clamp negatives to 0 so opposition doesn't inflate similarity
+    // (conflict ≠ agreement; absence and opposition both contribute 0)
+    const pos = (x: number) => Math.max(0, x)
+    const norms = scores.map(v => Math.sqrt(v.reduce((s, x) => s + pos(x) ** 2, 0)))
     const sim: number[][] = Array.from({ length: n }, () => new Array(n).fill(0))
     for (let i = 0; i < n; i++) {
       sim[i][i] = 1
       for (let j = i + 1; j < n; j++) {
         if (!norms[i] || !norms[j]) continue
         let dot = 0
-        for (let k = 0; k < m; k++) dot += scores[i][k] * scores[j][k]
+        for (let k = 0; k < m; k++) dot += pos(scores[i][k]) * pos(scores[j][k])
         sim[i][j] = sim[j][i] = dot / (norms[i] * norms[j])
       }
     }
