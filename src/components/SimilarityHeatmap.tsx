@@ -10,8 +10,14 @@ const REL_SCORE: Record<string, number> = {
   origin: 5, identical: 4, agrees: 4, similar: 3, opposed: 2, absent: 0,
 }
 
-const REL_LABEL: Record<number, string> = {
-  5: 'Origin', 4: 'Identical / agrees', 3: 'Similar', 2: 'Opposed', 0: 'Absent',
+// Pairwise-meaningful stance labels — describes a jurisdiction's own position,
+// not its relationship to a canonical origin rule
+function stanceLabel(score: number): string {
+  if (score >= 5) return 'Adopted (originating)'
+  if (score >= 4) return 'Fully adopted'
+  if (score >= 3) return 'Partially adopted'
+  if (score === 2) return 'Explicitly opposes'
+  return 'Not regulated'
 }
 
 // ── region / jurisdiction helpers ─────────────────────────────────────────────
@@ -248,18 +254,24 @@ export function SimilarityHeatmap() {
     if (!comparedPair) return null
     const { i, j } = comparedPair
     type RuleEntry = { ruleIdx: number; si: number; sj: number }
-    const shared: RuleEntry[] = [], onlyI: RuleEntry[] = [], onlyJ: RuleEntry[] = []
+    const agreed: RuleEntry[] = [], onlyI: RuleEntry[] = [], onlyJ: RuleEntry[] = [], conflict: RuleEntry[] = []
 
     for (let k = 0; k < allRules.length; k++) {
       const si = scores[i][k], sj = scores[j][k]
-      if (si >= 3 && sj >= 3) shared.push({ ruleIdx: k, si, sj })
-      else if (si >= 3 && sj < 2) onlyI.push({ ruleIdx: k, si, sj })
-      else if (sj >= 3 && si < 2) onlyJ.push({ ruleIdx: k, si, sj })
+      const iCovered = si >= 3, jCovered = sj >= 3
+      const iOpposes = si === 2, jOpposes = sj === 2
+
+      if (iCovered && jCovered)                         agreed.push({ ruleIdx: k, si, sj })
+      else if (iCovered && jOpposes)                    conflict.push({ ruleIdx: k, si, sj })
+      else if (jCovered && iOpposes)                    conflict.push({ ruleIdx: k, si, sj })
+      else if (iCovered && sj === 0)                    onlyI.push({ ruleIdx: k, si, sj })
+      else if (jCovered && si === 0)                    onlyJ.push({ ruleIdx: k, si, sj })
     }
     return {
-      shared: shared.sort((a, b) => Math.min(b.si, b.sj) - Math.min(a.si, a.sj)).slice(0, 20),
-      onlyI:  onlyI.sort((a, b) => b.si - a.si).slice(0, 15),
-      onlyJ:  onlyJ.sort((a, b) => b.sj - a.sj).slice(0, 15),
+      agreed:   agreed.sort((a, b) => Math.min(b.si, b.sj) - Math.min(a.si, a.sj)).slice(0, 20),
+      onlyI:    onlyI.sort((a, b) => b.si - a.si).slice(0, 15),
+      onlyJ:    onlyJ.sort((a, b) => b.sj - a.sj).slice(0, 15),
+      conflict: conflict.slice(0, 10),
     }
   }, [comparedPair, scores])
 
@@ -526,95 +538,88 @@ export function SimilarityHeatmap() {
                   <button className="text-odl-subtle hover:text-odl-text text-sm" onClick={() => setCompared(null)}>×</button>
                 </div>
 
-                {/* shared rules */}
-                {comparison.shared.length > 0 && (
-                  <div className="mb-3">
-                    <div className="text-[9px] font-semibold text-emerald-700 uppercase tracking-wide mb-1.5">
-                      ✓ Shared rules ({comparison.shared.length})
-                    </div>
-                    <div className="space-y-2">
-                      {comparison.shared.map(({ ruleIdx, si, sj }) => {
-                        const rule = allRules[ruleIdx]
-                        const labelA = colLabel(cols[comparedPair.i])
-                        const labelB = colLabel(cols[comparedPair.j])
-                        return (
-                          <div key={rule.rule_id} className="text-[10px] border-l-2 border-emerald-300 pl-2">
-                            <div className="text-[8px] text-emerald-600 font-medium mb-0.5">
-                              {RULE_CATEGORY_LABELS[rule.category as keyof typeof RULE_CATEGORY_LABELS] ?? rule.category}
-                            </div>
-                            <div className="text-odl-muted leading-snug mb-1">
-                              {rule.rule_text.slice(0, 110)}{rule.rule_text.length > 110 ? '…' : ''}
-                            </div>
-                            <div className="flex flex-col gap-0.5 text-[9px]">
-                              <span className="text-odl-subtle">{labelA}: <span className="font-medium text-odl-text">{REL_LABEL[si]}</span></span>
-                              <span className="text-odl-subtle">{labelB}: <span className="font-medium text-odl-text">{REL_LABEL[sj]}</span></span>
-                            </div>
-                          </div>
-                        )
-                      })}
-                    </div>
-                  </div>
-                )}
+                {(() => {
+                  const labelA = colLabel(cols[comparedPair.i])
+                  const labelB = colLabel(cols[comparedPair.j])
 
-                {/* only in A */}
-                {comparison.onlyI.length > 0 && (
-                  <div className="mb-3">
-                    <div className="text-[9px] font-semibold text-sky-700 uppercase tracking-wide mb-1.5">
-                      {colLabel(cols[comparedPair.i])} only ({comparison.onlyI.length})
-                    </div>
-                    <div className="space-y-2">
-                      {comparison.onlyI.map(({ ruleIdx, si }) => {
-                        const rule = allRules[ruleIdx]
-                        const labelA = colLabel(cols[comparedPair.i])
-                        const labelB = colLabel(cols[comparedPair.j])
-                        return (
-                          <div key={rule.rule_id} className="text-[10px] border-l-2 border-sky-300 pl-2">
-                            <div className="text-[8px] text-sky-600 font-medium mb-0.5">
-                              {RULE_CATEGORY_LABELS[rule.category as keyof typeof RULE_CATEGORY_LABELS] ?? rule.category}
-                            </div>
-                            <div className="text-odl-muted leading-snug mb-1">
-                              {rule.rule_text.slice(0, 90)}{rule.rule_text.length > 90 ? '…' : ''}
-                            </div>
-                            <div className="flex flex-col gap-0.5 text-[9px]">
-                              <span className="text-odl-subtle">{labelA}: <span className="font-medium text-odl-text">{REL_LABEL[si]}</span></span>
-                              <span className="text-odl-subtle">{labelB}: <span className="font-medium text-slate-400">Absent</span></span>
-                            </div>
-                          </div>
-                        )
-                      })}
-                    </div>
-                  </div>
-                )}
+                  function RuleCard({ ruleIdx, si, sj, borderColor }: { ruleIdx: number; si: number; sj: number; borderColor: string }) {
+                    const rule = allRules[ruleIdx]
+                    return (
+                      <div className="text-[10px] pl-2" style={{ borderLeft: `2px solid ${borderColor}` }}>
+                        <div className="text-[8px] font-medium mb-0.5" style={{ color: borderColor }}>
+                          {RULE_CATEGORY_LABELS[rule.category as keyof typeof RULE_CATEGORY_LABELS] ?? rule.category}
+                        </div>
+                        <div className="text-odl-muted leading-snug mb-1">
+                          {rule.rule_text.slice(0, 100)}{rule.rule_text.length > 100 ? '…' : ''}
+                        </div>
+                        <div className="flex flex-col gap-0.5 text-[9px]">
+                          <span className="text-odl-subtle">
+                            {labelA}: <span className={`font-medium ${si >= 3 ? 'text-odl-text' : si === 2 ? 'text-red-600' : 'text-slate-400'}`}>
+                              {stanceLabel(si)}
+                            </span>
+                          </span>
+                          <span className="text-odl-subtle">
+                            {labelB}: <span className={`font-medium ${sj >= 3 ? 'text-odl-text' : sj === 2 ? 'text-red-600' : 'text-slate-400'}`}>
+                              {stanceLabel(sj)}
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    )
+                  }
 
-                {/* only in B */}
-                {comparison.onlyJ.length > 0 && (
-                  <div>
-                    <div className="text-[9px] font-semibold text-amber-700 uppercase tracking-wide mb-1.5">
-                      {colLabel(cols[comparedPair.j])} only ({comparison.onlyJ.length})
-                    </div>
-                    <div className="space-y-2">
-                      {comparison.onlyJ.map(({ ruleIdx, sj }) => {
-                        const rule = allRules[ruleIdx]
-                        const labelA = colLabel(cols[comparedPair.i])
-                        const labelB = colLabel(cols[comparedPair.j])
-                        return (
-                          <div key={rule.rule_id} className="text-[10px] border-l-2 border-amber-300 pl-2">
-                            <div className="text-[8px] text-amber-600 font-medium mb-0.5">
-                              {RULE_CATEGORY_LABELS[rule.category as keyof typeof RULE_CATEGORY_LABELS] ?? rule.category}
-                            </div>
-                            <div className="text-odl-muted leading-snug mb-1">
-                              {rule.rule_text.slice(0, 90)}{rule.rule_text.length > 90 ? '…' : ''}
-                            </div>
-                            <div className="flex flex-col gap-0.5 text-[9px]">
-                              <span className="text-odl-subtle">{labelA}: <span className="font-medium text-slate-400">Absent</span></span>
-                              <span className="text-odl-subtle">{labelB}: <span className="font-medium text-odl-text">{REL_LABEL[sj]}</span></span>
-                            </div>
+                  return (
+                    <>
+                      {/* Agreement */}
+                      {comparison.agreed.length > 0 && (
+                        <div className="mb-3">
+                          <div className="text-[9px] font-semibold text-emerald-700 uppercase tracking-wide mb-1.5">
+                            Agreement · {comparison.agreed.length} rules
                           </div>
-                        )
-                      })}
-                    </div>
-                  </div>
-                )}
+                          <div className="space-y-2">
+                            {comparison.agreed.map(e => <RuleCard key={allRules[e.ruleIdx].rule_id} {...e} borderColor="#6EE7B7" />)}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Conflict */}
+                      {comparison.conflict.length > 0 && (
+                        <div className="mb-3">
+                          <div className="text-[9px] font-semibold text-red-700 uppercase tracking-wide mb-1.5">
+                            Disagreement · {comparison.conflict.length} rules
+                          </div>
+                          <div className="space-y-2">
+                            {comparison.conflict.map(e => <RuleCard key={allRules[e.ruleIdx].rule_id} {...e} borderColor="#FCA5A5" />)}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Unique to A */}
+                      {comparison.onlyI.length > 0 && (
+                        <div className="mb-3">
+                          <div className="text-[9px] font-semibold text-sky-700 uppercase tracking-wide mb-1.5">
+                            Unique to {labelA} · {comparison.onlyI.length} rules
+                          </div>
+                          <div className="space-y-2">
+                            {comparison.onlyI.map(e => <RuleCard key={allRules[e.ruleIdx].rule_id} {...e} borderColor="#93C5FD" />)}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Unique to B */}
+                      {comparison.onlyJ.length > 0 && (
+                        <div>
+                          <div className="text-[9px] font-semibold text-amber-700 uppercase tracking-wide mb-1.5">
+                            Unique to {labelB} · {comparison.onlyJ.length} rules
+                          </div>
+                          <div className="space-y-2">
+                            {comparison.onlyJ.map(e => <RuleCard key={allRules[e.ruleIdx].rule_id} {...e} borderColor="#FCD34D" />)}
+                          </div>
+                        </div>
+                      )}
+                    </>
+                  )
+                })()}
               </>
             )}
           </div>
@@ -676,7 +681,7 @@ export function SimilarityHeatmap() {
                           {rule.rule_text.slice(0, 85)}{rule.rule_text.length > 85 ? '…' : ''}
                         </div>
                         <div className="text-[8px] text-odl-subtle mt-0.5">
-                          {colLabel(cols[i])}: {REL_LABEL[si]} · {colLabel(cols[j])}: {REL_LABEL[sj]}
+                          {colLabel(cols[i])}: {stanceLabel(si)} · {colLabel(cols[j])}: {stanceLabel(sj)}
                         </div>
                       </div>
                     )
