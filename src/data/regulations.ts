@@ -24,6 +24,9 @@ export const STATUS_LABELS: Record<string, string> = {
   enacted_not_yet_effective: 'Not Yet Effective',
   superseded:                'Superseded',
   failed:                    'Failed',
+  withdrawn:                 'Withdrawn',
+  pending:                   'Pending',
+  draft:                     'Draft',
 }
 
 export const JURISDICTION_TYPE_LABELS: Record<string, string> = {
@@ -36,8 +39,12 @@ export const JURISDICTION_TYPE_LABELS: Record<string, string> = {
 export const LEGAL_FAMILY_LABELS: Record<string, string> = {
   eu_risk_based:           'EU Risk-Based',
   us_consumer_protection:  'US Consumer Protection',
+  us_administrative:       'US Administrative / Agency',
   china_state_sovereignty: 'China State Sovereignty',
+  chinese_regulatory:      'Chinese Regulatory',
   uk_non_model:            'UK Non-Model',
+  common_law:              'Common Law',
+  soft_law:                'Soft Law / Non-Binding',
   hybrid:                  'Hybrid',
   standalone:              'Standalone',
 }
@@ -47,4 +54,18 @@ export const STATUS_COLORS: Record<string, string> = {
   enacted_not_yet_effective: 'text-odl-yellow bg-odl-yellow-bg border-yellow-200',
   superseded:                'text-odl-muted bg-odl-surface border-odl-border',
   failed:                    'text-odl-muted bg-odl-surface border-odl-border',
+  withdrawn:                 'text-odl-muted bg-odl-surface border-odl-border',
+  pending:                   'text-odl-yellow bg-odl-yellow-bg border-yellow-200',
+  draft:                     'text-odl-yellow bg-odl-yellow-bg border-yellow-200',
+}
+
+export const INSTRUMENT_TYPE_LABELS: Record<string, string> = {
+  statute:              'Statute / Act',
+  regulation:           'Regulation',
+  executive_order:      'Executive Order',
+  agency_rule:          'Agency Rule',
+  treaty:               'Treaty / Convention',
+  policy_framework:     'Policy Framework',
+  voluntary_framework:  'Voluntary Framework',
+  guidance:             'Guidance / Guidelines',
 }

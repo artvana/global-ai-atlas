@@ -6,54 +6,376 @@ jurisdiction: France
 enacted_date: 2024-05-21
 status: in_force
 official_url: https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049641519
-fetched_date: 2026-04-27
+fetched_date: 2026-05-01
 ---
- 
 
-[About Intellectual Property](https://www.wipo.int/en/web/about-ip) [IP Training](https://www.wipo.int/en/web/about-ip#training) [Respect for IP](https://www.wipo.int/en/web/respect-for-ip) [IP Outreach](https://www.wipo.int/en/web/ip-outreach) [IP for…](https://www.wipo.int/en/web/about-ip#for) [IP and...](https://www.wipo.int/en/web/about-ip#and) [IP in...](https://www.wipo.int/en/web/about-ip#in) [Patent & Technology Information](https://www.wipo.int/en/web/patents/patent-information) [Trademark Information](https://www.wipo.int/en/web/ip-resources#trademarks) [Design Information](https://www.wipo.int/en/web/ip-resources#designs) [Geographical Indication Information](https://www.wipo.int/en/web/ip-resources#geographical-indications) [Plant Variety Information (UPOV)](https://www.upov.int/) [IP Laws, Treaties & Judgments](https://www.wipo.int/en/web/ip-resources#legal) [IP Resources](https://www.wipo.int/en/web/ip-resources#analysis) [IP Reports](https://www.wipo.int/en/web/ip-resources#reports) [Patent Protection](https://www.wipo.int/en/web/patents/protection) [Trademark Protection](https://www.wipo.int/en/web/trademarks/protection) [Design Protection](https://www.wipo.int/en/web/designs/protection) [Geographical Indication Protection](https://www.wipo.int/en/web/geographical-indications/protection) [Plant Variety Protection (UPOV)](https://www.upov.int/portal/index.html.en) [IP Dispute Resolution](https://www.wipo.int/amc/en/) [IP Office Business Solutions](https://www.wipo.int/en/web/ip-office-business-solutions) [Paying for IP Services](https://www.wipo.int/en/web/paying-for-ip-services) [Negotiation & Decision-Making](https://www.wipo.int/en/web/decision-making-and-negotiating-bodies) [IP Cooperation](https://www.wipo.int/en/web/cooperation) [Innovation Support](https://www.wipo.int/en/web/patents#technology) [Public-Private Partnerships](https://www.wipo.int/en/web/cooperation/public-private-partnerships) [AI Tools & Services](https://www.wipo.int/en/web/ai-tools-services) [The Organization](https://www.wipo.int/en/web/about-wipo) [Working at WIPO](https://www.wipo.int/en/web/working-at-wipo) [Accountability](https://www.wipo.int/en/web/about-wipo#accountability) [Patents](https://www.wipo.int/en/web/patents) [Trademarks](https://www.wipo.int/en/web/trademarks) [Designs](https://www.wipo.int/en/web/designs) [Geographical Indications](https://www.wipo.int/en/web/geographical-indications) [Copyright](https://www.wipo.int/en/web/copyright) [Trade Secrets](https://www.wipo.int/en/web/trade-secrets) [Future of IP](https://www.wipo.int/en/web/future-of-ip) [WIPO Academy](https://www.wipo.int/en/web/wipo-academy) [Workshops & Seminars](https://www.wipo.int/meetings/en/topic_type.jsp?group_id=242) [IP Enforcement](https://www.wipo.int/en/web/ip-enforcement) [WIPO ALERT](https://www.wipo.int/en/web/wipo-alert) [Raising Awareness](https://www.wipo.int/en/web/respect-for-ip/awareness-raising) [World IP Day](https://www.wipo.int/en/web/ipday) [WIPO Magazine](https://www.wipo.int/en/web/wipo-magazine) [Case Studies & Success Stories](https://www.wipo.int/en/web/ip-advantage) [IP News](https://www.wipo.int/en/web/news/explore) [WIPO Awards](https://www.wipo.int/en/web/awards) [Business](https://www.wipo.int/en/web/business) [Women](https://www.wipo.int/en/web/women) [Universities](https://www.wipo.int/en/web/universities) [Indigenous Peoples](https://www.wipo.int/en/web/traditional-knowledge/engagement) [Judiciaries](https://www.wipo.int/en/web/judiciaries) [Youth](https://www.wipo.int/en/web/youth-engagement) [Examiners](https://www.wipo.int/en/web/examiners) [Innovation Ecosystems](https://www.wipo.int/en/web/innovation-ecosystems) [Economics](https://www.wipo.int/en/web/economics) [Finance](https://www.wipo.int/en/web/ip-financing) [Intangible Assets](https://www.wipo.int/en/web/intangible-assets) [Global Health](https://www.wipo.int/en/web/global-health) [Climate Change](https://www.wipo.int/en/web/climate-change) [Competition Policy](https://www.wipo.int/en/web/competition-policy) [Sustainable Development Goals](https://www.wipo.int/en/web/sdgs) [Genetic Resources, Traditional Knowledge and Traditional Cultural Expressions](https://www.wipo.int/en/web/traditional-knowledge) [Frontier Technologies](https://www.wipo.int/en/web/frontier-technologies) [Mobile Applications](https://www.wipo.int/en/web/mobile-apps) [Sports](https://www.wipo.int/en/web/sports) [Tourism](https://www.wipo.int/en/web/tourism) [Music](https://www.wipo.int/en/web/music) [Fashion](https://www.wipo.int/en/web/fashion) [PATENTSCOPE](https://www.wipo.int/en/web/patentscope) [Patent Analytics](https://www.wipo.int/en/web/patent-analytics) [International Patent Classification](https://www.wipo.int/en/web/classification-ipc) [ARDI – Research for Innovation](https://www.wipo.int/en/web/ardi) [ASPI – Specialized Patent Information](https://www.wipo.int/en/web/aspi) [Global Brand Database](https://www.wipo.int/en/web/global-brand-database) [Madrid Monitor](https://www3.wipo.int/madrid/monitor/en/) [Article 6ter Express Database](https://6ter.wipo.int/struct-search) [Nice Classification](https://www.wipo.int/en/web/classification-nice) [Vienna Classification](https://www.wipo.int/en/web/classification-vienna) [Global Design Database](https://www.wipo.int/en/web/global-design-database) [International Designs Bulletin](https://hague.wipo.int/#/bulletin/browse-by-bulletin) [Hague Express Database](https://designdb.wipo.int/designdb/hague/en/) [Locarno Classification](https://www.wipo.int/en/web/classification-locarno) [Lisbon Express Database](https://lisbon-express.wipo.int/) [Global Brand Database for GIs](https://branddb.wipo.int/en/IPO-LISBON/quicksearch?by=brandName&v=&start=0&_=1676544734688) [PLUTO Plant Variety Database](https://pluto.upov.int/) [GENIE Database](https://www.upov.int/genie/) [WIPO-Administered Treaties](https://www.wipo.int/en/web/treaties) [WIPO Lex - IP Laws, Treaties & Judgments](https://www.wipo.int/en/web/wipolex) [WIPO Standards](https://www.wipo.int/en/web/standards) [IP Statistics](https://www.wipo.int/en/web/ip-statistics) [WIPO Pearl (Terminology)](https://www.wipo.int/en/web/wipo-pearl) [WIPO Publications](https://www.wipo.int/publications/en/) [Country IP Profiles](https://www.wipo.int/en/web/country-profiles) [WIPO Knowledge Center](https://www.wipo.int/en/web/wipo-knowledge-center) [World Intangible Investment Highlights](https://www.wipo.int/en/web/intangible-assets/measuring-investments#highlights) [WIPO Technology Trends](https://www.wipo.int/en/web/technology-trends) [Global Innovation Index](https://www.wipo.int/en/web/global-innovation-index) [World Intellectual Property Report](https://www.wipo.int/en/web/world-ip-report) [PCT – The International Patent System](https://www.wipo.int/en/web/pct-system) [ePCT](https://pct.wipo.int/ePCT/) [Budapest – The International Microorganism Deposit System](https://www.wipo.int/en/web/budapest-system) [Madrid – The International Trademark System](https://www.wipo.int/en/web/madrid-system) [eMadrid](https://madrid.wipo.int/) [Article 6ter (armorial bearings, flags, state emblems)](https://www.wipo.int/en/web/article-6ter) [Hague – The International Design System](https://www.wipo.int/en/web/hague-system) [eHague](https://hague.wipo.int/) [Lisbon – The International System of Appellations of Origin and Geographical Indications](https://www.wipo.int/en/web/lisbon-system) [eLisbon](https://lisbon-system.wipo.int/) [UPOV PRISMA](https://www3.wipo.int/upovprisma) [Mediation](https://www.wipo.int/amc/en/#mediation) [Arbitration](https://www.wipo.int/amc/en/#arbitration) [Expert Determination](https://www.wipo.int/amc/en/#expert-determination) [Domain Name Disputes](https://www.wipo.int/amc/en/domains/) [Centralized Access to Search and Examination (CASE)](https://www.wipo.int/en/web/case) [Digital Access Service (DAS)](https://www.wipo.int/en/web/das) [WIPO Pay](https://www.wipo.int/en/web/wipo-pay) [Current Account at WIPO](https://www.wipo.int/en/web/current-account-at-wipo) [WIPO Assemblies](https://www.wipo.int/en/web/assemblies) [Standing Committees](https://www.wipo.int/en/web/decision-making-and-negotiating-bodies#bodies) [Calendar of Meetings](https://www.wipo.int/meetings/en/) [WIPO Webcast](https://webcast.wipo.int/) [WIPO Official Documents](https://www.wipo.int/meetings/en/archive.jsp) [Development Agenda](https://www.wipo.int/en/web/development-agenda) [Tailored Initiatives & Projects](https://www.wipo.int/en/web/cooperation/tailored-initiatives) [Collaborative Forums & Dialogues](https://www.wipo.int/en/web/cooperation/collaborative-forums) [Innovation, Creativity and Development Acceleration Program](https://www.wipo.int/en/web/innovation-creativity-and-development-acceleration-program) [IP for Impact](https://www.wipo.int/pressroom/en/stories/) [National IP Strategies](https://www.wipo.int/en/web/national-ip-strategies) [Cooperation Hub](https://www.wipo.int/en/web/cooperation/cooperation-hub) [Technology and Innovation Support Centers (TISC)](https://www.wipo.int/en/web/tisc) [Technology Transfer](https://www.wipo.int/en/web/technology-transfer) [Inventor Assistance Program](https://www.wipo.int/en/web/inventor-assistance-program) [WIPO GREEN](https://www3.wipo.int/wipogreen/en/) [WIPO's Pat-INFORMED](https://www.wipo.int/pat-informed/en/) [Accessible Books Consortium](https://www.accessiblebooksconsortium.org/en/portal/index) [WIPO for Creators](https://www.wipo.int/en/web/wipo-for-creators) [WIPO Translate](https://www.wipo.int/en/web/ai-tools-services/wipo-translate) [Speech-to-Text](https://www.wipo.int/en/web/ai-tools-services/speech-to-text) [Classification Assistant](https://www.wipo.int/en/web/ai-tools-services/classification-assistant) [Member States](https://www.wipo.int/members/en/) [Observers](https://www.wipo.int/en/web/about-wipo/observers) [Director General](https://www.wipo.int/en/web/director-general) [Activities by Unit](https://www.wipo.int/en/web/about-wipo/activities-by-unit) [External Offices](https://www.wipo.int/en/web/about-wipo/offices) [Staff Positions](https://www.wipo.int/en/web/working-at-wipo#staff) [Affiliated Personnel Positions](https://www.wipo.int/en/web/working-at-wipo#affiliated) [Procurement](https://www.wipo.int/en/web/procurement) [Results & Budget](https://www.wipo.int/en/web/about-wipo/budget) [Financial Reporting](https://www.wipo.int/en/web/about-wipo/budget/financial) [Oversight](https://www.wipo.int/en/web/about-wipo/oversight)
+# LAW No. 2024-449 of 21 May 2024 on Securing and Regulating the Digital Space
 
-[Arabic](/wipolex/ar/legislation/details/22589) [English](/wipolex/en/legislation/details/22589) [Spanish](/wipolex/es/legislation/details/22589) [French](/wipolex/fr/legislation/details/22589) [Russian](/wipolex/ru/legislation/details/22589) [Chinese](/wipolex/zh/legislation/details/22589)
+**NOR: ECOI2309270L**
 
-[Laws](/wipolex/en/main/legislation) [Treaties](/wipolex/en/main/treaties) [Judgments](/wipolex/en/main/judgments) [Browse By Jurisdiction](/wipolex/en/members)
+---
 
-# Law No. 2024-449 of May 21, 2024, [France](/wipolex/en/members/profile/FR)
+## TITLE I — PROTECTION OF MINORS ONLINE
 
-#### on the Security and Regulation of the Digital Space
+### Section 1 — Strengthening the Powers of ARCOM regarding Online Protection of Minors
 
-Back Latest Version in WIPO Lex
+#### Article 1
 
-Details Details Year of Version 2024 Dates Entry into force: May 22, 2024 Adopted: May 21, 2024 Type of Text Other Texts Subject Matter Copyright and Related Rights (Neighboring Rights) Subject Matter (secondary) Enforcement of IP and Related Laws Notes Law No. 2024-449 of May 21, 2024, amends, inter alia, different laws including the IP Code and Law No. 2004-575 of June 21, 2004, on Confidence in the Digital Economy. Articles 12 & 48 of Law No. 2024-449 provide for amendments to the following provisions of Law on Confidence in the Digital Economy that subsequently amends L. 132-23 of the IP Code: - Inserted Articles 1-1 and 1-2 after Article 1 that subsequently amends Article L. 132-23 of the IP Code. - Amended Article 6 that subsequently amends Article L.132-23 of the IP Code. These amendments are in force from February 17, 2024. Article 62 of the Law provides for different amendments (in force from 17/02/2024) to the following provisions of the IP Code: - Paragraph II of Articles L. 137-2 and L. 219-2. - In the second sentence of the first paragraph of Article L. 131-4. Article 28 under Chapter II, and Article 31 under Chapter III provide for the protection of IP rights in the cloud computer services.
+Rewrites Article 10 of Law No. 2004-575 of 21 June 2004:
 
-#### Available Materials
+ARCOM ensures that pornographic content is not accessible to minors on online public communication services and video-sharing platform services. ARCOM shall establish and publish a reference framework determining the minimum technical requirements for age verification systems, covering reliability and privacy. ARCOM may require audits of age verification systems by independent bodies.
 
-[Main Text(s)](javascript:void\(0\)) [Related Text(s)](javascript:void\(0\))
+Editors and platform providers must display a screen containing no pornographic content until the user's age has been verified.
 
-Main text(s) Main text(s) French Loi n° 2024-449 du 21 mai 2024       [Open PDF](javascript:void\(0\)) open\_in\_new
+**Penalties for non-compliance with the reference framework:**
+- Financial penalty up to €150,000 or 2% of worldwide pre-tax turnover (whichever greater);
+- Raised to €300,000 or 4% for repeat violation within five years.
 
-[Loi n° 2024-449 du 21 mai 2024](https://wipolex-res.wipo.int/edocs/lexdocs/laws/fr/fr/fr622fr_1.pdf?last-modified=1716816780&Expires=1777278403&Signature=UDrM~C-SIyq3ETfvm7KPN~fnO4QI15-vl9HSgOq7h5ljqtiR50SN3ufQSTqfI10Iczu0Xy7lDfi6Kc3Q6tMMtuba~CFOp0l7Qv9htb~9S3FB8kz~goaUBu~yx8yGCiJyfBoiLGcOBHEBN9mnsIow~FbbZYk0HkUdnH~UiCJkY76ZigY2in6Ap9Ipo9FjzesjrWWSZNOxZk1AcD-bDtVbztCaQLyalRPOm3rnPEbk39MGu6E3OBi0QO8zHa6KH3zQnYmq2wx0my0aWXAnlHV~yh9Xorn3ujj0qDUDsGYrFaFgE6ZSYRhYouYbgYT5yFjzh~sDRQZPgT1YLHXmHv2HDQ__&Key-Pair-Id=K1QGBX7Y6FHYJN)
+The reference framework shall be published within two months of this law's promulgation. Services allowing access to pornographic content must implement a compliant age verification system within three months of publication of the reference framework.
 
-  
-Legislation Amends (9 text(s)) Amends (9 text(s))
+#### Article 2
 
-[Commercial Code , (consolidated August 16, 2025)](/wipolex/en/legislation/details/23228) (FR626)
+Inserts Articles 10-1 and 10-2 into Law No. 2004-575:
 
-[Criminal Procedure Code , (consolidated August 13, 2025)](/wipolex/en/legislation/details/23231) (FR629)
+**Art. 10-1:** ARCOM procedure for minors accessing pornographic content in violation of Article 227-24 of the Criminal Code:
+1. ARCOM sends reasoned observations; addressee has 15 days to respond;
+2. ARCOM may formally notify the person to take measures within 15 days;
+3. On non-compliance: financial penalty up to €250,000 or 4% of worldwide turnover (raised to €500,000 or 6% for repeat violation);
+4. ARCOM may notify internet service providers and DNS providers to block access within 48 hours;
+5. ARCOM may notify search engines to cease referencing within 48 hours;
+6. Users see an ARCOM information page explaining the blocking;
+7. Blocking measures last maximum 2 years, reviewed at least annually;
+8. ARCOM publishes annual activity report.
 
-[Intellectual Property Code, (consolidated version as of March 13, 2025)](/wipolex/en/legislation/details/23227) (FR625)
+**Art. 10-2:** These provisions apply to services established in France or outside the EU. Services established in another EU Member State may be subject to these rules after a procedure under Directive 2000/31/EC Article 3(4)–(5).
 
-[Penal Code , (consolidated July 11, 2025)](/wipolex/en/legislation/details/23309) (FR630)
+#### Article 3
 
-[Code on Administrative Justice (consolidated version as of November 1, 2019)](/wipolex/en/legislation/details/19421) (FR595)
+Inserts Art. 6-8 into Law No. 2004-575:
 
-[Postal and Electronic Communications Code (consolidated version as of August 4, 2014)](/wipolex/en/legislation/details/14290) (FR440)
+ARCOM may request software application stores to prevent downloading of non-compliant apps within 48 hours, in cases of non-compliance with formal notices regarding minor protection or age verification. App store non-compliance is punishable by a fine not exceeding 1% of worldwide pre-tax turnover.
 
-[Law No. 2004-575 of June 21, 2004, on Confidence in the Digital Economy](/wipolex/en/legislation/details/12761) (FR234)
+### Section 2 — Penalization of Failure to Remove Child Pornography Content within 24 Hours
 
-[Directive No. 2000/31/EC of the European Parliament and of the Council of 8 June 2000 on certain legal aspects of information society services, in particular electronic commerce, in the Internal Market (Directive on electronic commerce)](/wipolex/en/legislation/details/6393) (EU107)
+#### Article 4
 
-[Law No. 86-1067 of September 30, 1986, on the Freedom of Communication (Law Léotard)](/wipolex/en/legislation/details/18513) (FR563)
+Amends Law No. 2004-575 to insert Articles 6-2, 6-2-1, and 6-2-2:
 
-No data available.
+**Art. 6-2:** Hosting providers receiving removal requests for child pornography images (Article 227-23 Criminal Code) must:
+- Be informed of procedures at least 12 hours before first request;
+- Inform authority if compliance is impossible due to force majeure;
+- Inform content providers of removals and their appeal rights.
 
-  
-WIPO Lex No. FR622
+**Art. 6-2-1:** Failure to remove child pornography images within 24 hours of receiving a removal request is punishable by:
+- 1 year's imprisonment and a €250,000 fine;
+- For habitual violation by legal entities: fine raised to 4% of worldwide pre-tax turnover.
+
+**Art. 6-2-2:** Hosting and content providers may request the President of the Administrative Court to annul a removal request within 48 hours of receipt. The court rules within 72 hours. Appeals must be filed within 10 days; appellate court rules within 1 month.
+
+#### Article 5
+
+Experimental provision (2 years): The administrative authority may request removal of content manifestly contravening Article 222-1 (torture and barbaric acts). In absence of removal within 24 hours, ISPs may be notified to block access. A qualified person within ARCOM oversees regularity of removal requests. Government must submit evaluation report to Parliament no later than 3 months before the experiment's end.
+
+---
+
+## TITLE II — PROTECTION OF CITIZENS IN THE DIGITAL ENVIRONMENT
+
+#### Article 7
+
+Amends Article L. 312-9 of the Education Code: digital literacy certification for students (mandatory at end of first and last year of middle school) must cover artificial intelligence, AI-generated content, social networks, disinformation, and related risks. Annual information sessions for legal representatives of students on screen time, illicit content, commercial manipulation, online fraud, harassment, and sexist/sexual violence online.
+
+#### Article 8
+
+Higher education digital literacy (Article L. 611-8 Education Code) must include digital citizenship, internet/social network rights and duties, prevention of sexist and sexual violence online, and reporting mechanisms.
+
+#### Article 12
+
+Inserts Art. 1-3 into Law No. 2004-575: Producers of pornographic content simulating crimes must display a warning message visible before and throughout viewing. Failure is punishable by 1 year's imprisonment and €75,000 fine.
+
+#### Article 13
+
+Inserts Art. 6-1-1 A: Hosting providers must act promptly to remove pornographic content reported by a represented person as disseminated in violation of rights assignment agreements.
+
+#### Article 14
+
+Grants ARCOM powers to ensure compliance with EU sanctions relating to broadcasting. Non-compliance with content removal orders can attract penalties of 4–6% of worldwide turnover.
+
+#### Article 15
+
+Amends Article 226-8 of the Criminal Code (montage offense):
+- Extends to visual or sound content generated by algorithmic processing (deepfakes) brought to the knowledge of the public or a third party without consent;
+- Penalties increased to 2 years' imprisonment and €45,000 fine when committed via an online public communication service.
+
+#### Article 16
+
+Reinstates Article 131-35-1 of the Criminal Code: Courts may order as a complementary penalty the suspension of access accounts to online platform services used to commit specified offenses, for up to 6 months (1 year for recidivists). The convicted person is prohibited from using or creating new accounts on those platforms. Failure by providers to block suspended accounts: fine of €75,000. Applies to offenses including harassment, sexual exploitation, privacy violations, child protection offenses, incitement to terrorism, and others.
+
+#### Article 17
+
+Amends Article 312-10 of the Criminal Code: Blackmail exercised through an online public communication service by means of sexual images/videos, or to obtain sexual images/videos, carries imprisonment of up to 7 years and a €100,000 fine.
+
+#### Article 20
+
+Amends Article 131-5-1 of the Criminal Code: Adds awareness training on respect for persons in the digital space and prevention of online offenses as a possible complementary penalty.
+
+#### Article 21
+
+Inserts Art. 226-8-1: Punishable by 2 years' imprisonment and €60,000 fine: bringing to public knowledge a sexual montage or algorithmically generated sexual content reproducing a person's image or words without consent. Penalties increased to 3 years and €75,000 when committed via an online public communication service.
+
+#### Article 23
+
+Establishes a **Digital Citizens' Reserve** as part of the Civic Reserve (Law No. 2017-86), contributing to transmission of Republican values, respect for public order, combating online hate, education, and inclusion. Members must notify prosecutors of offenses discovered in the course of their mission.
+
+#### Article 24
+
+Rewrites Article 12 of Law No. 2004-575: Anti-phishing and online fraud procedure:
+- ARCOM agents may identify online services manifestly designed to commit fraud, identity theft, or phishing offenses;
+- Administrative authority notifies internet browser providers to display warning messages (conservatory measures for 7 days);
+- If violation persists: injunctions to ISPs and DNS providers to block access (up to 3 months), with browser providers displaying warnings; search engines notified to cease referencing;
+- CNIL-designated qualified person oversees regularity of measures.
+
+#### Article 25
+
+Requires very large online platforms (per DSA) to adopt charters for monitoring and supporting online content moderators, covering: comprehensive training, mental health awareness, psychological support programs, task rotation, support groups, wellbeing policies, recognition of moderators' work, and confidentiality of support exchanges.
+
+---
+
+## TITLE III — STRENGTHENING TRUST AND COMPETITION IN THE DATA ECONOMY
+
+### Chapter I — Unfair Commercial Practices on the Cloud Computing Market
+
+#### Article 26
+
+Inserts Art. L. 442-12 into the Commercial Code:
+
+**Definitions:** Cloud computing service; cloud computing credit; customer; self-preferencing.
+
+**Key rules:**
+- Cloud computing credits may only be granted for a limited duration (max 1 year including renewals); no exclusivity conditions permitted on such credits;
+- Administrative fines for violations: up to €200,000 (natural person) / €1,000,000 (legal entity); doubled for repeat violations within 2 years;
+- Prohibition on bundling cloud service contracts with product/service sales as an unfair commercial practice;
+- Competition Authority may examine self-preferencing practices and impose sanctions.
+
+#### Article 27
+
+**Prohibitions on excessive cloud switching and transfer fees:**
+- Data transfer fees in connection with switching providers may not exceed costs directly related to the change;
+- Other switching fees may not exceed actual costs incurred;
+- Multi-cloud data transfer fees may not exceed actual costs;
+- Ministerial order (following ARCEP proposal) sets maximum tariff for data transfer fees;
+- ARCEP publishes guidelines on permitted costs;
+- Providers must clearly inform customers of all such fees before contract signature;
+- Exemptions for custom-developed services and limited-time test/evaluation services.
+
+### Chapter II — Interoperability of Cloud Computing Services
+
+#### Article 28
+
+**Definitions:** Digital assets; functional equivalence; exportable data.
+
+Cloud computing service providers must ensure their services comply with essential requirements of:
+1. Interoperability with customer services or other cloud providers (same service type);
+2. Portability of digital assets and exportable data;
+3. Free provision of APIs and documentation necessary for interoperability and portability.
+
+#### Article 29
+
+ARCEP shall specify rules and methods for interoperability and portability, issuing specifications distinguishing IaaS (infrastructure) from other cloud services. Providers must publish and regularly update technical interoperability reference offers. IaaS providers must take reasonable measures to facilitate functional equivalence at destination.
+
+#### Article 30
+
+ARCEP may collect information, conduct investigations, resolve disputes, and impose financial penalties up to 3% of worldwide pre-tax turnover (5% for repeat violations) for non-compliance with cloud interoperability and switching fee obligations. Competition Authority referrals for dominant position abuses.
+
+### Chapter III — Protection of Strategic and Sensitive Data on the Cloud Computing Market
+
+#### Article 31
+
+State administrations processing **data of particular sensitivity** (data covered by statutory secrecy; data necessary for essential State missions including national security, public order, and health/life protection) on cloud services must ensure those services implement security criteria protecting data against access by public authorities of third States not authorized by EU law.
+
+A government report to Parliament shall evaluate additional measures including potential encryption audit requirements for non-EU cloud providers.
+
+#### Article 32
+
+Health data (Art. L. 1111-8 Public Health Code) must be stored on EU/EEA territory with measures against unauthorized transfer to or access by non-EU/EEA states.
+
+### Chapter IV — Transparency on the Cloud Computing Market
+
+#### Article 33
+
+Cloud computing service providers must publish:
+1. Information on competent jurisdictions for deployed infrastructure;
+2. Description of measures to prevent unauthorized third-State access to or transfer of non-personal data held in the EU;
+3. Environmental footprint information (carbon, water, energy).
+
+#### Article 34
+
+Adds cloud computing services to ARCEP's regulatory and enforcement scope under the Postal and Electronic Communications Code.
+
+### Chapter V — Regulation of Data Intermediation Services
+
+#### Articles 36–38
+
+ARCEP is designated as competent authority for data intermediation services (Data Governance Act, Article 13). ARCEP may collect information, investigate, and impose sanctions including financial penalties up to 3% of worldwide turnover (5% repeat), service suspension, or cessation for serious breaches. ARCEP shall refer data protection issues to CNIL.
+
+---
+
+## TITLE IV — MONETIZABLE DIGITAL OBJECT GAMES (JONUM)
+
+#### Article 40
+
+Experimental framework (3 years from promulgation) for JONUM: games offered online that enable, through chance, players over 18 who have made a financial sacrifice, to obtain **monetizable digital objects** (game elements that may be transferred for consideration to third parties) — authorized provided:
+- No monetary gain;
+- Objects may not be transferred back to the issuing company or person acting in concert;
+- Rewards in currency prohibited; maximum reward proportion capped at 25% of turnover per game per year; annual per-player cap.
+
+#### Article 41
+
+Regulatory framework for JONUM:
+- Pre-declaration to ANJ (National Gaming Authority); EU/EEA establishment required;
+- Mandatory age verification; prohibition of minors;
+- One account per player with identity verification; companies prohibited from repurchasing issued digital objects;
+- ANJ access to player/operations data;
+- Sports-based games require organizer agreement; sports federations must prohibit sports actors from participating or selling related objects;
+- AML/CFT obligations;
+- ANJ oversight, investigation, sanctions, and blocking powers for unauthorized JONUM;
+- Criminal penalties for unauthorized JONUM operations and advertising (up to €100,000 fine).
+
+---
+
+## TITLE V — DIGITAL MARKET ANALYSIS
+
+#### Article 42
+
+Strengthens PEReN (Centre for Expertise in Digital Platform Regulation) powers:
+- Authorized to conduct systemic risk detection research under DSA Article 34;
+- May implement automated data collection methods (including from login-gated services) notwithstanding terms of use, subject to strict necessity and CNIL-approved methods;
+- Data retention: 9 months (experimentation), 5 years (public research).
+
+---
+
+## TITLE VI — DIGITAL REGULATION GOVERNANCE
+
+#### Article 44
+
+The DSA Digital Services Coordinator may use PEReN technical assistance for data analysis, source code review, algorithmic processing, and algorithm audits. PEReN operates in complete independence with confidentiality obligations.
+
+---
+
+## TITLE VII — CONTROL OF PERSONAL DATA PROCESSING BY COURTS
+
+#### Articles 45–47
+
+Establishes independent data protection control authorities for each court system:
+- **Administrative courts**: Council of State member elected by general assembly for renewable 3-year term (Art. L. 115-1 Code of Administrative Justice);
+- **Judicial courts**: Court of Cassation member elected by the assembly of out-of-hierarchy magistrates (Code of Judicial Organization);
+- **Financial courts**: Court of Auditors member (Code of Financial Jurisdictions).
+
+Each control authority ensures compliance with GDPR and Law No. 78-17 (French Data Protection Act), receives complaints, exercises GDPR Article 58 powers (excluding periodic penalties and fines), and publishes an annual public report.
+
+---
+
+## TITLE VIII — ADAPTATIONS OF NATIONAL LAW
+
+### Chapter I — Adaptations to Law No. 2004-575 (Trust in the Digital Economy)
+
+#### Article 48
+
+Major restructuring to align with DSA definitions:
+
+**Editor identification obligations** (Art. 1-1): Online service editors must publish name, address, contact details, registration numbers, and hosting provider details. Non-professional editors may maintain anonymity by providing details only to the hosting provider. Violation: 1 year imprisonment / €75,000 fine.
+
+**Definitions** (Art. 5-1, Art. 6): Aligns "internet access service," "hosting services," "online search engine," "online platform," "online social network service," "software application store," and "software application" with DSA and DMA definitions.
+
+**ISP obligations** (Art. 6.III): Parental control tools; data consumption and GHG emissions information; tobacco prohibition information.
+
+**Hosting provider obligations** (Art. 6.IV): Cooperation against illegal content; immediate notification to authorities of specified serious offenses (terrorism, sexual abuse of minors, hate speech, etc.).
+
+**Content preservation** (Art. 6.VI): Platforms above thresholds must preserve content for judicial purposes.
+
+**Malicious takedown notices** (Art. 6.VII): 1 year imprisonment / €15,000 fine.
+
+#### Article 50
+
+**Art. 6-3:** President of Judicial Court may order measures to prevent damage from online content.
+
+**Art. 6-4:** Administrative authority may extend blocking measures to services reproducing content subject to existing judicial blocking orders. A public list of blocked services is maintained, accessible to advertisers.
+
+#### Article 51
+
+**DSA governance:**
+- **Art. 7:** ARCOM, DGCCRF, and CNIL designated as DSA competent authorities; ARCOM designated as Coordinator for Digital Services;
+- **Art. 7-4:** National Network for Coordination of Digital Services Regulation: ARCOM, CNIL, ARCEP, Competition Authority, ANSSI, ARPE, and competent State services, co-presided by Ministers of Digital and Culture;
+- **Art. 8-1:** ARCOM ensures compliance with DSA obligations for intermediary services, hosting providers, and online platforms;
+- **Art. 9-2:** ARCOM may impose financial penalties up to 6% of worldwide turnover (1% for refusal to cooperate); periodic penalty payments up to 5% of daily turnover.
+
+### Chapter II — Consumer Code Modifications
+
+#### Article 52
+
+Updates Consumer Code definitions (online platform, online search engine, online comparator). Creates new Chapter III:
+
+**Art. L. 133-1:** Criminal penalties (2 years / €300,000 or 6% worldwide turnover) for marketplace providers breaching DSA obligations on dark patterns (Art. 25), trader traceability (Art. 30), online interface design (Art. 31), or consumer information (Art. 32).
+
+**Art. L. 133-2:** Injunction powers with periodic penalty payments up to 5% of daily worldwide turnover.
+
+DGCCRF agents have powers to investigate platform DSA infringements.
+
+### Chapter III — Commercial Code Modifications
+
+#### Article 53
+
+- Competition Authority, Minister of Economy designated as national DMA authorities;
+- Powers for application of TFEU competition rules and DMA Articles 22–23, 38, 41.
+
+### Chapter IV — Law No. 86-1067 Modifications
+
+#### Article 54
+
+ARCOM oversight extended to charters for environmental impact reduction ("climate contracts") by platforms. ARCOM ensures compliance by video-sharing platforms with the content moderator welfare charter obligations. Updated disinformation framework aligned with DSA Articles 33–37, 42, 45.
+
+### Chapter V — Law on Combating Information Manipulation
+
+#### Article 55
+
+Articles 11, 13, and 14 of Law No. 2018-1202 on combating information manipulation are repealed (superseded by DSA mechanisms).
+
+### Chapter VI — Electoral Code Modifications
+
+#### Article 56
+
+During the 3 months before general elections, very large online platforms and search engines (per DSA Art. 33) must make available in their advertising repository: identity of those paying for promotion of content related to public debate; amounts paid; aggregated information on election-related content promoted.
+
+### Chapter VII — French Data Protection Act (Law No. 78-17) Modifications
+
+#### Article 57
+
+CNIL designated as competent authority for data altruism under the Data Governance Act. CNIL has investigation, formal notice, and sanctions powers for data altruism organizations, including administrative fines up to GDPR Article 83(4) ceilings.
+
+#### Article 59
+
+CNIL designated as DSA competent authority for:
+- DSA Art. 26(1)(d): user information about advertising;
+- DSA Art. 26(3): prohibition of profiling-based advertising using sensitive personal data;
+- DSA Art. 28(2): prohibition of profiling-based advertising to minors.
+
+CNIL sanctions for DSA breaches include: reprimand; compliance injunction with periodic penalties up to 5% of daily worldwide turnover; administrative fines up to 6% of worldwide turnover (1% for non-cooperation); provisional injunctions for high risk to rights and freedoms (periodic penalties up to €100,000 per day).
+
+#### Article 60
+
+Clarifies territorial application of the French Data Protection Act: applies to processing of personal data of persons in France by non-EU controllers/processors when processing is linked to monitoring behavior within the EU.
+
+---
+
+## TITLE VIII FINAL — ENTRY INTO FORCE
+
+#### Article 64
+
+- Art. 2: 1 January 2024;
+- Cloud interoperability/switching/transparency provisions (Arts. 27–30, 33.I): apply until 12 January 2027 (until EU Data Act applies);
+- DSA-related provisions: 17 February 2024;
+- Short-term rental provisions (Art. 43): set by decree, no later than 1 year after promulgation.
+
+---
+
+*Done in Paris, 21 May 2024.*
+*Emmanuel Macron*

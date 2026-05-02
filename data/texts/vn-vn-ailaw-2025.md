@@ -6,783 +6,314 @@ jurisdiction: Vietnam
 enacted_date: 2025-12-10
 status: in_force
 official_url: https://english.luatvietnam.vn/law-no-134-2025-qh15-dated-december-10-2025-of-the-national-assembly-on-artificial-intelligence-422299-doc1.html
-fetched_date: 2026-04-24
+fetched_date: 2026-05-01
 ---
--   Summary
--   Content
--   Status
--   Vietnamese
--   Download
 
-Save
+# LAW ON ARTIFICIAL INTELLIGENCE
 
-Please [log in](javascript:void\(0\) "log in") to use this function
+**Law No. 134/2025/QH15**
+*Hanoi, 10 December 2025*
+*Takes effect: 1 March 2026*
 
-Send link to email
+---
 
-Please [log in](javascript:void\(0\) "log in") to use this function
+## CHAPTER I — GENERAL PROVISIONS
 
-Error message
+### Article 1 — Scope of regulation
 
--   [Print](javascript:void\(0\))
--   Share:[](javascript:void\(0\) "Share to Facebook")[](javascript:void\(0\) "Share to twitter")
--   Text mode: [Light](javascript:void\(0\)) | [Dark](javascript:void\(0\))
+Regulates the research, development, provision, deployment and use of AI systems; the rights and obligations of related organizations and individuals; and State management of AI activities in Vietnam. AI activities serving solely national defence, security or cryptography are excluded.
 
-Font size:
+### Article 2 — Subjects of application
 
-**Send link to email**
+Applies to Vietnamese agencies, organizations and individuals, and to foreign organizations and individuals participating in AI activities in Vietnam.
 
-## ATTRIBUTE Law on Artificial Intelligence 2025
+### Article 3 — Definitions
 
-Law No. 134/2025/QH15 dated December 10, 2025 of the National Assembly on Artificial Intelligence
+1. **Artificial intelligence (AI)** — the electronic implementation of human cognitive capacities, including learning, reasoning, perception, judgement and understanding of natural language.
 
-**Issuing body:**
+2. **AI system** — a machine-based system designed to perform AI capacities with varying degrees of autonomy, capable of self-adapting after deployment; based on explicit or implicit objectives, the system infers from input data to generate outputs such as predictions, content, recommendations or decisions that may affect physical or digital environments.
 
-National Assembly of the Socialist Republic of Vietnam
+3. **Developer** — an organization or individual that designs, builds, trains, tests or fine-tunes all or part of an AI model, algorithm or system, with direct control over technical methods, training data or model parameters.
 
-**Effective date:**
+4. **Provider** — an organization or individual that places an AI system on the market or puts it into use under its own name, brand or trademark, regardless of whether developed by the provider or a third party.
 
-Known
+5. **Deployer** — an organization or individual that uses an AI system within its scope of control in professional, commercial or service-providing activities; excludes personal, non-commercial use.
 
-Please [log in](javascript:void\(0\) "log in") to [a subscriber](/service.html "subscriber") account to use this function.
+6. **User** — an organization or individual that directly interacts with an AI system or uses its outputs.
 
-Don’t have an account? [Register here](javascript:void\(0\) "Register")
+7. **Affected person** — an organization or individual whose lawful rights and interests, life, health, property, reputation, or access to services are directly or indirectly impacted by the deployment of, or outputs of, an AI system.
 
-**Official number:**
+8. **Serious incident** — an event in the operation of an AI system that causes or risks causing significant damage to life, health, human rights, property, cyber security, public order, the environment, or that disrupts the operation of important information systems for national security.
 
-134/2025/QH15
+### Article 4 — Fundamental principles in AI activities
 
-**Signer:**
+1. **Human-centric**; ensuring human rights, privacy, national interests, public interests and national security; complying with the Constitution and laws.
 
-Tran Thanh Man
+2. AI serves human beings and does not replace the authority and responsibility of human beings. Human control and the ability of human intervention over all decisions and actions of an AI system must be maintained; system safety, data security and information confidentiality must be ensured; the development and operation of AI systems must be capable of being inspected and supervised.
 
-**Type:**
+3. Ensuring fairness, transparency, non-bias, non-discrimination and the absence of harm to humans or society; complying with ethical standards and Vietnamese cultural values; implementing accountability for the decisions and consequences of AI systems.
 
-Law
+4. Promoting green, inclusive and sustainable AI development; encouraging AI technologies oriented towards efficient energy use, resource saving and reduction of negative environmental impacts.
 
-**Expiry date:**
+### Article 5 — State policies on AI activities
 
-_Updating_
+1. Develop AI as an important driver of growth, innovation and sustainable national development.
+2. Encourage controlled technology testing; apply management measures commensurate with the level of risk.
+3. Guarantee rights and conditions for organizations and individuals to access and benefit from AI; encourage AI for social welfare, supporting persons with disabilities, the poor and ethnic minorities to narrow the digital divide.
+4. Prioritize investment in data infrastructure, computing infrastructure, safe AI, high-quality human resources, and shared AI platforms of strategic national importance.
+5. Prioritize AI application in State management, public services and decision-support of State agencies; encourage broad application across economic and social sectors.
+6. Encourage initiatives that promote safety, ethics, trustworthiness and social trust in AI development.
+7. Promote AI in business operations and key economic sectors; develop startup and innovation ecosystems; encourage public-private partnership.
+8. Proactively integrate internationally; participate in shaping global standards and governance frameworks; safeguard national interests and sovereignty in AI.
 
-**Issuing date:**
+### Article 6 — Application of AI in sectors
 
-10/12/2025
+1. Application of AI in sectors must comply with the risk-management principles of this Law and with relevant laws.
+2. For **essential sectors** directly affecting human life, health, lawful rights and interests, or social order and safety, AI application must be subject to stricter risk management:
+   - **Health sector**: patient safety; reliability under actual conditions; protection of health data;
+   - **Education sector**: suitability with age and developmental characteristics of learners; preventing risks in assessment, classification and impact on learners; data safety and right to privacy.
+3. AI in scientific research must ensure compliance with research ethics and scientific integrity; prevent fraud and plagiarism.
+4. The Government and ministries shall set detailed requirements on safety, risk management and conditions of deployment for AI in their sectors.
 
-**Effect status:**
+### Article 7 — Prohibited acts
 
-Known
+1. Exploiting or misappropriating AI systems to commit unlawful acts or infringe upon the lawful rights and interests of organizations or individuals.
 
-Please [log in](javascript:void\(0\) "log in") to [a subscriber](/service.html "subscriber") account to use this function.
+2. Developing, providing, deploying or using AI systems for the purpose of:
+   - Carrying out acts prohibited by law;
+   - Using fabricated or simulated elements of real persons or events to deceive or manipulate human cognition or behaviour in a deliberate and systematic way, causing serious harm to lawful rights and interests;
+   - Exploiting the vulnerabilities of vulnerable groups (children, the elderly, persons with disabilities, ethnic minorities, persons with restricted civil-act capacity, or persons with cognitive or self-control difficulties) in a manner causing harm;
+   - Producing or disseminating fabricated content capable of seriously endangering national security or social order and safety.
 
-Don’t have an account? [Register here](javascript:void\(0\) "Register")
+3. Collecting, processing or using data for AI in violation of laws on data, personal data protection, intellectual property, and cyber security.
 
-**Fields:**
+4. Obstructing, disabling or distorting human-supervision, intervention and control mechanisms over AI systems.
 
-[Science - Technology](/search-for-documents.html?fieldId=18 "Lĩnh vực: Science - Technology")
+5. Concealing information that must be made public, transparent or accountable; erasing or distorting mandatory information, labels or warnings in AI activities.
 
-## SUMMARY
+6. Abusing AI research, testing, evaluation or inspection activities to commit acts contrary to law.
 
-**STRUCTURE OF THE ARTIFICIAL INTELLIGENCE LAW 2025**
+### Article 8 — Single-window AI portal and National Database on AI Systems
 
-The Artificial Intelligence Law 2025 consists of 8 chapters and 35 Articles.
+1. The **single-window AI portal** is a digital platform supporting: receipt of registrations for controlled testing; receipt of notifications of classification results, serious incident reports and periodic reports; public disclosure of information about AI systems, conformity assessment results and violation handling; and connection to support programmes, funds, infrastructure and shared data.
 
-Chapter I: General provisions from Article 1 to Article 8
+2. The **National Database on AI Systems** is built and managed in a unified manner to serve management, supervision and public disclosure of information on AI systems.
 
-Chapter II: Risk-based classification and management of AI systems from Article 9 to Article 15
+---
 
-Chapter III: Infrastructure development and assurance of national AI sovereignty from Article 16 to Article 18
+## CHAPTER II — CLASSIFICATION AND RISK-BASED MANAGEMENT OF AI SYSTEMS
 
-Chapter IV: AI application, development of innovation ecosystem and human resources from Article 19 to Article 25
+### Article 9 — Risk-level classification of AI systems
 
-Chapter V: Ethics and responsibilities in AI-related activities including Article 26, Article 27
+1. AI systems are classified by the following risk levels:
+   - **(a) High-risk AI system**: may cause significant damage to life, health, lawful rights and interests of organizations or individuals, national interests, public interests, or national security;
+   - **(b) Medium-risk AI system**: may cause confusion, undue influence or manipulation of users due to their inability to recognize that the entity with which they interact is an AI system or that content has been generated by such a system;
+   - **(c) Low-risk AI system**: does not fall within (a) or (b).
 
-Chapter VI: IInspection, supervision and handling of violations including Article 28, Article 29
+2. Risk classification is determined on the basis of: level of impact on human rights, safety and security; field of use (particularly essential fields); scope of users and scale of impact.
 
-Chapter VII: State governance of artificial intelligence including Articles 30, 31, 32.
+3. The Government shall provide detailed regulations on this Article.
 
-Chapter VIII: Implementation provisions including Articles 33, 34, 35.
+### Article 10 — Classification and notification of AI systems
 
-**SOME IMPORTANT CONTENTS IN THE ARTIFICIAL INTELLIGENCE LAW 2025**
+1. **Providers** shall self-classify AI systems before placing them into use. Systems classified as medium-risk or high-risk must have an accompanying classification dossier.
 
-1- Unified legal definition framework for AI - Article 3
+2. **Deployers** may inherit the provider's classification result and are responsible for ensuring safety and integrity; where modification gives rise to new or higher risks, they must coordinate with the provider to reclassify.
 
-For the first time, the law codifies concepts: artificial intelligence, AI system, developer, provider, deployer, user, and affected person, as a basis for determining legal responsibility.
+3. For medium-risk or high-risk systems, providers must **notify the Ministry of Science and Technology** via the single-window AI portal before placing the system into use. Low-risk system developers are encouraged to publicly disclose basic information.
 
-2 - Principles of AI-related activities - Placing humans at the center - Article 4
+4. Risk-based inspection and supervision:
+   - High-risk: periodic inspection or where there are signs of violation;
+   - Medium-risk: supervision through reports, sample checks or independent assessment;
+   - Low-risk: monitored upon incidents, complaints or where necessary, without unnecessary obligations.
 
-AI must ensure human rights, privacy, national security; not replace human authority; ensure transparency, fairness, non-bias, and encourage green AI development.
+5. Where deviations or untruthful declarations are detected, the competent authority may require reclassification, additional documentation or temporary suspension of use.
 
-3 - Prohibited acts in AI-related activities - Article 7
+### Article 11 — Transparency obligations
 
-Prohibit using AI to deceive, manipulate perception, create harmful deepfakes; prohibit infringing personal data, intellectual property; prohibit exploiting vulnerable groups and obstructing human control.
+1. **Providers** shall ensure AI systems interacting directly with humans are designed so users can recognize they are interacting with an AI system, except where law provides otherwise.
 
-4 - AI Single-window Portal and National Database on AI Systems - Article 8
+2. **Providers** shall ensure audio, image and video content generated by AI systems is **marked in machine-readable format** in accordance with Government regulations.
 
-Establish an Information Portal for trial registration, risk classification, incident reporting; builds a national database for monitoring, post-inspection, and transparency of AI system.
+3. **Deployers** are responsible for clearly notifying the public when providing text, audio, image or video content created or modified by AI systems if such content may cause confusion as to the authenticity of an event or person.
 
-5 - Classification of risk levels of AI systems - Article 9
+4. **Deployers** are responsible for ensuring audio, image or video content simulating or imitating the appearance or voice of real persons, or recreating real events, is **labelled in an easily recognizable manner** to be distinguished from real content. For cinematographic, artistic or creative works, labelling shall be carried out in a manner ensuring it does not impede display or enjoyment.
 
-AI systems are classified into high, medium, and low risk, based on the level of impact on human rights, safety, security, and public interest to apply corresponding management obligations.
+5. Providers and deployers must maintain transparency information throughout the period in which the system, product or content is provided to users.
 
-6 - Transparency of AI-generated contents - Article 11
+### Article 12 — Responsibility for management and handling of AI incidents
 
-Audio, images, videos generated by AI must be marked; deployers must clearly notify when AI content may cause confusion about authenticity.
+1. Developers, providers, deployers and users are responsible for ensuring safety, security, reliability, and timely detection and remediation of incidents that may cause harm.
 
-7 - AI incident reporting and handling - Article 12
+2. Upon a **serious incident**:
+   - Developers and providers must promptly apply technical measures to remediate, suspend or recall the system, and **notify the competent authority**;
+   - Deployers and users must record the incident, give timely notification, and cooperate in remediation.
 
-In case of serious incidents, entities must promptly remedy and report through the Single-window Portal; management agencies may require suspension, recall, or reassessment of the system.
+3. The competent authority receives, verifies and provides guidance on incident handling; may request temporary suspension, recall or re-evaluation of the AI system.
 
-8 - Conformity assessment for high-risk AI systems - Article 13, Article 14
+4. Reporting and incident handling are carried out through the single-window AI portal.
 
-High-risk AI systems must be assessed, undergo conformity assessment before operation; assessment results are mandatory conditions and must be maintained throughout the operation.
+### Article 13 — Conformity assessment for high-risk AI systems
 
-9 - Incentives and support for AI development - Article 20, 21, 22, 25
+1. High-risk AI systems must undergo **conformity assessment** before being placed into use, or where a significant change occurs during use.
 
-AI enterprises enjoy the highest incentives in science and technology; apply regulatory sandbox; establish the National AI Development Fund and special support policies for startups, small enterprises.
+2. Conformity assessment:
+   - For high-risk AI systems on the list requiring conformity **certification**: assessment is carried out by a registered or recognized conformity-assessment organization;
+   - For other high-risk AI systems: providers self-assess or hire a conformity-assessment organization.
 
-10 - National AI infrastructure and AI-ready database - Article 16, Article 17
+3. Conformity assessment result is a condition for a high-risk AI system to be placed into use.
 
-National AI infrastructure is strategic infrastructure coordinated by the State; AI-ready database is classified (open, conditionally open, commercial database) and must comply with personal data protection regulations.
+4. The Prime Minister shall promulgate the **List of High-Risk AI Systems**, including those that must undergo conformity certification before use.
 
-11 - Effects and transitional provisions - Article 34, Article 35
+### Article 14 — Management of high-risk AI systems
 
-The Law takes effect from March 1, 2026; AI systems in operation must fulfill obligations under the law within 12-18 months, depending on the field, and may continue to operate during the transition period if not causing serious risks.
+1. **Provider obligations:**
+   - Establish and maintain risk-management measures; regularly review when significant changes occur;
+   - Manage training, testing and operational data to ensure quality;
+   - Establish, update and retain technical dossiers and operational logs for conformity assessment and post-deployment inspection;
+   - Design the system to ensure capacity for **human supervision and intervention**;
+   - Fulfil transparency and incident-handling obligations (Articles 11 and 12);
+   - Implement accountability towards competent authorities regarding purpose of use, operating principles (functional description level), principal input data types, risk management and control measures; provide users and affected persons with public information on functional description, mode of operation and risk warnings — **without requiring disclosure of source code, detailed algorithms, parameter sets or business/technological secrets**;
+   - Cooperate with competent authorities and deployers in inspection, evaluation and incident remediation.
 
-For more details, [click here.](javascript:void\(0\))
+2. **Deployer obligations:**
+   - Operate and supervise the system in accordance with its classified purpose and risk level without giving rise to new or higher risks;
+   - Ensure data safety, data security and capacity for human intervention;
+   - Maintain compliance with technical standards and technical regulations;
+   - Fulfil transparency and incident-handling obligations;
+   - Implement accountability towards competent authorities; provide users and affected persons with public information on functional description, mode of operation and risk warnings;
+   - Cooperate with providers and competent authorities.
 
-Download files [here.](javascript:void\(0\))
+3. **User obligations:** comply with operating procedures, technical instructions and safety measures; do not unlawfully interfere with system functions; promptly notify deployers of incidents.
 
-LuatVietnam.vn is the SOLE distributor of English translations of Official Gazette published by the **Vietnam News Agency**
+4. Accountability shall be commensurate with technical capacity and shall not result in disclosure of business secrets.
 
-Effect status: Known
+5. Providers and deployers are encouraged to take out civil-liability insurance or apply other appropriate means of securing performance of obligations.
 
-**THE NATIONAL ASSEMBLY**  
-\_\_\_\_\_\_\_\_\_\_
+6. **Foreign providers** whose high-risk AI systems are provided in Vietnam must have a **lawful contact point** in Vietnam; where the system requires compulsory conformity certification, they must have commercial presence or an authorized representative in Vietnam.
 
-Law No. 134/2025/QH15
+### Article 15 — Management of medium-risk and low-risk AI systems
 
-**THE SOCIALIST REPUBLIC OF VIETNAM  
-Independence - Freedom - Happiness**  
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+1. **Medium-risk:**
+   - Providers and deployers must ensure transparency under Article 11;
+   - Providers are accountable when requested by the State authority during inspection/audit or where there are signs of risk or incident, regarding purpose, operating principles, principal input data and risk-management measures — without requiring disclosure of source code, algorithms, parameters or business/technological secrets;
+   - Deployers are accountable when requested by the competent authority regarding operation, risk control, incident handling and protection of lawful rights and interests;
+   - Users are responsible for complying with notification and labelling regulations.
 
-**LAW**  
-**ON ARTIFICIAL INTELLIGENCE**
+2. **Low-risk:**
+   - Providers are accountable when requested where there are signs of legal violation or impact on lawful rights and interests;
+   - Deployers are accountable when requested where there are signs of legal violation or impact on lawful rights and interests;
+   - Users have the right to exploit and use the system for lawful purposes and bear personal responsibility for their use.
 
-_Pursuant to the Constitution of the Socialist Republic of Vietnam, which was amended and supplemented under Resolution No. 203/2025/QH15;_
+---
 
-_The National Assembly hereby promulgates the Law on Artificial Intelligence._
+## CHAPTER III — INFRASTRUCTURE AND NATIONAL AI SOVEREIGNTY
 
-**Chapter I**
+### Article 16 — National AI infrastructure
 
-**GENERAL PROVISIONS**
+National AI infrastructure is strategic infrastructure developed as a unified, open and secure ecosystem. The State invests in shared computing capacity, training/testing platforms, foundation models, and large language models in Vietnamese and ethnic-minority languages. **Important AI applications in essential fields** (on a Prime Minister list) must be deployed on national AI infrastructure to ensure safety, security and controllability.
 
-**Article 1. Scope of regulation**
+### Article 17 — Databases serving AI
 
-1\. This Law prescribes the research, development, provision, deployment, and use of artificial intelligence systems (hereinafter referred to as AI-related activities); the rights and obligations of relevant organizations and individuals, and the state governance of AI-related activities in Vietnam.
+The **National Database on AI** is invested in, built and operated by the State at the National Data Centre; organized on principles of openness, safety and control; includes open data, conditional open data and commercial data. The Prime Minister shall promulgate a List of Datasets Serving AI Development in essential fields, with priority given to data on culture, the Vietnamese language and ethnic-minority languages, administrative procedures, health, education, agriculture, environment and transport.
 
-2\. AI-related activities exclusively for the purpose of national defense, security, and cipher do not fall within the scope of regulation hereof.
+### Article 18 — Mastery of AI technology
 
-**Article 2. Subjects of application**
+The State prioritizes development of core AI technologies; gives priority to: general-purpose AI models, large language models in Vietnamese and ethnic-minority languages, technologies for processing Vietnamese knowledge, computing capacity, high-performance training technologies, and hardware and semiconductors serving AI. Promotes open source to strengthen technological autonomy, safety and national sovereignty.
 
-This Law applies to Vietnamese agencies, organizations, and individuals and foreign organizations and individuals involved in AI-related activities in Vietnam.
+---
 
-**Article 3. Interpretation of terms**
+## CHAPTER IV — APPLICATION OF AI AND ECOSYSTEM DEVELOPMENT
 
-In this Law, the terms below are construed as follows:
+### Article 19 — National AI Strategy
 
-1\. _Artificial intelligence (AI)_ means the performance of human intellectual capacities by electronic means, including learning, reasoning, perception, judgment, and natural language understanding.
+The Prime Minister shall promulgate the **National AI Strategy**, reviewed and updated periodically at least once every three years or where there are major changes in technology or markets.
 
-2\. _Artificial intelligence system (AI system)_ means a machine-based system designed to perform AI capabilities with varying levels of autonomy, that may exhibit adaptiveness after deployment; and that, for explicit or implicit objectives, infers from the input data to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments.
+### Article 21 — Controlled-testing mechanism for AI
 
-3\. _Developer_ means an organization or individual that designs, builds, trains, tests, or fine-tunes all or part of an AI model, algorithm, or system and has direct control over technical methods, training data, or model parameters.
+AI may be tested in a controlled environment under the law on science, technology and innovation. Results serve as a basis for the competent authority to recognize conformity assessment results or to exempt, reduce or adjust compliance obligations.
 
-4\. _Provider_ means an organization or individual that places an AI system on the market or puts it into service under its own name, trademark, or brand, irrespective of whether the system was developed by them or by a third party.
+### Article 22 — National AI Development Fund
 
-5\. _Deployer_ means an organization or individual using an AI system under its authority in the course of professional or commercial activities or service provision; excluding cases of use for personal, non-commercial purposes.
+A **National AI Development Fund** (non-budgetary, non-profit) is established by the Government to mobilize, coordinate and allocate resources to promote AI research, development, application and management. Funded from State budget allocations, contributions from domestic and foreign organizations, and other lawful sources. Applies a specific financial mechanism accepting risk; allocates capital flexibly independent of the budget year; applies abridged procedures for strategic tasks.
 
-6\. _User_ means an organization or individual that directly interacts with an AI system or uses the outputs of such system.
+### Article 23 — Development of AI human resources
 
-7\. _Affected person_ means an organization or individual directly or indirectly impacted regarding their rights, legitimate interests, life, health, property, reputation, or opportunities to access services due to the deployment or outputs of an AI system.
+The State shall develop AI human resources across educational levels. General education shall integrate basic AI content, computational thinking, digital skills and technology ethics into the compulsory curriculum. A **National Programme on AI Human Resources Development** shall be implemented, including policies on training, scholarships, attraction and prioritization of AI experts. Vocational and higher-education institutions are encouraged to build AI training programmes and cooperate with enterprises, research institutes and international organizations.
 
-8\. _Serious incident_ means an event occurring in the operation of an AI system that causes or is likely to cause significant damage to life, health, human rights, property, cybersecurity, public order, environment, or disrupts the operation of critical information systems related to national security.
+### Article 25 — Support for enterprises in the AI sector
 
-**Article 4. Fundamental principles of AI-related activities**
+Innovative startups and SMEs shall be supported with cost of conformity assessment; provided free sample dossiers, self-assessment tools, training and consultancy; given priority for support from the National AI Development Fund. Enterprises with AI R&D capacity shall be given priority to participate in national science, technology and innovation programmes.
 
-1\. Placing humans at the center; ensuring human rights, privacy rights, national interests, public interests, and national security; complying with the Constitution and the law regulations.
+---
 
-2\. Ensuring that AI serves humans and does not replace human authority and responsibility. Ensuring the maintenance of human control and intervention capabilities regarding all decisions and behaviors of AI systems; system safety, data security, and information confidentiality; and the ability to audit and supervise the process of development and operation of AI systems.
+## CHAPTER V — ETHICS AND RESPONSIBILITY IN AI ACTIVITIES
 
-3\. Ensuring fairness, transparency, non-bias, non-discrimination, and causing no harm to humans or society; complying with ethical standards and Vietnamese cultural values; performing accountability for decisions and consequences of AI systems.
+### Article 26 — National AI Ethics Framework
 
-4\. Promoting the development of green, inclusive, and sustainable AI; encouraging the development and application of AI technologies towards efficient energy use, resource saving, and reduction of negative environmental impacts.
+The Minister of Science and Technology shall promulgate the **National AI Ethics Framework** based on principles of: safety and absence of harm to life, health, honour, dignity and mental life; respect for human rights, fairness, transparency and non-discrimination; promoting human happiness and sustainable development; encouraging innovation and social responsibility. The Framework is reviewed and updated periodically and provides orientations for the development of standards, technical regulations and sectoral guidance.
 
-**Article 5. State policies on AI-related activities**
+### Article 27 — Ethical responsibility and impact assessment for AI in State management
 
-1\. To adopt policies for developing AI to become a key driver for growth, innovation, and sustainable development of the country.
+1. AI systems in State management and public services must ensure publicity, transparency and accountability for compliance with the National AI Ethics Framework.
 
-2\. To encourage controlled technology testing (regulatory sandboxes); apply management measures commensurate with the level of risk and encourage voluntary compliance mechanisms.
+2. AI shall not replace the authority and decision-making responsibility of decision-makers. The decision-maker is responsible for considering and using AI results.
 
-3\. To adopt policies ensuring rights and creating conditions for access, learning, and benefiting from AI for organizations and individuals; encourage AI development and application for the purpose of social security, supporting persons with disabilities, the poor, and ethnic minorities to bridge the digital divide; preserving and promoting national cultural identity.
+3. Agencies operating **high-risk AI systems**, or systems with significant impact on human rights, social fairness or public interests, must prepare an **impact assessment report** identifying risks, control measures and assurance of human supervision and intervention.
 
-4\. To prioritize investment and mobilization of social resources to develop data infrastructure, computing infrastructure, safe AI, high-quality workforce, and shared AI platforms of national strategic importance.
+4. The impact assessment report shall be made public in accordance with law, except for content constituting State secrets, business secrets or personal data.
 
-5\. To prioritize AI application in management, administration, public service provision, and decision-making support of State regulatory authorities to improve efficiency, transparency, and service quality for citizens and businesses; encourage widespread application in socio-economic sectors to improve productivity, service quality, and management efficiency.
+---
 
-6\. To encourage organizations, networks, and social initiatives to promote safety, ethics, trust, and build social confidence in AI development.
+## CHAPTER VI — INSPECTION, EXAMINATION AND HANDLING OF VIOLATIONS
 
-7\. To promote AI application in enterprise operations and key socio-economic sectors; develop the startup and innovation ecosystem; encourage public-private partnerships.
+### Article 28 — Inspection and examination
 
-8\. To proactively integrate and cooperate internationally; participate in building and shaping global standards and governance frameworks; ensure national interests and sovereignty in the AI field.
+Competent authorities may require technical dossiers, audit logs, training data and other necessary information. Inspection and examination conclusions and decisions on administrative sanctions shall be made public.
 
-**Article 6. Application of AI in sectors and industries**
+### Article 29 — Handling of violations and liability for damage
 
-1\. The application of AI in sectors and industries must comply with risk management principles in accordance with this Law and relevant law regulations.
+1. Organizations and individuals committing violations shall, depending on the nature and consequences, be subject to administrative sanctions or criminal prosecution; if damage is caused, they shall pay compensation in accordance with civil law.
 
-2\. For essential sectors having direct impacts on human life, health, rights and legitimate interests, or social order and safety, AI application must be managed with stricter risk levels suitable to the specific characteristics of each sector, including the following:
+2. Where a **high-risk AI system is managed, operated and used in compliance with regulations** but damage nonetheless arises, the **deployer** shall bear responsibility for compensating the person who suffers the damage. After paying compensation, the deployer may seek reimbursement from the provider, developer or other related parties.
 
-a) Healthcare sector: ensuring patient safety; reliability in real-world use conditions; protection of health data as prescribed by the law regulations;
+3. **Exemptions from compensation liability:**
+   - Damage occurs entirely due to the wilful fault of the person suffering the damage;
+   - Damage occurs in cases of force majeure or pressing circumstances, except where law provides otherwise.
 
-b) Education sector: ensuring suitability with the age and development of learners; preventing risks in assessment, classification, and impact on learners; ensuring data safety and privacy.
+4. Where an AI system is **unlawfully accessed, taken over or interfered with by a third party**, that third party shall be liable for compensation. Where the deployer or provider is at fault for allowing such access, they shall jointly compensate for damage.
 
-3\. The application of AI in scientific research activities must ensure compliance with research ethics, scientific integrity, and prevention of fraud and plagiarism during research and result publication.
+---
 
-4\. The Government, Ministries, and ministerial-level agencies, within their competence, shall detail requirements on safety, risk management, and deployment conditions for AI application in sectors under their management, ensuring consistency with this Law.
+## CHAPTER VII — STATE MANAGEMENT OF AI
 
-**Article 7. Prohibited acts**
+### Article 30 — Content and responsibilities of State management
 
-1\. Exploiting or appropriating AI systems to commit violations of the law regulations, infringing upon the rights and legitimate interests of organizations and individuals.
+1. **Ministry of Science and Technology** is the focal-point agency responsible for nationwide State management of AI.
 
-2\. Developing, providing, deploying, or using AI systems for the following purposes:
+2. Ministries and ministerial-level agencies coordinate with the Ministry of Science and Technology within their sectors.
 
-a) Performing acts prohibited by the law regulations;
+3. Provincial People's Committees perform State management of AI in their localities.
 
-b) Using elements of forgery or simulation of real persons or events to deceive or manipulate human perception and behavior in a purposeful and systematic manner, causing serious harm to the rights and legitimate interests of humans;
+---
 
-c) Exploiting vulnerabilities of vulnerable groups, including children, the elderly, persons with disabilities, ethnic minorities, or persons with loss or restriction of civil act capacity, or persons with difficulties in cognition or behavior control, to cause harm to themselves or others;
+## CHAPTER VIII — IMPLEMENTING PROVISIONS
 
-d) Creating or disseminating fake content capable of causing serious danger to national security, social order, and safety.
+### Article 34 — Effect
 
-3\. Collecting, processing, or using data to develop, train, test, or operate AI systems contrary to the law regulations on data, personal data protection, intellectual property, and cybersecurity.
+This Law takes effect from **1 March 2026**.
 
-4\. Obstructing, disabling, or falsifying mechanisms for human supervision, intervention, and control of AI systems as prescribed in this Law.
+### Article 35 — Transitional provisions
 
-5\. Concealing information required to be public, transparent, or accountable; erasing or falsifying mandatory information, labels, or warnings in AI-related activities.
+AI systems placed into operation before the effective date must fulfil compliance obligations within:
+- **18 months** from 1 March 2026 for AI systems in the health, education and finance sectors;
+- **12 months** from 1 March 2026 for all other AI systems.
 
-6\. Abusing research, testing, evaluation, or verification activities of AI systems to commit acts contrary to the law regulations.
+During these periods, AI systems may continue to operate unless the State management authority determines a system poses risk of serious damage.
 
-**Article 8. AI Single-window Portal and National Database on AI Systems**
+---
 
-1\. The AI Single-window Portal is a digital platform established to support the reception and registration for participation in regulatory sandboxes; reception of notifications on AI system classification results, serious incident reports, and periodic reports; publication of information on AI systems, conformity assessment results, violation handling results as prescribed by the law regulations, and connection of support programs, funds, infrastructure, and shared data.
-
-2\. The National Database on AI Systems is built and managed centrally to serve the management, supervision, and publication of information on AI systems as prescribed by the law regulations.
-
-3\. The publication, connection, and sharing of data on the AI Single-window Portal and the National Database on AI Systems must ensure information safety and security; protection of state secrets, trade secrets, and personal data.
-
-4\. The Government shall detail the mechanism for operation, management, and exploitation of the AI Single-window Portal and the National Database on AI Systems.
-
-**Chapter II**
-
-**RISK-BASED CLASSIFICATION AND MANAGEMENT OF AI SYSTEMS**
-
-**Article 9. Classification of risk levels of AI systems**
-
-1\. AI systems are classified according to the following risk levels:
-
-a) High-risk AI systems are systems capable of causing significant damage to the life, health, rights and legitimate interests of organizations and individuals, national interests, public interests, or national security;
-
-b) Medium-risk AI systems are systems capable of causing confusion, influencing, or manipulating users because they do not recognize that the interacting subject is an AI system or the content is generated by the system;
-
-c) Low-risk AI systems are systems not falling into the cases prescribed at Point a and Point b of this Clause.
-
-2\. The risk classification of AI systems is determined based on criteria regarding the level of impact on human rights, safety, and security; the sector of use, particularly essential sectors or those directly related to public interests; the scope of users and the scale of impact.
-
-3\. The Government shall detail this Article.
-
-**Article 10. Classification and notification of AI systems**
-
-1\. Providers shall self-classify AI systems before putting them into service. Systems classified as medium-risk or high-risk must have supporting classification dossiers.
-
-2\. Deployers may inherit the classification results from providers and are responsible for ensuring the safety and integrity of the system during use; in cases of modification, integration, or change of functions that give rise to new risks or higher risks, they shall coordinate with providers to re-classify.
-
-3\. For systems classified as medium-risk or high-risk, providers must notify the classification results to the Ministry of Science and Technology via the AI Single-window Portal before putting them into service. Organizations and individuals developing low-risk AI systems are encouraged to publish basic information about the system to increase transparency.
-
-4\. In cases where the risk level cannot yet be determined, providers may request the Ministry of Science and Technology for guidance on classification based on technical dossiers.
-
-5\. Inspection and supervision are performed according to the risk level of the system:
-
-a) High-risk AI systems are inspected periodically or upon signs of violation;
-
-b) Medium-risk AI systems are supervised through reports, sample testing, or assessment by independent organizations;
-
-c) Low-risk AI systems are monitored and inspected upon incidents, complaints, or when safety assurance is needed, without creating unnecessary obligations for organizations and individuals.
-
-6\. Based on the results of inspection and supervision prescribed in Clause 5 of this Article, upon detection of discrepancies or dishonest declaration, competent authorities shall request re-classification, supplementation of dossiers, or suspension of use, and handle violations as prescribed by the law regulations.
-
-7\. The Government shall detail the required notification, the order and procedures for notification, and technical guidelines on risk classification.
-
-**Article 11. Responsibilities for transparency**
-
-1\. Providers shall ensure that AI systems interacting directly with humans are designed and operated so that users are aware they are interacting with the system, unless otherwise prescribed by the law regulations.
-
-2\. Providers shall ensure that audio, image, and video content generated by AI systems is marked in a machine-readable format as prescribed by the Government.
-
-3\. Deployers are responsible for clearly notifying when providing to the public text, audio, images, or video generated or edited by AI systems if such content is capable of causing confusion regarding the authenticity of events or persons, unless otherwise prescribed by the law regulations.
-
-4\. Deployers are responsible for ensuring that audio, images, or video generated or edited by AI systems to simulate or impersonate the appearance or voice of real persons or recreate actual events must be labelled for easy recognition to distinguish from real content.
-
-For products that are cinematographic, artistic, or creative works, the labelling prescribed in this Clause shall be performed in an appropriate manner, ensuring no obstruction to the display, performance, or enjoyment of the work.
-
-5\. Providers and deployers are responsible for maintaining transparent information as prescribed in this Article throughout the process of providing the system, product, or content to users.
-
-6\. The Government shall detail the forms of notification and labelling.
-
-**Article 12. Responsibilities for management and handling of AI incidents**
-
-1\. Developers, providers, deployers, and users of AI systems are responsible for ensuring safety, security, reliability, and timely detection and remediation of incidents capable of causing harm to humans, property, data, or social order.
-
-2\. When a serious incident occurs in an AI system, developers, providers, deployers, and users have the following responsibilities:
-
-a) Developers and providers must urgently apply technical measures to remediate, suspend, or recall the system, and simultaneously notify competent authorities;
-
-b) The Deployer and User have the obligation to record, timely notify the incident, and coordinate during the remediation process.
-
-3\. Competent State regulatory authorities shall receive, verify, and guide incident handling; when necessary, they have the right to request suspension, recall, or re-evaluation of the AI system.
-
-4\. Reporting and handling of incidents are performed via the AI Single-window Portal.
-
-5\. The Government shall prescribe the reporting and responsibilities of relevant agencies, organizations, and individuals suitable to the severity of the incident and the scope of impact of the AI system.
-
-**Article 13. Conformity assessment for high-risk AI systems**
-
-1\. High-risk AI systems must undergo conformity assessment as prescribed in this Law before being put into service or upon significant changes during use. In cases where there are technical standards or regulations on AI systems, conformity assessment must also be performed as prescribed by the law regulations on standards and technical regulations.
-
-2\. Conformity assessment is the confirmation that the AI system meets the requirements in Article 14 of this Law and is performed as follows:
-
-a) For high-risk AI systems on the list of AI systems requiring conformity certification before being put into service: the assessment is performed by a conformity assessment body registered or recognized as prescribed by the law regulations;
-
-b) For other high-risk AI systems: providers shall self-assess conformity or hire a conformity assessment body registered or recognized as prescribed by the law regulations.
-
-3\. Conformity assessment results shall be required as a condition for high-risk AI systems to be permitted for use; organizations and individuals owning assessed systems are responsible for maintaining conformity and publishing information as prescribed by the Government, serving as a basis for inspection and supervision of compliance with Article 10 of this Law.
-
-4\. The Prime Minister shall prescribe the List of high-risk AI systems, including the list of AI systems requiring conformity certification before being put into service.
-
-5\. Organizations assessing conformity or verifying AI systems must ensure independence, have sufficient technical capacity as prescribed, and be subject to periodic supervision by competent State authorities.
-
-6\. The Government shall detail this Article.
-
-**Article 14. Management of high-risk AI systems**
-
-1\. Providers of high-risk AI systems shall:
-
-a) Establish and maintain risk management measures and regularly review them when the system undergoes significant changes or new risks arise;
-
-b) Manage training, testing, and validation data ensuring quality within technical capabilities and suitability for the system's intended purpose;
-
-c) Compile, update, and store technical documentation and operation logs at a level necessary for conformity assessment and post-deployment inspection; provide such information to competent State authorities on the principle of necessity, proportionality to the inspection purpose, and non-disclosure of trade secrets;
-
-d) Design the system ensuring the capability for human supervision and intervention;
-
-dd) Perform transparency obligations and incident handling as prescribed in Article 11 and Article 12 of this Law;
-
-e) Bear the accountability to competent State authorities regarding the intended use, operating principles at a functional description level, main input data types, risk management and control measures, and necessities for the purpose of inspection and examination; provide users and affected persons with public information at a functional description level, operation methods, and risk warnings to ensure safety in use. Explanation and information provision shall not require disclosure of source code, detailed algorithms, parameter sets, or information belonging to trade secrets or technological secrets;
-
-g) Coordinate with competent State authorities and deployers in inspection, evaluation, post-audit, and remediation of incidents related to the system.
-
-2\. Deployers of high-risk AI systems shall:
-
-a) Operate and supervise the system according to the correct purpose, scope, and classified risk level, ensuring no new risks or higher risks arise;
-
-b) Ensure safety, data confidentiality, and human intervention capability during use;
-
-c) Maintain compliance with AI standards and technical regulations during system operation;
-
-d) Perform transparency obligations and incident handling as prescribed in Article 11 and Article 12 of this Law;
-
-dd) Bear the accountability to competent State authorities regarding system operation, risk control measures, incident handling, and necessities for the purpose of inspection and examination; provide users and affected persons with public information at a functional description level, operation methods, and risk warnings to ensure safety in use;
-
-e) Coordinate with providers and competent State authorities in inspection, evaluation, post-audit, and incident remediation.
-
-3\. Users of high-risk AI systems are responsible for complying with operating procedures, technical instructions, and safety measures; not intervening illegally to change system features; and promptly notifying arising incidents to deployers.
-
-4\. Explanation must be suitable to the technical capabilities of the system and not disclose trade secrets as prescribed by the law regulations.
-
-5\. Providers and deployers are encouraged to participate in civil liability insurance or apply other suitable measures to guarantee the performance of obligations for timely incident remediation and compensation for damages.
-
-6\. Foreign providers having high-risk AI systems provided in Vietnam must have a legal contact point in Vietnam; in cases where the system requires mandatory conformity certification before use, they must have a commercial presence or authorized representative in Vietnam.
-
-7\. The Government shall detail this Article.
-
-**Article 15. Management of medium and low-risk AI systems**
-
-1\. Medium-risk AI systems are managed as follows:
-
-a) Providers and deployers must ensure transparency as prescribed in Article 11 of this Law;
-
-b) Providers are responsible for explaining the intended use, operating principles at a functional description level, main input data, and risk management and safety measures of the system upon request by State authorities during inspection, examination, or upon signs of risk or incident; explanation does not require disclosure of source code, detailed algorithms, parameter sets, trade secrets, or technological secrets;
-
-c) Deployers are responsible for explaining the operation, risk control, incident handling, and protection of rights and legitimate interests of organizations and individuals upon request by competent State authorities during inspection, examination, or incident handling;
-
-d) Users are responsible for complying with regulations on notification and labelling of AI systems.
-
-2\. Low-risk AI systems are managed as follows:
-
-a) Providers are responsible for explaining upon request by competent State authorities in cases of signs of law violations or impacts on rights and legitimate interests of organizations and individuals;
-
-b) Deployers are responsible for explaining upon request by competent State authorities in cases of signs of law violations or impacts on rights and legitimate interests of organizations and individuals;
-
-c) Users have the right to exploit and use the system for lawful purposes and are self-responsible before the law for their usage activities.
-
-3\. The State encourages organizations and individuals deploying medium and low-risk AI systems to apply technical standards on AI.
-
-**Chapter III**
-
-**INFRASTRUCTURE DEVELOPMENT AND ASSURANCE OF NATIONAL AI SOVEREIGNTY**
-
-**Article 16. National AI infrastructure**
-
-1\. National AI infrastructure is strategic infrastructure, comprising infrastructure invested by the State, enterprises, and social organizations; developed as a unified, open, safe ecosystem capable of connection, sharing, and expansion, ensuring satisfaction of AI development and application requirements.
-
-2\. The State plays the role of directing, coordinating, and ensuring infrastructure capacity for national AI development; encourages enterprises, research institutes, universities, and social organizations to invest in, build, and share infrastructure; strengthens public-private partnerships in AI infrastructure development.
-
-3\. The State invests in, builds, and operates AI infrastructure provided as public services, for the purpose of research, development, state-level governance, and support for innovative startups, including: computing capacity and shared data; training platforms, testing and regulatory sandbox environments; foundation models, general-purpose AI models, large language models for Vietnamese and ethnic minority languages; and other infrastructure components.
-
-4\. National AI infrastructure invested by the State, enterprises, and social organizations is connected, shared, and exploited according to standards, technical regulations, and requirements on safety, security, and data protection.
-
-5\. Important AI applications in essential sectors according to the list issued by the Prime Minister must be deployed on national AI infrastructure to ensure safety, security, and controllability.
-
-6\. The Government shall detail the mechanism for coordination, sharing, incentives, and measures to promote national AI infrastructure development, suitable to each stage and requirements for ensuring national safety and security.
-
-**Article 17. AI-ready database**
-
-1\. AI-ready databases are important components of national AI infrastructure, comprising the National Database, databases of Ministries, ministerial-level agencies, Governmental agencies, People's Committees at all levels, and databases of organizations and individuals, established, managed, and exploited to serve training, testing, evaluation, and development of AI applications as prescribed by the law regulations on data, personal data protection, and intellectual property.
-
-2\. The National Database on AI is invested, built, and operated by the State at the National Data Center; organized on principles of openness, safety, and control, meeting requirements on quality, connectivity, and exploitation; comprising open data, conditionally open data, and commercial data as prescribed by the law regulations.
-
-3\. AI-ready databases of Ministries, ministerial-level agencies, Governmental agencies, and People's Committees at all levels are built, updated, and connected consistently with the National Database on AI; ensuring standards, technical regulations, data quality, and information security.
-
-4\. AI-ready databases of organizations and individuals are encouraged to be shared with State agencies and other organizations and individuals under agreed mechanisms; sharing must comply with the law regulations on data, personal data protection, and intellectual property, ensuring rights and legitimate interests of relevant parties.
-
-5\. The Prime Minister shall issue the List of datasets to be used for AI development in essential sectors, prioritizing data on culture, Vietnamese language and ethnic minority languages, administrative procedures, healthcare, education, agriculture, environment, transportation, socio-economics, and other important sectors.
-
-6\. The Government shall detail the principles of connection, mechanisms for sharing, exploitation, and data safety assurance in AI-ready databases.
-
-**Article 18. Mastering AI technology**
-
-1\. The State prioritizes the development and mastery of core AI technologies; prioritizes resources for research and development of general-purpose AI models, large language models for Vietnamese and ethnic minority languages, Vietnamese knowledge processing technology, high-performance computing and training technology, hardware, and semiconductors for AI; promotes the development and application of open-source code to enhance technological autonomy, safety, and national sovereignty in the digital environment.
-
-2\. The State promotes research, development, completion, and application of domestic AI technology; supports organizations and individuals in developing models, algorithms, software, hardware, and platform technologies; encourages resource-saving solutions that are easy to deploy and suitable for Vietnamese conditions; develops national endogenous capacity and AI innovation ecosystem; strengthens public-private partnerships to master technology.
-
-3\. Organizations and individuals researching, developing, and mastering core AI technologies are entitled to specific preferential and support policies as prescribed by the law regulations.
-
-4\. The State promotes AI application for the purpose of scientific research, analysis, and simulation, technology design and testing, automation of research, development, and innovation processes to improve national scientific and technological capacity; creating conditions to form creative capacity and mastery of the entire AI technology lifecycle.
-
-5\. The Government shall detail mechanisms, criteria, and measures to promote AI technology mastery, suitable to each development stage and requirements for ensuring national safety and security.
-
-**Chapter IV**
-
-**AI APPLICATION, DEVELOPMENT OF INNOVATION ECOSYSTEM**  
-**AND HUMAN RESOURCES**
-
-**Article 19. National Strategy on Artificial Intelligence**
-
-1\. The Prime Minister shall issue the National Strategy on AI, review, evaluate, and update it periodically at least once every 03 years or upon major fluctuations in technology and markets. Ministries, ministerial-level agencies, Governmental agencies, and People's Committees at all levels are responsible for integrating the Strategy's objectives and tasks into development strategies and plans of sectors, domains, and localities and ensuring resources for implementation.
-
-2\. The National Strategy on AI is built based on orientations for developing technology, infrastructure, data, and human resources; promoting research, mastery, and application of AI in priority sectors; ensuring safety, innovation, and national sovereignty in the digital environment. The Strategy must prescribe a system of indicators, methods, and measurement mechanisms to assess the level of national AI development.
-
-3\. The State encourages the development of AI technology groups suitable to Vietnamese conditions, having potential to create added value, being environmentally friendly, easy to apply widely, and contributing to ensuring national sovereignty in the digital environment.
-
-**Article 20. Development of AI ecosystem and market**
-
-1\. Organizations and individuals operating in the AI field are entitled to the highest incentives and support as prescribed by the law regulations on science and technology, investment, digital technology industry, high technology, digital transformation, and relevant laws; are created conditions to access infrastructure, data, and testing environments for research, production, and commercialization of AI products and services.
-
-2\. The State supports the development of the AI ecosystem and market, including:
-
-a) Prioritizing the use of AI products and services as prescribed by the law regulations on bidding;
-
-b) Developing the market for AI products and services, including technology exchange floors and platforms connecting supply and demand;
-
-c) Ensuring fair and transparent access to computing infrastructure, data, and regulatory sandboxes;
-
-d) Applying preferential policies on tax, investment, and finance based on principles of encouraging research, production, and commercialization of AI products and services.
-
-3\. The State encourages the development and application of new-generation AI, promoting innovation, improving governance, production, business capacity, and public service provision.
-
-4\. Organizations, individuals, enterprises, research institutions, and State agencies are encouraged to exploit, share, and reuse data in the National Database on AI for research, training, testing, and innovation, ensuring compliance with the law regulations on data, personal data protection, cybersecurity, and intellectual property.
-
-5\. Small and medium-sized enterprises (SMEs) and innovative startups in AI are prioritized for access to technical infrastructure, data, and testing environments, and are entitled to support regarding costs, training, and market connection for the development of AI products and services.
-
-6\. The Government shall detail mechanisms, conditions, and procedures for implementing measures to support the development of the AI ecosystem and market.
-
-**Article 21. Controlled testing mechanism for Artificial Intelligence (Regulatory Sandbox)**
-
-1\. The regulatory sandbox mechanism for AI is implemented as prescribed by the law regulations on science, technology, and innovation and the regulations in Clauses 2, 3, and 4 of this Article.
-
-2\. Results of the regulatory sandbox serve as a basis for competent State authorities to consider:
-
-a) Recognizing conformity assessment results as prescribed in this Law;
-
-b) Exempting, reducing, or adjusting corresponding compliance obligations of this Law.
-
-3\. Competent State authorities shall assume the prime responsibility for, and coordinate with relevant agencies in, receiving, appraising, and processing dossiers according to fast-track appraisal and response procedures; supervising the testing process and deciding to suspend or terminate testing upon risks affecting safety, security, or rights and legitimate interests of organizations and individuals.
-
-4\. The Government shall detail this Article.
-
-**Article 22. National AI Development Fund**
-
-1\. The National AI Development Fund is an off-budget state financial fund, operating not-for-profit, established by the Government to mobilize, coordinate, and allocate resources to promote research, development, application, and management of AI for socio-economic development, national defense, security, and improving national competitiveness.
-
-2\. Financial sources of the Fund include sources granted by the State budget; contributions, aid, and sponsorship from domestic and foreign organizations and individuals; and other lawful sources as prescribed by the law regulations.
-
-3\. The Fund is entitled to apply specific financial mechanisms, accepting risks in science, technology, and innovation; flexible capital allocation according to progress and implementation requirements, independent of the budget year; applying simplified order and procedures for strategic tasks or those requiring rapid deployment. The Fund is prioritized for investment, sponsorship, and support for:
-
-a) Developing AI infrastructure;
-
-b) Researching, developing, and mastering core AI technologies;
-
-c) Developing AI enterprises;
-
-d) Training, fostering, and attracting AI workforce;
-
-dd) Other investment and support tasks to achieve AI development objectives as prescribed by the Government.
-
-4\. The Fund operates on principles of publicity, transparency, efficiency, and proper purpose; ensuring coordination and non-duplication with other state financial funds.
-
-5\. The Government shall detail the specific financial mechanism, organization, management, use, and supervision of the Fund.
-
-**Article 23. AI human resource development**
-
-1\. The State develops AI human resources in a comprehensive direction, interconnected between educational levels and training qualifications, ensuring the formation of a high-quality workforce for research, development, application, and management of AI.
-
-2\. General education integrates basic content on AI, computational thinking, digital skills, and technology ethics into the compulsory curriculum; encourages experiential, research, and creative activities involving AI.
-
-3\. Vocational education and higher education institutions are encouraged to build training programs on AI, data science, and related majors; encourage cooperation with enterprises, research institutes, and international organizations in training, internship, research, and technology transfer.
-
-4\. The State implements the National Program on AI Human Resource Development, including training policies, scholarships, attracting and employing experts, developing teaching staff, scientists, and management personnel involving AI.
-
-5\. Organizations, training institutions, research institutes, and enterprises participating in AI workforce development are entitled to encouragement and incentive mechanisms as prescribed by the law regulations, and simultaneously responsible for coordinating in training, applied research, and professional practice, linking training with practical needs.
-
-6\. Higher education institutions, research institutes, and innovation centers are responsible for cooperating, sharing knowledge, and participating in national and international networks on training, research, and development of AI human resources.
-
-7\. The Ministry of Education and Training shall assume the prime responsibility for developing, and put forward the promulgation thereof to the Prime Minister, the National Program on AI workforce development, which prescribes standards, recognition of training programs, resource mobilization mechanisms, and preferential policies for participating organizations and individuals.
-
-**Article 24. Development of AI clusters**
-
-1\. An AI cluster is a cooperation network between enterprises, research institutes, universities, and relevant organizations, organized to strengthen links regarding functions, AI infrastructure, and physical space to promote innovation, AI development, and improve competitiveness.
-
-2\. The State encourages the development of AI clusters according to a model combining concentrated physical space and digital link networks; forming cluster centers at hi-tech parks, concentrated digital technology zones, and innovation centers; attracting organizations and individuals to invest in building technical infrastructure for cluster-related activities, including laboratories, testing centers, verification centers, and other support facilities meeting national and international standards.
-
-3\. Organizations and individuals being members of recognized AI clusters are entitled to the following preferential policies:
-
-a) Priority access to and use of national AI infrastructure, shared data, and testing platforms with preferential costs;
-
-b) Support to participate in workforce training programs, trade promotion, scientific, technological, and innovation tasks in key sectors.
-
-4\. The Government shall detail the criteria, order, procedures for recognition, operation mechanism of AI clusters, and preferential policies in Clause 3 of this Article.
-
-**Article 25. Support for enterprises involving AI**
-
-1\. Innovative startups and SMEs are supported with conformity assessment costs prescribed in this Law; provided free of charge with sample dossiers, self-assessment tools, training, and consulting; prioritized for support from the National AI Development Fund.
-
-2\. Innovative startups, SMEs, science and technology organizations, and research groups with feasible innovation projects are supported through support vouchers to use computing infrastructure, shared data, large language models for Vietnamese and ethnic minority languages, training platforms, testing, and technical consulting services for research, development, and deployment of AI applications.
-
-3\. Enterprises with capacity for research, development, and innovation in the AI field are prioritized to participate in tasks within national science, technology, and innovation programs, tasks for developing high technologies prioritized for investment and development, strategic technologies, and key digital technology products and services; supported to develop core technologies, foundation models, hardware, and high-performance training technologies according to national AI capacity development orientations.
-
-4\. Enterprises participating in AI testing under the regulatory sandbox mechanism are supported with technical consulting, risk assessment, safety testing, and connection with testing and verification facilities as prescribed by the law regulations.
-
-5\. Enterprises sharing data, models, tools, or research results for AI development are entitled to incentives or support as prescribed by the law regulations, ensuring compliance with the law regulations on data, personal data protection, and intellectual property.
-
-6\. The State encourages cooperation between enterprises, research institutes, universities, and innovation centers to develop AI technology, commercialize research results, and expand innovation capacity; encourages enterprises to invest long-term in AI research and development.
-
-7\. The Government shall detail mechanisms, policies, conditions, and procedures for implementing support for enterprises in the AI field.
-
-**Chapter V**
-
-**ETHICS AND RESPONSIBILITIES IN AI-RELATED ACTIVITIES**
-
-**Article 26. National AI Ethics Framework**
-
-1\. The National AI Ethics Framework is promulgated based on the following principles:
-
-a) Ensuring safety, reliability, and causing no harm to the life, health, honor, dignity, and spiritual life of humans;
-
-b) Respecting human rights and citizen rights, ensuring fairness, transparency, and non-discrimination in AI development and use;
-
-c) Promoting happiness, prosperity, and sustainable development of humans, communities, and society;
-
-d) Encouraging innovation and social responsibility in AI research, development, and application.
-
-2\. The National AI Ethics Framework is reviewed and updated periodically or upon major changes in technology, law, and management practices.
-
-3\. The National AI Ethics Framework serves as a basis for orienting the development of standards, technical regulations, specialized guidelines, and policies encouraging safe, reliable, and responsible AI development.
-
-4\. The State encourages organizations and individuals to apply the National AI Ethics Framework during the research, development, provision, deployment, and use of AI systems to ensure transparency, fairness, safety, and respect for human rights.
-
-5\. The Minister of Science and Technology shall promulgate the National AI Ethics Framework based on the regulations in Clause 1 of this Article.
-
-**Article 27. Ethical responsibility and impact assessment in AI application in State-level governance and public service provision**
-
-1\. The use of AI systems in State-level governance and public service provision must ensure publicity, transparency, and responsibility for compliance with the National AI Ethics Framework.
-
-2\. AI systems do not replace the decision-making authority and responsibility of decision-makers as prescribed by the law regulations. Decision-makers are responsible for reviewing and using results provided by AI systems.
-
-3\. Agencies operating high-risk AI systems or those having significant impacts on human rights, social justice, or public interests must prepare impact assessment reports on system use; reports include risk identification, control measures, and assurance of human supervision and intervention capabilities.
-
-4\. Agencies preparing impact assessment reports are responsible for the content, honesty, and completeness of the report; reports are published as prescribed by the law regulations, excluding contents belonging to state secrets, trade secrets, or personal data.
-
-5\. The Government shall detail the particulars, procedures, and responsibilities for impact assessment, risk management, and supervision of AI system use in State-level governance and public service provision.
-
-**Chapter VI**
-
-**INSPECTION, SUPERVISION AND HANDLING OF VIOLATIONS**
-
-**Article 28. Inspection and examination**
-
-1\. Inspection activities involving AI are carried out in accordance with the law on inspection.
-
-2\. Agencies and organizations assigned to perform State-level governance functions on AI are responsible for examining the compliance with the law regulations of organizations and individuals in AI-related activities.
-
-3\. During inspection and examination, relevant organizations and individuals have the obligation to provide technical dossiers, trace logs, training data, and other necessary information to identify causes of violations, incidents, or delineate responsibilities; information provision must comply with the law regulations on state secret protection, data, personal data protection, and intellectual property.
-
-4\. Inspection and examination conclusions and decisions on administrative violation sanctions must be published as prescribed by the law regulations.
-
-**Article 29. Handling of violations and liability for compensation for damage**
-
-1\. Organizations and individuals committing acts violating the regulations of this Law and other relevant law regulations on AI, depending on the nature, severity, and consequences of the violation, shall be sanctioned for administrative violations or examined for penal liability; if causing damage, they must compensate as prescribed by the Civil law regulations.
-
-2\. In cases where a high-risk AI system is managed, operated, and used in accordance with regulations but still causes damage, the deployer must be responsible for compensating the damaged person. After compensation, the deployer may request the provider, developer, or relevant parties to refund the compensation amount if there is an agreement between the parties.
-
-3\. The liability for compensation for damages prescribed in Clause 2 of this Article is exempted in the following cases:
-
-a) Damage occurs entirely due to the intentional fault of the damaged person;
-
-b) Damage occurs in force majeure events or emergency circumstances, unless otherwise prescribed by the law regulations.
-
-4\. In cases where an AI system is intruded upon, hijacked, or illegally intervened by a third party, the third party must be responsible for compensating for damages. In cases where the deployer or provider is at fault in allowing the system to be intruded upon, hijacked, or illegally intervened, they must be jointly liable for compensating for damages as prescribed by the Civil law regulations.
-
-5\. The Government shall detail the sanctioning of administrative violations for acts of violation caused by AI systems.
-
-**Chapter VII**
-
-**STATE GOVERNANCE OF ARTIFICIAL INTELLIGENCE**
-
-**Article 30. AI-related state governance contents and responsibilities**
-
-1\. State governance of AI covers:
-
-a) Building, promulgating, and organizing the implementation of strategies, policies, programs, and legal normative documents on AI;
-
-b) Promulgating and organizing the implementation of standards and technical regulations on AI;
-
-c) Managing, coordinating, and developing national AI infrastructure;
-
-d) Managing and supervising AI activities;
-
-dd) Propagating and disseminating policies and laws; statistics, reporting, scientific research, and international cooperation on AI;
-
-e) Inspecting, examining, handling violations, resolving disputes, complaints, and denunciations regarding AI.
-
-2\. Responsibilities for State-level governance of AI:
-
-a) The Government performs unified State-level governance of AI;
-
-b) The Ministry of Science and Technology is the focal agency, responsible before the Government for performing State-level governance of AI nationwide;
-
-c) Ministries and ministerial-level agencies, within their functions, tasks, and powers, coordinate with the Ministry of Science and Technology in performing State-level governance of AI;
-
-d) Provincial-level People's Committees perform State-level governance of AI locally.
-
-**Article 31. Principles of providing information and data for the purpose of State-level governance**
-
-1\. Competent State authorities, organizations, and individuals assigned to perform State-level governance activities as prescribed in this Law are responsible for ensuring the confidentiality of information, data, and trade secrets provided during task performance, including technical dossiers, training data, source code, and algorithms as prescribed by the law regulations.
-
-2\. Requests for organizations and individuals to provide information and data must ensure necessity, proportionality, and suitability with the scope, purpose, and content of State-level governance activities.
-
-3\. Provided information and data must be ensured safety and security as prescribed by the law regulations.
-
-**Article 32. International cooperation**
-
-1\. International cooperation in the AI field is performed as prescribed by the law regulations on science and technology, technology transfer, other relevant law regulations, and international treaties to which the Socialist Republic of Vietnam is a member.
-
-2\. The State encourages international cooperation on sharing high-performance computing infrastructure, data, human resources, scientific research, and mutual recognition of conformity assessment results as prescribed in this Law.
-
-**Chapter VIII**
-
-**IMPLEMENTATION PROVISIONS**
-
-**Article 33. Annulment of a number of chapters, articles, clauses, and points of the Law on Digital Technology Industry No. 71/2025/QH15**
-
-To annul Clause 9 Article 3, Clause 7 Article 4, Clause 6 Article 12, Point dd Clause 2 Article 34, and Chapter IV of the Law on Digital Technology Industry.
-
-**Article 34. Effect**
-
-This Law takes effect from March 1, 2026, unless otherwise prescribed in Article 35 of this Law.
-
-**Article 35. Transitional provisions**
-
-1\. For AI systems put into operation before the effective date of this Law, providers and deployers are responsible for performing compliance obligations as prescribed in this Law within the following time limits:
-
-a) 18 months from the effective date of this Law for AI systems in healthcare, education, and finance sectors;
-
-b) 12 months from the effective date of this Law for AI systems not falling into the cases prescribed at Point a of this Clause.
-
-2\. Within the time limit prescribed in Clause 1 of this Article, AI systems are allowed to continue operating, unless otherwise the State regulatory authority in charge of AI determines that the system poses a risk of causing serious damage, in which case it has the right to request suspension or termination of operation.
-
-_This Law was passed on December 10, 2025, by the 15th National Assembly of the Socialist Republic of Vietnam at its 10th session._
-
- 
+*Passed by the National Assembly of the Socialist Republic of Vietnam, XV Legislature, 10th Session, on 10 December 2025.*
 
 **CHAIRMAN OF THE NATIONAL ASSEMBLY**
-
-**Tran Thanh Man**
-
-Please [log in](javascript:void\(0\) "log in") to a [subscriber](/service.html "subscriber") account to see the full text. Don’t have an account? [Register here](javascript:void\(0\) "Register")
-
-Please [log in](javascript:void\(0\) "log in") to a [subscriber](/service.html "subscriber") account to see the full text. Don’t have an account? [Register here](javascript:void\(0\) "Register")
-
-Processing, please wait...
-
-LuatVietnam.vn is the SOLE distributor of English translations of Official Gazette published by the **Vietnam News Agency**
-
-## VIETNAMESE DOCUMENTS
-
-![download](/images/download-pdf.svg) 
-
-[Law on Artificial Intelligence 2025, No. 134/2025/QH15 PDF (Original)](javascript:void\(0\) "Law on Artificial Intelligence 2025, No. 134/2025/QH15")
-
-This utility is available to subscribers only. Please [log in](javascript:void\(0\) "log in") to a [subscriber](/service.html "subscriber") account to download. Don’t have an account? [Register here](javascript:void\(0\) "Register")
-
-![download](/images/download-docx.svg) 
-
-[Law on Artificial Intelligence 2025, No. 134/2025/QH15 DOC (Word)](javascript:void\(0\) "Law on Artificial Intelligence 2025, No. 134/2025/QH15")
-
-This utility is available to subscribers only. Please [log in](javascript:void\(0\) "log in") to a [subscriber](/service.html "subscriber") account to download. Don’t have an account? [Register here](javascript:void\(0\) "Register")
-
-## ENGLISH DOCUMENTS
-
-**LuatVietnam's translation**
-
-![download](/images/download-docx.svg) 
-
-[Law on Artificial Intelligence 2025, No. 134/2025/QH15 DOC (Word)](javascript:void\(0\) "Law on Artificial Intelligence 2025, No. 134/2025/QH15")
-
-This utility is available to subscribers only. Please [log in](javascript:void\(0\) "log in") to a [subscriber](/service.html "subscriber") account to download. Don’t have an account? [Register here](javascript:void\(0\) "Register")
-
-![download](/images/download-pdf.svg) 
-
-[Law on Artificial Intelligence 2025, No. 134/2025/QH15 PDF (Original)](javascript:void\(0\) "Law on Artificial Intelligence 2025, No. 134/2025/QH15")
-
-This utility is available to subscribers only. Please [log in](javascript:void\(0\) "log in") to a [subscriber](/service.html "subscriber") account to download. Don’t have an account? [Register here](javascript:void\(0\) "Register")
-
-**\* Note:** To view documents downloaded from LuatVietnam.vn, please install DOC, DOCX and PDF file readers
-
-For further support, please call [19006192](tel:19006192)
-
-[![Decree No. 112/2026/ND-CP dated April 01, 2026 of the Government on the international transfer of greenhouse gas emission mitigation outcomes and carbon credits](/images/file-text.svg)](/decree-no-112-2026-nd-cp-dated-april-01-2026-of-the-government-on-the-international-transfer-of-greenhouse-gas-emission-mitigation-outcomes-and-carb-430687-doc1.html "Decree No. 112/2026/ND-CP dated April 01, 2026 of the Government on the international transfer of greenhouse gas emission mitigation outcomes and carbon credits")
-
-[![Circular No. 18/2026/TT-BGDDT dated March 27, 2026 of the Ministry of Education and Training promulgating the Digital Competency Framework for teachers and administrators of early childhood education institutions, general education institutions and continuing education institutions](/images/file-text.svg)](/circular-no-18-2026-tt-bgddt-dated-march-27-2026-of-the-ministry-of-education-and-training-promulgating-the-digital-competency-framework-for-teacher-430564-doc1.html "Circular No. 18/2026/TT-BGDDT dated March 27, 2026 of the Ministry of Education and Training promulgating the Digital Competency Framework for teachers and administrators of early childhood education institutions, general education institutions and continuing education institutions")
-
-[![Decree No. 313/2025/ND-CP dated December 08, 2025 of the Government on the management and use of non-refundable aid other than official development assistance of foreign agencies, organizations and individuals for Vietnam](/images/file-text.svg)](/decreeno313-2025-nd-cpdateddecember082025ofthegovernmentonthemanagementanduseofnon-refundableaidotherthanofficialdevelopmentas-421028-doc1.html "Decree No. 313/2025/ND-CP dated December 08, 2025 of the Government on the management and use of non-refundable aid other than official development assistance of foreign agencies, organizations and individuals for Vietnam")
-
-[![Decision No. 2629/QD-TTg dated December 01, 2025 of the Prime Minister approving the Program on Digital Government Development](/images/file-text.svg)](/decisionno2629-qd-ttgdateddecember012025oftheprimeministerapprovingtheprogramondigitalgovernmentdevelopment-420198-doc1.html "Decision No. 2629/QD-TTg dated December 01, 2025 of the Prime Minister approving the Program on Digital Government Development")
-
-[![Circular No. 33/2025/TT-BKHCN dated November 15, 2025 of the Ministry of Science and Technology specifying criteria for enterprises implementing electronic device manufacturing projects to be entitled to corporate income tax incentives](/images/file-text.svg)](/circularno33-2025-tt-bkhcndatednovember152025oftheministryofscienceandtechnologyspecifyingcriteriaforenterprisesimplementingelect-419649-doc1.html "Circular No. 33/2025/TT-BKHCN dated November 15, 2025 of the Ministry of Science and Technology specifying criteria for enterprises implementing electronic device manufacturing projects to be entitled to corporate income tax incentives")
+**Trần Thanh Mẫn**

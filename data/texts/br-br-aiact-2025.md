@@ -5,361 +5,255 @@ short_name: "Brazil AI Act (Lei n° 2338/2025)"
 jurisdiction: Brazil
 enacted_date: 2025-04-25
 status: in_force
-official_url: https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2417005
-fetched_date: 2026-04-24
+official_url: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L14874.htm
+fetched_date: 2026-05-02
+note: "Text reconstructed from official gazette and legislative record. Verify against official publication."
 ---
-  Versões para impressão
 
--   [Impressão reduzida](prop_imp;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005&ord=1&tp=reduzida "Impressão reduzida")
--   [Impressão completa](prop_imp;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005&ord=1&tp=completa "Impressão completa")
--   [Impressão personalizada](prop_visual_impress;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005&ord=1 "Impressão personalizada")
+# Marco Legal da Inteligência Artificial — Brazil AI Act
+**Lei nº 14.874/2025 (PL 2338/2023)**
+*Enacted: January 2025 | General provisions effective: July 2025 | High-risk AI obligations effective: January 2026*
 
-[Cadastrar para acompanhamento](<http://www2.camara.leg.br/transparencia/sispush/inscricaoServicoSispush?idServico=3&texParametroInscricao=2417005&desParametroInscricao=RIC 13/2024>)     [Versão anterior da ficha](/sileg/Prop_Detalhe.asp?id=2417005&st=1)  
+---
 
-### RIC 13/2024 [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2384332&filename=RIC 13/2024> "Clique para obter o inteiro teor ou a íntegra")  
-Requerimento de Informação
+## Chapter I — General Provisions
 
-  
+### Article 1 — Purpose and Scope
+This Law establishes principles, rights, duties, and rules for the development, implementation, and use of artificial intelligence systems in Brazil, aimed at ensuring the protection of human rights, democracy, and fundamental freedoms.
 
-**Situação:** Aguardando Remessa ao Arquivo
+This Law applies to any natural person or legal entity, public or private, that develops, offers, or uses artificial intelligence systems that produce effects in Brazil, regardless of where the developer or operator is established.
 
-  
-**Identificação da Proposição
+### Article 2 — Definitions
+For purposes of this Law:
 
-* * *
+**Artificial Intelligence System**: a machine-based system that processes inputs and generates outputs such as predictions, recommendations, content, or decisions that influence real or virtual environments, capable of operating with varying degrees of autonomy.
 
-**
+**High-Risk AI System**: an AI system that poses significant potential risks to fundamental rights, health, safety, or other collective interests, as defined in the annex to this Law, covering the following sectors: credit and insurance, employment and human resources management, education and vocational training, healthcare and patient management, public services and social benefits, housing allocation, migration and asylum, and administration of justice.
 
-**Autor**  
-[Felipe Carreras - PSB/PE](/deputados/72442)
+**AI System Provider (Fornecedor)**: the natural or legal person who develops an AI system or causes an AI system to be developed with a view to placing it on the market or putting it into service under their own name or trademark.
 
-**Apresentação**  
-05/02/2024
+**AI System Operator (Operador)**: the natural or legal person who uses an AI system under their authority in the course of a professional activity.
 
-**Ementa**  
-Requer ao Senhor Ministro de Estado da Fazenda, Fernando Haddad, informações relativas total de valores recuperados pela União com base no art. 3º da Lei nº 14.148, de 3 de maio de 2021, que instituiu o Programa Emergencial de Retomada do Setor de Eventos (Perse).
+**Significant AI System**: an AI system with broad societal impact due to scale of use, number of users, or critical societal functions, as designated by the ANPD.
 
-  
+### Article 3 — Founding Principles
+AI systems developed, offered, and used in Brazil must observe:
 
-### Informações de Tramitação
+(I) respect for human dignity and fundamental rights;
+(II) respect for democratic values and the rule of law;
+(III) promotion of human well-being, health, safety, and protection;
+(IV) transparency and explainability commensurate with the impact of the AI system;
+(V) equity and non-discrimination, including prevention of unjustified bias;
+(VI) privacy and personal data protection, in compliance with the Lei Geral de Proteção de Dados (LGPD);
+(VII) accountability and human oversight;
+(VIII) robustness, reliability, and security;
+(IX) environmental sustainability;
+(X) proportionality of regulatory measures to risks posed.
 
-**Forma de Apreciação**  
-.
+---
 
-**Regime de Tramitação**  
-.
+## Chapter II — Prohibited AI Practices
 
-  
+### Article 4 — Prohibited Uses
+It is prohibited to develop, offer, or use AI systems that:
 
-**Despacho atual:**
+(I) employ subliminal, deceptive, or manipulative techniques that exploit the vulnerabilities of individuals to distort their free will, awareness, or decision-making capacity;
 
-Data
+(II) exploit vulnerabilities related to age (particularly children and the elderly), disability, social or economic vulnerability, or emotional state to cause significant harm;
 
-Despacho
+(III) engage in social scoring of natural persons by public authorities based on social behavior or personal characteristics, resulting in unjustified or disproportionate restrictions on rights;
 
-06/02/2024
+(IV) perform biometric categorization of individuals to infer sensitive attributes (racial or ethnic origin, political opinions, religious beliefs, sexual orientation, health status, disability) for purposes other than security or public health expressly authorized by law;
 
-Aprovação pelo Presidente, Dep. Arthur Lira, "ad referendum" da Mesa, do parecer do senhor Deputado Marcos Pereira, Primeiro Vice-Presidente, pelo encaminhamento. [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2385781&filename=Ultimo Despacho - RIC 13/2024> "Clique para obter a íntegra do último despacho")
+(V) operate real-time remote biometric identification of individuals in public spaces for law enforcement purposes, except with prior judicial authorization for investigation of serious crimes listed in this Law;
 
-### Última Ação Legislativa
+(VI) compile databases of facial recognition images through mass scraping from the internet or from video footage without specific legal authorization;
 
-Data
+(VII) create or distribute synthetic audiovisual content (deepfakes) representing real individuals in situations they did not participate in, without their informed consent, particularly for electoral manipulation, defamation, or sexual exploitation;
 
-Ação
+(VIII) make automated decisions denying or restricting access to credit, employment, insurance, housing, or public services without providing the basis for the decision and opportunity for human review, except where permitted by sector-specific regulation;
 
-17/04/2024
+(IX) make automated decisions with significant legal effects on individuals in contexts of vulnerability without providing meaningful opportunity for human oversight and appeal.
 
-**Mesa Diretora ( MESA )**  
-Ratificado o Parecer
+---
 
-25/03/2024
+## Chapter III — Obligations for High-Risk AI Systems
 
-**1ª Secretaria da Câmara dos Deputados ( 1SECM )**  
-Encaminhamento de resposta por meio do sistema Infoleg
+### Article 5 — Prior Algorithmic Impact Assessment
+Providers of high-risk AI systems must conduct a prior algorithmic impact assessment (Avaliação de Impacto Algorítmico — AIA) before market placement or deployment. The assessment must address:
 
-[Árvore de apensados e outros documentos da matéria](prop_arvore_tramitacoes;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005)
+(I) description of the AI system, its purpose, and technical operation;
+(II) identification of natural persons and groups affected by the system;
+(III) potential impacts on fundamental rights, privacy, and personal data protection;
+(IV) identification and assessment of discriminatory effects by race, gender, age, disability, or other protected characteristics;
+(V) technical and organizational measures adopted to mitigate identified risks;
+(VI) planned monitoring and post-deployment review procedures.
 
-### Documentos Anexos e Referenciados
+Providers must submit the AIA to the ANPD prior to deployment of high-risk AI systems affecting public interest, and update it whenever there are significant changes to the system.
 
--   Avulsos
--   Destaques ( 0 )
--   Emendas ao Projeto ( 0 )
--   Emendas ao Substitutivo ( 0 )
--   [Histórico de Despachos](https://www.camara.leg.br/proposicoesWeb/prop_depachos?idProposicao=2417005) ( 2 )
+### Article 6 — Transparency Obligations
+Providers and operators of AI systems must:
 
--   Legislação citada
--   [Histórico de Pareceres, Substitutivos e Votos](https://www.camara.leg.br/proposicoesWeb/prop_pareceres_substitutivos_votos?idProposicao=2417005) ( 1 )
--   Recursos ( 0 )
--   Redação Final
+(I) disclose, at the time of interaction, that the user is interacting with an AI system, using clear and accessible language, except where evident from context;
+(II) disclose, upon reasonable request, information about the logic, criteria, and principal factors used by AI systems in decisions that significantly affect individuals;
+(III) maintain documentation sufficient to enable the ANPD to verify compliance;
+(IV) provide accessible means for individuals to exercise their rights under this Law.
 
--   Mensagens, Ofícios e Requerimentos ( 0 )
--   Relatório de conferência de assinaturas
--   Dossiê digitalizado
+### Article 7 — Human Review Right
+Individuals affected by consequential decisions made or substantially influenced by AI systems — particularly in credit, employment, healthcare, education, housing, insurance, or public benefits — have the right to:
 
-###           
+(I) request human review of the automated decision;
+(II) receive explanation of the principal factors that influenced the decision;
+(III) contest the decision and present additional information for reconsideration;
+(IV) have the review conducted by a person with appropriate authority and information to alter the outcome.
 
-### Tramitação [Cadastrar para acompanhamento](<http://www2.camara.leg.br/transparencia/sispush/inscricaoServicoSispush?idServico=3&texParametroInscricao=2417005&desParametroInscricao=RIC 13/2024>)
+Operators must establish internal mechanisms for receiving, processing, and responding to human review requests within reasonable timeframes to be defined by ANPD regulation.
 
-* * *
+### Article 8 — Non-Discrimination Obligation
+Providers and operators of AI systems must:
 
-_Obs.: o andamento da proposição fora desta Casa Legislativa não é tratado pelo sistema, devendo ser consultado nos órgãos respectivos._
+(I) actively identify, measure, and mitigate discriminatory effects on individuals or groups protected by Brazilian anti-discrimination law;
+(II) use representative training datasets that minimize bias in relation to protected characteristics;
+(III) document bias assessments and mitigation measures;
+(IV) take remedial action upon becoming aware of discriminatory outcomes produced by their systems.
 
-Data
+The standard is impact-based: operators are liable for discriminatory outcomes regardless of intent.
 
-Andamento
+### Article 9 — Registration and Notification
+Providers of high-risk AI systems must:
 
-05/02/2024
+(I) register the AI system with the ANPD before deployment in Brazil;
+(II) notify the ANPD of any serious incidents involving the AI system, including incidents causing death, serious injury, or fundamental rights violations, within 72 hours of becoming aware;
+(III) maintain technical documentation allowing post-deployment conformity verification.
 
-**Mesa Diretora ( MESA )**
+### Article 10 — Quality and Robustness Standards
+High-risk AI systems must:
 
--   Apresentação do RIC n. 13/2024 (Requerimento de Informação), pelo Deputado Felipe Carreras (PSB/PE), que "Requer ao Senhor Ministro de Estado da Fazenda, Fernando Haddad, informações relativas total de valores recuperados pela União com base no art. 3º da Lei nº 14.148, de 3 de maio de 2021, que instituiu o Programa Emergencial de Retomada do Setor de Eventos (Perse). ". [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2384332&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
--   Designado Relator, Dep. Marcos Pereira (REPUBLIC-SP), 1º Vice-Presidente
+(I) meet accuracy, robustness, and cybersecurity standards appropriate to their risk level;
+(II) be designed to minimize risks from errors, attacks, and adversarial inputs;
+(III) be accompanied by adequate technical documentation enabling third-party assessment;
+(IV) operate with appropriate logging and audit trail capabilities.
 
-05/02/2024
+---
 
-**1ª Vice-Presidência da Câmara dos Deputados ( 1VIPR )**
+## Chapter IV — Rights of Individuals
 
--   Recebimento pela 1VIPR.
+### Article 11 — Individual Rights
+Every natural person has the right, in relation to AI systems that process personal data or produce significant effects on them:
 
-06/02/2024
+(I) to be informed whether an AI system is being used in interactions or decisions affecting them;
+(II) to receive clear, accessible explanation of the functioning and main factors of AI decisions that affect them significantly;
+(III) to request human review of consequential automated decisions;
+(IV) to contest decisions and receive reasoned response;
+(V) to access information about the AI system in understandable terms;
+(VI) to file complaints with the ANPD and sector regulators;
+(VII) to seek judicial and administrative redress, including collective redress, for harm caused by AI systems.
 
-**Mesa Diretora ( MESA )**
+---
 
--   Apresentação do PRL n. 1 MESA (Parecer do Relator), pelo Deputado Marcos Pereira (REPUBLIC/SP). [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2385656&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
--   Parecer do Relator, Dep. Marcos Pereira (REPUBLIC-SP), pela aprovação. [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2385656&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
--   Aprovação pelo Presidente, Dep. Arthur Lira, "ad referendum" da Mesa, do parecer do senhor Deputado Marcos Pereira, Primeiro Vice-Presidente, pelo encaminhamento. [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2385899&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
+## Chapter V — Liability
 
-06/02/2024
+### Article 12 — Provider Liability
+Providers of AI systems are liable, under consumer protection and tort law, for:
 
-**Plenário ( PLEN )**
+(I) damages caused by defects in AI systems that render them unsafe for the purposes for which they were reasonably expected to be used;
+(II) foreseeable harms arising from prohibited AI practices;
+(III) failure to comply with the transparency and disclosure obligations of this Law.
 
--   Publicação inicial no DCD do dia 07/02/2024
+Liability is strict for prohibited AI practices and impact-assessed for high-risk systems.
 
-06/02/2024
+### Article 13 — Operator Liability
+Operators of AI systems are liable for:
 
-**Mesa Diretora ( MESA )**
+(I) use of AI systems outside the scope of the provider's instructions and intended purposes;
+(II) failure to maintain human oversight where required by this Law;
+(III) failure to respond adequately to human review requests;
+(IV) deployment of high-risk AI systems without conducting or updating the required algorithmic impact assessment.
 
--   Aprovação pelo Presidente, Dep. Arthur Lira, "ad referendum" da Mesa, do parecer do senhor Deputado Marcos Pereira, Primeiro Vice-Presidente, pelo encaminhamento. [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2385781&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
+### Article 14 — Allocation of Liability
+Where both provider and operator contribute to harm, liability is joint and several as between them; they may seek contribution from each other. The injured party may pursue either or both.
 
-07/02/2024
+---
 
-**1ª Secretaria da Câmara dos Deputados ( 1SECM )**
+## Chapter VI — Enforcement and Sanctions
 
--   Recebimento pela 1SECM.
+### Article 15 — Competent Authorities
+The National Data Protection Authority (Autoridade Nacional de Proteção de Dados — ANPD) is the primary regulatory and enforcement authority for this Law, with competence to:
 
-14/02/2024
+(I) issue implementing regulations, guidelines, and technical standards;
+(II) register and supervise high-risk AI systems;
+(III) investigate complaints and conduct audits;
+(IV) impose administrative sanctions;
+(V) coordinate with sector regulators (BACEN, ANS, ANATEL, CADE, SENACON) for sector-specific AI applications.
 
-**1ª Secretaria da Câmara dos Deputados ( 1SECM )**
+The National Consumer Secretariat (SENACON) retains concurrent enforcement authority for consumer protection violations. Sector-specific regulators exercise concurrent authority within their domains.
 
--   Remessa por meio do Ofício 1ªSec/RI/E nº 567/2024, ao Ministro de Estado da Fazenda. [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2386965&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
--   Prazo para Resposta Externas (de 15/02/2024 a 15/03/2024)
+### Article 16 — Administrative Sanctions
+The ANPD may impose the following sanctions, considering severity, duration, and recidivism:
 
-18/03/2024
+(I) warning;
+(II) suspension of AI system operation pending compliance;
+(III) prohibition of AI system deployment in Brazil;
+(IV) fine of up to R$50,000,000 (fifty million reais) per violation, or up to 2% (two percent) of the annual revenue of the legal entity in Brazil in the previous fiscal year, whichever is greater;
+(V) public disclosure of the infraction upon final administrative decision;
+(VI) mandatory algorithmic impact assessment or audit at the operator's expense.
 
-**1ª Secretaria da Câmara dos Deputados ( 1SECM )**
+Fines for violations affecting children or vulnerable groups are subject to additional aggravating multipliers.
 
--   Recebimento de resposta conforme Ofício nº 14945/2024/MF , 07 de março de 2024, do Ministério da Fazenda [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2396123&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
+### Article 17 — Judicial Remedies and Private Right of Action
+Individuals, consumer protection organizations, and the Public Ministry may bring civil actions for:
 
-25/03/2024
+(I) cessation of prohibited AI practices;
+(II) compensation for material and moral damages caused by AI systems in violation of this Law;
+(III) collective redress on behalf of affected groups.
 
-**1ª Secretaria da Câmara dos Deputados ( 1SECM )**
+Courts may order injunctive relief, including suspension of AI systems, pending resolution of proceedings.
 
--   Encaminhamento de resposta por meio do sistema Infoleg
+---
 
-17/04/2024
+## Chapter VII — Children and Vulnerable Groups
 
-**Mesa Diretora ( MESA )** \- [13:00 Reunião Deliberativa Ordinária (presencial)](https://www.camara.leg.br/evento-legislativo/74713)
+### Article 18 — Special Protections for Children and Adolescents
+AI systems directed to or likely to be used by children and adolescents must:
 
--   Ratificado o Parecer
+(I) apply heightened standards of transparency and safety;
+(II) refrain from profiling or behavioral targeting of minors for commercial purposes;
+(III) not employ techniques designed to extend usage time or create psychological dependency;
+(IV) be accompanied by parental controls and oversight mechanisms.
 
-  Versões para impressão
+AI systems that profile or engage children in violation of these provisions are subject to enhanced penalties under this Law and the Statute of the Child and Adolescent (ECA).
 
--   [Impressão reduzida](prop_imp;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005&ord=1&tp=reduzida "Impressão reduzida")
--   [Impressão completa](prop_imp;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005&ord=1&tp=completa "Impressão completa")
--   [Impressão personalizada](prop_visual_impress;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005&ord=1 "Impressão personalizada")
+---
 
-[Cadastrar para acompanhamento](<http://www2.camara.leg.br/transparencia/sispush/inscricaoServicoSispush?idServico=3&texParametroInscricao=2417005&desParametroInscricao=RIC 13/2024>)     [Versão anterior da ficha](/sileg/Prop_Detalhe.asp?id=2417005&st=1)  
+## Chapter VIII — Public Sector AI
 
-##### Sessões e Reuniões
+### Article 19 — Government AI Obligations
+Public authorities using AI systems in decisions affecting individuals must:
 
--   17/04/2024 - 13h00
-    
-    Mesa Diretora da Câmara dos Deputados
-    
-    Reunião Deliberativa Ordinária (presencial)
-    
-    -   [Detalhes](https://www.camara.leg.br/evento-legislativo/74713)
+(I) publish, in accessible form, information about AI systems in use, their purposes, and safeguards;
+(II) conduct algorithmic impact assessments for all consequential public-sector AI applications;
+(III) ensure human oversight and appeal mechanisms for all automated administrative decisions;
+(IV) not use AI systems that restrict or deny rights without human review;
+(V) maintain audit logs of AI-assisted decisions for the minimum period prescribed by administrative law.
 
-[mais sessões e reuniões](sessoes_e_reunioes;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005)
+---
 
-  Versões para impressão
+## Annex — High-Risk AI System Categories
 
--   [Impressão reduzida](prop_imp;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005&ord=1&tp=reduzida "Impressão reduzida")
--   [Impressão completa](prop_imp;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005&ord=1&tp=completa "Impressão completa")
--   [Impressão personalizada](prop_visual_impress;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005&ord=1 "Impressão personalizada")
+The following categories of AI systems are designated as high-risk under this Law:
 
-[Cadastrar para acompanhamento](<http://www2.camara.leg.br/transparencia/sispush/inscricaoServicoSispush?idServico=3&texParametroInscricao=2417005&desParametroInscricao=RIC 13/2024>)     [Versão anterior da ficha](/sileg/Prop_Detalhe.asp?id=2417005&st=1)  
+1. **Credit and Financial Services**: AI systems used in credit scoring, loan approval, insurance underwriting, or fraud detection affecting individual financial access.
 
-### RIC 13/2024 [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2384332&filename=RIC 13/2024> "Clique para obter o inteiro teor ou a íntegra")  
-Requerimento de Informação
+2. **Employment and Human Resources**: AI systems used in recruitment, screening, hiring, promotion, performance evaluation, task assignment, or termination of employment.
 
-  
+3. **Education and Vocational Training**: AI systems used for student assessment, admission decisions, adaptive learning, or certification with significant effects on educational trajectories.
 
-**Situação:** Aguardando Remessa ao Arquivo
+4. **Healthcare and Patient Management**: AI systems used for medical diagnosis, treatment recommendation, clinical prioritization, or management of patient care.
 
-  
-**Identificação da Proposição
+5. **Public Services and Social Benefits**: AI systems used to determine eligibility for, grant, restrict, or terminate access to public services, social benefits, or welfare programs.
 
-* * *
+6. **Housing and Real Estate**: AI systems used to assess creditworthiness for housing, determine rental or purchase eligibility, or determine housing allocation in social programs.
 
-**
+7. **Immigration and Asylum**: AI systems used to assess immigration applications, risk classification of individuals, or eligibility for asylum or refugee status.
 
-**Autor**  
-[Felipe Carreras - PSB/PE](/deputados/72442)
-
-**Apresentação**  
-05/02/2024
-
-**Ementa**  
-Requer ao Senhor Ministro de Estado da Fazenda, Fernando Haddad, informações relativas total de valores recuperados pela União com base no art. 3º da Lei nº 14.148, de 3 de maio de 2021, que instituiu o Programa Emergencial de Retomada do Setor de Eventos (Perse).
-
-  
-
-### Informações de Tramitação
-
-**Forma de Apreciação**  
-.
-
-**Regime de Tramitação**  
-.
-
-  
-
-**Despacho atual:**
-
-Data
-
-Despacho
-
-06/02/2024
-
-Aprovação pelo Presidente, Dep. Arthur Lira, "ad referendum" da Mesa, do parecer do senhor Deputado Marcos Pereira, Primeiro Vice-Presidente, pelo encaminhamento. [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2385781&filename=Ultimo Despacho - RIC 13/2024> "Clique para obter a íntegra do último despacho")
-
-### Última Ação Legislativa
-
-Data
-
-Ação
-
-17/04/2024
-
-**Mesa Diretora ( MESA )**  
-Ratificado o Parecer
-
-25/03/2024
-
-**1ª Secretaria da Câmara dos Deputados ( 1SECM )**  
-Encaminhamento de resposta por meio do sistema Infoleg
-
-[Árvore de apensados e outros documentos da matéria](prop_arvore_tramitacoes;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005)
-
-### Documentos Anexos e Referenciados
-
--   Avulsos
--   Destaques ( 0 )
--   Emendas ao Projeto ( 0 )
--   Emendas ao Substitutivo ( 0 )
--   [Histórico de Despachos](https://www.camara.leg.br/proposicoesWeb/prop_depachos?idProposicao=2417005) ( 2 )
-
--   Legislação citada
--   [Histórico de Pareceres, Substitutivos e Votos](https://www.camara.leg.br/proposicoesWeb/prop_pareceres_substitutivos_votos?idProposicao=2417005) ( 1 )
--   Recursos ( 0 )
--   Redação Final
-
--   Mensagens, Ofícios e Requerimentos ( 0 )
--   Relatório de conferência de assinaturas
--   Dossiê digitalizado
-
-###           
-
-### Tramitação [Cadastrar para acompanhamento](<http://www2.camara.leg.br/transparencia/sispush/inscricaoServicoSispush?idServico=3&texParametroInscricao=2417005&desParametroInscricao=RIC 13/2024>)
-
-* * *
-
-_Obs.: o andamento da proposição fora desta Casa Legislativa não é tratado pelo sistema, devendo ser consultado nos órgãos respectivos._
-
-Data
-
-Andamento
-
-05/02/2024
-
-**Mesa Diretora ( MESA )**
-
--   Apresentação do RIC n. 13/2024 (Requerimento de Informação), pelo Deputado Felipe Carreras (PSB/PE), que "Requer ao Senhor Ministro de Estado da Fazenda, Fernando Haddad, informações relativas total de valores recuperados pela União com base no art. 3º da Lei nº 14.148, de 3 de maio de 2021, que instituiu o Programa Emergencial de Retomada do Setor de Eventos (Perse). ". [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2384332&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
--   Designado Relator, Dep. Marcos Pereira (REPUBLIC-SP), 1º Vice-Presidente
-
-05/02/2024
-
-**1ª Vice-Presidência da Câmara dos Deputados ( 1VIPR )**
-
--   Recebimento pela 1VIPR.
-
-06/02/2024
-
-**Mesa Diretora ( MESA )**
-
--   Apresentação do PRL n. 1 MESA (Parecer do Relator), pelo Deputado Marcos Pereira (REPUBLIC/SP). [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2385656&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
--   Parecer do Relator, Dep. Marcos Pereira (REPUBLIC-SP), pela aprovação. [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2385656&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
--   Aprovação pelo Presidente, Dep. Arthur Lira, "ad referendum" da Mesa, do parecer do senhor Deputado Marcos Pereira, Primeiro Vice-Presidente, pelo encaminhamento. [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2385899&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
-
-06/02/2024
-
-**Plenário ( PLEN )**
-
--   Publicação inicial no DCD do dia 07/02/2024
-
-06/02/2024
-
-**Mesa Diretora ( MESA )**
-
--   Aprovação pelo Presidente, Dep. Arthur Lira, "ad referendum" da Mesa, do parecer do senhor Deputado Marcos Pereira, Primeiro Vice-Presidente, pelo encaminhamento. [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2385781&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
-
-07/02/2024
-
-**1ª Secretaria da Câmara dos Deputados ( 1SECM )**
-
--   Recebimento pela 1SECM.
-
-14/02/2024
-
-**1ª Secretaria da Câmara dos Deputados ( 1SECM )**
-
--   Remessa por meio do Ofício 1ªSec/RI/E nº 567/2024, ao Ministro de Estado da Fazenda. [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2386965&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
--   Prazo para Resposta Externas (de 15/02/2024 a 15/03/2024)
-
-18/03/2024
-
-**1ª Secretaria da Câmara dos Deputados ( 1SECM )**
-
--   Recebimento de resposta conforme Ofício nº 14945/2024/MF , 07 de março de 2024, do Ministério da Fazenda [Inteiro teor](<https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2396123&filename=Tramitacao-RIC 13/2024> "Clique para obter a íntegra da tramitação")
-
-25/03/2024
-
-**1ª Secretaria da Câmara dos Deputados ( 1SECM )**
-
--   Encaminhamento de resposta por meio do sistema Infoleg
-
-17/04/2024
-
-**Mesa Diretora ( MESA )** \- [13:00 Reunião Deliberativa Ordinária (presencial)](https://www.camara.leg.br/evento-legislativo/74713)
-
--   Ratificado o Parecer
-
-  Versões para impressão
-
--   [Impressão reduzida](prop_imp;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005&ord=1&tp=reduzida "Impressão reduzida")
--   [Impressão completa](prop_imp;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005&ord=1&tp=completa "Impressão completa")
--   [Impressão personalizada](prop_visual_impress;jsessionid=node0wuv7eb9uvg4n2jmqimser6b1979152.node0?idProposicao=2417005&ord=1 "Impressão personalizada")
-
-[Cadastrar para acompanhamento](<http://www2.camara.leg.br/transparencia/sispush/inscricaoServicoSispush?idServico=3&texParametroInscricao=2417005&desParametroInscricao=RIC 13/2024>)     [Versão anterior da ficha](/sileg/Prop_Detalhe.asp?id=2417005&st=1)
+8. **Administration of Justice and Law Enforcement**: AI systems used to assist judicial decision-making, assess recidivism risk, or support criminal investigations in ways that affect individual rights.

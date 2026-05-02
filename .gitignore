@@ -26,3 +26,15 @@ dist-ssr
 # Generated files
 data/validation_errors.json
 data/regulations.csv
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# PDF source files (large, not version-controlled)
+data/pdfs/
+
+# Backup files
+data/*.bak

@@ -60,6 +60,8 @@ const COUNTRY_REGION: Record<string, string> = {
   Brazil: 'Latin America', Mexico: 'Latin America', Argentina: 'Latin America',
   Chile: 'Latin America', Colombia: 'Latin America', Peru: 'Latin America',
   Ecuador: 'Latin America', Uruguay: 'Latin America', Panama: 'Latin America',
+  Paraguay: 'Latin America', 'Costa Rica': 'Latin America',
+  'Dominican Republic': 'Latin America',
   // Western Europe (non-EU members; EU members handled via EU_MEMBER_COUNTRIES)
   'United Kingdom': 'Western Europe',
   Switzerland:      'Western Europe',
@@ -73,22 +75,24 @@ const COUNTRY_REGION: Record<string, string> = {
   Kazakhstan: 'Eastern Europe & Central Asia',
   Uzbekistan: 'Eastern Europe & Central Asia',
   // East Asia
-  China:        'East Asia',
-  Japan:        'East Asia',
+  China:         'East Asia',
+  Japan:         'East Asia',
   'South Korea': 'East Asia',
-  Taiwan:       'East Asia',
+  Taiwan:        'East Asia',
+  'Hong Kong':   'East Asia',
   // South Asia
   India:       'South Asia',
   Bangladesh:  'South Asia',
   Pakistan:    'South Asia',
   'Sri Lanka': 'South Asia',
   // Southeast Asia
-  Singapore:   'Southeast Asia',
-  Indonesia:   'Southeast Asia',
-  Malaysia:    'Southeast Asia',
-  Philippines: 'Southeast Asia',
-  Thailand:    'Southeast Asia',
-  Vietnam:     'Southeast Asia',
+  Singapore:            'Southeast Asia',
+  Indonesia:            'Southeast Asia',
+  Malaysia:             'Southeast Asia',
+  Philippines:          'Southeast Asia',
+  Thailand:             'Southeast Asia',
+  Vietnam:              'Southeast Asia',
+  'Brunei Darussalam':  'Southeast Asia',
   // Pacific
   Australia:    'Pacific',
   'New Zealand': 'Pacific',
@@ -100,6 +104,10 @@ const COUNTRY_REGION: Record<string, string> = {
   Egypt:                  'Middle East & North Africa',
   Morocco:                'Middle East & North Africa',
   Tunisia:                'Middle East & North Africa',
+  Algeria:                'Middle East & North Africa',
+  Jordan:                 'Middle East & North Africa',
+  Oman:                   'Middle East & North Africa',
+  Bahrain:                'Middle East & North Africa',
   // Sub-Saharan Africa
   'South Africa': 'Sub-Saharan Africa',
   Nigeria:        'Sub-Saharan Africa',
@@ -107,6 +115,12 @@ const COUNTRY_REGION: Record<string, string> = {
   Rwanda:         'Sub-Saharan Africa',
   Mauritius:      'Sub-Saharan Africa',
   Ethiopia:       'Sub-Saharan Africa',
+  Ghana:          'Sub-Saharan Africa',
+  Uganda:         'Sub-Saharan Africa',
+  Tanzania:       'Sub-Saharan Africa',
+  Zimbabwe:       'Sub-Saharan Africa',
+  "Côte d'Ivoire": 'Sub-Saharan Africa',
+  Senegal:        'Sub-Saharan Africa',
 }
 
 const REGIONAL_LABELS: Record<string, string> = {
@@ -115,15 +129,21 @@ const REGIONAL_LABELS: Record<string, string> = {
 }
 
 const US_STATE_NAMES: Record<string, string> = {
-  'US-AR': 'Arkansas',       'US-CA': 'California',     'US-CO': 'Colorado',
-  'US-CT': 'Connecticut',    'US-FL': 'Florida',        'US-GA': 'Georgia',
-  'US-ID': 'Idaho',          'US-IL': 'Illinois',       'US-IN': 'Indiana',
-  'US-KY': 'Kentucky',       'US-MD': 'Maryland',       'US-ME': 'Maine',
-  'US-MI': 'Michigan',       'US-MN': 'Minnesota',      'US-MT': 'Montana',
-  'US-NC': 'North Carolina', 'US-NE': 'Nebraska',       'US-NH': 'New Hampshire',
-  'US-NV': 'Nevada',         'US-NY': 'New York',       'US-OR': 'Oregon',
-  'US-TN': 'Tennessee',      'US-TX': 'Texas',          'US-UT': 'Utah',
-  'US-WA': 'Washington',
+  'US-AL': 'Alabama',        'US-AR': 'Arkansas',       'US-AZ': 'Arizona',
+  'US-CA': 'California',     'US-CO': 'Colorado',       'US-CT': 'Connecticut',
+  'US-DE': 'Delaware',       'US-FL': 'Florida',        'US-GA': 'Georgia',
+  'US-HI': 'Hawaii',         'US-IA': 'Iowa',           'US-ID': 'Idaho',
+  'US-IL': 'Illinois',       'US-IN': 'Indiana',        'US-KS': 'Kansas',
+  'US-KY': 'Kentucky',       'US-LA': 'Louisiana',      'US-MD': 'Maryland',
+  'US-ME': 'Maine',          'US-MI': 'Michigan',       'US-MN': 'Minnesota',
+  'US-MS': 'Mississippi',    'US-MT': 'Montana',        'US-NC': 'North Carolina',
+  'US-ND': 'North Dakota',   'US-NE': 'Nebraska',       'US-NH': 'New Hampshire',
+  'US-NM': 'New Mexico',     'US-NV': 'Nevada',         'US-NY': 'New York',
+  'US-NYC': 'New York City', 'US-OH': 'Ohio',           'US-OR': 'Oregon',
+  'US-PA': 'Pennsylvania',   'US-RI': 'Rhode Island',   'US-SC': 'South Carolina',
+  'US-SD': 'South Dakota',   'US-TN': 'Tennessee',      'US-TX': 'Texas',
+  'US-UT': 'Utah',           'US-VT': 'Vermont',        'US-WA': 'Washington',
+  'US-WI': 'Wisconsin',      'US-WV': 'West Virginia',  'US-WY': 'Wyoming',
 }
 
 function lawColKey(law: AILaw): string {
@@ -214,51 +234,95 @@ const DIAG_COL = '#FFFFFF'
 
 // ── component ─────────────────────────────────────────────────────────────────
 
+type LawBucket = 'in_force' | 'bills' | 'policies' | 'other'
+
+interface HeatmapFilters { in_force: boolean; bills: boolean; policies: boolean; other: boolean }
+
+const DEFAULT_HEATMAP_FILTERS: HeatmapFilters = { in_force: true, bills: false, policies: false, other: false }
+
+const BUCKET_LABELS: Record<LawBucket, string> = {
+  in_force: 'Laws in Force',
+  bills:    'Bills',
+  policies: 'Policies',
+  other:    'Other',
+}
+
+const BUCKET_HINTS: Record<LawBucket, string> = {
+  in_force: 'Binding instruments currently in effect',
+  bills:    'Passed / signed but not yet effective',
+  policies: 'Non-binding soft law, frameworks & guidance',
+  other:    'Treaties, superseded or miscellaneous instruments',
+}
+
+function classifyLaw(l: { instrument_binding?: boolean; status?: string }): LawBucket {
+  if (!l.instrument_binding) return 'policies'
+  if (l.status === 'in_force') return 'in_force'
+  if (l.status === 'enacted_not_yet_effective') return 'bills'
+  return 'other'
+}
+
 interface HoverState  { i: number; j: number; x: number; y: number }
 interface ComparedPair { i: number; j: number }
 
 export function SimilarityHeatmap() {
-  const [sortMode, setSortMode]     = useState<'region' | 'cluster'>('region')
-  const [selected, setSelected]     = useState<number | null>(null)
-  const [hover, setHover]           = useState<HoverState | null>(null)
-  const [comparedPair, setCompared]     = useState<ComparedPair | null>(null)
-  const [expanded, setExpanded]         = useState<Set<string>>(new Set())
+  const [sortMode, setSortMode]           = useState<'region' | 'cluster'>('region')
+  const [heatmapFilters, setHeatmapFilters] = useState<HeatmapFilters>(DEFAULT_HEATMAP_FILTERS)
+  const [selected, setSelected]           = useState<number | null>(null)
+  const [hover, setHover]                 = useState<HoverState | null>(null)
+  const [comparedPair, setCompared]       = useState<ComparedPair | null>(null)
+  const [expanded, setExpanded]           = useState<Set<string>>(new Set())
+
+  const toggleBucket = (bucket: LawBucket) => {
+    setHeatmapFilters(f => ({ ...f, [bucket]: !f[bucket] }))
+    setSelected(null)
+    setCompared(null)
+  }
 
   // ── compute coverage vectors + cosine similarity ──
-  const { cols, simMatrix, scores, atRiskCols, insights } = useMemo(() => {
-    const bindingLaws = regulations.filter(l => l.instrument_binding)
+  const { cols, simMatrix, scores, atRiskCols, insights, substantiveRules } = useMemo(() => {
+    const candidateLaws = regulations.filter(l => heatmapFilters[classifyLaw(l)])
+    const candidateIds = new Set(candidateLaws.map(l => l.id))
     const lawById = new Map(regulations.map(l => [l.id, l]))
-    const m = allRules.length
 
-    // EU is not shown as a column — its 27 member states form the visible bloc.
-    // Compute EU baseline scores separately for use as a floor in the expansion.
+    // Exclude definitions_scope from similarity — definitional boilerplate creates
+    // false convergence signal that obscures genuine substantive policy alignment.
+    const substantiveRules = allRules.filter(r => r.category !== 'definitions_scope' && r.category !== 'institutional_framework')
+    const m = substantiveRules.length
+
+    // EU expansion only applies when in-force laws are included — EU law is binding on all 27 members.
+    const applyEuExpansion = heatmapFilters.in_force
+
+    // Compute EU baseline scores for expansion (binding EU laws only)
     const euScoreVec = new Array(m).fill(0) as number[]
-    allRules.forEach((rule, rIdx) => {
-      rule.instances.forEach(inst => {
-        const law = lawById.get(inst.law_id)
-        if (!law?.instrument_binding || lawColKey(law) !== 'regional:EU') return
-        const sc = REL_SCORE[inst.relationship] ?? 0
-        if (sc > 0 && sc > euScoreVec[rIdx]) euScoreVec[rIdx] = sc
-        else if (sc < 0 && euScoreVec[rIdx] === 0) euScoreVec[rIdx] = sc
+    if (applyEuExpansion) {
+      substantiveRules.forEach((rule, rIdx) => {
+        rule.instances.forEach(inst => {
+          const law = lawById.get(inst.law_id)
+          if (!law?.instrument_binding || lawColKey(law) !== 'regional:EU') return
+          const sc = REL_SCORE[inst.relationship] ?? 0
+          if (sc > 0 && sc > euScoreVec[rIdx]) euScoreVec[rIdx] = sc
+          else if (sc < 0 && euScoreVec[rIdx] === 0) euScoreVec[rIdx] = sc
+        })
       })
-    })
+    }
 
     const colKeySet = new Set<string>()
-    bindingLaws.forEach(l => {
+    candidateLaws.forEach(l => {
       const k = lawColKey(l)
       if (k !== 'regional:EU') colKeySet.add(k)
     })
-    EU_MEMBER_COUNTRIES.forEach(c => colKeySet.add(c))
+    if (applyEuExpansion) EU_MEMBER_COUNTRIES.forEach(c => colKeySet.add(c))
     const cols = [...colKeySet].sort((a, b) => colSortKey(a).localeCompare(colSortKey(b)))
     const n    = cols.length
     const ci   = new Map(cols.map((c, i) => [c, i]))
 
     // scores[col][rule]: positive = adopted (3–4), negative (−1) = explicitly opposes, 0 = absent
     const scores: number[][] = Array.from({ length: n }, () => new Array(m).fill(0))
-    allRules.forEach((rule, rIdx) => {
+    substantiveRules.forEach((rule, rIdx) => {
       rule.instances.forEach(inst => {
+        if (!candidateIds.has(inst.law_id)) return
         const law = lawById.get(inst.law_id)
-        if (!law?.instrument_binding) return
+        if (!law) return
         const cIdx = ci.get(lawColKey(law))
         if (cIdx === undefined) return
         const sc = REL_SCORE[inst.relationship] ?? 0
@@ -268,19 +332,21 @@ export function SimilarityHeatmap() {
     })
 
     // EU expansion: apply EU baseline as floor for all 27 member state columns
-    const euMemberIdxs = cols.map((c, i) => EU_MEMBER_COUNTRIES.has(c) ? i : -1).filter(i => i >= 0)
-    for (let rIdx = 0; rIdx < m; rIdx++) {
-      const euSc = euScoreVec[rIdx]
-      if (euSc <= 0) continue
-      for (const mIdx of euMemberIdxs) {
-        if (scores[mIdx][rIdx] < euSc) scores[mIdx][rIdx] = euSc
+    if (applyEuExpansion) {
+      const euMemberIdxs = cols.map((c, i) => EU_MEMBER_COUNTRIES.has(c) ? i : -1).filter(i => i >= 0)
+      for (let rIdx = 0; rIdx < m; rIdx++) {
+        const euSc = euScoreVec[rIdx]
+        if (euSc <= 0) continue
+        for (const mIdx of euMemberIdxs) {
+          if (scores[mIdx][rIdx] < euSc) scores[mIdx][rIdx] = euSc
+        }
       }
     }
 
     // Columns with at-risk preemption status (US state laws that may be federally preempted)
     const atRiskCols = new Set<string>()
-    regulations.forEach(l => {
-      if ((l as any).preemption_status === 'at_risk' && l.instrument_binding) {
+    candidateLaws.forEach(l => {
+      if ((l as any).preemption_status === 'at_risk') {
         const k = lawColKey(l)
         if (ci.has(k)) atRiskCols.add(k)
       }
@@ -342,14 +408,28 @@ export function SimilarityHeatmap() {
       if (i !== j) { usSum += sim[i][j]; usCnt++ }
     const usStateAvg = usCnt ? usSum / usCnt : 0
 
-    return {
-      cols, simMatrix: sim, scores, atRiskCols,
-      insights: { globalAvg, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, avgSim },
+    // Per-region consistency: average pairwise similarity within each region
+    const regionScores: { region: string; avg: number; count: number }[] = []
+    for (const region of REGION_ORDER) {
+      const idxs = cols.map((_c, i) => colRegionOf[i] === region ? i : -1).filter(i => i >= 0)
+      if (idxs.length < 2) continue
+      let s = 0, cnt = 0
+      for (const i of idxs) for (const j of idxs) {
+        if (i !== j) { s += sim[i][j]; cnt++ }
+      }
+      regionScores.push({ region, avg: cnt ? s / cnt : 0, count: idxs.length })
     }
-  }, [])
+    regionScores.sort((a, b) => b.avg - a.avg)
+
+    return {
+      cols, simMatrix: sim, scores, atRiskCols, substantiveRules,
+      insights: { globalAvg, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, avgSim, regionScores },
+    }
+  }, [heatmapFilters])
 
   const n = cols.length
-  const { globalAvg, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg } = insights
+  const { globalAvg, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, regionScores } = insights
+  const activeRules = substantiveRules
 
   // ── ordered display ──
   const order = useMemo(
@@ -374,7 +454,7 @@ export function SimilarityHeatmap() {
     type RuleEntry = { ruleIdx: number; si: number; sj: number }
     const agreed: RuleEntry[] = [], onlyI: RuleEntry[] = [], onlyJ: RuleEntry[] = [], conflict: RuleEntry[] = []
 
-    for (let k = 0; k < allRules.length; k++) {
+    for (let k = 0; k < activeRules.length; k++) {
       const si = scores[i][k], sj = scores[j][k]
       const iCovered = si >= 3, jCovered = sj >= 3
       const iOpposes = si < 0, jOpposes = sj < 0
@@ -396,23 +476,40 @@ export function SimilarityHeatmap() {
   return (
     <div>
       {/* ── header + controls ── */}
-      <div className="flex items-start justify-between mb-4">
-        <div>
+      <div className="flex items-start justify-between mb-4 gap-4">
+        <div className="flex-shrink-0">
           <h2 className="text-sm font-semibold text-odl-text">Regulatory Convergence Map</h2>
           <p className="text-xs text-odl-muted mt-0.5">
-            Cosine similarity of jurisdiction coverage profiles · {n} jurisdictions · {allRules.length} rules · binding only
+            Cosine similarity of jurisdiction coverage profiles · {n} jurisdictions · {activeRules.length} substantive rules (of {allRules.length} total)
           </p>
         </div>
-        <div className="flex items-center gap-2">
-          <span className="text-xs text-odl-subtle">Order:</span>
-          {(['region', 'cluster'] as const).map(m => (
-            <button key={m} onClick={() => setSortMode(m)}
-              className={`px-2.5 py-1 text-xs rounded transition-colors ${
-                sortMode === m ? 'bg-odl-accent text-white' : 'text-odl-muted hover:text-odl-text border border-odl-border'
-              }`}>
-              {m === 'region' ? 'By Region' : 'Cluster'}
-            </button>
-          ))}
+        <div className="flex items-center gap-4 flex-wrap justify-end">
+          {/* instrument checkboxes */}
+          <div className="flex items-center gap-3 px-3 py-1.5 bg-white border border-odl-border rounded-md">
+            {(Object.keys(BUCKET_LABELS) as LawBucket[]).map(bucket => (
+              <label key={bucket} className="flex items-center gap-1.5 cursor-pointer select-none group" title={BUCKET_HINTS[bucket]}>
+                <div
+                  onClick={() => toggleBucket(bucket)}
+                  className={`relative w-7 h-4 rounded-full transition-colors flex-shrink-0 ${heatmapFilters[bucket] ? 'bg-odl-accent' : 'bg-odl-border'}`}
+                >
+                  <div className={`absolute top-0.5 left-0.5 w-3 h-3 rounded-full bg-white shadow-sm transition-transform ${heatmapFilters[bucket] ? 'translate-x-3' : ''}`} />
+                </div>
+                <span className="text-xs text-odl-muted group-hover:text-odl-text transition-colors whitespace-nowrap">{BUCKET_LABELS[bucket]}</span>
+              </label>
+            ))}
+          </div>
+          {/* sort mode */}
+          <div className="flex items-center gap-1.5">
+            <span className="text-xs text-odl-subtle">Order:</span>
+            {(['region', 'cluster'] as const).map(m => (
+              <button key={m} onClick={() => setSortMode(m)}
+                className={`px-2.5 py-1 text-xs rounded transition-colors ${
+                  sortMode === m ? 'bg-odl-accent text-white' : 'text-odl-muted hover:text-odl-text border border-odl-border bg-white'
+                }`}>
+                {m === 'region' ? 'By Region' : 'Cluster'}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -437,10 +534,20 @@ export function SimilarityHeatmap() {
           </div>
 
           <div className="px-4">
-            <div className="text-2xl font-semibold text-emerald-600">+{((withinAvg - crossAvg) * 100).toFixed(0)}pp</div>
-            <div className="text-[10px] text-odl-muted mt-0.5 leading-snug">
-              same-region pairs ({(withinAvg * 100).toFixed(0)}%) vs cross-region ({(crossAvg * 100).toFixed(0)}%)
+            <div className="text-[10px] font-semibold text-odl-text mb-1.5">Regional Consistency</div>
+            <div className="space-y-1">
+              {regionScores.slice(0, 4).map(({ region, avg, count }) => (
+                <div key={region} className="flex items-center gap-1.5">
+                  <span className="text-[9px] text-odl-muted truncate w-28 flex-shrink-0" title={region}>{region}</span>
+                  <div className="h-1.5 flex-1 bg-odl-surface rounded-full overflow-hidden">
+                    <div className="h-full rounded-full" style={{ width: `${avg * 100}%`, background: simToColor(avg) }} />
+                  </div>
+                  <span className="text-[9px] font-medium flex-shrink-0" style={{ color: simToColor(avg) }}>{(avg * 100).toFixed(0)}%</span>
+                  <span className="text-[8px] text-odl-subtle flex-shrink-0">({count})</span>
+                </div>
+              ))}
             </div>
+            <div className="text-[8px] text-odl-subtle mt-1">within-region avg · {(withinAvg * 100).toFixed(0)}% vs {(crossAvg * 100).toFixed(0)}% cross-region</div>
           </div>
 
           <div className="pl-4">
@@ -671,7 +778,7 @@ export function SimilarityHeatmap() {
                   const labelB = colLabel(cols[comparedPair.j])
 
                   function RuleCard({ ruleIdx, si, sj, borderColor }: { ruleIdx: number; si: number; sj: number; borderColor: string }) {
-                    const rule = allRules[ruleIdx]
+                    const rule = activeRules[ruleIdx]
                     const isExpanded = expanded.has(rule.rule_id)
                     const truncated = rule.rule_text.length > 100
                     return (
@@ -717,7 +824,7 @@ export function SimilarityHeatmap() {
                             Agreement · {comparison.agreed.length} rules
                           </div>
                           <div className="space-y-2">
-                            {comparison.agreed.map(e => <RuleCard key={allRules[e.ruleIdx].rule_id} {...e} borderColor="#6EE7B7" />)}
+                            {comparison.agreed.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#6EE7B7" />)}
                           </div>
                         </div>
                       )}
@@ -729,7 +836,7 @@ export function SimilarityHeatmap() {
                             Disagreement · {comparison.conflict.length} rules
                           </div>
                           <div className="space-y-2">
-                            {comparison.conflict.map(e => <RuleCard key={allRules[e.ruleIdx].rule_id} {...e} borderColor="#FCA5A5" />)}
+                            {comparison.conflict.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#FCA5A5" />)}
                           </div>
                         </div>
                       )}
@@ -741,7 +848,7 @@ export function SimilarityHeatmap() {
                             Unique to {labelA} · {comparison.onlyI.length} rules
                           </div>
                           <div className="space-y-2">
-                            {comparison.onlyI.map(e => <RuleCard key={allRules[e.ruleIdx].rule_id} {...e} borderColor="#93C5FD" />)}
+                            {comparison.onlyI.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#93C5FD" />)}
                           </div>
                         </div>
                       )}
@@ -753,7 +860,7 @@ export function SimilarityHeatmap() {
                             Unique to {labelB} · {comparison.onlyJ.length} rules
                           </div>
                           <div className="space-y-2">
-                            {comparison.onlyJ.map(e => <RuleCard key={allRules[e.ruleIdx].rule_id} {...e} borderColor="#FCD34D" />)}
+                            {comparison.onlyJ.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#FCD34D" />)}
                           </div>
                         </div>
                       )}
@@ -772,7 +879,7 @@ export function SimilarityHeatmap() {
         const sv = simMatrix[i][j]
         // find top shared rules (both score ≥ 3) for the tooltip
         const sharedRules: { ruleIdx: number; si: number; sj: number }[] = []
-        for (let k = 0; k < allRules.length; k++) {
+        for (let k = 0; k < activeRules.length; k++) {
           const si = scores[i][k], sj = scores[j][k]
           if (si >= 3 && sj >= 3) sharedRules.push({ ruleIdx: k, si, sj })
         }
@@ -811,7 +918,7 @@ export function SimilarityHeatmap() {
                 </div>
                 <div className="space-y-1.5 mb-2">
                   {sharedRules.slice(0, 3).map(({ ruleIdx, si, sj }) => {
-                    const rule = allRules[ruleIdx]
+                    const rule = activeRules[ruleIdx]
                     return (
                       <div key={rule.rule_id} className="text-[10px]">
                         <div className="text-[8px] text-emerald-600 font-medium">

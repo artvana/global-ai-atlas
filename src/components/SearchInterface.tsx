@@ -13,6 +13,7 @@ const EMPTY_FILTERS: FilterState = {
   category: '',
   status: '',
   legal_family: '',
+  instrument_type: '',
   private_right_of_action: false,
   ai_specific: false,
   instrument_binding: false,
@@ -36,8 +37,15 @@ const fuse = new Fuse(regulations, {
   includeScore: true,
 })
 
+function csvCell(v: unknown): string {
+  const s = v == null ? '' : String(v)
+  // Quote every cell — prevents injection and handles embedded commas/newlines
+  return `"${s.replace(/"/g, '""')}"`
+}
+
 function exportCSV(laws: AILaw[]) {
-  const provKeys = Object.keys(laws[0]?.provisions ?? {}).filter(k => k !== 'anti_discrimination_standard')
+  if (laws.length === 0) return
+  const provKeys = Object.keys(laws[0].provisions).filter(k => k !== 'anti_discrimination_standard')
   const headers = [
     'id','short_name','jurisdiction','jurisdiction_type','region',
     'instrument_type','bill_number','enacted_date','effective_date','status',
@@ -48,15 +56,15 @@ function exportCSV(laws: AILaw[]) {
   ]
   const rows = laws.map(l => [
     l.id, l.short_name, l.jurisdiction, l.jurisdiction_type, l.region,
-    l.instrument_type, l.bill_number ?? '', l.enacted_date, l.effective_date ?? '', l.status,
+    l.instrument_type, l.bill_number, l.enacted_date, l.effective_date, l.status,
     l.primary_category, l.scope, l.legal_family, l.ai_specific, l.instrument_binding,
-    l.max_penalty ?? '', l.max_penalty_usd_approx ?? '',
+    l.max_penalty, l.max_penalty_usd_approx,
     l.provisions.private_right_of_action, l.preemption_status, l.official_text_url, l.last_verified,
-    `"${l.summary.replace(/"/g, '""')}"`,
+    l.summary,
     ...provKeys.map(k => (l.provisions as unknown as Record<string, unknown>)[k]),
-  ])
-  const csv = [headers.join(','), ...rows.map(r => r.join(','))].join('\n')
-  const blob = new Blob([csv], { type: 'text/csv' })
+  ].map(csvCell))
+  const csv = [headers.map(csvCell).join(','), ...rows.map(r => r.join(','))].join('\n')
+  const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8' })
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a'); a.href = url; a.download = 'ai-regulations.csv'; a.click()
   URL.revokeObjectURL(url)
@@ -87,11 +95,15 @@ export function SearchInterface() {
     } else {
       results = [...regulations]
     }
-    if (filters.country) results = results.filter(l => l.country === filters.country)
+    if (filters.country) results = results.filter(l =>
+      l.country === filters.country ||
+      (l.applies_in && l.applies_in.includes(filters.country))
+    )
     if (filters.state) results = results.filter(l => l.jurisdiction === filters.state)
     if (filters.category) results = results.filter(l => l.categories.includes(filters.category as AILaw['primary_category']))
     if (filters.status) results = results.filter(l => l.status === filters.status)
     if (filters.legal_family) results = results.filter(l => l.legal_family === filters.legal_family)
+    if (filters.instrument_type) results = results.filter(l => l.instrument_type === filters.instrument_type)
     if (filters.private_right_of_action) results = results.filter(l => l.provisions.private_right_of_action)
     if (filters.ai_specific) results = results.filter(l => l.ai_specific)
     if (filters.instrument_binding) results = results.filter(l => l.instrument_binding)

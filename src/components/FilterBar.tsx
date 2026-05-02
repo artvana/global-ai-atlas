@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import type { FilterState } from '../types'
-import { CATEGORY_LABELS, STATUS_LABELS, LEGAL_FAMILY_LABELS } from '../data/regulations'
+import { CATEGORY_LABELS, STATUS_LABELS, LEGAL_FAMILY_LABELS, INSTRUMENT_TYPE_LABELS } from '../data/regulations'
 import { regulations } from '../data/regulations'
 
 interface Props {
@@ -13,15 +13,18 @@ const selectCls = 'bg-white border border-odl-border text-odl-text rounded-md px
 
 function Toggle({ label, checked, onChange }: { label: string; checked: boolean; onChange: (v: boolean) => void }) {
   return (
-    <label className="flex items-center gap-1.5 cursor-pointer select-none group">
-      <div
-        onClick={() => onChange(!checked)}
-        className={`relative w-7 h-4 rounded-full transition-colors flex-shrink-0 ${checked ? 'bg-odl-accent' : 'bg-odl-border'}`}
-      >
+    <button
+      type="button"
+      role="switch"
+      aria-checked={checked}
+      onClick={() => onChange(!checked)}
+      className="flex items-center gap-1.5 cursor-pointer select-none group bg-transparent border-0 p-0"
+    >
+      <div className={`relative w-7 h-4 rounded-full transition-colors flex-shrink-0 ${checked ? 'bg-odl-accent' : 'bg-odl-border'}`}>
         <div className={`absolute top-0.5 left-0.5 w-3 h-3 rounded-full bg-white shadow-sm transition-transform ${checked ? 'translate-x-3' : ''}`} />
       </div>
       <span className="text-xs text-odl-muted group-hover:text-odl-text transition-colors">{label}</span>
-    </label>
+    </button>
   )
 }
 
@@ -65,8 +68,8 @@ export function FilterBar({ filters, onChange, onReset }: Props) {
 
   const hasActive =
     filters.country !== '' || filters.state !== '' || filters.category !== '' ||
-    filters.status !== '' || filters.legal_family !== '' || filters.private_right_of_action ||
-    filters.ai_specific || filters.instrument_binding ||
+    filters.status !== '' || filters.legal_family !== '' || filters.instrument_type !== '' ||
+    filters.private_right_of_action || filters.ai_specific || filters.instrument_binding ||
     filters.effective_date_from !== '' || filters.effective_date_to !== ''
 
   return (
@@ -104,6 +107,13 @@ export function FilterBar({ filters, onChange, onReset }: Props) {
       <select value={filters.legal_family} onChange={e => set('legal_family', e.target.value as FilterState['legal_family'])} className={selectCls}>
         <option value="">All Legislative Genealogies</option>
         {Object.entries(LEGAL_FAMILY_LABELS).map(([k, v]) => (
+          <option key={k} value={k}>{v}</option>
+        ))}
+      </select>
+
+      <select value={filters.instrument_type} onChange={e => set('instrument_type', e.target.value as FilterState['instrument_type'])} className={selectCls}>
+        <option value="">All Instrument Types</option>
+        {Object.entries(INSTRUMENT_TYPE_LABELS).map(([k, v]) => (
           <option key={k} value={k}>{v}</option>
         ))}
       </select>

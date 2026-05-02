@@ -5,6 +5,7 @@ import { EnforcementView } from './components/EnforcementView'
 import { MCPDocs } from './components/MCPDocs'
 import { SimilarityHeatmap } from './components/SimilarityHeatmap'
 import { regulations } from './data/regulations'
+import enforcementData from '../data/enforcement.json'
 
 // Lazy-load the map so a react-simple-maps compat error doesn't crash the whole app
 const GAIAMap = lazy(() => import('./components/GAIAMap').then(m => ({ default: m.GAIAMap })))
@@ -20,9 +21,14 @@ const TAB_LABELS: Record<Tab, string> = {
   mcp:         'MCP Server',
 }
 
-class ErrorBoundary extends Component<{ children: ReactNode }, { error: Error | null }> {
+class ErrorBoundary extends Component<{ children: ReactNode; resetKey?: string }, { error: Error | null }> {
   state = { error: null }
   static getDerivedStateFromError(error: Error) { return { error } }
+  componentDidUpdate(prev: { resetKey?: string }) {
+    if (prev.resetKey !== this.props.resetKey && this.state.error) {
+      this.setState({ error: null })
+    }
+  }
   render() {
     if (this.state.error) {
       return (
@@ -66,25 +72,25 @@ function App() {
             </nav>
           </div>
           <div className="flex items-center gap-4 text-xs text-odl-subtle">
-            <span>{regulations.length} instruments · 23 enforcement actions</span>
+            <span>{regulations.length} instruments · {(enforcementData as unknown[]).length} enforcement actions</span>
             <span>Updated Apr 2026</span>
           </div>
         </div>
       </header>
 
       <main className="max-w-screen-xl mx-auto px-6 py-6">
-        <ErrorBoundary>
-          {tab === 'convergence' && <SimilarityHeatmap />}
-          {tab === 'laws'        && <SearchInterface />}
-          {tab === 'map'         && (
+        {tab === 'convergence' && <ErrorBoundary resetKey="convergence"><SimilarityHeatmap /></ErrorBoundary>}
+        {tab === 'laws'        && <ErrorBoundary resetKey="laws"><SearchInterface /></ErrorBoundary>}
+        {tab === 'map'         && (
+          <ErrorBoundary resetKey="map">
             <Suspense fallback={<div className="py-16 text-center text-xs text-odl-subtle">Loading map…</div>}>
               <GAIAMap />
             </Suspense>
-          )}
-          {tab === 'stats'       && <AnalysisCharts laws={regulations} />}
-          {tab === 'enforcement' && <EnforcementView />}
-          {tab === 'mcp'         && <MCPDocs />}
-        </ErrorBoundary>
+          </ErrorBoundary>
+        )}
+        {tab === 'stats'       && <ErrorBoundary resetKey="stats"><AnalysisCharts laws={regulations} /></ErrorBoundary>}
+        {tab === 'enforcement' && <ErrorBoundary resetKey="enforcement"><EnforcementView /></ErrorBoundary>}
+        {tab === 'mcp'         && <ErrorBoundary resetKey="mcp"><MCPDocs /></ErrorBoundary>}
       </main>
 
       <footer className="border-t border-odl-border mt-16 py-6">

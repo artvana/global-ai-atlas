@@ -397,7 +397,9 @@ export function LawDetail({ law, onClose }: Props) {
             <section>
               <SectionHeading>Sources</SectionHeading>
               <Row label="Official Text">
-                <a href={law.official_text_url} target="_blank" rel="noreferrer" className="odl-link break-all">{law.official_text_url}</a>
+                {law.official_text_url
+                  ? <a href={law.official_text_url} target="_blank" rel="noreferrer" className="odl-link break-all">{law.official_text_url}</a>
+                  : <span className="text-odl-subtle">Not available</span>}
               </Row>
               {law.summary_url && (
                 <Row label="Summary">

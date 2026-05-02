@@ -1,11 +1,14 @@
 /**
  * extract-rules.ts
  *
- * Processes all 164 laws chronologically and builds data/rules.json.
+ * Processes all laws chronologically and builds data/rules.json.
  * For each law it:
  *   1. Extracts every distinct legal rule (using the law's full text if available,
  *      otherwise falls back to summary + key_obligations).
- *   2. Compares extracted rules against rules already in the database.
+ *   2. Groups extracted rules by category, then matches each group against only
+ *      the existing rules in that same category (category-first matching).
+ *      This keeps each matching prompt focused (~50-80 rules) instead of sending
+ *      all 1,000+ rules, improving accuracy and reducing token cost.
  *   3. Adds each rule as a new row (if genuinely new) or appends an instance
  *      (agrees / similar / opposed) to the matching existing rule.
  *
@@ -35,7 +38,7 @@ const TEXTS_DIR        = path.join(PROJECT_ROOT, 'data', 'texts')
 
 // ── types ─────────────────────────────────────────────────────────────────────
 
-type RuleRelationship = 'origin' | 'agrees' | 'similar' | 'opposed'
+type RuleRelationship = 'origin' | 'identical' | 'agrees' | 'similar' | 'opposed'
 
 interface RuleLawInstance {
   law_id: string
@@ -85,17 +88,13 @@ interface ExtractedRule {
 }
 
 interface MatchResult {
-  index: number
-  citation?: string
+  index: number           // position in the category-local extracted list
   matched_rule_id: string | null
   relationship: 'identical' | 'agrees' | 'similar' | 'opposed' | null
   variant_of?: string
   notes: string
   is_new: boolean
-  rule_text?: string
-  rule_text_technical?: string
   category?: string
-  tags?: string[]
 }
 
 // ── helpers ───────────────────────────────────────────────────────────────────
@@ -117,7 +116,6 @@ function readFullText(law: Law): string | null {
   if (!resolved.startsWith(PROJECT_ROOT + path.sep)) return null
   try {
     const text = fs.readFileSync(resolved, 'utf8')
-    // Reject placeholder files and fetch-error stubs
     if (text.length < MIN_TEXT_LENGTH) return null
     if (text.includes('Text not yet available') || text.includes('Text pending')) return null
     return text
@@ -188,35 +186,46 @@ For each rule, output a JSON object:
   "citation": "the specific article/section reference, e.g. '§ 15(b)' or 'Art. 5(1)(h)'",
   "rule_text": "plain English, 1-2 sentences, using 'You must...', 'You cannot...', or 'Individuals have the right to...' framing. Assume the reader is a business or policy-maker subject to this law.",
   "rule_text_technical": "precise legal framing preserving all qualifications and conditions",
-  "category": "one of: biometric_data | prohibited_uses | impact_assessment | human_review | data_rights | transparency | synthetic_media | enforcement | risk_classification | training_data | foundation_models | consent | employment_ai | general_governance",
+  "category": "one of: biometric_data | prohibited_applications | conformity_assessment | human_oversight | data_subject_rights | disclosure | enforcement_penalties | risk_classification | training_data_quality | foundation_models | consent | employment_ai | synthetic_media | accountability_governance | data_provenance | private_redress | registration_notification | explainability | technical_documentation | institutional_framework | definitions_scope",
   "tags": ["array of 3-6 lowercase snake_case keywords"]
 }
+
+Category guidance for the two structural categories:
+- Use "definitions_scope" for: definitions of key terms (AI system, high-risk AI, deployer, etc.), territorial/extraterritorial scope rules, who the law applies to, exemptions and carve-outs (SMEs, open-source, R&D, national security).
+- Use "institutional_framework" for: establishing or designating regulatory/supervisory bodies, AI offices, sandboxes, advisory committees, inter-agency coordination, international cooperation between regulators.
+- Do NOT use these for substantive obligations — a requirement that a regulator must conduct audits is "conformity_assessment", not "institutional_framework".
 
 Return ONLY a valid JSON array of rule objects. No commentary, no markdown fences. If the law is a pure policy framework with no enforceable rules, return an empty array [].`
 }
 
-// ── matching prompt ───────────────────────────────────────────────────────────
+// ── category-first matching prompt ────────────────────────────────────────────
+// Called once per category group — only passes existing rules in that category.
 
-function buildMatchingPrompt(law: Law, extracted: ExtractedRule[], existing: Rule[]): string {
-  const existingList = existing.map(r =>
-    `  { "rule_id": "${r.rule_id}", "first_law": "${r.first_instance.law_id}", "rule_text": "${r.rule_text.slice(0, 120).replace(/"/g, "'")}" }`
+function buildCategoryMatchingPrompt(
+  law: Law,
+  categoryRules: ExtractedRule[],
+  existingInCategory: Rule[],
+  categoryLabel: string
+): string {
+  const existingList = existingInCategory.map(r =>
+    `  { "rule_id": "${r.rule_id}", "first_law": "${r.first_instance.law_id}", "rule_text": "${r.rule_text.slice(0, 150).replace(/"/g, "'")}" }`
   ).join('\n')
 
-  const newList = extracted.map((r, i) =>
-    `  [${i}] citation="${r.citation}" rule_text="${r.rule_text.slice(0, 120).replace(/"/g, "'")}"`
+  const newList = categoryRules.map((r, i) =>
+    `  [${i}] citation="${r.citation}" rule_text="${r.rule_text.slice(0, 150).replace(/"/g, "'")}"`
   ).join('\n')
 
   const instrumentNote = law.instrument_binding === false
     ? `NOTE: This is a SOFT LAW / VOLUNTARY instrument (${law.instrument_type}). Its rules are recommendations, not binding mandates. When matching to existing rules from binding laws, use "similar" rather than "agrees" unless the voluntary standard is substantively identical in scope and content.`
     : `NOTE: This is a BINDING LEGAL INSTRUMENT (${law.instrument_type ?? 'statute'}).`
 
-  return `You are maintaining a cross-jurisdictional AI-law rules database. Below are rules already in the database, followed by rules newly extracted from a new law.
+  return `You are maintaining a cross-jurisdictional AI-law rules database. All rules below belong to the category: "${categoryLabel}".
 
-For each newly extracted rule, determine whether it matches an existing rule and what the relationship is.
+For each newly extracted rule, determine whether it matches an existing rule in this category and what the relationship is.
 
 RELATIONSHIP TYPES (use the most precise one):
-- "identical": near-verbatim copy or copy-paste adoption — the new law's text is functionally the same as an existing rule, just reworded slightly. Use when the law clearly borrowed directly from another.
-- "agrees": independently adopted the same substantive requirement, but drafted it differently (different phrasing, structure, or minor scope variation). Use even if one is binding and one is voluntary, as long as the substantive standard is the same.
+- "identical": near-verbatim copy or copy-paste adoption — the new law's text is functionally the same as an existing rule. Use when the law clearly borrowed directly from another.
+- "agrees": independently adopted the same substantive requirement, but drafted it differently (different phrasing, structure, or minor scope variation).
 - "similar": same underlying concept but with meaningful differences in standard, threshold, coverage, or burden. Use when comparing binding vs. voluntary instruments where scope or obligation level differs significantly.
 - "opposed": explicitly contradicts or rejects the premise of the existing rule.
 - null: genuinely new rule not yet in the database.
@@ -227,10 +236,10 @@ ${instrumentNote}
 
 New law: ${law.full_name} (${law.jurisdiction}, ${law.enacted_date})
 
-EXISTING RULES (${existing.length}):
-${existingList || '  (none yet)'}
+EXISTING RULES IN CATEGORY "${categoryLabel}" (${existingInCategory.length}):
+${existingList || '  (none yet — all rules in this category will be new)'}
 
-NEW RULES FROM THIS LAW (${extracted.length}):
+NEW RULES FROM THIS LAW IN THIS CATEGORY (${categoryRules.length}):
 ${newList}
 
 Return a JSON array, one object per new rule, in the same order:
@@ -241,12 +250,79 @@ Return a JSON array, one object per new rule, in the same order:
     "relationship": "identical" | "agrees" | "similar" | "opposed" | null,
     "variant_of": "<first_law id, only when relationship is identical>",
     "notes": "one sentence on what matches, what differs, or what is new",
-    "is_new": true | false,
-    "category": "<required when is_new is true>"
+    "is_new": true | false
   }
 ]
 
 Return ONLY valid JSON. No markdown, no commentary.`
+}
+
+// ── category-first matching ───────────────────────────────────────────────────
+
+async function matchByCategoryFirst(
+  client: Anthropic,
+  law: Law,
+  extracted: ExtractedRule[],
+  rulesByCategory: Map<string, Rule[]>
+): Promise<MatchResult[]> {
+  // Group extracted rules by their category (assigned during extraction)
+  const grouped = new Map<string, { globalIdx: number; rule: ExtractedRule }[]>()
+  for (let i = 0; i < extracted.length; i++) {
+    const cat = extracted[i].category
+    if (!grouped.has(cat)) grouped.set(cat, [])
+    grouped.get(cat)!.push({ globalIdx: i, rule: extracted[i] })
+  }
+
+  const categories = [...grouped.keys()]
+  console.log(`  Matching across ${categories.length} categories: ${categories.join(', ')}`)
+
+  // Run all category matching calls in parallel
+  const categoryResults = await Promise.all(
+    categories.map(async cat => {
+      const group = grouped.get(cat)!
+      const existingInCat = rulesByCategory.get(cat) ?? []
+      const categoryLabel = cat
+
+      const prompt = buildCategoryMatchingPrompt(
+        law,
+        group.map(g => g.rule),
+        existingInCat,
+        categoryLabel
+      )
+
+      const rawMatches = await callWithRetry(async () => {
+        const msg = await client.messages.create({
+          model: 'claude-sonnet-4-6',
+          max_tokens: 8000,
+          messages: [{ role: 'user', content: prompt }],
+        })
+        const content = msg.content[0]
+        return content.type === 'text' ? content.text : ''
+      })
+
+      const jsonStart = rawMatches.indexOf('[')
+      const jsonEnd = rawMatches.lastIndexOf(']')
+      if (jsonStart < 0 || jsonEnd <= jsonStart) return []
+
+      const catMatches = JSON.parse(rawMatches.slice(jsonStart, jsonEnd + 1)) as Array<{
+        index: number
+        matched_rule_id: string | null
+        relationship: MatchResult['relationship']
+        variant_of?: string
+        notes: string
+        is_new: boolean
+      }>
+
+      // Remap category-local indices to global indices
+      return catMatches.map(m => ({
+        ...m,
+        index: group[m.index]?.globalIdx ?? m.index,
+        category: cat,
+      })) as MatchResult[]
+    })
+  )
+
+  return categoryResults.flat()
 }
 
 // ── main ──────────────────────────────────────────────────────────────────────
@@ -264,10 +340,10 @@ async function main() {
   const rawRegs = readJSON<Law[] | { regulations: Law[] }>(REGULATIONS_PATH, [])
   const allLaws: Law[] = Array.isArray(rawRegs) ? rawRegs : rawRegs.regulations
 
-  // Sort chronologically
+  // Sort chronologically; laws with no enacted_date sort to the end
   const laws = allLaws
     .filter(l => l.status !== 'superseded' && l.status !== 'failed')
-    .sort((a, b) => a.enacted_date.localeCompare(b.enacted_date))
+    .sort((a, b) => (a.enacted_date ?? '9999').localeCompare(b.enacted_date ?? '9999'))
 
   // Load existing rules
   let rules: Rule[] = readJSON<Rule[]>(RULES_PATH, [])
@@ -303,7 +379,6 @@ async function main() {
         return content.type === 'text' ? content.text : ''
       })
 
-      // Parse JSON, tolerating minor formatting issues
       const jsonStart = rawExtraction.indexOf('[')
       const jsonEnd = rawExtraction.lastIndexOf(']')
       if (jsonStart >= 0 && jsonEnd > jsonStart) {
@@ -312,7 +387,6 @@ async function main() {
       console.log(`  Extracted ${extracted.length} rules`)
     } catch (err) {
       console.error(`  Failed to extract rules: ${err}`)
-      // Mark as processed so we don't retry in a loop
       processed.add(law.id)
       writeJSON(PROGRESS_PATH, { processed: [...processed] })
       continue
@@ -325,25 +399,16 @@ async function main() {
       continue
     }
 
-    // Step 2: Match extracted rules against existing database
+    // Step 2: Category-first matching — build per-category index, then match in parallel
+    const rulesByCategory = new Map<string, Rule[]>()
+    for (const rule of rules) {
+      if (!rulesByCategory.has(rule.category)) rulesByCategory.set(rule.category, [])
+      rulesByCategory.get(rule.category)!.push(rule)
+    }
+
     let matches: MatchResult[] = []
     try {
-      const matchingPrompt = buildMatchingPrompt(law, extracted, rules)
-      const rawMatches = await callWithRetry(async () => {
-        const msg = await client.messages.create({
-          model: 'claude-sonnet-4-6',
-          max_tokens: 16000,
-          messages: [{ role: 'user', content: matchingPrompt }],
-        })
-        const content = msg.content[0]
-        return content.type === 'text' ? content.text : ''
-      })
-
-      const jsonStart = rawMatches.indexOf('[')
-      const jsonEnd = rawMatches.lastIndexOf(']')
-      if (jsonStart >= 0 && jsonEnd > jsonStart) {
-        matches = JSON.parse(rawMatches.slice(jsonStart, jsonEnd + 1)) as MatchResult[]
-      }
+      matches = await matchByCategoryFirst(client, law, extracted, rulesByCategory)
     } catch (err) {
       console.error(`  Failed to match rules: ${err}`)
       processed.add(law.id)
@@ -357,7 +422,7 @@ async function main() {
 
     for (let j = 0; j < extracted.length; j++) {
       const ext = extracted[j]
-      const match = matches.find(m => m.index === j) ?? matches[j]
+      const match = matches.find(m => m.index === j)
 
       if (!match) continue
 
@@ -389,7 +454,6 @@ async function main() {
       } else {
         // New rule — add it with this law as the origin
         const ruleId = makeRuleId(law.id, ext.citation)
-        // Avoid duplicate rule IDs
         if (rules.some(r => r.rule_id === ruleId)) continue
 
         const newRule: Rule = {
@@ -434,9 +498,7 @@ async function main() {
 
   console.log()
   console.log(`Done. rules.json now contains ${rules.length} rules across ${processed.size} processed laws.`)
-  console.log('Generating embeddings for all rules...')
   console.log('Run "npm run embed-rules" to generate/refresh embeddings separately.')
-  console.log('This enables semantic similarity search in the UI.')
 }
 
 main().catch(err => {

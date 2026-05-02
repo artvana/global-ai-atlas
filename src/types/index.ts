@@ -15,17 +15,21 @@ export type JurisdictionType = 'supranational' | 'national' | 'subnational' | 'a
 
 export type InstrumentType = 'statute' | 'regulation' | 'executive_order' | 'agency_rule' | 'treaty' | 'policy_framework' | 'voluntary_framework' | 'guidance'
 
-export type Status = 'in_force' | 'enacted_not_yet_effective' | 'superseded' | 'failed'
+export type Status = 'in_force' | 'enacted_not_yet_effective' | 'superseded' | 'failed' | 'withdrawn' | 'pending' | 'draft'
 
-export type WhoRegulated = 'developers' | 'deployers' | 'government_only' | 'platforms'
+export type WhoRegulated = 'developers' | 'deployers' | 'government_only' | 'platforms' | 'governments' | 'researchers' | 'universities' | 'cloud_providers' | 'critical_infrastructure_owners'
 
 export type Scope = 'comprehensive' | 'sector_specific' | 'single_issue'
 
 export type LegalFamily =
   | 'eu_risk_based'
   | 'us_consumer_protection'
+  | 'us_administrative'
   | 'china_state_sovereignty'
+  | 'chinese_regulatory'
   | 'uk_non_model'
+  | 'common_law'
+  | 'soft_law'
   | 'hybrid'
   | 'standalone'
 
@@ -249,7 +253,7 @@ export interface AILaw {
   legal_family: LegalFamily
   inspired_by: string[]
   influenced: string[]
-  official_text_url: string
+  official_text_url: string | null
   summary_url: string | null
   last_verified: string
   summary: string
@@ -271,6 +275,8 @@ export interface AILaw {
   // Issue-level structured analysis
   issue_positions?: IssuePositions
   background?: LawBackground
+  // For supranational instruments (EU Regulations): countries where directly applicable
+  applies_in?: string[]
 }
 
 export interface GuidanceDoc {
@@ -361,7 +367,8 @@ export type RuleCategory =
   | 'employment_ai'
   // Institutional & Enforcement
   | 'accountability_governance'
-  | 'general_governance'
+  | 'institutional_framework'
+  | 'definitions_scope'
   | 'enforcement_penalties'
   | 'private_redress'
 
@@ -390,7 +397,8 @@ export const RULE_CATEGORY_LABELS: Record<RuleCategory, string> = {
   employment_ai:             'AI in Employment & the Workplace',
   // Institutional & Enforcement
   accountability_governance: 'Accountability & Governance Obligations',
-  general_governance:        'Jurisdictional Scope & Definitions',
+  institutional_framework:   'Regulatory Bodies & Institutional Architecture',
+  definitions_scope:         'Definitions, Scope & Exemptions',
   enforcement_penalties:     'Enforcement Powers & Penalties',
   private_redress:           'Civil Liability & Private Redress',
 }
@@ -444,6 +452,7 @@ export interface FilterState {
   category: Category | ''
   status: Status | ''
   legal_family: LegalFamily | ''
+  instrument_type: InstrumentType | ''
   private_right_of_action: boolean
   ai_specific: boolean
   instrument_binding: boolean

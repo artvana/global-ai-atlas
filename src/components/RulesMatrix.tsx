@@ -63,7 +63,6 @@ const CAT_COLOR: Partial<Record<RuleCategory, string>> = {
   employment_ai:             '#7C3AED',
   // Institutional & Enforcement
   accountability_governance: '#475569',
-  general_governance:        '#64748B',
   enforcement_penalties:     '#B45309',
   private_redress:           '#92400E',
 }
