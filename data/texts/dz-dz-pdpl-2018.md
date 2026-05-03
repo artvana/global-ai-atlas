@@ -6,6 +6,7 @@ jurisdiction: Algeria
 enacted_date: 2018-06-10
 status: in_force
 official_url: https://www.joradp.dz/
+text_status: paraphrase
 fetched_date: 2026-05-01
 ---
 

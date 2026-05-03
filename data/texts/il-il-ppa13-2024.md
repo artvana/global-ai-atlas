@@ -1,233 +1,456 @@
 ---
 id: il-il-ppa13-2024
-title: "Privacy Protection Law Amendment No. 13 (Israel, 2024)"
-short_name: "Israel Privacy Amendment No. 13 (2024)"
-jurisdiction: Israel
-enacted_date: 2024-08-05
-effective_date: 2025-08-14
-status: in_force
-official_url: https://www.gov.il/en/pages/privacy-protection-law-amendment-13
-fetched_date: 2026-04-29
+source_url: https://www.nevo.co.il/law_html/law01/500_001.htm
+fetched_date: 2026-05-02
+content_type: html
 ---
 
-> **Note:** Full statutory text is available in Hebrew through the Israeli Ministry of Justice (Sefer Ha-Chukkim). The following is a comprehensive English-language summary based on the enacted Amendment, official Israeli Privacy Protection Authority (PPA) guidance, and public legislative record.
-
----
-
-## Privacy Protection Law Amendment No. 13 (2024)
-### (תיקון מס' 13 לחוק הגנת הפרטיות, תשמ"א-1981)
-
-**Israeli Knesset (הכנסת)**
-**Sefer Ha-Chukkim, 2024**
-**Enacted:** August 5, 2024 | **Effective:** August 14, 2025
-
----
-
-## Overview
-
-Amendment No. 13 to Israel's Privacy Protection Law 5741-1981 is a sweeping modernization of Israel's foundational data protection framework, enacted after more than a decade of reform efforts. The Amendment brings Israel's privacy law into closer alignment with GDPR-era standards while introducing several provisions that are ahead of most GDPR-aligned jurisdictions — particularly in the area of AI training data and automated decision-making.
-
-Amendment No. 13 is significant internationally as one of the first national data protection laws to explicitly address:
-1. Unauthorized scraping of personal data from the internet for AI model training;
-2. Mandatory transparency and accountability for AI-based automated decision-making;
-3. Privacy impact assessments for high-risk automated processing.
-
-The Amendment does not create a standalone AI law; rather, it integrates AI-specific obligations directly into Israel's general data protection framework — treating AI as a particularly significant mode of personal data processing rather than a sui generis category.
-
----
-
-## Legislative Background
-
-Israel's Privacy Protection Law 5741-1981 was enacted over 40 years ago, long before the internet, cloud computing, or artificial intelligence became central features of data processing. The law was last substantially amended in 1996 (Amendment No. 7), leaving a significant gap between Israel's legal framework and the data processing realities of the 2020s.
-
-Amendment No. 13 was initiated by the Israeli government in 2019 and underwent extensive parliamentary review, with particular attention to AI implications after 2021. The Privacy Protection Authority (PPA/Reshut HaGishut L'Prtiyut) played a central role in developing the AI-specific provisions, drawing on comparative analysis of GDPR, the UK Data Protection Act 2018, and early drafts of the EU AI Act.
-
-The Amendment was enacted by the Knesset on August 5, 2024, with a one-year transition period before most provisions took effect.
-
----
-
-## Key Provisions
-
-### Chapter I — Definitions and Scope
-
-**Amended Definitions:**
-
-**Database (Maadar)** — Amended to cover any systematic collection of personal data, regardless of technological form, including cloud-based, distributed, and AI-training datasets.
-
-**Processing (Ibbud)** — Expanded to explicitly include: collection, recording, organization, structuring, storage, adaptation, alteration, retrieval, consultation, use, disclosure, dissemination, alignment, combination, restriction, erasure, and destruction of personal data — and specifically including use of personal data to train, fine-tune, or otherwise develop artificial intelligence or machine learning models.
-
-**Automated Decision-Making (Qabbalat Hachlatot Automatit)** — Any decision made solely or predominantly through automated processing of personal data, including profiling, that produces legal or similarly significant effects concerning an individual, or that materially affects the individual's interests, rights, or opportunities.
-
-**High-Risk Processing** — Processing that, by reason of its nature, scope, context, or purposes, is likely to result in significant risk to the privacy, rights, or interests of individuals. Explicitly includes: AI training using scraped internet data; automated profiling for employment, credit, insurance, or healthcare decisions; large-scale processing of sensitive personal data; and systematic monitoring of publicly accessible spaces.
-
-**Personal Data Scraping (Gsireya)** — The automated collection of personal data from publicly accessible online sources, including social media, public profiles, news archives, forums, and other internet sources.
-
----
-
-### Chapter II — Lawful Basis for Processing
-
-Amendment No. 13 restructures the grounds for lawful processing of personal data, moving from a broadly permissive framework toward a stricter purpose-limitation approach:
-
-1. **Consent** — Must be informed, specific, freely given, and unambiguous. Pre-ticked boxes and implied consent do not constitute valid consent. Consent may be withdrawn at any time.
-
-2. **Contract** — Processing necessary for the performance of a contract to which the individual is a party.
-
-3. **Legal Obligation** — Processing required to comply with a legal obligation.
-
-4. **Vital Interests** — Processing necessary to protect the vital interests of the individual or another person.
-
-5. **Legitimate Interest (New)** — Processing necessary for legitimate interests pursued by the data controller, provided those interests are not overridden by the individual's rights and expectations. A balancing test must be conducted and documented.
-
-**Prohibition on Scraping for AI Training:**
-
-A new provision (Section 17B) explicitly prohibits the processing of personal data scraped from publicly accessible internet sources for the purpose of training artificial intelligence models, unless:
-- The data subjects have given explicit consent to such use;
-- The processing falls within a narrowly construed research exception (academic research, with ethics board approval and no commercial AI application);
-- The data is genuinely public (e.g., official government publications) and does not concern private individuals' personal information.
-
-This provision makes Israel one of the first jurisdictions to codify a prohibition on unauthorized AI training data scraping at the national law level.
-
----
-
-### Chapter III — Rights of Data Subjects
-
-**Access Right (Updated)** — Individuals have the right to receive information about what personal data is held about them, the purposes of processing, the recipients of disclosures, and — new under Amendment No. 13 — whether their data has been used to train AI models and the identity of any AI system that has made automated decisions about them.
-
-**Right to Rectification** — Individuals may require inaccurate or incomplete personal data to be corrected or completed.
-
-**Right to Erasure (New)** — Where personal data is processed unlawfully, is no longer necessary for its original purpose, or where consent has been withdrawn, individuals may demand erasure. Erasure requests must be fulfilled within 30 days. Data used in AI model training is subject to erasure to the extent technically practicable.
-
-**Right to Object to Automated Decision-Making (New — Section 24A):**
-Where automated decision-making (including AI-based processing) produces legal or similarly significant effects on an individual:
-- The individual must be notified that automated processing is being used;
-- The individual must be informed of the logic of the automated decision in terms they can understand;
-- The individual has the right to request human review of any automated decision;
-- The individual has the right to challenge the automated decision and provide their perspective;
-- A human reviewer with authority to override the automated decision must conduct a meaningful review within 30 days of a request.
-
-**Right to Non-Discrimination** — Exercise of any right under the Privacy Protection Law may not result in adverse treatment of the individual.
-
----
-
-### Chapter IV — Obligations of Data Controllers
-
-**Transparency Obligations:**
-
-Data controllers using automated decision-making or AI-based processing must:
-1. Disclose in their privacy notices that automated processing is used, and describe the categories of decisions made by automated means;
-2. Identify AI systems that make or substantially influence decisions affecting individuals;
-3. Upon request, provide a meaningful explanation of any automated decision affecting the requesting individual.
-
-**Data Minimization and Purpose Limitation:**
-
-Data controllers may not process personal data beyond what is necessary for the specified, explicit, and legitimate purposes for which data was collected. This prohibition applies regardless of whether an AI system is performing the processing.
-
-**Security Obligations:**
-
-Data controllers must implement technical and organizational measures commensurate with the risk of processing, including:
-- Access controls and authentication;
-- Encryption of personal data at rest and in transit;
-- Regular security assessments;
-- Incident response and breach notification procedures.
-
-**Data Breach Notification:**
-
-Data controllers must notify the Privacy Protection Authority within **72 hours** of becoming aware of a personal data breach that is likely to result in risk to individuals' rights. High-risk breaches must also be communicated to affected individuals without undue delay.
-
----
-
-### Chapter V — Privacy Impact Assessments
-
-**Section 30A — Mandatory Privacy Impact Assessments:**
-
-Data controllers must conduct a Privacy Impact Assessment (PIA) before commencing high-risk processing, including:
-- Deployment of AI systems that make automated decisions with significant effects on individuals;
-- Use of AI for large-scale profiling of individuals;
-- Processing of biometric data for unique identification;
-- Systematic monitoring of publicly accessible spaces;
-- Large-scale processing of sensitive personal data (health, genetic, financial, religious, political, sexual orientation data).
-
-A PIA must:
-1. Describe the processing and its purposes;
-2. Assess the necessity and proportionality of processing;
-3. Identify and assess risks to individuals' rights and freedoms;
-4. Identify measures to address those risks;
-5. Be documented and retained for review by the PPA upon request.
-
-Where a PIA indicates high residual risk that cannot be adequately mitigated, the controller must consult with the PPA before commencing processing.
-
----
-
-### Chapter VI — Sensitive Personal Data
-
-Amendment No. 13 expands the categories of sensitive personal data that require explicit consent and enhanced protection:
-
-- Health and medical data;
-- Genetic and biometric data;
-- Financial data (bank accounts, credit, debts, assets);
-- Criminal history;
-- Religious or philosophical beliefs;
-- Political views;
-- Trade union membership;
-- Sexual orientation and gender identity (new);
-- Immigration status (new);
-- Mental health and psychiatric records (new).
-
----
-
-### Chapter VII — Enforcement and Penalties
-
-**Administrative Fines:**
-
-The Privacy Protection Authority is empowered to impose administrative fines of up to **NIS 2,000,000 (approximately USD 540,000)** for violations of the Privacy Protection Law as amended. Fines may be imposed on:
-- Data controllers;
-- Data processors acting on behalf of controllers;
-- Individuals responsible for decisions leading to violations.
-
-Factors in determining fine quantum include: severity of the violation; duration; degree of cooperation; prior violations; economic benefit obtained from the violation.
-
-**Criminal Liability:**
-
-Serious violations, including intentional unlawful disclosure of sensitive personal data and large-scale unauthorized AI training data scraping, remain criminal offenses punishable by imprisonment of up to **5 years** and/or criminal fines.
-
-**Civil Remedies:**
-
-Individuals whose rights under the Privacy Protection Law are violated may bring civil claims for:
-- Actual damages (including non-economic damages for dignitary harm);
-- Injunctive relief;
-- Attorney fees in successful actions.
-
-**Privacy Protection Authority Powers:**
-
-The PPA (Reshut HaGishut L'Prtiyut) is empowered to:
-- Investigate complaints from individuals;
-- Conduct proactive audits of data controllers;
-- Issue binding enforcement orders;
-- Enter into compliance agreements with data controllers;
-- Publish decisions and enforcement actions.
-
----
-
-## Transition Period
-
-Most provisions of Amendment No. 13 took effect on **August 14, 2025**, one year after enactment. During the transition year, the PPA issued extensive guidance on:
-- The prohibition on AI training data scraping;
-- PIA requirements for AI systems;
-- Automated decision-making transparency obligations;
-- Breach notification procedures.
-
----
-
-## Relationship to International Data Protection Law
-
-**GDPR Adequacy:** Israel holds an EU adequacy decision for data transfers (updated 2024). Amendment No. 13 was designed in part to ensure continued adequacy by aligning Israeli law with GDPR standards. The PPA has indicated that the Amendment brings Israel's legal framework to a level substantially equivalent to GDPR.
-
-**AI Regulation Relationship:** Israel has not enacted a standalone AI Act. The PPA has indicated that Amendment No. 13 is intended to be the primary legal mechanism for addressing AI data processing concerns in Israel, complemented by non-binding AI ethics guidelines issued by the Israeli Innovation Authority.
-
----
-
-## Significance
-
-Amendment No. 13 to Israel's Privacy Protection Law is one of the most significant national data protection modernizations in the Middle East and Mediterranean region. Its explicit prohibition on unauthorized AI training data scraping places Israel at the global frontier of AI data governance — a position few jurisdictions have taken through binding statute. The comprehensive automated decision-making transparency and review rights, combined with robust administrative enforcement, establish Israel as a GDPR-equivalent jurisdiction with additional AI-specific protections.
-
-**Legal Citation:** Amendment No. 13 to Privacy Protection Law 5741-1981 (Sefer Ha-Chukkim, 2024); PPA Enforcement Guidelines on Automated Processing and AI (2025).
+תקנות בית הדין לעבודה (אגרות), תשס"ח-2008 
+ 
+ נוסח עדכני נכון ליום: 01-01-2026 
+תקנות בית הדין לעבודה (אגרות), תשס"ח-2008 
+
+בתוקף סמכותי לפי סעיף 43(ב) לחוק בית הדין לעבודה, התשכ"ט-1969 (להלן – החוק), סעיף 58 לפקודת הראיות [נוסח חדש], התשל"א-1971, ולאחר התייעצות עם שר התעשיה המסחר והתעסוקה, באישור שר האוצר לפי סעיף 39ב לחוק יסודות התקציב, התשמ"ה-1985, ובאישור ועדת החוקה חוק ומשפט של הכנסת לפי סעיף 1(ב) לחוק-יסוד: משק המדינה, אני מתקין תקנות אלה: 
+הגדרות 
+1. 
+בתקנות אלה – 
+ 
+ 
+" בית דין " – בית דין לעבודה, לרבות רשם, כשאין העניין מחייב אחרת; 
+ 
+ 
+" גישור " – כמשמעותו בסעיף 79ג לחוק בתי המשפט [נוסח משולב], התשמ"ד-1984 (להלן – חוק בתי המשפט); 
+ 
+ 
+" דיון " – שמיעת ראיות בעל-פה או שמיעת טענות הצדדים אם אינם מביאים ראיות, ולמעט שמיעת ראיות או שמיעת טענות כאמור במסגרת ישיבת קדם-משפט כהגדרתה בתקנה 1 לתקנות בתי המשפט (אגרות), התשס"ז-2007; 
+ 
+ 
+" לשכת סיוע משפטי " – לשכה ששר המשפטים הקים או הסמיך לפי חוק הסיוע המשפטי, התשל"ב-1972 (להלן – חוק הסיוע המשפטי), לפעול כלשכת סיוע משפטי, הן דרך כלל והן בתחום שיפוטו של בית משפט מסוים; 
+ 
+ 
+" מדד " – מדד המחירים לצרכן שמפרסמת הלשכה המרכזית לסטטיסטיקה; 
+ 
+ 
+" פשרה " – לרבות פסיקה בדרך של פשרה לפי סעיף 31(ג) לחוק ולפי סעיף 79א(א) לחוק בתי המשפט; 
+ 
+ 
+" תובענה " או " הליך " – תביעה, לרבות תביעה שכנגד והודעות לצד שלישי, בקשות, ערעורים, ושאר עניינים שמביא בעל דין לפני בית דין באחת הדרכים שנקבעו לכך על פי דין, ושנדרשת בהם החלטה או פסיקה של בית דין. 
+חובת תשלום אגרה 
+2. (א) 
+המביא הליך לבית דין ישלם עם הבאתו לראשונה, את האגרה הקבועה בתוספת הראשונה, והוא כשאין הוראה אחרת בכל דין. 
+ 
+(ב) 
+כלל הליך כמה עניינים, תשולם אגרה לפי פרט אחד בלבד מבין הפרטים המפורטים לגבי אותו הליך בתוספת הראשונה, לפי הסכום הגבוה. 
+ 
+(ג) 
+לא ייזקק בית דין לכל הליך, אלא אם כן שולמה האגרה החלה או שמביא ההליך פטור מתשלום האגרה. 
+ 
+(ד) 
+הליך שלא שולמה בעדו האגרה, כאמור בתקנת משנה (א), כולה או חלקה, לא יקובל לרישום, אלא אם כן מביא ההליך פטור מתשלום אגרה או הוגשה בקשה לפטור מאגרה. 
+ 
+(ה) 
+אין בהוראות תקנה זו כדי לגרוע מהוראות תקנה 5 לתקנות בית הדין לעבודה (סדרי דין במצב חירום מיוחד), התשנ"א-1991. 
+ 
+(ו) 
+נזקק בית הדין להליך, והתברר כי לא שולמה האגרה, כולה או חלקה, תינתן דרישת תשלום לחייב בתשלום האגרה; לא שולמה האגרה בתוך עשרים ימים מיום המצאת הדרישה או פרק זמן ארוך יותר שנקבע בה, ולא ניתנה החלטה המסיימת את ההליך, רשאי בית הדין למחוק את ההליך, ולא יוחזר כל סכום אגרה ששולם בעדו. 
+ 
+(ז) 
+דרישה לתשלום אגרה כאמור בתקנת משנה (ו) דינה כדין כל החלטה לתשלום כסף לטובת אוצר המדינה, וניתן לבצעה בהליכי הוצאה לפועל. 
+ 
+(ח) 
+בעד פעולות המפורטות בתוספת הראשונה תשולם אגרה ויחולו הוראות התקנות, בשינויים המחויבים. 
+בעלי דין פטורים מאגרה 
+3. 
+אלה פטורים מחובת תשלום אגרה: 
+ 
+(1) 
+המדינה וכל מי שהורשה לייצגה כשהוא מביא הליך מכוח הרשאתו; 
+ 
+(2) 
+האפוטרופוס הכללי, כמשמעותו בחוק האפוטרופוס הכללי, התשל"ח-1978; 
+ 
+(3) 
+האפוטרופוס לנכסי נפקדים כמשמעותו בחוק נכסי נפקדים, התש"י-1950, או האפוטרופוס לנכסי גרמנים כמשמעותו בחוק נכסי גרמנים, התש"י-1950, אם הגיש יחד עם הבאת ההליך הצהרה כי ברכושו של אדם שהוא מנהל או המוקנה לו, ואשר לגביו הובא או נדרש ההליך, אין כספים לתשלום האגרה; 
+ 
+(4) 
+המוסד לביטוח לאומי, כמשמעותו בחוק הביטוח הלאומי [נוסח משולב], התשנ"ה-1995 (להלן – חוק הביטוח הלאומי); 
+ 
+(5) 
+בעל דין המיוצג על ידי עורך דין מטעם לשכת סיוע משפטי, בהליך שלגביו אושרה בקשתו לקבלת שירות משפטי מהטעם שידו אינה משגת לשאת בו; 
+ 
+(6) 
+בעל דין הזכאי לשירות משפטי לפי התוספת לחוק הסיוע המשפטי, בעניינים ובהיקף שנקבעו בה. 
+עניינים הפטורים מאגרה 
+4. 
+פרט אם יש על כך הוראה מפורשת בתקנות אלה, לא תשולם אגרה בעד עניינים אלה: 
+ 
+(1) 
+בקשה בעל פה בפני בית דין שאיננה פתיחת הליך; 
+ 
+(2) 
+בקשה לסעד ביניים, או הבאת הליך ביניים, עם הבאת ההליך או דרישתו או לאחר מכן ולפני מתן פסק הדין או אף לאחר נתינתו, והכל באותו הליך באותה ערכאה, לרבות בקשה לתיקון טעות סופר בפסק דין; 
+ 
+(3) 
+בקשה להצטרף להליך תלוי ועומד בבית הדין כנתבע או כמשיב; 
+ 
+(4) 
+בקשה להארכת מועד להגשת ערעור וכן בקשה להארכת מועד להגשת בקשה למתן רשות ערעור; 
+ 
+(5) 
+בקשה להשבת אגרה, לפטור מתשלום אגרה וכן ערעור על החלטה בבקשות אלה; 
+ 
+(6) 
+בקשה לביטול פסק דין, צו או החלטה שניתנו במעמד צד אחד בלבד, בקשה לביטול צו למחיקתה של תובענה שניתן בהעדר צד שהוזמן, ובלבד שהבקשה הוגשה בתוך שלושים ימים מיום שהומצאו למבקש פסק הדין, ההחלטה או צו המחיקה; 
+ 
+(7) 
+בקשה או עניין במשפט פלילי וכן ערעור פלילי; 
+ 
+(8) 
+כל דרישה או פעולה להזמנת בעל דין או עדים או מסירת כתבי בי-דין וכיוצא באלה במסגרת מינהל בית הדין בקשר להליך ששולמה אגרה בעת הבאתו, או שהיו פטורים ממנה; 
+ 
+(9) 
+בקשה למתן תוקף של פסק דין לפשרה, הסדר גישור, או פסק בוררות; 
+ 
+(10) 
+בקשה לעיכוב פסק בורר שניתן לאחר שבית דין החזיר לבורר, מסיבה כלשהי, פסק קודם; 
+ 
+(11) 
+תביעה להמצאת מסמכים אשר המעביד מחויב על פי חוק להמציאם לעובד או למלא בהם את חלקו; 
+ 
+(12) 
+הליכים לפי סעיף 24(א)(2) או (4) או סעיף 25 לחוק; 
+ 
+(13) 
+הליכים לפי סעיף 43 לחוק שירות התעסוקה, התשי"ט-1959; 
+ 
+(14) 
+הליכים לפי סעיף 30 לחוק שעות עבודה ומנוחה, התשי"א-1951; 
+ 
+(15) 
+הליכים לפי סעיף 14 לחוק חופשה שנתית, התשי"א-1951; 
+ 
+(16) 
+הליכים לפי חוק שכר שווה לעובדת ולעובד, התשנ"ו-1996; 
+ 
+(17) 
+הליכים לפי חוק הגנת השכר, תשי"ח-1958; 
+ 
+(18) 
+הליכים לפי סעיף 13 לחוק התגמולים לנפגעי פעולות איבה, התש"ל-1970; 
+ 
+(19) 
+הליכים שעניינם חוק שכר מינימום, התשמ"ז-1987; 
+ 
+(20) 
+הליכים לפי חוק לפיצוי נפגעי גזזת, התשנ"ד-1994; 
+ 
+(21) 
+הליכים לפי חוק תגמולים לאסירי ציון ולבני משפחותיהם, התשנ"ב-1992; 
+ 
+(22) 
+הליכים לפי חוק הבטחת הכנסה, התשמ"א-1981 (להלן – חוק הבטחת הכנסה); 
+ 
+(23) 
+הליכים לפי חוק המזונות (הבטחת תשלום), התשל"ב-1972; 
+ 
+(24) 
+ערעור לפי סעיף 47 לחוק המדיניות הכלכלית לשנת הכספים 2004 (תיקוני חקיקה), התשס"ד-2004; 
+ 
+(25) 
+תובענה לפי חוק משפחות חד-הוריות, התשנ"ב-1992; 
+ 
+(26) 
+הליכים לפי סעיף 391 לחוק הביטוח הלאומי; 
+ 
+(27) 
+ערעור ובקשת רשות לערער על החלטה שניתנה בהליכים כאמור בפסקאות (11) עד (26). 
+ 
+(28) 
+תובענה שעניינה פיטורים או מתן הודעת פיטורים בלא היתר בניגוד להוראות סעיף 9(ד) לחוק עבודת נשים, התשי"ד-1954 (להלן – חוק עבודת נשים), לאישה השוהה במקלט לנשים מוכות כהגדרתו בסעיף 7(ג)(5) לחוק עבודת נשים. 
+החזרת אגרה בבית דין אזורי 
+5. 
+הסתיים הליך בבית דין אזורי לעבודה, למעט הליך בדיון מהיר לפי סעיף 31 לחוק, לפני שהסתיימה ישיבת קדם-המשפט השלישית, ונתקיים אחד מאלה, ינוכה מהאגרה ששולמה, כערכה במועד התשלום, הסכום הנקוב בפרט 10 בתוספת הראשונה, כערכו במועד התשלום ותוחזר יתרת האגרה ששולמה, בתוספת הפרשי הצמדה על היתרה כאמור בתקנה 13: 
+ 
+(1) 
+ההליך בוטל או נמחק בידי מגישו; 
+ 
+(2) 
+ההליך הסתיים בפשרה; 
+ 
+(3) 
+הסכסוך הנדון הועבר להכרעה בבוררות; 
+ 
+(4) 
+הסכסוך הנדון הועבר להליך של גישור ונסתיים בהסדר גישור. 
+אגרה בדיון מהיר 
+6. (א) 
+בעד כל הליך בדיון מהיר, לפי סעיף 31 לחוק, תשולם מחצית האגרה שהיתה משתלמת אילולא הובא ההליך בדיון מהיר כאמור, ולא פחות מהסכום הנקוב בפרט 9 בתוספת הראשונה. 
+ 
+(ב) 
+נפסק הדיון המהיר בלי לפסוק בו, כאמור בסעיף 31(ה) לחוק, והועבר ההליך לדיון רגיל, יורה הרשם על גביית עודף האגרה כאמור. 
+אגרה בתביעה לעניין הטרדה מינית 
+6א. 
+בתביעה לפי חוק למניעת הטרדה מינית, התשנ"ח-1998, תשולם אגרה לפי פרט 8 שבתוספת הראשונה. 
+פטור מאגרה בערעור 
+7. (א) 
+בערעור על פסק דין שניתן נגד יותר מאדם אחד, יחד ולחוד, תשולם האגרה פעם אחת בלבד, בידי הראשון מבין מגישי הערעור שאינו פטור מתשלום אגרה. 
+ 
+(ב) 
+בערעור על כל פסק דין נוסף שניתן בתובענה לאחר החזרת הדיון בנושא הערעור מאת בית הדין הארצי אל בית דין אזורי עקב ערעור קודם של אותו מערער, אין המערער חייב בתשלום אגרה, ובלבד ששולמה אגרה בערעור הקודם ולא הוחזרה, זולת אם המערער אינו חייב באגרה בשל הערעור הקודם או שהוא פטור ממנה. 
+קביעת שווי 
+8. (א) 
+כל הליך שהאגרה בעדו משתלמת לפי שווי הנושא, יבוטא שוויו בכסף אם ניתן לבטאו כך. 
+ 
+(ב) 
+לעניין שווי הנושא לחישוב אגרת בית הדין, יראו – 
+ 
+(1) 
+סכום תביעה לקצבה ולפיצויי הלנת קצבה – כסכום הקצבה בעד החודש שקדם להגשת התביעה כפול מספר החודשים שהולנה בהם הקצבה אך לא יותר מ-36; 
+ 
+(2) 
+סכום תביעה לשכר מולן ופיצויי הלנת שכר – כסכום השכר המולן לבדו; 
+ 
+(3) 
+סכום תביעה לפיצויי פיטורים ולפיצויי הלנת פיצויי פיטורים – כסכום פיצויי הפיטורים לבדו. 
+השלמת אגרה לאחר תיקון תובענה או החזרת הפרש 
+9. (א) 
+התיר בית הדין תיקון תובענה על דרך של הגדלת הסכום הנתבע בתובענה לסכום קצוב, ישלים מגיש התובענה את סכום האגרה הנדרש לתובענה המתוקנת לפי פרטים 1, 2 או 3 בתוספת הראשונה, לפי העניין, עם הגשת התובענה המתוקנת. 
+ 
+(ב) 
+סכום האגרה יתוקן על פי ההפרש שבין סכום התביעה המתוקן לבין סכום התביעה המקורי בתוספת הפרשי הצמדה; הפרשי ההצמדה יחושבו לפי שיעור שינוי המדד, מן המדד שפורסם לאחרונה לפני יום הגשת כתב התביעה המקורי עד המדד שפורסם לאחרונה לפני יום הגשת כתב התביעה המתוקן. 
+ 
+(ג) 
+התיר בית הדין תיקון תובענה על דרך של המרת הסעד הנתבע בסעד שסכום האגרה בעדו גבוה יותר, תשולם תוספת אגרה להשלמת סכום האגרה בעד הסעד המתוקן בתוך עשרה ימים מהמועד שהותר התיקון, ויחולו הוראות תקנת משנה (ב), בשינויים המחויבים. 
+ 
+(ד) 
+התיר בית הדין תיקון תובענה על דרך של הקטנת הסכום הנתבע בתובענה לסכום קצוב או המרת הסעד הנתבע בסעד שסכום האגרה בעדו נמוך יותר, וטרם הסתיימה ישיבת קדם-המשפט השנייה, רשאי הוא להורות, מטעמים מיוחדים שיירשמו, כי יוחזר ההפרש בין סכום האגרה שנקבע על פי כתב התביעה המקורי לבין סכום האגרה שנקבע על פי כתב התביעה המתוקן, כולו או חלקו, ויחולו הוראות תקנת משנה (ב), בשינויים המחויבים. 
+הצמדה למדד 
+10. (א) 
+הסכומים הנקובים בתוספת הראשונה יעודכנו ב-1 בינואר של כל שנה (להלן – יום העדכון), לפי שיעור שינוי המדד שפורסם בחודש נובמבר שקדם לו, לעומת המדד שפורסם בחודש נובמבר שקדם ליום העדכון הקודם, אם השתנה, ולעניין יום העדכון הראשון שלאחר תחילתן של תקנות אלה – לעומת המדד שפורסם בחודש נובמבר שקדם לו. 
+ 
+(ב) 
+סכום שעודכן כאמור בתקנת משנה (א), יעוגל לשקל החדש השלם הקרוב, וסכום של מחצית השקל החדש יעוגל כלפי מעלה. 
+ 
+(ג) 
+מנהל בתי המשפט יפרסם בהודעה ברשומות את נוסח התוספת הראשונה כפי שהשתנתה עקב האמור בתקנה זו. 
+הפרשי הצמדה 
+11. 
+בעל דין שלא שילם אגרה במועד לפי תקנות אלה, ישלמה בתוספת הפרשי הצמדה; הפרשי ההצמדה יחושבו לפי שיעור שינוי המדד, מן המדד שפורסם לאחרונה לפני יום התשלום שלפי תקנות אלה עד המדד שפורסם לאחרונה לפני יום התשלום בפועל. 
+בקשה לפטור מאגרה 
+12. (א) 
+בעל דין הטוען שאין ביכולתו לשלם אגרה, יצרף לתובענה, עם הבאתה לראשונה לבית הדין, בקשה לפטור מתשלום אגרה בגין אותה תובענה, בצירוף תצהיר שיפרט בו את רכושו, רכוש בן זוגו ורכוש הוריו אם הוא סמוך על שולחנם, ומקורות הכנסתו בששת החודשים שקדמו לתאריך הבקשה; הבקשה והתצהיר יהיו לפי הטופס שבתוספת השניה. 
+ 
+(ב) 
+הוגשה בקשה לפטור מתשלום אגרה וראה בית הדין שאין ביכולתו של המבקש לשלם את האגרה, ונראה לבית הדין שההליך מגלה עילה, רשאי בית הדין לפטור את המבקש מתשלום האגרה, כולה או חלקה; בית הדין יתחשב ביכולתו האישית של המבקש בלבד, בהסתמך על רכושו, רכוש בן זוגו ורכוש הוריו אם הוא סמוך על שולחנם בלבד. 
+ 
+(ג) 
+ראיה לכאורה לחוסר יכולתו של המבקש לשלם את האגרה כאמור בתקנת משנה (ב), תשמש החלטה או הכרזה כמפורט להלן, אם ניתנה בשנתיים שקדמו להגשת הבקשה: 
+ 
+(1) 
+החלטה של בית דין או של בית משפט לפטור את המבקש מתשלום אגרה; 
+ 
+(2) 
+הכרזה כי המבקש הוא חייב מוגבל באמצעים לפי סעיף 69ג לחוק ההוצאה לפועל, התשכ"ז-1967; 
+ 
+(3) 
+הכרזה כי החייב הוא פושט רגל לפי סעיף 42 לפקודת פשיטת הרגל [נוסח חדש], התש"ם-1980. 
+ 
+(ד) 
+קבלת גמלה לפי חוק הבטחת הכנסה, בעת הגשת הבקשה לפטור מאגרה, תשמש ראיה לכאורה לחוסר יכולתו של המבקש לשלם את האגרה כאמור בתקנת משנה (ב). 
+ 
+(ה) 
+לדיון בבקשה, רשאי בית הדין להזמין את בעלי הדין וכל אדם אחר שיראה לנכון להזמינו, ואולם רשאי בית הדין לדון בבקשה אף בלא הופעת בעלי הדין; היועץ המשפטי לממשלה או בא כוחו רשאי, במקום להתייצב לדיון, לתת את הסכמתו בכתב לפטור מהאגרה, בין לגבי בקשה פלונית ובין לגבי סוג של בקשות; אין בהסכמת היועץ המשפטי לממשלה, כשלעצמה, כדי לחייב את בית הדין. 
+ 
+(ו) 
+דחה בית הדין את הבקשה, או פטר מתשלום חלק מהאגרה בלבד, רשאי הוא להרשות למבקש לשלם את האגרה, שלגביה לא ניתן הפטור, לשיעורין, ובתוך הזמן שייקבע; שולמה האגרה בתוך הזמן שנקבע, יראו כאילו נעשה התשלום ביום שהובא ההליך; נדחה מועד תשלום האגרה, ישלם המבקש את האגרה בתוספת הפרשי הצמדה מיום התשלום לפי תקנות אלה אילולא הוגשה הבקשה, והוראות תקנה 11 יחולו בהתאמה, זולת אם הורה בית הדין אחרת. 
+ 
+(ז) 
+פטר בית הדין מתשלום חלק מהאגרה בלבד, ישלים המבקש את תשלום יתרת האגרה שלגביה לא ניתן פטור, ורשאי הוא בתוך חמישה עשר ימים לתקן את כתב התביעה בהתאם לפטור, כך שלא תחול עליו חובת תשלום יתרת האגרה או חלקה, ובמקרה זה יביא לבית הדין כתב תביעה מתוקן. 
+ 
+(ח) 
+ניתן לבעל דין פטור מתשלום מלוא האגרה, יחול הפטור גם על כל תשלום נוסף של אגרה שיחויב בו בעל דין בקשר עם אותו הליך שניתן לגביו הפטור הראשוני ובאותה ערכאה. 
+ 
+(ט) 
+ניתן פטור לפי תקנה זו, ומקבל הפטור זכה בתביעתו, רשאי בית הדין או רשם לחייב את בעל הדין שכנגד בתשלום האגרה החלה על ההליך, בתוספת הפרשי הצמדה מהמועד שבו היה על בעל הדין שקיבל פטור לשלם את האגרה, אילולא קיבל את הפטור; היה ההליך תביעה לסכום קצוב, תשולם האגרה לפי הסכום שנפסק. 
+הפרשי הצמדה בהחזר אגרה 
+13. 
+החזר אגרה לפי תקנות אלה ייעשה בתוספת הפרשי הצמדה לפי שיעור שינוי המדד מן המדד שפורסם לאחרונה לפני יום תשלום האגרה עד למדד שפורסם לאחרונה לפני יום החזר האגרה. 
+דין אגרה שלא שולמה כדין חוב פסוק 
+14. 
+אגרה שלא שולמה, דינה כחוב פסוק במשפט אזרחי לטובת המדינה, והיא תיגבה מהחייב בתשלומה מתוך כספים שהופקדו בקופת בית הדין אם הופקדו, או על ידי לשכת הוצאה לפועל על סמך צו של בית הדין. 
+ביטול 
+15. 
+תקנות בית הדין לעבודה (אגרות), התשכ"ט-1969 (להלן – התקנות המתבטלות) – בטלות. 
+תחילה 
+16. 
+תחילתן של תקנות אלה ביום א' באלול התשס"ח (1 בספטמבר 2008) (להלן – יום התחילה). 
+הוראת מעבר 
+17. (א) 
+על הליכים שהסתיימו לפני יום התחילה יחולו התקנות המתבטלות. 
+ 
+(ב) 
+על הליכים תלויים ועומדים ביום התחילה יחולו תקנות אלה, ואולם יראו את האגרה ששולמה במועד הבאת ההליך לפי התקנות המתבטלות כאגרה החלה; בהליכים כאמור לא תוחזר אגרה שסכומה הופחת לפי תקנות אלה, ולא יחול פטור לפי תקנות אלה, למעט אם עילת הפטור קמה לאחר יום התחילה. 
+תוספת ראשונה
+(תקנות 2(א), (ב) ו-(ח), 5, 6, 9(א) ו-10)
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ בשקלים חדשים 
+ 
+ 
+
+ 
+ בית דין אזורי לעבודה 
+ 
+ 
+ 
+
+ 1. 
+ הגשת תביעה לסכום קצוב שלא נקבעה לה אגרה בתוספת זו 
+ 1% מהסכום הנתבע כערכו בעת הגשת ההליך ולא פחות מסכום של 168 
+ 
+ 
+
+ 2. 
+ תביעה בעניין דמי טיפול ארגוני-מקצועי לארגון מעבידים לפי סעיף 33ז לחוק הסכמים קיבוציים, התשי"ז-1957 
+ 1% מהסכום הנתבע כערכו בעת הגשת ההליך ולא פחות מ-420 
+ 
+ 
+
+ 3. 
+ תביעה לסכום קצוב של חברה מנהלת של קופת גמל כהגדרתה בחוק הפיקוח על שירותים פיננסיים (קופות גמל), התשס"ה-2005, או של מעביד נגד קופת גמל 
+ 1% מהסכום הנתבע כערכו בעת הגשת ההליך ולא פחות מ-420 
+ 
+ 
+
+ 4. 
+ תביעה של עמית נגד חברה מנהלת של קופת גמל, או תביעה מכח חוק ביטוח בריאות ממלכתי, התשנ"ד-1994 (להלן – חוק ביטוח בריאות) 
+ 168 
+ 
+ 
+
+ 5. 
+ ערעור על החלטה או על פסק דין של רשם בית דין אזורי לעבודה 
+ 168 
+ 
+ 
+
+ 6. 
+ ערעור לפי חוק שירות המדינה (גמלאות) [נוסח משולב], התש"ל-1970 (להלן – חוק שירות המדינה (גמלאות)) 
+ 168 
+ 
+ 
+
+ 7. 
+ ערעור אחר או ערר 
+ 168 
+ 
+ 
+
+ 8. 
+ תביעה אחרת 
+ 168 
+ 
+ 
+
+ 9. 
+ סכום מזערי בדיון מהיר 
+ 84 
+ 
+ 
+
+ 10. 
+ סכום לניכוי לפי תקנה 5 
+ 168 
+ 
+ 
+
+ 
+ בית הדין הארצי לעבודה 
+ 
+ 
+ 
+
+ 11. 
+ ערעור על החלטה או על פסק דין בהליכים לפי סעיף 24(א)(2) לחוק 
+ 420 
+ 
+ 
+
+ 12. 
+ ערעור על החלטה או על פסק דין בהליכים לפי סעיף 24(א)(4) לחוק 
+ 210 
+ 
+ 
+
+ 13. 
+ ערעור על פסק דין של בית דין אזורי 
+ 420 
+ 
+ 
+
+ 14. 
+ ערעור על פסק דין לאחר קבלת רשות ערעור 
+ יש להשלים לסכום האגרה המשתלמת בעבור הגשת הערעור 
+ 
+ 
+
+ 15. 
+ ערעור על החלטה או על צו בהליך ביניים או בקשת רשות ערעור או ערעור על החלטה של רשם או ערעור על פסק דין שניתן בדיון מהיר 
+ 210 
+ 
+ 
+
+ 16. 
+ ערעור לפי סעיף 8 לחוק העסקת עובדים על ידי קבלני כוח אדם, התשנ"ו-1996 
+ 700 
+ 
+ 
+
+ 17. 
+ ערעור על החלטה או על פסק דין בהליך של עמית נגד קופת גמל, או ערעור על החלטה או פסק דין לפי חוק ביטוח בריאות או ערעור על פסק דין שעניינו ערעור על תביעה לפי חוק שירות המדינה (גמלאות) 
+ 210 
+ 
+ 
+
+ 
+ בית הדין הארצי לעבודה 
+ 
+ 
+ 
+
+ 18. 
+ הליך לעניין צו לפי חוק ארגון הפיקוח על העבודה, התשי"ד-1954 
+ 700 
+ 
+ 
+
+ 
+ כללי 
+ 
+ 
+ 
+
+ 19. 
+ בקשה שאינה פטורה מתשלום אגרה 
+ 140 
+ 
+ 
+
+ 20. 
+ עשיית תצהיר 
+ 57 
+ 
+ 
+ 
+תוספת שניה
+(תקנה 12(א))
+ 
+ 
+ 
+[ בקשה לפטור מתשלום אגרה ]

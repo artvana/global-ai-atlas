@@ -1,86 +1,47 @@
 ---
 id: cr-cr-dpa-2011
-title: "Ley No. 8968 — Ley de Protección de la Persona frente al Tratamiento de sus Datos Personales (Costa Rica)"
-short_name: "Costa Rica Data Protection Law 2011"
-jurisdiction: Costa Rica
-enacted_date: 2011-07-05
-status: in_force
-official_url: https://www.prodhab.go.cr/
-fetched_date: 2026-05-01
+source_url: https://caseguard.com/articles/law-no-8968-of-2011-costa-rican-data-rights/
+text_status: paraphrase
+fetched_date: 2026-05-02
 ---
 
-# Ley No. 8968 — Ley de Protección de la Persona frente al Tratamiento de sus Datos Personales — Costa Rica
-**Ley No. 8968**
-*Costa Rica — July 5, 2011 (effective March 5, 2012)*
-
----
+# Costa Rica Law No. 8968 of 2011 — Law on the Protection of Individuals Regarding the Processing of Their Personal Data
+**(Ley de Protección de la Persona frente al Tratamiento de sus Datos Personales)**
+**Enacted: July 7, 2011 | In force: September 5, 2011**
 
 ## Overview
+Law 8968 builds on Costa Rica's constitutional right to privacy, established in Article 24 of the Constitution. The law applies to personal data held in automated or manual databases of public or private organizations, and any form of subsequent use of such data with effect within the territory of Costa Rica.
 
-Costa Rica's Law No. 8968 of July 5, 2011, on the Protection of Persons with Regard to the Treatment of Their Personal Data is the country's primary personal data protection statute, entering into force on March 5, 2012. The law establishes the Agencia de Protección de Datos de los Habitantes (PRODHAB) as an independent supervisory authority with strong investigative and enforcement powers. PRODHAB is widely regarded as one of Central America's most active and effective data protection supervisory authorities. The law applies to all processing of personal data of Costa Rican residents by public and private sector organizations, and it provides both administrative remedies through PRODHAB and judicial remedies through the habeas data mechanism. The law is the most comprehensive and developed data protection framework in Central America.
+## Scope of Application
+All individuals, business organizations, and government agencies are required to maintain compliance at all times. Applies to both automated and manual databases.
 
----
+## Consent Requirements
+Data processing must be based on the informed, express, and freely given consent of the data subject:
+- **Informed**: The data subject must know the purpose and scope of processing
+- **Express**: Implied consent is not sufficient
+- **Free**: Given without coercion or deception
 
-## Key Provisions
+## Data Subject Rights
+Data subjects have the right to:
+- **Access**: View personal data held about them
+- **Rectification**: Correct inaccurate or incomplete data
+- **Erasure**: Request deletion when data is no longer necessary, consent is withdrawn, or processing violates the Law
+- **Objection**: Object to processing when there are legitimate grounds
 
-### Agencia de Protección de Datos de los Habitantes (PRODHAB)
-- Independent administrative agency with full investigative and enforcement powers
-- Maintains a registry of personal data databases
-- Investigates complaints from data subjects and initiates ex officio investigations
-- Conducts audits and inspections of data controllers
-- Issues compliance orders, corrective measures, and formal warnings
-- May impose significant administrative fines
-- May suspend or prohibit processing as a remedy
-- Refers criminal violations to prosecutors
-- Issues technical guidelines, codes of conduct, and model clauses
+## Database Registration
+One distinctive feature is mandatory registration of databases. All entities maintaining databases with personal data must register with PRODHAB (the data protection authority). Registration must include:
+- Name and address of the responsible party
+- Purpose of the database
+- Types of personal data processed
+- Data transfer practices
+- Security measures in place
 
-### ARCO Rights — Data Subject Rights
-- Right of Access: to personal data held by any controller, free of charge within statutory timeframe
-- Right of Rectification: correction of inaccurate, incomplete, or outdated data
-- Right of Cancellation: deletion of data no longer necessary, processed unlawfully, or based on withdrawn consent
-- Right of Opposition: to processing based on legitimate interests or for direct marketing purposes
+## Security Requirements
+Law 8968 mandates that data controllers and processors implement technical and organizational measures to ensure security and prevent alteration, loss, or unauthorized access.
 
-### Lawful Processing Bases
-- Consent: unambiguous, free, specific, and informed consent
-- Contract performance to which the data subject is party
-- Legal obligation applicable to the controller
-- Vital interests of the data subject
-- Legitimate interests of the controller (subject to override by data subject interests)
+## Enforcement Authority
+**Agencia de Protección de Datos de los Habitantes (PRODHAB)** — established under Article 14. An organ with technical and functional autonomy, attached to the Ministry of Justice and Peace.
 
-### Sensitive Personal Data
-- Special categories requiring explicit consent or specific statutory authorization:
-  - Health and medical data
-  - Political opinions
-  - Religious or philosophical beliefs
-  - Trade union membership
-  - Criminal record
-  - Other data revealing intimate aspects of private life
-- Sensitive data databases subject to mandatory PRODHAB registration and heightened security requirements
-
-### Habeas Data Judicial Remedy
-- Constitutional habeas data action available to individuals to enforce data rights through Costa Rican courts
-- Provides access to, correction of, or deletion of personal data
-- Judicial remedy operates independently of PRODHAB administrative process
-- Courts may grant interim measures including immediate suspension of processing
-
-### Mandatory Database Registration
-- Data controllers must register all personal data databases with PRODHAB
-- Registration requires disclosure of data types, purposes, data subjects, security measures, and responsible parties
-- Sensitive data databases subject to prior PRODHAB authorization in some cases
-
-### Cross-Border Data Transfers
-- Transfers outside Costa Rica restricted unless recipient country provides adequate protection
-- PRODHAB may authorize transfers through contractual safeguards or binding corporate rules
-
-### Security Obligations
-- Controllers must implement technical and organizational security measures proportionate to the data sensitivity and processing risks
-- Incident notification obligations to PRODHAB and affected data subjects
-
-## Enforcement & Penalties
-
-- PRODHAB may issue compliance orders, formal warnings, and processing suspensions
-- Administrative fines: up to CRC 172 million (approximately $340,000 USD) — among the highest in Central America
-- Criminal penalties for serious violations including unlawful processing and falsification of data
-- Civil liability: data subjects may seek compensation through Costa Rican courts
-- Habeas data judicial action provides additional private enforcement mechanism
-- PRODHAB recognized as one of the most active enforcement agencies in Central America
+## Penalties
+- Fines ranging from **$3,000 to $18,000**
+- Database discontinuation orders from one to six months for severe non-compliance

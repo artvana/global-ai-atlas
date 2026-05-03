@@ -20,6 +20,7 @@ from datetime import date
 from pathlib import Path
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
+import urllib.request
 import anthropic
 
 PROJECT_ROOT = Path(__file__).parent.parent
@@ -330,6 +331,66 @@ def apply_agent_result(law_id, result, reviewed_by="art@opendatalabs.xyz"):
     save_review_status(review_status)
 
     return True, changes
+
+
+def fetch_and_save_text(law_id, url):
+    """Fetch URL content, convert to clean text, save as law text file. Returns (ok, message)."""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            raw = resp.read()
+            content_type = resp.headers.get("Content-Type", "")
+
+        # For PDFs, just note we can't process them
+        if "pdf" in content_type.lower() or url.lower().endswith(".pdf"):
+            return False, "URL points to a PDF — paste the text content manually using the Resolution box instead."
+
+        html = raw.decode("utf-8", errors="replace")
+
+        # Strip HTML tags
+        text = re.sub(r"<script[^>]*>.*?</script>", "", html, flags=re.DOTALL | re.IGNORECASE)
+        text = re.sub(r"<style[^>]*>.*?</style>", "", text, flags=re.DOTALL | re.IGNORECASE)
+        text = re.sub(r"<[^>]+>", " ", text)
+        text = re.sub(r"&nbsp;", " ", text)
+        text = re.sub(r"&amp;", "&", text)
+        text = re.sub(r"&lt;", "<", text)
+        text = re.sub(r"&gt;", ">", text)
+        text = re.sub(r"&quot;", '"', text)
+        text = re.sub(r"&#\d+;", "", text)
+        text = re.sub(r"[ \t]+", " ", text)
+        text = re.sub(r"\n{3,}", "\n\n", text)
+        text = text.strip()
+
+        if len(text) < 200:
+            return False, f"Fetched content too short ({len(text)} chars) — may be a login page or error."
+
+        # Save with frontmatter
+        regs, _, _ = load_data()
+        r = next((x for x in regs if x["id"] == law_id), None)
+        short_name = r.get("short_name", law_id) if r else law_id
+
+        out = f"""---
+id: {law_id}
+source_url: {url}
+fetched_date: {TODAY}
+---
+
+{text[:50000]}"""
+
+        text_path = PROJECT_ROOT / "data" / "texts" / f"{law_id}.md"
+        text_path.write_text(out, encoding="utf-8")
+
+        # Update official_text_url in regulations.json if not set
+        if r and not r.get("official_text_url"):
+            r["official_text_url"] = url
+            if not r.get("text_path"):
+                r["text_path"] = f"data/texts/{law_id}.md"
+            save_regulations(regs)
+
+        return True, f"Saved {len(text):,} chars from {url}"
+
+    except Exception as e:
+        return False, str(e)
 
 
 def run_resolution_for_law(law_id, user_assessment):
@@ -773,6 +834,28 @@ def render_html_review(law_id):
   {('<hr class="divider"><h4 style="margin-top:0">Resolution Result</h4>' + resolution_panel) if resolution_panel else ''}
 </div>
 
+<div class="action-panel" style="margin-top:12px">
+  <h3>Source Text</h3>
+  <p style="font-size:.84rem;color:#666;margin:0 0 10px">
+    Current file: <code>{r.get('text_path') or '(none)'}</code>
+    {f'&nbsp;·&nbsp;<a href="/text/{law_id}" target="_blank">view</a>' if r.get('text_path') else ''}
+  </p>
+  <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+    <input id="sourceUrl" type="url" placeholder="Paste correct source URL…"
+      value="{r.get('official_text_url') or ''}"
+      style="flex:1;min-width:300px;padding:8px 10px;border:1px solid #ced4da;border-radius:6px;font-size:.875rem">
+    <button onclick="fetchText()" class="btn btn-agent" style="white-space:nowrap">⬇ Fetch &amp; replace text</button>
+  </div>
+  <div id="fetchMsg" style="font-size:.82rem;margin-top:8px;color:#666"></div>
+  <div style="margin-top:10px">
+    <details>
+      <summary style="font-size:.82rem;color:#666;cursor:pointer">Or paste text directly</summary>
+      <textarea id="pasteText" style="width:100%;height:160px;margin-top:8px;padding:10px;border:1px solid #ced4da;border-radius:6px;font-size:.8rem;font-family:ui-monospace,monospace" placeholder="Paste raw law text here…"></textarea>
+      <button onclick="saveText()" class="btn btn-resolve" style="margin-top:6px;font-size:.82rem;padding:6px 14px">Save pasted text</button>
+    </details>
+  </div>
+</div>
+
 <script>
 const lawId = {json.dumps(law_id)};
 
@@ -841,6 +924,35 @@ async function markDone() {{
   }});
   const data = await res.json();
   if (data.ok) location.reload();
+  else alert('Error: ' + data.error);
+}}
+
+async function fetchText() {{
+  const url = document.getElementById('sourceUrl').value.trim();
+  if (!url) {{ alert('Paste a URL first.'); return; }}
+  const msg = document.getElementById('fetchMsg');
+  msg.textContent = '⟳ Fetching…';
+  const res = await fetch('/api/fetch-text', {{
+    method: 'POST',
+    headers: {{'Content-Type': 'application/json'}},
+    body: JSON.stringify({{law_id: lawId, url}})
+  }});
+  const data = await res.json();
+  msg.textContent = data.ok ? '✓ ' + data.message : '✗ ' + data.error;
+  msg.style.color = data.ok ? '#198754' : '#dc3545';
+  if (data.ok) setTimeout(() => location.reload(), 1200);
+}}
+
+async function saveText() {{
+  const text = document.getElementById('pasteText').value.trim();
+  if (!text) {{ alert('Nothing to save.'); return; }}
+  const res = await fetch('/api/save-text', {{
+    method: 'POST',
+    headers: {{'Content-Type': 'application/json'}},
+    body: JSON.stringify({{law_id: lawId, text}})
+  }});
+  const data = await res.json();
+  if (data.ok) {{ alert('Saved.'); location.reload(); }}
   else alert('Error: ' + data.error);
 }}
 </script>
@@ -974,6 +1086,35 @@ h1{{font-size:1.2rem;margin-bottom:4px;}}
                 self.send_json({"ok": True, "changes": changes})
             else:
                 self.send_json({"error": changes}, 500)
+
+        elif path == "/api/fetch-text":
+            law_id = body.get("law_id", "")
+            url = body.get("url", "")
+            if not law_id or not url:
+                self.send_json({"error": "missing law_id or url"}, 400)
+                return
+            ok, msg = fetch_and_save_text(law_id, url)
+            if ok:
+                self.send_json({"ok": True, "message": msg})
+            else:
+                self.send_json({"error": msg})
+
+        elif path == "/api/save-text":
+            law_id = body.get("law_id", "")
+            text = body.get("text", "")
+            if not law_id or not text:
+                self.send_json({"error": "missing law_id or text"}, 400)
+                return
+            text_path = PROJECT_ROOT / "data" / "texts" / f"{law_id}.md"
+            out = f"---\nid: {law_id}\nsaved_date: {TODAY}\n---\n\n{text}"
+            text_path.write_text(out, encoding="utf-8")
+            # Ensure text_path is set in regulations.json
+            regs, _, _ = load_data()
+            r = next((x for x in regs if x["id"] == law_id), None)
+            if r and not r.get("text_path"):
+                r["text_path"] = f"data/texts/{law_id}.md"
+                save_regulations(regs)
+            self.send_json({"ok": True})
 
         elif path == "/api/mark-reviewed":
             law_id = body.get("law_id", "")

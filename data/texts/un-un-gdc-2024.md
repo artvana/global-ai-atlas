@@ -1,96 +1,59 @@
-# UN Global Digital Compact
-
-*Adopted by the United Nations General Assembly, September 22, 2024. A/RES/79/1.*
+---
+id: un-un-gdc-2024
+source_url: local:data/pdfs/Global Digital Compact - English_0.pdf
+fetched_date: 2026-05-02
+content_type: local_pdf (16 pages)
+---
 
 A/79/L.2
-
 Global Digital Compact
-1.
-Digital technologies are dramatically transforming our world. They offer
+1. Digital technologies are dramatically transforming our world. They offer
 immense potential benefits for the well-being and advancement of people and
 societies and for our planet. They hold out the promise of accelerating the
 achievement of the Sustainable Development Goals.
-2.
-We can only achieve this through strengthened international cooperation that
+2. We can only achieve this through strengthened international cooperation that
 closes all digital divides between and within countries. We recognize the challenges
 that these divides pose for many countries, in particular developing countries, which
 have pressing development needs and limited resources.
-3.
-We recognize that the pace and power of emerging technologies are creating
+3. We recognize that the pace and power of emerging technologies are creating
 new possibilities but also new risks for humanity, some of which are not yet fully
 known. We recognize the need to identify and mitigate risks and to ensure human
 oversight of technology in ways that advance sustainable development and the full
 enjoyment of human rights.
-4.
-Our goal is an inclusive, open, sustainable, fair, safe and secure digital future
+4. Our goal is an inclusive, open, sustainable, fair, safe and secure digital future
 for all. This Global Digital Compact sets out the objectives, principles, commitments
 and actions we undertake to achieve it in the non-military domain.
-5.
-We have strong foundations on which to build. Our digital cooperation rests on
+5. We have strong foundations on which to build. Our digital cooperation rests on
 international law, including the Charter of the United Nations, international human
 rights law and the 2030 Agenda for Sustainable Development. 17 We remain committed
 to the outcomes of the World Summit on the Information Society reflected in the
 Geneva Declaration of Principles and Plan of Action 18 and the Tunis Agenda for the
 Information Society.19 The United Nations provides a critical platform for the global
 digital cooperation we need, and we will harness existing processes to do so.
-6.
-Our cooperation must be agile and adaptable to the rapidly changing digital
+6. Our cooperation must be agile and adaptable to the rapidly changing digital
 landscape. As Governments, we will work in collaboration and partnership with the
 private sector, civil society, international organizations, the technical and academic
 communities and all other stakeholders, within their respective roles and
 responsibilities, to realize the digital future we seek.
 Objectives
-7.
-
-To achieve our goal, we will pursue the following objectives:
-
-1.
-Close all digital divides and accelerate progress across the Sustainable
+7. To achieve our goal, we will pursue the following objectives:
+1. Close all digital divides and accelerate progress across the Sustainable
 Development Goals;
-2.
-
-Expand inclusion in and benefits from the digital economy for all;
-
-3.
-Foster an inclusive, open, safe and secure digital space that respects,
+2. Expand inclusion in and benefits from the digital economy for all;
+3. Foster an inclusive, open, safe and secure digital space that respects,
 protects and promote human rights;
-4.
-Advance
+4. Advance responsible, equitable and interoperable data governance
 approaches;
-
-responsible,
-
-equitable
-
-and
-
-interoperable
-
-data
-
-governance
-
-5.
-Enhance international governance of artificial intelligence for the benefit
+5. Enhance international governance of artificial intelligence for the benefit
 of humanity.
+17 Resolution 70/1.
+18 See A/C.2/59/3, annex.
+19 See A/60/687.
+24-15616 1/16
 
-17
-
-Resolution 70/1.
-See A/C.2/59/3, annex.
-19
-See A/60/687.
-18
-
-24-15616
-
-1/16
-
-A/79/L.2
-
+A/79/L.2
 Principles
-8.
-Our digital cooperation will be guided by the purposes and principles of the
+8. Our digital cooperation will be guided by the purposes and principles of the
 Charter of the United Nations and the following cross-cutting and mutually
 reinforcing principles:
 (a) The inclusive participation of all States and other stakeholders is the
@@ -138,12 +101,9 @@ and decommissioning stages, with effective human oversight;
 (j) Creativity and competition drive digital advances. Our cooperation will
 foster innovation and the potential for societies and businesses, regardless of size or
 origin, to reap the benefits of digitalization and thrive in the digital economy;
-2/16
+2/16 24-15616
 
-24-15616
-
-A/79/L.2
-
+A/79/L.2
 (k) Governments, the private sector, civil society, the technical community,
 academia and international and regional organizations, in their respective roles and
 responsibilities, are essential to advance an inclusive, open, safe and secure digital
@@ -151,12 +111,12 @@ future. Our cooperation will be multi-stakeholder and harness the contributions 
 (l) We will enhance partnerships to ensure the provision of the required means
 of implementation to developing countries, including the mobilization of financial
 resources, capacity-building and the transfer of technology on mutually agreed terms;
-(m) The digital world is evolving at pace. Our cooperation must be forwardlooking and capable of identifying, anticipating, assessing, monitoring and adapting
+(m) The digital world is evolving at pace. Our cooperation must be forward-
+looking and capable of identifying, anticipating, assessing, monitoring and adapting
 to emerging technologies so that we can seize opportunities and respond to new and
 emerging risks and challenges.
 Commitments and actions
-9.
-We commit to pursue meaningful and measurable actions to achieve our
+9. We commit to pursue meaningful and measurable actions to achieve our
 objectives.
 Objective 1. Close all digital divides and accelerate progress across the
 Sustainable Development Goals
@@ -170,10 +130,7 @@ important role of the International Telecommunication Union in advancing univers
 and meaningful connectivity and invite it to further continue its efforts. We recognize
 that innovative solutions can help deliver high-speed connectivity to, inter alia,
 underserved, remote and rural areas.
-11.
-
-We commit, by 2030, to:
-
+11. We commit, by 2030, to:
 (a) Develop and strengthen targets, indicators and metrics for universal
 meaningful and affordable connectivity, building on existing work, and integrate
 these into international, regional and national development strategies (SDG 9);
@@ -194,12 +151,9 @@ Giga initiative of the International Telecommunication Union and the United Nati
 Children’s Fund, and enhance telemedicine services and capabilities (SDGs 3 and 4);
 (e) Promote sustainability across the life cycle of digital technologies,
 including context-specific measures to increase resource efficiency and to conserve
-24-15616
+24-15616 3/16
 
-3/16
-
-A/79/L.2
-
+A/79/L.2
 and sustainably use natural resources and that aim to ensure that digital infrastructure
 and equipment are sustainably designed to address environmental challenges in the
 context of sustainable development and efforts to eradicate poverty (SDGs 1, 4, 6, 7,
@@ -219,10 +173,7 @@ each society and persons of all ages and backgrounds. We recognize the need to s
 up international cooperation and financing for digital capacity development in
 developing countries and to support the development of local content and content
 relevant to local realities online and retain talent.
-13.
-
-We commit, by 2030, to:
-
+13. We commit, by 2030, to:
 (a) Establish and support national digital skills strategies, adapt teacher training
 and education curricula and provide for adult training programmes for the digital age.
 Our aim is maximum coverage of basic digital skills for as many as possible, while also
@@ -251,12 +202,9 @@ consequences for workforces and promote decent work (SDG 8);
 (g) Develop interoperable digital competency frameworks and training
 standards to facilitate pooling of training resources, the mobilization of public and
 private funds in support of capacity-building and its continuous adaptation to address
-4/16
+4/16 24-15616
 
-24-15616
-
-A/79/L.2
-
+A/79/L.2
 rapid technological change and the prevention of brain drain (SDGs 4 and 17);
 (h) Support efforts to provide opportunities for quality and inclusive science,
 technology, engineering and mathematics education and research and promote
@@ -271,15 +219,13 @@ their development needs and can facilitate digital cooperation and investment.
 potential to deliver services at scale and increase social and economic opportunities
 for all. We recognize that there are multiple models of digital public infrastructu re,
 and that each society will develop and use shared digital systems according to its
-specific priorities and needs. Transparent, safe and secure digital systems and usercentred safeguards can promote public trust and use of digital services.
+specific priorities and needs. Transparent, safe and secure digital systems and user-
+centred safeguards can promote public trust and use of digital services.
 16. We consider such digital public goods and digital public infrastructure to be key
 drivers of inclusive digital transformation and innovation. We recognize the need to
 increase investment in their successful development with the participation of all
 stakeholders.
-17.
-
-We commit by, 2030, to:
-
+17. We commit by, 2030, to:
 (a) Develop, disseminate and maintain, through multi-stakeholder cooperation,
 safe and secure open-source software, open data, open artificial intelligence models and
 open standards that benefit society as a whole (SDGs 8, 9 and 10);
@@ -304,14 +250,10 @@ Objective 2. Expand inclusion in and benefits from the digital economy for all
 unlock the potential of the digital economy for every society. We recognize digital
 access to encompass opportunities for the acquisition and development of knowledge,
 research and capacity as well as technology transfers on mutually agreed terms.
-19.
-24-15616
+19. Advancing digital inclusion requires a predictable and transparent enabling
+24-15616 5/16
 
-Advancing digital inclusion requires a predictable and transparent enabling
-5/16
-
-A/79/L.2
-
+A/79/L.2
 environment that encompasses policy, legal and regulatory frameworks that support
 innovation, protect consumer rights, nurture digital talent and skills, promote fair
 competition and digital entrepreneurship, and enhance consumer confidence and trust
@@ -323,10 +265,7 @@ technologies on mutually agreed terms to developing countries.
 resilient functioning of digital systems, networks and data are also essential to
 facilitate commercial transactions and enable safe, secure and trustworthy online
 environments.
-21.
-
-We commit by, 2030, to:
-
+21. We commit by, 2030, to:
 (a) Foster an open, fair, inclusive and non-discriminatory digital environment
 for all that enables micro-, small and medium-sized enterprises to access and compete
 in the digital economy (SDG 9);
@@ -341,19 +280,8 @@ to developing countries, in line with national digital transformation policies a
 priorities (SDG 17);
 (e) Maintain stable and resilient supply chains of global digital products and
 services (SDGs 8 and 9);
-(f) Promote knowledge-sharing
+(f) Promote knowledge-sharing and technology transfer initiatives on
 mutually agreed terms (SDG 17);
-
-and
-
-technology
-
-transfer
-
-initiatives
-
-on
-
 (g) Encourage North-South, South-South and triangular cooperation,
 including among universities, research institutes and the private sector to accelerate
 digital knowledge development and access to research capacity (SDG 17);
@@ -373,21 +301,15 @@ respects, protects and promotes human rights
 Human rights
 22. We commit to respect, protect and promote human rights in the digital space.
 We will uphold international human rights law throughout the life cycle of digital and
-6/16
+6/16 24-15616
 
-24-15616
-
-A/79/L.2
-
+A/79/L.2
 emerging technologies so that users can safely benefit from digital technologies and
 are protected from violations, abuses and all forms of discrimination. We recognize
 the responsibilities of all stakeholders in this endeavour and also call on the private
 sector to apply the United Nations Guiding Principles on Business and Human
 Rights.20
-23.
-
-We commit to:
-
+23. We commit to:
 (a) Ensure that the development and implementation of national legislation
 relevant to digital technologies is compliant with obligations under international law,
 including international human rights law (all SDGs);
@@ -406,10 +328,7 @@ Human Rights’ ongoing efforts to provide, through an advisory service on human
 rights in the digital space, upon request and within existing mandate and with
 voluntary resources, expert advice and practical guidance on human rights and
 technology issues.
-25.
-
-We call on:
-
+25. We call on:
 (a) Digital technology companies and developers to respect international
 human rights and principles, including through the application of human rights due
 diligence and impact assessments throughout the technology life cycle (all SDGs);
@@ -429,24 +348,14 @@ and all other relevant stakeholders in accordance with their respective roles an
 responsibilities. We reaffirm that Internet governance should continue to follow the
 provisions set forth in the outcomes of the summits held in Geneva and Tunis,
 including in relation to enhanced cooperation.
-20
-21
+20 A/HRC/17/31, annex.
+21 United Nations, Treaty Series, vol. 1577, No. 27531.
+24-15616 7/16
 
-24-15616
-
-A/HRC/17/31, annex.
-United Nations, Treaty Series, vol. 1577, No. 27531.
-
-7/16
-
-A/79/L.2
-
+A/79/L.2
 28. We acknowledge the importance of the Internet Governance Forum as the
 primary multi-stakeholder platform for discussion of Internet governance issues.
-29.
-
-We commit to:
-
+29. We commit to:
 (a) Promote an open, global, interoperable and reliable Internet and take
 concrete steps to maintain a safe, secure and enabling online environment for all
 (SDG 9);
@@ -465,10 +374,7 @@ technology, all forms of hate speech and discrimination, misinformation and
 disinformation, cyberbullying and child sexual exploitation and abuse. We will
 establish and maintain robust risk mitigation and redress measures that also protect
 privacy and freedom of expression.
-31.
-
-We commit by, 2030 to:
-
+31. We commit by, 2030 to:
 (a) Create a safe and secure online space for all users that ensures their mental
 health and well-being by defining and adopting common standards, guidelines and
 industry actions that are in compliance with international law, promote safe civic
@@ -482,13 +388,9 @@ including the Convention on the Rights of the Child (SDGs 3, 5 and 10);
 to exchange best practices and develop shared understandings of actions to protect
 privacy, freedom of expression and access to information while addressing harms
 (SDG 17);
+8/16 24-15616
 
-8/16
-
-24-15616
-
-A/79/L.2
-
+A/79/L.2
 (d) Ensure that laws and regulations on the use of technology in areas such as
 surveillance and encryption are in compliance with international law ( SDGs 10 and 16);
 (e) Develop, in consultation with all relevant stakeholders, effective
@@ -499,10 +401,7 @@ child sexual exploitation and abuse which occurs through or is amplified by the 
 of technology, including distribution over digital platforms of child sexual abuse or
 child sexual exploitation material, as well as solicitation or grooming for the purpose
 of committing a sexual offence against a child (SDG 3).
-32.
-
-We further urgently:
-
+32. We further urgently:
 (a) Call on digital technology companies and developers to engage with users
 of all backgrounds and abilities to incorporate their perspectives and needs into the
 life cycle of digital technologies (SDGs 5 and 10);
@@ -530,10 +429,7 @@ in the digital space, as well as to protect the integrity of democratic processe
 will strengthen international cooperation to address the challenge of misinformation
 and disinformation and hate speech online and mitigate the risks of information
 manipulation in a manner consistent with international law.
-35.
-
-We commit, by 2030 to:
-
+35. We commit, by 2030 to:
 (a) Design and roll out digital media and information literacy curricula to
 ensure that all users have the skills and knowledge to safely and critically interact
 with content and with information providers and to enhance resilience against the
@@ -541,25 +437,19 @@ harmful impacts of misinformation and disinformation (SDGs 3 and 4);
 (b) Promote diverse and resilient information ecosystems, including by
 strengthening independent and public media and supporting journalists and media
 workers (SDGs 9 and 16);
+24-156 16 9/16
 
-24-15616
-
-9/16
-
-A/79/L.2
-
+A/79/L.2
 (c) Provide, promote and facilitate access to and dissemination of
-independent, fact-based, timely, targeted, clear, accessible, multilingual and sciencebased information to counter misinformation and disinformation (SDGs 3, 4, 9 and
+independent, fact-based, timely, targeted, clear, accessible, multilingual and science-
+based information to counter misinformation and disinformation (SDGs 3, 4, 9 and
 16);
 (d) Promote access to relevant, reliable and accurate information in crisis
 situations, to protect and empower those in vulnerable situations (SDG 10);
 (e) Encourage United Nations entities, in collaboration with Governments and
 relevant stakeholders, to assess the impact of misinformation and disinformation on
 the achievement of the Sustainable Development Goals (SDG 17).
-36.
-
-We further urgently:
-
+36. We further urgently:
 (a) Call on digital technology companies and social media platforms to
 enhance the transparency and accountability of their systems, including terms of
 service, content moderation and recommendation algorithms and handling of users’
@@ -593,20 +483,14 @@ developing countries and the development and implementation of data governance
 frameworks at all levels that maximize the benefits of data use while protecting
 privacy and securing data. We call on the United Nations system to play a role in
 promoting capacity-building for responsible and interoperable data governance.
-39.
-
-We commit, by 2030, to:
-
+39. We commit, by 2030, to:
 (a) Draw on existing international and regional guidelines on the protection
 of privacy in the development of data governance frameworks (all SDGs);
 (b) Strengthen support to all countries to develop effective and interoperable
 national data governance frameworks (all SDGs);
-10/16
+10/16 24-15616
 
-24-15616
-
-A/79/L.2
-
+A/79/L.2
 (c) Empower individuals and groups with the ability to consider, give and
 withdraw their consent to the use of their data and the ability to choose how those
 data are used, including through legally mandated protections for data privacy and
@@ -625,20 +509,12 @@ increase the accessibility and sharing of data and help close data divides. We w
 enable open data initiatives that are created and managed by all stakeholders,
 including communities and individuals, to utilize and leverage data for their
 development and well-being.
-42.
-
-We commit, by 2030, to:
-
+42. We commit, by 2030, to:
 (a) Develop data and metadata standards designed to prevent and address bias,
 discrimination or human rights violations and abuses throughout the data life cycle,
 including through regular data auditing (SDGs 3, 5, 10 and 16);
-(b) Develop basic definitions and data classifications
+(b) Develop basic definitions and data classifications to promote
 interoperability and facilitate data exchanges (all SDGs);
-
-to
-
-promote
-
 (c) Develop common definitions and standards on the use and reuse of data
 for public benefit (all SDGs).
 Data for the Sustainable Development Goals and for development
@@ -652,10 +528,7 @@ to crises. We commit to strengthen international cooperation to close the curren
 serious gaps on data for development and to increase its public availability. We will
 champion the responsible use and sharing of data within and between countries to
 advance progress across the Sustainable Development Goals.
-45.
-
-We commit, by 2030, to:
-
+45. We commit, by 2030, to:
 (a) Increase financing for data and statistics from all sources and enhance
 efforts to build capacity in data and related skills, as well as responsible data use,
 particularly in developing countries. We will scale up predictable financing for
@@ -664,12 +537,9 @@ sustainable development data (SDG 17);
 reliable and disaggregated data for better monitoring and policymaking to accelerate
 the achievement of the 2030 Agenda, while respecting privacy and data protection.
 We will aim for a 50 per cent increase in the data available to monitor the Sustainable
-24-15616
+24-156 16 11/16
 
-11/16
-
-A/79/L.2
-
+A/79/L.2
 Development Goals, disaggregated by income, sex, age, race, ethnicity, migration
 status, disability and geographical location and other characteristics relevant in
 national contexts (all SDGs);
@@ -717,30 +587,11 @@ under way to advance safe, secure and trustworthy artificial intelligence system
 urgently need to inclusively assess and address the potential impact, opportunities and
 risks of artificial intelligence systems on sustainable development and the well-being
 and rights of individuals. International cooperation is required to promote
+12/16 24-15616
 
-12/16
-
-24-15616
-
-A/79/L.2
-
-coordination
+A/79/L.2
+coordination and compatibility of emerging artificial intelligence governance
 frameworks.
-
-and
-
-compatibility
-
-of
-
-emerging
-
-artificial
-
-intelligence
-
-governance
-
 52. We commit to advance equitable and inclusive approaches to harnessing
 artificial intelligence benefits and mitigating risks in full respect of international law,
 including international human rights law, and taking into account other relevant
@@ -772,10 +623,7 @@ develop, use and govern artificial intelligence systems and direct them towards 
 pursuit of sustainable development (all SDGs);
 (d) Promote transparency, accountability and robust human oversight of
 artificial intelligence systems in compliance with international law (all SDGs).
-56.
-
-We therefore commit to:
-
+56. We therefore commit to:
 (a) Establish, within the United Nations, a multidisciplinary Independent
 International Scientific Panel on AI with balanced geographic representation to
 promote scientific understanding through evidence-based impact, risk and
@@ -788,16 +636,11 @@ margins of existing relevant United Nations conferences and meetings (SDG 17).
 seventy-ninth session of the General Assembly co-facilitators, one from a developed
 country and one from a developing country, to identify, through an intergovernmental
 process and consultations with other relevant stakeholders, the terms of reference and
-22
-
-24-15616
-
-United Nations Educational, Scientific and Cultural Organization, Records of the General
+22 United Nations Educational, Scientific and Cultural Organization, Records of the General
 Conference, Forty-first Session, Paris, 9–24 November 2021, vol. 1, Resolutions, annex VII.
-13/16
+24-156 16 13/16
 
-A/79/L.2
-
+A/79/L.2
 modalities for the establishment and functioning of the Independent International
 Scientific Panel on AI and the Global Dialogue on AI Governance for the adoption by
 the General Assembly.
@@ -846,13 +689,9 @@ the technical community and civil society groups to endorse the Compact and take
 active part in its implementation and follow-up. We request the Secretary-General to
 put in place modalities for the voluntary endorsement of this Compact, and to make
 this information public and accessible from December 2024.
+14/16 24-15616
 
-14/16
-
-24-15616
-
-A/79/L.2
-
+A/79/L.2
 67. We recognize the importance of financing to unlock the full potential of this
 Compact. Successful implementation will require public, private and multilateral
 resources, including the pooling of investments in joint and blended facilities for
@@ -893,7 +732,8 @@ to enable the United Nations to realize the inclusive platform for digital coope
 set out in this Compact. To this end, we request the Secretary-General, following
 consultations with Member States, to submit a proposal to the General Assembly
 during its seventy-ninth session for the establishment of an office, building on and
-incorporating the activities and resources of the existing Office of the SecretaryGeneral’s Envoy on Technology, to facilitate system-wide coordination, working
+incorporating the activities and resources of the existing Office of the Secretary-
+General’s Envoy on Technology, to facilitate system-wide coordination, working
 closely with existing mechanisms. This proposal should include detailed information
 on operational functions, structure, location, mandate renewal, resources and staffing.
 73. We recognize the role of the high-level political forum on sustainable
@@ -903,12 +743,9 @@ We recognize the role of the Human Rights Council, within its existing mandate, 
 fostering an inclusive, open, safe and secure digital space for all.
 74. The cross-cutting nature of digital technologies and the multiplicity of actors
 involved in digital cooperation require synergies and aligned follow-up. We commit
-24-15616
+24-156 16 15/16
 
-15/16
-
-A/79/L.2
-
+A/79/L.2
 to review the Compact to assess progress against its objectives and to identify
 emerging opportunities and challenges for global digital cooperation. We decide to
 convene a high-level meeting entitled “High-level review of the Global Digital
@@ -919,10 +756,6 @@ and Technology for Development, the Internet Governance Forum and World Summit
 on the Information Society action line facilitators. We request the President of the
 General Assembly to appoint co-facilitators, one from a developing country and one
 from a developed country, at the eighty-first session to facilitate open, transparent and
-inclusive intergovernmental consultations to determine the modalities for this high level meeting.
-
-16/16
-
-24-15616
-
-
+inclusive intergovernmental consultations to determine the modalities for this high -
+level meeting.
+16/16 24-15616

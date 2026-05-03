@@ -6,6 +6,7 @@ jurisdiction: Paraguay
 enacted_date: 2020-09-30
 status: in_force
 official_url: https://www.senatic.gov.py/
+text_status: paraphrase
 fetched_date: 2026-05-01
 ---
 
