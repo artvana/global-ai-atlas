@@ -1,392 +1,230 @@
 ---
 id: unesco-unesco-airecommendation-2021
-source_url: https://www.unesco.org/en/artificial-intelligence/recommendation-ethics
-fetched_date: 2026-05-02
-content_type: html
+fetched_date: 2026-05-04
 ---
 
-Ethics of Artificial Intelligence - AI | UNESCO 
 
- Skip to main content 
- 
 
- 
- 
 
- Search Search 
- Quick links: Mondiacult Revive the Spirit of Mosul World Heritage 
 
- 
- 
- 
 
- 
- 
-Shutterstock 
 
- Artificial Intelligence and emerging technologies 
- 
- Home 
- Our actions 
- 
- Sharing knowledge 
- For governments 
- For the judiciary 
- For policy-makers 
- For teachers 
- For students 
- Building standards 
- Recommendation on the Ethics of Neurotechnology 
- Recommendation on the Ethics of Artificial Intelligence 
- Promoting inclusion 
- AI for gender equality 
- Digital Inclusion 
- AI and human rights for youth 
- Resources 
 
-Ethics of Artificial Intelligence 
-The Recommendation 
 
- 
- 
-© Getty Images / ivanastar 
 
-Global AI Ethics and Governance Observatory 
 
-Getting AI governance right is one of the most consequential challenges of our time, calling for mutual learning based on the lessons and good practices emerging from the different jurisdictions around the world. 
-The aim of the Global AI Ethics and Governance Observatory is to provide a global resource for policymakers, regulators, academics, the private sector and civil society to find solutions to the most pressing challenges posed by Artificial Intelligence. 
-The Observatory showcases information about the readiness of countries to adopt AI ethically and responsibly. 
-It also hosts the AI Ethics and Governance Lab, which gathers contributions, impactful research, toolkits and good practices. 
- Discover 
 
-With its unique mandate, UNESCO has led the international effort to ensure that science and technology develop with strong ethical guardrails for decades. 
-Be it on genetic research, climate change, or scientific research, UNESCO has delivered global standards to maximize the benefits of the scientific discoveries, while minimizing the downside risks, ensuring they contribute to a more inclusive, sustainable, and peaceful world. It has also identified frontier challenges in areas such as the ethics of neurotechnology, on climate engineering, and the internet of things. 
 
- 
- 
-© everything possible / Shutterstock.com 
 
-The rapid rise in artificial intelligence (AI) has created many opportunities globally , from facilitating healthcare diagnoses to enabling human connections through social media and creating labour efficiencies through automated tasks. 
-However, these rapid changes also raise profound ethical concerns . These arise from the potential AI systems have to embed biases, contribute to climate degradation, threaten human rights and more. Such risks associated with AI have already begun to compound on top of existing inequalities, resulting in further harm to already marginalised groups. 
- 
+                     Automatic Zoom                     Actual Size                     Page Fit                     Page Width                                          50%                     75%                     100%                     125%                     150%                     200%                     300%                     400%                   
+
+
+Recommendation on the ethics of artificial intelligence
+PREAMBLE 
+The General Conference of the United Nations Educational, Scientific and Cultural Organization (UNESCO), 
+meeting in Paris from 9 to 24 November 2021, at its 41st session, 
+Recognizing
+the profound and dynamic positive and negative impacts of artificial int
+elligence (AI) on societies, 
+environment,  ecosystems  and  human  lives,  including  the  human  mind,  in  part  because  of  the  new  ways  in 
+which its use influences human thinking, interaction and decision
+-
+making and affects education, human, social 
+and natural sci
+ences, culture, and communication and information,
+Recalling
+that,  by  the  terms  of  its  Constitution,  UNESCO  seeks  to  contribute  to  peace  and  security  by 
+promoting  collaboration  among  nations  through  education,  the  sciences,  culture,  and  communication  and 
+i
+nformation, in order to further universal respect for justice, for the rule of law and for the human rights and 
+fundamental freedoms which are affirmed for the peoples of the world,
+Convinced
+that the Recommendation presented here, as a standard
+-
+setting in
+strument developed through a 
+global approach, based on international law, focusing on human dignity and human rights, as well as gender 
+equality,   social   and   economic   justice   and   development,   physical   and   mental   well
+-
+being,   diversity, 
+interconnectedness, in
+clusiveness, and environmental and ecosystem protection can guide AI technologies in 
+a responsible direction,
+Guided
+by the purposes and principles of the Charter of the United Nations, 
+Considering
+that AI technologies can be of great service to humanity and all countries can benefit from them, 
+but also raise fundamental ethical concerns, for instance regarding the biases they can embed and exacerbate, 
+potentially resulting in discrimination, inequa
+lity, digital divides, exclusion and a threat to cultural, social and 
+biological  diversity  and  social  or  economic  divides;  the  need  for  transparency  and  understandability  of  the 
+workings of algorithms and the data with which they have been trained; and the
+ir potential impact on, including 
+but not limited to, human dignity, human rights and fundamental freedoms, gender equality, democracy, social, 
+economic,  political  and  cultural  processes,  scientific  and  engineering  practices,  animal  welfare,  and  the 
+enviro
+nment and ecosystems,
+Also
+recognizing
+that AI technologies can deepen existing divides and inequalities in the world, within and 
+between countries, and that justice, trust and fairness must be upheld so that no country and no one should 
+be left behind, ei
+ther by having fair access to AI technologies and enjoying their benefits or in the protection 
+against  their  negative  implications,  while  recognizing  the  different  circumstances  of  different  countries  and 
+respecting the desire of some people not to take pa
+rt in all technological developments,
+Conscious
+of the fact that all countries are facing an acceleration in the use of information and communication 
+technologies and AI technologies, as well as an increasing need for media and information literacy, and th
+at 
+the digital economy presents important societal, economic and environmental challenges and opportunities of 
+benefit
+-
+sharing,  especially  for  low
+-
+and  middle
+-
+income  countries  (LMICs),  including  but  not  limited  to  least 
+developed  countries  (LDCs),  landlock
+ed  developing  countries  (LLDCs)  and  small  island  developing  States 
+(SIDS), requiring the recognition, protection and promotion of endogenous cultures, values and knowledge in 
+order to develop sustainable digital economies,
+Further
+recognizing
+that  AI  techn
+ologies  have  the  potential  to  be  beneficial  to  the  environment  and 
+ecosystems, and  in order for  those benefits to  be realized, potential harms to and negative  impacts on the 
+environment and ecosystems should not be ignored but instead addressed,
+Noting
+that addressing risks and ethical concerns should not hamper innovation and development but rather 
+provide  new  opportunities  and  stimulate  ethically
+-
+conducted  research  and  innovation  that  anchor  AI 
+technologies  in  human  rights  and  fundamental  freedo
+ms,  values  and  principles,  and  moral  and  ethical 
+reflection,
+SHS/BIO/REC-AIETHICS/2021
+
+–
+2
+–
+Also
+recalling
+that in November 2019, the General Conference of UNESCO, at its 40th session, adopted 40 
+C/Resolution  37,  by  which  it  mandated  the  Director
+-
+General “to prepare an international sta
+ndard
+-
+setting 
+instrument on the ethics of artificial intelligence (AI) in the form of a recommendation”, which is to be submitted 
+to the General Conference at its 41st session in 2021,
+Recognizing
+that the development of AI technologies necessitates a comm
+ensurate increase in data, media 
+and information literacy as well as access to independent, pluralistic, trusted sources of information, including 
+as part of efforts to mitigate risks of misinformation, disinformation and hate speech, and harm caused throu
+gh 
+the misuse of personal data,
+Observing
+that  a  normative  framework  for  AI  technologies  and  its  social  implications  finds  its  basis  in 
+international and national legal frameworks, human rights and fundamental freedoms, ethics, need for access 
+to data, inf
+ormation and knowledge, the freedom of research and innovation, human and environmental and 
+ecosystem well
+-
+being, and connects ethical values and principles to the challenges and opportunities linked 
+to AI technologies, based on common understanding and sh
+ared aims,
+Also
+recognizing
+that  ethical  values  and  principles  can  help  develop  and  implement  rights
+-
+based  policy 
+measures and legal norms, by providing guidance with a view to the fast pace of technological development,
+Also
+convinced
+that globally accept
+ed  ethical standards for  AI  technologies, in full respect of international 
+law, in particular human rights law, can play a key role in developing AI
+-
+related norms across the globe,
+Bearing
+in
+mind
+the Universal Declaration of Human Rights (1948), the instr
+uments of the international human 
+rights  framework,  including  the  Convention  Relating  to  the  Status  of  Refugees  (1951),  the  Discrimination 
+(Employment and Occupation) Convention (1958), the International Convention on the Elimination of All Forms 
+of Racial
+Discrimination (1965), the International Covenant on Civil and Political Rights (1966), the International 
+Covenant on Economic, Social and Cultural Rights (1966), the Convention on the Elimination of All Forms of 
+Discrimination against Women (1979), the C
+onvention on the Rights of the Child (1989), and the Convention 
+on the Rights of Persons with Disabilities (2006), the Convention against Discrimination in Education (1960), 
+the Convention on the Protection and Promotion of the Diversity of Cultural Expres
+sions (2005), as well as any 
+other relevant international instruments, recommendations and declarations,
+Also
+noting
+the  United  Nations  Declaration  on  the  Right  to  Development  (1986);  the  Declaration  on  the 
+Responsibilities of the Present Generations Towar
+ds Future Generations (1997); the Universal Declaration on 
+Bioethics  and  Human  Rights  (2005);  the  United  Nations  Declaration  on  the  Rights  of  Indigenous  Peoples 
+(2007); the United Nations General Assembly resolution on the review of the World Summit on the
+Information 
+Society (A/RES/70/125) (2015); the United Nations General Assembly Resolution on Transforming our world: 
+the  2030  Agenda  for  Sustainable  Development  (A/RES/70/1)  (2015);  the  Recommendation  Concerning  the 
+Preservation  of,  and  Access  to,  Documen
+tary  Heritage  Including  in  Digital  Form  (2015);  the  Declaration  of 
+Ethical  Principles  in  relation  to  Climate  Change  (2017);  the  Recommendation  on  Science  and  Scientific 
+Researchers (2017); the Internet Universality Indicators (endorsed by UNESCO’s Internat
+ional Programme for 
+the Development of Communication in 2018), including the ROAM principles (endorsed by UNESCO’s General 
+Conference in 2015); the Human Rights Council’s resolution on “The right to privacy in the digital age” 
+(A/HRC/RES/42/15)  (2019);  and
+the  Human  Rights  Council’s  resolution  on  “New  and  emerging  digital 
+technologies and human rights” (A/HRC/RES/41/11) (2019),
+Emphasizing
+that  specific  attention  must  be  paid  to  LMICs,  including  but  not  limited  to  LDCs,  LLDCs  and 
+SIDS, as they have their ow
+n capacity but have been underrepresented in the AI ethics debate, which raises 
+concerns  about  neglecting  local  knowledge,  cultural  pluralism,  value  systems  and  the  demands  of  global 
+fairness to deal with the positive and negative impacts of AI technologie
+s,
+Also
+conscious
+of the many existing national policies, other frameworks and initiatives elaborated by relevant 
+United Nations entities, intergovernmental organizations, including regional organizations, as well as those by 
+the private sector, profession
+al organizations, non
+-
+governmental organizations, and the scientific community, 
+related to the ethics and regulation of AI technologies,
+Further
+convinced
+that AI technologies can bring important benefits, but that achieving them can also amplify 
+tension a
+round innovation, asymmetric access to knowledge and technologies, including the digital and civic 
+literacy deficit that limits the public’s ability to engage in topics related to AI, as well as barriers to access to 
+information  and  gaps  in  capacity,  human
+and  institutional  capacities,  barriers  to  access  to  technological 
 
- 
- 
-© GettyImages / PeopleImages 
 
- 
- 
-© metamorworks / Shutterstock.com 
 
-Recommendation on the Ethics of Artificial Intelligence 
-UNESCO produced the first-ever global standard on AI ethics – the ‘Recommendation on the Ethics of Artificial Intelligence ’ in November 2021. It is applicable to all 194 member states of UNESCO.
 
-The protection of human rights and dignity is the cornerstone of the Recommendation, based on the advancement of fundamental principles such as transparency and fairness, always remembering the importance of human oversight of AI systems.
 
-However, what makes the Recommendation exceptionally applicable are its extensive Policy Action Areas , which allow policymakers to translate the core values and principles into action with respect to data governance, environment and ecosystems, gender, education and research, and health and social wellbeing, among many other spheres. 
- Full text of the Recommendation 
 
-Four core values 
-Central to the Recommendation are four core values which lay the foundations for AI systems that work for the good of humanity, individuals, societies and the environment: 
 
-1 
-Human rights and human dignity 
 
-Respect, protection and promotion of human rights and fundamental freedoms and human dignity 
 
-2 
-Living in peaceful 
 
-just, and interconnected societies 
 
-3 
-Ensuring diversity and inclusiveness 
 
-4 
-Environment and ecosystem flourishing 
 
-A dynamic understanding of AI 
 
-The Recommendation interprets AI broadly as systems with the ability to process data in a way which resembles intelligent behaviour. 
-This is crucial as the rapid pace of technological change would quickly render any fixed, narrow definition outdated, and make future-proof policies infeasible. 
 
-A human rights approach to AI 
-Ten core principles lay out a human-rights centred approach to the Ethics of AI. 
 
-1. Proportionality and Do No Harm 
 
-The use of AI systems must not go beyond what is necessary to achieve a legitimate aim. Risk assessment should be used to prevent harms which may result from such uses. 
 
-2. Safety and Security 
 
-Unwanted harms (safety risks) as well as vulnerabilities to attack (security risks) should be avoided and addressed by AI actors. 
-
-3. Right to Privacy and Data Protection 
-
-Privacy must be protected and promoted throughout the AI lifecycle. Adequate data protection frameworks should also be established. 
-
-4. Multi-stakeholder and Adaptive Governance & Collaboration 
-
-International law & national sovereignty must be respected in the use of data. Additionally, participation of diverse stakeholders is necessary for inclusive approaches to AI governance. 
-
-5. Responsibility and Accountability 
-
-AI systems should be auditable and traceable. There should be oversight, impact assessment, audit and due diligence mechanisms in place to avoid conflicts with human rights norms and threats to environmental wellbeing. 
-
-6. Transparency and Explainability 
-
-The ethical deployment of AI systems depends on their transparency & explainability (T&E). The level of T&E should be appropriate to the context, as there may be tensions between T&E and other principles such as privacy, safety and security. 
-
-7. Human Oversight and Determination 
-
-Member States should ensure that AI systems do not displace ultimate human responsibility and accountability. 
-
-8. Sustainability 
-
-AI technologies should be assessed against their impacts on ‘sustainability’, understood as a set of constantly evolving goals including those set out in the UN’s Sustainable Development Goals. 
-
-9. Awareness & Literacy 
-
-Public understanding of AI and data should be promoted through open & accessible education, civic engagement, digital skills & AI ethics training, media & information literacy. 
-
-10. Fairness and Non-Discrimation 
-
-AI actors should promote social justice, fairness, and non-discrimination while taking an inclusive approach to ensure AI’s benefits are accessible to all. 
-
-Actionable policies 
-
- Key policy areas make clear arenas where Member States can make strides towards responsible developments in AI 
-While values and principles are crucial to establishing a basis for any ethical AI framework, recent movements in AI ethics have emphasised the need to move beyond high-level principles and toward practical strategies. 
-The Recommendation does just this by setting out eleven key areas for policy actions . 
-
- Read more on the key policy areas 
-
- 
- 
-- 
-
-Implementing the Recommendation 
-There is still a long way to go to provide Member States with actionable resources that ensure the effective implementation of the Recommendation. For this reason, UNESCO has developed two practical methodologies:
- 
-
- 
- 
-
-Readiness Assessment Methodology (RAM) 
-
-The RAM is designed to help assess whether Member States are prepared to effectively implement the Recommendation. It will help them identify their status of preparedness & provide a basis for UNESCO to custom-tailor its capacity-building support. 
- 
- 
-
-Ethical Impact Assessment (EIA) 
-
-EIA is a structured process which helps AI project teams, in collaboration with the affected communities, to identify & assess the impacts an AI system may have. It allows to reflect on its potential impact & to identify needed harm prevention actions. 
-
-Women4Ethical AI expert platform to advance gender equality 
-
-UNESCO's Women4Ethical AI is a new collaborative platform to support governments and companies’ efforts to ensure that women are represented equally in both the design and deployment of AI . The platform’s members will also contribute to the advancement of all the ethical provisions in the Recommendation on the Ethics of AI. 
-The platform unites 17 leading female experts from academia, civil society, the private sector and regulatory bodies, from around the world. They will share research and contribute to a repository of good practices. The platform will drive progress on non-discriminatory algorithms and data sources, and incentivize girls, women and under-represented groups to participate in AI. 
-
- Read more 
-
- 
- 
-@ UNESCO 
-
-Business Council for Ethics of AI 
-
-The Business Council for Ethics of AI is a collaborative initiative between UNESCO and companies operating in Latin America that are involved in the development or use of artificial intelligence (AI) in various sectors. 
-The Council serves as a platform for companies to come together, exchange experiences, and promote ethical practices within the AI industry. By working closely with UNESCO, it aims to ensure that AI is developed and utilized in a manner that respects human rights and upholds ethical standards. 
-Currently co-chaired by Microsoft and Telefonica, the Council is committed to strengthening technical capacities in ethics and AI, designing and implementing the Ethical Impact Assessment tool mandated by the Recommendation on the Ethics of AI, and contributing to the development of intelligent regional regulations. Through these efforts, it strives to create a competitive environment that benefits all stakeholders and promotes the responsible and ethical use of AI. 
-
- Read more 
-
- 
- 
-© Getty Images / solarseven 
-
-Ideas, news & stories 
-
- 
- 
-
- Paraguay advances in the ethical use of artificial intelligence in the justice system with UNESCO support 
- 
- 
-
- A Milestone for Ethical AI: Jamaica Launches UNESCO Readiness Assessment 
- 
- 
-
- UNESCO launches the Observatory on Artificial Intelligence in Education for Latin America and the Caribbean 
- 
- 
-
- A pioneering report by the Thomson Reuters Foundation and UNESCO sheds light on the way 3,000 companies approach AI 
- Load more 
-
-Events 
-
- 
- 
-
-Cat VIII - Symposia 
- Lao PDR to unveil UNESCO AI Ethics Readiness Assessment report at national workshop 
- 27 January 2026 
- 
- 
-
-Cat VI – Expert Committee 
- 14th Session of the IGBC / 32nd Session of the IBC / 14th Session of COMEST 
- 15 September 2025 
- 
- 
-
-Cat VIII - Symposia 
- How does AI shape human cognition and pedagogy 
- 11 September 2025 
- 
- 
-
-Cat IV – International Congress 
- The 3rd Global Forum on the Ethics of Artificial Intelligence 
- 24 June 2025 - 27 June 2025 
- Load more 
-
-Examples of ethical dilemmas 
-
- 
- 
-
-Biased AI 
-
-Examples of gender bias in artificial intelligence, originating from stereotypical representations deeply rooted in our societies. 
- 
- 
-
-AI in the Court of Law 
-
-The use of AI in judicial systems around the world is increasing, creating more ethical questions to explore. 
- 
- 
-
-AI creates art 
-
-The use of AI in culture raises interesting ethical reflections. For instance, what happens when AI has the capacity to create works of art itself? 
- 
- 
-
-Autonomous car 
-
-An autonomous car is a vehicle that is capable of sensing its environment and moving with little or no human involvement. 
-
-Multimedia 
-
- 
-
-Thumbnail 
- 
- 
- play_arrow 
-
-Name 
-Do you know AI or AI knows you better? Thinking Ethics of AI (version with multilingual subtitles) 
- 
-
-Thumbnail 
- 
- 
- play_arrow 
-
-Name 
-Evolving Interactions between Humans and AI. Thinking Ethics of AI 
- 
-
-Thumbnail 
- 
- 
- play_arrow 
-
-Name 
-Shaping AI through Cultural Diversity 
- 
-
-Thumbnail 
- 
- 
- play_arrow 
-
-Name 
-Ethics of AI: Challenges and Governance 
-
- Load more 
-
-Discover our resources 
-
- 
-
- 
-
- UNESCO Regional Office in Bangkok Snapshots 2025 
- 30 April 2026 
- 
-
- 
-
- Responsible AI in practice: 2025 global insights from the AI Company Data Initiative 
- 13 April 2026 
- 
-
- 
-
- Lao PDR: Artificial Intelligence Readiness Assessment Report 
- 17 March 2026 
- 
-
- 
-
- Viet Nam: Artificial Intelligence Readiness Assessment Report 
- 24 October 2025 
- Load more 
-
-More ... 
-
- 
- See more UNESCO publications related to artificial intelligence 
- 
- Global Forum on the Ethics of AI 2024 
- 
- Learn more about the elaboration of the Recommendation 
- 
-
-Related items 
- Social and human sciences 
- Natural sciences 
- Culture 
- Artificial intelligence 
- Norms ＆ Standards 
- Policy Advice 
- UN ＆ International cooperation 
- High technology 
- Information technology 
- Information technology (hardware) 
- Information technology (software) 
- Technology 
- Computer science 
- Ethics of science 
- Science 
- Science and development 
- Science and society 
- Science policy 
- Social science policy 
- Social sciences 
- Ethics of artificial intelligence 
- Ethics 
- Ethics of technology 
-
- See more add 
- 
- top 
-
-We use cookies on this site to enhance your user experience. For more information on how we use cookies, read our privacy notice . 
- close

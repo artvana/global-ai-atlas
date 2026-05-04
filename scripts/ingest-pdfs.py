@@ -11,7 +11,7 @@ Usage:
   python3 scripts/ingest-pdfs.py --force    # re-process even if text exists
 """
 
-import os, sys, json, argparse, pdfplumber, io
+import os, sys, json, argparse, pdfplumber, io, subprocess
 from datetime import date
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,6 +37,18 @@ def extract_txt(path):
     with open(path, encoding='utf-8', errors='replace') as f:
         text = f.read()
     return text, None
+
+def extract_rtf(path):
+    result = subprocess.run(['textutil', '-convert', 'txt', '-stdout', path],
+                            capture_output=True, timeout=30)
+    text = result.stdout.decode('utf-8', errors='replace')
+    return text, None
+
+def extract_rtfd(path):
+    rtf_inside = os.path.join(path, 'TXT.rtf')
+    if os.path.exists(rtf_inside):
+        return extract_rtf(rtf_inside)
+    raise ValueError(f'No TXT.rtf found inside {path}')
 
 def get_url_from_db(law_id):
     regs_path = os.path.join(PROJECT_ROOT, 'data', 'regulations.json')
@@ -72,11 +84,27 @@ def process_id(law_id, force=False):
                 print(f'  {law_id}: already has text, skipping (use --force to overwrite)')
                 return False
 
-    # Look for source file
+    # Look for source file (preference: rtfd > rtf > pdf > txt)
+    rtfd_path = os.path.join(PDFS_DIR, f'{law_id}.rtfd')
+    rtf_path = os.path.join(PDFS_DIR, f'{law_id}.rtf')
     pdf_path = os.path.join(PDFS_DIR, f'{law_id}.pdf')
     txt_path = os.path.join(PDFS_DIR, f'{law_id}.txt')
 
-    if os.path.exists(pdf_path):
+    if os.path.exists(rtfd_path):
+        print(f'  {law_id}: extracting RTFD...', end=' ', flush=True)
+        try:
+            text, pages = extract_rtfd(rtfd_path)
+        except Exception as e:
+            print(f'ERROR: {e}')
+            return False
+    elif os.path.exists(rtf_path):
+        print(f'  {law_id}: extracting RTF...', end=' ', flush=True)
+        try:
+            text, pages = extract_rtf(rtf_path)
+        except Exception as e:
+            print(f'ERROR: {e}')
+            return False
+    elif os.path.exists(pdf_path):
         print(f'  {law_id}: extracting PDF...', end=' ', flush=True)
         try:
             text, pages = extract_pdf(pdf_path)
@@ -90,7 +118,7 @@ def process_id(law_id, force=False):
         print(f'  {law_id}: reading TXT...', end=' ', flush=True)
         text, pages = extract_txt(txt_path)
     else:
-        print(f'  {law_id}: no file found in data/pdfs/ (tried {law_id}.pdf and {law_id}.txt)')
+        print(f'  {law_id}: no file found in data/pdfs/ (tried {law_id}.rtfd/.rtf/.pdf/.txt)')
         return False
 
     url = get_url_from_db(law_id)
@@ -117,7 +145,11 @@ def main():
 
     candidates = set()
     for fname in os.listdir(PDFS_DIR):
-        if fname.endswith('.pdf'):
+        if fname.endswith('.rtfd'):
+            candidates.add(fname[:-5])
+        elif fname.endswith('.rtf'):
+            candidates.add(fname[:-4])
+        elif fname.endswith('.pdf'):
             candidates.add(fname[:-4])
         elif fname.endswith('.txt'):
             candidates.add(fname[:-4])

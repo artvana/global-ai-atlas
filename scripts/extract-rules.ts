@@ -38,7 +38,7 @@ const TEXTS_DIR        = path.join(PROJECT_ROOT, 'data', 'texts')
 
 // ── types ─────────────────────────────────────────────────────────────────────
 
-type RuleRelationship = 'origin' | 'identical' | 'agrees' | 'similar' | 'opposed'
+type RuleRelationship = 'origin' | 'identical' | 'agrees' | 'similar' | 'opposed' | 'rejected'
 
 interface RuleLawInstance {
   law_id: string
@@ -90,7 +90,7 @@ interface ExtractedRule {
 interface MatchResult {
   index: number           // position in the category-local extracted list
   matched_rule_id: string | null
-  relationship: 'identical' | 'agrees' | 'similar' | 'opposed' | null
+  relationship: 'identical' | 'agrees' | 'similar' | 'opposed' | 'rejected' | null
   variant_of?: string
   notes: string
   is_new: boolean
@@ -156,18 +156,29 @@ async function callWithRetry(
 
 // ── extraction prompt ─────────────────────────────────────────────────────────
 
-function buildExtractionPrompt(law: Law, text: string | null): string {
+function buildExtractionPrompt(law: Law, text: string | null, isRejected = false): string {
   const body = text
-    ? `FULL LEGAL TEXT (first 12000 chars):\n${text.slice(0, 12000)}`
+    ? `FULL LEGAL TEXT (first 40000 chars):\n${text.slice(0, 40000)}`
     : `SUMMARY: ${law.summary}\n\nKEY OBLIGATIONS:\n${(law.key_obligations ?? []).join('\n')}`
 
   const instrumentContext = law.instrument_binding === false
     ? `INSTRUMENT TYPE: ${law.instrument_type ?? 'policy_framework'} — this is VOLUNTARY / SOFT LAW. Rules from this instrument are recommendations or best practices, not legally enforceable mandates. Still extract each distinct normative standard as a rule, but note in rule_text that it is a recommendation (e.g. "Organizations should...", "It is recommended that...").`
     : `INSTRUMENT TYPE: ${law.instrument_type ?? 'statute'} — this is a BINDING LEGAL INSTRUMENT. Extract enforceable obligations, prohibitions, and rights.`
 
-  return `You are building a global AI-law comparative database. Your task is to extract every distinct RULE from the following law.
+  const rejectedNote = isRejected
+    ? `\nIMPORTANT — REJECTED/FAILED BILL: This bill was proposed but did NOT pass. Extract the rules it would have imposed as written. These will be recorded as "rejected" premises — evidence of what this jurisdiction considered but decided against. Frame rule_text as written ("You must..." not "You would have had to...") — the relationship field will separately mark these as rejected.`
+    : ''
 
-${instrumentContext}
+  return `You are building a global AI-law comparative database. Your task is to extract every distinct RULE from the following law or bill.
+
+${instrumentContext}${rejectedNote}
+
+SCOPE FILTER — MANDATORY: This database covers AI and data regulation ONLY. If this is an omnibus law that also addresses non-AI/non-data topics (e.g. financial collateral, insolvency, employment gratuity, general commercial contracts), you MUST ignore those unrelated provisions entirely. Only extract rules that directly concern:
+- Artificial intelligence systems, algorithms, automated decision-making, or machine learning
+- Personal data, biometric data, data protection, or data governance
+- Digital identity, surveillance, or cyber-related provisions that specifically regulate AI/data practices
+
+Do NOT extract rules about: general commercial law, security interests, insolvency procedures, employment benefits unrelated to AI, intellectual property not specific to AI, general procurement, or any other topic unconnected to AI or data.
 
 A RULE is a specific normative standard — an obligation, prohibition, right, or recommended practice. Examples:
 - Binding obligations ("You must obtain written consent before collecting biometric data")
@@ -175,9 +186,16 @@ A RULE is a specific normative standard — an obligation, prohibition, right, o
 - Rights ("Individuals have the right to appeal an AI decision")
 - Voluntary recommendations ("Organizations should conduct a risk assessment before deployment")
 
+MECE EXTRACTION RULES — follow strictly:
+1. ONE obligation per rule. Do not merge two distinct requirements into one rule even if they appear in the same sentence or article.
+2. Do not split a single obligation into multiple rules. A rule with several conditions is still ONE rule.
+3. Each rule must be independently meaningful — do not extract definitions or recitals unless they establish a substantive obligation, prohibition, or right.
+4. Granularity: aim for the level of a single enforceable obligation. "Controllers must appoint a DPO" and "Controllers must conduct a DPIA before high-risk processing" are two distinct rules. "A DPO must be independent, have access to resources, and report to top management" is one rule.
+5. Avoid duplicating rules that address the same obligation from different angles within the same law — pick the most authoritative article.
+
 Law: ${law.full_name}
 Jurisdiction: ${law.jurisdiction}
-Enacted: ${law.enacted_date}
+Enacted/Proposed: ${law.enacted_date}
 
 ${body}
 
@@ -195,7 +213,7 @@ Category guidance for the two structural categories:
 - Use "institutional_framework" for: establishing or designating regulatory/supervisory bodies, AI offices, sandboxes, advisory committees, inter-agency coordination, international cooperation between regulators.
 - Do NOT use these for substantive obligations — a requirement that a regulator must conduct audits is "conformity_assessment", not "institutional_framework".
 
-Return ONLY a valid JSON array of rule objects. No commentary, no markdown fences. If the law is a pure policy framework with no enforceable rules, return an empty array [].`
+Return ONLY a valid JSON array of rule objects. No commentary, no markdown fences. If the law has no AI/data-related rules, return an empty array [].`
 }
 
 // ── category-first matching prompt ────────────────────────────────────────────
@@ -215,9 +233,12 @@ function buildCategoryMatchingPrompt(
     `  [${i}] citation="${r.citation}" rule_text="${r.rule_text.slice(0, 150).replace(/"/g, "'")}"`
   ).join('\n')
 
-  const instrumentNote = law.instrument_binding === false
-    ? `NOTE: This is a SOFT LAW / VOLUNTARY instrument (${law.instrument_type}). Its rules are recommendations, not binding mandates. When matching to existing rules from binding laws, use "similar" rather than "agrees" unless the voluntary standard is substantively identical in scope and content.`
-    : `NOTE: This is a BINDING LEGAL INSTRUMENT (${law.instrument_type ?? 'statute'}).`
+  const isRejected = law.status === 'failed' || law.status === 'vetoed'
+  const instrumentNote = isRejected
+    ? `NOTE: This is a REJECTED/FAILED BILL (${law.instrument_type ?? 'bill'}). Its proposed rules were NOT enacted. Use relationship "rejected" for every rule — this records a negative premise (the jurisdiction explicitly declined to adopt this obligation). Do NOT use "agrees", "identical", or "similar" for rejected bills, even if an existing rule matches.`
+    : law.instrument_binding === false
+      ? `NOTE: This is a SOFT LAW / VOLUNTARY instrument (${law.instrument_type}). Its rules are recommendations, not binding mandates. When matching to existing rules from binding laws, use "similar" rather than "agrees" unless the voluntary standard is substantively identical in scope and content.`
+      : `NOTE: This is a BINDING LEGAL INSTRUMENT (${law.instrument_type ?? 'statute'}).`
 
   return `You are maintaining a cross-jurisdictional AI-law rules database. All rules below belong to the category: "${categoryLabel}".
 
@@ -227,8 +248,9 @@ RELATIONSHIP TYPES (use the most precise one):
 - "identical": near-verbatim copy or copy-paste adoption — the new law's text is functionally the same as an existing rule. Use when the law clearly borrowed directly from another.
 - "agrees": independently adopted the same substantive requirement, but drafted it differently (different phrasing, structure, or minor scope variation).
 - "similar": same underlying concept but with meaningful differences in standard, threshold, coverage, or burden. Use when comparing binding vs. voluntary instruments where scope or obligation level differs significantly.
-- "opposed": explicitly contradicts or rejects the premise of the existing rule.
-- null: genuinely new rule not yet in the database.
+- "opposed": explicitly contradicts or rejects the premise of an existing rule (the new law's text directly undermines or prohibits what the existing rule requires).
+- "rejected": this rule comes from a bill that was proposed but failed or was vetoed — the jurisdiction explicitly declined to enact this obligation. Always used for failed/vetoed bills.
+- null: genuinely new rule not yet in the database (only valid for non-rejected laws).
 
 For "identical" relationships, also return variant_of: the first_law value from the existing rule whose text this one most closely copies.
 
@@ -247,7 +269,7 @@ Return a JSON array, one object per new rule, in the same order:
   {
     "index": 0,
     "matched_rule_id": "<existing rule_id or null>",
-    "relationship": "identical" | "agrees" | "similar" | "opposed" | null,
+    "relationship": "identical" | "agrees" | "similar" | "opposed" | "rejected" | null,
     "variant_of": "<first_law id, only when relationship is identical>",
     "notes": "one sentence on what matches, what differs, or what is new",
     "is_new": true | false
@@ -341,8 +363,9 @@ async function main() {
   const allLaws: Law[] = Array.isArray(rawRegs) ? rawRegs : rawRegs.regulations
 
   // Sort chronologically; laws with no enacted_date sort to the end
+  // Include failed/vetoed bills — they are processed as "rejected" negative premises
   const laws = allLaws
-    .filter(l => l.status !== 'superseded' && l.status !== 'failed')
+    .filter(l => l.status !== 'superseded')
     .sort((a, b) => (a.enacted_date ?? '9999').localeCompare(b.enacted_date ?? '9999'))
 
   // Load existing rules
@@ -365,10 +388,13 @@ async function main() {
     const fullText = readFullText(law)
     console.log(`  Full text: ${fullText ? `${fullText.length} chars` : 'not available, using summary'}`)
 
+    const isRejected = law.status === 'failed' || law.status === 'vetoed'
+    if (isRejected) console.log(`  Status: REJECTED/FAILED — will record as negative premises`)
+
     // Step 1: Extract rules from this law
     let extracted: ExtractedRule[] = []
     try {
-      const extractionPrompt = buildExtractionPrompt(law, fullText)
+      const extractionPrompt = buildExtractionPrompt(law, fullText, isRejected)
       const rawExtraction = await callWithRetry(async () => {
         const msg = await client.messages.create({
           model: 'claude-sonnet-4-6',
@@ -436,21 +462,53 @@ async function main() {
         const existing = rules.find(r => r.rule_id === match.matched_rule_id)
         if (existing) {
           const alreadyHas = existing.instances.some(inst => inst.law_id === law.id)
-          if (!alreadyHas && match.relationship) {
+          const rel = isRejected ? 'rejected' : match.relationship
+          if (!alreadyHas && rel) {
             const inst: RuleLawInstance = {
               law_id: law.id,
-              relationship: match.relationship,
+              relationship: rel,
               citation: ext.citation,
-              notes: match.notes,
+              notes: isRejected
+                ? `${law.short_name} (${law.jurisdiction}) proposed this rule but the bill was ${law.status} — negative premise.`
+                : match.notes,
               ...instBase,
             }
-            if (match.relationship === 'identical' && match.variant_of) {
+            if (match.relationship === 'identical' && match.variant_of && !isRejected) {
               inst.variant_of = match.variant_of
             }
             existing.instances.push(inst)
             matchedRules++
           }
         }
+      } else if (isRejected) {
+        // Rejected bill with a rule not yet in the DB — add it with "rejected" as the sole instance
+        const ruleId = makeRuleId(law.id, ext.citation)
+        if (rules.some(r => r.rule_id === ruleId)) continue
+
+        const newRule: Rule = {
+          rule_id: ruleId,
+          rule_text: ext.rule_text,
+          rule_text_technical: ext.rule_text_technical,
+          category: match.category ?? ext.category ?? 'general_governance',
+          tags: ext.tags ?? [],
+          first_instance: {
+            law_id: law.id,
+            law_name: law.full_name,
+            citation: ext.citation,
+            date: law.enacted_date,
+          },
+          instances: [
+            {
+              law_id: law.id,
+              relationship: 'rejected',
+              citation: ext.citation,
+              notes: `Proposed in ${law.short_name} (${law.jurisdiction}, ${law.enacted_date}) but bill was ${law.status} — negative premise only.`,
+              ...instBase,
+            },
+          ],
+        }
+        rules.push(newRule)
+        newRules++
       } else {
         // New rule — add it with this law as the origin
         const ruleId = makeRuleId(law.id, ext.citation)

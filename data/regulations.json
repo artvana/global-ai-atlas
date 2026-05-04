@@ -1686,7 +1686,7 @@
         "detail": "IDHR and AG enforcement; civil penalties plus private right of action."
       }
     },
-    "text_path": null,
+    "text_path": "data/texts/us-il-hb3773-2024.md",
     "ai_specific": false,
     "instrument_binding": true,
     "country": "United States",
@@ -3188,7 +3188,7 @@
     "full_name": "Protection From Predatory Pricing Act",
     "instrument_type": "statute",
     "bill_number": "HB 895",
-    "enacted_date": "2026-04-11",
+    "enacted_date": "2026-04-28",
     "effective_date": "2026-10-01",
     "status": "enacted_not_yet_effective",
     "superseded_by": null,
@@ -3234,7 +3234,7 @@
     "influenced": [],
     "official_text_url": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/HB0895?ys=2026RS",
     "summary_url": null,
-    "last_verified": "2026-04-24",
+    "last_verified": "2026-05-04",
     "summary": "Prohibits food retailers and grocery delivery services from using personal consumer data to set individualized (surveillance-based) pricing. First state law banning algorithmic price discrimination at grocery stores. Applies to retailers with $100M+ annual revenue.",
     "notable": null,
     "legal_citation": "Md. Code, Com. Law § 11-501 et seq. (as amended); HB 895, 2026 Md. Gen. Assem.",
@@ -7716,7 +7716,7 @@
     "bill_number": null,
     "enacted_date": "2026-04-07",
     "effective_date": "2026-04-07",
-    "status": "in_force",
+    "status": "enacted_not_yet_effective",
     "superseded_by": null,
     "categories": [
       "synthetic_media",
@@ -7832,7 +7832,7 @@
         "detail": "STPS and labor tribunal enforcement; fines and reinstatement orders for violations."
       }
     },
-    "text_path": null,
+    "text_path": "data/texts/mx-mx-laborai-2026.md",
     "ai_specific": true,
     "instrument_binding": true,
     "country": "Mexico",
@@ -8569,15 +8569,15 @@
     "operative_dates": null
   },
   {
-    "id": "us-fl-sb262-2024",
+    "id": "us-fl-hb919-2024",
     "jurisdiction": "Florida",
     "jurisdiction_type": "subnational",
     "region": "US-FL",
-    "short_name": "Florida SB 262 (AI in Elections)",
-    "full_name": "Florida Deceptive AI Content in Political Advertising Act",
+    "short_name": "Florida HB 919 (AI in Elections)",
+    "full_name": "CS/HB 919 — Artificial Intelligence Use in Political Advertising",
     "instrument_type": "statute",
-    "bill_number": "SB 262",
-    "enacted_date": "2024-06-01",
+    "bill_number": "HB 919",
+    "enacted_date": "2024-04-26",
     "effective_date": "2024-07-01",
     "status": "in_force",
     "superseded_by": null,
@@ -8625,12 +8625,12 @@
       "us-mi-pa263266-2023"
     ],
     "influenced": [],
-    "official_text_url": "https://www.flsenate.gov/Session/Bill/2024/262/BillText/er/PDF",
+    "official_text_url": "https://www.flsenate.gov/Session/Bill/2024/919/BillText/er/PDF",
     "summary_url": null,
     "last_verified": "2026-04-24",
     "summary": "Requires political advertisements containing AI-generated content to include a clear and conspicuous disclosure stating the content was \"created in whole or in part with the use of generative artificial intelligence.\" Applies to television, radio, digital, and print political advertising in Florida.",
     "notable": "Governor DeSantis signed this while vetoing a broader AI bill. Florida takes a narrow, disclosure-only approach to AI in elections.",
-    "legal_citation": "Fla. Stat. § 106.011(29); § 106.143(1)(c); SB 262, 2024 Fla. Leg.",
+    "legal_citation": "Fla. Stat. § 106.145; HB 919, ch. 2024-126, 2024 Fla. Leg.",
     "topics": [
       "AI political advertising disclosure",
       "deepfakes in elections",
@@ -8698,147 +8698,12 @@
         "detail": "Criminal violation for non-compliant AI political ads; Florida Election Commission enforcement plus candidate civil remedy."
       }
     },
-    "text_path": "data/texts/us-fl-sb262-2024.md",
+    "text_path": "data/texts/us-fl-hb919-2024.md",
     "ai_specific": true,
     "instrument_binding": true,
     "country": "United States",
     "operative_dates": null,
-    "official_url": "https://www.flsenate.gov/Session/Bill/2023/262/BillText/er/HTML"
-  },
-  {
-    "id": "us-ga-sb396-2024",
-    "jurisdiction": "Georgia",
-    "jurisdiction_type": "subnational",
-    "region": "US-GA",
-    "short_name": "Georgia SB 396 (AI Likeness Protection)",
-    "full_name": "Georgia Artificial Intelligence in Creative Content Act",
-    "instrument_type": "statute",
-    "bill_number": "SB 396",
-    "enacted_date": "2024-04-18",
-    "effective_date": "2024-07-01",
-    "status": "in_force",
-    "superseded_by": null,
-    "categories": [
-      "synthetic_media",
-      "biometric_identity"
-    ],
-    "primary_category": "content_moderation",
-    "scope": "sector_specific",
-    "who_regulated": [
-      "developers",
-      "deployers"
-    ],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": true,
-      "data_rights_re_training": false,
-      "private_right_of_action": true,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [
-      "Georgia courts (civil)"
-    ],
-    "max_penalty": "Actual damages; injunctive relief",
-    "max_penalty_usd_approx": 25000,
-    "preemption_status": "low_risk",
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [
-      "us-tn-elvisa-2024"
-    ],
-    "influenced": [],
-    "official_text_url": "https://www.legis.ga.gov/legislation/65358",
-    "summary_url": null,
-    "last_verified": "2026-04-24",
-    "summary": "Extends Georgia's right of publicity statute to prohibit the creation of AI-generated synthetic depictions of individuals' likeness or voice without consent for commercial purposes. Provides civil remedies including actual damages and injunctive relief. Focuses on performers and artists in the entertainment industry.",
-    "notable": "Part of the entertainment industry-driven wave of 2024 AI likeness protection laws. Georgia is home to a major film and music industry.",
-    "legal_citation": "Ga. Code Ann. §§ 51-5-1 to 51-5-10 (as amended); SB 396, 2024 Ga. Gen. Assem.",
-    "topics": [
-      "AI likeness rights",
-      "right of publicity AI",
-      "voice cloning consent",
-      "entertainment AI protection",
-      "synthetic performer depiction"
-    ],
-    "sector_tags": [
-      "entertainment_media",
-      "consumer"
-    ],
-    "technology_tags": [
-      "deepfake",
-      "voice_cloning",
-      "image_synthesis",
-      "generative_ai"
-    ],
-    "key_obligations": [
-      "Consent required before creating AI depiction of individual likeness or voice for commercial use",
-      "Civil cause of action: actual damages and injunctive relief",
-      "Applies to synthetic audio and visual depictions in commercial contexts"
-    ],
-    "issue_positions": {
-      "impact_assessment": {
-        "position": "not_addressed",
-        "detail": "Not addressed."
-      },
-      "prohibited_categories": {
-        "position": "not_addressed",
-        "detail": "Not addressed."
-      },
-      "human_review_rights": {
-        "position": "not_addressed",
-        "detail": "Not addressed."
-      },
-      "private_right_of_action": {
-        "position": "actual_damages_injunction",
-        "detail": "Individuals may sue for actual damages, disgorgement, injunction, and attorney fees for unauthorized AI replicas of their likeness or voice."
-      },
-      "synthetic_media": {
-        "position": "performer_consent_civil",
-        "detail": "Extends Georgia right of publicity to AI-generated replicas; requires consent for AI replication of voice, image, or likeness for commercial use."
-      },
-      "biometric_data": {
-        "position": "not_addressed",
-        "detail": "Not addressed."
-      },
-      "training_data_transparency": {
-        "position": "not_addressed",
-        "detail": "Not addressed."
-      },
-      "content_labeling": {
-        "position": "not_addressed",
-        "detail": "Not addressed."
-      },
-      "anti_discrimination": {
-        "position": "not_addressed",
-        "detail": "Not addressed."
-      },
-      "risk_classification": {
-        "position": "not_addressed",
-        "detail": "Not addressed."
-      },
-      "enforcement_model": {
-        "position": "criminal_misdemeanor_plus_civil",
-        "detail": "Civil remedy (actual damages, disgorgement, injunction); no standalone criminal penalty."
-      }
-    },
-    "text_path": "data/texts/us-ga-sb396-2024.md",
-    "ai_specific": true,
-    "instrument_binding": true,
-    "country": "United States",
-    "operative_dates": null
+    "official_url": "https://www.flsenate.gov/Session/Bill/2024/919"
   },
   {
     "id": "us-in-sb10-2024",
@@ -8981,7 +8846,7 @@
     "short_name": "Illinois AIEA (AI Employment Analytics)",
     "full_name": "Illinois Artificial Intelligence Video Interview Act — Extended to Employment Analytics",
     "instrument_type": "statute",
-    "bill_number": "HB 4367",
+    "bill_number": "HB 3773",
     "enacted_date": "2024-08-09",
     "effective_date": "2025-01-01",
     "status": "in_force",
@@ -9027,12 +8892,12 @@
       "us-nyc-ll144-2021"
     ],
     "influenced": [],
-    "official_text_url": "https://www.ilga.gov/legislation/publicacts/103/PDF/103-0754.pdf",
+    "official_text_url": "https://www.ilga.gov/legislation/publicacts/103/PDF/103-0804.pdf",
     "summary_url": null,
     "last_verified": "2026-04-24",
     "summary": "Extends Illinois AI employment obligations to include AI-assisted resume screening and candidate evaluation tools, beyond the earlier video interview AI law. Employers must notify candidates when AI analytics are used in the screening process and share race/ethnicity data of candidates reviewed by AI with the state annually.",
     "notable": "Builds on Illinois' 2020 AI Video Interview Act, which was the first US state law regulating AI in hiring.",
-    "legal_citation": "Ill. Comp. Stat. 775 ILCS 5/2-102; HB 4367, P.A. 103-0754 (2024)",
+    "legal_citation": "Ill. Comp. Stat. 775 ILCS 5/2-102; HB 3773, P.A. 103-0804 (2024)",
     "topics": [
       "AI in hiring",
       "resume screening AI",
@@ -9107,14 +8972,14 @@
     "operative_dates": null
   },
   {
-    "id": "us-nc-sb815-2024",
+    "id": "us-nc-sb880-2024",
     "jurisdiction": "North Carolina",
     "jurisdiction_type": "subnational",
     "region": "US-NC",
-    "short_name": "North Carolina SB 815 (AI in Elections)",
+    "short_name": "North Carolina SB 880 (AI in Elections)",
     "full_name": "North Carolina Protecting Elections from Deceptive AI Act",
     "instrument_type": "statute",
-    "bill_number": "SB 815",
+    "bill_number": "SB 880",
     "enacted_date": "2024-10-03",
     "effective_date": "2024-10-03",
     "status": "in_force",
@@ -9160,12 +9025,12 @@
       "us-mi-pa263266-2023"
     ],
     "influenced": [],
-    "official_text_url": "https://www.ncleg.gov/Sessions/2023/Bills/Senate/PDF/S815v6.pdf",
+    "official_text_url": "https://www.ncleg.gov/Sessions/2023/Bills/Senate/PDF/S880v6.pdf",
     "summary_url": null,
     "last_verified": "2026-04-24",
     "summary": "Prohibits creating or distributing materially deceptive AI-generated media depicting a candidate within 60 days before an election without a clear disclosure label. Criminal misdemeanor for knowing violations. The disclosure must be conspicuous and state that the content contains AI-generated material.",
     "notable": null,
-    "legal_citation": "N.C. Gen. Stat. § 163-278.40 et seq.; SB 815, 2023–24 N.C. Gen. Assem.",
+    "legal_citation": "N.C. Gen. Stat. § 163-278.40 et seq.; SB 880, 2023–24 N.C. Gen. Assem.",
     "topics": [
       "deepfakes in elections",
       "AI election content disclosure",
@@ -9232,7 +9097,7 @@
         "detail": "State elections board enforcement; civil penalties."
       }
     },
-    "text_path": "data/texts/us-nc-sb815-2024.md",
+    "text_path": "data/texts/us-nc-sb880-2024.md",
     "ai_specific": false,
     "instrument_binding": true,
     "country": "United States",
@@ -9842,7 +9707,7 @@
         "detail": "ANPD enforcement up to R$50M or 2% of Brazilian revenues; coordinated with LGPD liability framework."
       }
     },
-    "text_path": null,
+    "text_path": "data/texts/br-br-aiact-2025.md",
     "ai_specific": true,
     "background": {
       "origin": "Emerged from Brazil's early AI policy debate starting in 2019, catalysed by LGPD (2018) and international pressure from EU AI Act development. Senate Bill 2338 was the culmination of five competing bills merged by a special parliamentary committee.",
@@ -17883,8 +17748,8 @@
     "full_name": "DIFC Data Protection Regulation 10: Processing Personal Data Through Autonomous and Semi-Autonomous Systems",
     "instrument_type": "regulation",
     "bill_number": "Regulation No. 10 of 2020",
-    "enacted_date": "2020-10-01",
-    "effective_date": "2020-10-01",
+    "enacted_date": "2023-09-01",
+    "effective_date": "2023-09-01",
     "status": "in_force",
     "superseded_by": null,
     "categories": [
@@ -17929,8 +17794,8 @@
     "influenced": [],
     "official_text_url": "https://www.difc.ae/business/laws-regulations/data-protection/",
     "summary_url": null,
-    "last_verified": "2026-04-29",
-    "summary": "The Dubai International Financial Centre's dedicated regulation for AI and automated decision-making. Controllers using autonomous or semi-autonomous systems must conduct data protection impact assessments, notify individuals when significant decisions are made automatically, provide human review rights, and register high-risk autonomous systems with the DIFC Commissioner. One of the earliest standalone AI/automated-systems regulations in the Middle East.",
+    "last_verified": "2026-05-04",
+    "summary": "The Dubai International Financial Centre's dedicated regulation for AI and automated decision-making. Controllers using autonomous or semi-autonomous systems must conduct data protection impact assessments, notify individuals when significant decisions are made automatically, provide human review rights, and register high-risk autonomous systems with the DIFC Commissioner. One of the earliest standalone AI/automated-systems regulations in the Middle East. NOTE: The 2020 in the ID refers to the parent Data Protection Law No. 5/2020; Regulation 10 on Autonomous Systems was itself enacted September 2023.",
     "notable": "DIFC is Dubai's primary financial free zone; this regulation influenced UAE federal AI policy and similar rules in ADGM (Abu Dhabi Global Market).",
     "legal_citation": "DIFC Commissioner's Office, Regulation No. 10 of 2020",
     "topics": [
@@ -19093,7 +18958,7 @@
     "instrument_binding": true,
     "country": "Russia",
     "operative_dates": null,
-    "text_path": null
+    "text_path": "data/texts/ru-ru-aiexperiment-2020.md"
   },
   {
     "id": "pk-pk-pdpa-2023",
@@ -28736,7 +28601,8 @@
     "ai_specific": true,
     "instrument_binding": true,
     "country": "Norway",
-    "operative_dates": "Consultation closed September 2025; Storting introduction expected 2026; EEA entry into force pending Joint Committee decision"
+    "operative_dates": "Consultation closed September 2025; Storting introduction expected 2026; EEA entry into force pending Joint Committee decision",
+    "text_path": "data/texts/no-no-kiloven-2026.md"
   },
   {
     "id": "ru-ru-ailaw169-2025",
@@ -29019,7 +28885,8 @@
     "ai_specific": true,
     "instrument_binding": true,
     "country": "Turkey",
-    "operative_dates": "Pending; submitted to Grand National Assembly 7 November 2025"
+    "operative_dates": "Pending; submitted to Grand National Assembly 7 November 2025",
+    "text_path": "data/texts/tr-tr-aibill-2025.md"
   },
   {
     "id": "jp-jp-appi-2022",
@@ -29987,7 +29854,7 @@
       "Australia to actively participate in OECD AI Policy Observatory and GPAI"
     ],
     "official_text_url": "https://www.industry.gov.au/publications/australias-artificial-intelligence-action-plan",
-    "last_verified": "2026-05-02",
+    "last_verified": "2026-05-04",
     "country": "Australia",
     "provisions": {
       "private_right_of_action": false,
@@ -29999,7 +29866,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/au-au-naistrategy-2021.md",
-    "region": "Asia-Pacific"
+    "region": "Asia-Pacific",
+    "superseded_by": "au-au-naianplan-2025"
   },
   {
     "id": "bh-bh-pdpl-2018",
@@ -31687,7 +31555,7 @@
     "id": "us-va-sb1090-2025",
     "short_name": "Virginia SB 1090 (High-Risk AI Act)",
     "jurisdiction": "Virginia",
-    "status": "failed",
+    "status": "vetoed",
     "instrument_binding": false,
     "instrument_type": "statute",
     "scope": "comprehensive",
@@ -31723,7 +31591,8 @@
       "ai_interaction_disclosure": true,
       "biometric_protection": false
     },
-    "region": "North America"
+    "region": "North America",
+    "text_path": "data/texts/us-va-sb1090-2025.md"
   },
   {
     "id": "uy-uy-autodecision-2020",
@@ -33898,7 +33767,7 @@
       "Right to expedited appeal for AI-driven denials"
     ],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ne-lb77-2025.md",
     "legal_citation": null
   },
   {
@@ -34281,7 +34150,7 @@
       "Economic development programs for AI companies"
     ],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-nj-sb3432-2025.md",
     "legal_citation": null
   },
   {
@@ -52961,7 +52830,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-de-h233-2025.md",
     "legal_citation": null
   },
   {
@@ -53642,73 +53511,6 @@
     "key_obligations": [],
     "issue_positions": {},
     "text_path": "data/texts/us-fl-h527-2026.md",
-    "legal_citation": null
-  },
-  {
-    "id": "us-fl-h543-2026",
-    "jurisdiction": "Florida",
-    "jurisdiction_type": "subnational",
-    "region": "US-FL",
-    "short_name": "Florida H 543 — Transportation",
-    "full_name": "Florida H 543 — Transportation",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "H 543",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "failed",
-    "superseded_by": null,
-    "categories": [
-      "government_ai_use"
-    ],
-    "primary_category": "government_ai_use",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Requires Department of Transportation to increase minimum perception reaction time of all steady yellow signals by specified amount of time, requires licensing, rather than registration, of motor carriers and fuel tax decals, rather than identifying devices, for motor carriers, revises various provisions relating to qualified motor vehicles, motor carriers, fuel tax decals, and temporary fuel-use permits.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Appropriations",
-      "Government Use"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": "data/texts/us-fl-h543-2026.md",
     "legal_citation": null
   },
   {
@@ -55451,72 +55253,6 @@
     "legal_citation": null
   },
   {
-    "id": "us-fl-s146-2025",
-    "jurisdiction": "Florida",
-    "jurisdiction_type": "subnational",
-    "region": "US-FL",
-    "short_name": "Florida S 146 — Use of Artificial Intelligence by State Agencies",
-    "full_name": "Florida S 146 — Use of Artificial Intelligence by State Agencies",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "S 146",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "government_ai_use"
-    ],
-    "primary_category": "government_ai_use",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Requires the State Digital Service to conduct a certain study.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Government Use"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": "data/texts/us-fl-s146-2025.md",
-    "legal_citation": null
-  },
-  {
     "id": "us-fl-s166-2025",
     "jurisdiction": "Florida",
     "jurisdiction_type": "subnational",
@@ -55580,270 +55316,6 @@
     "key_obligations": [],
     "issue_positions": {},
     "text_path": "data/texts/us-fl-s166-2025.md",
-    "legal_citation": null
-  },
-  {
-    "id": "us-fl-s202-2025",
-    "jurisdiction": "Florida",
-    "jurisdiction_type": "subnational",
-    "region": "US-FL",
-    "short_name": "Florida S 202 — Mandatory Human Reviews of Insurance Claim Denials",
-    "full_name": "Florida S 202 — Mandatory Human Reviews of Insurance Claim Denials",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "S 202",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "consumer_protection"
-    ],
-    "primary_category": "consumer_protection",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Requires that insurers decisions to deny a claim or any portion of a claim be made by qualified human professionals, prohibits the use of algorithms, artificial intelligence, or machine learning systems as the sole basis for determining whether to adjust or deny a claim, authorizes the Office of Insurance Regulation to conduct market conduct examinations and investigations under certain circumstances.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Private Sector Use"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": "data/texts/us-fl-s202-2025.md",
-    "legal_citation": null
-  },
-  {
-    "id": "us-fl-h281-2025",
-    "jurisdiction": "Florida",
-    "jurisdiction_type": "subnational",
-    "region": "US-FL",
-    "short_name": "Florida H 281 — Use of Artificial Intelligence",
-    "full_name": "Florida H 281 — Use of Artificial Intelligence",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "H 281",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "health_ai"
-    ],
-    "primary_category": "health_ai",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Prohibits use of artificial intelligence in practice of psychology, clinical social work, marriage and family therapy, and mental health counseling, respectively, defines artificial intelligence, provides exceptions.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Health Use"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": "data/texts/us-fl-h281-2025.md",
-    "legal_citation": null
-  },
-  {
-    "id": "us-fl-s320-2025",
-    "jurisdiction": "Florida",
-    "jurisdiction_type": "subnational",
-    "region": "US-FL",
-    "short_name": "Florida S 320 — Administrative Efficiency in Public Schools",
-    "full_name": "Florida S 320 — Administrative Efficiency in Public Schools",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "S 320",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "education_ai"
-    ],
-    "primary_category": "education_ai",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Exempts district school boards from requirements for adopting certain rules, deletes a requirement for a district school board to employ an internal auditor in certain circumstances, revises requirements relating to district school board attendance policies for Voluntary Prekindergarten Education Programs, prohibits a school from being required to use a certain parameter as the sole determining factor to recruit instructional personnel.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Education Use"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": "data/texts/us-fl-s320-2025.md",
-    "legal_citation": null
-  },
-  {
-    "id": "us-fl-s344-2025",
-    "jurisdiction": "Florida",
-    "jurisdiction_type": "subnational",
-    "region": "US-FL",
-    "short_name": "Florida S 344 — Use of Artificial Intelligence",
-    "full_name": "Florida S 344 — Use of Artificial Intelligence",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "S 344",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "health_ai"
-    ],
-    "primary_category": "health_ai",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Defines the term artificial intelligence, prohibits the use of artificial intelligence in the practice of psychology, clinical social work, marriage and family therapy, and mental health counseling.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Health Use"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": "data/texts/us-fl-s344-2025.md",
     "legal_citation": null
   },
   {
@@ -56046,138 +55518,6 @@
     "legal_citation": null
   },
   {
-    "id": "us-fl-h527-2025",
-    "jurisdiction": "Florida",
-    "jurisdiction_type": "subnational",
-    "region": "US-FL",
-    "short_name": "Florida H 527 — Mandatory Human Reviews of Insurance Claim Denials",
-    "full_name": "Florida H 527 — Mandatory Human Reviews of Insurance Claim Denials",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "H 527",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "consumer_protection"
-    ],
-    "primary_category": "consumer_protection",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Requires that insurers decisions to deny claims or any portion of claim be made by qualified human professionals, provides duties of qualified human professionals before they make certain determinations, requires insurers to maintain certain records, prohibits algorithms, artificial intelligence systems, and machine learning systems from being used as sole basis for determining whether to adjust or deny claim or portion of claim.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Private Sector Use"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": "data/texts/us-fl-h527-2025.md",
-    "legal_citation": null
-  },
-  {
-    "id": "us-fl-h543-2025",
-    "jurisdiction": "Florida",
-    "jurisdiction_type": "subnational",
-    "region": "US-FL",
-    "short_name": "Florida H 543 — Transportation",
-    "full_name": "Florida H 543 — Transportation",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "H 543",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "general_ai_governance"
-    ],
-    "primary_category": "general_ai_governance",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Requires Department of Transportation to increase minimum perception reaction time of all steady yellow signals by specified amount of time, requires licensing, rather than registration, of motor carriers and fuel tax decals, rather than identifying devices, for motor carriers, revises various provisions relating to qualified motor vehicles, motor carriers, fuel tax decals, and temporary fuel-use permits.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Appropriations"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": "data/texts/us-fl-h543-2025.md",
-    "legal_citation": null
-  },
-  {
     "id": "us-fl-s562-2025",
     "jurisdiction": "Florida",
     "jurisdiction_type": "subnational",
@@ -56243,72 +55583,6 @@
     "key_obligations": [],
     "issue_positions": {},
     "text_path": "data/texts/us-fl-s562-2025.md",
-    "legal_citation": null
-  },
-  {
-    "id": "us-fl-h659-2025",
-    "jurisdiction": "Florida",
-    "jurisdiction_type": "subnational",
-    "region": "US-FL",
-    "short_name": "Florida H 659 — Interactions With Artificial Intelligence",
-    "full_name": "Florida H 659 — Interactions With Artificial Intelligence",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "H 659",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "consumer_protection"
-    ],
-    "primary_category": "consumer_protection",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Requires operators of companion chatbot platforms to display specified information on any application, browser, or format used to access companion chatbots on platform and to prevent such chatbots from engaging with users unless specified protocols are maintained, requires such operators to verify age of users and to take specified actions for users who are minors, requires such operators to file specified reports with Department of Legal Affairs (DLA).",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Private Sector Use"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": "data/texts/us-fl-h659-2025.md",
     "legal_citation": null
   },
   {
@@ -58815,73 +58089,6 @@
     "legal_citation": null
   },
   {
-    "id": "us-ga-h7-2025",
-    "jurisdiction": "Georgia",
-    "jurisdiction_type": "subnational",
-    "region": "US-GA",
-    "short_name": "Georgia H 7 — Income Tax",
-    "full_name": "Georgia H 7 — Income Tax",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "H 7",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "employment_ai"
-    ],
-    "primary_category": "employment_ai",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Relates to the imposition, rate, computation, exemptions, and credits relative to income taxes, so as to provide for a tax credit for workforce-ready graduates employed in high-tech full-time jobs in rural counties in the State, requires the Department of Labor to establish certain criteria, provides for conditions and limitations, provides for definitions, provides for rules and regulations and forms, provides for related matters.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Effect on Labor/Employment",
-      "Taxes"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": null,
-    "legal_citation": null
-  },
-  {
     "id": "us-ga-s9-2025",
     "jurisdiction": "Georgia",
     "jurisdiction_type": "subnational",
@@ -58946,7 +58153,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ga-s9-2025.md",
     "legal_citation": null
   },
   {
@@ -59149,7 +58356,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ga-h147-2025.md",
     "legal_citation": null
   },
   {
@@ -59366,74 +58573,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
-    "legal_citation": null
-  },
-  {
-    "id": "us-ga-s179-2025",
-    "jurisdiction": "Georgia",
-    "jurisdiction_type": "subnational",
-    "region": "US-GA",
-    "short_name": "Georgia S 179 — Elementary and Secondary Education",
-    "full_name": "Georgia S 179 — Elementary and Secondary Education",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "S 179",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "education_ai"
-    ],
-    "primary_category": "education_ai",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Relates to elementary and secondary education, so as to provide that, beginning in the 2031-2032 school year, a computer science course shall be a high school graduation requirement, provides for certain computer science courses to be substituted for units of credit graduation requirements in certain other subject areas, provides for such exception, revises legislative findings, increases the allowable charge per student per semester for each Georgia Virtual School course from $250.00 to $350.00.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Education Use",
-      "Education/Training"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ga-h171-2025.md",
     "legal_citation": null
   },
   {
@@ -59838,7 +58978,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ga-h566-2025.md",
     "legal_citation": null
   },
   {
@@ -60104,7 +59244,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-gu-b64-2025.md",
     "legal_citation": null
   },
   {
@@ -60170,7 +59310,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-gu-b171-2025.md",
     "legal_citation": null
   },
   {
@@ -60236,7 +59376,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-gu-b209-2025.md",
     "legal_citation": null
   },
   {
@@ -65531,7 +64671,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-hi-s1618-2025.md",
     "legal_citation": null
   },
   {
@@ -72496,7 +71636,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-il-s1996-2025.md",
     "legal_citation": null
   },
   {
@@ -72769,7 +71909,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-il-s2255-2025.md",
     "legal_citation": null
   },
   {
@@ -73240,7 +72380,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-il-h3021-2025.md",
     "legal_citation": null
   },
   {
@@ -74121,7 +73261,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-il-h3838-2025.md",
     "legal_citation": null
   },
   {
@@ -78444,140 +77584,6 @@
     "key_obligations": [],
     "issue_positions": {},
     "text_path": "data/texts/us-ia-s562-2025.md",
-    "legal_citation": null
-  },
-  {
-    "id": "us-ia-h826-2025",
-    "jurisdiction": "Iowa",
-    "jurisdiction_type": "subnational",
-    "region": "US-IA",
-    "short_name": "Iowa H 826 — Obscene Materials Involving Minors",
-    "full_name": "Iowa H 826 — Obscene Materials Involving Minors",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "H 826",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "synthetic_media_deepfake"
-    ],
-    "primary_category": "synthetic_media_deepfake",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Relates to obscene materials involving minors, and provides penalties.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Deepfake"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": "data/texts/us-ia-h826-2025.md",
-    "legal_citation": null
-  },
-  {
-    "id": "us-ia-d1398-2025",
-    "jurisdiction": "Iowa",
-    "jurisdiction_type": "subnational",
-    "region": "US-IA",
-    "short_name": "Iowa D 1398 — Campaign Materials Artificial Intelligence Disclosures",
-    "full_name": "Iowa D 1398 — Campaign Materials Artificial Intelligence Disclosures",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "D 1398",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "elections_political",
-      "consumer_protection"
-    ],
-    "primary_category": "elections_political",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Relates to campaign materials artificial intelligence disclosures.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Elections",
-      "Notification"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": "data/texts/us-ia-d1398-2025.md",
     "legal_citation": null
   },
   {
@@ -93482,7 +92488,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h76-2025.md",
     "legal_citation": null
   },
   {
@@ -93687,7 +92693,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h81-2025.md",
     "legal_citation": null
   },
   {
@@ -93754,7 +92760,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h83-2025.md",
     "legal_citation": null
   },
   {
@@ -93822,7 +92828,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h90-2025.md",
     "legal_citation": null
   },
   {
@@ -94103,7 +93109,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-s250-2025.md",
     "legal_citation": null
   },
   {
@@ -94302,7 +93308,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-hd396-2025.md",
     "legal_citation": null
   },
   {
@@ -94504,7 +93510,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h495-2025.md",
     "legal_citation": null
   },
   {
@@ -94707,7 +93713,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h846-2025.md",
     "legal_citation": null
   },
   {
@@ -94773,7 +93779,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-sd873-2025.md",
     "legal_citation": null
   },
   {
@@ -94840,7 +93846,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-s994-2025.md",
     "legal_citation": null
   },
   {
@@ -94907,7 +93913,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-s1016-2025.md",
     "legal_citation": null
   },
   {
@@ -95107,7 +94113,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-s1174-2025.md",
     "legal_citation": null
   },
   {
@@ -95175,7 +94181,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h1210-2025.md",
     "legal_citation": null
   },
   {
@@ -95308,73 +94314,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
-    "legal_citation": null
-  },
-  {
-    "id": "us-ma-s1484-2025",
-    "jurisdiction": "Massachusetts",
-    "jurisdiction_type": "subnational",
-    "region": "US-MA",
-    "short_name": "Massachusetts S 1484 — Incidence and Death From Pancreatic Cancer",
-    "full_name": "Massachusetts S 1484 — Incidence and Death From Pancreatic Cancer",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "S 1484",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "health_ai"
-    ],
-    "primary_category": "health_ai",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Reduces incidence and death from pancreatic cancer.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Health Use"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h1479-2025.md",
     "legal_citation": null
   },
   {
@@ -95441,7 +94381,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h1564-2025.md",
     "legal_citation": null
   },
   {
@@ -95507,7 +94447,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h1593-2025.md",
     "legal_citation": null
   },
   {
@@ -95573,7 +94513,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h1615-2025.md",
     "legal_citation": null
   },
   {
@@ -95642,7 +94582,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h1931-2025.md",
     "legal_citation": null
   },
   {
@@ -95777,7 +94717,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h2236-2025.md",
     "legal_citation": null
   },
   {
@@ -96108,7 +95048,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-s2632-2025.md",
     "legal_citation": null
   },
   {
@@ -96241,7 +95181,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-h3208-2025.md",
     "legal_citation": null
   },
   {
@@ -96307,7 +95247,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-hd3373-2025.md",
     "legal_citation": null
   },
   {
@@ -96443,75 +95383,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
-    "legal_citation": null
-  },
-  {
-    "id": "us-ma-h4071-2025",
-    "jurisdiction": "Massachusetts",
-    "jurisdiction_type": "subnational",
-    "region": "US-MA",
-    "short_name": "Massachusetts H 4071 — Fall River Redevelopment Authority",
-    "full_name": "Massachusetts H 4071 — Fall River Redevelopment Authority",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "H 4071",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "consumer_protection",
-      "general_ai_governance"
-    ],
-    "primary_category": "consumer_protection",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Provides that the secretary of the State Department of Transportation authorizes to convey certain parcels of land in the city of Fall River to the Fall River Redevelopment Authority.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Private Sector Use",
-      "Responsible Use"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ma-hd3986-2025.md",
     "legal_citation": null
   },
   {
@@ -97393,7 +96265,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-mi-h4536-2025.md",
     "legal_citation": null
   },
   {
@@ -97463,74 +96335,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
-    "legal_citation": null
-  },
-  {
-    "id": "us-mi-h4538-2025",
-    "jurisdiction": "Michigan",
-    "jurisdiction_type": "subnational",
-    "region": "US-MI",
-    "short_name": "Michigan H 4538 — Software Pricing Information",
-    "full_name": "Michigan H 4538 — Software Pricing Information",
-    "instrument_type": "bill",
-    "instrument_binding": false,
-    "bill_number": "H 4538",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "consumer_protection"
-    ],
-    "primary_category": "consumer_protection",
-    "scope": "single_issue",
-    "who_regulated": [],
-    "provisions": {
-      "ai_interaction_disclosure": false,
-      "training_data_disclosure": false,
-      "content_labelling": false,
-      "risk_classification_system": false,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": null,
-    "preemption_notes": null,
-    "legal_family": "us_consumer_protection",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": null,
-    "summary_url": null,
-    "last_verified": "2026-05-03",
-    "summary": "Prohibits use of certain software to share pricing information and set rent rates.",
-    "notable": null,
-    "ai_specific": true,
-    "country": "United States",
-    "operative_dates": null,
-    "topics": [
-      "Housing",
-      "Private Sector Use"
-    ],
-    "sector_tags": [],
-    "technology_tags": [],
-    "key_obligations": [],
-    "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-mi-h4537-2025.md",
     "legal_citation": null
   },
   {
@@ -97737,7 +96542,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-mi-h4668-2025.md",
     "legal_citation": null
   },
   {
@@ -101778,7 +100583,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": "data/texts/us-mn-s1119-2025.md",
+    "text_path": null,
     "legal_citation": null
   },
   {
@@ -102188,7 +100993,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": "data/texts/us-mn-h1606-2025.md",
+    "text_path": null,
     "legal_citation": null
   },
   {
@@ -102390,7 +101195,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": "data/texts/us-mn-s1856-2025.md",
+    "text_path": null,
     "legal_citation": null
   },
   {
@@ -102458,7 +101263,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": "data/texts/us-mn-s1857-2025.md",
+    "text_path": null,
     "legal_citation": null
   },
   {
@@ -102591,7 +101396,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": "data/texts/us-mn-s1886-2025.md",
+    "text_path": null,
     "legal_citation": null
   },
   {
@@ -103733,7 +102538,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": "data/texts/us-mn-s3098-2025.md",
+    "text_path": null,
     "legal_citation": null
   },
   {
@@ -105758,7 +104563,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ms-s2437-2025.md",
     "legal_citation": null
   },
   {
@@ -117649,7 +116454,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-nj-s4088-2026.md",
     "legal_citation": null
   },
   {
@@ -120424,7 +119229,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-nj-s4135-2025.md",
     "legal_citation": null
   },
   {
@@ -129325,7 +128130,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-s205-2025.md",
     "legal_citation": null
   },
   {
@@ -129394,7 +128199,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a222-2025.md",
     "legal_citation": null
   },
   {
@@ -129534,7 +128339,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a399-2025.md",
     "legal_citation": null
   },
   {
@@ -129741,7 +128546,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a563-2025.md",
     "legal_citation": null
   },
   {
@@ -129811,7 +128616,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a606-2025.md",
     "legal_citation": null
   },
   {
@@ -129949,7 +128754,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a773-2025.md",
     "legal_citation": null
   },
   {
@@ -130087,7 +128892,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a907-2025.md",
     "legal_citation": null
   },
   {
@@ -130156,7 +128961,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-s933-2025.md",
     "legal_citation": null
   },
   {
@@ -130223,7 +129028,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-s934-2025.md",
     "legal_citation": null
   },
   {
@@ -130360,7 +129165,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-s1169-2025.md",
     "legal_citation": null
   },
   {
@@ -131390,7 +130195,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-s1815-2025.md",
     "legal_citation": null
   },
   {
@@ -132420,7 +131225,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a3125-2025.md",
     "legal_citation": null
   },
   {
@@ -132626,7 +131431,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-s3243-2025.md",
     "legal_citation": null
   },
   {
@@ -132901,7 +131706,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a3361-2025.md",
     "legal_citation": null
   },
   {
@@ -132969,7 +131774,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a3411-2025.md",
     "legal_citation": null
   },
   {
@@ -133728,7 +132533,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a4002-2025.md",
     "legal_citation": null
   },
   {
@@ -133862,7 +132667,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-s4394-2025.md",
     "legal_citation": null
   },
   {
@@ -134815,7 +133620,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a6030-2025.md",
     "legal_citation": null
   },
   {
@@ -135498,7 +134303,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a6545-2025.md",
     "legal_citation": null
   },
   {
@@ -135567,7 +134372,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a6578-2025.md",
     "legal_citation": null
   },
   {
@@ -135839,7 +134644,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a6767-2025.md",
     "legal_citation": null
   },
   {
@@ -136047,7 +134852,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-s6954-2025.md",
     "legal_citation": null
   },
   {
@@ -136118,7 +134923,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-s6955-2025.md",
     "legal_citation": null
   },
   {
@@ -136388,7 +135193,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-s7033-2025.md",
     "legal_citation": null
   },
   {
@@ -136456,7 +135261,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a7172-2025.md",
     "legal_citation": null
   },
   {
@@ -136522,7 +135327,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-s7202-2025.md",
     "legal_citation": null
   },
   {
@@ -137417,7 +136222,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a8022-2025.md",
     "legal_citation": null
   },
   {
@@ -137620,7 +136425,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-s8217-2025.md",
     "legal_citation": null
   },
   {
@@ -138625,7 +137430,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a8843-2025.md",
     "legal_citation": null
   },
   {
@@ -138764,7 +137569,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-ny-a8884-2025.md",
     "legal_citation": null
   },
   {
@@ -142504,7 +141309,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-oh-h84-2025.md",
     "legal_citation": null
   },
   {
@@ -143045,7 +141850,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-oh-h455-2025.md",
     "legal_citation": null
   },
   {
@@ -148876,7 +147681,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-pa-s293-2025.md",
     "legal_citation": null
   },
   {
@@ -149695,7 +148500,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-pa-s939-2025.md",
     "legal_citation": null
   },
   {
@@ -150846,7 +149651,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-pr-s68-2025.md",
     "legal_citation": null
   },
   {
@@ -158976,7 +157781,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-tn-h545-2025.md",
     "legal_citation": null
   },
   {
@@ -159043,7 +157848,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-tn-s677-2025.md",
     "legal_citation": null
   },
   {
@@ -159309,7 +158114,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-tn-s837-2025.md",
     "legal_citation": null
   },
   {
@@ -159375,7 +158180,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-tn-h849-2025.md",
     "legal_citation": null
   },
   {
@@ -159912,7 +158717,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-tn-s1363-2025.md",
     "legal_citation": null
   },
   {
@@ -180422,7 +179227,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-a33-2025.md",
     "legal_citation": null
   },
   {
@@ -180488,7 +179293,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-a105-2025.md",
     "legal_citation": null
   },
   {
@@ -180554,7 +179359,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-s130-2025.md",
     "legal_citation": null
   },
   {
@@ -180621,7 +179426,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-s142-2025.md",
     "legal_citation": null
   },
   {
@@ -180688,7 +179493,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-a142-2025.md",
     "legal_citation": null
   },
   {
@@ -180756,7 +179561,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-a292-2025.md",
     "legal_citation": null
   },
   {
@@ -180822,7 +179627,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-s295-2025.md",
     "legal_citation": null
   },
   {
@@ -180888,7 +179693,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-s357-2025.md",
     "legal_citation": null
   },
   {
@@ -180956,7 +179761,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-a368-2025.md",
     "legal_citation": null
   },
   {
@@ -181024,7 +179829,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-s373-2025.md",
     "legal_citation": null
   },
   {
@@ -181090,7 +179895,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-a377-2025.md",
     "legal_citation": null
   },
   {
@@ -181156,7 +179961,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-s400-2025.md",
     "legal_citation": null
   },
   {
@@ -181222,7 +180027,7 @@
     "technology_tags": [],
     "key_obligations": [],
     "issue_positions": {},
-    "text_path": null,
+    "text_path": "data/texts/us-wi-a415-2025.md",
     "legal_citation": null
   },
   {
@@ -181426,6 +180231,2365 @@
     "key_obligations": [],
     "issue_positions": {},
     "text_path": "data/texts/us-wy-d149-2025.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-ca-ab2655-2024",
+    "jurisdiction": "California",
+    "jurisdiction_type": "subnational",
+    "region": "US-CA",
+    "country": "United States",
+    "short_name": "California AB 2655 (Defending Democracy from Deepfake Deception Act)",
+    "full_name": "Defending Democracy from Deepfake Deception Act of 2024",
+    "instrument_type": "statute",
+    "bill_number": "AB 2655",
+    "enacted_date": "2024-09-17",
+    "effective_date": "2025-01-01",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "synthetic_media",
+    "categories": [
+      "synthetic_media",
+      "elections"
+    ],
+    "scope": "sector_specific",
+    "who_regulated": [
+      "deployers",
+      "platforms"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": true,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": true,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "California courts (civil)"
+    ],
+    "max_penalty": "Injunctive relief; civil damages",
+    "max_penalty_usd_approx": null,
+    "preemption_status": "low_risk",
+    "preemption_notes": null,
+    "legal_family": "us_consumer_protection",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2655",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Requires large online platforms to label AI-generated content depicting political candidates or measures within 120 days of an election. Prohibits platforms from distributing materially deceptive AI-generated images or audio of candidates that did not actually make the depicted statements. Platforms must add disclosure labels and may be ordered to remove unlabeled deepfakes.",
+    "notable": "Platform-facing law; pairs with AB 2839 (individual liability) for a two-track California election deepfake regime.",
+    "legal_citation": "Cal. Elec. Code §§ 20012–20013 (as added); AB 2655, 2023–24 Leg. Sess.",
+    "topics": [
+      "election deepfakes",
+      "AI-generated political content",
+      "platform disclosure",
+      "synthetic media elections"
+    ],
+    "sector_tags": [
+      "elections",
+      "social_media"
+    ],
+    "technology_tags": [
+      "deepfake",
+      "image_synthesis",
+      "audio_synthesis",
+      "generative_ai"
+    ],
+    "key_obligations": [
+      "Large platforms must label AI-generated election content within 72 hours of being notified",
+      "Platforms must maintain mechanisms for candidates and campaigns to report unlabeled deepfakes",
+      "Applies within 120 days before an election"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "us-ca-sb1120-2024",
+    "jurisdiction": "California",
+    "jurisdiction_type": "subnational",
+    "region": "US-CA",
+    "country": "United States",
+    "short_name": "California SB 1120 (Health Insurance AI Utilization Review)",
+    "full_name": "Physicians Make Decisions Act",
+    "instrument_type": "statute",
+    "bill_number": "SB 1120",
+    "enacted_date": "2024-09-28",
+    "effective_date": "2025-01-01",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "sector_healthcare",
+    "categories": [
+      "sector_healthcare",
+      "algorithmic_systems"
+    ],
+    "scope": "sector_specific",
+    "who_regulated": [
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": true,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "California Department of Managed Health Care",
+      "California Insurance Commissioner"
+    ],
+    "max_penalty": "Administrative penalties; license actions",
+    "max_penalty_usd_approx": null,
+    "preemption_status": "low_risk",
+    "preemption_notes": null,
+    "legal_family": "us_consumer_protection",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB1120",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Prohibits health insurers and managed care plans from using AI or algorithms as the sole basis for denying, delaying, or modifying health care coverage decisions. Requires that any coverage determination made or assisted by AI must be reviewed and approved by a licensed California physician or appropriate health care provider. Applies to utilization review processes.",
+    "notable": "First California law directly restricting AI in health insurance coverage decisions; part of a national trend of state healthcare AI bills.",
+    "legal_citation": "Cal. Health & Saf. Code § 1367.01 (as amended); Cal. Ins. Code § 10123.135 (as added); SB 1120, 2023–24 Leg. Sess.",
+    "topics": [
+      "health insurance AI",
+      "utilization review AI",
+      "physician override AI",
+      "algorithmic coverage decisions"
+    ],
+    "sector_tags": [
+      "healthcare",
+      "insurance"
+    ],
+    "technology_tags": [
+      "algorithmic_decision_making",
+      "clinical_ai"
+    ],
+    "key_obligations": [
+      "AI-assisted coverage decisions must be reviewed and signed off by a licensed physician",
+      "Insurers must document AI involvement in utilization review decisions",
+      "Patients retain rights to appeal AI-influenced denials through standard grievance procedures"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "us-ca-ab2839-2024",
+    "jurisdiction": "California",
+    "jurisdiction_type": "subnational",
+    "region": "US-CA",
+    "country": "United States",
+    "short_name": "California AB 2839 (Election Deepfakes — Individual Liability)",
+    "full_name": "Elections: Deceptive AI Content",
+    "instrument_type": "statute",
+    "bill_number": "AB 2839",
+    "enacted_date": "2024-09-17",
+    "effective_date": "2024-09-17",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "synthetic_media",
+    "categories": [
+      "synthetic_media",
+      "elections"
+    ],
+    "scope": "sector_specific",
+    "who_regulated": [
+      "individuals",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": true,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": true,
+      "safe_harbor": false,
+      "prohibited_categories": true,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "California courts (civil)"
+    ],
+    "max_penalty": "Actual damages; statutory damages up to $25,000 per violation; injunctive relief",
+    "max_penalty_usd_approx": 25000,
+    "preemption_status": "low_risk",
+    "preemption_notes": null,
+    "legal_family": "us_consumer_protection",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2839",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Prohibits distributing materially deceptive AI-generated images, audio, or video depicting candidates for office or election officials within 120 days of an election without a clear disclosure. Creates a private right of action for candidates, election officials, and the Attorney General. Enacted as urgency statute, effective immediately on signing.",
+    "notable": "Urgency statute; companion to AB 2655 (platform obligations). Individual-level liability for election deepfakes.",
+    "legal_citation": "Cal. Elec. Code §§ 20010–20011 (as added); AB 2839, 2023–24 Leg. Sess.",
+    "topics": [
+      "election deepfakes",
+      "synthetic media elections",
+      "AI political disinformation",
+      "individual liability deepfakes"
+    ],
+    "sector_tags": [
+      "elections"
+    ],
+    "technology_tags": [
+      "deepfake",
+      "image_synthesis",
+      "audio_synthesis",
+      "video_synthesis"
+    ],
+    "key_obligations": [
+      "Must include clear disclosure when distributing AI-generated election content",
+      "Prohibition on materially deceptive deepfakes of candidates within 120-day election window",
+      "Candidates and AG may seek injunctions and damages"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "us-ca-ab2355-2024",
+    "jurisdiction": "California",
+    "jurisdiction_type": "subnational",
+    "region": "US-CA",
+    "country": "United States",
+    "short_name": "California AB 2355 (Political Ad AI Disclosure)",
+    "full_name": "Political Advertisements: Artificial Intelligence Disclosures",
+    "instrument_type": "statute",
+    "bill_number": "AB 2355",
+    "enacted_date": "2024-09-19",
+    "effective_date": "2025-01-01",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "synthetic_media",
+    "categories": [
+      "synthetic_media",
+      "elections"
+    ],
+    "scope": "sector_specific",
+    "who_regulated": [
+      "deployers",
+      "individuals"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": true,
+      "training_data_disclosure": false,
+      "content_labelling": true,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "California Fair Political Practices Commission"
+    ],
+    "max_penalty": "Administrative fines; civil penalties",
+    "max_penalty_usd_approx": null,
+    "preemption_status": "low_risk",
+    "preemption_notes": null,
+    "legal_family": "us_consumer_protection",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2355",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Requires political advertisements that include AI-generated content to include a clear and conspicuous disclosure stating the content was created or substantially altered using AI. Applies to paid political advertisements in any medium. Enforced by the California Fair Political Practices Commission.",
+    "notable": "Extends California's existing political ad disclosure regime to cover AI-generated content specifically.",
+    "legal_citation": "Cal. Gov. Code § 84504.3 (as added); AB 2355, 2023–24 Leg. Sess.",
+    "topics": [
+      "political advertising AI",
+      "AI disclosure elections",
+      "campaign finance AI",
+      "synthetic media disclosure"
+    ],
+    "sector_tags": [
+      "elections",
+      "advertising"
+    ],
+    "technology_tags": [
+      "generative_ai",
+      "deepfake"
+    ],
+    "key_obligations": [
+      "Political ads using AI-generated content must include conspicuous disclosure",
+      "Applies to any paid political communication in any medium",
+      "FPPC to adopt implementing regulations"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "us-ca-ab1831-2024",
+    "jurisdiction": "California",
+    "jurisdiction_type": "subnational",
+    "region": "US-CA",
+    "country": "United States",
+    "short_name": "California AB 1831 (AI-Generated CSAM)",
+    "full_name": "Child Sexual Abuse Material: Artificial Intelligence",
+    "instrument_type": "statute",
+    "bill_number": "AB 1831",
+    "enacted_date": "2024-09-17",
+    "effective_date": "2025-01-01",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "child_safety",
+    "categories": [
+      "child_safety",
+      "synthetic_media"
+    ],
+    "scope": "sector_specific",
+    "who_regulated": [
+      "individuals"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": true,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "California courts (criminal)",
+      "California Attorney General"
+    ],
+    "max_penalty": "Felony; imprisonment up to 8 years",
+    "max_penalty_usd_approx": null,
+    "preemption_status": "low_risk",
+    "preemption_notes": null,
+    "legal_family": "us_consumer_protection",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB1831",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Expands California's child sexual abuse material (CSAM) laws to expressly cover AI-generated, computer-generated, or otherwise digitally created depictions of minors engaged in sexual conduct. Makes it a felony to possess, distribute, or produce such material regardless of whether any real child is depicted.",
+    "notable": "Closes the AI-generated CSAM loophole in California law; part of a wave of similar state laws in 2024.",
+    "legal_citation": "Cal. Penal Code § 311 et seq. (as amended); AB 1831, 2023–24 Leg. Sess.",
+    "topics": [
+      "AI CSAM",
+      "synthetic child abuse material",
+      "AI-generated illegal content",
+      "child protection AI"
+    ],
+    "sector_tags": [
+      "law_enforcement",
+      "child_safety"
+    ],
+    "technology_tags": [
+      "generative_ai",
+      "image_synthesis",
+      "video_synthesis"
+    ],
+    "key_obligations": [
+      "Prohibition on possessing, producing, or distributing AI-generated CSAM",
+      "No requirement of a real minor victim for prosecution"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "us-ca-sb926-2024",
+    "jurisdiction": "California",
+    "jurisdiction_type": "subnational",
+    "region": "US-CA",
+    "country": "United States",
+    "short_name": "California SB 926 (AI Nonconsensual Intimate Imagery)",
+    "full_name": "Artificial Intelligence: Intimate Images",
+    "instrument_type": "statute",
+    "bill_number": "SB 926",
+    "enacted_date": "2024-09-19",
+    "effective_date": "2025-01-01",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "synthetic_media",
+    "categories": [
+      "synthetic_media",
+      "privacy"
+    ],
+    "scope": "sector_specific",
+    "who_regulated": [
+      "individuals"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": true,
+      "safe_harbor": false,
+      "prohibited_categories": true,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "California courts (criminal and civil)"
+    ],
+    "max_penalty": "Misdemeanor or felony; civil damages",
+    "max_penalty_usd_approx": null,
+    "preemption_status": "low_risk",
+    "preemption_notes": null,
+    "legal_family": "us_consumer_protection",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB926",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Expands California's nonconsensual intimate imagery (NCII) law to cover AI-generated or digitally altered intimate images of real, identifiable persons. Creates both criminal liability (misdemeanor/felony depending on intent) and a private civil right of action for victims. Addresses sextortion using AI-generated imagery.",
+    "notable": "Extends existing revenge porn law to cover synthetic deepfakes of real people. Companion to SB 981 (platform reporting obligations).",
+    "legal_citation": "Cal. Penal Code § 647(j)(4) (as amended); Cal. Civ. Code § 1708.87 (as amended); SB 926, 2023–24 Leg. Sess.",
+    "topics": [
+      "AI intimate images",
+      "deepfake NCII",
+      "nonconsensual pornography AI",
+      "sextortion AI"
+    ],
+    "sector_tags": [
+      "law_enforcement"
+    ],
+    "technology_tags": [
+      "deepfake",
+      "image_synthesis",
+      "video_synthesis",
+      "generative_ai"
+    ],
+    "key_obligations": [
+      "Prohibits distributing AI-generated intimate images of identifiable real persons without consent",
+      "Criminal and civil liability for perpetrators",
+      "Victims may seek injunctive relief and actual damages"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "us-ca-sb981-2024",
+    "jurisdiction": "California",
+    "jurisdiction_type": "subnational",
+    "region": "US-CA",
+    "country": "United States",
+    "short_name": "California SB 981 (Deepfake Intimate Image Reporting — Platforms)",
+    "full_name": "Social Media Platforms: Artificial Intelligence-Generated Content",
+    "instrument_type": "statute",
+    "bill_number": "SB 981",
+    "enacted_date": "2024-09-19",
+    "effective_date": "2025-01-01",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "synthetic_media",
+    "categories": [
+      "synthetic_media",
+      "platform_regulation"
+    ],
+    "scope": "sector_specific",
+    "who_regulated": [
+      "platforms"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "California Attorney General",
+      "California courts (civil)"
+    ],
+    "max_penalty": "Civil penalties up to $1,000 per violation",
+    "max_penalty_usd_approx": 1000,
+    "preemption_status": "low_risk",
+    "preemption_notes": null,
+    "legal_family": "us_consumer_protection",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB981",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Requires large social media platforms to implement a mechanism allowing users to report sexually explicit AI-generated or digitally altered content depicting real people without their consent. Platforms must provide an easily accessible reporting tool and take action on valid reports. Complements SB 926 by imposing platform-level obligations.",
+    "notable": "Platform-side obligation for AI NCII; pairs with SB 926 (individual liability). Early example of platform duty-to-act requirements for AI-generated harmful content.",
+    "legal_citation": "Cal. Bus. & Prof. Code § 22949.30 (as added); SB 981, 2023–24 Leg. Sess.",
+    "topics": [
+      "platform NCII reporting",
+      "deepfake reporting mechanism",
+      "AI intimate image platforms",
+      "social media AI obligations"
+    ],
+    "sector_tags": [
+      "social_media",
+      "platforms"
+    ],
+    "technology_tags": [
+      "deepfake",
+      "image_synthesis",
+      "generative_ai"
+    ],
+    "key_obligations": [
+      "Large social media platforms must provide user-accessible reporting tool for AI-generated sexually explicit content",
+      "Platforms must act on valid reports within a reasonable timeframe",
+      "Platform must publish an annual transparency report on NCII reports received and actions taken"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "jp-jp-aiutilguidelines-2025",
+    "jurisdiction": "Japan",
+    "jurisdiction_type": "national",
+    "region": "JP",
+    "country": "Japan",
+    "short_name": "Japan AI Utilization Guidelines (2025)",
+    "full_name": "Guidelines on the Utilization of Artificial Intelligence (Article 13 Guidelines)",
+    "instrument_type": "guidelines",
+    "bill_number": null,
+    "enacted_date": "2025-12-19",
+    "effective_date": "2025-12-19",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "developers",
+      "deployers",
+      "government_agencies"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": true,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "AI Strategy Headquarters (Cabinet)",
+      "METI",
+      "Ministry of Internal Affairs and Communications"
+    ],
+    "max_penalty": "Administrative guidance; sector-specific enforcement via existing laws",
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "hybrid",
+    "inspired_by": [
+      "jp-jp-aiprom-2025"
+    ],
+    "influenced": [],
+    "official_text_url": "https://www.cas.go.jp/jp/seisaku/ai_senryaku/index.html",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Statutory guidelines issued by the government pursuant to Article 13 of Japan's AI Promotion Act (2025). Establish operational standards for responsible AI development and utilization across sectors, covering transparency, accountability, safety evaluation, and human oversight. Provide sector-specific guidance for high-risk AI applications in healthcare, finance, and transportation. Issued by the AI Strategy Headquarters on December 19, 2025.",
+    "notable": "First statutory AI utilization guidelines issued under Japan's AI Promotion Act; operationalize the Act's principles with sector-specific detail.",
+    "legal_citation": "Guidelines on AI Utilization under Art. 13 of Act No. 14 of 2025 (Japan); promulgated December 19, 2025.",
+    "topics": [
+      "Japan AI guidelines",
+      "AI utilization standards",
+      "responsible AI Japan",
+      "AI safety evaluation Japan"
+    ],
+    "sector_tags": [
+      "all_sectors"
+    ],
+    "technology_tags": [
+      "generative_ai",
+      "large_language_models",
+      "autonomous_systems"
+    ],
+    "key_obligations": [
+      "AI developers must implement safety evaluation processes aligned with government guidelines",
+      "Deployers must document AI system purpose, risks, and oversight mechanisms",
+      "Transparency obligations for AI interactions in consumer-facing applications",
+      "Sector ministries to issue supplementary guidance for high-risk domains"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "jp-jp-aibasicplan-2025",
+    "jurisdiction": "Japan",
+    "jurisdiction_type": "national",
+    "region": "JP",
+    "country": "Japan",
+    "short_name": "Japan Basic AI Plan (2025)",
+    "full_name": "Basic Plan on the Promotion of Research, Development and Utilization of AI-Related Technologies",
+    "instrument_type": "policy_framework",
+    "bill_number": null,
+    "enacted_date": "2025-12-23",
+    "effective_date": "2025-12-23",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies",
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": true,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "AI Strategy Headquarters (Cabinet)"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "hybrid",
+    "inspired_by": [
+      "jp-jp-aiprom-2025"
+    ],
+    "influenced": [],
+    "official_text_url": "https://www.cas.go.jp/jp/seisaku/ai_senryaku/index.html",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Cabinet-approved Basic Plan issued pursuant to Article 18 of Japan's AI Promotion Act (2025). Sets out the government's multi-year strategic priorities for AI research, development, and deployment. Specifies measurable targets for AI investment, talent development, international cooperation, and AI safety. Binding on all government ministries, which must align their sectoral AI policies and budgets with the Plan. Approved by the AI Strategy Headquarters on December 23, 2025.",
+    "notable": "The core planning instrument under Japan's AI Promotion Act; binds all ministries and establishes the national AI investment roadmap.",
+    "legal_citation": "Basic Plan under Art. 18 of Act No. 14 of 2025 (Japan); Cabinet approval December 23, 2025.",
+    "topics": [
+      "Japan national AI plan",
+      "AI investment Japan",
+      "AI strategy headquarters",
+      "Japan AI roadmap"
+    ],
+    "sector_tags": [
+      "all_sectors",
+      "government_services"
+    ],
+    "technology_tags": [
+      "generative_ai",
+      "large_language_models"
+    ],
+    "key_obligations": [
+      "All government ministries must align sectoral AI policies and budgets with the Basic Plan",
+      "Annual progress reports to the Cabinet on Plan implementation",
+      "AI Strategy Headquarters to coordinate cross-ministry AI initiatives",
+      "International AI governance engagement obligations tied to G7/OECD commitments"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "au-au-naianplan-2025",
+    "jurisdiction": "Australia",
+    "jurisdiction_type": "national",
+    "region": "Asia-Pacific",
+    "country": "Australia",
+    "short_name": "Australia National AI Plan 2025",
+    "full_name": "Australia's National Artificial Intelligence Plan 2025",
+    "instrument_type": "policy_framework",
+    "bill_number": null,
+    "enacted_date": "2025-12-02",
+    "effective_date": "2025-12-02",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies",
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": true,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Department of Industry, Science and Resources",
+      "National AI Centre (NAIC)"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "standalone",
+    "inspired_by": [
+      "au-au-naistrategy-2021"
+    ],
+    "influenced": [],
+    "official_text_url": "https://www.industry.gov.au/publications/australias-national-ai-plan",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Australia's whole-of-government AI strategy through 2030, superseding the 2021 National AI Strategy. Establishes the government's AI investment priorities, safety and governance framework, and international engagement positions. Commits to mandatory safeguards for high-risk AI applications in regulated sectors, builds on the 2024 Voluntary AI Safety Standard, and establishes a National AI Centre as the coordination body. Endorsed by the Albanese government December 2, 2025.",
+    "notable": "Supersedes au-au-naistrategy-2021; signals shift from voluntary to mandatory high-risk AI obligations in Australia.",
+    "legal_citation": "Australia's National AI Plan 2025, released December 2, 2025 by the Department of Industry, Science and Resources.",
+    "topics": [
+      "Australia AI plan",
+      "national AI strategy Australia",
+      "AI safety standard Australia",
+      "Australia AI governance 2030"
+    ],
+    "sector_tags": [
+      "all_sectors",
+      "government_services"
+    ],
+    "technology_tags": [
+      "generative_ai",
+      "autonomous_systems"
+    ],
+    "key_obligations": [
+      "Government agencies must apply mandatory AI safety standards for high-risk AI procurement",
+      "Mandatory reporting for high-risk AI incidents in regulated sectors",
+      "All Commonwealth entities to publish AI transparency statements by 2026",
+      "Establish mandatory high-risk AI regime with statutory basis by 2027"
+    ],
+    "ai_specific": true,
+    "instrument_binding": false,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "sg-sg-agenticaigf-2026",
+    "jurisdiction": "Singapore",
+    "jurisdiction_type": "national",
+    "region": "Asia-Pacific",
+    "country": "Singapore",
+    "short_name": "Singapore Model AI Governance Framework for Agentic AI",
+    "full_name": "Model AI Governance Framework for Agentic AI Systems",
+    "instrument_type": "guidelines",
+    "bill_number": null,
+    "enacted_date": "2026-01-01",
+    "effective_date": "2026-01-01",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": true,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": true,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Infocomm Media Development Authority (IMDA)"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "standalone",
+    "inspired_by": [
+      "sg-sg-maigf-2020"
+    ],
+    "influenced": [],
+    "official_text_url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2026/model-ai-governance-framework-agentic-ai",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Singapore's first dedicated governance framework for agentic AI systems — AI that can autonomously plan, execute multi-step tasks, and interact with other AI agents or external systems. Published by IMDA and the AI Verify Foundation in January 2026. Addresses unique risks of agentic AI including unpredictable behavior, cascading failures in multi-agent pipelines, and reduced human oversight. Provides a five-layer accountability model covering principal hierarchy, agent transparency, human control mechanisms, and incident response.",
+    "notable": "First major national governance framework specifically targeting agentic AI. Builds on Singapore's 2020 MAIGF and positions Singapore as the global reference for agentic AI governance.",
+    "legal_citation": "Model AI Governance Framework for Agentic AI Systems, IMDA / AI Verify Foundation, January 2026.",
+    "topics": [
+      "agentic AI governance",
+      "multi-agent systems",
+      "autonomous AI Singapore",
+      "AI agent accountability"
+    ],
+    "sector_tags": [
+      "all_sectors"
+    ],
+    "technology_tags": [
+      "agentic_ai",
+      "large_language_models",
+      "multi_agent_systems",
+      "autonomous_systems"
+    ],
+    "key_obligations": [
+      "Organizations deploying agentic AI must establish a principal hierarchy with clear human override mechanisms",
+      "Agentic AI systems must maintain action logs sufficient for post-hoc accountability",
+      "Human review required for high-stakes agentic decisions (financial, legal, medical)",
+      "Multi-agent pipelines must designate a responsible entity for overall system behavior"
+    ],
+    "ai_specific": true,
+    "instrument_binding": false,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "es-es-aesia-2023",
+    "jurisdiction": "Spain",
+    "jurisdiction_type": "national",
+    "region": "Europe",
+    "country": "Spain",
+    "short_name": "Spain Royal Decree 729/2023 (AESIA)",
+    "full_name": "Real Decreto 729/2023 por el que se crea la Agencia Española de Supervisión de la Inteligencia Artificial",
+    "instrument_type": "executive_order",
+    "bill_number": null,
+    "enacted_date": "2023-07-22",
+    "effective_date": "2023-09-02",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "AESIA (Agencia Española de Supervisión de la Inteligencia Artificial)"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [
+      "eu-eu-aiact-2024"
+    ],
+    "influenced": [],
+    "official_text_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-18911",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Royal Decree establishing the Agencia Española de Supervisión de la Inteligencia Artificial (AESIA) as Spain's national AI supervisory authority. AESIA is responsible for supervising the application of the EU AI Act in Spain, conducting market surveillance, handling complaints, and representing Spain in EU AI governance bodies. Spain was the first EU member state to establish a dedicated national AI supervisory authority. Located in A Coruña (Galicia). AESIA is separate from the AI regulatory sandbox (established by RD 817/2023).",
+    "notable": "Spain was the first EU country to designate its EU AI Act national competent authority, ahead of the Act's full application. AESIA became operational in late 2023.",
+    "legal_citation": "Real Decreto 729/2023, de 22 de julio (BOE núm. 175, 24 julio 2023).",
+    "topics": [
+      "AESIA Spain",
+      "Spain AI supervisory authority",
+      "EU AI Act national authority Spain",
+      "Spanish AI regulator"
+    ],
+    "sector_tags": [
+      "all_sectors",
+      "government_services"
+    ],
+    "technology_tags": [
+      "general_ai"
+    ],
+    "key_obligations": [
+      "AESIA to serve as Spain's national competent authority and market surveillance authority for EU AI Act",
+      "AESIA to establish national AI registry and complaint handling mechanisms",
+      "AESIA to represent Spain at EU AI Board",
+      "Budget and staffing under Ministry of Economic Affairs and Digital Transformation"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "ae-difc-dpr2024-2024",
+    "jurisdiction": "UAE — DIFC",
+    "jurisdiction_type": "subnational",
+    "region": "Middle East",
+    "country": "United Arab Emirates",
+    "short_name": "DIFC Laws Amendment Law No. 1 of 2025 (Data Protection Amendments)",
+    "full_name": "DIFC Laws Amendment Law, DIFC Law No. 1 of 2025",
+    "instrument_type": "regulation",
+    "bill_number": "DIFC Law No. 1 of 2025",
+    "enacted_date": "2025-01-01",
+    "effective_date": "2024-09-01",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "data_protection",
+    "categories": [
+      "data_protection",
+      "algorithmic_systems"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": true,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": true,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": true,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "DIFC Commissioner of Data Protection"
+    ],
+    "max_penalty": "USD 100,000 per violation",
+    "max_penalty_usd_approx": 100000,
+    "preemption_status": "n/a",
+    "preemption_notes": "DIFC is a separate free zone with its own legal system; these regulations apply only within the DIFC.",
+    "legal_family": "civil_law",
+    "inspired_by": [
+      "ae-difc-reg10-2020"
+    ],
+    "influenced": [],
+    "official_text_url": "https://www.difc.ae/business/operating/data-protection/",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Omnibus amendment law amending four DIFC laws. Part 2 amends the Data Protection Law 2020: clarifies territorial scope, strengthens data sharing safeguards (validity, proportionality, minimisation), restructures liability provisions, and adds an explicit private right of action for data subjects (new Article 64A). Also adjusts DPIA fine from $50 to $20,000 and data sharing fine from $50 to $10,000. Parts 3–5 amend the Law of Security 2024, Insolvency Law 2019, and Employment Law 2019.",
+    "notable": "Extends DIFC's world-leading autonomous systems regulation with sector-specific AI governance requirements. DIFC continues to position itself as the most comprehensive AI regulatory jurisdiction in the Gulf.",
+    "legal_citation": "DIFC Law No. 1 of 2025",
+    "topics": [
+      "DIFC AI regulation",
+      "autonomous systems DIFC",
+      "AI audit DIFC",
+      "Gulf AI governance"
+    ],
+    "sector_tags": [
+      "financial_services",
+      "all_sectors"
+    ],
+    "technology_tags": [
+      "algorithmic_decision_making",
+      "autonomous_systems",
+      "generative_ai"
+    ],
+    "key_obligations": [
+      "AI systems processing personal data must meet ethicality, fairness, transparency, security, and accountability design principles",
+      "High-risk AI systems require third-party audit and certification before deployment",
+      "Data controllers must maintain an AI system register",
+      "Automated decisions with significant effects on individuals require human review upon request"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": "data/texts/ae-difc-dpr2024-2024.md",
+    "operative_dates": null
+  },
+  {
+    "id": "lv-lv-aidev-2025",
+    "jurisdiction": "Latvia",
+    "jurisdiction_type": "national",
+    "region": "Europe",
+    "country": "Latvia",
+    "short_name": "Latvia Law on the Development of Artificial Intelligence",
+    "full_name": "Likums par mākslīgā intelekta attīstību (Law on the Development of Artificial Intelligence)",
+    "instrument_type": "statute",
+    "bill_number": null,
+    "enacted_date": "2025-01-01",
+    "effective_date": "2025-01-01",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "developers",
+      "deployers",
+      "government_agencies"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": true,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Latvia AI Centre (established by companion law)",
+      "Data State Inspectorate"
+    ],
+    "max_penalty": "Administrative fines per EU AI Act enforcement mechanism",
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [
+      "eu-eu-aiact-2024"
+    ],
+    "influenced": [],
+    "official_text_url": "https://likumi.lv/ta/id/",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Latvia's primary national AI governance law, establishing principles and a framework for responsible AI development and deployment in Latvia. Sets out human-centric AI development principles, transparency and accountability requirements, and Latvia's implementation framework for the EU AI Act. Enacted alongside the companion Law on the AI Centre (lv-lv-aicentre-2025), which establishes the institutional body. Latvia became one of the first EU member states to adopt national AI legislation supplementing the EU AI Act.",
+    "notable": "Latvia was among the first EU member states to enact comprehensive national AI legislation alongside EU AI Act implementation. Paired with the AI Centre law.",
+    "legal_citation": "Likums par mākslīgā intelekta attīstību, Latvijas Vēstnesis, 2025.",
+    "topics": [
+      "Latvia AI law",
+      "national AI legislation Latvia",
+      "EU AI Act implementation Latvia",
+      "Baltic AI governance"
+    ],
+    "sector_tags": [
+      "all_sectors"
+    ],
+    "technology_tags": [
+      "general_ai",
+      "generative_ai"
+    ],
+    "key_obligations": [
+      "AI developers and deployers must adhere to human-centric development principles",
+      "High-risk AI systems subject to mandatory registration and conformity assessment",
+      "Government agencies must conduct AI impact assessments before deployment",
+      "Latvia AI Centre designated as national competent authority"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "rw-rw-naip-2023",
+    "jurisdiction": "Rwanda",
+    "jurisdiction_type": "national",
+    "region": "Africa",
+    "country": "Rwanda",
+    "short_name": "Rwanda National AI Policy 2023",
+    "full_name": "Rwanda National Artificial Intelligence Policy",
+    "instrument_type": "policy_framework",
+    "bill_number": null,
+    "enacted_date": "2023-04-20",
+    "effective_date": "2023-04-20",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies",
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Ministry of ICT and Innovation",
+      "Rwanda Utilities Regulatory Authority (RURA)"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "standalone",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://www.minict.gov.rw/fileadmin/user_upload/Rwanda_National_AI_Policy.pdf",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Rwanda's first national AI policy, approved by the Cabinet on April 20, 2023, making Rwanda the first African country to adopt a national AI policy. Establishes Rwanda's vision for AI-driven economic transformation and public service delivery across agriculture, health, education, and justice. Focuses on responsible AI development, data governance, AI talent development, and international AI cooperation. The policy commits Rwanda to human-centric AI aligned with African Union principles.",
+    "notable": "First African country to adopt a formal national AI policy; a landmark for the continent.",
+    "legal_citation": "Rwanda National Artificial Intelligence Policy, Cabinet approval April 20, 2023.",
+    "topics": [
+      "Rwanda AI policy",
+      "Africa AI governance",
+      "first African AI policy",
+      "national AI strategy Rwanda"
+    ],
+    "sector_tags": [
+      "all_sectors",
+      "government_services"
+    ],
+    "technology_tags": [
+      "general_ai"
+    ],
+    "key_obligations": [
+      "Government to establish AI governance coordination mechanism",
+      "Public sector to adopt responsible AI procurement standards",
+      "Investment in national AI talent and research capacity",
+      "Data governance framework to support AI development"
+    ],
+    "ai_specific": true,
+    "instrument_binding": false,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "ke-ke-aistrategy-2025",
+    "jurisdiction": "Kenya",
+    "jurisdiction_type": "national",
+    "region": "Africa",
+    "country": "Kenya",
+    "short_name": "Kenya National AI Strategy 2025–2030",
+    "full_name": "Kenya National Artificial Intelligence Strategy 2025–2030",
+    "instrument_type": "policy_framework",
+    "bill_number": null,
+    "enacted_date": "2025-03-27",
+    "effective_date": "2025-03-27",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies",
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Ministry of Information, Communications and the Digital Economy",
+      "Konza Technopolis Development Authority"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "standalone",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://ict.go.ke/national-ai-strategy-2025-2030/",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Kenya's five-year national AI strategy, formally launched March 27, 2025, positioning Kenya as East Africa's regional AI hub. Organized around seven pillars: AI infrastructure and data, talent development, research and innovation, ethical AI governance, public sector adoption, private sector transformation, and international partnerships. Commits Kenya to establishing an AI governance framework and a Centre of Excellence in AI by 2027. Includes specific targets for AI adoption in healthcare, agriculture, and financial services.",
+    "notable": "Kenya positions itself as Africa's regional AI leader, particularly for the East Africa corridor. The Strategy was developed with UNESCO and World Bank support.",
+    "legal_citation": "Kenya National AI Strategy 2025–2030, Ministry of ICT, March 27, 2025.",
+    "topics": [
+      "Kenya AI strategy",
+      "East Africa AI",
+      "Africa AI governance",
+      "Kenya technology policy"
+    ],
+    "sector_tags": [
+      "all_sectors",
+      "government_services"
+    ],
+    "technology_tags": [
+      "general_ai"
+    ],
+    "key_obligations": [
+      "Government to establish AI governance framework by 2026",
+      "Public sector to publish AI deployment guidelines",
+      "Investment in national AI research infrastructure and data centres",
+      "Centre of Excellence in AI to be established by 2027"
+    ],
+    "ai_specific": true,
+    "instrument_binding": false,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "ng-ng-nais-2024",
+    "jurisdiction": "Nigeria",
+    "jurisdiction_type": "national",
+    "region": "Africa",
+    "country": "Nigeria",
+    "short_name": "Nigeria National AI Strategy (NAIS) 2024",
+    "full_name": "Nigeria National Artificial Intelligence Strategy 2024–2029",
+    "instrument_type": "policy_framework",
+    "bill_number": null,
+    "enacted_date": "2024-08-01",
+    "effective_date": "2024-08-01",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies",
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Federal Ministry of Communications, Innovation and Digital Economy",
+      "NITDA (National Information Technology Development Agency)"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "standalone",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://ncair.nitda.gov.ng/national-ai-strategy/",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Nigeria's five-year national AI strategy, launched August 2024 by the Federal Ministry of Communications, Innovation and Digital Economy. Establishes Nigeria's vision to become Africa's largest AI economy by leveraging its population of over 220 million and growing tech sector. Organized around five pillars: AI education and skills, AI-powered public services, AI innovation ecosystem, responsible AI governance, and international AI collaboration. Nigeria's National Centre for Artificial Intelligence and Robotics (NCAIR) under NITDA leads implementation.",
+    "notable": "Nigeria has Africa's largest economy and population; this strategy positions it as the continental AI superpower. Implementation is anchored in the NDPA 2023 data governance framework.",
+    "legal_citation": "Nigeria National Artificial Intelligence Strategy 2024–2029, NITDA/NCAIR, August 2024.",
+    "topics": [
+      "Nigeria AI strategy",
+      "West Africa AI",
+      "Africa AI governance",
+      "NCAIR Nigeria"
+    ],
+    "sector_tags": [
+      "all_sectors"
+    ],
+    "technology_tags": [
+      "general_ai"
+    ],
+    "key_obligations": [
+      "NCAIR to publish national AI standards and guidelines by 2025",
+      "Federal agencies to conduct AI readiness assessments",
+      "Investment in AI education programs and STEM curriculum integration",
+      "Annual AI governance progress reports to the President"
+    ],
+    "ai_specific": true,
+    "instrument_binding": false,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "za-za-naipf-2024",
+    "jurisdiction": "South Africa",
+    "jurisdiction_type": "national",
+    "region": "Africa",
+    "country": "South Africa",
+    "short_name": "South Africa National AI Policy Framework 2024",
+    "full_name": "South Africa National Artificial Intelligence Policy Framework",
+    "instrument_type": "policy_framework",
+    "bill_number": null,
+    "enacted_date": "2024-08-01",
+    "effective_date": "2024-08-01",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies",
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": true,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Department of Communications and Digital Technologies (DCDT)"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "standalone",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://www.dcdt.gov.za/sa-national-ai-policy-framework/",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "South Africa's National AI Policy Framework, published by the Department of Communications and Digital Technologies (DCDT) in August 2024. Establishes six pillars for responsible AI development: inclusive innovation, human-centred AI, responsible governance, data sovereignty, AI skills and education, and economic transformation. Introduces a risk-based approach to AI oversight aligned with international standards. The Framework preceded the formal draft National AI Policy published in April 2026 (which opened for public consultation). Applies to both public and private sector AI adoption.",
+    "notable": "South Africa's first formal AI policy document; signals commitment to risk-based governance before formal legislation. Led to the April 2026 draft AI Policy published for consultation.",
+    "legal_citation": "South Africa National AI Policy Framework, DCDT, August 2024.",
+    "topics": [
+      "South Africa AI policy",
+      "Southern Africa AI",
+      "Africa AI governance",
+      "DCDT AI framework"
+    ],
+    "sector_tags": [
+      "all_sectors"
+    ],
+    "technology_tags": [
+      "general_ai"
+    ],
+    "key_obligations": [
+      "Government to develop sector-specific AI guidelines building on the framework",
+      "Risk-based assessment of AI applications across sectors",
+      "Data governance alignment with POPIA requirements",
+      "Annual review of framework against international developments"
+    ],
+    "ai_specific": true,
+    "instrument_binding": false,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "zw-zw-naistrategy-2026",
+    "jurisdiction": "Zimbabwe",
+    "jurisdiction_type": "national",
+    "region": "Africa",
+    "country": "Zimbabwe",
+    "short_name": "Zimbabwe National AI Strategy 2026–2030",
+    "full_name": "Zimbabwe National Artificial Intelligence Strategy 2026–2030",
+    "instrument_type": "policy_framework",
+    "bill_number": null,
+    "enacted_date": "2026-03-13",
+    "effective_date": "2026-03-13",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies",
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Ministry of Information Communication Technology, Postal and Courier Services",
+      "Postal and Telecommunications Regulatory Authority of Zimbabwe (POTRAZ)"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "standalone",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://www.potraz.gov.zw/national-ai-strategy/",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Zimbabwe's first national AI strategy, launched by President Mnangagwa on March 13, 2026. Establishes Zimbabwe's vision for AI-driven inclusive digital transformation through 2030. Organized around four pillars: AI infrastructure and connectivity, AI skills and human capital, ethical and responsible AI governance, and AI-powered economic sectors (agriculture, mining, tourism, financial services). Cabinet-approved national instrument with implementation overseen by POTRAZ.",
+    "notable": "Most recent African national AI strategy as of its launch; emphasizes Zimbabwe's natural resource sectors as AI adoption targets.",
+    "legal_citation": "Zimbabwe National AI Strategy 2026–2030, Cabinet approval / launch March 13, 2026.",
+    "topics": [
+      "Zimbabwe AI strategy",
+      "Southern Africa AI",
+      "Africa AI governance",
+      "Zimbabwe digital transformation"
+    ],
+    "sector_tags": [
+      "all_sectors",
+      "government_services"
+    ],
+    "technology_tags": [
+      "general_ai"
+    ],
+    "key_obligations": [
+      "Government agencies to adopt AI policies aligned with the strategy by 2027",
+      "Establishment of National AI Governance Council",
+      "Investment in AI connectivity infrastructure in rural and peri-urban areas",
+      "Sector ministries to develop AI action plans within 12 months of strategy launch"
+    ],
+    "ai_specific": true,
+    "instrument_binding": false,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "qa-qa-cbgai-2024",
+    "jurisdiction": "Qatar",
+    "jurisdiction_type": "national",
+    "region": "Middle East",
+    "country": "Qatar",
+    "short_name": "Qatar Central Bank AI Guideline 2024",
+    "full_name": "Qatar Central Bank Artificial Intelligence Guideline for Financial Institutions",
+    "instrument_type": "regulation",
+    "bill_number": null,
+    "enacted_date": "2024-09-04",
+    "effective_date": "2024-09-04",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "sector_financial",
+    "categories": [
+      "sector_financial",
+      "general_ai_governance"
+    ],
+    "scope": "sector_specific",
+    "who_regulated": [
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": true,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": true,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Qatar Central Bank (QCB)"
+    ],
+    "max_penalty": "License revocation; regulatory sanctions; prior QCB approval withdrawal",
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://www.qcb.gov.qa/",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Binding AI guideline issued by the Qatar Central Bank on September 4, 2024, mandatory for all QCB-licensed financial institutions. Requires licensed entities to develop an AI strategy, conduct AI risk assessments, implement human oversight protocols, and establish AI governance committees at board level. High-risk AI systems (credit scoring, fraud detection, customer authentication) require explicit QCB pre-approval before deployment. Sets minimum standards for AI model documentation, validation, and performance monitoring in the financial sector.",
+    "notable": "One of the first binding sector-specific AI regulations in the Gulf region. Pre-approval requirement for high-risk financial AI is unusually stringent by regional standards.",
+    "legal_citation": "Qatar Central Bank AI Guideline, issued pursuant to QCB Governor's Decision, September 4, 2024.",
+    "topics": [
+      "Qatar financial AI regulation",
+      "Gulf banking AI",
+      "QCB AI guideline",
+      "financial sector AI governance Middle East"
+    ],
+    "sector_tags": [
+      "financial_services",
+      "banking"
+    ],
+    "technology_tags": [
+      "algorithmic_decision_making",
+      "credit_scoring_ai",
+      "fraud_detection_ai"
+    ],
+    "key_obligations": [
+      "Licensed financial institutions must develop a board-approved AI strategy",
+      "AI risk assessment required before deploying any AI system",
+      "High-risk AI systems require explicit pre-approval from QCB",
+      "Human oversight protocols must be in place for all AI-assisted decisions",
+      "Annual reporting to QCB on AI system performance and incidents"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": "data/texts/qa-qa-cbgai-2024.md",
+    "operative_dates": null
+  },
+  {
+    "id": "sa-sa-sdaiaaf-2024",
+    "jurisdiction": "Saudi Arabia",
+    "jurisdiction_type": "national",
+    "region": "Middle East",
+    "country": "Saudi Arabia",
+    "short_name": "Saudi Arabia SDAIA AI Adoption Framework 2024",
+    "full_name": "Artificial Intelligence Adoption Framework: Maturity Model and Risk Classification",
+    "instrument_type": "guidelines",
+    "bill_number": null,
+    "enacted_date": "2024-09-01",
+    "effective_date": "2024-09-01",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies",
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": true,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Saudi Data and AI Authority (SDAIA)",
+      "National Center for AI (NCAI)"
+    ],
+    "max_penalty": "Non-compliance with SDAIA guidance may trigger sector-specific regulatory action",
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://sdaia.gov.sa/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Saudi Arabia's SDAIA AI Adoption Framework, published September 2024, establishes a maturity model and risk-based classification system for AI adoption across government and the private sector. Introduces a four-tier risk classification (low, limited, high, unacceptable) aligned with OECD and EU AI Act principles. Binding for all government entities and referenced as best practice for private sector. Specifies mandatory conformity assessments, transparency requirements, and human oversight obligations for high-risk AI. Accompanied by SDAIA's Generative AI Guideline for public and private use.",
+    "notable": "Positions Saudi Arabia as having one of the most structured AI governance frameworks in the GCC. Complements Saudi Vision 2030's AI investment priorities.",
+    "legal_citation": "SDAIA AI Adoption Framework: Maturity Model and Risk Classification, SDAIA / NCAI, September 2024.",
+    "topics": [
+      "Saudi Arabia AI governance",
+      "SDAIA AI framework",
+      "Gulf AI regulation",
+      "Saudi Vision 2030 AI"
+    ],
+    "sector_tags": [
+      "all_sectors",
+      "government_services"
+    ],
+    "technology_tags": [
+      "general_ai",
+      "generative_ai"
+    ],
+    "key_obligations": [
+      "Government entities must conduct AI maturity assessments and classify AI systems by risk tier",
+      "High-risk AI systems require conformity assessment before government deployment",
+      "Mandatory human oversight mechanisms for Tier 3 (high-risk) AI applications",
+      "AI transparency disclosures required for all citizen-facing government AI systems"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": "data/texts/sa-sa-sdaiaaf-2024.md",
+    "operative_dates": null
+  },
+  {
+    "id": "ae-ae-aicharterter-2024",
+    "jurisdiction": "UAE",
+    "jurisdiction_type": "national",
+    "region": "Middle East",
+    "country": "United Arab Emirates",
+    "short_name": "UAE AI Charter 2024",
+    "full_name": "UAE Charter for the Development and Use of Artificial Intelligence",
+    "instrument_type": "policy_framework",
+    "bill_number": null,
+    "enacted_date": "2024-07-30",
+    "effective_date": "2024-07-30",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies",
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "UAE Office of AI (under Ministry of State for AI)",
+      "UAE Government Data and AI Authority (GDAIA)"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://uaelegislation.gov.ae/en/policy/details/the-uae-charter-for-the-development-and-use-of-artificial-intelligence",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "A 12-principle ethical charter issued by the UAE federal government on July 30, 2024, establishing values and principles for responsible AI development and use across the UAE. Covers human dignity, fairness, transparency, accountability, privacy, safety, sustainability, and international cooperation. Non-binding but issued with Cabinet-level endorsement; functions as the national AI ethical compass guiding sector regulation. Distinct from the DIFC and ADGM jurisdictional frameworks.",
+    "notable": "UAE is one of the few countries with a dedicated Minister of State for AI; this charter reflects the government's proactive AI positioning.",
+    "legal_citation": "UAE Charter for the Development and Use of AI, UAE Federal Government, July 30, 2024.",
+    "topics": [
+      "UAE AI charter",
+      "Gulf AI ethics",
+      "UAE AI governance",
+      "responsible AI Middle East"
+    ],
+    "sector_tags": [
+      "all_sectors"
+    ],
+    "technology_tags": [
+      "general_ai"
+    ],
+    "key_obligations": [
+      "Government entities to align AI deployments with the 12 charter principles",
+      "GDAIA to publish sector guidance implementing charter principles",
+      "Annual reporting on AI governance alignment"
+    ],
+    "ai_specific": true,
+    "instrument_binding": false,
+    "text_path": "data/texts/ae-ae-aicharterter-2024.md",
+    "operative_dates": null
+  },
+  {
+    "id": "co-co-conpes4144-2025",
+    "jurisdiction": "Colombia",
+    "jurisdiction_type": "national",
+    "region": "Americas",
+    "country": "Colombia",
+    "short_name": "Colombia CONPES 4144 — National AI Policy",
+    "full_name": "CONPES 4144: Política Nacional de Inteligencia Artificial 2024–2030",
+    "instrument_type": "policy_framework",
+    "bill_number": "CONPES 4144",
+    "enacted_date": "2025-02-14",
+    "effective_date": "2025-02-14",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies",
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": true,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Ministerio de Ciencia, Tecnología e Innovación (MINCIENCIAS)",
+      "Ministerio de Tecnologías de la Información y las Comunicaciones (MINTIC)"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://colaboracion.dnp.gov.co/CDT/Conpes/Econ%C3%B3micos/4144.pdf",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Colombia's National AI Policy 2024–2030, adopted by the National Council of Economic and Social Policy (CONPES) on February 14, 2025. Allocates COP 479 billion (~USD 117 million) over six years for AI investment. Establishes three axes: responsible and inclusive AI development, AI adoption for economic transformation, and AI governance. CONPES documents carry binding planning force for government entities and define mandatory investment commitments. Includes risk-based AI governance aligned with OECD AI Principles. Colombia's most comprehensive AI policy instrument to date.",
+    "notable": "CONPES documents are Colombia's primary binding public policy instrument; this is the operative national AI policy with mandatory budget commitments.",
+    "legal_citation": "CONPES 4144: Política Nacional de Inteligencia Artificial, DNP, February 14, 2025.",
+    "topics": [
+      "Colombia AI policy",
+      "Latin America AI",
+      "CONPES AI Colombia",
+      "Colombia digital transformation"
+    ],
+    "sector_tags": [
+      "all_sectors",
+      "government_services"
+    ],
+    "technology_tags": [
+      "general_ai"
+    ],
+    "key_obligations": [
+      "Government entities must align AI programs with CONPES 4144 goals and investment framework",
+      "MINCIENCIAS and MINTIC to establish AI governance standards by 2026",
+      "Annual investment tracking and reporting against CONPES commitments",
+      "Responsible AI principles to be embedded in public sector AI procurement"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "ar-ar-aaipr161-2023",
+    "jurisdiction": "Argentina",
+    "jurisdiction_type": "national",
+    "region": "Americas",
+    "country": "Argentina",
+    "short_name": "Argentina AAIP Resolution 161/2023 (AI Transparency Program)",
+    "full_name": "Resolución 161/2023: Programa de Transparencia y Protección de Datos Personales en el uso de IA",
+    "instrument_type": "regulation",
+    "bill_number": "Resolution 161/2023",
+    "enacted_date": "2023-09-04",
+    "effective_date": "2023-09-04",
+    "status": "in_force",
+    "superseded_by": null,
+    "primary_category": "data_protection",
+    "categories": [
+      "data_protection",
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "developers",
+      "deployers",
+      "government_agencies"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": true,
+      "training_data_disclosure": true,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Agencia de Acceso a la Información Pública (AAIP)"
+    ],
+    "max_penalty": "Administrative sanctions under Law 25.326 (PDPA) — up to ARS 3 million",
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://www.argentina.gob.ar/aaip/ia-responsable",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Binding administrative resolution issued by Argentina's data protection authority (AAIP) on September 4, 2023, creating a 'Program for Transparency and Personal Data Protection in the Use of AI'. Establishes Argentina's first formal AI governance framework under the 2000 Personal Data Protection Act (PDPA, Law 25.326). Requires entities processing personal data with AI to register AI systems, conduct data protection impact assessments, disclose AI use to affected individuals, and participate in the national AI observatory. Creates an AI Advisory Council and transparency certification mechanism.",
+    "notable": "Argentina's first binding AI-specific instrument; issued under existing data protection authority rather than requiring new legislation. A notable regulatory approach for Latin America.",
+    "legal_citation": "Resolución AAIP 161/2023, September 4, 2023 (Boletín Oficial de la República Argentina).",
+    "topics": [
+      "Argentina AI regulation",
+      "AAIP AI",
+      "Latin America AI governance",
+      "AI transparency Argentina"
+    ],
+    "sector_tags": [
+      "all_sectors"
+    ],
+    "technology_tags": [
+      "general_ai",
+      "algorithmic_decision_making"
+    ],
+    "key_obligations": [
+      "Entities using AI to process personal data must register AI systems with AAIP",
+      "Mandatory data protection impact assessments for high-risk AI applications",
+      "Disclosure to individuals when AI is used in decisions affecting their rights",
+      "Participation in AAIP's AI observatory and transparency certification program"
+    ],
+    "ai_specific": true,
+    "instrument_binding": true,
+    "text_path": "data/texts/ar-ar-aaipr161-2023.md",
+    "operative_dates": null
+  },
+  {
+    "id": "il-il-coei-2024",
+    "jurisdiction": "Israel",
+    "jurisdiction_type": "national",
+    "region": "Middle East",
+    "country": "Israel",
+    "short_name": "Israel — Signature of CoE AI Convention (CETS 225)",
+    "full_name": "Israel Signature of the Council of Europe Framework Convention on AI and Human Rights (CETS 225)",
+    "instrument_type": "international_agreement",
+    "bill_number": null,
+    "enacted_date": "2024-09-05",
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies",
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": true,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": true,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": true,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Government of Israel (national implementation)"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": "Not yet ratified as of May 2026; signature is binding on Israel under international law not to act against the Convention's object and purpose, but domestic implementation awaits ratification.",
+    "legal_family": "international",
+    "inspired_by": [
+      "coe-coe-aiconv-2024"
+    ],
+    "influenced": [],
+    "official_text_url": "https://www.coe.int/en/web/conventions/full-list/-/conventions/treaty/225",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Israel signed the Council of Europe Framework Convention on AI, Human Rights, Democracy, and the Rule of Law (CETS 225) on September 5, 2024, becoming one of the first non-European countries to sign. As a signatory, Israel commits to implementing the Convention's principles — human rights safeguards, democratic oversight, and rule of law requirements for AI — upon ratification. The Convention entered into force in 2025 after receiving the required five ratifications. Israel was among the first Middle Eastern countries to sign an international AI governance treaty.",
+    "notable": "First Middle Eastern country to sign CETS 225. Signals Israel's alignment with European AI governance standards despite not being an EU member.",
+    "legal_citation": "Signature by Israel of CETS 225, Council of Europe, Vilnius, September 5, 2024.",
+    "topics": [
+      "Israel CoE AI convention",
+      "CETS 225 Israel",
+      "international AI treaty Israel",
+      "Middle East AI governance"
+    ],
+    "sector_tags": [
+      "all_sectors"
+    ],
+    "technology_tags": [
+      "general_ai"
+    ],
+    "key_obligations": [
+      "Signatory obligation not to act against the Convention's object and purpose prior to ratification",
+      "Upon ratification: implement human rights impact assessments for AI systems",
+      "Upon ratification: establish national oversight mechanism for high-risk AI"
+    ],
+    "ai_specific": true,
+    "instrument_binding": false,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "uy-uy-coei-2024",
+    "jurisdiction": "Uruguay",
+    "jurisdiction_type": "national",
+    "region": "Americas",
+    "country": "Uruguay",
+    "short_name": "Uruguay — Signature of CoE AI Convention (CETS 225)",
+    "full_name": "Uruguay Signature of the Council of Europe Framework Convention on AI and Human Rights (CETS 225)",
+    "instrument_type": "international_agreement",
+    "bill_number": null,
+    "enacted_date": "2024-09-05",
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "primary_category": "general_ai_governance",
+    "categories": [
+      "general_ai_governance"
+    ],
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government_agencies",
+      "developers",
+      "deployers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": true,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": true,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": true,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Government of Uruguay (national implementation)"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": "n/a",
+    "preemption_notes": "Not yet ratified as of May 2026; signature is binding on Uruguay under international law not to act against the Convention's object and purpose, but domestic implementation awaits ratification.",
+    "legal_family": "international",
+    "inspired_by": [
+      "coe-coe-aiconv-2024"
+    ],
+    "influenced": [],
+    "official_text_url": "https://www.coe.int/en/web/conventions/full-list/-/conventions/treaty/225",
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Uruguay signed the Council of Europe Framework Convention on AI, Human Rights, Democracy, and the Rule of Law (CETS 225) on September 5, 2024, becoming the first Latin American country to sign an international AI governance treaty. Uruguay's signature reflects its strong data protection tradition (home to one of Latin America's most respected data protection frameworks and the Unidad Reguladora y de Control de Datos Personales, URCDP). As a signatory, Uruguay commits to implementing the Convention's human rights, democratic oversight, and rule of law requirements for AI upon ratification.",
+    "notable": "First Latin American country to sign CETS 225 — a significant milestone in the Convention's global reach beyond Europe.",
+    "legal_citation": "Signature by Uruguay of CETS 225, Council of Europe, Vilnius, September 5, 2024.",
+    "topics": [
+      "Uruguay CoE AI convention",
+      "CETS 225 Latin America",
+      "Uruguay AI governance",
+      "international AI treaty Americas"
+    ],
+    "sector_tags": [
+      "all_sectors"
+    ],
+    "technology_tags": [
+      "general_ai"
+    ],
+    "key_obligations": [
+      "Signatory obligation not to act against the Convention's object and purpose prior to ratification",
+      "Upon ratification: implement human rights impact assessments for AI systems",
+      "Upon ratification: establish national oversight mechanism for high-risk AI"
+    ],
+    "ai_specific": true,
+    "instrument_binding": false,
+    "text_path": null,
+    "operative_dates": null
+  },
+  {
+    "id": "us-pr-hjr68-2025",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico HJR 68 — AI Study for Anti-Corruption (PRITS)",
+    "full_name": "Puerto Rico House Joint Resolution 68 — R. C. de la C. 68",
+    "instrument_type": "resolution",
+    "instrument_binding": false,
+    "bill_number": "R. C. de la C. 68",
+    "enacted_date": null,
+    "effective_date": "2025-07-01",
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "government_use"
+    ],
+    "primary_category": "government_use",
+    "scope": "single_issue",
+    "who_regulated": [
+      "government"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "us_consumer_protection",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": null,
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Orders PRITS to conduct a comprehensive study on the feasibility and benefits of using AI to optimize government auditing, fraud detection, risk mitigation, and expenditure oversight; requires 180-day report to the Governor, Legislature, and oversight agencies.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Government Use",
+      "Accountability"
+    ],
+    "sector_tags": [
+      "Government"
+    ],
+    "technology_tags": [],
+    "key_obligations": [],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-hjr68-2025.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-sr133-2025",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico SR 133 — Senate Investigation of Electoral Technology",
+    "full_name": "Puerto Rico Senate Resolution 133 — R. del S. 133",
+    "instrument_type": "resolution",
+    "instrument_binding": false,
+    "bill_number": "R. del S. 133",
+    "enacted_date": "2025-05-19",
+    "effective_date": "2025-05-19",
+    "status": "enacted",
+    "superseded_by": null,
+    "categories": [
+      "elections_ai"
+    ],
+    "primary_category": "elections_ai",
+    "scope": "single_issue",
+    "who_regulated": [
+      "government"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "us_consumer_protection",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": null,
+    "summary_url": null,
+    "last_verified": "2026-05-04",
+    "summary": "Orders the Senate Committee on Science, Technology and Artificial Intelligence to conduct a comprehensive investigation into the technological capabilities of Puerto Rico's State Elections Commission (CEE), including cybersecurity, database management, and strategic technology planning for future elections; requires 180-day report.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Elections",
+      "Government Technology"
+    ],
+    "sector_tags": [
+      "Government"
+    ],
+    "technology_tags": [],
+    "key_obligations": [],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-sr133-2025.md",
     "legal_citation": null
   }
 ]
