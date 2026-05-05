@@ -1,335 +1,529 @@
 ---
 id: ke-ke-aistrategy-2025
 source_url: https://ict.go.ke/sites/default/files/2025-03/Kenya%20AI%20Strategy%202025%20-%202030.pdf
-fetched_date: 2026-05-04
+fetched_date: 2026-05-05
 ---
 
 KENYA ARTIFICIAL
 INTELLIGENCE
 STRATEGY
 2025-2030
+
 March 2025
+
 
 KENYA ARTIFICIAL
 INTELLIGENCE
 STRATEGY
 2025-2030
+
 March 2025
+
+
 Table of Contents
-List of Abbreviations � � � � � � � � � � � � � � � � �6 3�3�2� Regional Context � � � � � � � � � � � � � �34
-3�3�3� National Context � � � � � � � � � � � � � �35
-EXECUTIVE SUMMARY �����������������������7
-3�4� Legal and Regulatory Environment �36
-FOREWORD �����������������������������������������9
-3�4�1� Global Context � � � � � � � � � � � � � � � �36
-ACKNOWLEDGMENTS ����������������������11 3�4�2� Regional Context � � � � � � � � � � � � � �38
-3�4�3� National Context � � � � � � � � � � � � � �40
-1� INTRODUCTION �����������������������������13
-3�5� Kenya’s AI Readiness Assessment �42
-1.1. Key Definitions � � � � � � � � � � � � � � � � �15
-3�6� Key Findings from Primary Data � � � �
-1�2� Background � � � � � � � � � � � � � � � � � � �17
-Collection � � � � � � � � � � � � � � � � � � � � � �45
-1�3� Rationale for an AI Strategy for Kenya
-3�6�1� Key Informant Interviews � � � � � � � �45
-� � � � � � � � � � � � � � � � � � � � � � � � � � � � � �20
-3�6�2� Focus Group Discussions � � � � � � �46
-1�3�1� Key AI Concerns in Kenya � � � � � � �20
-3�6�3� Town Hall Meetings � � � � � � � � � � � �47
-1�3�2� Strategic Importance of AI to Kenya
-3�6�4� Online Survey � � � � � � � � � � � � � � � �48
-� � � � � � � � � � � � � � � � � � � � � � � � � � � � � �21
-3�7� Stakeholder Analysis � � � � � � � � � � � �49
-1�4� Methodology � � � � � � � � � � � � � � � � � � �22
-3�7�1� Background � � � � � � � � � � � � � � � � � �49
-1�4�1� Literature Review and Environmental
-Analysis � � � � � � � � � � � � � � � � � � � � � � �22 3.7.2. Justification � � � � � � � � � � � � � � � � � �49
-1�4�2� Primary Data Collection � � � � � � � � �22 3�8� Strengths, Limitations, Opportunities,
-and Challenges Summary � � � � � � � � �53
-1�4�3� Stakeholder Engagement � � � � � � �22
-1�4�4� Synthesis and Drafting of the 4� KENYA AI STRATEGY
-Strategy � � � � � � � � � � � � � � � � � � � � � � �23 FOUNDATIONS �����������������������������������61
-1�4�5� Validation of the Strategy � � � � � � � �23
-4�1� Vision � � � � � � � � � � � � � � � � � � � � � � � �62
-1�5� Scope � � � � � � � � � � � � � � � � � � � � � � � �24
-4�2� Value Proposition � � � � � � � � � � � � � � �62
-2� AI & EMERGING TECHNOLOGIES 25 4�3� Guiding Principles � � � � � � � � � � � � � �63
-2.1. Definition of Emerging Technologies 26 5� STRATEGIC DECISIONS ���������������64
-2�2� Relationship between Emerging
-5�1� Themes and Sub-themes � � � � � � � � �65
-Technologies and AI � � � � � � � � � � � � �26
-5�2� Goals, Objectives, Flagship Projects,
-2�3� Why AI � � � � � � � � � � � � � � � � � � � � � � �27
+List of Abbreviations  6
+
+EXECUTIVE SUMMARY 7
+FOREWORD 9
+
+3.3.2. Regional Context 34
+3.3.3. National Context  35
+3.4. Legal and Regulatory Environment  36
+3.4.1. Global Context 36
+
+ACKNOWLEDGMENTS 11
+
+3.4.2. Regional Context 38
+
+1. INTRODUCTION 13
+
+3.4.3. National Context  40
+
+1.1. Key Definitions 15
+1.2. Background  17
+1.3. Rationale for an AI Strategy for Kenya
+ 20
+1.3.1. Key AI Concerns in Kenya 20
+1.3.2. Strategic Importance of AI to Kenya
+ 21
+
+3.5. Kenya’s AI Readiness Assessment  42
+3.6. Key Findings from Primary Data . . . .
+Collection 45
+3.6.1. Key Informant Interviews 45
+3.6.2. Focus Group Discussions  46
+3.6.3. Town Hall Meetings 47
+3.6.4. Online Survey  48
+
+1.4. Methodology 22
+
+3.7. Stakeholder Analysis  49
+
+1.4.1. Literature Review and Environmental
+Analysis 22
+
+3.7.1. Background 49
+3.7.2. Justification 49
+
+1.4.2. Primary Data Collection 22
+1.4.3. Stakeholder Engagement  22
+
+3.8. Strengths, Limitations, Opportunities,
+and Challenges Summary 53
+
+1.4.4. Synthesis and Drafting of the
+Strategy 23
+
+4. KENYA AI STRATEGY
+FOUNDATIONS 61
+
+1.4.5. Validation of the Strategy 23
+
+4.1. Vision  62
+
+1.5. Scope 24
+
+4.2. Value Proposition 62
+
+2. AI & EMERGING TECHNOLOGIES25
+
+4.3. Guiding Principles  63
+
+2.1. Definition of Emerging Technologies26
+
+5. STRATEGIC DECISIONS 64
+
+2.2. Relationship between Emerging
+Technologies and AI  26
+
+5.1. Themes and Sub-themes 65
+
+2.3. Why AI  27
+
+3. ENVIRONMENTAL ANALYSIS 28
+3.1. Social and Economic Environment  29
+3.2. Technology Environment  32
+
+5.2. Goals, Objectives, Flagship Projects,
 Outcomes, and Key Performance
-Indicators Options � � � � � � � � � � � � � � �68
-3� ENVIRONMENTAL ANALYSIS ��������28
-5�3� Priority Use Case � � � � � � � � � � � � � � �83
-3�1� Social and Economic Environment �29
-5�4� Summary of Strategy � � � � � � � � � � � �84
-3�2� Technology Environment � � � � � � � � �32
-3�2�1� Global Context � � � � � � � � � � � � � � �32 ANNEXES �������������������������������������������85
-3�2�2� African Context � � � � � � � � � � � � � � �32 Annex 1: Collaborators and Partners � � �85
-3�2�3� National Context � � � � � � � � � � � � � �32 Annex 2: Image Captions and Credits � � �87
-3�3� Political Environment � � � � � � � � � � � �34
-3�3�1� Global Context � � � � � � � � � � � � � � � �34
+Indicators Options  68
+5.3. Priority Use Case 83
+5.4. Summary of Strategy  84
+
+3.2.1. Global Context  32
+
+ANNEXES 85
+
+3.2.2. African Context  32
+
+Annex 1: Collaborators and Partners  85
+
+3.2.3. National Context  32
+
+Annex 2: Image Captions and Credits 87
+
+3.3. Political Environment  34
+3.3.1. Global Context 34
+
 4 / Kenya AI Strategy
-List of Tables List of Figures
-Table 1.1: Definitions of key terms � � � �14 Figure 1�1: Summary of Methodology � �22
-Table 3�1: Results of UNESCO AI Figure 3.1: Stakeholder Map: Influence
-Readiness for Kenya � � � � � � � � � � � �41 Interest Matrix � � � � � � � � � � � � � � � � �51
-Table 3�2: Kenya’s AI Readiness—Oxford Figure 5�1: Strategy House � � � � � � � � � �82
+
+
+List of Tables
+
+List of Figures
+
+Table 1.1: Definitions of key terms . . . .  14
+
+Figure 1.1: Summary of Methodology. .  22
+
+Table 3.1: Results of UNESCO AI
+Readiness for Kenya. . . . . . . . . . . .  41
+
+Figure 3.1: Stakeholder Map: Influence
+Interest Matrix . . . . . . . . . . . . . . . . .  51
+
+Table 3.2: Kenya’s AI Readiness—Oxford
 Insights Government AI Readiness
-Index � � � � � � � � � � � � � � � � � � � � � � � �43
-Table 3�3 Results of stakeholder mapping �
+Index . . . . . . . . . . . . . . . . . . . . . . . .  43
+
+Figure 5.1: Strategy House. . . . . . . . . .  82
+
+Table 3.3 Results of stakeholder mapping.
 49
-Table 3�4 Strengths � � � � � � � � � � � � � � � �52
-Table 3�5 Limitations � � � � � � � � � � � � � � �54
-Table 3�6 Opportunities � � � � � � � � � � � � �56
-Table 3�7 Challenges � � � � � � � � � � � � � � �58
-Table 5�1: Strategic themes and sub-
-themes � � � � � � � � � � � � � � � � � � � � � � �64
-Table 5�2: AI digital infrastructure � � � � �67
-Table 5�3: Data � � � � � � � � � � � � � � � � � � �70
-Table 5�3: AI R&D and innovation � � � � �72
-Table 5�7: Talent development � � � � � � � �74
-Table 5�5: Governance � � � � � � � � � � � � �76
-Table 5�7: Investments � � � � � � � � � � � � � �78
-Table 5�8: Ethics, equity, and inclusion �79
+Table 3.4 Strengths. . . . . . . . . . . . . . . .  52
+Table 3.5 Limitations. . . . . . . . . . . . . . .  54
+Table 3.6 Opportunities. . . . . . . . . . . . .  56
+Table 3.7 Challenges. . . . . . . . . . . . . . .  58
+Table 5.1: Strategic themes and subthemes. . . . . . . . . . . . . . . . . . . . . . .  64
+Table 5.2: AI digital infrastructure . . . . .  67
+Table 5.3: Data . . . . . . . . . . . . . . . . . . .  70
+Table 5.3: AI R&D and innovation. . . . .  72
+Table 5.7: Talent development. . . . . . . .  74
+Table 5.5: Governance . . . . . . . . . . . . .  76
+Table 5.7: Investments. . . . . . . . . . . . . .  78
+Table 5.8: Ethics, equity, and inclusion .  79
+
 5 / Kenya AI Strategy
+
+
 List of Abbreviations
-AI Artificial intelligence
-ANSI American National Standards Institute
-Chat GPT Chat Generative Pre-Trained Transformer
-FGD Focus group discussion
-GDP Gross domestic product
-HPC High performance computing
-ICT Information and communication technology
-IoT Internet of Things
-KII Key informant interview
-KPI Key performance indicator
-OECD Organisation for Economic Co-operation and Development
-PEAs Privacy enforcement authorities
-PPP Public-private partnership
-R&D Research and development
-SLOC Strengths, limitations, opportunities, and challenges
-SMEs Small and medium enterprises
-STEM Science, technology, engineering, and mathematics
-TIA 942 Telecommunications Industry Association 942
-UNESCO United Nations Educational, Scientific, and Cultural Organization
+AI
+
+Artificial intelligence
+
+ANSI
+
+American National Standards Institute
+
+Chat GPT
+
+Chat Generative Pre-Trained Transformer
+
+FGD
+
+Focus group discussion
+
+GDP
+
+Gross domestic product
+
+HPC
+
+High performance computing
+
+ICT
+
+Information and communication technology
+
+IoT
+
+Internet of Things
+
+KII
+
+Key informant interview
+
+KPI
+
+Key performance indicator
+
+OECD
+
+Organisation for Economic Co-operation and Development
+
+PEAs
+
+Privacy enforcement authorities
+
+PPP
+
+Public-private partnership
+
+R&D
+
+Research and development
+
+SLOC
+
+Strengths, limitations, opportunities, and challenges
+
+SMEs
+
+Small and medium enterprises
+
+STEM
+
+Science, technology, engineering, and mathematics
+
+TIA 942
+
+Telecommunications Industry Association 942
+
+UNESCO
+
+United Nations Educational, Scientific, and Cultural Organization
+
 6 / Kenya AI Strategy
+
+
 EXECUTIVE SUMMARY
-Kenya’s Artificial Intelligence Strategy civil society, international partners,
-envisions the country as Africa’s and local communities, the strategy
-leading artificial intelligence (AI) hub for reflects a participatory approach that
-model innovation, driving sustainable aligns with Kenya’s national values and
-development, economic growth, and development goals while embracing
-social inclusion while positioning itself diverse perspectives�
+Kenya’s Artificial Intelligence Strategy
+envisions the country as Africa’s
+leading artificial intelligence (AI) hub for
+model innovation, driving sustainable
+development, economic growth, and
+social inclusion while positioning itself
 as an AI research and application leader
-At the core of this strategy is Kenya’s
-on the continent� Recognising the
-aspiration to adopt AI technologies and
+on the continent. Recognising the
 transformative potential of AI, the strategy
-lead in AI model innovation, R&D and
 also commits to safeguarding national
-commercialisation, creating solutions
 interests by embedding robust data
-tailored to its unique needs and those
 sovereignty, a cybersecurity framework,
-of the African continent� The objectives
-and ethical oversight in AI deployment�
-include establishing a robust governance
+and ethical oversight in AI deployment.
 These measures will ensure that Kenya’s
-framework for AI; enhancing adoption in
-AI ecosystem is secure and equitable�
-key sectors such as agriculture, security,
+AI ecosystem is secure and equitable.
 The strategy provides a comprehensive
-healthcare, education, and public service
 framework to guide Kenya in harnessing
-delivery; and fostering the growth of
 the transformative power of AI, ensuring
-local AI ecosystems� Additionally, the
 its deployment benefits all sectors of
-strategy prioritises inclusivity to ensure
 society while adhering to ethical principles
+and inclusivity.
+Developed
+through
+extensive
+consultations with government agencies,
+private-sector stakeholders, academia,
+
+civil society, international partners,
+and local communities, the strategy
+reflects a participatory approach that
+aligns with Kenya’s national values and
+development goals while embracing
+diverse perspectives.
+At the core of this strategy is Kenya’s
+aspiration to adopt AI technologies and
+lead in AI model innovation, R&D and
+commercialisation, creating solutions
+tailored to its unique needs and those
+of the African continent. The objectives
+include establishing a robust governance
+framework for AI; enhancing adoption in
+key sectors such as agriculture, security,
+healthcare, education, and public service
+delivery; and fostering the growth of
+local AI ecosystems. Additionally, the
+strategy prioritises inclusivity to ensure
 underserved communities are not left
-and inclusivity�
 behind and aims to position Kenya as the
-Developed through extensive preferred regional hub for AI research,
-consultations with government agencies, model development, and scalable
-private-sector stakeholders, academia, innovation�
-The strategy is anchored by three Collaboration among stakeholders is
-key pillars and supported by four crucial� Government institutions will
-enablers. The first pillar is AI digital provide regulatory and policy guidance,
-infrastructure, which underscores the private-sector actors will drive innovation
-need for accessible and affordable AI and commercialisation, academia will
-infrastructure and a modernised national advance research, and civil society will
-digital infrastructure for AI access and ensure that AI adoption is equitable and
-development� The second pillar, data, inclusive� Local communities will play a
-seeks the establishment of a robust vital role in ensuring the relevance of AI
-sustainable data ecosystem for AI and solutions to societal challenges�
-innovation� The third pillar, AI research
-The strategy proposes a phased approach
+preferred regional hub for AI research,
+model development, and scalable
+innovation.
+
+
+The strategy is anchored by three
+key pillars and supported by four
+enablers. The first pillar is AI digital
+infrastructure, which underscores the
+need for accessible and affordable AI
+infrastructure and a modernised national
+digital infrastructure for AI access and
+development. The second pillar, data,
+seeks the establishment of a robust
+sustainable data ecosystem for AI and
+innovation. The third pillar, AI research
 and innovation, is central to the vision
-to ensure effective implementation� This
 of making Kenya a global leader in AI
-begins with foundational investments
-model development� It emphasises the
-in policy, infrastructure, and capacity-
+model development. It emphasises the
 drive to develop cutting-edge localised
-building, followed by key milestones
 AI models and solutions through thriving
-such as developing a national AI policy,
 local research and development (R&D),
-establishing AI research and innovation
-innovation, and commercialisation�
-hubs, executing pilot projects, and
-The strategy is also premised on a creating a monitoring and evaluation
-foundation of several cross-cutting framework to track progress�
-enablers� Governance focuses on
-In conclusion, this strategy presents a bold
+innovation, and commercialisation.
+The strategy is also premised on a
+foundation of several cross-cutting
+enablers. Governance focuses on
 harnessing and deepening the legal
-vision for positioning Kenya as the leading
 and regulatory framework to guide
-hub for AI model innovation, creating
 AI deployment, ensuring ethical use,
-tailored solutions for local challenges by
 data privacy, and public accountability
-prioritising governance, innovation, and
 by establishing an agile and dynamic
-capacity-building� Kenya seeks to lead
-governance framework� Talent
-in driving equitable and sustainable AI
+governance
+framework.
+Talent
 development emphasises promoting
-adoption while ensuring that the benefits
 AI literacy across all demographics,
-of this transformative technology reach
 integrating AI into educational curricula,
-all its citizens. The strategy is a call to
 and developing a skilled workforce
-action for stakeholders to collaborate
 capable of advancing AI research and
-in realising this vision and cementing
-innovation� The strategy is also anchored
-Kenya’s position as a stalwart participant
+innovation. The strategy is also anchored
 in accelerating investments from public
-in AI development�
-and private sources� Finally, the strategy
+and private sources. Finally, the strategy
 aims to foster a culture of equitable,
 ethical, and inclusive AI development and
-deployment�
+deployment.
+
 8 / Kenya AI Strategy
+
+Collaboration among stakeholders is
+crucial. Government institutions will
+provide regulatory and policy guidance,
+private-sector actors will drive innovation
+and commercialisation, academia will
+advance research, and civil society will
+ensure that AI adoption is equitable and
+inclusive. Local communities will play a
+vital role in ensuring the relevance of AI
+solutions to societal challenges.
+The strategy proposes a phased approach
+to ensure effective implementation. This
+begins with foundational investments
+in policy, infrastructure, and capacitybuilding, followed by key milestones
+such as developing a national AI policy,
+establishing AI research and innovation
+hubs, executing pilot projects, and
+creating a monitoring and evaluation
+framework to track progress.
+In conclusion, this strategy presents a bold
+vision for positioning Kenya as the leading
+hub for AI model innovation, creating
+tailored solutions for local challenges by
+prioritising governance, innovation, and
+capacity-building. Kenya seeks to lead
+in driving equitable and sustainable AI
+adoption while ensuring that the benefits
+of this transformative technology reach
+all its citizens. The strategy is a call to
+action for stakeholders to collaborate
+in realising this vision and cementing
+Kenya’s position as a stalwart participant
+in AI development.
+
+
 FOREWORD
-As we stand at the threshold of a new accessibility, inclusivity, and data privacy�
+As we stand at the threshold of a new
 era, in which artificial intelligence holds
-In developing this strategy, we have
 transformative potential across all sectors
-sought to engage a wide range of
 of society, the Government of Kenya
-stakeholders - from government entities
 remains committed to embracing and
-and private industry to academia, civil
 harnessing the power of AI for sustainable
-society, and international partners
 development, economic growth, and
-- ensuring that the final document
 the well-being of our citizens. The
-represents a collective vision for Kenya’s
 development of the Kenya AI Strategy
-AI future� At its core, this strategy aims
 marks a significant milestone in this
-to position Kenya as a hub for AI R&D,
 journey - one that reflects the country’s
-innovation, and commercialisation in
 ambition to not only be a leader in AI
-Africa, while promoting responsible AI use
 innovation but also to ensure benefits are
-and ethical standards in its development
 equitably shared across all segments of
-and deployment�
-society�
-The strategy sets clear objectives,
+society.
+
+accessibility, inclusivity, and data privacy.
+
 AI is a driver of change, touching sectors
-guiding principles, and actionable steps to
 as diverse as agriculture, healthcare,
-establish a robust AI ecosystem that will
 education, finance, and governance. The
-support Kenya’s aspiration to be a regional
 global conversation around AI is rapidly
-leader in technology� It outlines strategies
 evolving, and Kenya has recognised
-in establishing AI digital infrastructure,
 the urgent need to place itself at the
-building capacity in AI R&D, Innovation
-forefront of this technological revolution�
-and Talent, creating an enabling policy
+forefront of this technological revolution.
 This strategy is not merely a framework
-and regulatory environment, and fostering
 for technological adoption but a roadmap
-public-private partnerships to stimulate
 to unlock the full potential of AI while
-innovation�
 addressing key challenges such as
-The implementation of this strategy will Together, we can build an AI-powered
-require commitment, collaboration, and Kenya that benefits all its people,
-continuous adaptation to emerging trends advances sustainable development,
-and technologies� As we move forward, and sets the stage for a prosperous and
-we invite all stakeholders - public- and inclusive future�
+
+The strategy sets clear objectives,
+guiding principles, and actionable steps to
+establish a robust AI ecosystem that will
+support Kenya’s aspiration to be a regional
+leader in technology. It outlines strategies
+in establishing AI digital infrastructure,
+building capacity in AI R&D, Innovation
+and Talent, creating an enabling policy
+and regulatory environment, and fostering
+public-private partnerships to stimulate
+innovation.
+
+In developing this strategy, we have
+sought to engage a wide range of
+stakeholders - from government entities
+and private industry to academia, civil
+society, and international partners
+- ensuring that the final document
+represents a collective vision for Kenya’s
+AI future. At its core, this strategy aims
+to position Kenya as a hub for AI R&D,
+innovation, and commercialisation in
+Africa, while promoting responsible AI use
+and ethical standards in its development
+and deployment.
+
+
+The implementation of this strategy will
+require commitment, collaboration, and
+continuous adaptation to emerging trends
+and technologies. As we move forward,
+we invite all stakeholders - public- and
 private-sector organisations, academic
-institutions, and international partners -
-to join us in making this vision a reality�
+institutions, and international partners to join us in making this vision a reality.
+
+Together, we can build an AI-powered
+Kenya that benefits all its people,
+advances sustainable development,
+and sets the stage for a prosperous and
+inclusive future.
+
 H.E. Hon. William Kabogo Gitau
+
 Cabinet Secretary
 Ministry of Information, Communications and the Digital
 Economy
+
 10 / Kenya AI Strategy
+
+
 ACKNOWLEDGMENTS
-The development of the Kenya National drafting a comprehensive document that
-AI Strategy was a collective effort addresses Kenya’s unique challenges
-involving multiple stakeholders whose and opportunities�
+The development of the Kenya National
+AI Strategy was a collective effort
+involving multiple stakeholders whose
 commitment, expertise, and dedication
-I would like to express my appreciation
 were instrumental in shaping this important
-to our partners in the public and private
-document� On behalf of the Ministry, I
-sectors, academic institutions, and civil
+document. On behalf of the Ministry, I
 would like to extend my deepest gratitude
-society who have shared their insights,
 to all those who have contributed to this
-knowledge, and resources throughout
-initiative�
-the consultation process� Your input
-First, I wish to acknowledge the leadership has been crucial to ensuring that the
-and vision of the Government of Kenya, strategy reflects the diverse needs and
-particularly our Cabinet Secretary, whose perspectives of all Kenyans�
+initiative.
+First, I wish to acknowledge the leadership
+and vision of the Government of Kenya,
+particularly our Cabinet Secretary, whose
 unwavering commitment to the digital
-Special thanks go to our international
 transformation of our country has set the
-partners for their support� We appreciate
-stage for this groundbreaking strategy�
-the German Federal Ministry of Economic
+stage for this groundbreaking strategy.
 His support has been essential in guiding
+this process.
+We also extend our heartfelt thanks to
+the dedicated members of the National AI
+Working Group and Steering Committee,
+whose expertise and tireless efforts
+have ensured that the strategy is both
+forward-thinking and inclusive. Their
+contributions have been invaluable in
+
+drafting a comprehensive document that
+addresses Kenya’s unique challenges
+and opportunities.
+I would like to express my appreciation
+to our partners in the public and private
+sectors, academic institutions, and civil
+society who have shared their insights,
+knowledge, and resources throughout
+the consultation process. Your input
+has been crucial to ensuring that the
+strategy reflects the diverse needs and
+perspectives of all Kenyans.
+Special thanks go to our international
+partners for their support. We appreciate
+the German Federal Ministry of Economic
 Cooperation and Development (BMZ)
-this process�
 and the European Union through
-We also extend our heartfelt thanks to the Digital Transformation Center,
-the dedicated members of the National AI Kenya implemented by the Deutsche
-Working Group and Steering Committee, Gesellschaft für Internationale
-whose expertise and tireless efforts Zusammenarbeit (GIZ), Canada’s
-have ensured that the strategy is both International Development Research
-forward-thinking and inclusive� Their Centre (IDRC), and the UK’s Foreign,
-contributions have been invaluable in Commonwealth, and Development Office
-(FCDO). Their collaborative spirit and the quality of life for all Kenyans�
+the Digital Transformation Center,
+Kenya implemented by the Deutsche
+Gesellschaft
+für
+Internationale
+Zusammenarbeit
+(GIZ),
+Canada’s
+International Development Research
+Centre (IDRC), and the UK’s Foreign,
+Commonwealth, and Development Office
+
+
+(FCDO). Their collaborative spirit and
 support have enriched our efforts and
-Finally, I would like to acknowledge
 understanding of global best practices
-the Government of Kenya’s ongoing
-through lessons learned�
-commitment to building an AI-enabled
-To the technical experts, researchers, and society where innovation, inclusivity, and
-industry leaders who contributed to the sustainability drive our shared success�
-research, analysis, and development of This strategy is a testament to the power
-the strategy, especially during the national of collaboration, and we look forward to
-town halls, focus group discussions, and working together to implement it�
+through lessons learned.
+To the technical experts, researchers, and
+industry leaders who contributed to the
+research, analysis, and development of
+the strategy, especially during the national
+town halls, focus group discussions, and
 key informant interviews led by the Global
 Partnership for Sustainable Development
 Data, your dedication to advancing the
@@ -337,1005 +531,1480 @@ field of AI in Kenya is truly commendable.
 The work you have done will pave the way
 for a future where AI is not only a tool for
 economic growth but also for improving
+
+the quality of life for all Kenyans.
+Finally, I would like to acknowledge
+the Government of Kenya’s ongoing
+commitment to building an AI-enabled
+society where innovation, inclusivity, and
+sustainability drive our shared success.
+This strategy is a testament to the power
+of collaboration, and we look forward to
+working together to implement it.
+
 Eng. John Tanui, CBS
+
 Principal Secretary
 State Department for ICT and the Digital Economy
+
 12 / Kenya AI Strategy
-1TU. IRN MTARXOIMDUODC TIGIOENNDAESEQUE
+
+
+TUR MAXIMOD
+IGENDAESEQUE
+1.
+INTRODUCTION
 ACCUM QUO
+
 13 / Kenya AI Strategy
-The National Strategy on Artificial Intelligence For Kenya, the potential of AI is immense� As
-for Kenya was written to harness the a leading hub for technology and innovation
-transformative potential of AI to drive the in Africa, Kenya is well positioned to provide
-country’s socioeconomic development� This leadership and set the pace for how AI can be
-strategy is a proactive and ambitious roadmap applied to address our unique challenges and
-to position Kenya as an African leader in AI by drive sustainable development� By integrating
-creating an action plan for a robust, inclusive, AI into critical sectors—including agriculture,
-and sustainable AI-driven future� It ensures healthcare, finance, and education—Kenya
-that emerging technologies are leveraged to can achieve significant socioeconomic
-achieve national priorities, enhance public gains, reduce inequalities, and improve the
-services, and promote inclusive economic quality of life for its citizens. The National
-growth� AI Strategy aims to unlock these potentials,
-positioning Kenya to maximise the benefits
+
+
+The National Strategy on Artificial Intelligence
+for Kenya was written to harness the
+transformative potential of AI to drive the
+country’s socioeconomic development. This
+strategy is a proactive and ambitious roadmap
+to position Kenya as an African leader in AI by
+creating an action plan for a robust, inclusive,
+and sustainable AI-driven future. It ensures
+that emerging technologies are leveraged to
+achieve national priorities, enhance public
+services, and promote inclusive economic
+growth.
 This strategy provides a comprehensive
-of AI, promoting innovation and economic
 approach to ensure that Kenya can
-growth while safeguarding our national
 effectively navigate the complexities of AI
-interests, and ensuring ethical and inclusive
 development and adoption in our context,
-AI practices that align with our values and
 mitigate potential risks, and capitalise on the
-development goals� It is important to note that
-opportunities presented by AI technologies�
-while AI offers opportunities to transform our
+opportunities presented by AI technologies.
 This strategic plan will guide the development,
-country in various sectors and public service,
 deployment, and governance of AI in Kenya
-its adoption must be balanced with measures
 and the integration of AI into various sectors,
-to address potential risks� The misuse of
 building a skilled workforce and ensuring
-AI—to launch automated cyberattacks,
 that AI contributes to the nation’s growth and
-disinformation campaigns, or unauthorised
 development while safeguarding the rights
-surveillance—poses significant challenges.
 and well-being of its citizens by addressing
-Kenya’s AI Strategy will prioritise frameworks
-regulatory and ethical considerations� This
-that safeguard against such threats while
+regulatory and ethical considerations. This
 strategy centres on the Kenyan citizen: it
-driving innovation�
 empowers Kenyans by providing them with
 the tools and opportunities to participate
 actively in the digital economy, improve their
-livelihoods, and enhance their quality of life�
+livelihoods, and enhance their quality of life.
 Artificial intelligence has revolutionised
 industries, driven innovation, and reshaped
-economies globally� AI technologies enhance
+economies globally. AI technologies enhance
 productivity, enable smarter decision-making,
-and create new economic opportunities� AI
+and create new economic opportunities. AI
 is being used to solve complex problems,
 improve efficiency, and deliver personalised
-services�
+services.
+
 14 / Kenya AI Strategy
+
+For Kenya, the potential of AI is immense. As
+a leading hub for technology and innovation
+in Africa, Kenya is well positioned to provide
+leadership and set the pace for how AI can be
+applied to address our unique challenges and
+drive sustainable development. By integrating
+AI into critical sectors—including agriculture,
+healthcare, finance, and education—Kenya
+can achieve significant socioeconomic
+gains, reduce inequalities, and improve the
+quality of life for its citizens. The National
+AI Strategy aims to unlock these potentials,
+positioning Kenya to maximise the benefits
+of AI, promoting innovation and economic
+growth while safeguarding our national
+interests, and ensuring ethical and inclusive
+AI practices that align with our values and
+development goals. It is important to note that
+while AI offers opportunities to transform our
+country in various sectors and public service,
+its adoption must be balanced with measures
+to address potential risks. The misuse of
+AI—to launch automated cyberattacks,
+disinformation campaigns, or unauthorised
+surveillance—poses significant challenges.
+Kenya’s AI Strategy will prioritise frameworks
+that safeguard against such threats while
+driving innovation.
+
+
 1.1. Key Definitions
 This section defines key terms in this strategy document. By defining these terms, we
 aim to ensure a common language and shared understanding among all stakeholders,
-facilitating effective communication and collaboration as we advance our AI initiatives�
+facilitating effective communication and collaboration as we advance our AI initiatives.
 Clear and consistent definitions will also help align our strategic goals with best
-practices and regulatory standards�
+practices and regulatory standards.
+
 Table 1.1: Definitions of key terms
-Algorithms Sets of rules or step-by-step instructions for solving problems and performing
+
+Algorithms
+
+Sets of rules or step-by-step instructions for solving problems and performing
 tasks that form the fundamental building blocks of all computational
-processes�
-Artificial A collection of emerging technologies that leverage machine learning, data
-Intelligence processing, and algorithmic systems to perform tasks that typically require
-human intelligence� AI encompasses a range of capabilities, including
-automated decision-making, language processing, and computer vision�
+processes.
+
+Artificial
+Intelligence
+
+A collection of emerging technologies that leverage machine learning, data
+processing, and algorithmic systems to perform tasks that typically require
+human intelligence. AI encompasses a range of capabilities, including
+automated decision-making, language processing, and computer vision.
 In the Kenyan context, AI is a powerful tool for sustainable development,
 designed to assist and simplify human tasks, solve critical challenges, and
-drive sustainable growth�
-Artificial A framework of policies, guidelines, and practices designed to ensure
-Intelligence the responsible, ethical, and transparent development and deployment
-Governance of AI systems� It includes oversight mechanisms, risk management, and
-accountability measures�
-Data A derivative of the fundamental constitutional right to privacy� It is an
-Privacy individual’s right to control personal information, including how it is collected,
-used, stored, and shared� In the context of AI systems, it encompasses
+drive sustainable growth.
+
+Artificial
+Intelligence
+Governance
+
+A framework of policies, guidelines, and practices designed to ensure
+the responsible, ethical, and transparent development and deployment
+of AI systems. It includes oversight mechanisms, risk management, and
+accountability measures.
+
+Data
+Privacy
+
+A derivative of the fundamental constitutional right to privacy. It is an
+individual’s right to control personal information, including how it is collected,
+used, stored, and shared. In the context of AI systems, it encompasses
 principles and regulations that protect individual privacy rights to prevent
 unauthorised access by algorithms and maintain data confidentiality.
-Edge A distributed computing paradigm that brings computation and data storage
-Computing closer to the location where they are needed, thus improving response times
-and saving bandwidth� It enables data processing near the source of data
-generation rather than relying on a centralised data-processing warehouse�
+
+Edge
+Computing
+
+A distributed computing paradigm that brings computation and data storage
+closer to the location where they are needed, thus improving response times
+and saving bandwidth. It enables data processing near the source of data
+generation rather than relying on a centralised data-processing warehouse.
+
 15 / Kenya AI Strategy
-Emerging Novel advancements in science and engineering that have the potential to
-Technologies reshape industries, societies, and economies through innovation�
-Generative AI models capable of creating new content, including text, images, music,
-Artificial or code, based on patterns learned from training data� These systems can
-Intelligence produce original outputs that mimic human-created content�
-Large Advanced AI models trained on vast amounts of text data that can
-Language understand, generate, and manipulate human language� They can also
-Models perform various language tasks, such as translation, summarisation, and
-content generation�
-Machine A subset of AI that enables systems to learn and improve from experience
-Learning without being explicitly programmed� It uses statistical techniques to allow
-computers to “learn” from data and identify patterns�
-Neural Computational models inspired by the structure and function of the human
-Networks brain, consisting of interconnected nodes (neurons) that process and
-transmit information, enabling complex pattern recognition and problem-
-solving capabilities�
-Retrieval- A hybrid AI approach that combines information retrieval from a knowledge
-Augmented base with generative AI capabilities. Grounding generated content in verified
-Generation information enables more accurate and contextually relevant responses�
-Small Compact versions of larger language models designed to operate efficiently
-Language on less powerful devices or within constrained computational environments�
+
+
+Emerging
+Technologies
+
+Novel advancements in science and engineering that have the potential to
+reshape industries, societies, and economies through innovation.
+
+Generative
+Artificial
+Intelligence
+
+AI models capable of creating new content, including text, images, music,
+or code, based on patterns learned from training data. These systems can
+produce original outputs that mimic human-created content.
+
+Large
+Language
 Models
+
+Advanced AI models trained on vast amounts of text data that can
+understand, generate, and manipulate human language. They can also
+perform various language tasks, such as translation, summarisation, and
+content generation.
+
+Machine
+Learning
+
+A subset of AI that enables systems to learn and improve from experience
+without being explicitly programmed. It uses statistical techniques to allow
+computers to “learn” from data and identify patterns.
+
+Neural
+Networks
+
+Computational models inspired by the structure and function of the human
+brain, consisting of interconnected nodes (neurons) that process and
+transmit information, enabling complex pattern recognition and problemsolving capabilities.
+
+RetrievalAugmented
+Generation
+
+A hybrid AI approach that combines information retrieval from a knowledge
+base with generative AI capabilities. Grounding generated content in verified
+information enables more accurate and contextually relevant responses.
+
+Small
+Language
+Models
+
+Compact versions of larger language models designed to operate efficiently
+on less powerful devices or within constrained computational environments.
+
 16 / Kenya AI Strategy
-1�2� Background
-Kenya is a leading hub for technology and age of 19, the country’s population is highly
-innovation in Africa, and artificial intelligence engaged with technology, seeking digital
-is increasingly playing a significant role in its solutions in everyday life� Kenya has several
-digital landscape� Several initiatives have start-ups leveraging AI technologies to
-already been established in the country enhance their offerings in various sectors
-to leverage AI technology, supported by a and has already raised millions of dollars in
-robust digital infrastructure and driven by a venture capital investments�
-combination of government support, private-
-In the private sector, homegrown large
-sector innovation, development partners, and
-corporations in the telecommunications
-academic research�
-and banking sectors are also innovating
-As of March 2024, Kenya had 22�71 million with AI technologies to enhance customer
-internet users, translating to an internet experience, detect fraud, and improve
-penetration rate of 40�8% and a mobile operational efficiency. Global tech companies
-penetration rate of 118% with 68 million have also set up research centres in Kenya to
-mobile cellular connections� With a median tackle challenges in healthcare, agriculture,
+
+
+1.2. Background
+Kenya is a leading hub for technology and
+innovation in Africa, and artificial intelligence
+is increasingly playing a significant role in its
+digital landscape. Several initiatives have
+already been established in the country
+to leverage AI technology, supported by a
+robust digital infrastructure and driven by a
+combination of government support, privatesector innovation, development partners, and
+academic research.
+As of March 2024, Kenya had 22.71 million
+internet users, translating to an internet
+penetration rate of 40.8% and a mobile
+penetration rate of 118% with 68 million
+mobile cellular connections. With a median
+
 17 / Kenya AI Strategy
-and financial services, among other sectors. offices locally. These services enable
-Recently, partnerships have been announced businesses and developers to deploy AI
-on AI infrastructure, including establishing applications efficiently, leveraging cloud-
-a state-of-the-art green data centre and an based infrastructure for machine learning,
-East Africa Innovation Lab focused on broad data analytics, and other AI-related tasks�
-AI digital skills training�
-Kenya is actively leveraging AI to enhance
-Kenya has made significant strides in education and workforce development�
-developing its digital infrastructure� This Various initiatives and programmes are in
-uptake is a result of extensive investments place to equip citizens with the necessary
-in infrastructure and the proliferation of skills to thrive in a digital economy� Kenyan
-affordable internet services� The country’s universities offer data science, machine
-rapid adoption of internet and mobile learning, and AI courses, providing students
-technologies has transformed its economic, with the theoretical and practical knowledge
-social, and cultural landscapes� For needed to excel in AI-related fields.
+
+age of 19, the country’s population is highly
+engaged with technology, seeking digital
+solutions in everyday life. Kenya has several
+start-ups leveraging AI technologies to
+enhance their offerings in various sectors
+and has already raised millions of dollars in
+venture capital investments.
+In the private sector, homegrown large
+corporations in the telecommunications
+and banking sectors are also innovating
+with AI technologies to enhance customer
+experience, detect fraud, and improve
+operational efficiency. Global tech companies
+have also set up research centres in Kenya to
+tackle challenges in healthcare, agriculture,
+
+
+and financial services, among other sectors.
+Recently, partnerships have been announced
+on AI infrastructure, including establishing
+a state-of-the-art green data centre and an
+East Africa Innovation Lab focused on broad
+AI digital skills training.
+Kenya has made significant strides in
+developing its digital infrastructure. This
+uptake is a result of extensive investments
+in infrastructure and the proliferation of
+affordable internet services. The country’s
+rapid adoption of internet and mobile
+technologies has transformed its economic,
+social, and cultural landscapes. For
 instance, the government has prioritised the
-Kenya is emerging as a significant hub for AI
 development of digital government services,
-research and development in Africa� A growing
 such as its eCitizen portal, which provides
-number of initiatives are focused on using AI
 online access to various public services,
-to address local and regional challenges� The
 enhancing efficient and accessible service
-country’s AI research activities span various
 delivery for all citizens.
-sectors, including agriculture, healthcare,
-Investments in terrestrial fibre networks have financial services, and education, with an
-increased the reach of high-speed internet emphasis on creating solutions tailored to the
-to various parts of the country, including unique needs of the African context�
-previously underserved regions� Currently,
-Natural language processing is a focus area
+Investments in terrestrial fibre networks have
+increased the reach of high-speed internet
+to various parts of the country, including
+previously underserved regions. Currently,
 the National Optic Fibre Network Backhaul
-driven by Kenya’s rich linguistic diversity, with
 Initiative, in partnership with the private
-research aimed at developing chatbots that
 sector and other key infrastructure partners,
-can interact through various local languages�
 is aiming to deploy over 100,000 km of optic
-Other emerging research efforts aim to apply
 fibre by 2027. The first two phases of the
-computer vision to practical applications in
 initiative successfully connected the country’s
-agriculture, such as crop disease detection,
 47 counties, with the current phase targeting
-to connect all 1,450 sub-counties� The
+to connect all 1,450 sub-counties. The
 leading mobile network operators continue
 to invest in expanding their coverage and
 upgrading their networks to support higher
-data speeds and better service quality� The
+data speeds and better service quality. The
 country hosts several private data centres
 that provide reliable and secure data storage
-and processing capabilities� These facilities
+and processing capabilities. These facilities
 could be upgraded to support AI applications
 by offering robust cloud computing resources
-and data management services�
+and data management services.
 Cloud services adoption is accelerating in
 Kenya, driven by recent announcements by
 global service providers offering scalable
 and flexible cloud solutions, and opening
+
 18 / Kenya AI Strategy
-and in healthcare, particularly medical needed to unlock AI’s transformative potential
-imaging analysis� Kenya’s leadership in in addressing our most pressing national
-mobile money has also spurred substantial challenges while safeguarding every Kenyan
-research into machine learning for financial citizen’s interests and rights.
+
+offices locally. These services enable
+businesses and developers to deploy AI
+applications efficiently, leveraging cloudbased infrastructure for machine learning,
+data analytics, and other AI-related tasks.
+Kenya is actively leveraging AI to enhance
+education and workforce development.
+Various initiatives and programmes are in
+place to equip citizens with the necessary
+skills to thrive in a digital economy. Kenyan
+universities offer data science, machine
+learning, and AI courses, providing students
+with the theoretical and practical knowledge
+needed to excel in AI-related fields.
+Kenya is emerging as a significant hub for AI
+research and development in Africa. A growing
+number of initiatives are focused on using AI
+to address local and regional challenges. The
+country’s AI research activities span various
+sectors, including agriculture, healthcare,
+financial services, and education, with an
+emphasis on creating solutions tailored to the
+unique needs of the African context.
+Natural language processing is a focus area
+driven by Kenya’s rich linguistic diversity, with
+research aimed at developing chatbots that
+can interact through various local languages.
+Other emerging research efforts aim to apply
+computer vision to practical applications in
+agriculture, such as crop disease detection,
+
+
+and in healthcare, particularly medical
+imaging analysis. Kenya’s leadership in
+mobile money has also spurred substantial
+research into machine learning for financial
 inclusion, aiming to broaden access to
-An enabling environment for AI in Kenya
 financial services through innovative AI
-means cultivating conditions where creative
-applications�
-and innovative AI-driven solutions can
-Additionally, several research centres are flourish. It involves establishing frameworks
-conducting ongoing research into the societal that encourage the development, testing,
-impacts of AI and developing robust ethical and deployment of AI technologies tailored
-guidelines to ensure responsible AI deployment to our unique context and ensure that
-within the Kenyan context� Therefore, Kenya Kenyan citizens can directly benefit from
-is well-positioned to contribute significantly to these advancements, experiencing tangible
-global AI research, particularly in developing improvements in their daily lives and
-AI solutions for emerging markets� The future livelihoods�
+applications.
+Additionally, several research centres are
+conducting ongoing research into the societal
+impacts of AI and developing robust ethical
+guidelines to ensure responsibleAI deployment
+within the Kenyan context. Therefore, Kenya
+is well-positioned to contribute significantly to
+global AI research, particularly in developing
+AI solutions for emerging markets. The future
 of AI research in Kenya looks promising, with
-However, this vision of an AI-enabled Kenya
 increasing investment, growing international
-is not without boundaries� There is a need to
 partnerships, and a rising number of young
+Kenyans pursuing advanced studies in AI.
+
+needed to unlock AI’s transformative potential
+in addressing our most pressing national
+challenges while safeguarding every Kenyan
+citizen’s interests and rights.
+An enabling environment for AI in Kenya
+means cultivating conditions where creative
+and innovative AI-driven solutions can
+flourish. It involves establishing frameworks
+that encourage the development, testing,
+and deployment of AI technologies tailored
+to our unique context and ensure that
+Kenyan citizens can directly benefit from
+these advancements, experiencing tangible
+improvements in their daily lives and
+livelihoods.
+
+Despite these exciting emerging opportunities
+and the potential for AI to revolutionise the
+Kenyan economy, there are a number of
+growing concerns, particularly regarding
+the governance of the technology and the
+ability of Kenyan citizens to fully participate in
+and benefit from AI adoption across various
+sectors.
+
+However, this vision of an AI-enabled Kenya
+is not without boundaries. There is a need to
 strike a delicate balance between fostering
-Kenyans pursuing advanced studies in AI�
 innovation and implementing necessary
-Despite these exciting emerging opportunities safeguards� Protective measures are
-and the potential for AI to revolutionise the required to prevent the exploitative use of AI
-Kenyan economy, there are a number of technologies and ensure that their benefits
-growing concerns, particularly regarding are equitably distributed across Kenyan
-the governance of the technology and the society� By doing so, Kenya aims to create
-ability of Kenyan citizens to fully participate in an AI ecosystem that is not only innovative
-and benefit from AI adoption across various but also ethical, inclusive, and aligned with its
-sectors� national values and aspirations�
-Kenya’s journey towards becoming an African This National AI Strategy espouses
-and global leader in AI development and harnessing AI as a tool for national
-adoption requires creating an environment development and social progress while
-that fosters innovation while ensuring vigilantly guarding against potential misuse
-responsible use� A balanced approach is or unintended negative consequences�
+safeguards. Protective measures are
+required to prevent the exploitative use of AI
+technologies and ensure that their benefits
+are equitably distributed across Kenyan
+society. By doing so, Kenya aims to create
+an AI ecosystem that is not only innovative
+but also ethical, inclusive, and aligned with its
+national values and aspirations.
+
+Kenya’s journey towards becoming an African
+and global leader in AI development and
+adoption requires creating an environment
+that fosters innovation while ensuring
+responsible use. A balanced approach is
+
+This National AI Strategy espouses
+harnessing AI as a tool for national
+development and social progress while
+vigilantly guarding against potential misuse
+or unintended negative consequences.
+
 19 / Kenya AI Strategy
-1�3� Rationale for an AI Strategy for Kenya
-Kenya envisions becoming a leading force • Data Sovereignty and Privacy: With
-in the African AI landscape by fostering a the increasing use of AI technologies that
-robust, diverse, and inclusive AI ecosystem� require vast amounts of data, there is a
-This strategy focuses on creating an fear of data misuse, unauthorised access,
-enabling environment for responsibly and a lack of control over personal
-developing quality AI applications that information� Emerging concerns about
-leverage local datasets and talent, ensuring data colonialism and extractive practices
-safety, responsibility, and alignment with by big tech companies are widespread�
-international human rights standards� • Ethical AI, Human Rights, and the
+
+
+1.3. Rationale for an AI Strategy for Kenya
+Kenya envisions becoming a leading force
+in the African AI landscape by fostering a
+robust, diverse, and inclusive AI ecosystem.
+This strategy focuses on creating an
+enabling environment for responsibly
+developing quality AI applications that
+leverage local datasets and talent, ensuring
+safety, responsibility, and alignment with
+international human rights standards.
+
+1.3.1. Key AI Concerns in
+Kenya
+Kenya’s AI strategy aims to address the
+following key concerns of its citizens by
+ensuring that AI technologies are developed
+and deployed responsibly and inclusively:
+• Labour Disruptions and Economic
+Impact: There is a great opportunity to
+leverage AI and emerging technologies
+to drive economic growth and create
+new employment and skills opportunities.
+However, the potential for AI to disrupt
+the job market is a major concern,
+especially given the unemployment
+challenges younger generations are
+currently experiencing. Many fear that
+AI-driven automation might lead to job
+losses, particularly in sectors where
+many Kenyans are employed, like
+manufacturing, agriculture, and services.
+• Digital
+Divide
+and
+Inclusive
+Development: There is legitimate
+concern about uneven access to digital
+and AI technologies, including the broader
+digital divide between urban and rural
+areas and marginalised communities.
+Many Kenyans worry that only a small
+segment of the population will benefit
+from AI, exacerbating existing social and
+economic inequalities and widening the
+digital divide.
+
+20 / Kenya AI Strategy
+
+• Data Sovereignty and Privacy: With
+the increasing use of AI technologies that
+require vast amounts of data, there is a
+fear of data misuse, unauthorised access,
+and a lack of control over personal
+information. Emerging concerns about
+data colonialism and extractive practices
+by big tech companies are widespread.
+• Ethical AI, Human Rights, and the
 Promotion of Public Trust: Significant
 concerns about the ethical use of AI
-1�3�1� Key AI Concerns in
 include issues of bias, discrimination,
-Kenya
 perpetuation of existing inequalities, and
 potential exploitation for surveillance and
-Kenya’s AI strategy aims to address the
-other invasive purposes� Public trust in
-following key concerns of its citizens by
+other invasive purposes. Public trust in
 AI technologies and their developers is
-ensuring that AI technologies are developed
 lacking, leading to scepticism about the
-and deployed responsibly and inclusively:
-intentions behind AI deployment� There is
-• Labour Disruptions and Economic
+intentions behind AI deployment. There is
 also a need to ensure that AI development
-Impact: There is a great opportunity to
 respects human rights and aligns with
-leverage AI and emerging technologies
-Kenyan values�
-to drive economic growth and create
-• Regulatory Preparedness: The
-new employment and skills opportunities�
+Kenyan values.
+• Regulatory
+Preparedness:
+The
 existing regulatory and legal frameworks
-However, the potential for AI to disrupt
 to address the unique challenges AI
-the job market is a major concern,
-technologies pose are inadequate� Without
-especially given the unemployment
+technologies pose are inadequate. Without
 coherent guidelines and frameworks, AI
-challenges younger generations are
 development might outpace the ability to
-currently experiencing� Many fear that
 govern it effectively, leading to potential
-AI-driven automation might lead to job
-misuse and harm�
-losses, particularly in sectors where
-many Kenyans are employed, like • Local Innovation and Competitiveness:
+misuse and harm.
+• Local Innovation and Competitiveness:
 Kenyans want to ensure they are not
-manufacturing, agriculture, and services�
 just consumers but also producers of
-• Digital Divide and Inclusive
 AI technologies that can compete in the
-Development: There is legitimate
 global markets. With sufficient investment
-concern about uneven access to digital
 in local AI development and education,
-and AI technologies, including the broader
 Kenya may stay competitive in the global
-digital divide between urban and rural
-AI race� There is also a concern that if
-areas and marginalised communities�
+AI race. There is also a concern that if
 Kenya lags behind, brain drain could result
-Many Kenyans worry that only a small
 as talented individuals seek opportunities
-segment of the population will benefit
-abroad�
-from AI, exacerbating existing social and
-economic inequalities and widening the • Public-Sector Efficiency and Service
-digital divide� Delivery: Unbiased adoption of AI in
+abroad.
+• Public-Sector Efficiency and Service
+Delivery: Unbiased adoption of AI in
 the public sector is necessary to ensure
-20 / Kenya AI Strategy
-equitable and efficient service delivery • Protection against Negative Impacts
-without discrimination to all Kenyans� of Externally Developed AI Solutions:
-AI has the potential to improve how the By developing local AI capabilities and
-Kenyan government delivers services to frameworks, AI solutions can be rooted in
-its citizens. Kenyan values and contexts, rather than
-• Sustainable (AI) Development: AI solely relying on external solutions that
-development needs to be balanced with may not align with the country’s unique
-environmental sustainability� AI systems, needs and challenges� This approach
-such as large language models and positions Kenya to harness AI’s benefits
-data centres, require significant energy while maintaining control over how these
-and could have long-term environmental technologies impact the society and
-impacts on Kenya’s natural resources� economy�
-• Job Creation and Skills Development\:
-1�3�2� Strategic Importance of AI can create new jobs in various sectors,
-AI to Kenya from tech and data science roles to AI-
-enabled agriculture, healthcare, and
-AI presents the following value propositions education services� Developing AI-
-to Kenya: specific curricula and training programmes
-• Economic Growth: AI has the potential to will equip the workforce to thrive in a
-significantly boost Kenya’s gross domestic digital economy, address the existing
-product (GDP) by improving efficiencies skills gaps, and prepare Kenya for future
-and creating jobs across various sectors� technological advancements�
-For instance, AI can enhance agricultural By addressing these key areas, Kenya’s
-productivity, reduce healthcare costs, National AI Strategy aims to create an enabling
-and improve transportation systems� environment for AI development that drives
-The government can anchor demand for economic growth, enhances public services,
-AI solutions, stimulating innovation and and promotes inclusive and sustainable
-adoption in the private sector� development� This strategic approach
-• Public-Sector Efficiency: AI can ensures that AI contributes positively to
-improve government service delivery, Kenya’s future while safeguarding the rights
-enhance decision-making, and effectively and well-being of its citizens.
-manage costs� AI-driven solutions can
+
+
+equitable and efficient service delivery
+without discrimination to all Kenyans.
+AI has the potential to improve how the
+Kenyan government delivers services to
+its citizens.
+• Sustainable (AI) Development: AI
+development needs to be balanced with
+environmental sustainability. AI systems,
+such as large language models and
+data centres, require significant energy
+and could have long-term environmental
+impacts on Kenya’s natural resources.
+
+1.3.2. Strategic Importance of
+AI to Kenya
+AI presents the following value propositions
+to Kenya:
+• Economic Growth: AI has the potential to
+significantly boost Kenya’s gross domestic
+product (GDP) by improving efficiencies
+and creating jobs across various sectors.
+For instance, AI can enhance agricultural
+productivity, reduce healthcare costs,
+and improve transportation systems.
+The government can anchor demand for
+AI solutions, stimulating innovation and
+adoption in the private sector.
+• Public-Sector Efficiency: AI can
+improve government service delivery,
+enhance decision-making, and effectively
+manage costs. AI-driven solutions can
 also streamline processes, reduce
 bureaucratic inefficiencies, and enhance
 the transparency and accountability of
-public services�
+public services.
 • International Competitiveness: Kenya
 can attract international investments
-and collaborations by positioning
+and
+collaborations
+by
+positioning
 itself as a primary source market for
-localised emerging technologies� This
-can lead to the development of home-
-grown AI solutions using local data and
+localised emerging technologies. This
+can lead to the development of homegrown AI solutions using local data and
 talent, fostering innovation and creating
 competitive advantages for Kenyan
-companies on the global stage�
+companies on the global stage.
+
 21 / Kenya AI Strategy
-1�4� Methodology
-To formulate this strategy, the following 1�4�2� Primary Data Collection
+
+• Protection against Negative Impacts
+of Externally Developed AI Solutions:
+By developing local AI capabilities and
+frameworks, AI solutions can be rooted in
+Kenyan values and contexts, rather than
+solely relying on external solutions that
+may not align with the country’s unique
+needs and challenges. This approach
+positions Kenya to harness AI’s benefits
+while maintaining control over how these
+technologies impact the society and
+economy.
+• Job Creation and Skills Development\:
+AI can create new jobs in various sectors,
+from tech and data science roles to AIenabled agriculture, healthcare, and
+education services. Developing AIspecific curricula and training programmes
+will equip the workforce to thrive in a
+digital economy, address the existing
+skills gaps, and prepare Kenya for future
+technological advancements.
+By addressing these key areas, Kenya’s
+National AI Strategy aims to create an enabling
+environment for AI development that drives
+economic growth, enhances public services,
+and promotes inclusive and sustainable
+development. This strategic approach
+ensures that AI contributes positively to
+Kenya’s future while safeguarding the rights
+and well-being of its citizens.
+
+
+1.4. Methodology
+To formulate this strategy, the following
 mixed methods methodology was adopted
-Data collection involved extensive primary
 to ensure that the resulting document was
-research through key informant interviews
 comprehensive, inclusive, and contextually
-(KIIs) with government representatives and
-relevant�
-implementation and development partners;
-1�4�1� Literature Review and focus group discussions (FGDs) with key AI
-Environmental Analysis stakeholders from industry, academia, and
-civil society; expert consultations with AI
-A detailed literature review was conducted thought leaders; town hall sessions with tech
-to examine global and regional AI strategies, and innovation communities within county
-policy documents, and governance hubs; and a public survey administered
-frameworks� This review aimed to establish online� Research instruments, such as FGD
-best practices and benchmarking mechanisms guides and KII protocols, were designed
-that could inform the development of Kenya’s based on the findings from the literature
-AI strategy� The review provided insights into review and stakeholder mapping� These
-the context and definitions, an environmental instruments focused on gathering insights
-analysis to assess Kenya’s AI landscape, on strategic themes, development priorities,
-and foundational considerations specific and potential risks and concerns related to AI
-to the national context� A key component adoption�
+relevant.
+
+1.4.1. Literature Review and
+Environmental Analysis
+A detailed literature review was conducted
+to examine global and regional AI strategies,
+policy
+documents,
+and
+governance
+frameworks. This review aimed to establish
+best practices and benchmarking mechanisms
+that could inform the development of Kenya’s
+AI strategy. The review provided insights into
+the context and definitions, an environmental
+analysis to assess Kenya’s AI landscape,
+and foundational considerations specific
+to the national context. A key component
 of this phase was stakeholder mapping,
-1�4�3� Stakeholder
 designed to identify and understand the
-roles, responsibilities, and influence of key Engagement
+roles, responsibilities, and influence of key
 stakeholders, including implementers and
-A large group of AI stakeholders was initially
-those impacted by the strategy�
-engaged through a series of three in-person
+those impacted by the strategy.
 This literature review applied an African
-workshops to establish a roadmap for the
-lens to frame the AI ecosystem� Drawing
-strategy development process, including
+lens to frame the AI ecosystem. Drawing
 from normative stakeholder theory, the
-setting the vision, the mission, guiding
 methodology identified stakeholder categories
-principles and key topics for the strategy to
 based on normative claims emphasising
-consider� From these large groups, members
 fair economic opportunity, political equality,
-of a smaller working group were voted on by
-and authenticity� This approach integrated
-their peers as representatives of the broader
+and authenticity. This approach integrated
 ethical considerations into the strategy,
-AI community� The strategy working group,
 prioritising equitable outcomes and ensuring
-consisting of thematic experts, played a pivotal
 that diverse perspectives were included
-role in guiding the strategy development
 in the conceptualization of responsible AI.
-process� Through four in-person workshops
 The findings informed the development of
-and two virtual sessions, the working
 preliminary strategy chapters and guided
-group contributed to thematic discussions,
 subsequent data collection and stakeholder
+engagement activities.
+
+22 / Kenya AI Strategy
+
+1.4.2. Primary Data Collection
+Data collection involved extensive primary
+research through key informant interviews
+(KIIs) with government representatives and
+implementation and development partners;
+focus group discussions (FGDs) with key AI
+stakeholders from industry, academia, and
+civil society; expert consultations with AI
+thought leaders; town hall sessions with tech
+and innovation communities within county
+hubs; and a public survey administered
+online. Research instruments, such as FGD
+guides and KII protocols, were designed
+based on the findings from the literature
+review and stakeholder mapping. These
+instruments focused on gathering insights
+on strategic themes, development priorities,
+and potential risks and concerns related to AI
+adoption.
+
+1.4.3. Stakeholder
+Engagement
+A large group of AI stakeholders was initially
+engaged through a series of three in-person
+workshops to establish a roadmap for the
+strategy development process, including
+setting the vision, the mission, guiding
+principles and key topics for the strategy to
+consider. From these large groups, members
+of a smaller working group were voted on by
+their peers as representatives of the broader
+AI community. The strategy working group,
+consisting of thematic experts, played a pivotal
+role in guiding the strategy development
+process. Through four in-person workshops
+and two virtual sessions, the working
+group contributed to thematic discussions,
 validated data findings, and provided critical
-engagement activities�
-feedback� In these workshops, the working
+feedback. In these workshops, the working
 group supported the strategy formulation
 team to identify thematic strategy priorities
-22 / Kenya AI Strategy
-and an implementation framework� Meetings On the basis of this SLOC analysis, strategic
-were structured around presentations, with options, decisions, and initiatives were
-members contributing written input and developed and proposed for implementation
-recommendations throughout the sessions� through the strategy� Figure 1�1 shows a
-This iterative feedback loop ensured that the summary of the methodology described
-working group’s expertise was fully integrated above�
-into the evolving strategy�
-1�4�5� Validation of the
-1�4�4� Synthesis and Drafting
-Strategy
+
+
+and an implementation framework. Meetings
+were structured around presentations, with
+members contributing written input and
+recommendations throughout the sessions.
+This iterative feedback loop ensured that the
+working group’s expertise was fully integrated
+into the evolving strategy.
+
+1.4.4. Synthesis and Drafting
 of the Strategy
-The strategy was presented at two
-Data collected during the above phases stakeholder workshops, first with public-
-of the strategy underwent qualitative and sector stakeholders and then with members of
-quantitative analysis, including thematic the Kenyan AI ecosystem� These workshops
-and content analysis� The analysis provided were held to validate the methodology used
-key evidence that informed the drafting of to develop the strategy, the vision, guiding
-a strength, limitations, opportunities, and principles, and key themes and pillars�
-challenges (SLOC) analysis for AI in Kenya. The stakeholders engaged were largely in
-agreement with the strategy as presented�
-1 2 3 4 5 6 7 8
-Documents Focus Group Stakeholder
-Online Surveys
-Review Discussions Presentations
-Strategy
-Benchmarking Townhall Talks
-Key Informant Development
-with Relevant in County
-Interviews with Working
-Countries Innovation Hubs
-Groups
+Data collected during the above phases
+of the strategy underwent qualitative and
+quantitative analysis, including thematic
+and content analysis. The analysis provided
+key evidence that informed the drafting of
+a strength, limitations, opportunities, and
+challenges (SLOC) analysis for AI in Kenya.
+
+1
+
+3
+
+2
+
+Documents
+Review
+
+4
+
 Figure 1.1: Summary of Methodology
+
 23 / Kenya AI Strategy
-1�5� Scope
-This strategy aims to be comprehensive, 4. Talent: The strategy addresses the
-addressing multiple facets of AI development, critical need for equitable access to AI
-adoption, and governance� The strategy through developing AI skills across all
-will create a holistic framework that creates levels of society�
+
+1.4.5. Validation of the
+Strategy
+The strategy was presented at two
+stakeholder workshops, first with publicsector stakeholders and then with members of
+the Kenyan AI ecosystem. These workshops
+were held to validate the methodology used
+to develop the strategy, the vision, guiding
+principles, and key themes and pillars.
+The stakeholders engaged were largely in
+agreement with the strategy as presented.
+
+5
+
+6
+
+Focus Group
+Discussions
+
+Online Surveys
+
+Benchmarking
+with Relevant
+Countries
+
+On the basis of this SLOC analysis, strategic
+options, decisions, and initiatives were
+developed and proposed for implementation
+through the strategy. Figure 1.1 shows a
+summary of the methodology described
+above.
+
+Key Informant
+Interviews
+
+7
+
+8
+
+Stakeholder
+Presentations
+
+Townhall Talks
+in County
+Innovation Hubs
+
+Strategy
+Development
+with Working
+Groups
+
+
+1.5. Scope
+This strategy aims to be comprehensive,
+addressing multiple facets of AI development,
+adoption, and governance. The strategy
+will create a holistic framework that creates
 an enabling environment for AI innovation
-5. Governance: The strategy provides
 and adoption but also ensures that this
-a roadmap for developing initial
 technological revolution benefits all sectors of
-governance frameworks for responsible
 society while adhering to ethical principles and
-AI development and use�
-national values� The strategy encompasses
-6. Investment: A significant outlay of
+national values. The strategy encompasses
 the following key areas:
-capital and investment is needed to
-1. AI Digital Infrastructure: The
-establish an AI industry� The strategy
+1. AI
+Digital
+Infrastructure:
+The
 strategy provides strategic options and
-addresses various options and avenues
 initiatives that enable the development
-for financing its implementation.
 of the technological and supporting
-7. Ethics, Equity, and Inclusion: The
 infrastructure needed to support local
-strategy addresses how Kenya can
-AI growth�
-ensure that AI development is ethical,
+AI growth.
 2. Data: The strategy addresses the
-inclusive, and respectful of human
 need for a robust and sustainable data
-rights�
 ecosystem framework as a critical input
 for developing contextual AI models
-and solutions�
+and solutions.
 3. Research and Development: Given
 Kenya’s unique position as a potential
 provider of local AI solutions to address
 development challenges, this strategy
 includes options to foster a robust AI
-R&D ecosystem�
+R&D ecosystem.
+
 24 / Kenya AI Strategy
-T2U. RA IM &A XEIMMOEDR GIGINENGD AESEQUE
-ATCECCUHMN OQLUOOGIES
+
+4. Talent: The strategy addresses the
+critical need for equitable access to AI
+through developing AI skills across all
+levels of society.
+5. Governance: The strategy provides
+a roadmap for developing initial
+governance frameworks for responsible
+AI development and use.
+6. Investment: A significant outlay of
+capital and investment is needed to
+establish an AI industry. The strategy
+addresses various options and avenues
+for financing its implementation.
+7. Ethics, Equity, and Inclusion: The
+strategy addresses how Kenya can
+ensure that AI development is ethical,
+inclusive, and respectful of human
+rights.
+
+
+TUR
+MAXIMOD
+IGENDAESEQUE
+2.
+AI &
+EMERGING
+TECHNOLOGIES
+ACCUM
+QUO
+
 25 / Kenya AI Strategy
+
+
 2.1. Definition of Emerging Technologies
-Emerging technologies are innovative and rapid evolution� Examples of emerging
-advancements in various fields that are in technologies include blockchain, Internet of
-the process of development or are newly Things (IoT), virtual reality, and 3D printing.
-introduced� These technologies have the These technologies are often interdisciplinary,
-potential to dramatically benefit industries, drawing from fields such as computer science,
-societies, and individuals by offering new engineering, biology, and materials science to
-ways of doing things, increasing efficiency, push the boundaries of what is possible� One
-and improving general quality of life� of the most prominent emerging technologies
-of our time is AI, which has been gaining
+Emerging technologies are innovative
+advancements in various fields that are in
+the process of development or are newly
+introduced. These technologies have the
+potential to dramatically benefit industries,
+societies, and individuals by offering new
+ways of doing things, increasing efficiency,
+and improving general quality of life.
 Emerging technologies encompass a wide
-momentum and transforming various sectors
 range of innovations that are at the forefront
-due to its ability to mimic human intelligence
 of development and have the potential to
-and perform tasks that typically require
-disrupt existing systems and processes�
-human intervention�
+disrupt existing systems and processes.
 These technologies are distinguished by
 their novelty, potential for significant impact,
-2�2� Relationship between Emerging
+
+and rapid evolution. Examples of emerging
+technologies include blockchain, Internet of
+Things (IoT), virtual reality, and 3D printing.
+These technologies are often interdisciplinary,
+drawing from fields such as computer science,
+engineering, biology, and materials science to
+push the boundaries of what is possible. One
+of the most prominent emerging technologies
+of our time is AI, which has been gaining
+momentum and transforming various sectors
+due to its ability to mimic human intelligence
+and perform tasks that typically require
+human intervention.
+
+2.2. Relationship between Emerging
 Technologies and AI
-AI has emerged as a transformative problem solving, perception, and language
-technology with the potential to revolutionise understanding� AI systems are designed to
-industries and redefine how we interact analyse data, recognise patterns, and make
-with technology� AI refers to the simulation decisions with minimal human intervention�
+AI has emerged as a transformative
+technology with the potential to revolutionise
+industries and redefine how we interact
+with technology. AI refers to the simulation
 of human intelligence processes by
-AI is a foundational technology that underpins
 machines, including learning, reasoning,
-and scales the capabilities of other emerging
+
 26 / Kenya AI Strategy
-technologies� It can be positioned as a networks, and renewable energy systems
-transformative tool and a core enabler that to optimise smart homes, support urban
-seamlessly integrates with other emerging infrastructure, and promote sustainability�
+
+problem solving, perception, and language
+understanding. AI systems are designed to
+analyse data, recognise patterns, and make
+decisions with minimal human intervention.
+AI is a foundational technology that underpins
+and scales the capabilities of other emerging
+
+
+technologies. It can be positioned as a
+transformative tool and a core enabler that
+seamlessly integrates with other emerging
 technologies, driving innovation and solving
-Furthermore, AI’s capacity to automate and
-complex problems in different domains� As
-optimise processes enhances the efficiency
+complex problems in different domains. As
 AI accelerates technological progress, it
-of other emerging technologies� In 3D printing
 is simultaneously improved by advances
-and drug discovery, AI can refine designs
 in these connected fields, thus supporting
-and predict the behaviour of materials,
-further innovation�
-improving production efficiency and resource
-AI amplifies the potential of emerging optimisation� Similarly, in cybersecurity, AI
-technologies such as the Internet of Things, automates threat detection and response,
-blockchain, edge computing, augmented providing robust protection for other emerging
-reality, biotechnology, and quantum technologies such as IoT and blockchain
-computing� AI’s core ability to produce, networks�
+further innovation.
+AI amplifies the potential of emerging
+technologies such as the Internet of Things,
+blockchain, edge computing, augmented
+reality,
+biotechnology,
+and
+quantum
+computing. AI’s core ability to produce,
 process, and extract meaningful patterns
-AI capabilities, including computer vision and
 from complex data makes it indispensable
-natural language processing, play a vital role
 to emerging technologies that are heavily
-in making other emerging technologies more
-reliant on data� For example, AI’s ability to
-accessible and user-friendly through natural
+reliant on data. For example, AI’s ability to
 process data locally on edge devices and
-interfaces� For instance, in augmented and
 its integration with 5G enables real-time
-virtual reality, AI can personalise experiences
 decision-making for applications such as
-by adapting content to user preferences and
 autonomous vehicles or services such as
-behaviours�
-telehealth that require low latency� In smart
+telehealth that require low latency. In smart
 cities, AI coordinates IoT devices, blockchain
-2�3� Why AI
-Artificial intelligence stands at the forefront of technologies, including robotics, Internet
-the Fourth Industrial Revolution, serving as of Things (IoT), blockchain, and quantum
-the key orchestrator that will fundamentally computing�
-reshape how we live, work, and interact�
-This strategy focuses on artificial intelligence
+
+networks, and renewable energy systems
+to optimise smart homes, support urban
+infrastructure, and promote sustainability.
+Furthermore, AI’s capacity to automate and
+optimise processes enhances the efficiency
+of other emerging technologies. In 3D printing
+and drug discovery, AI can refine designs
+and predict the behaviour of materials,
+improving production efficiency and resource
+optimisation. Similarly, in cybersecurity, AI
+automates threat detection and response,
+providing robust protection for other emerging
+technologies such as IoT and blockchain
+networks.
+AI capabilities, including computer vision and
+natural language processing, play a vital role
+in making other emerging technologies more
+accessible and user-friendly through natural
+interfaces. For instance, in augmented and
+virtual reality, AI can personalise experiences
+by adapting content to user preferences and
+behaviours.
+
+2.3. Why AI
+Artificial intelligence stands at the forefront of
+the Fourth Industrial Revolution, serving as
+the key orchestrator that will fundamentally
+reshape how we live, work, and interact.
 As a transformative technology, AI’s impact
-as a foundational emerging technology, with
 extends far beyond the tech sector, promising
-the core assumption that the central tenets
 to revolutionise healthcare, agriculture,
-and themes of the strategy—including data,
 manufacturing, finance, education, and
-governance, ethics and inclusion, talent
 virtually every other aspect of our economy
-development, and digital infrastructure—
-and society� Its ability to process vast
-provide a robust implementation blueprint
+and society. Its ability to process vast
 amounts of data, recognise patterns, and
-that can be extended and applied to support
 generate insights makes it an essential
-a growing technology sector in Kenya�
 driver of innovation and productivity across
-multiple sectors� AI’s transformative power
+multiple sectors. AI’s transformative power
 lies in its role as a catalyst for other emerging
+
 27 / Kenya AI Strategy
-T3U. RE NMVAIXRIMOONDM IEGNETNADLA EASNEAQLUYES IS
+
+technologies, including robotics, Internet
+of Things (IoT), blockchain, and quantum
+computing.
+This strategy focuses on artificial intelligence
+as a foundational emerging technology, with
+the core assumption that the central tenets
+and themes of the strategy—including data,
+governance, ethics and inclusion, talent
+development, and digital infrastructure—
+provide a robust implementation blueprint
+that can be extended and applied to support
+a growing technology sector in Kenya.
+
+
+3. ENVIRONMENTAL
+ANALYSIS
+TUR
+MAXIMOD IGENDAESEQUE
 ACCUM QUO
+
 The rapid evolution of the AI field continues to inform how digital ecosystems adapt to technology
-while underscoring the overall impact on different economic sectors� An in-depth environmental
-analysis portrays how the digital landscape evolves, considering how AI is being leveraged�
+while underscoring the overall impact on different economic sectors. An in-depth environmental
+analysis portrays how the digital landscape evolves, considering how AI is being leveraged.
 Relying on existing data and publicly available use cases, the environmental analysis provides
 valuable insights not only into the global AI landscape but also the regional and national AI
 landscapes, allowing for the identification of stakeholders, opportunities, identification of best
 practices, areas thriving in the adoption of AI, risks, challenges, technological investment,
-regulatory preparedness, and growth of the AI landscape through innovation and research�
+regulatory preparedness, and growth of the AI landscape through innovation and research.
 The environmental analysis provides a critical lens through which to identify changes and
 challenges, areas for improvement, and the dynamics through which Kenya can have a
-competitive edge in the technological landscape regionally and internationally�
+competitive edge in the technological landscape regionally and internationally.
+
 28 / Kenya AI Strategy
-3�1� Social and Economic Environment
-3�1�1� Global AI Trends Fund, around 40% of global jobs are
-exposed to AI, with advanced economies
+
+
+3.1. Social and Economic Environment
+3.1.1. Global AI Trends
 Global developments in AI and emerging
-facing a higher risk due to the potential
 technologies are shaping the future of
-automation of high-skilled roles� This
-industries and societies worldwide� The
-raises concerns about job displacement
+industries and societies worldwide. The
 World Economic Forum notes that the world’s
-and the need for large-scale reskilling
 five leading economies—the United States,
-programmes�
 China, Japan, India, and Germany—have
-• Global Inequalities: AI’s rapid
 vested interests in the global AI ecosystem,
-advancement is likely to exacerbate
 with the United States and China leading,
-existing inequalities, both within and
 characterised by the highest percentages
-across nations� In advanced economies,
 in venture capital investment in AI across
-AI may benefit high-income workers
-different sectors� This has led to a new
-disproportionately, while those in lower-
+different sectors. This has led to a new
 emergent technology sub-sector, with
-income or less skilled roles may face
 projections by PricewaterhouseCoopers
-greater job insecurity� Emerging markets,
 suggesting that AI could contribute up to
-with less developed digital infrastructure
-$15�7 trillion to the global economy by 2030�
-and workforce capabilities, could struggle
+$15.7 trillion to the global economy by 2030.
 The majority of these gains are expected
-to leverage AI’s benefits, potentially
 from enhanced productivity and increased
-widening the global inequality gap�
 consumer demand for AI-driven product
-• Ethical Concerns: As AI becomes
-innovations�
-more integrated into various aspects
+innovations.
 Other global trends in how AI is defining the
-of life, public sentiment towards the
 social and economic environment include:
-technology is increasingly cautious� AI-
-• Increased Infrastructure Investment: driven misinformation and disinformation
-In 2023, investments in the graphics campaigns created by deepfakes and
-processing unit market crossed into the concerns about privacy and online safety
-$1 trillion cap club due to high demand on social media platforms are eroding
-from nation states, startups, big tech, public trust in established institutions and
-and researchers alike� Microsoft carved
+• Increased Infrastructure Investment:
+In 2023, investments in the graphics
+processing unit market crossed into the
+$1 trillion cap club due to high demand
+from nation states, startups, big tech,
+and researchers alike. Microsoft carved
 out an annual spend of $50 billion for
 AI infrastructure in 2023 and beyond, a
 yearly investment amount unmatched by
-any other company worldwide�
-• Increased Innovation Spending:
+any other company worldwide.
+• Increased
+Innovation
+Spending:
 Generative AI apps have had a breakout
 year across image, video, coding, voice,
 or co-pilots for everyone, driving $18
 billion in venture capital and corporate
-investments�
+investments.
 • Labor Market Transformation: The
 integration of AI into the workforce is
 expected to cause significant disruptions.
 According to the International Monetary
+
 29 / Kenya AI Strategy
-processes such as elections� According economic outlook finds that Africa needs
-to the 2023 Global Index on Responsible to close an annual financing gap of over
-AI, only 38 of the 138 countries assessed $402 billion and invest in key areas such
-have taken steps to address the safety, as education, energy, and productivity-
-accuracy, and reliability of AI systems� enhancing technology and innovation to fast
-track the achievement of its development
-3�1�2� Regional Context goals� AI is one of these technologies, and by
-2030 it is projected to generate $1�2 trillion in
+
+Fund, around 40% of global jobs are
+exposed to AI, with advanced economies
+facing a higher risk due to the potential
+automation of high-skilled roles. This
+raises concerns about job displacement
+and the need for large-scale reskilling
+programmes.
+• Global
+Inequalities:
+AI’s
+rapid
+advancement is likely to exacerbate
+existing inequalities, both within and
+across nations. In advanced economies,
+AI may benefit high-income workers
+disproportionately, while those in lowerincome or less skilled roles may face
+greater job insecurity. Emerging markets,
+with less developed digital infrastructure
+and workforce capabilities, could struggle
+to leverage AI’s benefits, potentially
+widening the global inequality gap.
+• Ethical Concerns: As AI becomes
+more integrated into various aspects
+of life, public sentiment towards the
+technology is increasingly cautious. AIdriven misinformation and disinformation
+campaigns created by deepfakes and
+concerns about privacy and online safety
+on social media platforms are eroding
+public trust in established institutions and
+
+
+processes such as elections. According
+to the 2023 Global Index on Responsible
+AI, only 38 of the 138 countries assessed
+have taken steps to address the safety,
+accuracy, and reliability of AI systems.
+
+3.1.2. Regional Context
 Recent global shocks, including the COVID-19
-economic value in Africa, contributing a 5�6%
 pandemic and geopolitical tensions such as
-increase to the continent’s GDP through
 the war between Russia and Ukraine, have
-financial inclusion, employment creation,
 severely impacted Africa’s economic growth,
-increased agricultural productivity, and
-with real GDP growth dropping from 4�1%
-enhanced public service delivery� There are a
-in 2022 to 3�1% in 2023� African economies
-number of regional initiatives embracing the
+with real GDP growth dropping from 4.1%
+in 2022 to 3.1% in 2023. African economies
 are projected to rebound, with 9 of the top
-AI opportunity�
 20 fastest-growing economies from the
-continent� However, there remain challenges A mapping exercise conducted by the Centre
-to achieving Africa’s development goals and for Intellectual Property and Information
-economic and social agendas as laid down Technology Law at Strathmore University
-in Agenda 2063 and the Maputo Protocol� on AI applications in Africa identified 301
-These include political unrest, climate shocks, AI solutions in 27 countries and 41 sectors�
-and high external debts� According to the These AI application types include data
-World Bank, in 2023, a third of the continent’s analytics, chatbots, decision support tools,
-population was still living in extreme poverty, and diagnostic tools in sectors including
-with energy and transportation bottlenecks corporate services, health, education,
-limiting productivity and efficient harnessing agriculture, and finance.
-of natural resources� The African population
-Some of the major initiatives contributing
+continent. However, there remain challenges
+to achieving Africa’s development goals and
+economic and social agendas as laid down
+in Agenda 2063 and the Maputo Protocol.
+These include political unrest, climate shocks,
+and high external debts. According to the
+World Bank, in 2023, a third of the continent’s
+population was still living in extreme poverty,
+with energy and transportation bottlenecks
+limiting productivity and efficient harnessing
+of natural resources. The African population
 is youthful, with 12 million youth expected
-to a growing AI ecosystem on the continent
 to enter the labour force each year for the
-include:
 foreseeable future, raising the risk of high
-• Masakhane: A grassroots organisation
-unemployment levels�
-of researchers and innovators working
+unemployment levels.
 The African Development Bank in its 2024
-collectively on natural language
-processing research in African languages�
+
+economic outlook finds that Africa needs
+to close an annual financing gap of over
+$402 billion and invest in key areas such
+as education, energy, and productivityenhancing technology and innovation to fast
+track the achievement of its development
+goals. AI is one of these technologies, and by
+2030 it is projected to generate $1.2 trillion in
+economic value in Africa, contributing a 5.6%
+increase to the continent’s GDP through
+financial inclusion, employment creation,
+increased agricultural productivity, and
+enhanced public service delivery. There are a
+number of regional initiatives embracing the
+AI opportunity.
+A mapping exercise conducted by the Centre
+for Intellectual Property and Information
+Technology Law at Strathmore University
+on AI applications in Africa identified 301
+AI solutions in 27 countries and 41 sectors.
+These AI application types include data
+analytics, chatbots, decision support tools,
+and diagnostic tools in sectors including
+corporate services, health, education,
+agriculture, and finance.
+Some of the major initiatives contributing
+to a growing AI ecosystem on the continent
+include:
+• Masakhane: A grassroots organisation
+of researchers and innovators working
+collectively
+on
+natural
+language
+processing research in African languages.
 • Lacuna Fund: A collaborative initiative
 funding and providing resources for
 data scientists, researchers, and social
 entrepreneurs to create and share
-labelled training datasets for AI�
+labelled training datasets for AI.
 • AI4D: An initiative by a network of funders
 that partners with Africa’s science and
 policy communities to leverage AI through
-high-quality research, responsible
-innovation, and talent strengthening�
+high-quality
+research,
+responsible
+innovation, and talent strengthening.
 • FairForward: An initiative by the
 Deutsche Gesellschaft für Internationale
-Zusammenarbeit (GIZ) supporting
+Zusammenarbeit
+(GIZ)
+supporting
+
 30 / Kenya AI Strategy
-knowledge transfer on AI, improved from complex data makes it indispensable
-access to training data and AI technology, to emerging technologies that are heavily
-and the development of policy frameworks reliant on data� For example, AI’s ability to
-for ethical AI� process data locally on edge devices and
-its integration with 5G enables real-time
-3�1�3� National Context decision-making for applications such as
-autonomous vehicles or services such as
+
+
+knowledge transfer on AI, improved
+access to training data and AI technology,
+and the development of policy frameworks
+for ethical AI.
+
+3.1.3. National Context
 There are a number of startups and solutions
-telehealth that require low latency� In smart
 signifying an emerging AI-driven economy
-cities, AI coordinates IoT devices, blockchain
-and sector in Kenya� Research shows that AI
-networks, and renewable energy systems
+and sector in Kenya. Research shows that AI
 utilisation in Kenya is more pronounced in the
-to optimise smart homes, support urban
 key sectors of health, education, agriculture,
-infrastructure, and promote sustainability�
 and finance. AI applications are utilised
-across sectors through varied application Furthermore, AI’s capacity to automate and
-types, including chatbots, decision support, optimise processes enhances the efficiency
-and data analytics tools� of other emerging technologies� In 3D printing
-and drug discovery, AI can refine designs
+across sectors through varied application
+types, including chatbots, decision support,
+and data analytics tools.
 In finance, AI-powered solutions have made
-and predict the behaviour of materials,
 financial services accessible to previously
-improving production efficiency and resource
 underserved populations, promoting financial
-optimisation� Similarly, in cybersecurity, AI
-inclusion and access to credit� AI tools have
-automates threat detection and response,
+inclusion and access to credit. AI tools have
 enhanced crop monitoring, yield prediction,
-providing robust protection for other emerging
 and agricultural pest management, leading
-technologies such as IoT and blockchain
 to increased productivity and sustainable
-networks�
-farming practices� These AI-driven initiatives
-have improved operational efficiency and AI capabilities, including computer vision and
-contributed to Kenya’s overall economic natural language processing, play a vital role
-growth and competitiveness in the global in making other emerging technologies more
-market� AI development by startups and large accessible and user-friendly through natural
-technology companies fosters innovation and interfaces� For instance, in augmented and
-job creation for Kenya’s population, further virtual reality, AI can personalise experiences
-underscoring AI’s transformative potential in by adapting content to user preferences and
-driving economic efficiency, competitiveness, behaviours�
+farming practices. These AI-driven initiatives
+have improved operational efficiency and
+contributed to Kenya’s overall economic
+growth and competitiveness in the global
+market. AI development by startups and large
+technology companies fosters innovation and
+job creation for Kenya’s population, further
+underscoring AI’s transformative potential in
+driving economic efficiency, competitiveness,
 and sustainable growth in Kenya’s evolving
-digital economy�
+digital economy.
 with other emerging technologies, driving
 innovation and solving complex problems
-in different domains� As AI accelerates
+in different domains. As AI accelerates
 technological progress, it is simultaneously
 improved by advances in these connected
 fields, thus supporting further innovation.
 AI amplifies the potential of emerging
 technologies such as the Internet of Things,
 blockchain, edge computing, augmented
-reality, biotechnology, and quantum
-computing� AI’s core ability to produce,
+reality,
+biotechnology,
+and
+quantum
+computing. AI’s core ability to produce,
 process, and extract meaningful patterns
+
 31 / Kenya AI Strategy
-3�2� Technology Environment
-3�2�1� Global Context Several big tech companies have set up
-research labs across the continent, with
+
+from complex data makes it indispensable
+to emerging technologies that are heavily
+reliant on data. For example, AI’s ability to
+process data locally on edge devices and
+its integration with 5G enables real-time
+decision-making for applications such as
+autonomous vehicles or services such as
+telehealth that require low latency. In smart
+cities, AI coordinates IoT devices, blockchain
+networks, and renewable energy systems
+to optimise smart homes, support urban
+infrastructure, and promote sustainability.
+Furthermore, AI’s capacity to automate and
+optimise processes enhances the efficiency
+of other emerging technologies. In 3D printing
+and drug discovery, AI can refine designs
+and predict the behaviour of materials,
+improving production efficiency and resource
+optimisation. Similarly, in cybersecurity, AI
+automates threat detection and response,
+providing robust protection for other emerging
+technologies such as IoT and blockchain
+networks.
+AI capabilities, including computer vision and
+natural language processing, play a vital role
+in making other emerging technologies more
+accessible and user-friendly through natural
+interfaces. For instance, in augmented and
+virtual reality, AI can personalise experiences
+by adapting content to user preferences and
+behaviours.
+
+
+3.2. Technology Environment
+3.2.1. Global Context
 The Global AI Readiness Index 2024 notes
-several labs domiciled in Kenya� The research
 that the United States leads China, the
-labs focus on key sectors of development
 European Union, and the United Kingdom as
-such as health, transportation, and the
-the source of top AI models� Notably, in 2023,
-environment�
-61 AI models originated from U�S�-based
-institutions, far outpacing the European 3�2�3� National Context
-Union’s 21 and China’s 15�
-3�2�3�1� Digital Infrastructure and
+the source of top AI models. Notably, in 2023,
+61 AI models originated from U.S.-based
+institutions, far outpacing the European
+Union’s 21 and China’s 15.
 At a firm level, there were notable
-Technology Landscape
 advancements in AI research, both proprietary
 and open source, and advancements in
-Kenya has made major strides in deploying
 model development, especially in large
-digital infrastructure, in particular fibre and
 language models and diffusion models,
-mobile network infrastructure� As of early
-with multimodality becoming a new frontier�
-2024, Kenya had more than 65 million mobile
+with multimodality becoming a new frontier.
 We witnessed renewed concerns about
-connections� The government of Kenya over
 data, especially human-generated data and
-the last 15 years prioritised the development
-synthetic data� And collaborations increased
-of the digital landscape through investments
+synthetic data. And collaborations increased
 between governments, academia, and the
+private sector.
+
+3.2.2. African Context
+A few key AI initiatives are transforming
+Africa’s technological landscape. There are
+notable efforts focused on strengthening
+African AI and machine learning communities.
+Many continental forums, workshops,
+and conferences provide opportunities for
+learning, networking, and collaboration
+among African AI practitioners.
+
+32 / Kenya AI Strategy
+
+Several big tech companies have set up
+research labs across the continent, with
+several labs domiciled in Kenya. The research
+labs focus on key sectors of development
+such as health, transportation, and the
+environment.
+
+3.2.3. National Context
+3.2.3.1. Digital Infrastructure and
+Technology Landscape
+Kenya has made major strides in deploying
+digital infrastructure, in particular fibre and
+mobile network infrastructure. As of early
+2024, Kenya had more than 65 million mobile
+connections. The government of Kenya over
+the last 15 years prioritised the development
+of the digital landscape through investments
 in terrestrial fibre networks and in the
-private sector�
 digitisation of government services, such as
 through the eCitizen portal, which provides
-3�2�2� African Context
 online access to various public services,
-A few key AI initiatives are transforming enhancing efficiency and accessibility for
-Africa’s technological landscape� There are citizens. Kenya’s data centre infrastructure is
-notable efforts focused on strengthening also rapidly evolving to meet the demands of
-African AI and machine learning communities� a growing digital economy� The country hosts
-Many continental forums, workshops, several state-of-the-art data centres that
-and conferences provide opportunities for provide reliable and secure data storage and
-learning, networking, and collaboration processing capabilities� The availability of
-among African AI practitioners� data, internet coverage, and a population that
-32 / Kenya AI Strategy
-conducts a significant portion of commerce AI research activities span developing AI
-and other services digitally have created models for predictive analytics, natural
-a supportive environment for startups and language processing, computer vision, and
-organisations that either develop or deploy more� These activities are often supported by
-solutions that leverage artificial intelligence collaborations between academic institutions,
-technologies� private-sector companies, and international
-organisations, fostering a vibrant research
-3�2�3�2� AI Technology Ecosystem
-ecosystem� Academic institutions have set
-Technology and developer communities have up labs and research centres that conduct
-played a crucial role in software development research in various areas of AI and machine
-and particularly in machine learning and data learning�
+enhancing efficiency and accessibility for
+citizens. Kenya’s data centre infrastructure is
+also rapidly evolving to meet the demands of
+a growing digital economy. The country hosts
+several state-of-the-art data centres that
+provide reliable and secure data storage and
+processing capabilities. The availability of
+data, internet coverage, and a population that
+
+
+conducts a significant portion of commerce
+and other services digitally have created
+a supportive environment for startups and
+organisations that either develop or deploy
+solutions that leverage artificial intelligence
+technologies.
+
+3.2.3.2. AI Technology Ecosystem
+Technology and developer communities have
+played a crucial role in software development
+and particularly in machine learning and data
 science, which are key areas that contribute to
-Other non-academic research institutions
-AI development� The developer communities
-have also been active in the AI research
+AI development. The developer communities
 use different online or physical forums to hold
-space, receiving interest funding from
 educational workshops, share experiences,
-development partners to tackle areas where
-and learn about the various technologies� A
-AI can be useful for development, such as
+and learn about the various technologies. A
 number of tech communities have been set
-health, agriculture, and commerce�
-up locally in Kenya, and most are still active�
-Some are listed at https://devs�info�ke� A review of existing tech communities in
-Kenya paints a clear picture of the available
+up locally in Kenya, and most are still active.
+Some are listed at https://devs.info.ke.
 Leading Kenyan universities and tertiary
-skills, interests, and initiatives undertaken
 institutions of higher learning offer courses
-by practitioners to grow and advance
 in artificial intelligence. Additionally, local
-knowledge in various tech sectors, including
 organisations have been at the forefront of
-AI� The presence of tech communities has
 partnering with government agencies to work
-further showcased the high level of tech
 on projects aimed at improving data quality
-skills available in the country, which has
-towards application of large language models�
-resulted in global big tech companies setting
-3�2�3�3� Research and Development up various research and product-building
-centres based in Kenya� Many of these big
+towards application of large language models.
+
+3.2.3.3. Research and Development
 Kenya is emerging as a hub for AI research
-tech establishments in Kenya have been a
 and development in Africa, with a growing
-first within Sub-Saharan Africa.
 number of initiatives focused on leveraging
-AI to address local and regional challenges�
+AI to address local and regional challenges.
+
 33 / Kenya AI Strategy
-3�3� Political Environment
-3�3�1� Global Context AI technologies� The cases brought against
-Amazon for its Alexa app and Ring cameras
+
+AI research activities span developing AI
+models for predictive analytics, natural
+language processing, computer vision, and
+more. These activities are often supported by
+collaborations between academic institutions,
+private-sector companies, and international
+organisations, fostering a vibrant research
+ecosystem. Academic institutions have set
+up labs and research centres that conduct
+research in various areas of AI and machine
+learning.
+Other non-academic research institutions
+have also been active in the AI research
+space, receiving interest funding from
+development partners to tackle areas where
+AI can be useful for development, such as
+health, agriculture, and commerce.
+A review of existing tech communities in
+Kenya paints a clear picture of the available
+skills, interests, and initiatives undertaken
+by practitioners to grow and advance
+knowledge in various tech sectors, including
+AI. The presence of tech communities has
+further showcased the high level of tech
+skills available in the country, which has
+resulted in global big tech companies setting
+up various research and product-building
+centres based in Kenya. Many of these big
+tech establishments in Kenya have been a
+first within Sub-Saharan Africa.
+
+
+3.3. Political Environment
+3.3.1. Global Context
 The world has divided into clear regulatory
-resulted in the company agreeing to the
 camps, and progress on a consensus on
-deletion of certain data and prohibitions
-global AI governance remains slow� Some
-against using certain information for model
+global AI governance remains slow. Some
 tensions arise from the chip wars, with
-training�
 the United States mobilising its allies and
-Countries, organisations, and international
-the Chinese response remaining patchy�
-and regional bodies are increasingly focusing
+the Chinese response remaining patchy.
 Export controls limit advanced chip sales
-on developing ethical AI frameworks to
 to China, but major chip vendors create
-ensure the responsible and transparent use
-alternatives proofed against export control�
-of AI technologies� Initiatives such as the
+alternatives proofed against export control.
 Countries such as the United Kingdom
-Organisation for Economic Co-operation
 have taken an approach towards improving
-and Development (OECD) AI Principles,
 public service delivery by establishing an
-UNESCO’s Recommendation on the Ethics
-AI incubator� Finding a balance between
-of AI, the African Union Continental AI
+AI incubator. Finding a balance between
 fostering innovation and regulating risks
-Strategy, and the European Union AI Act
 associated with AI technologies remains a
-aim to establish ethical AI development and
-key challenge for jurisdictions worldwide�
-deployment guidelines�
+key challenge for jurisdictions worldwide.
 Countries are exploring ways to promote AI
-innovation while safeguarding fundamental Efforts are underway to harmonise AI
-rights, privacy, and security� International regulations across borders to facilitate
-summits, declarations, and agreements, international cooperation and ensure
-such as the Group of 7 Hiroshima Process governance consistency� Multilateral
-International Guiding Principles and the organisations like the OECD, UNESCO,
-Bletchley Declaration, demonstrate global and the European Union are working on
-collaboration in addressing the challenges and frameworks to address global challenges
-opportunities presented by AI technologies� posed by AI technologies�
+innovation while safeguarding fundamental
+rights, privacy, and security. International
+summits, declarations, and agreements,
+such as the Group of 7 Hiroshima Process
+International Guiding Principles and the
+Bletchley Declaration, demonstrate global
+collaboration in addressing the challenges and
+opportunities presented by AI technologies.
 These initiatives aim to foster cooperation
-3�3�2� Regional Context
-and coordination in AI governance efforts�
-Developed economies actively craft A number of African countries have
-comprehensive AI governance policies to formulated national AI strategies to drive
-balance innovation with risk regulation� This innovation, economic growth, and societal
-is seen through governance practices of development� These strategies outline
-the European Union, the United Kingdom, priorities for AI research, development,
-and the United States, reflecting a growing readiness measurement, and deployment
-recognition of the need for ethical AI usage while emphasising ethical considerations and
-characterised by the different approaches to human-centric approaches to AI governance�
-AI governance, including human-centric, risk-
-Further, national AI strategies have become
-based, and safety-based�
-the foundation for AI governance in the
-Regulatory bodies like the Federal Trade African continent, where there is a notable
-Commission in the United States have taken increase in the development of national AI
-enforcement actions against tech companies strategies� These efforts are likely to grow
-like Amazon for privacy violations related to in the coming years, as evidenced by the
+and coordination in AI governance efforts.
+Developed
+economies
+actively
+craft
+comprehensive AI governance policies to
+balance innovation with risk regulation. This
+is seen through governance practices of
+the European Union, the United Kingdom,
+and the United States, reflecting a growing
+recognition of the need for ethical AI usage
+characterised by the different approaches to
+AI governance, including human-centric, riskbased, and safety-based.
+Regulatory bodies like the Federal Trade
+Commission in the United States have taken
+enforcement actions against tech companies
+like Amazon for privacy violations related to
+
 34 / Kenya AI Strategy
-ongoing initiatives to guide AI development Blueprint, where AI is referenced as a tool for
-and integrate it into national development driving innovation-driven entrepreneurship,
-plans� Developed and developing countries and the Kenya National Digital Master Plan
-emphasise the importance of ethical AI (2022–2032), which notes the importance
-practices, especially for African nations, of a national strategy on AI and key focus
-mirroring trends in developed countries areas that need to be addressed� Kenya also
-where ethical considerations are a focus in AI made commitments to build an AI-powered
-policy discussions� smart city, the Konza Technopolis, which
-currently houses the country’s data centre�
+
+AI technologies. The cases brought against
+Amazon for its Alexa app and Ring cameras
+resulted in the company agreeing to the
+deletion of certain data and prohibitions
+against using certain information for model
+training.
+Countries, organisations, and international
+and regional bodies are increasingly focusing
+on developing ethical AI frameworks to
+ensure the responsible and transparent use
+of AI technologies. Initiatives such as the
+Organisation for Economic Co-operation
+and Development (OECD) AI Principles,
+UNESCO’s Recommendation on the Ethics
+of AI, the African Union Continental AI
+Strategy, and the European Union AI Act
+aim to establish ethical AI development and
+deployment guidelines.
+Efforts are underway to harmonise AI
+regulations across borders to facilitate
+international cooperation and ensure
+governance
+consistency.
+Multilateral
+organisations like the OECD, UNESCO,
+and the European Union are working on
+frameworks to address global challenges
+posed by AI technologies.
+
+3.3.2. Regional Context
+A number of African countries have
+formulated national AI strategies to drive
+innovation, economic growth, and societal
+development. These strategies outline
+priorities for AI research, development,
+readiness measurement, and deployment
+while emphasising ethical considerations and
+human-centric approaches to AI governance.
+Further, national AI strategies have become
+the foundation for AI governance in the
+African continent, where there is a notable
+increase in the development of national AI
+strategies. These efforts are likely to grow
+in the coming years, as evidenced by the
+
+
+ongoing initiatives to guide AI development
+and integrate it into national development
+plans. Developed and developing countries
+emphasise the importance of ethical AI
+practices, especially for African nations,
+mirroring trends in developed countries
+where ethical considerations are a focus in AI
+policy discussions.
 Additionally, there is a growing trend towards
-Additionally, the Technopolis authorities
-regional cooperation in AI governance�
-signed a memorandum of understanding
+regional cooperation in AI governance.
 The recent adoption of the African Union
-with a cyberschool to facilitate training of
 Continental Artificial Intelligence Strategy
-Kenyan youth on AI and cybersecurity, while
 points towards a continental focus on AI
-the African Centre for Technology Studies
-governance� In both developed economies
-is planning to establish an AI centre of
+governance. In both developed economies
 and African nations, the private sector
-excellence at the Technopolis�
 increasingly adopts AI solutions across
-various industries, such as finance, Other agencies, such as the Office of the Data
-healthcare, and agriculture� The private Protection Commissioner, have embraced
-sector continues to play a significant role in AI in their operations such as Linda Data,
-driving AI innovation and efficiency, which a platform on which citizens can interact
-is seen to be essential to overall economic with an AI-powered chatbot to address data
-growth� Key opportunities will derive from protection queries, raising awareness that
-integrating AI into national development can ultimately be used to scale the citizen
-plans, presenting opportunities for economic information repository whose effective use
-growth, innovation, and improved public can inform the ethical AI framework for the
-service delivery, further contextualising areas country� The nation’s statistical organisation,
-of focus in AI governance� Given African the Kenya National Bureau of Standards, is
-countries’ varied approaches, regulatory committed to expanding the mandate of data
-harmonisation presents a challenge, making and evidence generation through its recently
-international cooperation in creating cohesive launched data centre�
+various industries, such as finance,
+healthcare, and agriculture. The private
+sector continues to play a significant role in
+driving AI innovation and efficiency, which
+is seen to be essential to overall economic
+growth. Key opportunities will derive from
+integrating AI into national development
+plans, presenting opportunities for economic
+growth, innovation, and improved public
+service delivery, further contextualising areas
+of focus in AI governance. Given African
+countries’ varied approaches, regulatory
+harmonisation presents a challenge, making
+international cooperation in creating cohesive
 development practices and frameworks
-crucial�
+crucial.
 The East African Community member
 countries have also established foundational
 frameworks where data sharing and data
@@ -1343,4540 +2012,3474 @@ protection is concerned, such as in trade,
 health, data protection, education standards,
 and financial services. These foundations
 become near-future enablers for harmonised
-AI regulations�
-3�3�3� National Context
+AI regulations.
+
+3.3.3. National Context
 Kenya has shown political will to advance AI
 adoption by prioritising emerging technologies
 and AI in the National Digital Economy
+
 35 / Kenya AI Strategy
-3�4� Legal and Regulatory Environment
-3�4�1� Global Context Though progress remains slow, 2023 saw a
-substantial increase from the previous year
+
+Blueprint, where AI is referenced as a tool for
+driving innovation-driven entrepreneurship,
+and the Kenya National Digital Master Plan
+(2022–2032), which notes the importance
+of a national strategy on AI and key focus
+areas that need to be addressed. Kenya also
+made commitments to build an AI-powered
+smart city, the Konza Technopolis, which
+currently houses the country’s data centre.
+Additionally, the Technopolis authorities
+signed a memorandum of understanding
+with a cyberschool to facilitate training of
+Kenyan youth on AI and cybersecurity, while
+the African Centre for Technology Studies
+is planning to establish an AI centre of
+excellence at the Technopolis.
+Other agencies, such as the Office of the Data
+Protection Commissioner, have embraced
+AI in their operations such as Linda Data,
+a platform on which citizens can interact
+with an AI-powered chatbot to address data
+protection queries, raising awareness that
+can ultimately be used to scale the citizen
+information repository whose effective use
+can inform the ethical AI framework for the
+country. The nation’s statistical organisation,
+the Kenya National Bureau of Standards, is
+committed to expanding the mandate of data
+and evidence generation through its recently
+launched data centre.
+
+
+3.4. Legal and Regulatory Environment
+3.4.1. Global Context
 The rapid advancement of AI technologies has
-in the number of countries with laws that
 prompted the development of global policy
-include the term “AI” (127 in 2023 compared
 and legal regulatory frameworks to ensure
-to 25 in 2022), an indication of the growing
-their ethical and responsible use� These
-recognition of the need for regulatory
+their ethical and responsible use. These
 frameworks vary by region and organisation
-frameworks and AI governance� Additionally,
 but share common goals, including promoting
-diverse legislative approaches are being
-innovation, protecting human rights,
-pursued� The European Union, for instance,
+innovation,
+protecting
+human
+rights,
 governing administration, and mitigating risks
-has been at the forefront of building a robust
-associated with AI� The Global AI Law and
-AI regulatory framework by adopting the EU AI
+associated with AI. The Global AI Law and
 Policy Tracker offers an extensive overview
-Act, which came into force on 1 August 2024
 of AI governance frameworks across various
-across all 27 European Union member states�
-countries and jurisdictions� The AI Equality
-The EU AI Act takes a distinctly risk-based
+countries and jurisdictions. The AI Equality
 Initiative has established a community of
-approach towards regulating AI, imposing
 practice towards empowered ethical AI, which
-regulatory burdens only when an AI system
 considers a just, responsible, and inclusive AI
-is likely to pose high risks to fundamental
-global ecosystem� The initiative proposes a
-rights and safety� The Act establishes a
+global ecosystem. The initiative proposes a
 global AI observatory model to inform policy
-tiered framework that classifies risk into four
-development�
-categories: unacceptable risks that lead to
+development.
+
 36 / Kenya AI Strategy
-prohibited practices; high risks that trigger Privacy enforcement authorities (PEAs)
-a set of stringent obligations, some of which across various jurisdictions have taken
-include conducting a conformity assessment; significant actions in response to privacy
-limited risks that relate to transparency concerns surrounding AI technologies,
-obligations; and minimal risks where codes particularly generative AI like OpenAI’s
-of conduct by stakeholders are encouraged ChatGPT. In Canada, the Federal Office of the
-regardless of whether established within the Privacy Commissioner and provincial privacy
-European Union or another jurisdiction� authorities launched an investigation into
-ChatGPT for processing personal data without
+
+Though progress remains slow, 2023 saw a
+substantial increase from the previous year
+in the number of countries with laws that
+include the term “AI” (127 in 2023 compared
+to 25 in 2022), an indication of the growing
+recognition of the need for regulatory
+frameworks and AI governance. Additionally,
+diverse legislative approaches are being
+pursued. The European Union, for instance,
+has been at the forefront of building a robust
+AI regulatory framework by adopting the EU AI
+Act, which came into force on 1 August 2024
+across all 27 European Union member states.
+The EU AI Act takes a distinctly risk-based
+approach towards regulating AI, imposing
+regulatory burdens only when an AI system
+is likely to pose high risks to fundamental
+rights and safety. The Act establishes a
+tiered framework that classifies risk into four
+categories: unacceptable risks that lead to
+
+
+prohibited practices; high risks that trigger
+a set of stringent obligations, some of which
+include conducting a conformity assessment;
+limited risks that relate to transparency
+obligations; and minimal risks where codes
+of conduct by stakeholders are encouraged
+regardless of whether established within the
+European Union or another jurisdiction.
 The United States, on the other hand, has
-consent� This investigation was expanded to
 so far issued an executive order on the Safe,
-include assessments of OpenAI’s compliance
 Secure and Trustworthy Development and
-with transparency, access, accuracy, and
 Use of AI, as well as the Blueprint for an AI
-accountability principles� Similarly, Italy’s
 Bill of Rights, which sets out five principles
-PEA (Garante) temporarily blocked OpenAI
 and associated practices to guide the design,
-from processing personal data due to
 use, and deployment of automated systems
-potential General Data Protection Regulation
-to protect the rights of the American public�
-violations, which included issues related to
-The United Kingdom has taken a more safety-
-transparency and data protection by design�
-based approach towards the governance of
-Japan’s Personal Information Protection
+to protect the rights of the American public.
+The United Kingdom has taken a more safetybased approach towards the governance of
 AI, fortified during its AI Safety Summit 2023,
-Commission warned OpenAI about collecting
 which advanced the establishment of AI
-sensitive data without consent, emphasising
 safety institutes, global commitments by tech
-the need for clear notices in Japanese about
 companies united to establish science and
-data collection purposes�
 empirically led guidelines, standards, and
-collaborations� The Bletchley Declaration, In Korea, the Personal Information Protection
-a product of the summit, advocates for the Commission fined OpenAI for not notifying the
-need to identify AI risks and inform risk-based public of a data breach and identified multiple
-policy development� non-compliance issues with the country’s
-Personal Information Protection Act, including
+collaborations. The Bletchley Declaration,
+a product of the summit, advocates for the
+need to identify AI risks and inform risk-based
+policy development.
 In Colombia, initiatives like the AI Expert
-the lack of clarity in the controller-processor
 Mission and AI National Strategy Policy have
-relationship and absence of parental
-been implemented� The United States has
-consent for children under 14� The United
+been implemented. The United States has
 released multiple frameworks and guidelines
-Kingdom’s Information Commissioner’s
 to maintain its leadership in AI research
-Office has also been active, fining Clearview
-and control government use of AI� The U�S�
-AI for unauthorised use of facial images
+and control government use of AI. The U.S.
 Federal Trade Commission has issued
-and issuing enforcement notices to Snap
 guidelines to prevent biassed or unfair AI use,
-Inc� regarding the privacy risks posed by its
 while Singapore’s Personal Data Protection
-generative AI chatbot My AI� In the United
 Commission offers advisory guidelines to
-States, the Federal Trade Commission has
 support AI implementation while maintaining
-taken multiple enforcement actions involving
-data protection� The previously mentioned EU
-AI, including cases against Rite Aid for biased
+data protection. The previously mentioned EU
 AI Act introduced harmonised rules for AI in
-facial recognition technology and Amazon for
 the European Union market with a risk-based
-violations related to its Alexa app and Ring
 approach, prohibiting specific AI systems,
-cameras�
 and imposing requirements and transparency
-rules on high-risk systems� Australia’s 2021 Internationally, the European Data Protection
-AI Action Plan aims to build AI capability and Board formed a task force to enhance
-promote trusted, secure AI technologies� cooperation and information exchange in
+rules on high-risk systems. Australia’s 2021
+AI Action Plan aims to build AI capability and
+promote trusted, secure AI technologies.
+
 37 / Kenya AI Strategy
-handling complaints and investigations into The development and use of AI are a priority
-OpenAI and ChatGPT at the European Union according to the national development
-level� The Ibero-American Network of Data plans of 21 of those 32 countries� Out of the
-Protection initiated a coordinated action on respondents, 13 countries have launched AI
-ChatGPT compliance among its member strategies, 13 have developed AI policies, six
-countries� These actions underscore the have reported enacting legislation to address
-commonalities in legal obligations regarding some of the challenges of AI, 12 have
-the processing of personal data by generative established AI centres of excellence, and
-AI and highlight the importance of international 3 have reported issuing ethical guidelines
-cooperation in enforcing privacy laws� for AI. (Countries that participated in the
-survey include Angola, Benin, Botswana,
-The OECD is also revising its
-Cabo Verde, Cameroon, Chad, Comoros,
-Recommendation on Cross-Border
-Congo, Côte d’Ivoire, Democratic Republic
+
+Privacy enforcement authorities (PEAs)
+across various jurisdictions have taken
+significant actions in response to privacy
+concerns surrounding AI technologies,
+particularly generative AI like OpenAI’s
+ChatGPT. In Canada, the Federal Office of the
+Privacy Commissioner and provincial privacy
+authorities launched an investigation into
+ChatGPT for processing personal data without
+consent. This investigation was expanded to
+include assessments of OpenAI’s compliance
+with transparency, access, accuracy, and
+accountability principles. Similarly, Italy’s
+PEA (Garante) temporarily blocked OpenAI
+from processing personal data due to
+potential General Data Protection Regulation
+violations, which included issues related to
+transparency and data protection by design.
+Japan’s Personal Information Protection
+Commission warned OpenAI about collecting
+sensitive data without consent, emphasising
+the need for clear notices in Japanese about
+data collection purposes.
+In Korea, the Personal Information Protection
+Commission fined OpenAI for not notifying the
+public of a data breach and identified multiple
+non-compliance issues with the country’s
+Personal Information Protection Act, including
+the lack of clarity in the controller-processor
+relationship and absence of parental
+consent for children under 14. The United
+Kingdom’s
+Information
+Commissioner’s
+Office has also been active, fining Clearview
+AI for unauthorised use of facial images
+and issuing enforcement notices to Snap
+Inc. regarding the privacy risks posed by its
+generative AI chatbot My AI. In the United
+States, the Federal Trade Commission has
+taken multiple enforcement actions involving
+AI, including cases against Rite Aid for biased
+facial recognition technology and Amazon for
+violations related to its Alexa app and Ring
+cameras.
+Internationally, the European Data Protection
+Board formed a task force to enhance
+cooperation and information exchange in
+
+
+handling complaints and investigations into
+OpenAI and ChatGPT at the European Union
+level. The Ibero-American Network of Data
+Protection initiated a coordinated action on
+ChatGPT compliance among its member
+countries. These actions underscore the
+commonalities in legal obligations regarding
+the processing of personal data by generative
+AI and highlight the importance of international
+cooperation in enforcing privacy laws.
+The
+OECD
+is
+also
+revising
+its
+Recommendation
+on
+Cross-Border
 Cooperation in the Enforcement of Laws
-of the Congo, Egypt, Equatorial Guinea,
 Protecting Privacy to strengthen these
-Eswatini, Gambia, Ghana, Guinea, Lesotho,
-collaborative efforts� Privacy enforcement
-Madagascar, Malawi, Namibia, Nigeria,
+collaborative efforts. Privacy enforcement
 authorities collaborate globally, as evidenced
-Rwanda, Sao Tome and Principe, Senegal,
 by statements and resolutions on generative
-Seychelles, Sierra Leone, Somalia, Sudan,
 AI from Group of 7 countries and the
-Togo, Uganda, Zambia, Zimbabwe).
-Global Privacy Assembly� Various privacy
-enforcement authorities have issued guidance More substantively, the African Union has
-on applying privacy laws to AI, with notable developed and published a Continental
-initiatives in Canada, France, Spain, Türkiye, Artificial Intelligence Strategy to help
-the United Kingdom, the United States, and actualise Africa’s digital transformation�
-Singapore� These include principles for The policy document lays out a blueprint
-responsible AI development, action plans, for AI regulation by African nations and
-compliance guidance, and frameworks has significant implications for how they
-to ensure AI technologies align with approach the governance and oversight
-privacy regulations� For instance, France’s of AI technologies� The endorsed policy
-Commission Nationale de l’informatique et des provides a robust framework for ensuring
-Libertés (National Commission of Informatics AI’s responsible and ethical use� It includes
-and Liberty) has developed an action plan recommendations for industry-specific
+Global Privacy Assembly. Various privacy
+enforcement authorities have issued guidance
+on applying privacy laws to AI, with notable
+initiatives in Canada, France, Spain, Türkiye,
+the United Kingdom, the United States, and
+Singapore. These include principles for
+responsible AI development, action plans,
+compliance guidance, and frameworks
+to ensure AI technologies align with
+privacy regulations. For instance, France’s
+Commission Nationale de l’informatique et des
+Libertés (National Commission of Informatics
+and Liberty) has developed an action plan
 for AI that respects privacy, and the United
-Kingdom’s Information Commissioner’s
+Kingdom’s
+Information
+Commissioner’s
 Office has provided comprehensive AI and
-data protection guidance�
-3�4�2� Regional Context
+data protection guidance.
+
+3.4.2. Regional Context
 A quick survey of AI governance in Africa
 shows increased AI policy initiatives, primarily
-national AI strategies� The governance
-of AI in Africa takes a varied approach� A
+national AI strategies. The governance
+of AI in Africa takes a varied approach. A
 2021 UNESCO report, Artificial Intelligence
 Needs Assessment in Africa, published the
 results of a survey that shows that 18 out of
 32 African countries have ongoing national
-initiatives to guide the development of AI�
+initiatives to guide the development of AI.
+
 38 / Kenya AI Strategy
-codes of conduct that outline best practices African context include:
+
+The development and use of AI are a priority
+according to the national development
+plans of 21 of those 32 countries. Out of the
+respondents, 13 countries have launched AI
+strategies, 13 have developed AI policies, six
+have reported enacting legislation to address
+some of the challenges of AI, 12 have
+established AI centres of excellence, and
+3 have reported issuing ethical guidelines
+for AI. (Countries that participated in the
+survey include Angola, Benin, Botswana,
+Cabo Verde, Cameroon, Chad, Comoros,
+Congo, Côte d’Ivoire, Democratic Republic
+of the Congo, Egypt, Equatorial Guinea,
+Eswatini, Gambia, Ghana, Guinea, Lesotho,
+Madagascar, Malawi, Namibia, Nigeria,
+Rwanda, Sao Tome and Principe, Senegal,
+Seychelles, Sierra Leone, Somalia, Sudan,
+Togo, Uganda, Zambia, Zimbabwe).
+More substantively, the African Union has
+developed and published a Continental
+Artificial Intelligence Strategy to help
+actualise Africa’s digital transformation.
+The policy document lays out a blueprint
+for AI regulation by African nations and
+has significant implications for how they
+approach the governance and oversight
+of AI technologies. The endorsed policy
+provides a robust framework for ensuring
+AI’s responsible and ethical use. It includes
+recommendations
+for
+industry-specific
+
+
+codes of conduct that outline best practices
 for designing, developing, and deploying AI
-3�4�2�1� Egypt
-systems� The continental strategy also calls
-for establishing technical standards and The national AI strategy reflects the state’s
-certification bodies to assess and benchmark realities, as it is rooted in a strengths,
-AI applications, ensuring they meet rigorous weaknesses, opportunities, and threats
-safety, fairness, and transparency criteria� analysis� The overarching goal is to exploit AI
-technologies to serve Egypt’s developmental
+systems. The continental strategy also calls
+for establishing technical standards and
+certification bodies to assess and benchmark
+AI applications, ensuring they meet rigorous
+safety, fairness, and transparency criteria.
 Recognising the need for regulatory
-goals and to foster regional and international
 oversight, the Continental Strategy proposes
-cooperation� The mission is to effectively
 mechanisms for testing and validating AI
-“create an AI industry” in Egypt, which requires
-before it is implemented� This includes
-people, technology, policy, and infrastructure�
+before it is implemented. This includes
 guidance for African Union member states
-The strategy has four pillars: AI for
 on establishing regulatory frameworks
-government, development, capacity-building,
 to scrutinise AI applications and provide
-and international relations� These pillars are
-approval for their use� It also encourages
-underpinned by four enablers: governance,
+approval for their use. It also encourages
 the creation of national AI councils to provide
-data, ecosystem, and infrastructure�
 ongoing governance and decision-making
-around these transformative technologies� It 3�4�2�2� Mauritius
+around these transformative technologies. It
 is intended to serve as a model that African
-The Mauritius Artificial Strategy Plan 2018
-Union member states can readily adopt� For
-was the first strategy drafted by an African
+Union member states can readily adopt. For
 countries without existing AI regulations,
-state� The plan is intended to establish the
 it offers a template that can be quickly
-“cornerstone of the next national development
-adapted to national AI strategies� For those
-model”� It assists in actualising the potential
+adapted to national AI strategies. For those
 that already have AI policies, the endorsed
-of AI to improve the economic growth,
 policy encourages alignment to promote
-productivity, and quality of life for the Mauritian
-consistency across the African Union�
-state� The focal areas of the plan include
-A growing number of African countries have matching existing and new AI solutions to
-national AI strategies, including Egypt, specific sectors and regions, establishing a
-Rwanda, Benin, Morocco, Mauritius, Sierra “Mauritian unique selling point” of AI, building
-Leone, Tunisia, Nigeria, and South Africa� The an appropriate ecosystem to nurture AI with a
-development and utilisation of AI is prominent focus on creating collaborative communities,
-in the majority of the development plans of developing the human capital to sustain the
-African states� Despite these advancements, AI ecosystem, and establishing a regulatory
-accessibility to these initiatives, specifically framework that acts as a catalyst for AI
-national AI policy plans, is limited, as they development and fiscal growth.
-are not within the public domain� Only three
-3�4�2�3� Rwanda
+consistency across the African Union.
+A growing number of African countries have
+national AI strategies, including Egypt,
+Rwanda, Benin, Morocco, Mauritius, Sierra
+Leone, Tunisia, Nigeria, and South Africa. The
+development and utilisation of AI is prominent
+in the majority of the development plans of
+African states. Despite these advancements,
+accessibility to these initiatives, specifically
+national AI policy plans, is limited, as they
+are not within the public domain. Only three
 countries have accessible national AI policy
-plans: Egypt, Rwanda, and Mauritius� The National Artificial Intelligence Policy is a
-state roadmap for harnessing the benefits of
+plans: Egypt, Rwanda, and Mauritius.
 National strategies are powerful and peculiar
-AI as well as mitigating the potential risks� The
-hybrid policies� The policy documents
-plan aligns with the current national plans:
+hybrid policies. The policy documents
 emulate the national strategic positioning
-Vision 2050 and the Smart Rwanda Master
 within the global space for various states
-Plan� It is a catalyst for Rwanda to use AI for
 while establishing their national narrative on
-“sustainable and inclusive growth” as it seeks
 the regulation, utilisation, and benefits of AI
-to mobilise local, regional, and international
-and its integration within their societies� The
-stakeholders to assist with positioning the
+and its integration within their societies. The
 national AI strategies assessed within the
+
 39 / Kenya AI Strategy
-state to become a “leading African Innovation sets the pace for Kenya’s continued adoption
-Hub and Africa’s Centre of Excellence in of emerging technologies including AI,
-Artificial Intelligence”. The policy fosters blockchain, and quantum computing to foster
-inclusive and sustainable socioeconomic economic growth� The Master Plan highlights
-transformation rooted in the national agenda� the need for a National AI Strategy, which
-would address the transformative role of AI
-3�4�3� National Context
-in Kenya’s economy, the role of both levels
-Currently, Kenya has no laws or regulations of government in AI investments, facilitation
-that specifically regulate AI. The Ministry of of research and development for effective
-Information, Communications, and the Digital human-AI interactions, safety, access to
-Economy is responsible for creating a National datasets, ethical considerations, AI standards
-AI Strategy in collaboration with various and evaluation tools, and human capital�
-partners� Previous policy efforts include
-The legal and regulatory ramifications of AI
+
+African context include:
+
+3.4.2.1. Egypt
+The national AI strategy reflects the state’s
+realities, as it is rooted in a strengths,
+weaknesses, opportunities, and threats
+analysis. The overarching goal is to exploit AI
+technologies to serve Egypt’s developmental
+goals and to foster regional and international
+cooperation. The mission is to effectively
+“create an AI industry” in Egypt, which requires
+people, technology, policy, and infrastructure.
+The strategy has four pillars: AI for
+government, development, capacity-building,
+and international relations. These pillars are
+underpinned by four enablers: governance,
+data, ecosystem, and infrastructure.
+
+3.4.2.2. Mauritius
+The Mauritius Artificial Strategy Plan 2018
+was the first strategy drafted by an African
+state. The plan is intended to establish the
+“cornerstone of the next national development
+model”. It assists in actualising the potential
+of AI to improve the economic growth,
+productivity, and quality of life for the Mauritian
+state. The focal areas of the plan include
+matching existing and new AI solutions to
+specific sectors and regions, establishing a
+“Mauritian unique selling point” of AI, building
+an appropriate ecosystem to nurture AI with a
+focus on creating collaborative communities,
+developing the human capital to sustain the
+AI ecosystem, and establishing a regulatory
+framework that acts as a catalyst for AI
+development and fiscal growth.
+
+3.4.2.3. Rwanda
+The National Artificial Intelligence Policy is a
+state roadmap for harnessing the benefits of
+AI as well as mitigating the potential risks. The
+plan aligns with the current national plans:
+Vision 2050 and the Smart Rwanda Master
+Plan. It is a catalyst for Rwanda to use AI for
+“sustainable and inclusive growth” as it seeks
+to mobilise local, regional, and international
+stakeholders to assist with positioning the
+
+
+state to become a “leading African Innovation
+Hub and Africa’s Centre of Excellence in
+Artificial Intelligence”. The policy fosters
+inclusive and sustainable socioeconomic
+transformation rooted in the national agenda.
+
+3.4.3. National Context
+Currently, Kenya has no laws or regulations
+that specifically regulate AI. The Ministry of
+Information, Communications, and the Digital
+Economy is responsible for creating a National
+AI Strategy in collaboration with various
+partners. Previous policy efforts include
 the 2019 Distributed Ledgers (Blockchain)
-reflect the urgent need for frameworks that
 and Artificial Intelligence Taskforce Report,
-balance innovation with ethical considerations
 which investigated and evaluated these two
-and consumer protection� As AI technologies
 emerging technologies and their significant
-continue to advance, there is an increased
-promise for revolutionising Kenya’s economy�
-necessity of establishing comprehensive
+promise for revolutionising Kenya’s economy.
 The Taskforce noted that the challenge in
-regulations to govern their development and
 regulating AI is to strike a balance between
-deployment�
 supporting innovation and competition while
-Globally, there has been a significant
 protecting consumers, market integrity,
-increase in the number of nations adopting
 financial stability, and human life. Another
-AI-related laws, rising from 25 in 2022 to
 effort, let by the Robotics Society of Kenya, is
-127 in 2023� This surge indicates a growing
 the Kenya Robotics and Artificial Intelligence
-acknowledgment of the potential risks and
 Society Bill 2023, prepared with the aim of
-benefits associated with AI, prompting diverse
 developing a framework that would regulate
-legislative approaches tailored to specific
-the use and adoption of AI in Kenya� Still in
-regional contexts. In Kenya, while specific
+the use and adoption of AI in Kenya. Still in
 draft form, the bill has lacked meaningful
-AI regulations are still in development,
 support from government, regulators, civil
-existing laws such as the Data Protection
-society, and private-sector players�
-Act and the Consumer Protection Act provide
+society, and private-sector players.
 In addition, on 8 April 2024, the Kenya
-a foundational framework for addressing
 Bureau of Standards released the Draft
-issues related to AI� The National AI Strategy
 Information Technology Artificial Intelligence
-signifies the first step towards addressing AI
 Code of Practice to ensure that the rights of
-governance� As nations continue to develop
 citizens are upheld during the development
-and refine their regulatory frameworks, the
 of AI systems. Once it is finalised and
-focus remains on fostering an environment
 formally gazetted as a legal notice, the
-that encourages technological advancement
 code would assist organisations in the
-while prioritising the rights and safety of
 responsible development, provision, and
-individuals�
-use of AI� Additionally, the codes propose
+use of AI. Additionally, the codes propose
 several standards aimed at supporting
 the National AI Strategy and policies to be
-developed� The National Digital Master
+developed. The National Digital Master
 Plan 2022–2032, which follows the previous
 2014–2017 (extended to 2022) master plan,
+
 40 / Kenya AI Strategy
 
-3�5� Kenya’s AI Readiness Assessment
-Kenya’s AI readiness must be viewed within Report, the private sector in Kenya is adopting
-the global context, where various indices have AI-powered solutions at an increasing rate�
-rated countries’ readiness for AI adoption AI developments have driven innovation and
-based on factors such as data, infrastructure, efficiency across the finance, agriculture,
-talent, research and innovation, governance, healthcare, and education sectors,
-partnerships, and ethical capabilities to handle significantly improving decision-making
-the adoption of AI� Kenya has been rated processes, automation, and data analysis�
-within a variety of these indices, including The assessment is based on five core
-safety and government AI readiness, among dimensions that can provide holistic insights
-others� into Kenya’s progress and preparedness� A
-summary of the findings appears in Table 3.1.
+sets the pace for Kenya’s continued adoption
+of emerging technologies including AI,
+blockchain, and quantum computing to foster
+economic growth. The Master Plan highlights
+the need for a National AI Strategy, which
+would address the transformative role of AI
+in Kenya’s economy, the role of both levels
+of government in AI investments, facilitation
+of research and development for effective
+human-AI interactions, safety, access to
+datasets, ethical considerations, AI standards
+and evaluation tools, and human capital.
+The legal and regulatory ramifications of AI
+reflect the urgent need for frameworks that
+balance innovation with ethical considerations
+and consumer protection. As AI technologies
+continue to advance, there is an increased
+necessity of establishing comprehensive
+regulations to govern their development and
+deployment.
+Globally, there has been a significant
+increase in the number of nations adopting
+AI-related laws, rising from 25 in 2022 to
+127 in 2023. This surge indicates a growing
+acknowledgment of the potential risks and
+benefits associated with AI, prompting diverse
+legislative approaches tailored to specific
+regional contexts. In Kenya, while specific
+AI regulations are still in development,
+existing laws such as the Data Protection
+Act and the Consumer Protection Act provide
+a foundational framework for addressing
+issues related to AI. The National AI Strategy
+signifies the first step towards addressing AI
+governance. As nations continue to develop
+and refine their regulatory frameworks, the
+focus remains on fostering an environment
+that encourages technological advancement
+while prioritising the rights and safety of
+individuals.
+
+
+3.5. Kenya’s AI Readiness Assessment
+Kenya’s AI readiness must be viewed within
+the global context, where various indices have
+rated countries’ readiness for AI adoption
+based on factors such as data, infrastructure,
+talent, research and innovation, governance,
+partnerships, and ethical capabilities to handle
+the adoption of AI. Kenya has been rated
+within a variety of these indices, including
+safety and government AI readiness, among
+others.
 For instance, according to the UNESCO
 Readiness Assessment Methodology on AI
+
+Report, the private sector in Kenya is adopting
+AI-powered solutions at an increasing rate.
+AI developments have driven innovation and
+efficiency across the finance, agriculture,
+healthcare,
+and
+education
+sectors,
+significantly
+improving
+decision-making
+processes, automation, and data analysis.
+The assessment is based on five core
+dimensions that can provide holistic insights
+into Kenya’s progress and preparedness. A
+summary of the findings appears in Table 3.1.
+
 Table 3.1: Results of UNESCO AI Readiness for Kenya
-Core Assessment Findings
+
+Core Assessment
 Dimension
-Legal and Reglatory Kenya has foundational legal frameworks, such as the Data
+
+Findings
+
+Legal and Reglatory
+
+Kenya has foundational legal frameworks, such as the Data
 Protection Act (2019), which regulates automated decision-making
 and protects individual privacy. The Kenyan Constitution (2010)
 promotes equality and the rights of marginalised groups, supporting
-inclusive AI development�
+inclusive AI development.
 There is a recognised need for comprehensive AI-specific regulations
-to address ethical implications and potential harms� Institutional and
+to address ethical implications and potential harms. Institutional and
 human capacity-building are essential for effective implementation
-and enforcement of regulatory frameworks�
-Social and Cultural There is significant underrepresentation of women and minorities
+and enforcement of regulatory frameworks.
+
+Social and Cultural
+
+There is significant underrepresentation of women and minorities
 in the AI field, limiting diverse perspectives. Public awareness and
 engagement are critical for building trust and acceptance of AI
-technologies�
+technologies.
 Ethical considerations are central, with a call for frameworks that
-respect cultural norms and societal values� Without intentional efforts
-to promote equity, AI could exacerbate existing social disparities�
-Scientific and There is a need for a robust research and development ecosystem
-Educational to foster AI innovation� Increased investment and a coordinated
-approach are necessary to enhance AI research output and impact�
+respect cultural norms and societal values. Without intentional efforts
+to promote equity, AI could exacerbate existing social disparities.
+
+Scientific and
+Educational
+
+There is a need for a robust research and development ecosystem
+to foster AI innovation. Increased investment and a coordinated
+approach are necessary to enhance AI research output and impact.
 The availability of AI-related educational programmes is limited,
-necessitating expansion to meet job market demands� Curricula
+necessitating expansion to meet job market demands. Curricula
 should be developed to align with industry needs and promote STEM
-education in order to produce a skilled workforce�
+education in order to produce a skilled workforce.
+
 42 / Kenya AI Strategy
-Economic The number of AI startups and companies is growing, indicating a
-developing market� Increased public and private investment in AI
-initiatives is essential for driving innovation and competitiveness�
+
+
+Economic
+
+The number of AI startups and companies is growing, indicating a
+developing market. Increased public and private investment in AI
+initiatives is essential for driving innovation and competitiveness.
 The ICT sector, including AI, contributes significantly to Kenya’s GDP,
-with projections for greater future impacts� There is a critical gap in
+with projections for greater future impacts. There is a critical gap in
 the labour market, with demand for ICT and AI skills far exceeding
-supply�
-Technological and The presence of data centres and cloud computing capabilities is
-Infrastructural essential for supporting AI applications� While there are some existing
-resources, further investment and development are necessary� As of
-early 2024, Kenya had approximately 22�71 million internet users,
-with a penetration rate of 40�8%� All but 2% of the population was
+supply.
+
+Technological and
+Infrastructural
+
+The presence of data centres and cloud computing capabilities is
+essential for supporting AI applications. While there are some existing
+resources, further investment and development are necessary. As of
+early 2024, Kenya had approximately 22.71 million internet users,
+with a penetration rate of 40.8%. All but 2% of the population was
 covered by at least 2G mobile network technology, but access to 5G
 was limited (0.6%).
 Gender disparity in internet usage reflects broader accessibility
-issues, hindering inclusive AI growth� Challenges related to data
+issues, hindering inclusive AI growth. Challenges related to data
 sharing and accessibility are significant barriers to AI innovation.
+
 43 / Kenya AI Strategy
+
+
 Another AI readiness assessment, released by the consultancy group Oxford Insights in
-2023, appears in Table 3�2�
+2023, appears in Table 3.2.
 Table 3.2: Kenya’s AI Readiness—Oxford Insights Government AI Readiness Index
-Category Findings Relevant Scores
+
+Category
+
+Findings
+
+Relevant Scores
 and Statistics
-Data Given the importance of data in AI adoption, Kenya Kenya scored 44�44%
-lacks sufficient data to train AI models, scoring low on data availability
-on the global index� and 63�67% on data
-representativeness�
-Infrastructure Significant investment in connectivity and Kenya’s infrastructure
-infrastructure development is evident through the ranked 101st
-establishment of the National Data Centre� worldwide, with a
-score of 40�19%�
-The government has constructed around 8,900
+
+Data
+
+Given the importance of data in AI adoption, Kenya
+lacks sufficient data to train AI models, scoring low
+on the global index.
+
+Kenya scored 44.44%
+on data availability
+and 63.67% on data
+representativeness.
+
+Infrastructure
+
+Significant investment in connectivity and
+infrastructure development is evident through the
+establishment of the National Data Centre.
+
+Kenya’s infrastructure
+ranked 101st
+worldwide, with a
+score of 40.19%.
 Kenya’s data and
-km of terrestrial fibre during the past 10 years,
 infrastructure score
-much of which has reached the sub-county level
-is 51�58%, which
-and connects important government offices and
+is 51.58%, which
 is average but
-institutions�
-categorised as low�
-Talent Kenya is experiencing a significant gap between Only 25% of university
-the high demand for AI skills and the limited graduates complete a
-number of qualified professionals, due to low STEM course�
-STEM enrolment� Current educational programmes
+categorised as low.
+
+The government has constructed around 8,900
+km of terrestrial fibre during the past 10 years,
+much of which has reached the sub-county level
+and connects important government offices and
+institutions.
+Talent
+
+Kenya is experiencing a significant gap between
+the high demand for AI skills and the limited
+number of qualified professionals, due to low
+STEM enrolment. Current educational programmes
 in AI at universities and technical institutions are
-inadequate to meet industry needs�
-Research Kenya’s AI landscape underscores the critical need Kenya scored 48�8%
-and for a unified strategy to advance the field. Current in innovation capacity,
-Innovation research efforts in AI are disjointed and lack compared to Sub-
-adequate funding, highlighting the need for increased Saharan Africa’s score
-investment from both the public and private sectors of 32�93%�
-to remain competitive on a global scale�
-Governance Emphasis is made on key readiness aspects such Kenya scored 40�19%
-and Ethical as capacity development and innovation, ethics in the government
-AI Adoption and responsible AI practices, standardisation and pillar, which denotes
-collaboration to promote data interoperability and government readiness
-sharing characterised by the The AI Practitioners’ to adopt AI in public
-Guide (2023), developed by a multi-stakeholder AI services�
+inadequate to meet industry needs.
+
+Only 25% of university
+graduates complete a
+STEM course.
+
+Research
+and
+Innovation
+
+Kenya’s AI landscape underscores the critical need
+for a unified strategy to advance the field. Current
+research efforts in AI are disjointed and lack
+adequate funding, highlighting the need for increased
+investment from both the public and private sectors
+to remain competitive on a global scale.
+
+Kenya scored 48.8%
+in innovation capacity,
+compared to SubSaharan Africa’s score
+of 32.93%.
+
+Governance
+and Ethical
+AI Adoption
+
+Emphasis is made on key readiness aspects such
+as capacity development and innovation, ethics
+and responsible AI practices, standardisation and
+collaboration to promote data interoperability and
+sharing characterised by the The AI Practitioners’
+Guide (2023), developed by a multi-stakeholder AI
 practitioners’ group (Community of Practice). Kenya
 still lacks AI-specific regulations.
-Partnerships Collaborative efforts from a multi-stakeholder group Key observation, no
-are noted towards regulatory readiness� percentage scoring�
+
+Kenya scored 40.19%
+in the government
+pillar, which denotes
+government readiness
+to adopt AI in public
+services.
+
+Partnerships
+
+Collaborative efforts from a multi-stakeholder group
+are noted towards regulatory readiness.
+
+Key observation, no
+percentage scoring.
+
 44 / Kenya AI Strategy
-3�6� Key Findings from Primary Data
+
+
+3.6. Key Findings from Primary Data
 Collection
-This section presents findings from a neighbouring countries in AI development
-comprehensive data collection process that and implementation�
+This section presents findings from a
+comprehensive data collection process that
 engaged a diverse range of stakeholders
-However, a lack of quality and digitised data,
-across Kenya’s AI ecosystem� The insights
-infrastructural gaps, and public mistrust
+across Kenya’s AI ecosystem. The insights
 are drawn from government representatives,
-in AI systems pose significant barriers to
 industry leaders, academia, civil society,
-widespread adoption of AI� Participants
 and the public through key informant
-expressed concerns over the ethical use
 interviews, focus group discussions, expert
-of AI, particularly regarding data privacy,
 consultations, town hall sessions, and an
-misinformation, and bias� Many of those
-online survey� These approaches provided a
-interviewed called for clear policy direction
+online survey. These approaches provided a
 nuanced understanding of strategic priorities,
-and increased efforts in raising citizen
 opportunities, and challenges that can be
-awareness to ensure AI delivers tangible
-addressed by the strategy�
-benefits to all Kenyans, increased public trust,
-3�6�1� Key Informant and responsible use of AI� The respondents
-also noted that currently donors have limited
+addressed by the strategy.
+
+3.6.1. Key Informant
 Interviews
-coordination in supporting the AI ecosystem,
-Key informant interviews (KIIs) identified a and there’s a notable power imbalance, with
-number of strengths, challenges, limitations, big tech companies operating in the region
-and considerations that the strategy should wielding disproportionate influence and
-take into account to ensure effective cornering opportunities compared to small
-implementation� They revealed a strong and medium-sized enterprises (SMEs) in the
-belief in Kenya’s potential to become a leader AI ecosystem� Many Kenyans work in AI but
-in AI innovation� Participants highlighted the remain stuck in bottom-of-pyramid and entry-
-country’s vibrant startup ecosystem, growing level jobs such as data annotation, indicating a
-digital literacy, and access to renewable need for better career progression pathways�
-energy as significant strengths. The nation’s Small tech companies struggle with limited
-pioneering spirit makes it an attractive location access to capital and financing, and energy
-for global AI pilot projects and positions it as poverty and associated costs remain ongoing
-a regional hub� Over 40,000 people have concerns for scaling a local AI ecosystem�
+Key informant interviews (KIIs) identified a
+number of strengths, challenges, limitations,
+and considerations that the strategy should
+take into account to ensure effective
+implementation. They revealed a strong
+belief in Kenya’s potential to become a leader
+in AI innovation. Participants highlighted the
+country’s vibrant startup ecosystem, growing
+digital literacy, and access to renewable
+energy as significant strengths. The nation’s
+pioneering spirit makes it an attractive location
+for global AI pilot projects and positions it as
+a regional hub. Over 40,000 people have
 received AI training, entrenching Kenya as a
-Access and availability of data present
 hub of youthful talent ready to harness the
-another significant challenge, with limitations
-power of AI� Furthermore, the availability of
-in quality, quantity, and data sharing
+power of AI. Furthermore, the availability of
 green energy sources like geothermal power
-mechanisms� Outdated record keeping
 presents opportunities to build sustainable
-practices, manual processes in government,
-regional data centres�
-and limited digitisation of official records limit
-Kenya has already demonstrated its capability the ability of government to tap into to train
-to leverage technology in crisis response, contextually relevant models � Infrastructure
-as seen in flood management efforts and gaps and AI skills gaps of government
-the swift transition to remote learning officials could also keep the government
-during the COVID-19 pandemic� These from harnessing the full potential of AI and
-successes position Kenya to potentially lead maintaining procured systems�
+regional data centres.
+Kenya has already demonstrated its capability
+to leverage technology in crisis response,
+as seen in flood management efforts and
+the swift transition to remote learning
+during the COVID-19 pandemic. These
+successes position Kenya to potentially lead
+
 45 / Kenya AI Strategy
-Respondents also noted that while Kenya should be built with representative data that
-has ambitious goals for AI, these efforts are reflects African diversity and contexts. This
-often underfunded and lack a unified strategy. approach would not only make AI more
-They recommended that the national AI accessible but also ensure its relevance to
-strategy be inclusive of stakeholder input and Kenya’s unique challenges�
-ethical safeguards� Additionally, respondents
-Data sovereignty emerged as a critical
+
+neighbouring countries in AI development
+and implementation.
+However, a lack of quality and digitised data,
+infrastructural gaps, and public mistrust
+in AI systems pose significant barriers to
+widespread adoption of AI. Participants
+expressed concerns over the ethical use
+of AI, particularly regarding data privacy,
+misinformation, and bias. Many of those
+interviewed called for clear policy direction
+and increased efforts in raising citizen
+awareness to ensure AI delivers tangible
+benefits to all Kenyans, increased public trust,
+and responsible use of AI. The respondents
+also noted that currently donors have limited
+coordination in supporting the AI ecosystem,
+and there’s a notable power imbalance, with
+big tech companies operating in the region
+wielding disproportionate influence and
+cornering opportunities compared to small
+and medium-sized enterprises (SMEs) in the
+AI ecosystem. Many Kenyans work in AI but
+remain stuck in bottom-of-pyramid and entrylevel jobs such as data annotation, indicating a
+need for better career progression pathways.
+Small tech companies struggle with limited
+access to capital and financing, and energy
+poverty and associated costs remain ongoing
+concerns for scaling a local AI ecosystem.
+Access and availability of data present
+another significant challenge, with limitations
+in quality, quantity, and data sharing
+mechanisms. Outdated record keeping
+practices, manual processes in government,
+and limited digitisation of official records limit
+the ability of government to tap into to train
+contextually relevant models . Infrastructure
+gaps and AI skills gaps of government
+officials could also keep the government
+from harnessing the full potential of AI and
+maintaining procured systems.
+
+
+Respondents also noted that while Kenya
+has ambitious goals for AI, these efforts are
+often underfunded and lack a unified strategy.
+They recommended that the national AI
+strategy be inclusive of stakeholder input and
+ethical safeguards. Additionally, respondents
 recommended fostering interdisciplinary
-theme� Participants stressed the need for
 collaborations between industry, government,
-local data processing capabilities and robust
 and academia; building repositories of local
-frameworks to secure and manage data
 datasets for AI applications; and creating
-effectively� Concerns about the reliance on
 transparent financing models to support
-foreign data centres and their implications
-startups and innovators� There was an
-for Kenya’s digital independence were
+startups and innovators. There was an
 emphasis on transparency in AI deployment
-repeatedly raised in different forums�
 and decision-making and the efficient
-Opportunities were identified in sectors like
 utilisation of national resources processes
-agriculture, education, and healthcare, where
-to build public trust in AI-based systems�
-AI could enhance service delivery and create
+to build public trust in AI-based systems.
 Stakeholders emphasised the importance
-jobs� For instance, AI-powered systems
 of ensuring AI development leaves no one
-could help farmers improve crop yields and
 behind, as the lost ground may never be
-enable more efficient healthcare diagnostics.
-made up�
-However, participants cautioned against
+made up.
 On governance, several respondents stated
-overregulation, which could stifle innovation,
 that Kenya needs testing and sandboxing
-particularly for small and medium-sized
-platforms for AI development� They also saw
-enterprises�
+platforms for AI development. They also saw
 the need to define AI safety in the context
-The FGDs also highlighted the urgent need
 of the Global South as well as establish
-for capacity-building� Kenya has a shortage
 principles for safe, ethical, and inclusive
-of specialised AI professionals, and academic
-AI implementation in Kenya� Clear lines
-institutions often lag in aligning their curricula
+AI implementation in Kenya. Clear lines
 of responsibility and accountability for AI
-with industry needs� The academic FGD raised
 deployments and decision-making also need
-concerns about curriculum development and
-to be established�
-funding challenges, particularly in public
-3�6�2� Focus Group
-universities� Participants advocated for
-Discussions collaborative AI innovation hubs and strong
-public-private innovation networks�
-Focus group discussions further
-Recommendations included introducing
+to be established.
+
+3.6.2. Focus Group
+Discussions
+Focus
+group
+discussions
+further
 contextualised and supported the insights
-AI education at earlier levels of schooling,
 arising from the KIIs, focusing on inclusivity
-promoting research funding, and fostering
-and the socioeconomic implications of AI� In
-international partnerships for knowledge
+and the socioeconomic implications of AI. In
 several FGD sessions, participants stressed
-exchange� Infrastructure and investment
 the importance of embedding local contexts
-needs dominated many discussions�
 into AI systems, including incorporating
-Participants called for strategic government
-indigenous knowledge and local languages�
-investments in data centres, cloud computing,
+indigenous knowledge and local languages.
 The discussions highlighted the importance
-edge nodes, and mobile data businesses�
 of incorporating Afrocentric views and values
-They emphasised the need for market-
 into AI development, with a strong emphasis
-friendly policies to encourage investment
-on local production and civic education�
-while reducing regulatory uncertainty�
+on local production and civic education.
 Participants also highlighted that AI systems
+
 46 / Kenya AI Strategy
-3�6�3� Town Hall Meetings specialised skills for local AI development�
-All town hall meetings repeatedly raised the
+
+should be built with representative data that
+reflects African diversity and contexts. This
+approach would not only make AI more
+accessible but also ensure its relevance to
+Kenya’s unique challenges.
+Data sovereignty emerged as a critical
+theme. Participants stressed the need for
+local data processing capabilities and robust
+frameworks to secure and manage data
+effectively. Concerns about the reliance on
+foreign data centres and their implications
+for Kenya’s digital independence were
+repeatedly raised in different forums.
+Opportunities were identified in sectors like
+agriculture, education, and healthcare, where
+AI could enhance service delivery and create
+jobs. For instance, AI-powered systems
+could help farmers improve crop yields and
+enable more efficient healthcare diagnostics.
+However, participants cautioned against
+overregulation, which could stifle innovation,
+particularly for small and medium-sized
+enterprises.
+The FGDs also highlighted the urgent need
+for capacity-building. Kenya has a shortage
+of specialised AI professionals, and academic
+institutions often lag in aligning their curricula
+with industry needs. The academic FGD raised
+concerns about curriculum development and
+funding challenges, particularly in public
+universities. Participants advocated for
+collaborative AI innovation hubs and strong
+public-private innovation networks.
+Recommendations included introducing
+AI education at earlier levels of schooling,
+promoting research funding, and fostering
+international partnerships for knowledge
+exchange. Infrastructure and investment
+needs
+dominated
+many
+discussions.
+Participants called for strategic government
+investments in data centres, cloud computing,
+edge nodes, and mobile data businesses.
+They emphasised the need for marketfriendly policies to encourage investment
+while reducing regulatory uncertainty.
+
+
+3.6.3. Town Hall Meetings
 Town hall meetings provided a platform for
-issue that AI use could lead to threats to
 diverse stakeholders, including citizens and
-general and personal well-being, including
 technology practitioners in different regions
-risks to critical thinking and creativity, the
 of Kenya, to voice their perspectives on
-spread of misinformation, and data privacy
-AI development� The town hall meetings
-issues�
+AI development. The town hall meetings
 revealed broad public interest in AI’s
-Town hall discussions were centred on ethical
 potential across multiple sectors, including
-considerations with participants, similar to
 health, education, creative industries, media,
-FGD respondents, stressing the importance
-agriculture, and public services� Participants
-of aligning AI systems with Kenyan cultural
+agriculture, and public services. Participants
 shared opportunities for AI to improve
-norms and values� Public awareness
 service delivery, particularly for people
-campaigns were proposed to educate citizens
 with disabilities, and enhance public sector
-on AI’s benefits and risks, fostering trust and
 efficiency.
-inclusivity� Moreover, employing universal
 However, a number of town hall participants
-design to AI systems built in would increase
 were concerned about limited access to AI
-their utility to everyone, including individuals
 technology, widening of the digital divide, and
-with disabilities�
-the risk of exacerbating existing inequalities�
-Despite these concerns, town hall discussions
+the risk of exacerbating existing inequalities.
 Participants also raised fears about job
-highlighted significant opportunities for
 displacement, particularly in labour-intensive
-economic growth. AI-driven personalization
-industries, due to task automation� Similarly,
-could enhance citizen engagement, while
+industries, due to task automation. Similarly,
 concerns were raised about the shortage of
+
 47 / Kenya AI Strategy
-innovations tailored to local needs could came from academia, civil society, and
-address pressing societal challenges such as the for-profit sector, with some input from
-poverty and health disparities� The town halls government, media, and multilateral agency
-also produced several key recommendations� representatives�
-On infrastructure and access, participants Respondents identified key opportunities for
-believed it was imperative that all Kenyans AI, particularly in economic growth, education,
-can access AI and that it was necessary healthcare improvement, environmental
-to increase access to smartphones and sustainability, and the efficient provision of
-accelerate digitisation efforts� There was also public services� However, they also expressed
-an emphasis on prioritising local datasets significant concerns, mainly focused on ethical
-and including indigenous knowledge in AI considerations, privacy issues, and security
-development� The town hall discussions risks� Survey participants provided insight
-made recommendations to create unified into their priorities for an AI strategy� The top
-legal frameworks and ethical guidelines for AI priorities, in order of consensus, included
-development and to ensure that governance research and development, education and
-and regulatory frameworks remain agile workforce training, ethical guidelines and
-to accommodate the evolving nature of AI regulations, healthcare and agriculture, and
-technologies� Participants also called for public awareness and engagement�
+
+specialised skills for local AI development.
+All town hall meetings repeatedly raised the
+issue that AI use could lead to threats to
+general and personal well-being, including
+risks to critical thinking and creativity, the
+spread of misinformation, and data privacy
+issues.
+Town hall discussions were centred on ethical
+considerations with participants, similar to
+FGD respondents, stressing the importance
+of aligning AI systems with Kenyan cultural
+norms and values. Public awareness
+campaigns were proposed to educate citizens
+on AI’s benefits and risks, fostering trust and
+inclusivity. Moreover, employing universal
+design to AI systems built in would increase
+their utility to everyone, including individuals
+with disabilities.
+Despite these concerns, town hall discussions
+highlighted significant opportunities for
+economic growth. AI-driven personalization
+could enhance citizen engagement, while
+
+
+innovations tailored to local needs could
+address pressing societal challenges such as
+poverty and health disparities. The town halls
+also produced several key recommendations.
+
+came from academia, civil society, and
+the for-profit sector, with some input from
+government, media, and multilateral agency
+representatives.
+
+On infrastructure and access, participants
+believed it was imperative that all Kenyans
+can access AI and that it was necessary
+to increase access to smartphones and
+accelerate digitisation efforts. There was also
+an emphasis on prioritising local datasets
+and including indigenous knowledge in AI
+development. The town hall discussions
+made recommendations to create unified
+legal frameworks and ethical guidelines for AI
+development and to ensure that governance
+and regulatory frameworks remain agile
+to accommodate the evolving nature of AI
+technologies. Participants also called for
 increased investments in infrastructure, such
-There were divergent views among
 as data centres and connectivity, to support
-respondents regarding AI regulation� One
-AI deployment at scale�
-group emphasised the importance of allowing
-Additionally, participants made AI to develop its potential before imposing
-recommendations for professional upskilling regulations, with public participation shaping
-programmes and public awareness policy� In contrast, another group stressed the
-campaigns� Participants called for need for clear policies, laws, and a national
-consideration of a welfare system for workers strategy to ensure ethical AI development
-displaced by AI automation, highlighting the from the outset� A majority of respondents
-need to manage AI’s social impact thoughtfully underscored the necessity of transparency
-and proactively� in AI decision-making processes to build
-public trust� They advocated for AI algorithms
+AI deployment at scale.
+
+Respondents identified key opportunities for
+AI, particularly in economic growth, education,
+healthcare improvement, environmental
+sustainability, and the efficient provision of
+public services. However, they also expressed
+significant concerns, mainly focused on ethical
+considerations, privacy issues, and security
+risks. Survey participants provided insight
+into their priorities for an AI strategy. The top
+priorities, in order of consensus, included
+research and development, education and
+workforce training, ethical guidelines and
+regulations, healthcare and agriculture, and
+public awareness and engagement.
+
+Additionally,
+participants
+made
+recommendations for professional upskilling
+programmes
+and
+public
+awareness
+campaigns.
+Participants
+called
+for
+consideration of a welfare system for workers
+displaced by AI automation, highlighting the
+need to manage AI’s social impact thoughtfully
+and proactively.
 All town halls emphasised that it was necessary
-to be subject to public scrutiny� Moreover,
 to develop robust public-private partnerships,
-respondents called for public awareness
 international collaborations, and government
-campaigns to educate citizens about AI’s
-leadership to drive AI adoption in Kenya�
-benefits, risks, and ethical implications.
+leadership to drive AI adoption in Kenya.
 Throughout all discussions, participants
-Inclusivity emerged as a crucial consideration,
 emphasised the importance of balancing
-with respondents urging that AI systems be
 innovation with responsible development and
-designed to consider diverse populations
 ensuring that AI advancement benefits all
-to ensure equitable outcomes� Additionally,
-Kenyans�
-there was a strong demand for independent
-3�6�4� Online Survey bodies to oversee AI implementation,
-evaluate AI projects, and conduct regular
+Kenyans.
+
+3.6.4. Online Survey
 We received responses from 17 counties
-impact assessments on the effects of AI
 across Kenya, with participants representing
-deployments�
-various sectors� The majority of responses
+various sectors. The majority of responses
+
 48 / Kenya AI Strategy
-3�7� Stakeholder Analysis
-3�7�1� Background categorised based on the normative claims
-they can make on the AI system, focusing on
+
+There were divergent views among
+respondents regarding AI regulation. One
+group emphasised the importance of allowing
+AI to develop its potential before imposing
+regulations, with public participation shaping
+policy. In contrast, another group stressed the
+need for clear policies, laws, and a national
+strategy to ensure ethical AI development
+from the outset. A majority of respondents
+underscored the necessity of transparency
+in AI decision-making processes to build
+public trust. They advocated for AI algorithms
+to be subject to public scrutiny. Moreover,
+respondents called for public awareness
+campaigns to educate citizens about AI’s
+benefits, risks, and ethical implications.
+Inclusivity emerged as a crucial consideration,
+with respondents urging that AI systems be
+designed to consider diverse populations
+to ensure equitable outcomes. Additionally,
+there was a strong demand for independent
+bodies to oversee AI implementation,
+evaluate AI projects, and conduct regular
+impact assessments on the effects of AI
+deployments.
+
+
+3.7. Stakeholder Analysis
+3.7.1. Background
 Stakeholder mapping is a crucial process in
-fair economic opportunity, political equality,
 developing a national AI strategy, involving
-and authenticity� This approach emphasises
 identifying and analysing individuals, groups,
-the importance of considering ethical and
 and organisations that have an interest or
-moral considerations in decision-making
-stake in the strategy’s outcomes� According
-processes related to AI development,
+stake in the strategy’s outcomes. According
 to Bryson (2004 ), stakeholder mapping
-adoption, and policy formulation� The
 systematically identifies and analyses
-normative stakeholder theory identifies a
 stakeholders to understand their influence and
-range of potential obligations that corporations
-importance in decision-making processes�
-operating in developing countries may take
+importance in decision-making processes.
 This process helps identify the diverse
-on, focusing on the commitments of groups
 perspectives, interests, and potential impacts
-of stakeholders rather than individual entities
 on various sectors of society, ensuring that
-in specific situations. Therefore, in bringing
-the strategy is comprehensive and inclusive�
-this together to define responsible AI, the
+the strategy is comprehensive and inclusive.
 The primary purpose of stakeholder mapping
-strategy defines responsible AI within Africa
 is to facilitate effective engagement,
-by emphasising the importance of considering
 foster collaboration, and mitigate risks by
-diverse perspectives and ensuring equitable
 understanding the needs and expectations
-outcomes for all stakeholders involved in
-of different stakeholders� Doing so ensures
-the AI ecosystem� Responsible AI, in this
+of different stakeholders. Doing so ensures
 that the AI strategy is aligned with national
-framework, involves addressing power
-priorities, ethical standards, and the long-
-dynamics, information asymmetries, and
-term goals of sustainable development�
-intersecting interests among stakeholders to
-3.7.2. Justification create an AI ecosystem that is fair, inclusive,
-and beneficial to everyone. The focus is on
+priorities, ethical standards, and the longterm goals of sustainable development.
+
+3.7.2. Justification
 This stakeholder mapping exercise is based
-identifying disparities in power, understanding
 on the normative stakeholder theory and the
-relationships and power dynamics between
-evolving theory of property� To contextualise
-different groups, and ensuring that the
+evolving theory of property. To contextualise
 the AI ecosystem, an African lens is applied in
-development and adoption of AI technology
 when mapping stakeholders, which presents
-consider the needs and perspectives of all
 the ideology that the African AI ecosystem
-stakeholders� By characterising stakeholders’
 can be described by identifying stakeholders
-interactions, interests, responsibilities,
-categorised based on normative claims� The
-and accountability, the aim is to promote
+categorised based on normative claims. The
 normative claims derive from the normative
-responsible AI practices, prioritising equity
 stakeholder theory, which is a critical
-and inclusivity�
 guide in ethical decision-making in the AI
-Following from this, these are eight main
-ecosystem� This theory centres on prioritising
-groups considered during the stakeholder
+ecosystem. This theory centres on prioritising
 stakeholders and identifying their obligations
-mapping and their indices based on their
-and responsibilities� The normative claim is
-interest and influence over this strategy
+and responsibilities. The normative claim is
 based on the evolving theory of property, which
-document� The results of the mapping of the
 posits that property rights are embedded in
-stakeholder groups are shown in Table 3�3�
 human rights, necessitating the consideration
 of the interests of all stakeholders, including
-non-owner stakeholders� Stakeholders are
+non-owner stakeholders. Stakeholders are
+
 49 / Kenya AI Strategy
+
+categorised based on the normative claims
+they can make on the AI system, focusing on
+fair economic opportunity, political equality,
+and authenticity. This approach emphasises
+the importance of considering ethical and
+moral considerations in decision-making
+processes related to AI development,
+adoption, and policy formulation. The
+normative stakeholder theory identifies a
+range of potential obligations that corporations
+operating in developing countries may take
+on, focusing on the commitments of groups
+of stakeholders rather than individual entities
+in specific situations. Therefore, in bringing
+this together to define responsible AI, the
+strategy defines responsible AI within Africa
+by emphasising the importance of considering
+diverse perspectives and ensuring equitable
+outcomes for all stakeholders involved in
+the AI ecosystem. Responsible AI, in this
+framework, involves addressing power
+dynamics, information asymmetries, and
+intersecting interests among stakeholders to
+create an AI ecosystem that is fair, inclusive,
+and beneficial to everyone. The focus is on
+identifying disparities in power, understanding
+relationships and power dynamics between
+different groups, and ensuring that the
+development and adoption of AI technology
+consider the needs and perspectives of all
+stakeholders. By characterising stakeholders’
+interactions,
+interests,
+responsibilities,
+and accountability, the aim is to promote
+responsible AI practices, prioritising equity
+and inclusivity.
+Following from this, these are eight main
+groups considered during the stakeholder
+mapping and their indices based on their
+interest and influence over this strategy
+document. The results of the mapping of the
+stakeholder groups are shown in Table 3.3.
+
+
 Table 3.3 Results of stakeholder mapping
-Stake- 1. Interest Index H:L
-holder Actors 2. Influence Index H:L
-group 3. Implications
-Developers Association of Startup and SMEs Enablers in Kenya, 1� High
-Conference of the Parties, Telecommunications 2� High
-Service Providers of Kenya, consultancy firms, 3� Must be involved
+
+Stakeholder
+group
+
+Actors
+
+1. Interest Index H:L
+2. Influence Index H:L
+3. Implications
+
+Developers
+
+Association of Startup and SMEs Enablers in Kenya,
+Conference of the Parties, Telecommunications
+Service Providers of Kenya, consultancy firms,
 government solutions developers
-Customers Private Sector: Kenya Private Sector Alliance, 1� High
-(Purchasers) Kenya Association of Manufacturers, Kenya 2� Low
-Bankers Association 3� Involved periodically
+
+1. High
+2. High
+3. Must be involved
+
+Customers
+(Purchasers)
+
+Private Sector: Kenya Private Sector Alliance,
+Kenya Association of Manufacturers, Kenya
+Bankers Association
+
+1. High
+2. Low
+3. Involved periodically
+
 Government: Ministries, departments, and
 agencies
 Citizens
-Communities Kenya ICT Action Network, Conference of the 1� Low
-Parties on AI, Conference of the Parties on Digital 2� High
-Public Infrastructure, East African Community, 3� Keep informed
+Communities
+
+Kenya ICT Action Network, Conference of the
+Parties on AI, Conference of the Parties on Digital
+Public Infrastructure, East African Community,
 East African Legislative Assembly, African Union,
 National Assembly, Law Society of Kenya
-Regulatory Office of the Data Protection Commissioner, 1� Low
-Agencies Competition Authority of Kenya, Commission on 2� High
-Administrative Justice, Kenya Bureau of Standards, 3� Keep informed
+
+1. Low
+2. High
+3. Keep informed
+
+Regulatory
+Agencies
+
+Office of the Data Protection Commissioner,
+Competition Authority of Kenya, Commission on
+Administrative Justice, Kenya Bureau of Standards,
 National Computer and Cybercrimes Coordination
 Committee, Kenya Industrial Property Institute,
 Kenya Copyright Board, Central Bank of Kenya
-Researchers Academia: University of Nairobi, United States 1� High
-International University of Africa, Jomo Kenyatta 2� High
-University of Agriculture and Technology, Strathmore 3� Must be involved
+
+1. Low
+2. High
+3. Keep informed
+
+Researchers
+
+Academia: University of Nairobi, United States
+International University of Africa, Jomo Kenyatta
+University of Agriculture and Technology, Strathmore
 University, Kenya Advanced Institute of Science and
 Technology, other universities, African Centre for
 Technology Studies
+
+1. High
+2. High
+3. Must be involved
+
 Non-academic/commercial: Microsoft Africa
 Research Institute , Moringa, AI Kenya, Local
 Development Research Institute
+
 50 / Kenya AI Strategy
-Investors Development Partners: Foreign, Commonwealth, 1� High
-(Financiers/ and Development Office; International 2� High
-Development Development Research Centre; German 3� Must be involved
-Partners) International Development Agency; European
-Union; U�S� Agency for International Development
+
+
+Investors
+(Financiers/
+Development
+Partners)
+
+Development Partners: Foreign, Commonwealth,
+and Development Office; International
+Development Research Centre; German
+International Development Agency; European
+Union; U.S. Agency for International Development
+
+1. High
+2. High
+3. Must be involved
+
 Government
 Private Sector: Venture capital and private equity
 firms
-Infrastructure Liquid Telecom; Google; Microsoft; Nvidia; Ministry 1� High
-Providers of Information, Communications, and the Digital 2� Low
-Economy 3� Involved periodically
-Media and Media Council, Editors Guild, Marketing Society of 1�Low
-Advertising Kenya 2�Low
-Agencies 3�Inform periodically
+Infrastructure
+Providers
+
+Liquid Telecom; Google; Microsoft; Nvidia; Ministry
+of Information, Communications, and the Digital
+Economy
+
+1. High
+2. Low
+3. Involved periodically
+
+Media and
+Advertising
+Agencies
+
+Media Council, Editors Guild, Marketing Society of
+Kenya
+
+1.Low
+2.Low
+3.Inform periodically
+
 51 / Kenya AI Strategy
-Figure 3.1: Stakeholder Map: Influence Interest Matrix
-52 / Kenya AI Strategy
-dna
-sdeen
-rieht
-tcepxe
-ot
-thgiR
--
-TSERETNI
-ygetartS
-IA
-eht
-yb
-desserdda
-eb
-ot
-stnaw
+
+
 This mapping prioritises the stakeholder groupings that must be involved and should be kept
-informed� These include AI developers, communities, regulatory agencies, researchers, and
-investors, as shown in Figure 3�1�
+informed. These include AI developers, communities, regulatory agencies, researchers, and
+investors, as shown in Figure 3.1.
+
 HIGH
-Stakeholders: Stakeholders:
-Tech infrastructure providers, Customers • AI researchers, AI developers, AI
+
+INTEREST - Right to expect their needs and
+wants to be addressed by the AI Strategy
+
+Stakeholders:
+Tech infrastructure providers, Customers
+Strategy:
+Keep involved periodically /
+as necessary
+
+Stakeholders:
+• AI researchers, AI developers, AI
 investors, Tech associations
 Strategy:
-Keep involved periodically / Strategy:
-as necessary Actively engage, inform & collaborate
+Actively engage, inform & collaborate
+
 Kenya AI Strategy
 Stakeholder Mapping
-Stakeholders: Stakeholders:
-Media & advertising agencies Tech infrastructure providers, Customers
-Strategy: Strategy:
-Inform periodically and monitor Keep satisfied and informed
+
+Stakeholders:
+Media & advertising agencies
+
+Stakeholders:
+Tech infrastructure providers, Customers
+
+Strategy:
+Inform periodically and monitor
+
+Strategy:
+Keep satisfied and informed
+
 LOW
-HIGH
+
 INFLUENCE - Ability to sanction or reward the AI Strategy
 based on the stakeholder’s satisfaction
-3�8� Strengths, Limitations, Opportunities,
+
+Figure 3.1: Stakeholder Map: Influence Interest Matrix
+
+52 / Kenya AI Strategy
+
+HIGH
+
+
+3.8. Strengths, Limitations, Opportunities,
 and Challenges Summary
-Tables 3�4 to 3�7 show a summary of the information obtained from the various analyses
+Tables 3.4 to 3.7 show a summary of the information obtained from the various analyses
 reported in this chapter in the form of strengths, limitations, opportunities, and challenges
 (SLOC). The key evidence for the selection of each of the SLOC elements is also provided.
 Table 3.4 Strengths
-Strength Key Evidence
-Existing diverse There is a vibrant ecosystem of local startups creating AI solutions
-and vibrant tailored to Kenyan needs� The stakeholder mapping shows diverse input
-local innovation and actors in AI development and innovation in Kenya� The innovation
-ecosystem ecosystem is developing homegrown and localised solutions that are
+
+Strength
+
+Key Evidence
+
+Existing diverse
+and vibrant
+local innovation
+ecosystem
+
+There is a vibrant ecosystem of local startups creating AI solutions
+tailored to Kenyan needs. The stakeholder mapping shows diverse input
+and actors in AI development and innovation in Kenya. The innovation
+ecosystem is developing homegrown and localised solutions that are
 contextually relevant in sectors such as health, agriculture, and fintech.
 Major international technology companies including Microsoft, Google,
 Meta, Huawei, and Nvidia have made significant investments in the
 local ecosystem through the establishment of data centres and AI labs,
 which bolster the local AI ecosystem, enhance Kenya’s AI capabilities,
 provide access to global best practices, facilitate technology transfer,
-and improve competitiveness�
-Young digital-ready Kenya has a large, young workforce already actively engaging in
-AI workforce technology and, now, AI� This workforce has basic training and high
+and improve competitiveness.
+
+Young digital-ready
+AI workforce
+
+Kenya has a large, young workforce already actively engaging in
+technology and, now, AI. This workforce has basic training and high
 digital literacy, which provide a base for developing advanced AI
 capabilities and fostering innovation as AI workforce demand increases
-both domestically and internationally� Some of these workers are already
+both domestically and internationally. Some of these workers are already
 supporting international companies such as Sama in the development of
-AI through outsourced data processing and labelling�
-Foundational Kenya has robust existing legal frameworks, including the Data Protection
-legal framework Act and the Computer Misuse and Cybercrimes Act, that provide direction
-for ethical AI on aspects of AI development and use� These regulatory frameworks
-development and enable initial trust in AI systems, and some redress mechanisms for
-use misuse and AI harms�
+AI through outsourced data processing and labelling.
+
+Foundational
+legal framework
+for ethical AI
+development and
+use
+
+Kenya has robust existing legal frameworks, including the Data Protection
+Act and the Computer Misuse and Cybercrimes Act, that provide direction
+on aspects of AI development and use. These regulatory frameworks
+enable initial trust in AI systems, and some redress mechanisms for
+misuse and AI harms.
 Kenya also has policies that create an enabling environment for AI
 development and prioritise emerging technologies, including the
 National Digital Economy Blueprint, where AI is referenced as a tool
 for innovation-driven entrepreneurship, and the Kenya National Digital
 Master Plan (2022–2032).
+
 53 / Kenya AI Strategy
-Existing digital Kenya has a robust digital infrastructure set up, including a number of
-infrastructure private and government data centres, fibre infrastructure, and high levels
+
+
+Existing digital
+infrastructure
+
+Kenya has a robust digital infrastructure set up, including a number of
+private and government data centres, fibre infrastructure, and high levels
 of mobile infrastructure and internet penetration that support small-scale
-AI development and deployment�
+AI development and deployment.
 Kenya also has access to clean and green energy, particularly
 geothermal, which provides a strategic advantage in developing AI
 infrastructure, such as green data centres with minimal environmental
-impact�
-Political will and The government has provided political backing for the development of
-strong government AI in Kenya through participation and ratification of global events and
-support for the issues on AI; prioritisation of AI through the establishment of the 2019
-adoption of AI Distributed Ledgers (Blockchain) and Artificial Intelligence Taskforce
+impact.
+
+Political will and
+strong government
+support for the
+adoption of AI
+
+The government has provided political backing for the development of
+AI in Kenya through participation and ratification of global events and
+issues on AI; prioritisation of AI through the establishment of the 2019
+Distributed Ledgers (Blockchain) and Artificial Intelligence Taskforce
 and the Sectoral Working Group; and the development of a national AI
-strategy�
+strategy.
 The government has mobilised financing and resources for local AI
 development by facilitating strategic investments from international
-partners, e�g�, the commitment by Microsoft and G42 for a $1 billion
+partners, e.g., the commitment by Microsoft and G42 for a $1 billion
 digital ecosystem initiative to set up green infrastructure and local
-language models�
+language models.
 There are also existing initiatives in the public sector, including the
 establishment of the AI-powered Konza smart city, the use of AI in
 healthcare resource allocation, and deployment of chatbots that support
 digital service delivery and citizen engagement.
-Kenya is a regional The presence of homegrown companies and tech startups building
-hub/gateway to AI tools as well as global tech companies setting up research centres
-the East & Central provides evidence of Kenya’s status as a regional leader� Kenya’s existing
-Africa region digital infrastructure, such as the National Optic Fibre Backbone Network
+
+Kenya is a regional
+hub/gateway to
+the East & Central
+Africa region
+
+54 / Kenya AI Strategy
+
+The presence of homegrown companies and tech startups building
+AI tools as well as global tech companies setting up research centres
+provides evidence of Kenya’s status as a regional leader. Kenya’s existing
+digital infrastructure, such as the National Optic Fibre Backbone Network
 Initiative, aim to enhance connectivity across all counties, making the
 country an attractive destination for technology companies interested in
-expanding to the region� Kenya’s commitments to building smart cities
+expanding to the region. Kenya’s commitments to building smart cities
 like Konza Technopolis and existing partnerships for AI training and
-innovation also demonstrate its capacity as a regional leader�
-54 / Kenya AI Strategy
+innovation also demonstrate its capacity as a regional leader.
+
+
 Table 3.5 Limitations
-Limitation Key Evidence
-AI skills gap Kenya faces a huge shortage of advanced-level AI experts with the skills
-to design and train contextually relevant AI models� This skills gap can
+
+Limitation
+
+Key Evidence
+
+AI skills gap
+
+Kenya faces a huge shortage of advanced-level AI experts with the skills
+to design and train contextually relevant AI models. This skills gap can
 slow down AI development, limit innovation, and force reliance on foreign
-expertise, thereby reducing Kenya’s competitiveness in AI�
+expertise, thereby reducing Kenya’s competitiveness in AI.
 Primary data collection also indicates mismatches between academic
 training and practical industry needs that limit the ability to further
 homegrown innovation and effective adoption and maintenance of AI
 technologies. (Expand this definition to include different types of skills to
 include non tech professionals)
-Regulatory gaps Kenya does not have a comprehensive and specific regulatory
-and conflicts framework for AI� While existing legal frameworks such as the Data
+
+Regulatory gaps
+and conflicts
+
+Kenya does not have a comprehensive and specific regulatory
+framework for AI. While existing legal frameworks such as the Data
 Protection, Computer Misuse and Cybercrime, Intellectual Property, and
 Consumers Acts provide some guidance, they are insufficient to address
 the complexities of AI. There is no specific policy on AI. These policy
 and regulatory gaps create governance challenges in managing ethical
-concerns, data privacy, and the safe deployment of AI technologies�
+concerns, data privacy, and the safe deployment of AI technologies.
 They may hinder the responsible development and deployment of AI,
 potentially increasing the risk of misuse, harm to citizens, or unintended
-consequences� The resulting atmosphere of uncertainty deters
+consequences. The resulting atmosphere of uncertainty deters
 investment, innovation, and adoption of AI by certain industries, including
-the public sector�
+the public sector.
 Kenya’s current regulatory environment for AI is fragmented, with
 multiple bodies working independently without a unified approach.
 This fragmentation leads to inconsistencies and inefficiencies in AI
 governance, making it challenging to create a cohesive strategy for AI
-development and deployment�
+development and deployment.
 The absence of robust AI-specific governance frameworks also limits
 adoption of AI in the public sector and in regulated sectors where errors
 and harms from AI deployment could diminish public trust, increase
-inequality, and degrade quality of service provision�
-Data quality, Despite the presence of digital infrastructure, Kenya struggles with data
-availability, and availability and quality, which are critical for training effective AI models�
-accessibility The country ranks low on data availability indices, reflecting challenges
-concerns in accessing and utilising data for AI development�
-Where data exists, e�g�, in government ministries and departments, it is
-not fully digitalised and remains siloed� It is also underutilised due to gaps
+inequality, and degrade quality of service provision.
+
+Data quality,
+availability, and
+accessibility
+concerns
+
+Despite the presence of digital infrastructure, Kenya struggles with data
+availability and quality, which are critical for training effective AI models.
+The country ranks low on data availability indices, reflecting challenges
+in accessing and utilising data for AI development.
+Where data exists, e.g., in government ministries and departments, it is
+not fully digitalised and remains siloed. It is also underutilised due to gaps
 in data governance policies that enable data sharing and collaboration,
 limiting the potential for data-driven innovation and comprehensive AI
-solutions�
+solutions.
+
 55 / Kenya AI Strategy
-Primary and While Kenya has made progress in developing its digital infrastructure,
-supporting challenges remain in terms of data accessibility and the availability
-infrastructure of computing power needed for AI applications� These infrastructure
-constraints limitations could slow down AI adoption and limit the scalability of AI-
-driven solutions across the country�
+
+
+Primary and
+supporting
+infrastructure
+constraints
+
+While Kenya has made progress in developing its digital infrastructure,
+challenges remain in terms of data accessibility and the availability
+of computing power needed for AI applications. These infrastructure
+limitations could slow down AI adoption and limit the scalability of AIdriven solutions across the country.
 Kenya’s insufficient computing power, broadband connectivity, and energy
 efficiency hinder large-scale AI deployment, including the deployment
-of large language models� These constraints limit the scalability and
+of large language models. These constraints limit the scalability and
 effectiveness of AI initiatives and impede Kenya’s ability to implement AI
-solutions effectively across sectors�
+solutions effectively across sectors.
 Inadequate and unreliable infrastructure, such as network unreliability
 and inconsistent electricity and water supply, pose a significant barrier
 to the effective deployment and scalability of AI technologies across the
-country�
+country.
 Additionally, the slow progress in digitising documents and records
 from government and other key sectors will delay the adoption of AI
 technologies. This challenge has hampered the efficient delivery of public
-services and will limit the ability to leverage AI for data-driven decision-
-making and innovation within the public sector�
-Limited investments AI readiness assessments note underinvestment in local AI research and
-in local AI research development (R&D). Additionally, startups and universities face funding
-and development constraints and limited access to venture capital and development
+services and will limit the ability to leverage AI for data-driven decisionmaking and innovation within the public sector.
+
+Limited investments
+in local AI research
+and development
+
+AI readiness assessments note underinvestment in local AI research and
+development (R&D). Additionally, startups and universities face funding
+constraints and limited access to venture capital and development
 financing to scale AI projects, which are inherently expensive. Inadequate
 funding curtails growth of local innovations, diminishes competitiveness,
-and hinders the creation of contextually relevant AI solutions�
+and hinders the creation of contextually relevant AI solutions.
 The Kenyan AI ecosystem heavily relies on funding and support from
 international organisations and private companies, which may limit the
-sustainability and autonomy of local AI initiatives� The lack of government-
-funded AI research highlights a critical gap that could undermine the
-long-term development and independence of the national AI ecosystem�
-Equity and Despite efforts by the government and private-sector players, there
-inclusion in AI remain significant gaps in digital and AI literacy among the general
-development and population� This shortfall limits public engagement with AI technologies,
-gaps in public AI/ reducing the adoption of AI-driven solutions and potentially widening
-digital literacy socioeconomic inequalities�
+sustainability and autonomy of local AI initiatives. The lack of governmentfunded AI research highlights a critical gap that could undermine the
+long-term development and independence of the national AI ecosystem.
+
+Equity and
+inclusion in AI
+development and
+gaps in public AI/
+digital literacy
+
+Despite efforts by the government and private-sector players, there
+remain significant gaps in digital and AI literacy among the general
+population. This shortfall limits public engagement with AI technologies,
+reducing the adoption of AI-driven solutions and potentially widening
+socioeconomic inequalities.
 The digital divide in Kenya, particularly between urban and rural areas
 and among marginalised communities, poses a significant challenge
-to the inclusive adoption of AI technologies� Without targeted efforts
+to the inclusive adoption of AI technologies. Without targeted efforts
 to bridge this divide, AI adoption could exacerbate existing social and
 economic inequalities, limiting the benefits of AI to a small segment of
-the population� Additionally, there will be a challenge in building public
+the population. Additionally, there will be a challenge in building public
 trust and awareness, an important element for the successful adoption
-of AI�
+of AI.
 Existing gender imbalances and the underrepresentation of marginalised
+
 56 / Kenya AI Strategy
+
+
 groups in the development and deployment of AI technologies jeopardise
 the possibility that the benefits of AI will be shared across all segments
-of society� This underrepresentation may exacerbate existing social
+of society. This underrepresentation may exacerbate existing social
 inequalities and hinder the creation of inclusive AI solutions that address
-the needs of all segments of society�
-Fragmented/ There is a potential for unbalanced prioritisation of AI initiatives, with
-uncoordinated certain sectors receiving more attention and resources than others based
-prioritisation of on political considerations rather than strategic needs� This concern was
-development and raised by both government representatives and innovators� This could
-application of AI stifle innovation, create disparities in AI development across sectors, and
-undermine the effectiveness of AI initiatives�
+the needs of all segments of society.
+Fragmented/
+uncoordinated
+prioritisation of
+development and
+application of AI
+
+There is a potential for unbalanced prioritisation of AI initiatives, with
+certain sectors receiving more attention and resources than others based
+on political considerations rather than strategic needs. This concern was
+raised by both government representatives and innovators. This could
+stifle innovation, create disparities in AI development across sectors, and
+undermine the effectiveness of AI initiatives.
+
 Table 3.6 Opportunities
-Opportunity Key Evidence
-Job creation and AI has shown the potential to significantly boost global GDPs by improving
-economic growth efficiency and productivity in various sectors and creating new jobs. The
+
+Opportunity
+
+Key Evidence
+
+Job creation and
+economic growth
+
+AI has shown the potential to significantly boost global GDPs by improving
+efficiency and productivity in various sectors and creating new jobs. The
 Kenyan economy is experiencing significant challenges that result in
-reduced incomes and increased job losses� The adoption of AI in critical
+reduced incomes and increased job losses. The adoption of AI in critical
 sectors like agriculture, healthcare, and finance has led to significant
 improvements in operational efficiency and service delivery. For
 example, AI-driven platforms like Apollo Agriculture enhance agricultural
 productivity, while AI in healthcare supports disease diagnosis and patient
-management� These innovations not only boost sectoral performance
-but also contribute to the broader socioeconomic development of Kenya�
+management. These innovations not only boost sectoral performance
+but also contribute to the broader socioeconomic development of Kenya.
 Sector-specific AI implementations can address unique challenges in
 these areas, driving improvements in efficiency, productivity, and service
-delivery�
+delivery.
 AI-driven economic growth can enhance Kenya’s global competitiveness,
 create new industry and job opportunities, and drive inclusive economic
-development� These new jobs created by an AI sector can address
+development. These new jobs created by an AI sector can address
 unemployment, especially among youth, and contribute to economic
-stability and growth�
-Enhanced public- AI presents an opportunity to significantly improve public-sector efficiency
-sector efficiency in Kenya by automating processes, enhancing decision-making, and
+stability and growth.
+
+Enhanced publicsector efficiency
+
+AI presents an opportunity to significantly improve public-sector efficiency
+in Kenya by automating processes, enhancing decision-making, and
 reducing bureaucratic inefficiencies. This could lead to more transparent,
 accountable, and responsive public services, thereby increasing citizen
-trust and engagement�
+trust and engagement.
 Various primary interviews identified the government as an anchor of
-demand for AI solutions� The government’s role as a primary AI adopter
+demand for AI solutions. The government’s role as a primary AI adopter
 can stimulate the market, drive innovation, and create a sustainable
-demand for AI solutions across various sectors�
+demand for AI solutions across various sectors.
+
 57 / Kenya AI Strategy
-AI-specific Building a skilled workforce through rapid upskilling, reskilling, and AI-
-education specific education ensures Kenya can meet the future demands of the AI
-programmes industry, fostering sustainable growth and innovation� The development
+
+
+AI-specific
+education
+programmes
+
+Building a skilled workforce through rapid upskilling, reskilling, and AIspecific education ensures Kenya can meet the future demands of the AI
+industry, fostering sustainable growth and innovation. The development
 of AI-specific curricula and training programmes can also help address
 the existing skills gap, leading to job creation and a more skilled
-workforce�
+workforce.
 Kenyan universities and institutions, such as Jomo Kenyatta University
 of Agriculture and Technology and Strathmore University, already offer
-specialised AI programmes� Additionally, initiatives like Huawei’s AI
+specialised AI programmes. Additionally, initiatives like Huawei’s AI
 Certification and the Jitume Digital Hub help build a skilled workforce.
 These programmes can be further enhanced by leveraging international
 partnerships that allow Kenya to bridge the skills gap through targeted
-capacity-building programmes and aligning training to industry needs�
-Public-private Expanding public-private partnerships and collaborative projects
-partnerships between government, the private sector, and academia can accelerate
+capacity-building programmes and aligning training to industry needs.
+
+Public-private
+partnerships
+
+Expanding public-private partnerships and collaborative projects
+between government, the private sector, and academia can accelerate
 AI development by leveraging resources and expertise from each
-sector� Public-private partnerships can pool resources and expertise,
+sector. Public-private partnerships can pool resources and expertise,
 accelerating AI development and ensuring that innovations are aligned
-with national priorities�
-Investments in the By positioning itself as a leader in AI innovation in Africa, Kenya can
-local AI innovation attract international investments in the existing technology community
-ecosystem and innovation ecosystem� This could lead to the development of home-
-grown AI solutions that leverage local data and talent�
+with national priorities.
+
+Investments in the
+local AI innovation
+ecosystem
+
+By positioning itself as a leader in AI innovation in Africa, Kenya can
+attract international investments in the existing technology community
+and innovation ecosystem. This could lead to the development of homegrown AI solutions that leverage local data and talent.
 There are already a number of open data repositories, including from
-the National Bureau of Statistics� Streamlined development of this data
+the National Bureau of Statistics. Streamlined development of this data
 infrastructure and existing repositories can enhance AI research, enable
-the development of high-quality AI solutions, and improve decision-
-making processes across sectors�
+the development of high-quality AI solutions, and improve decisionmaking processes across sectors.
 There is also an opportunity to develop local language models, which
 can democratise access to AI, making it more inclusive and relevant to
-the Kenyan population, while preserving linguistic diversity�
+the Kenyan population, while preserving linguistic diversity.
 Kenya has the opportunity to harness local industry and capital to
-support AI research and academia� By encouraging collaboration
+support AI research and academia. By encouraging collaboration
 between businesses, investors, and educational institutions, Kenya can
 foster homegrown innovation, drive AI advancements, and strengthen
-its research capacity� This approach can reduce reliance on external
+its research capacity. This approach can reduce reliance on external
 funding, empower local talent, and accelerate the development of AI
-solutions tailored to Kenya’s needs�
+solutions tailored to Kenya’s needs.
+
 58 / Kenya AI Strategy
-Leadership in Emerging applications in agriculture (e.g., crop disease detection),
-AI development healthcare (e.g., medical imaging analysis), and financial inclusion
-(models, have exhibited Kenya’s ability to develop AI solutions tailored to
-responsible AI, African contexts� Several global tech companies have also established
-policy) research centres in Kenya focusing on local AI model development�
+
+
+Leadership in
+AI development
+(models,
+responsible AI,
+policy)
+
+Emerging applications in agriculture (e.g., crop disease detection),
+healthcare (e.g., medical imaging analysis), and financial inclusion
+have exhibited Kenya’s ability to develop AI solutions tailored to
+African contexts. Several global tech companies have also established
+research centres in Kenya focusing on local AI model development.
 Stakeholders interviewed in the primary data collection exercise
 advocated for embedding Afrocentric values and indigenous knowledge
 into AI systems to ensure relevance and inclusivity, showcasing Kenya’s
-leadership potential in contextual AI development� Additionally, Kenya
+leadership potential in contextual AI development. Additionally, Kenya
 has foundational legal frameworks, like the Data Protection Act,
 demonstrating Kenya’s potential to lead in crafting AI policy for emerging
 markets. Kenya’s access to renewable energy (e.g., geothermal) creates
-a ripe opportunity for leadership in sustainable AI development�
+a ripe opportunity for leadership in sustainable AI development.
+
 Table 3.7 Challenges
-Challenge Key Evidence
-Data governance Kenya relies heavily on foreign data centres to process and store
-and sovereignty datasets produced in the country and about Kenyans� This dependence
+
+Challenge
+
+Key Evidence
+
+Data governance
+and sovereignty
+
+Kenya relies heavily on foreign data centres to process and store
+datasets produced in the country and about Kenyans. This dependence
 on external entities raises concerns about the potential loss of control
 over critical AI data, which could expose the country to data exploitation,
 external manipulation, privacy breaches, dependency on external AI
-solutions, and national security threats� Without strong data governance,
+solutions, and national security threats. Without strong data governance,
 Kenya may struggle to protect its citizens’ data rights and maintain trust
-in AI systems� Strengthening these frameworks is essential to safeguard
-national interests and ensure the integrity of AI initiatives�
-Labour market The adoption of AI technologies in Kenya creates the potential
-disruption and job for widespread job displacement, particularly in sectors such as
-displacement manufacturing, agriculture, and services, where a large portion of the
-population is currently employed� This creates the need for reskilling and
+in AI systems. Strengthening these frameworks is essential to safeguard
+national interests and ensure the integrity of AI initiatives.
+
+Labour market
+disruption and job
+displacement
+
+The adoption of AI technologies in Kenya creates the potential
+for widespread job displacement, particularly in sectors such as
+manufacturing, agriculture, and services, where a large portion of the
+population is currently employed. This creates the need for reskilling and
 upskilling initiatives to mitigate the risk of exacerbating unemployment
-and deepening social inequalities�
+and deepening social inequalities.
 The risk of brain drain among skilled AI professionals exacerbates this
 challenge, as top talent may seek opportunities abroad for better pay,
-leaving gaps in the local AI workforce� If not managed effectively, the
+leaving gaps in the local AI workforce. If not managed effectively, the
 brain drain of skilled AI professionals could limit Kenya’s ability to build
-and sustain a competitive AI ecosystem�
+and sustain a competitive AI ecosystem.
+
 59 / Kenya AI Strategy
-Global regulatory There is a lag in defining comprehensive ethical and legal frameworks
-pressure both locally and internationally� As AI rapidly advances, there are
+
+
+Global regulatory
+pressure
+
+There is a lag in defining comprehensive ethical and legal frameworks
+both locally and internationally. As AI rapidly advances, there are
 challenges in understanding and scoping evolving AI risks, including the
 risks of bias, discrimination, and potential misuse for surveillance and
-other invasive purposes�
+other invasive purposes.
 Different regions are therefore adopting varied approaches to AI
 regulation, from legislation to sector-specific regulation. These diverse
 approaches create pressure for Kenya to decide which models to follow
 or how to develop its own approach while at the same time remaining
-globally competitive� In particular, Kenya must balance an enabling
+globally competitive. In particular, Kenya must balance an enabling
 environment for innovation to address Kenya’s unique socioeconomic
 context, creating a framework that aligns with international best practice
 for regulating risks associated with AI technologies, with preserving
 citizens’ rights.
-Cap on AI investments and research are concentrated in advanced economies
-competitiveness like the United States, China, Japan, India, and Germany� The rapid
-in AI technology advancement of AI capabilities in these leading nations outpaces local
-(global) development in Kenya, potentially widening the technological gap and
+
+Cap on
+competitiveness
+in AI technology
+(global)
+
+AI investments and research are concentrated in advanced economies
+like the United States, China, Japan, India, and Germany. The rapid
+advancement of AI capabilities in these leading nations outpaces local
+development in Kenya, potentially widening the technological gap and
 making it increasingly difficult for the country to compete on the global
-AI stage�
+AI stage.
 Global supply chains for acquiring essential AI components such as
 high-performance graphics processing units and specialised AI chips are
-often dominated by a few key players in developed economies� Limited
+often dominated by a few key players in developed economies. Limited
 access to these resources, due to factors like export controls, high costs,
 or supply shortages, can significantly hinder Kenya’s ability to develop
 and deploy state-of-the-art AI systems and may increase operational
-costs� This dependence on external resources for core AI infrastructure
+costs. This dependence on external resources for core AI infrastructure
 could slow down local innovation and make it more challenging for
-Kenya to develop a self-reliant AI ecosystem�
-Cybersecurity and In the global environment, AI technologies are exploited for cyber-
-mis/disinformation attacks, such as automated phishing and sophisticated hacking� Kenya
-faces similar risks due to its expanding digital and AI ecosystems�
+Kenya to develop a self-reliant AI ecosystem.
+
+Cybersecurity and
+mis/disinformation
+
+In the global environment, AI technologies are exploited for cyberattacks, such as automated phishing and sophisticated hacking. Kenya
+faces similar risks due to its expanding digital and AI ecosystems.
 Kenya’s reliance on external data centres can compromise data
-sovereignty and expose Kenya to cross-border cyber risks� The rise
+sovereignty and expose Kenya to cross-border cyber risks. The rise
 of generative AI technologies, such as deep fakes, poses risks for
 creating and spreading false narratives, undermining trust in media and
-institutions� Kenya’s regulatory frameworks for addressing cybersecurity
+institutions. Kenya’s regulatory frameworks for addressing cybersecurity
 and misinformation are still evolving, leaving gaps in mitigating these
-challenges�
+challenges.
+
 60 / Kenya AI Strategy
-T4U. RK EMNAYXAIM AOID S IGTERNADTAEEGSYE QUE
-AFCOCUUNMD QATUIOONS
+
+
+TUR
+MAXIMOD
+IGENDAESEQUE
+4.
+KENYA
+AI STRATEGY
+FOUNDATIONS
+ACCUM
+QUO
+
 61 / Kenya AI Strategy
-4�1� Vision
-This strategy envisages Kenya being at • Upholding ethical and responsible AI
-the forefront of quality AI research and by setting clear guidelines that balance
-development and creating innovative and innovation with ethical considerations,
-ethical solutions that address the needs of ensuring AI is developed and deployed
-our local but diverse communities� The vision safely, responsibly, and inclusively�
-is: • Prioritising data sovereignty and ethical
-A regional leader in AI R&D, AI practices to build a technological future
-innovation and commercialization that is safe, accountable, and beneficial
-for inclusive socio-economic for all Kenyans�
-development. • Collaborating with local and international
-stakeholders to define and embrace best
+
+
+4.1. Vision
+This strategy envisages Kenya being at
+the forefront of quality AI research and
+development and creating innovative and
+ethical solutions that address the needs of
+our local but diverse communities. The vision
+is:
+
+A regional leader in AI R&D,
+innovation and commercialization
+for inclusive socio-economic
+development.
 This can be accomplished by:
-practices in AI adoption, thus ensuring
 • Leveraging local talent, datasets, and
-Kenya’s AI ecosystem remains secure
 creativity to transform priority sectors and
-and globally competitive�
-create inclusive economic growth�
-4�2� Value Proposition
-The value proposition for the national AI • Ensure agile AI governance: An
-strategy consists of several prongs: adaptive AI governance framework will be
-established to respond effectively to the
+create inclusive economic growth.
+
+• Upholding ethical and responsible AI
+by setting clear guidelines that balance
+innovation with ethical considerations,
+ensuring AI is developed and deployed
+safely, responsibly, and inclusively.
+• Prioritising data sovereignty and ethical
+AI practices to build a technological future
+that is safe, accountable, and beneficial
+for all Kenyans.
+• Collaborating with local and international
+stakeholders to define and embrace best
+practices in AI adoption, thus ensuring
+Kenya’s AI ecosystem remains secure
+and globally competitive.
+
+4.2. Value Proposition
+The value proposition for the national AI
+strategy consists of several prongs:
 • Drive economic growth: AI is poised to
-rapid pace of technological advancements
 boost GDP, create digital jobs, increase
-and ensure the secure adoption and
 productivity, generate revenue, optimise
-deployment of AI�
 costs, and enhance government service
-delivery� Potential job displacement will • Foster public trust: The strategy is
-be proactively addressed� committed to promoting public trust in AI
-technologies by providing a roadmap for
+delivery. Potential job displacement will
+be proactively addressed.
 • Elevate competitiveness: Kenya aims
-AI awareness, literacy, and ethical use�
 to become a frontrunner in AI research
-and development, cultivate a thriving AI • Create social impact: AI will be
-startup ecosystem, and become a net leveraged to improve access to essential
-exporter of high-quality AI technology and services, reduce poverty, and empower
-services� local communities and individuals� This
-includes making AI accessible in local
+and development, cultivate a thriving AI
+startup ecosystem, and become a net
+exporter of high-quality AI technology and
+services.
 • Establish robust data governance: The
-languages�
 strategy will implement a data governance
 framework that ensures ethical AI use and
-responsible data accessibility�
+responsible data accessibility.
+
 62 / Kenya AI Strategy
-4�3� Guiding Principles
-The following principles will guide the • Cultural preservation and
-implementation of the national AI strategy: contextualization: AI systems will be
-developed that are enriched with Kenyan
+
+• Ensure agile AI governance: An
+adaptive AI governance framework will be
+established to respond effectively to the
+rapid pace of technological advancements
+and ensure the secure adoption and
+deployment of AI.
+• Foster public trust: The strategy is
+committed to promoting public trust in AI
+technologies by providing a roadmap for
+AI awareness, literacy, and ethical use.
+• Create social impact: AI will be
+leveraged to improve access to essential
+services, reduce poverty, and empower
+local communities and individuals. This
+includes making AI accessible in local
+languages.
+
+
+4.3. Guiding Principles
+The following principles will guide the
+implementation of the national AI strategy:
 • Inclusivity and non-discrimination:
-cultural values and that preserve and
 The strategy will promote inclusivity,
-promote the nation’s cultural heritage
 equity, and non-discrimination in the
-and ensure contextual relevance to local
 development and deployment of AI,
-needs and contexts�
 ensuring fair and equal access to AI
-benefits for all Kenyans, regardless of • Environmental sustainability: The
-their background or circumstances� development and deployment of AI
-systems will promote environmental
+benefits for all Kenyans, regardless of
+their background or circumstances.
 • Participation and co-creation: The
-sustainability and energy efficiency.
 implementers of the strategy will
-encourage multi-stakeholder engagement • Economic benefit and self-sufficiency:
-and involve diverse perspectives from AI will be leveraged to drive economic
-government, industry, academia, and growth, create new opportunities, and
-citizens. foster self-sufficiency, positioning Kenya
-as a net exporter of AI technologies and
+encourage multi-stakeholder engagement
+and involve diverse perspectives from
+government, industry, academia, and
+citizens.
 • Transparency and accountability:
-services�
 The strategy will be implemented with
-transparency, equity, explainability, and • Local first approach: AI development
-accountability in AI systems, promoting and deployment will prioritise local
-public trust and enabling oversight, talent, resources, and solutions while
-auditing, and redress mechanisms� fostering local, regional, and international
-collaborations and partnerships�
+transparency, equity, explainability, and
+accountability in AI systems, promoting
+public trust and enabling oversight,
+auditing, and redress mechanisms.
 • Ethical and responsible AI: Privacy
 protection, fairness, safety, security,
 and respect for human autonomy and
 decision-making will be important values
-in the implementation of the strategy�
+in the implementation of the strategy.
+
 63 / Kenya AI Strategy
-T5U. RS TMRAAXTIMEOGDIC IG DEENCDIASEIOSENQSUE
+
+• Cultural
+preservation
+and
+contextualization: AI systems will be
+developed that are enriched with Kenyan
+cultural values and that preserve and
+promote the nation’s cultural heritage
+and ensure contextual relevance to local
+needs and contexts.
+• Environmental sustainability: The
+development and deployment of AI
+systems will promote environmental
+sustainability and energy efficiency.
+• Economic benefit and self-sufficiency:
+AI will be leveraged to drive economic
+growth, create new opportunities, and
+foster self-sufficiency, positioning Kenya
+as a net exporter of AI technologies and
+services.
+• Local first approach: AI development
+and deployment will prioritise local
+talent, resources, and solutions while
+fostering local, regional, and international
+collaborations and partnerships.
+
+
+5. STRATEGIC
+DECISIONS
+TUR
+MAXIMOD IGENDAESEQUE
 ACCUM QUO
+
 64 / Kenya AI Strategy
-5�1� Themes and Sub-themes
+
+
+5.1. Themes and Sub-themes
 Strengths, limitations, opportunities, and challenges (SLOC) was used to generate strategic
-options� The themes and sub-themes that emerged are shown in Table 5�1�
+options. The themes and sub-themes that emerged are shown in Table 5.1.
 Table 5.1: Strategic themes and sub-themes
-Themes Sub-themes
-1. AI Digital Infrastructure • AI-ready national digital infrastructure
+
+Themes
+
+Sub-themes
+
+1. AI Digital Infrastructure
+
+• AI-ready national digital infrastructure
 • Compute infrastructure (data centres)
 • Green energy sources to power AI infrastructure
 • Domestic manufacturing facilities for AI-specific hardware
 • Cybersecurity infrastructure
 • Partnerships and collaborations
-2. Data • Data governance framework
+
+2. Data
+
+• Data governance framework
 • Secure data sharing
 • Quality AI training datasets
-3. AI R&D and Innovation • AI R&D capabilities
+
+3. AI R&D and Innovation
+
+• AI R&D capabilities
 • AI innovation
 • Scaling local AI enterprises
 • Market for local AI solutions
-4. Talent Development • Foundational AI skills in schools
+
+4. Talent Development
+
+• Foundational AI skills in schools
 • Specialised AI skills in tertiary institutions and industry
 • Partnerships for AI talent development and placement
 • Acquisition of quality foreign AI talent
-5. Governance • Policy framework for AI and emerging technologies
+
+5. Governance
+
+• Policy framework for AI and emerging technologies
 • Agile AI legal and regulatory frameworks
 • AI risk and safety frameworks
 • Stakeholder collaborations
-6. Investments • Private-sector investments in AI
+
+6. Investments
+
+• Private-sector investments in AI
 • Public-sector investments in AI
 • Kenya as an investment destination for AI
-7. Ethics, Equity, and • Ethical, responsible, and inclusive AI development and
-Inclusion deployment
+
+7. Ethics,
+Inclusion
+
+Equity,
+
+65 / Kenya AI Strategy
+
+and
+
+• Ethical, responsible, and inclusive AI development and
+deployment
 • Inclusivity and national values in AI development and
 deployment
 • Public AI literacy
-65 / Kenya AI Strategy
-The strategic theme details are outlined 2� Data
-below�
-A robust data governance framework is
-1� AI Digital Infrastructure the cornerstone of Kenya’s AI ecosystem,
-enabling effective management and ethical
+
+
+The strategic theme details are outlined
+below.
+1.	 AI Digital Infrastructure
 The development of a robust AI-ready
-use of data� This framework will ensure
 national digital infrastructure is critical to
-transparency, accountability, and security
 supporting Kenya’s aspirations in artificial
-in data handling while fostering secure data
-intelligence� This involves establishing
-sharing among stakeholders, including
+intelligence. This involves establishing
 advanced connectivity systems, including
-the public and private sectors� Access to
 5G networks and cloud computing services,
-quality AI training datasets is vital for the
 to create a seamless and reliable digital
-development of reliable and contextually
-environment� Additionally, the establishment
-relevant AI systems� This requires investment
+environment. Additionally, the establishment
 of compute infrastructure, particularly the
-in the collection, annotation, and curation of
 expansion of local data centres to facilitate
-diverse datasets that reflect Kenya’s unique
 high-performance computing and secure
-demographics, environments, and economic
-data storage, is necessary for AI applications�
-contexts� These efforts will enable Kenya
+data storage, is necessary for AI applications.
 Moreover, the adoption of green energy
-to position itself as a hub for data-driven
 sources to power AI infrastructure ensures
-innovation while addressing issues of data
 sustainability and aligns with global efforts
-privacy and sovereignty�
 to reduce carbon footprints in technology
-sectors� To complement this effort, Kenya
+sectors. To complement this effort, Kenya
 will explore the establishment of domestic
 manufacturing facilities for AI-specific
 hardware to reduce dependency on imports
-and build local expertise� Equally essential
+and build local expertise. Equally essential
 is a strong cybersecurity infrastructure
 to safeguard digital systems, AI models,
-and sensitive data from malicious threats�
+and sensitive data from malicious threats.
 These initiatives can be accelerated through
 strategic partnerships and collaborations with
 international tech firms, research institutions,
-and regional organisations�
-3� AI R&D and Innovation
+and regional organisations.
+
+2.	 Data
+A robust data governance framework is
+the cornerstone of Kenya’s AI ecosystem,
+enabling effective management and ethical
+use of data. This framework will ensure
+transparency, accountability, and security
+in data handling while fostering secure data
+sharing among stakeholders, including
+the public and private sectors. Access to
+quality AI training datasets is vital for the
+development of reliable and contextually
+relevant AI systems. This requires investment
+in the collection, annotation, and curation of
+diverse datasets that reflect Kenya’s unique
+demographics, environments, and economic
+contexts. These efforts will enable Kenya
+to position itself as a hub for data-driven
+innovation while addressing issues of data
+privacy and sovereignty.
+
+3.	 AI R&D and Innovation
 Building AI R&D capabilities is crucial for
 fostering innovation and positioning Kenya as
 a leader in artificial intelligence. This involves
 establishing research hubs, funding academic
 and industry collaborations, and promoting
-open research practices� AI innovation
+open research practices. AI innovation
 will be driven by policies and incentives
 that encourage the development of novel
+
 66 / Kenya AI Strategy
-solutions tailored to local challenges, such Specialised AI skills in tertiary institutions and
-as agriculture, healthcare, and education� industry will be critical for producing experts
-Scaling local AI enterprises requires targeted in machine learning, data science, and AI
-support for startups and SMEs, including policy. Partnerships with tech firms and
-access to funding, mentorship, and incubation international institutions can accelerate AI
-programmes� Creating a vibrant market talent development and placement, providing
-for local AI solutions will further stimulate real-world experience and job opportunities�
-innovation and scale Kenyan AI solutions, Additionally, facilitating the acquisition of
-increasing Kenya’s competitiveness and quality foreign AI talent through simplified
-contributing to the achievement of Kenya’s immigration policies and attractive working
-economic growth goals� conditions can help bridge the skills gap
+
+
+solutions tailored to local challenges, such
+as agriculture, healthcare, and education.
+Scaling local AI enterprises requires targeted
+support for startups and SMEs, including
+access to funding, mentorship, and incubation
+programmes. Creating a vibrant market
+for local AI solutions will further stimulate
+innovation and scale Kenyan AI solutions,
+increasing Kenya’s competitiveness and
+contributing to the achievement of Kenya’s
+economic growth goals.
+
+Specialised AI skills in tertiary institutions and
+industry will be critical for producing experts
+in machine learning, data science, and AI
+policy. Partnerships with tech firms and
+international institutions can accelerate AI
+talent development and placement, providing
+real-world experience and job opportunities.
+Additionally, facilitating the acquisition of
+quality foreign AI talent through simplified
+immigration policies and attractive working
+conditions can help bridge the skills gap
 while fostering knowledge transfer to local
-professionals�
-5� Governance
+professionals.
+5.	 Governance
 A comprehensive policy framework for AI
 and emerging technologies is necessary to
 provide direction and coherence in Kenya’s AI
-strategy� This framework must include agile
+strategy. This framework must include agile
 AI legal and regulatory structures, along with
 monitoring and oversight mechanisms that
-4� Talent Development
+
+4.	 Talent Development
 The foundation for AI excellence lies in
 cultivating foundational AI skills in schools,
 integrating basic programming, computational
-thinking, and ethics into national curricula�
+thinking, and ethics into national curricula.
+
 evolve with the rapidly changing technology
-landscape� The development of AI risk and
+landscape. The development of AI risk and
 safety frameworks will ensure that Kenya
 develops trustworthy AI systems that operate
 securely and ethically, minimising potential
-harms� Effective stakeholder collaborations
+harms. Effective stakeholder collaborations
 between government, academia, civil
 society, and industry are essential to align
 AI initiatives with national priorities and
 ensure accountability in the governance of AI
-technologies�
+technologies.
 67 / Kenya AI Strategy
-6� Investments values and global standards� Inclusivity in
-AI development and deployment focuses on
+
+
+6.	 Investments
 Both private-sector and public-sector
-addressing disparities, enabling participation
 investments in AI are crucial to drive
-from underrepresented groups, and ensuring
-innovation and scale solutions� Incentives
-equitable benefits across all communities.
+innovation and scale solutions. Incentives
 such as tax breaks, grants, and innovation
-Enhancing public AI literacy is key to
 funds can attract private capital, while
-fostering trust and informed engagement,
 government funding can support foundational
-empowering citizens to understand and
-research and infrastructure development�
-influence AI systems that impact their
+research and infrastructure development.
 Positioning Kenya as an investment
-lives� By embedding ethical principles and
 destination for AI involves enhancing the
-inclusivity at every stage, Kenya can develop
 ease of doing business, promoting the local AI
-an AI ecosystem that reflects its diversity and
 ecosystem, and showcasing success stories
-supports sustainable, equitable growth�
-to international audiences� These efforts wil
+to international audiences. These efforts wil
+
+values and global standards. Inclusivity in
+AI development and deployment focuses on
+addressing disparities, enabling participation
+from underrepresented groups, and ensuring
+equitable benefits across all communities.
+Enhancing public AI literacy is key to
+fostering trust and informed engagement,
+empowering citizens to understand and
+influence AI systems that impact their
+lives. By embedding ethical principles and
+inclusivity at every stage, Kenya can develop
+an AI ecosystem that reflects its diversity and
+supports sustainable, equitable growth.
 For each of the strategic themes, an overall
-goal was developed� The selected high priority
+goal was developed. The selected high priority
 options for each theme were organised into
 objectives and flagship projects to be pursued
 to achieve the overall goal as outlined in the
-next section�
-7� Ethics, Equity, and Inclusion
+next section.
+
+7.	 Ethics, Equity, and Inclusion
 Promoting ethical, responsible, and inclusive
 AI development and deployment ensures
 that Kenya’s AI systems align with national
-5�2� Goals, Objectives, Flagship Projects,
+
+5.2. Goals, Objectives, Flagship Projects,
 Outcomes, and Key Performance
 Indicators Options
 Tables 5.2 through 5.8 show the goals, objectives, and flagship projects for each strategic
-theme� The tables also show the intermediate outcomes and KPIs for each of the objectives�
+theme. The tables also show the intermediate outcomes and KPIs for each of the objectives.
 The ultimate outcomes are shown together with the overall goal outside the tables for ease of
-presentation�
+presentation.
+
 68 / Kenya AI Strategy
-erutcurtsarfnI
-latigiD
-IA
-�1
-tnempoleved
-dna
-ssecca
-IA
-rof
-erutcurtsarfni
-latigid
-lanoitan
-eht
-esinredoM
-:1
-laoG
-tnempoleved
-dna
-ssecca
-IA
-rof
-erutcurtsarfni
-latigid
-yticapac-hgiH
-:1
-emoctuO
-etamitlU
-erutcurtsarfni
-latigid
-IA
-:2.5
-elbaT
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-dna
-desaercnI
-�1
-dnabdaorb
-lanoitan
-%
-•
-ssecca
-detpurretninu
-margorP
-noisnapxE
-dnabdaorB
-lanoitaN
-a
-tnemelpmI
-1�1�1
-ni
-tsevnI
-1�1
-egarevoc
-ytivitcennoc
-fo
-egarevoc
-dna
-).cte
-,skrowten
-G5
-,tenretni
-deeps-hgih(
-dna
-putes
-eht
-ytivitcennoc
-dnabdaorb
-fo
-noisnapxe
-secived
-fo
-rebmuN
-•
-latigid
-ydaer-IA
-desaercnI
-�2
-IA
-nur
-nac
-taht
-IA
-troppus
-ot
-seitilibapac
-gnitupmoc
-egde
-tsubor
-dliuB
-2�1�1
-erutcurtsarfni
-IA
-egdE
-fo
-noitartenep
-egde
-eht
-no
-sledom
-tnemyolped
-dna
-,tnempoleved
-,hcraeser
-yrtnuoc
-eht
-ssorca
-secived
-desilautxetnoc
-erutcurtsarfni
-atad
-lacol
-fo
-rebmuN
-•
-eht
-gniteem
-sertnec
-dradnats
-s249
-AIT
-lacol
-desaercnI
-�3
-hgiH
-ecnahnE
-2�1
-/
-)dradnats
-ISNA(
-rewop
-etupmoc
-atad
-elbapac-IA
-)dradnats
-ISNA(
-249
-AIT
-eerht
-dliuB
-1.2.1
-ecnamrofreP
-)sUPG(
-rof
-yticapac
-ecnahnE
-�4
-sraey
-5
-nihtiw
-sertnec
-)CPH(
-gnitupmoC
-rotces
-cilbup
-fo
-%
-•
-lacol
-a
-ta
-sledom
-gniniart
-sretsulc
-etupmoc
-ertnec
-atad
-level
-erutcurtsarfni
-detargetni
-yticapac
-retsulc
-CPH
-IA
-eht
-otni
-ygetartS
-IA
-ayneK
-/
-96
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-eht
-esaercnI
-3�1
-esu
-dna
-ylppus
-ygrene
-neerg
-fo
-%
-desaercnI
-�5
-rewop
-ot
-secruos
-ygrene
-neerg
-fo
-%
-•
-neerg
-fo
-noitubirtnoc
-ecnahne
-dna
-erutcurtsarfni
-latigid
-ot
-ylppus
-rewop
-weiveR
-1�3�1
-,erutcurtsarfni
-IA
-sertnec
-atad
-gnirewop
-IA
-gnirewop
-ygrene
-ygrene
-neerg
-fo
-oitar
-eht
-gnirusne
-�erutcurtsarfni
-ytilibaniatsus gnicuder
-dna
-latnemnorivne
-tcapmi
-egareva
-ni
-esaerceD
-•
-trams
-fo
-tsoc
-decudeR
-�6
-gnitupmoc
-a
-fo
-tsoc
-IA
-eht
-ni
-desilitu
-secived
-sertnec
-ylbmessa
-ecived
-lacol
-erom
-hsilbatsE
-1�4�1
-poleveD
-4�1
-ecived
-elcycefil
-citsemod
-fo
-rebmuN
-•
-ytilibaliava
-desaercnI
-�7
-gnirutcafunam
-srotcudnocimes
-rof
-srotcudnocimes
-fo
--IA
-rof
-seitilicaf
-derutcafunam
-yllacol
-esu
-,erawdrah
-cfiiceps
-ytilicaf
-gnirutcafunam
-rotcudnocimes
-lanoitan
-a
-hsilbatsE
-2�4�1
-tropxE
-�8
-desilaiceps
-sa
-hcus
-fo
-rebmuN
-•
-sraey
-evfi
-nihtiw
-yllacitsemod
-spihc
-cfiiceps-IA
-ecudorp
-ot
-srotcudnocimes
-dna
-spihc
-srotcudnocimes
-dna
-yllanoiger
-skrowemarf
-yrotaluger
-lanoiger
-dna
-ATCfA
-no
-egareveL
-3�4�1
-ot
-,srotcudnocimes
-detropxe
-yllatnenitnoc
-gnirutcafunam
-eht
-troppus
-ot
-edart
-lanoiger
-rof
-sevitnecni
-dna
-no
-ecnailer
-ecuder
-rotces
-ygolonhcet
-ngierof
-ni
-sboj
-wen
-fo
-rebmuN
-•
-morf
-sboj
-weN
-�9
-sredivorp
-ylbmessa
-ygolonhcet
-ylbmessa
-ygolonhcet
-gnirutcafunam
-dna
-gnirutcafunam
-dna
-ygetartS
-IA
-ayneK
-/
-07
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-eht
-nihtiw
-ecrof
-ksat
-redlohekats-itlum
-a
-hsilbatsE
-1�5�1
-lanoitan
-decnahnE
-�01
-etar
-ssap
-%001
-•
-krowemarf
-ertneC
-noitarepO
-ytirucesrebyC
-lanoitaN
-desoporp
-ytiruces
-noitamrofni
-hsilbatsE
-5�1
-ytirucesrebyc
-no
-staerht
-gnigreme
-cfiiceps-IA
-ot
-dnopser
-ot
--IA
-decnavda
-hguorht
-lanoitan
-tsubor
-evitceffe
-dna
-stidua
-noitceted
-taerht
-cfiiceps
-dna
-noitceted
-taerht
-cfiiceps-IA
-decnavda
-tnemelpmI
-2.5.1
-ytirucesrebyc
-detceted
-fo
-snoituloser
-smetsys
-esnopser
-dna
-srotces
-lacitirc
-ssorca
-smetsys
-esnopser
-erutcurtsarfni
-staerht
-srotces
-lacitirc
-ssorca
-hcet
-labolg
-dna
-seirtnuoc
-rehto
-htiw
-spihsrentrap
-etaerC
-1�6�1
-latigid
-fo
-tnempoleved
-dna
-refsnart
-egdelwonk
-rof
-seinapmoc
-egroF
-6�1
-IA
-rof
-tnempoleved
-erutcurtsarfni
-dna
-spihsrentrap
--cilbup
-detnemelpmI
-�11
-eht
-ni
-stcejorp
-PPP
-2
-•
-eht
-dna
-tnemnrevog
-eht
-neewteb
-snoitaroballoc
-etaerC
-2�6�1
-ot
-snoitaroballoc
-)PPP(
-pihsrentrap
-etavirp
-sraey
-5
-txen
-niamer
-sniahc
-ylppus
-ygolonhcet
-IA
-taht
-erusne
-ot
-rotces
-etavirp
-evorpmi
-dna
-poleved
-stcejorp
-evitavonni
-dna
-tsubor
-dna
-erawdrah
-IA
-erawtfos
-tabmoc
-ot
-seinapmoc
-hcet
-labolg
-htiw
-spihsrentrap
-etaerC
-3�6�1
-noitamrofnisid
-dna
-noitamrofnisim
-morf
-gnigreme
-staerht
-IA
-ygetartS
-IA
-ayneK
-/
-17
-ataD
-�2
-noitavonni
-dna
-IA
-rof
-metsysoce
-atad
-elbaniatsus
-dna
-tsubor
-a
-hsilbatsE
-:2
-laoG
-ytngierevos
-dna
-,ytilibaerahs
-,ytilibasu
-,ytilauq
-tesatad
-decnahnE
-:2
-emoctuO
-etamitlU
-ataD
-:3.5
-elbaT
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-evisneherpmoC
-•
-yb
-demrofni
-ygetarts
-dna
-ycilop
-atad
-lanoitan
-a poleveD
-1�1�2
-ycilop
-atad
-lanoitan
-secitcarp
-tseb
-detpoda
-ygetarts
-dna
-ot
-sredlohekats
-lla
-rof
-krowemarf
-gnirahs
-lagel
-a
-etaerC
-2�1�2
-atad
-ni
-noitcuder
-%
-•
-sevitnecni
-etairporppa
-htiw
-atad
-erahs
-cilbup
-eht
-ni
-solis
-ataD
-desoporp
-eht
-nihtiw
-ecrof
-ksat-IA
-na
-hsilbatsE
-3�1�2
-rotces
-noitatneserper
-htiw
-eettimmoC
-noitanidrooC
-ecfifO
-ecnanrevoG
-tsubor
-a
-etaerC
-1�2
-decudorp
-yllacol
-fo
-%
-•
-tnemssessa
-decnahnE
-�1
-,)GoC(
-seitnuoc
-,sADCM
-ni
-detceles
-ni
-srotca
-atad
-yek
-morf
-evisnopser
-dna
-gniteem
-atad
-ytngierevos
-atad
-fo
-ataD
-a
-,sevitatneserper
-yteicos
-livic
-dna
-rotces
-etavirp
-ecnanrevog
-atad
-fo
-sdradnats
-eht
-srecfifO
-ataD
-dna
-,yrtsiniM
-eht
-ni
-ecfifO
-ecnanrevoG
-krowemarf
-ytngierevos
-erusne
-dna
-stnemeriuqer
-ycnediser
-atad
-ecnahnE
-4�1�2
-gnidrager
-snoitaluger
-dna
-swal
-atad
-lanoitan
-htiw
-ecnailpmoc
-htiw
-ecnailpmoc
-%
-•
-egarots
-dna
-gnildnah
-atad
-dna
-swal
-atad
-lanoitan
-snoitaluger
-detcelloc
-atad
-ot
-ssecca
-etaluger
-dna
-esirogetac
-,yfissalC
-5�1�2
-snayneK
-morf
-dna
-ayneK
-nihtiw
-ygetartS
-IA
-ayneK
-/
-27
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-lacol
-fo
-rebmuN
-•
-slocotorp
-dna
-sdradnats
-lanoitan
-evisneherpmoc
-etaerC
-1�2�2
-ylnepo
-stesatad
-etatilicaf
-dna
-ycnetsisnoc
-erusne
-ot
-atadatem
-dna
-atad
-rof
-ecnailpmoc
-ni
-derahs
-tnemnrevog
-ssorca
-egnahcxe
-dna
-noitargetni
-atad
-sselmaes
-dna
-swal
-lanoitan
-htiw
-eht
-sa
-llew
-sa
-)sADM(
-seicnega
-dna
-,stnemtraped
-,seirtsinim
-seicilop
-rotces
-etavirp
-dna
-poleveD
-2�2
-gnirahs
-atad
-ezivitnecni
-,swal
-tnaveler
-htiw
-ecnailpmoc
-nI
-.2.2.2
-eruces
-tnemelpmi
-,rotces
-etavirp
-gnidulcni
-,sredlohekats
-gnoma
-noitaroballoc
-dna
-atad
-desaercnI
-�2
-atad
-,gnirahs
-atad
-yteicos
-livic
-dna
-,seicnega
-tnemnrevog
-,snoitutitsni
-hcraeser
-ssecca
-dna
-gnirahs
-atad
-dna
-ssecca
-snoitasinagro
-atad
-lamrof
-fo
-rebmuN
-•
-ytilibareporetni
-skrowemarf/sliardraug
-nihtiw(
-sevitaitini
-atad
-tnemelpmI
-3.2.2
-stnemeerga
-gnirahs
-slocotorp
-dellortnoc
-dna
-ssecca
-lanoitan
-detcirtser
-dna
-esusim
-tneverp
-ot
-snoitutitsni
-neewteb
-)swofl
-atad
-redrob
-ssorc
-skrowemarf
-ssecca
-atad
-eruces
-tnemelpmi
-dna
-poleveD
-4�2�2
-evitisnes
-draugefas
-ot
-noitacitnehtua
-dna
-noitpyrcne
-esu
-taht
-ytilibissecca
-rediw
-rof
-gniwolla
-elihw
-atad
-stesatad
-elbasu
-fo
-%
-•
-dna
-sdradnats
-ytilauq
-atad
-lanoitan
-tnemelpmi
-dna
-ngiseD
-1�3�2
-gniniart
-sledom
-IA
-rof
-eht
-ezivitnecnI
-3.2
-ot
-ssecca
-decnahnE
-�3
-noitargetni
-dna
-,noitadilav
-,gninaelc
-,noitcelloc
-atad
-rof
-slocotorp
-nepo
-fo
-noitaerc
-IA
-rof
-stesatad
-ytilauq
-srotces
-ssorca
-atad
-lacol
-fo
-rebmuN
-•
-IA
-ytilauq
-hgih
-gniniart
-detargetni
-dna
-,detadilav
-,naelc
-htiw
-sbal
-atad
-lacol
-etaerC
-2�3�2
-gniniart
-IA
-rof
-sbal
-stesatad
-gniniart
-srepoleved
-ledom
-IA
-dna
-srehcraeser
-yb
-ssecca
-rof
-stesatad
-stesatad
-ygetartS
-IA
-ayneK
-/
-37
-noitavonnI
-dna
-D&R
-IA
-�3
-dna
-D&R
-lacol
-gnivirht
-a
-hguorht
-snoitulos
-dna
-sledom
-IA
-desilacol
-egde-gnittuc
-fo
-tnempoleved
-eht
-evirD
-:3
-laoG
-noitavonni
-srotces
-ytiroirp
-ni
-PDG
-ot
-sessenisub
-IA
-fo
-noitubirtnoc
-desaercnI
-:3
-emoctuO
-etamitlU
-noitavonni
-dna
-D&R
-IA
-:3.5
-elbaT
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-fo
-rebmuN
-•
-noitavonni
-rotces
-cilbup
-rof
-D&R
-erutruN
-1�1�3
-IA
-dehsilbup
-dnapxe
-dna
-ecnahnE
-1�3
-noitavonni
-dna
-ecnellecxe
-fo
-sertnec
-hcraeser
-IA
-hsilbatsE
-2�1�3
-morf
-srepap
-lanruoj
-detareleccA
-�1
-seitilibapac
-hcraeser
-IA
-snoiger
-tnereffid
-ssorca
-sretsulc
-srohtua
-lacol
-D&R
-IA
-lacol
-,sTEVT
-,seitisrevinu
-ta
-dna
-hcraeser
-ecnavda
-ot
-ecrofkrow
-gnuoy
-eht
-egagnE
-3�1�3
-,stnetap
-fo
-rebmuN
-•
-noitavonni
-dna
-dna
-,sertnec
-hcraeser
-noitavonni
-lacol
-erom
-htiw
-smargorp
-hcraeser
-hguorht
-tnempoleved
-skramedart
-yticapac
-ssorca
-sbuh
-noitavonni
-sthgirypoc
-dna
-dna
-,yrtsudni
-,aimedaca
-neewteb
-spihsrentrap
-hsilbatsE
-4�1�3
-ayneK
-IA
-rof
-deretsiger
-noitaulave
-dna
-noitavonni
-,D&R
-IA
-etatilicaf
-ot tnemnrevog
-ledom
-IA
-desilacol
-rof
-buh
-lanoiger
-a
-sa
-ayneK
-noitisoP
-1�2�3
-IA
-desaercnI
-�2
-tnempoleved
-fo
-rebmuN
-•
-eht
-ni
-sputrats
-IA
-lanoitarepo
-dna
-tcartta
-ot
-stcirtsid
-noitavonni
-dna
-skrap
-ecneics
-ecnahnE
-2�2�3
-tnemelpmi
-dna
-hcnuaL
-2�3
-noitavonni
-IA
-sputrats
-sputrats
-dna
-seinapmoc
-IA
-dna
-hcet
-troppus
-margorP
-srotavonnI
-IA
-na
-metsysoce
-tsubor
-a
-sretsof
-taht
-noitabucni
-dna
-pihsrotnem
-edivorp
-ot
-sbuh
-hcet
-edargpU
-3�2�3
-metsysoce
-noitavonni
-secivres
-IA
-egde-gnittuc
-rof
-fo
-rebmuN
-•
-yletamitlu
-tnempoleved
-IA
-rof
-secruos
-atad
-lacol
-esu
-dna
-poleveD
-4�2�3
-dna
-tnempoleved
-ledom
-depoleved
-yllacol
-lacol
-desaercnI
-�3
-smelborp
-lacol
-ytiroirp
-ot
-deroliat
-sledom
-IA
-gnidliub
-noitatnemirepxe
-IA lanoitadnuof
-sledom
-IA
-laicos
-gnisserp
-evlos
-taht
-sledom
-IA
-fo
-tnempoleved
-eht
-esitiroirP
-5�2�3
-sledom
-sledom
-IA
-llams
-dna
-egde
-no
-gnisucof
-,evisulcni
-era
-dna
-smelborp
-ygetartS
-IA
-ayneK
-/ 47
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-lareneg
-fo
-%
-•
-gnisu
-noitalupop
-snoitulos
-IA
-lacol
-IA
-depoleved
-yllacol
-fo
-noitazilaicremmoc
-dna
-noitpoda
-etomorP
-1.3.3
-lanretxe
-susrev
-seitinutroppo
-ssecca
-tekram
-labolg
-dna
-lanoiger
-gnitaerc
-yb
-snoitulos
-snoitulos
-yllacol
-esahcrup
-ot
-stekram
-lanoiger
-dna
-lacol
-ezivitnecnI
-2.3.3
-tekram
-fo
-%
-•
-dednapxE
-�4
-stcudorp
-IA
-derutcafunam
-rof
-tekram
-eht
-poleveD
-3�3
-rof
-noitartenep
-lacol
-rof
-stekram
-eht
-taht
-erusne
-ot
-snoitalugeR
-tnemerucorP
-cilbuP
-weiveR
-3�3�3
-snoitulos
-IA
-lacol
-ni
-snoitulos
-IA
-lacol
-snoitulos
-IA
-IA
-depoleved
-yllacol
-fo
-tnemerucorp
-eht
-sesitiroirp
-tnemnrevoG
-ayneK
-stcudorp
-lacol
-fo
-rebmuN
-•
-snoitavonni
-dna
-tnempoleved
-ledom
-IA
-egde
-ezivitnecnI
-4.3.3
-snoitulos
-IA
-yllaicremmoc
-deyolped
-wen
-fo
-rebmuN
-•
-sbuh
-noitavonni
-IA
-evitaroballoc
-etaerC
-1�4�3
-dna
-lacol(
-serih
-weN
-�5
-IA
-wen
-rof
-seitinutroppo
-noitarelecca
-dna
-noitabucni
-etaerC
-2�4�3
-gnilbane
-na
-etaerC
-4�3
-)slanoitanretni
-tnemyolpme
-sputrats
-IA
-lacol
-rof
-tnemnorivne
-eht
-troppus
-taht
-IA
-ni
-seitinutroppo
-dna
-trats
-ot
-seinapmoc
-tnempoleved
-IA
-dna
-tnempoleved
-secruoser
-edivorp
-ot
-sputrats
-rof
-tikloot
-ecruoser
-IA
-na
-poleveD
-3�4�3
-elacs
-tnemyolped
-dna
-tnemyolped
-,atad
-cilbup
-ot
-ssecca
-,sertnec
-atad
-ot
-ssecca
-.g.e(
-smroftalp
-enilno
-no
-ssecorp
-)sputrats
-IA
-005
-ot
-sloot
-tnempoleved
-dna
-stiderc
-duolc
-eerf
-ygetartS
-IA
-ayneK
-/
-57
-tnempoleveD
-tnelaT
-�4
-ayneK
-rof
-srekrow
-IA
-eliga
-dna
-tnetepmoc
-fo
-enilepip
-tsubor
-a
-dliuB
-:4
-laoG
-srekrow
-IA
-eliga
-dna
-tnetepmoc
-fo
-enilepip
-tsuboR
-:4
-emoctuO
-etamitlU
-tnempoleved
-tnelaT
-:7.5
-elbaT
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-rof
-ssenerawa
-slliks
-lanoitadnuof
-dna
-ssenerawa
-IA
-na
-poleveD
-1�1�4
-fo
-rebmuN
-•
-IA
-etargetnI
-1�4
-sloohcs
-htiw
-sloohcs
-decnahnE
-�1
-ecneics
-atad
-dna
-IA
-lanoitadnuof
-atad
-dna
-IA
-lanoitadnuof
-sloohcs
-ni
-alucirruc
-slliks
-lanoitadnuof
-dna
-ssenerawa
-IA
-eht
-tuo
-lloR
-2�1�4
-otni
-noitacude
-slliks
-atad
-dna
-slliks
-ta
-alucirruc
-loohcs
-margorp
-sreniart
-IA
-rof
-margorp
-gniniarT
-sa
-tnemelpmi
-dna
-poleveD
-3�1�4
-gniniart
-slevel
-lla
-slevel
-tnereffid
-ssorca
-noitacude
-yraitret
-ni
-IA
-no
-sesruoc
-nommoc
-tnemelpmi
-dna
-poleveD
-1�2�4
-gniniart
-desilaiceps
-ytilauq
-nevird-metsysoce
-tnemelpmi
-dna
-ngiseD
-2�2�4
-enilepip
-tnelat
-IA
-�2
-sdeen
-yrtsudni
-teem
-ot
-tnelat
-atad/IA
-lacol
-erutrun
-taht
-smargorp
-hguorht
-dehsilbatse
-margorp
-)TOT
-IA(
-sreniart
-fo
-gniniart
-IA
-na
-tnemelpmi
-dna
-poleveD
-3.2.4
-IA
-poleveD
-2�4
-fo
-rebmuN
-•
-gniniart
-detegrat
-teem
-ot
-tnelat
-htiw
-elpoep
-no
-desucof
-smargorp
-tnelat
-IA
-fo
-tnempoleved
-eht
-ezivitnecnI
-4.2.4
-sdnamed
-gnigreme
-slliks
-IA
-peeD
-lacinhcet
-gnigreme
-tnemecalp
-dna
-tnempoleved
-tnelat
-IA
-rof
-spihsrentrap
-etaerC
-5�2�4
-metsysoce
-IA
-eht
-fo
-yrtsudni
-dna
-slliks
-desilaiceps
-rof
-refsnart
-slliks
-dna
-egdelwonk
-rof
-ycilop
-a
-etaerC
-6�2�4
-stnemeriuqer
-stcejorp
-IA
-xelpmoc
-gnitnemelpmi
-ni
-slliks
-spag
-dna
-ecnaveler
-rof
-tnelat
-IA
-paM
-7
-2�4
-ygetartS
-IA
-ayneK
-/ 67
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-tnempoleved
-reerac
-dna
-pihsecitnerppa
-,pihsrotnem
-a
-etaerC
-1�3�4
-htworg
-derised
-erusne
-ot
-margorp
-tnemecalp
-evitceffE
-�3
-fo
-rebmuN
-•
-eht
-dna
-)PTDP(
-margorP
-tnelaT
-latigiD
-laitnediserP
-eht
-ecnahnE
-2.3.4
-hguorht
-detaerc
-stsilaiceps
-IA
-IA
-ni
-noitasilaiceps
-rof
-wolla
-ot
-)PISP(
-margorP
-pihsnretnI
-ecivreS
-cilbuP
-etaerC
-3�4
-spihsrentrap
-yrtsudni
-ni
-deyolpme
-scitylanA
-ataD
-dna
-IA
-rof
-spihsrentrap
-deniart
-hctam
-ot
-IA
-lacol
-eht
-tnempoleved
-tnelat
-htiw
-stsilaiceps
-IA
-yllanoiger
-sertnec
-hcraeser
-dna
-sbuh
-noitavonni
-gnitsixe
-htiw
-rentraP
-3�3�4
-metsysoce
-tnemecalp
-dna
-tnemyolpme
-tnaveler
-IA
-ni
-seitinutroppo
-etaudargtsop
-ot
-ssecca
-ecnahne
-ot
-yllabolg
-dna
-seitinutroppo
-tnempoleved
-tnelat
-ni
-sPPP
-tnemelpmI
-4�3�4
-fo
-rebmuN
-•
-ot
-margorp
-noitisiuqca
-tnelat
-IA
-lanoitan
-a
-tnemelpmi
-dna
-poleveD
-1�4�4
-IA
-ngierof
-yticapac
-IA
-desaercnI
-�4
-spag
-llfi
-ytilauq
-eriuqcA
-4�4
-slanoisseforp
-ayneK
-ni
-tnelat
-IA
-esitiroirp
-ot
-sasiv
-krow
-gnidrager
-ycilop
-ngierof
-weiveR
-2�4�4
-tnelat
-IA
-ngierof
-deriuqca
-noitisiuqca
-ygetartS
-IA
-ayneK
-/
-77
-ecnanrevoG
-�5
-IA
-rof
-krowemarf
-lagel
-elbatpada
-dna
-ecnanrevog
-eliga
-na
-hsilbatsE
-:5
-laoG
-IA
-rof
-krowemarf
-lagel
-elbatpada
-dna
-ecnanrevog
-eligA
-:5
-emoctuO
-etamitlU
-ecnanrevoG
-:5.5
-elbaT
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-seicilop
-fo
-rebmuN
-•
-dehsilbatsE
-�1
-poleveD
-1�5
-taht
-detnemelpmi
-dna
-evisneherpmoc
-desinomrah
-a
-ycilop
-seigolonhcet
-gnigreme
-dna
-IA
-lanoitan
-a
-poleveD
-1�1�5
-desinomrah
-a
-mrof
-krowemarf
-ycilop
-tnerehoc
-ycilop
-lanoitan
-ygetarts
-IA
-eht
-htiw
-sngila
-taht
-IA
-rof
-krowemarf
-tnemngila
-swolla
-taht
-rof
-krowemarf
-ycilop
-ytirucesrebyc
-lanoitan
-a
-poleveD
-2�1�5
-gnigreme
-rehto
-dna
-IA
-lanoitan
-ssorca
-gnigreme
-dna
-IA
-seigolonhcet
-seitiroirp
-cigetarts
-seigolonhcet
-IA
-ni
-sdradnats
-ytefas
-dna
-lacihte
-lacol
-poleveD
-1�2�5
-poleveD
-2�5
-ksir
-decnahnE
-�2
-tnemyolped
-dna
-tnempoleved
-ytefas
-dna
-ksir
-lacihte
-fo
-rebmuN
-•
-sdradnats
-ytefas
-dna
-skrowemarf
-dradnats
-ytefas
-dna
-hguorht
-sdradnats
-ytefas
-dna
-lacihte
-IA
-tnemelpmI
-2�2�5
-IA
-yhtrowtsurt
-rof
-IA
-nrevog
-ot
-dna
-seicilop
-lacinhcet
-dna
-stidua
-ytefas/semehcs
-tnemssessa
-ytimrofnoc
-dna
-tnempoleved
-tnempoleved
-detpoda
-snoitaluger
-snoitaluger/snoitacfiiceps
-tnemyolpme
-tnemyolped
-dna
-etutitsni
-ytefas
-dna
-ksir
-IA
-lanoitan
-a
-poleveD
-3�2�5
-)lacinhcet(
-ygetartS
-IA
-ayneK
-/
-87
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-ruobal
-dna
-tnemyolpme(
-noitalsigel
-tnaveler
-weiveR
-1.3.5
-,semirc
-dna
-esusim
-retupmoc
-,ytreporp
-lautcelletni
-,snoitaler
-ygolonhcet
-gnigreme
-rehto
-dna
-IA
-fo
-sdnamed
-eht
-tcefler
-ot
-).cte
-rof
-swal
-ytirucesrebyc
-dna
-,xat
-,atad
-acirfA
-tsaE
-ezinomraH
-2.3.5
-ytimrofnoc
-decnahnE
-�3
-swal
-fo
-rebmuN
-•
-ecnahne
-ot
-dna
-refsnart
-atad
-redrob-ssorc
-tnailpmoc
-dna
-eruces
-dna
-esiveR
-3�5
-dna
-noitalsigel
-fo
-detcane
-dna
-deweiver
-IA
-ni
-ssenevititepmoc
-lagel
-eliga
-poleved
-teem
-ot
-snoitaluger
-fo
-txetnoc
-eht
-teem
-ot
-yrotaluger
-dna
-fo
-tnempoleved
-cimanyd
-IA
-rof
-krowemarf
-yrotaluger
-tfos
-a
-tnemelpmi
-ylevitcaorP
-3�3�5
-gnigreme
-rehto
-dna
-IA
-teem
-ot
-skrowemarf
-gnigreme
-rehto
-dna
-IA
-ygolonhcet
-gnigremE
-rehtO
-dna
-IA
-na
-poleved
-,ayneK
-ni
-serutam
-IA
-sA
-4�3�5
-IA
-fo
-sdnamed
-eht
-seigolonhcet
-snoitaluger
-dna
-tcA
-seigolonhceT
-yrotaluger
-gnisu
-tnemnorivne
-yrotaluger
-elbixefl
-a
-poleveD
-5.3.5
-yrotaluger
-IA
-na
-fo
-tnempoleved
-eht
-mrofni
-ot
-sexobdnas
-sdradnats
-dna
-krowemarf
--eulav
-fo
-rebmuN
-•
-ycamolpid
-hcet
-gnigreme
-dna
-IA
-na
-tnemelpmi
-dna
-poleveD
-1�4�5
--ssorc
-detanidrooC
-�4
-spihsrentrap
-gnidda
-margorp
-ecnanrevog
-redrob
-eusruP
-4�5
-snoitaroballoc
-dna
-erahs
-ot
-noitarepooc
-lanoitanretni
-dna
-lanoiger
-etomorP
-2�4�5
-gnisserdda
-rof
-sehcaorppa
-evitaroballoc
-dna
-lanoiger
-htiw
-segnellahc
-IA
-no
-etaroballoc
-dna
-sdradnats
-IA
-ngila
-,egdelwonk
-dna
-segnellahc
-IA
--retni
-dna
--artni
-IA
-no
-seititne
-IA
-labolg
-IA
-labolg
-dna
-lanoiger
-ni
-noitapicitrap
-evitca
-s’ayneK
-gnirusne
-seitinutroppo
--non
-,tnemnrevog
-ecnanrevog
-metsysoce
-hcet
-gnigreme
-dna
-,latnemnrevog
-rotces-etavirp
-dna
-tnemnrevog
-fo
-rebmuN
-•
-cilbup
-decnahnE
-�5
-ecnanrevog
-IA
-taht
-smargorp
-IA
-del
-gnimmargorp
-dna
-gnikam
-ycilop
-IA
-ni
-noitapicitrap
-ecnahnE
-3�4�5
-IA
-fo
-ni-yub
-dna
-troppus
-sehcaorppa
-fo
-ni-yub
-cilbup
-tegrat
-sremusnoc
-dna
-srepoleved
-,cilbup
-eht
-edulcni
-ot
-sessecorp
-smargorp
-dna
-seicilop
-smargorp
-dna
-seicilop
-ygetartS
-IA
-ayneK
-/
-97
-stnemtsevnI
-�6
-IA
-ni
-stnemtsevni
-etavirp
-dna
-cilbup
-etarelecca
-yllacigetartS
-:6
-laoG
-IA
-ni
-stnemtsevni
-desaercnI
-:6
-emoctuO
-etamitlU
-stnemtsevnI
-:7.5
-elbaT
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-snoitulos
-hcet
-dna
-IA
-desilacol
-ni
-tnemtsevni
-ecnavda
-ot
-sPPP
-no
-egareveL
-1�1�6
-)smrfi
-latipaC
-erutneV
-htiw
-gnirentrap
-rotces
-etavirp
-dna
-cilbup
-.g.e(
-ezivitnecnI
-1.6
-etavirp
-fo
-tnuomA
-•
-desaercnI
-�1
-elbaruovaf
-a
-etaerc
-ot
-skrowemarf
-yrotaluger
-dna
-ycilop
-IA
-etadpu
-dna
-weiveR
-2�1�6
-stnemtsevni
-stnemtsevni
-rotces
-stnemtsevni
-tnempoleved
-IA
-rof
-tnemnorivne
-tnemtsevni
-morf
-IA
-ni
-del-tnemnrevog
-ni
-IA
-eht
-ni
-lanoitanretni
-dna
-lacol
-dna
-,stekram
-latipac
-cilbup
-,sdnuf
-noisnep
-ezivitnecnI
-3.1.6
-dna
-lacol
-htob
-$SU(
-sevitaitini
-IA
-metsysoce
-metsysoce
-noitavonni
-dna
-D&R
-IA
-lacol
-eht
-ni tsevni
-ot
-rotces
-etavirp
-etavirp
-ngierof
-)m
-srotsevni
-tsael
-ta
-niart
-ot
-margorp
-noitacude
-rotsevni
-na
-sPPP
-hguorht
-tnemelpmI
-4�1�6
-snoitulos
-IA
-ni
-gnitsevni
-dna
-gnitaulave
-no
-srotsevni
-laitnetop
-000,1
-lanoitaN
-fo
-%
-•
-tneiro-eR
-2�6
-desaercnI
-�2
-dnuF
-hcraeseR
-ecruoser
-cilbup
-tnemnrevog
-fo
-%2
-D&R
-eht
-morf(
-dnuf
-noitavonni
-hcet
-gnigreme
-dna
-IA lanoitan
-a
-etaerC
-1.2.6
-eht
-ot
-detacolla
-noitacolla
-gnidnuf
-tnempoleved
-IA
-ni
-troppus
-laicnanfi
-dna
-stnarg
-edivorp
-ot
-)FRN
-ni
-PDG
-metsysoce
-IA
-lacol
-esitiroirp
-ot
-IA
-ot
-noitacolla
-)sZES(
-senoZ
-cimonocE
-laicepS
-IA
-etaerC
-2.2.6
-IA
-fo
-rebmuN
-•
-ni
-stnemtsevni
-tnempoleved
-sZES
-ni
-sputrats
-IA
-otni
-IDF
-fo
-tnuomA
-•
-noitisoP
-3�6
-cimonoce
-hcet
-IA
-desaercnI
-�3
-IA
-rof
-noitanitsed
-tnemtsevni
-na sa
-ayneK
-tekraM
-1�3�6
-na
-sa
-ayneK
-)$SU(
-senoz
-tcerid
-ngierof
-,sputrats
-hcet
-lufsseccus
-05
-tsael
-ta
-esacwohs
-ot
-seirots
-sseccus
-etomorP
-2�3�6
-tnemtsevni
-sseccus
-fo
-rebmuN
-•
-)IDF(
-tnemtsevni
-rotces
-IA
-eht ni
-tnemtsevni
-gniripsni
-rof
-noitanitsed
-IA
-fo
-seirots
-IA
-rof
-IA
-tnemtsevni
-ygetartS
-IA
-ayneK
-/ 08
-noisulcnI
-dna
-,ytiuqE
-,scihtE
-�7
-tnemyolped
-dna
-tnempoleved
-IA
-evisulcni
-dna
-,elbatiuqe
-,lacihte
-fo
-erutluc
-a
-retsoF
-:7
-laoG
-snoitulos
-IA
-fo
-ssenevisulcni
-dna
-,ssenelbatiuqe
-,ssenlacihte
-decnahnE
-:7
-emoctuO
-etamitlU
-noisulcni
-dna
-,ytiuqe
-,scihtE
-:8.5
-elbaT
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-IA
-rof
-ssecorp
-tnemssessa
-tcapmi
-lacihte
-yrotadnam
-a
-hsilbatsE
-1�1�7
-rotces
-cilbup
-rof
-seigolonhcet
-detroper
-ni
-noitcudeR
-•
-IA
-rotces
-cilbup
-elbatnuocca
-rof
-senilediug
-poleved
-dna
-etadpU
-2�1�7
-etomorP
-1�7
-stnedicni
-fo
-�oN
-eroM
-�1
-tnemyolped
-dna
-tnemerucorp
-,lacihte
-ro
-efasnu
-gnivlovni
-,cirtnecnamuh
-IA
-lacihte
-no
-stnemeriuqer
-dna
-sdradnats
-cfiiceps-rotces
-poleveD
-3.1.7
-elbisnopser
-sruoivaheb
-IA
-lufmrah
-dna
-refas
-dna
-seulav
-lanoitan
-eht
-ot
-dengila
-era
-taht
-tnemyolped
-dna
-tnempoleved
-IA
-evisulcni
-dna
-atad
-sa
-hcus(
-IA
-evisulcni
-spuorg
-elbarenluv
-sedulcni
-dna
-tnempoleved
-ycavirp
-,sehcaerb
-snoitulos
-tnemyolped
-).cte
-,snoitaloiv
-ot
-snezitic
-rof
-msinahcem
-sserder
-dna
-stnialpmoc
-a
-poleveD
-4.1.7
-/
-ecitsuJ
-evitartsinimdA
-no
-noissimmoC
-,.g.e(
-snrecnoc
-detaler-IA
-troper
-)namsdubmO
-ygetartS
-IA
-ayneK
-/
-18
-etaidemretnI
-sIPK
-stcejorP
-pihsgalF
-evitcejbO
-semoctuO
-sserdda
-taht
-seicilop
-noitacfiissalc
-dna
-gnillebal
-atad
-tnemelpmI
-1.2.7
-fo
-%
-desaercnI
-•
-saib
-evitatneserper
-stesatad
-desaercnI
-�2
-selpicnirp
-lacihte
-,sthgir
-IA
-enfied
-dna
-krowemarf
-lacihte
-na
-poleveD
-2.2.7
-noitapicitrap
-snoitaredisnoc
-dna
-etomorP
-2�7
-ylsuoiverp
-fo
-dna
-ytivisulcni
-niahc
-eulav
-atad
-eht
-ni
-ytivisulcni
-daehraeps
-dna
-rosnopS
-3�2�7
-IA
-lacihte
-fo
-rebmuN
-•
-dezilanigram
-ni
-seulav
-lanoitan
-sesac-esu
-nihtiw
-spuorg
-tseb
-dna
-sesac-esu
-IA
-lacihte
-fo
-yrotisoper
-cilbup
-a
-niatniaM
-4�2�7
-tnempoleved
-IA
-nemow
-fo
-%
-•
-IA
-lacol
-eht
-yrtnuoc
-eht
-ni
-IA
-fo
-tnemyolped
-dna
-tnempoleved
-ediug
-ot
-secitcarp
-tnemyolped
-dna
-IA
-ni
-detneserper
-metsysoce
-redneg
-gnidulcni
-IA
-ni
-ytivisulcni
-rof
-krowemarf
-a
-tnemelpmI
-5�2�7
-dna
-sDWP
-fo
-%
-•
-)sDWP(
-seitilibasid
-htiw
-snosrep
-fo
-noitatneserper
-dna
-gnimaertsniam
-detneserperrednu
-spuorg
-detneserperrednu
-rehto
-dna
-IA
-ni
-spuorg
-,noitamrofnisid
-,sthgir
-IA
-no
-ngiapmac
-ssenerawa
-cilbup
-a
-hcnuaL
-1�3�7
-desaercnI
-�3
-eht
-gnisacwohs
-elihw
-tnempoleved
-efas
-dna
-noitcetorp
-,noitamrofnisim
-cilbup
-fo
-esaercni
-%
-•
-ecnahnE
-3�7
-lanoitadnuof
-IA
-fo
-stfieneb
-IA
-fo
-ssenerawa
-ycaretil
-IA
-cilbup
-IA
-fo
-ssenerawa
-evisulcni
-dna
-elbatiuqe
-,lacihte
-no
-seeyolpme
-tnemnrevog
-etacudE
-2�3�7
-IA
-ygetartS
-IA
-ayneK
-/
-28
-5�3� Priority Use Case
-The Kenyan government and ecosystem consideration: a maternal health chatbot in
-stakeholders have identified several high- local dialects to provide accurate pregnancy
-priority use cases across key sectors and childbirth information, and an expanded
-aligned with Kenya’s Bottom-up Economic disease advisory system building on existing
-Transformation Agenda and corresponding platforms� The education sector has prioritised
-pillars in Kenya’s Vision 2030� The key intelligent tutoring systems and multilingual
-sectors prioritised for this strategy include teacher training modules to improve access
-healthcare; education; agriculture; public and quality of instruction� For agriculture,
-service delivery; security; micro-, small and emerging use cases include translating
-medium-sized enterprises; the creative existing data into farmer-friendly audio
-sector; and sustainability� Use cases for formats in local languages and developing AI-
-these sectors will be prioritised based on their powered fertilizer recommendation systems.
-feasibility, potential impact, and alignment Public-sector use cases include multilingual
-with existing data availability and strategic chatbots and virtual assistants to improve
-goals and objectives� service delivery, while the creative sector
-could benefit from an AI-powered national
+
+
+69 / Kenya AI Strategy
+
+• % of public sector
+data centre compute
+capacity integrated
+into the AI HPC cluster
+
+3. Increased local
+compute power
+4. Enhance capacity for
+training models at a local
+infrastructure level
+
+• Number of local data
+centres meeting the
+TIA 942s standard
+(ANSI standard) /
+(GPUs)
+
+1.1.2 Build robust edge computing capabilities to support AI
+research, development, and deployment
+
+1.2.1 Build three TIA 942 (ANSI standard) AI-capable data
+centres within 5 years
+
+• Number of devices
+that can run AI
+models on the edge
+infrastructure
+
+2. Increased
+penetration of Edge AI
+contextualised devices
+
+1.1 Invest in
+the setup and
+expansion of
+AI-ready digital
+infrastructure
+across the country
+
+1.2 Enhance High
+Performance
+Computing (HPC)
+clusters
+
+• % national broadband
+connectivity coverage
+
+1. Increased and
+uninterrupted access
+and coverage of
+broadband connectivity
+
+1.1.1 Implement a National Broadband Expansion Program
+(high-speed internet, 5G networks, etc.)
+
+KPIs
+
+Intermediate
+Outcomes
+
+Flagship Projects
+
+Objective
+
+Table 5.2: AI digital infrastructure
+
+Ultimate Outcome 1: High-capacity digital infrastructure for AI access and development
+
+Goal 1: Modernise the national digital infrastructure for AI access and development
+
+1. AI Digital Infrastructure
+
+
+• Number of
+semiconductors
+manufactured
+• Number of
+semiconductors
+exported
+• Number of new jobs in
+technology assembly
+and manufacturing
+
+7. Increased availability
+of semiconductors for
+use locally
+8. Export
+semiconductors
+regionally and
+continentally
+9. New jobs from
+technology assembly
+and manufacturing
+
+1.4.1 Establish more local device assembly centres
+
+70 / Kenya AI Strategy
+
+1.4.3 Leverage on AfCTA and regional regulatory frameworks
+and incentives for regional trade to support the manufacturing
+sector
+
+1.4.2 Establish a national semiconductor manufacturing facility
+to produce AI-specific chips domestically within five years
+
+• Decrease in average
+cost of a computing
+device
+
+6. Reduced cost of smart
+devices utilised in the AI
+lifecycle
+
+1.4 Develop
+domestic
+manufacturing
+facilities for AIspecific hardware,
+such as specialised
+chips and
+semiconductors, to
+reduce reliance on
+foreign technology
+providers
+
+• % of green energy
+powering data centres
+
+5. Increased %
+contribution of green
+energy powering AI
+infrastructure.
+
+1.3.1 Review power supply to digital infrastructure and enhance
+the ratio of green energy
+
+KPIs
+
+1.3 Increase the
+supply and use
+of green energy
+sources to power
+AI infrastructure,
+ensuring
+sustainability
+and reducing
+environmental
+impact
+
+Intermediate
+Outcomes
+
+Flagship Projects
+
+Objective
+
+
+1.5 Establish
+robust national
+cybersecurity
+infrastructure
+
+71 / Kenya AI Strategy
+
+1.6 Forge
+partnerships and
+11. Implemented publiccollaborations to
+1.6.2 Create collaborations between the government and the
+private partnership (PPP)
+develop and improve private sector to ensure that AI technology supply chains remain
+projects
+AI hardware and
+robust and innovative
+software
+1.6.3 Create partnerships with global tech companies to combat
+AI threats emerging from misinformation and disinformation
+
+1.6.1 Create partnerships with other countries and global tech
+companies for knowledge transfer and development of digital
+infrastructure development for AI
+
+1.5.1 Establish a multi-stakeholder task force within the
+10. Enhanced national
+proposed National Cybersecurity Operation Centre framework
+information security
+to respond to AI-specific emerging threats
+through advanced AI1.5.2 Implement advanced AI-specific threat detection and specific threat detection
+response systems across critical sectors
+and response systems
+across critical sectors
+
+Intermediate
+Outcomes
+
+Flagship Projects
+
+Objective
+
+• 2 PPP projects in the
+next 5 years
+
+• 100% pass rate
+on cybersecurity
+audits and effective
+resolutions of detected
+threats
+
+KPIs
+
+
+72 / Kenya AI Strategy
+
+2.1 Create a robust
+and responsive
+data governance
+framework
+
+Objective
+
+Table 5.3: Data
+
+2.1.5 Classify, categorise and regulate access to data collected
+within Kenya and from Kenyans
+
+2.1.4 Enhance data residency requirements and ensure
+compliance with national data laws and regulations regarding
+data handling and storage
+
+2.1.3 Establish an AI-task force within the proposed Data
+Governance Office Coordination Committee with representation
+from key data actors in selected in MCDAs, counties (CoG),
+private sector and civil society representatives, a Data
+Governance Office in the Ministry, and Data Officers
+
+2.1.2 Create a legal sharing framework for all stakeholders to
+share data with appropriate incentives
+
+2.1.1 Develop a national data policy and strategy informed by
+best practices
+
+Flagship Projects
+
+1. Enhanced assessment
+of data sovereignty
+
+Intermediate
+Outcomes
+
+Ultimate Outcome 2: Enhanced dataset quality, usability, shareability, and sovereignty
+
+Goal 2: Establish a robust and sustainable data ecosystem for AI and innovation
+
+2. Data
+
+• % compliance with
+national data laws and
+regulations
+
+• % of locally produced
+data meeting
+the standards of
+sovereignty
+
+• % reduction in data
+silos in the public
+sector
+
+• Comprehensive
+national data policy
+and strategy adopted
+
+KPIs
+
+
+73 / Kenya AI Strategy
+
+2.3 Incentivize the
+creation of open
+high quality AI
+training datasets
+
+2.2 Develop and
+implement secure
+data sharing, data
+access and data
+interoperability
+protocols
+
+Objective
+
+2.3.2 Create local data labs with clean, validated, and integrated
+datasets for access by researchers and AI model developers
+
+2.3.1 Design and implement national data quality standards and
+protocols for data collection, cleaning, validation, and integration
+across sectors
+
+2.2.4 Develop and implement secure data access frameworks
+that use encryption and authentication to safeguard sensitive
+data while allowing for wider accessibility
+
+2.2.3 Implement data initiatives (within guardrails/frameworks
+to prevent misuse and restricted national access and controlled
+cross border data flows)
+
+2.2.2. In compliance with relevant laws, incentivize data sharing
+and collaboration among stakeholders, including private sector,
+research institutions, government agencies, and civil society
+organisations
+
+2.2.1 Create comprehensive national standards and protocols
+for data and metadata to ensure consistency and facilitate
+seamless data integration and exchange across government
+ministries, departments, and agencies (MDAs) as well as the
+private sector
+
+Flagship Projects
+
+3. Enhanced access to
+quality datasets for AI
+training
+
+2. Increased data
+sharing and access
+
+Intermediate
+Outcomes
+
+• Number of local data
+labs for AI training
+datasets
+
+• % of usable datasets
+for AI models training
+
+• Number of formal data
+sharing agreements
+between institutions
+
+• Number of local
+datasets openly
+shared in compliance
+with national laws and
+policies
+
+KPIs
+
+
+74 / Kenya AI Strategy
+
+3.2 Launch and implement
+an AI Innovators Program
+that fosters a robust
+innovation ecosystem
+for cutting-edge AI
+model development and
+experimentation
+
+3.1 Enhance and expand
+AI research capabilities
+at universities, TVETs,
+research centres, and
+innovation hubs across
+Kenya
+
+Objective
+
+3.2.5 Prioritise the development of AI models that solve pressing social
+problems and are inclusive, focusing on edge and small AI models
+
+3.2.4 Develop and use local data sources for AI development ultimately
+building AI models tailored to priority local problems
+
+3.2.3 Upgrade tech hubs to provide mentorship and incubation
+services
+
+3.2.2 Enhance science parks and innovation districts to attract and
+support tech and AI companies and startups
+
+3.2.1 Position Kenya as a regional hub for localised AI model
+development
+
+3.1.4 Establish partnerships between academia, industry, and
+government to facilitate AI R&D, innovation and evaluation
+
+3.1.3 Engage the young workforce to advance research and
+development through research programs with more local innovation
+
+3.1.2 Establish AI research centres of excellence and innovation
+clusters across different regions
+
+3.1.1 Nurture R&D for public sector innovation
+
+Flagship Projects
+
+Table 5.3: AI R&D and innovation
+
+3. Increased local
+AI models
+
+2. Increased AI
+startups in the
+AI innovation
+ecosystem
+
+1. Accelerated
+local AI R&D
+and innovation
+capacity
+
+Intermediate
+Outcomes
+
+Ultimate Outcome 3: Increased contribution of AI businesses to GDP in priority sectors
+
+• Number of
+locally developed
+foundational AI
+models
+
+• Number of
+operational AI
+startups
+
+• Number of patents,
+trademarks
+and copyrights
+registered for AI
+
+• Number of
+published AI
+journal papers from
+local authors
+
+KPIs
+
+Goal 3: Drive the development of cutting-edge localised AI models and solutions through a thriving local R&D and
+innovation
+
+3. AI R&D and Innovation
+
+
+75 / Kenya AI Strategy
+
+3.4 Create an enabling
+environment for local AI
+companies to start and
+scale
+
+3.3 Develop the market for
+local AI solutions
+
+Objective
+
+3.4.3 Develop an AI resource toolkit for startups to provide resources
+on online platforms (e.g. access to data centres, access to public data,
+free cloud credits and development tools to 500 AI startups)
+
+3.4.2 Create incubation and acceleration opportunities for new AI
+startups
+
+3.4.1 Create collaborative AI innovation hubs
+
+3.3.4 Incentivize edge AI model development and innovations
+
+3.3.3 Review Public Procurement Regulations to ensure that the
+Government prioritises the procurement of locally developed AI
+products
+
+3.3.2 Incentivize local and regional markets to purchase locally
+manufactured AI products
+
+3.3.1 Promote adoption and commercialization of locally developed AI
+solutions by creating regional and global market access opportunities
+
+Flagship Projects
+
+5. New
+employment
+opportunities in AI
+development and
+deployment
+
+4. Expanded
+markets for local
+AI solutions
+
+Intermediate
+Outcomes
+
+• Number of new
+hires (local and
+internationals)
+that support the
+AI development
+and deployment
+process
+
+• Number of local
+AI solutions
+commercially
+deployed
+
+• % of market
+penetration for
+local AI solutions in
+Kenya
+
+• % of general
+population using
+local AI solutions
+versus external
+solutions
+
+KPIs
+
+
+76 / Kenya AI Strategy
+
+4.2 Develop AI
+talent to meet
+emerging demands
+of the AI ecosystem
+
+4.1.1 Develop an AI awareness and foundational skills awareness for
+schools
+
+4.1 Integrate AI
+and data science
+education into
+school curricula at
+all levels
+
+4.2 7 Map AI talent for relevance and gaps
+
+4.2.6 Create a policy for knowledge and skills transfer for specialised
+skills in implementing complex AI projects
+
+4.2.5 Create partnerships for AI talent development and placement
+
+4.2.4 Incentivize the development of AI talent
+
+4.2.3 Develop and implement an AI training of trainers (AI TOT) program
+
+4.2.2 Design and implement ecosystem-driven quality specialised training
+programs that nurture local AI/data talent to meet industry needs
+
+4.2.1 Develop and implement common courses on AI in tertiary education
+
+4.1.3 Develop and implement as Training program for AI trainers program
+across different levels
+
+4.1.2 Roll out the AI awareness and foundational skills curricula in schools
+
+Flagship Projects
+
+Objective
+
+Table 5.7: Talent development
+
+Ultimate Outcome 4: Robust pipeline of competent and agile AI workers
+
+Goal 4: Build a robust pipeline of competent and agile AI workers for Kenya
+
+4. Talent Development
+
+2. AI talent pipeline
+established through
+targeted training
+programs focused on
+emerging technical
+skills and industry
+requirements
+
+1. Enhanced
+foundational AI and data
+skills
+
+Intermediate
+Outcomes
+
+• Number of
+people with
+Deep AI skills
+
+• Number of
+schools with
+foundational AI
+and data skills
+training
+
+KPIs
+
+
+77 / Kenya AI Strategy
+
+4.4 Acquire quality
+foreign AI talent
+
+4.3 Create
+partnerships for AI
+talent development
+and placement
+
+Objective
+
+4.4.2 Review foreign policy regarding work visas to prioritise AI talent
+acquisition
+
+4.4.1 Develop and implement a national AI talent acquisition program to
+fill gaps
+
+4.3.4 Implement PPPs in talent development
+
+4.3.3 Partner with existing innovation hubs and research centres regionally
+and globally to enhance access to postgraduate opportunities in AI
+
+4.3.2 Enhance the Presidential Digital Talent Program (PDTP) and the
+Public Service Internship Program (PSIP) to allow for specialisation in AI
+and Data Analytics
+
+4.3.1 Create a mentorship, apprenticeship and career development
+program to ensure desired growth
+
+Flagship Projects
+
+4. Increased AI capacity
+in Kenya
+
+3. Effective placement
+created through
+industry partnerships
+to match trained
+AI specialists with
+relevant employment
+opportunities
+
+Intermediate
+Outcomes
+
+• Number of
+foreign AI
+professionals
+acquired
+
+• Number of
+AI specialists
+employed in
+the local AI
+ecosystem
+
+KPIs
+
+
+78 / Kenya AI Strategy
+
+5.2 Develop
+risk and safety
+frameworks
+to govern AI
+development
+and deployment
+(technical)
+
+5.1 Develop
+a harmonised
+national policy
+framework for
+AI and emerging
+technologies
+
+Objective
+
+Table 5.5: Governance
+
+5.2.3 Develop a national AI risk and safety institute
+
+5.2.2 Implement AI ethical and safety standards through
+conformity assessment schemes/safety audits and technical
+specifications/regulations
+
+5.2.1 Develop local ethical and safety standards in AI
+development and deployment
+
+5.1.2 Develop a national cybersecurity policy
+
+5.1.1 Develop a national AI and emerging technologies policy
+that aligns with the AI strategy
+
+Flagship Projects
+
+2. Enhanced risk
+and safety standards
+for trustworthy AI
+development and
+employment
+
+1. Established
+comprehensive and
+coherent policy framework
+that allows alignment
+across national AI
+strategic priorities
+
+Intermediate
+Outcomes
+
+Ultimate Outcome 5: Agile governance and adaptable legal framework for AI
+
+Goal 5: Establish an agile governance and adaptable legal framework for AI
+
+5. Governance
+
+• Number of ethical
+and safety standard
+policies and
+regulations adopted
+
+• Number of policies
+implemented that
+form a harmonised
+framework for AI
+and other emerging
+technologies
+
+KPIs
+
+
+79 / Kenya AI Strategy
+
+5.4 Pursue
+collaborative
+intra- and intergovernment, nongovernmental,
+and private-sector
+AI governance
+approaches
+
+5.3 Revise and
+develop agile legal
+and regulatory
+frameworks to meet
+the demands of AI
+
+Objective
+
+Intermediate
+Outcomes
+
+• Number of valueadding partnerships
+and collaborations
+with regional and
+global AI entities on AI
+governance
+• Number of government
+led AI programs that
+target public buy-in of
+policies and programs
+
+5. Enhanced public
+5.4.3 Enhance participation in AI policy making and programming
+support and buy-in of AI
+processes to include the public, developers and consumers
+policies and programs
+
+• Number of laws
+reviewed and enacted
+to meet the context of
+AI and other emerging
+technology
+
+KPIs
+
+5.4.1 Develop and implement an AI and emerging tech diplomacy
+4. Coordinated crossprogram
+border governance
+5.4.2 Promote regional and international cooperation to share approaches for addressing
+knowledge, align AI standards and collaborate on AI challenges AI challenges and
+ensuring Kenya’s active participation in regional and global AI opportunities
+and emerging tech ecosystem
+
+5.3.5 Develop a flexible regulatory environment using regulatory
+sandboxes to inform the development of an AI regulatory
+framework and standards
+
+5.3.2 Harmonize East Africa data, tax, and cybersecurity laws for
+3. Enhanced conformity
+secure and compliant cross-border data transfer and to enhance
+of legislation and
+competitiveness in AI
+regulations to meet
+5.3.3 Proactively implement a soft regulatory framework for AI
+dynamic development of
+AI and other emerging
+5.3.4 As AI matures in Kenya, develop an AI and Other Emerging
+technologies
+Technologies Act and regulations
+
+5.3.1 Review relevant legislation (employment and labour
+relations, intellectual property, computer misuse and crimes,
+etc.) to reflect the demands of AI and other emerging technology
+
+Flagship Projects
+
+
+6.3.2 Promote success stories to showcase at least 50 successful tech startups,
+inspiring investment in the AI sector
+
+6.3.1 Market Kenya as an investment destination for AI
+
+6.2.2 Create AI Special Economic Zones (SEZs)
+
+6.2.1 Create a national AI and emerging tech innovation fund (from the R&D 2% of
+GDP in NRF) to provide grants and financial support in AI development
+
+6.1.4 Implement through PPPs an investor education program to train at least
+1,000 potential investors on evaluating and investing in AI solutions
+
+6.1.3 Incentivize pension funds, public capital markets, and local and international
+private sector to invest in the local AI R&D and innovation ecosystem
+
+6.1.2 Review and update AI policy and regulatory frameworks to create a favourable
+investment environment for AI development
+
+6.1.1 Leverage on PPPs to advance investment in localised AI and tech solutions
+(e.g. public and private sector partnering with Venture Capital firms)
+
+Flagship Projects
+
+80 / Kenya AI Strategy
+
+6.3 Position
+Kenya as an
+investment
+destination for
+AI
+
+6.2 Re-orient
+public resource
+allocation
+to prioritise
+investments in
+AI
+
+6.1 Incentivize
+investments
+in AI from
+both local and
+foreign private
+investors
+
+Objective
+
+Table 5.7: Investments
+
+Ultimate Outcome 6: Increased investments in AI
+
+Goal 6: Strategically accelerate public and private investments in AI
+
+6. Investments
+
+3. Increased
+foreign direct
+investment (FDI)
+for AI
+
+2. Increased
+government
+funding
+allocation to AI
+development
+
+1. Increased
+investments
+in the AI
+ecosystem
+
+Intermediate
+Outcomes
+
+• Number of success
+stories of AI
+investment
+
+• Amount of FDI into
+AI tech economic
+zones (US$)
+
+• Number of AI
+startups in SEZs
+
+• % of National
+Research Fund
+allocated to the
+local AI ecosystem
+
+• Amount of private
+sector investments
+in government-led
+AI initiatives (US$
+m)
+
+KPIs
+
+
+81 / Kenya AI Strategy
+
+7.1 Promote
+ethical,
+responsible
+and inclusive AI
+development and
+deployment
+
+Objective
+
+7.1.4 Develop a complaints and redress mechanism for citizens to
+report AI-related concerns (e.g., Commission on Administrative Justice /
+Ombudsman)
+
+7.1.3 Develop sector-specific standards and requirements on ethical AI
+development and deployment that are aligned to the national values and
+includes vulnerable groups
+
+7.1.2 Update and develop guidelines for accountable public sector AI
+procurement and deployment
+
+7.1.1 Establish a mandatory ethical impact assessment process for AI
+technologies for public sector
+
+Flagship Projects
+
+Table 5.8: Ethics, equity, and inclusion
+
+1. More
+humancentric,
+safer and
+inclusive AI
+solutions
+
+Intermediate
+Outcomes
+
+Ultimate Outcome 7: Enhanced ethicalness, equitableness, and inclusiveness of AI solutions
+
+Goal 7: Foster a culture of ethical, equitable, and inclusive AI development and deployment
+
+7. Ethics, Equity, and Inclusion
+
+• Reduction in reported
+No. of incidents
+involving unsafe or
+harmful AI behaviours
+(such as data
+breaches, privacy
+violations, etc.)
+
+KPIs
+
+
+82 / Kenya AI Strategy
+
+7.3 Enhance
+public AI literacy
+
+7.2 Promote
+inclusivity and
+national values in
+AI development
+and deployment
+
+Objective
+
+7.3.2 Educate government employees on ethical, equitable and inclusive
+AI
+
+7.3.1 Launch a public awareness campaign on AI rights, disinformation,
+misinformation, protection and safe development while showcasing the
+benefits of AI
+
+7.2.5 Implement a framework for inclusivity in AI including gender
+mainstreaming and representation of persons with disabilities (PWDs)
+and other underrepresented groups
+
+7.2.4 Maintain a public repository of ethical AI use-cases and best
+practices to guide development and deployment of AI in the country
+
+7.2.3 Sponsor and spearhead inclusivity in the data value chain
+
+7.2.2 Develop an ethical framework and define AI rights, ethical principles
+and considerations
+
+7.2.1 Implement data labelling and classification policies that address
+bias
+
+Flagship Projects
+
+3. Increased
+foundational
+awareness of AI
+
+2. Increased
+participation
+of previously
+marginalized
+groups within
+the local AI
+ecosystem
+
+Intermediate
+Outcomes
+
+• % increase of public
+awareness of AI
+
+• % of PWDs and
+underrepresented
+groups in AI
+
+• % of women
+represented in AI
+
+• Number of ethical AI
+use-cases
+
+• Increased % of
+representative
+datasets
+
+KPIs
+
+
+5.3. Priority Use Case
+The Kenyan government and ecosystem
+stakeholders have identified several highpriority use cases across key sectors
+aligned with Kenya’s Bottom-up Economic
+Transformation Agenda and corresponding
+pillars in Kenya’s Vision 2030. The key
+sectors prioritised for this strategy include
+healthcare; education; agriculture; public
+service delivery; security; micro-, small and
+medium-sized enterprises; the creative
+sector; and sustainability. Use cases for
+these sectors will be prioritised based on their
+feasibility, potential impact, and alignment
+with existing data availability and strategic
+goals and objectives.
 In this vein, the government has already
-digital creative platform to enhance market
 identified use cases within the AI ecosystem
-access and support local content creators�
 in the area of natural language processing
-involving large language models� In
+involving large language models. In
 healthcare, two critical use cases are under
+
 83 / Kenya AI Strategy
-5�4� Summary of Strategy
-Kenya’s AI strategy is summarised in Figure 5�1�
+
+consideration: a maternal health chatbot in
+local dialects to provide accurate pregnancy
+and childbirth information, and an expanded
+disease advisory system building on existing
+platforms. The education sector has prioritised
+intelligent tutoring systems and multilingual
+teacher training modules to improve access
+and quality of instruction. For agriculture,
+emerging use cases include translating
+existing data into farmer-friendly audio
+formats in local languages and developing AIpowered fertilizer recommendation systems.
+Public-sector use cases include multilingual
+chatbots and virtual assistants to improve
+service delivery, while the creative sector
+could benefit from an AI-powered national
+digital creative platform to enhance market
+access and support local content creators.
+
+
+5.4. Summary of Strategy
+Kenya’s AI strategy is summarised in Figure 5.1.
+
 Figure 5.1: Strategy House
+
 84 / Kenya AI Strategy
+
+
 ANNEXES
 Annex 1: Collaborators and Partners
 Technical Experts
-Professor Timothy Waema, Project Lead Dr. Melissa Omino, Legal Expert, The Centre for
-Consultant, University of Nairobi Intellectual Property and Information Technology
-Law
+Professor Timothy Waema, Project Lead
+Consultant, University of Nairobi
 Annita Mwagiru, Project Management Expert,
-Global Partnership for Sustainable Development Leonida Mutuku, Technical Governance Expert,
-Data Local Development Research Institute
-Davis Adieno, Team Leader, Global Partnership Linet Kwamboka Nyang’au, Technical Expert,
-for Sustainable Development Data Global Partnership for Sustainable Development
+Global Partnership for Sustainable Development
 Data
+Davis Adieno, Team Leader, Global Partnership
+for Sustainable Development Data
 Brian Omwenga, Technology AI Expert, Tech
 Innovators Network
+
+Dr. Melissa Omino, Legal Expert, The Centre for
+Intellectual Property and Information Technology
+Law
+Leonida Mutuku, Technical Governance Expert,
+Local Development Research Institute
+Linet Kwamboka Nyang’au, Technical Expert,
+Global Partnership for Sustainable Development
+Data
+
 Strategy Working Group
-Alfred Ongere, AI Kenya Major Jamal Hassan, Ministry of Defense
-Andrew Masila, Safaricom Malcom Kijirah, Microsoft
-Ann N. Njoroge, Ministry of Information, Mark Gachara Irura, Deutsche Gesellschaft für
-Communications and the Digital Economy Internationale Zusammenarbeit
-Diana Nyakundi, Research ICT Africa Michael Michie, Bluebeetle AI
-Dr. Nyawira Gitahi, iDinsights Monica Okoth, Kenya Bureau of Standards
-Ephantus Mwangi, Royal Media Services Mutembei Kariuki, Fastagger
-Faith Jumba, Kenya Bankers Association Nepurko Keiwua, Deutsche Gesellschaft für
+Alfred Ongere, AI Kenya
+
+Major Jamal Hassan, Ministry of Defense
+
+Andrew Masila, Safaricom
+
+Malcom Kijirah, Microsoft
+
+Ann N. Njoroge, Ministry of Information,
+Communications and the Digital Economy
+
+Mark Gachara Irura, Deutsche Gesellschaft für
 Internationale Zusammenarbeit
+
+Diana Nyakundi, Research ICT Africa
+
+Michael Michie, Bluebeetle AI
+
+Dr. Nyawira Gitahi, iDinsights
+
+Monica Okoth, Kenya Bureau of Standards
+
+Ephantus Mwangi, Royal Media Services
+
+Mutembei Kariuki, Fastagger
+
+Faith Jumba, Kenya Bankers Association
+
+Nepurko Keiwua, Deutsche Gesellschaft für
+Internationale Zusammenarbeit
+
 Florence Kinyua. Deutsche Gesellschaft für
-Internationale Zusammenarbeit J. Nusu Mwamanzi, Ministry of Information,
-Communications and the Digital Economy
+Internationale Zusammenarbeit
 Florence Ogonjo, The Centre for Intellectual
-Property and Information Technology Law Richard Odongo, Bowman’s Law Firm
-Frida Inchoga, Tony Blair Institute for Global Sharon Bosire, Deutsche Gesellschaft für
-Change Internationale Zusammenarbeit
-Kamau Maina, Safaricom Stella Gichuhi-Karau, Renelle Labs
-Kevin Njeru, Ministry of Information, Teresia Munywoki, B� M� Musau Law Firm
+Property and Information Technology Law
+
+J. Nusu Mwamanzi, Ministry of Information,
 Communications and the Digital Economy
+Richard Odongo, Bowman’s Law Firm
+
+Frida Inchoga, Tony Blair Institute for Global
+Change
+
+Sharon Bosire, Deutsche Gesellschaft für
+Internationale Zusammenarbeit
+
+Kamau Maina, Safaricom
+
+Stella Gichuhi-Karau, Renelle Labs
+
+Kevin Njeru, Ministry of Information,
+Communications and the Digital Economy
+
+Teresia Munywoki, B. M. Musau Law Firm
+
 85 / Kenya AI Strategy
+
+
 Strategy Steering Committee
-Wesley K. Martim, Chairperson, Ministry of Kevin Njeru, Member, Ministry of Information,
-Information, Communications and the Digital Communications and the Digital Economy
-Economy
-James Sirorei, Member, Ministry of Information,
-J. Nusu Mwamanzi, Secretary and focal point Communications and the Digital Economy
-representing SDICTDE, Ministry of Information,
-Rehema Mweni, Member, Ministry of
-Communications and the Digital Economy
+Wesley K. Martim, Chairperson, Ministry of
 Information, Communications and the Digital
-Mark Gachara Irura, Focal point and Member, Economy
-representing FAIR Forward at the Deutsche
-Patrice Mutua, Member, Ministry of Information,
-Gesellschaft für Internationale Zusammenarbeit
+Economy
+J. Nusu Mwamanzi, Secretary and focal point
+representing SDICTDE, Ministry of Information,
 Communications and the Digital Economy
+Mark Gachara Irura, Focal point and Member,
+representing FAIR Forward at the Deutsche
+Gesellschaft für Internationale Zusammenarbeit
+
+Kevin Njeru, Member, Ministry of Information,
+Communications and the Digital Economy
+James Sirorei, Member, Ministry of Information,
+Communications and the Digital Economy
+Rehema Mweni, Member, Ministry of
+Information, Communications and the Digital
+Economy
+Patrice Mutua, Member, Ministry of Information,
+Communications and the Digital Economy
+
 Ann N. Njoroge, Member, Ministry of
 Information, Communications and the Digital
 Economy
+
 Strategy Townhall Convenors
-AI Kenya EldoHub
-Association of Startup and SMEs Enablers of Kenya Private Sector Alliance
+AI Kenya
+
+EldoHub
+
+Association of Startup and SMEs Enablers of
 Kenya
-Lake Hub
+
+Kenya Private Sector Alliance
+
 Data Privacy and Governance Society
-Qhala
 Dedan Kimathi University of Technology
+
+Lake Hub
+Qhala
 United Disabled Persons of Kenya
+
 The Kenya AI Strategy project was implemented by the Global Partnership for Sustainable
-Development Data�
+Development Data.
 Our sincere gratitude to all the individuals and institutions that took part in the Key Stakeholder
 Meetings, Key Informant Interviews and the Focus Group Discussions for their invaluable
-insights that went a long way into informing key elements of this strategy development process�
+insights that went a long way into informing key elements of this strategy development process.
+
 86 / Kenya AI Strategy
+
+
 Annex 2: Image Captions and Credits
 This annex provides captions and credits for all images used in the document
-Page 24� Image of AI chips and processors
-Cover� A futuristic digital background
-depicting AI digital infrastructure and data,
+Cover. A futuristic digital background
 featuring a green circuit board pattern
-ChatGPT�com/Image Generator Pro
 with binary code, Titima Ongkantong/
-Shutterstock.com Kenyan flag added for Page 25� A close-up view of a printed circuit
-context, Canva�com board showing intricate electronic pathways
-and connectors, Vishnu Mohanan/Unsplash�
+Shutterstock.com Kenyan flag added for
+context, Canva.com
 Inside cover. Kenyan flag adding a sense of
-com
-national pride, Canva�com
-Page 27. Futuristic representation of artificial
-Page 7� High-tech circuit board with red
-intelligence and neural networks, Growtika/
-lights, Bert B/Unsplash�com
-Unsplash�com
+national pride, Canva.com
+Page 7. High-tech circuit board with red
+lights, Bert B/Unsplash.com
 Page 9. Visualization of fiber optic cables
-Page 28� A red and white lighthouse behind
-transmitting data, Luke Jones/Unsplash�com
-a traditional wooden dhow named “Hidaya”
-Page 10� H�E� Hon� William Kabogo Gitau
-anchored near the shore, Beks/Unsplash�
+transmitting data, Luke Jones/Unsplash.com
+Page 10. H.E. Hon. William Kabogo Gitau
 (Cabinet Secretary), Ministry of Information,
-com
 Communications and the Digital Economy
-Page 29� Image depicting AI ethical and
 Page 11. Conceptual visualization of data
-privacy concerns in Africa, ChatGPT�com/
 processing and artificial intelligence, Google
-Image Generator Pro
-DeepMind/Unsplash�com
-Page 30� Image depicts the regional nature
+DeepMind/Unsplash.com
 Page 12. Eng. John Tanui, (CBS Principal
-of AI and connections to the rest of the
 Secretary State), Department for ICT and
-world, ChatGPT�com/Image Generator Pro
 the Digital Economy
-Page 31� Photo of road infrastructure
-Page 13� Futuristic view of a technopolis
-powered by technology. Source; Konza
+Page 13. Futuristic view of a technopolis
 building with the Kenyan flag standing tall,
-Technopolis, Kenya
-ChatGPT�com/Image Generator Pro
-Page 32� A 3D-rendered digital landscape
-Page 17� Futuristic view of Nairobi City with
-with pixel-like structures in shades of blue
+ChatGPT.com/Image Generator Pro
+Page 17. Futuristic view of Nairobi City with
 Nairobi National Park and Giraffes in the
-and purple, Google DeepMind/Unsplash�
-foreground, ChatGPT�com/Image Generator
-com
+foreground, ChatGPT.com/Image Generator
 Pro
-Page 33� Futuristic view showing Kenya as
-Page 18� Futuristic view of a digital and
-a hub for AI research and development in
-AI-driven Nairobi City, ChatGPT�com/Image
-Africa, ChatGPT�com/Image Generator Pro
+Page 18. Futuristic view of a digital and
+AI-driven Nairobi City, ChatGPT.com/Image
 Generator Pro
-Page 35� Image depicting Kenya’s
-Page 19� Futuristic view depicting Kenya as
-political will to advance AI and emerging
-a leader in AI development, while retaining
-technologies through prioritization in the
-cultural identity, ChatGPT�com/Image
-National Digital Economy, ChatGPT�com/
-Generator Pro
+
+Page 24. Image of AI chips and processors
+depicting AI digital infrastructure and data,
+ChatGPT.com/Image Generator Pro
+Page 25. A close-up view of a printed circuit
+board showing intricate electronic pathways
+and connectors, Vishnu Mohanan/Unsplash.
+com
+Page 27. Futuristic representation of artificial
+intelligence and neural networks, Growtika/
+Unsplash.com
+Page 28. A red and white lighthouse behind
+a traditional wooden dhow named “Hidaya”
+anchored near the shore, Beks/Unsplash.
+com
+Page 29. Image depicting AI ethical and
+privacy concerns in Africa, ChatGPT.com/
 Image Generator Pro
-Page 21� Depicting a digitally empowered
-Page 36� A digital wireframe rendering of a
-workforce, ChatGPT�com/Image Generator
-judge’s gavel, Conny Schneider/Unsplash�
-Pro
+Page 30. Image depicts the regional nature
+of AI and connections to the rest of the
+world, ChatGPT.com/Image Generator Pro
+Page 31. Photo of road infrastructure
+powered by technology. Source; Konza
+Technopolis, Kenya
+Page 32. A 3D-rendered digital landscape
+with pixel-like structures in shades of blue
+and purple, Google DeepMind/Unsplash.
 com
-87 / Kenya AI Strategy
-Page 38� Image depicting various aspects Page 66. Image depicting data in-flows and
-of AI governance (regulations, transparency, outflows across the region, ChatGPT.com/
-ethics) in Africa, ChatGPT.com/Image Image Generator Pro
+Page 33. Futuristic view showing Kenya as
+a hub for AI research and development in
+Africa, ChatGPT.com/Image Generator Pro
+
+Page 19. Futuristic view depicting Kenya as
+a leader in AI development, while retaining
+cultural identity, ChatGPT.com/Image
 Generator Pro
-Page 67� Photo 1: Photo of the Kenya
-Page 41� A close-up of hands installing Advanced Institute of Science and
-an SSD into a laptop, Samsung Memory/ Technology� Photo 2: Students ups killing
-Unsplash�com in ICT through the Jitume program� Source;
-Konza Technopolis, Kenya
-Page 47� Town hall convening by Eldohub in
-Eldoret, Eldohub Page 67� Image depicts various governance
-aspects of AI and emerging technologies,
-Page 61� A futuristic digital abstraction of
-ChatGPT�com/Image Generator Pro
+
+Page 35. Image depicting Kenya’s
+political will to advance AI and emerging
+technologies through prioritization in the
+National Digital Economy, ChatGPT.com/
+Image Generator Pro
+
+Page 21. Depicting a digitally empowered
+workforce, ChatGPT.com/Image Generator
+Pro
+
+Page 36. A digital wireframe rendering of a
+judge’s gavel, Conny Schneider/Unsplash.
+com
+
+87 / Kenya AI Strategy
+
+
+Page 38. Image depicting various aspects
+of AI governance (regulations, transparency,
+ethics) in Africa, ChatGPT.com/Image
+Generator Pro
+Page 41. A close-up of hands installing
+an SSD into a laptop, Samsung Memory/
+Unsplash.com
+Page 47. Town hall convening by Eldohub in
+Eldoret, Eldohub
+Page 61. A futuristic digital abstraction of
 interconnected data streams and artificial
-intelligence, Google DeepMind/Unsplash� Page 68� Image 1: Depicting futuristic
-com private-sector and public-sector investments
-in AI infrastructure, ChatGPT�com/Image
-Page 64� A close-up of a network server with
-Generator Pro� Image 2: Depicts the
+intelligence, Google DeepMind/Unsplash.
+com
+Page 64. A close-up of a network server with
 blue Ethernet cables plugged into a switch,
-promotion of ethical, responsible, and
-Scott Rodgerson/Unsplash�com
-inclusive AI development and deployment,
-Page 63� Sunset photo demonstrating
-ChatGPT�com/Image Generator Pro
+Scott Rodgerson/Unsplash.com
+Page 63. Sunset photo demonstrating
 the road towards creating an enabling
 environment for AI to thrive. Source; Konza
 Technopolis, Kenya
-Page 66� Photo depicting development of
-a robust AI-ready national infrastructure�
+Page 66. Photo depicting development of
+a robust AI-ready national infrastructure.
 Source; Konza Technopolis, Kenya
+
 88 / Kenya AI Strategy
+
+Page 66. Image depicting data in-flows and
+outflows across the region, ChatGPT.com/
+Image Generator Pro
+Page 67. Photo 1: Photo of the Kenya
+Advanced Institute of Science and
+Technology. Photo 2: Students ups killing
+in ICT through the Jitume program. Source;
+Konza Technopolis, Kenya
+Page 67. Image depicts various governance
+aspects of AI and emerging technologies,
+ChatGPT.com/Image Generator Pro
+Page 68. Image 1: Depicting futuristic
+private-sector and public-sector investments
+in AI infrastructure, ChatGPT.com/Image
+Generator Pro. Image 2: Depicts the
+promotion of ethical, responsible, and
+inclusive AI development and deployment,
+ChatGPT.com/Image Generator Pro
+
+
 This strategy was produced with the financial support of the European
 Union (EU) and the German Federal Ministry of Economic Cooperation
 and Development (BMZ) implemented by the Deutsche Gesellschaft für
@@ -5885,14 +5488,27 @@ responsibility of the Ministry of Information, Communications and the Digital
 Economy (MICDE), and do not necessarily reflect the views of the EU or the
 BMZ.
 
+
 Ministry of Information,
 Communications & The Digital
 Economy
 GPO Telposta Towers, Koinange
 Street
-P�O BOX 30025-00100 Nairobi,
+P.O BOX 30025-00100 Nairobi,
 Kenya
-T +254-020-4920000 /1
-T +254-020-920030
-E info@information�go�ke
-I www�ict�go�ke
+T
+
++254-020-4920000 /1
+
+T
+
++254-020-920030
+
+E
+
+info@information.go.ke
+
+I
+
+www.ict.go.ke
+
