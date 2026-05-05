@@ -2,7 +2,7 @@
 id: de-de-kimig-2026
 source_url: https://www.bmwk.de/Redaktion/DE/Artikel/Digitale-Welt/kuenstliche-intelligenz-regulierung.html
 fetched_date: 2026-05-05
-fetch_status: UNAVAILABLE — wrong document was fetched at time of entry; file previously contained a German parliamentary question about Hannover-Bielefeld rail infrastructure (Bundestag Drucksache 20/14278), not the KI-MIG law. Text needs to be re-fetched.
+fetch_status: UNAVAILABLE — law not yet enacted as of 2026-05-05. The KI-MIG (Regierungsentwurf adopted Feb 11 2026, Bundestag first reading Mar 20 2026) is still in parliamentary process and has not been published in the Bundesgesetzblatt. Full text can be fetched from Bundestag DIP once enacted.
 ---
 
 ================================================================================
