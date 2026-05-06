@@ -2,7 +2,7 @@
 id: dz-dz-naistrategy-2024
 source_url: https://digitalpolicyalert.org/event/29116-algerian-government-announces-adoption-of-national-strategy-for-artificial-intelligence
 fetched_date: 2026-05-06
-fetch_status: UNAVAILABLE — Digital Policy Alert returned a "Page not found" error for event ID 29116. The event URL is not resolving on the DPA platform.
+fetch_status: UNAVAILABLE — Primary document not publicly accessible. The Digital Policy Alert event page (ID 29116) returns a "Page not found" error. The official Algerian government strategy document does not appear to be published in a publicly retrievable digital format. Description below is synthesized from secondary press coverage.
 ---
 
 Algeria National Artificial Intelligence Strategy (Stratégie Nationale pour l'Intelligence Artificielle, 2024)
