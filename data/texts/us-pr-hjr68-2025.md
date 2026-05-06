@@ -1,55 +1,146 @@
 ---
 id: us-pr-hjr68-2025
-source_url: https://www.camaraderepresentantes.org/
-fetched_date: 2026-05-04
+source_url: https://oslpr.org/2025-2028/tl/medida.aspx?r=68
+fetched_date: 2026-05-06
+fetch_status: OK
 ---
 
-(R. C. de la C. 68)
+                                                                     Tween
+                                                                       LEGISLATIVE _SESSION
+                                                                       ASSEMBLY ___         ORDINARY
+                                                                     Joint Res. No.
+(H. J. R. 68)                                                         Approved on   Qu O7 ve 20.237
 
-RESOLUCIÓN CONJUNTA
+                              JOINT RESOLUTION
 
-Para ordenar al Puerto Rico Innovation and Technology Service (PRITS) desarrollar un abarcador y minucioso estudio sobre la posibilidad y los beneficios de utilizar la Inteligencia Artificial como una herramienta adicional para optimizar los procesos de investigación, auditoría, mitigación de riesgos, supervisión efectiva y control de gastos, entre otros; identificar plataformas dirigidas a esos propósitos y hacer recomendaciones a las agencias fiscalizadoras; y para otros fines relacionados.
+To order the Puerto Rico Innovation and Technology Service (PRITS) to develop a
+     comprehensive and thorough study on the possibility and benefits of using
+     Artificial Intelligence as an additional tool to optimize the processes
+     of investigation, audit, risk mitigation, effective oversight, and control of
+     expenditures, among others; identify platforms aimed at those purposes and make
+     recommendations to the oversight agencies; and for other related purposes.
 
-EXPOSICIÓN DE MOTIVOS
+                                 STATEMENT OF MOTIVES
 
-La revolución tecnológica de la última década ha transformado nuestras vidas de manera muy avanzada. Hoy en día, los avances digitales y la inteligencia artificial se utilizan en muchas instancias, incluso para rastrear y diagnosticar problemas en diversas áreas tanto en la empresa privada como en gobiernos, o inclusive, para realizar tareas del día a día que van desde conducir un automóvil inteligente hasta el pago de facturas desde un dispositivo portátil logrando un ahorro de tiempo y esfuerzo enorme. La tecnología se desarrolla además como un aliado importante en los esfuerzos para lograr mayor transparencia y en el proceso de rendición de cuentas.
+        The technological revolution of the last decade has transformed our lives in a
+highly advanced manner. Today, digital advancements and artificial intelligence are
+used in many instances, including to track and diagnose problems in
+various areas, both in private enterprise and in governments, or even, to perform
+day-to-day tasks ranging from driving a smart car to paying
+bills from a portable device, achieving enormous savings of time and effort.
+Technology is also being developed as an important ally in efforts to
+achieve greater transparency and in the accountability process.
 
-Por otro lado, la descomposición paulatina de lo que significa una sana administración pública es uno de los mayores desafíos de nuestro tiempo y existen muchas esperanzas depositadas en la inteligencia artificial (IA) para combatirla. Aunque se ha resumido el creciente número de herramientas anticorrupción basadas en IA es necesario que se realice un examen crítico de su potencial utilidad sin descartar sus peligros. El big data, la utilización de servicios computarizados en la nube, la IA, el machine learning, la biometría y blockchain son algunas de las tendencias tecnológicas que se están utilizando para combatir el fraude y la corrupción en algunos países.
+       On the other hand, the gradual decay of what constitutes sound
+public administration is one of the greatest challenges of our time, and there are
+many hopes placed in artificial intelligence (AI) to combat it.
+Although the growing number of AI-based anti-corruption tools has been
+summarized, it is necessary to conduct a critical examination of their potential utility without dismissing
+their dangers. Big data, the use of cloud-based computing services, AI,
+machine learning, biometrics, and blockchain are some of the technological
+trends being used to combat fraud and corruption in some
+countries.
 
-En el caso de las auditorías, el potencial de la inteligencia artificial puede ser pieza clave en áreas tales como; automatización de procesos contables, análisis de datos financieros, detección de fraudes y anomalías financieras, automatización de auditorías, auditorías en áreas de tecnología e informática y ciberseguridad, y asistencia en la toma de decisiones. La IA puede proporcionar análisis y recomendaciones en tiempo real basados en datos financieros y de negocio. Esto ayuda a los auditores a tomar decisiones más informadas y respaldadas por información relevante.
+          In the case of audits, the potential of artificial intelligence can be
+a key piece in areas such as: automation of accounting processes, analysis of financial
+data, fraud detection and financial anomalies, audit automation,
+audits in technology and informatics areas and cybersecurity, and assistance in
+decision-making. AI can provide real-time analysis and recommendations
+based on financial and business data. This helps auditors make
+more informed decisions backed by relevant information.
 
-Según la International Journal of Government Auditing, la IA puede, inclusive, facilitar el proceso de auditoría, ya que podría ayudar a realizar de forma más eficiente muchas tareas que conllevan mucho tiempo. Establecen además que, una de las formas para ayudar en el trabajo de auditoría es la Automatización Robótica de Procesos (RPA). Una vez que los datos de las entidades auditadas se cargan en el sistema esta modalidad puede identificar incoherencias y valores atípicos que los auditores pueden mirar y analizar detenidamente.
+          According to the International Journal of Government Auditing, AI can even
+facilitate the audit process, since it could help to perform many time-consuming
+tasks more efficiently. They further establish that one of the ways
+to assist in audit work is Robotic Process Automation
+(RPA). Once data from audited entities is loaded into the system, this
+modality can identify inconsistencies and outliers that auditors can
+review and analyze closely.
 
-Igualmente, en teoría, los algoritmos de IA pueden utilizarse para clasificar y agrupar entidades, mientras que un sistema diseñado por IA puede calcular una puntuación sobre el tamaño del riesgo. El sistema de riesgos puede programarse para tener en cuenta diversos criterios, el volumen y la clase de operaciones, la sensibilidad y la complejidad, y clasificar las entidades auditadas, lo que ayuda a asignar recursos.
+       Likewise, in theory, AI algorithms can be used to classify and
+group entities, while a system designed by AI can calculate a
+score on the size of risk. The risk system can be programmed to
+take into account various criteria, the volume and type of operations, the sensitivity and
+the complexity, and classify the audited entities, which helps to allocate resources.
 
-En octubre de 2024, se publicó que la inteligencia artificial ayudó al Departamento del Tesoro de los Estados Unidos a examinar cantidades masivas de datos y descubrir fraudes con cheques por valor de mil millones de dólares ($1,000,000,000) sólo en el año fiscal 2024. Eso es casi el triple de lo que el Tesoro recuperó en el año fiscal anterior (2023), lo cual nos revela que si se utiliza debidamente, puede ser una gran herramienta para evitar el fraude del fondo público.
+      In October 2024, it was published that artificial intelligence helped the
+United States Department of the Treasury examine massive amounts of
+data and uncover check fraud worth one billion dollars
+($1,000,000,000) in fiscal year 2024 alone. That is nearly triple what the Treasury
+recovered in the previous fiscal year (2023), which reveals to us that if used properly,
+it can be a great tool to prevent the fraud of public funds.
 
-Esta situación del mal manejo de fondos públicos ha representado uno de los mayores obstáculos para el desarrollo sostenible y la confianza pública en las instituciones de nuestra Isla. A pesar de los esfuerzos realizados por entidades como la Oficina del Inspector General, el Contralor de Puerto Rico, la Oficina de Ética Gubernamental, el Departamento de Justicia y otras agencias fiscalizadoras, la corrupción persiste, afectando la calidad de vida de los ciudadanos y la integridad de la administración pública. En este sentido, la implementación de nuevas tecnologías, como la IA, llega como una opción innovadora, inclusive para fortalecer los mecanismos de supervisión y control del gasto público. A esos fines, entendemos meritorio que se estudie seriamente cuales son las alternativas que existen hoy día para atajar de forma contundente y eficaz el problema decenario de la corrupción en nuestra Isla.
+         This situation of mismanagement of public funds has represented one of the
+greatest obstacles to sustainable development and public trust in the
+institutions of our Island. Despite the efforts made by entities such as the
+Office of the Inspector General, the Comptroller of Puerto Rico, the Office of Government
+Ethics, the Department of Justice, and other oversight agencies, corruption persists, affecting the quality of life of citizens and the integrity of the
+public administration. In this regard, the implementation of new technologies, such as
+AI, comes as an innovative option, even to strengthen the mechanisms of
+oversight and control of public spending. To those ends, we find it meritorious to
+seriously study what alternatives exist today to forcefully and effectively address
+the decades-old problem of corruption on our Island.
 
-RESUÉLVESE POR LA ASAMBLEA LEGISLATIVA DE PUERTO RICO:
+BE IT RESOLVED BY THE LEGISLATIVE ASSEMBLY OF PUERTO RICO:
 
-Sección 1.- Se ordena al Puerto Rico Innovation and Technology Service (PRITS) desarrollar un abarcador y minucioso estudio sobre el beneficio de utilizar la Inteligencia Artificial (IA) como una herramienta adicional para optimizar los procesos de investigación, auditoría, mitigación de riesgos, supervisión control de gastos, entre otros.
+         Section 1.- The Puerto Rico Innovation and Technology Service (PRITS) is hereby ordered
+to develop a comprehensive and thorough study on the benefit of using
+Artificial Intelligence (AI) as an additional tool to optimize the processes
+of investigation, audit, risk mitigation, supervision, control of expenditures, among
+others.
 
-Sección 2.- Como parte del estudio, ordenado en la Sección 1, PRITS considerará, sin que se entienda como una limitación, los siguientes aspectos:
 
-a. Desarrollo de sistemas de detección automatizada de patrones sospechosos auscultando formas de implementar algoritmos que analicen grandes cantidades de datos gubernamentales en tiempo real, para detectar patrones irregulares en transacciones financieras, contratos o decisiones administrativas que podrían alertar algún tipo de fraude o acto de corrupción;
+       Section 2.- As part of the study ordered in Section 1, PRITS shall consider,
+without it being construed as a limitation, the following aspects:
 
-b. Utilizar IA para crear modelos predictivos que identifiquen áreas de alto riesgo de corrupción dentro del gobierno, basándose en patrones históricos y datos en tiempo real, ayudando a priorizar auditorías y controles internos.
+    a.   Development of automated systems for detecting suspicious patterns,
+         exploring ways to implement algorithms that analyze large quantities
+          of government data in real time, to detect irregular patterns in
+          financial transactions, contracts or administrative decisions that could
+          alert to some type of fraud or act of corruption;
 
-c. Desarrollo de sistemas de IA que permitan a ciudadanos y empleados de entidades gubernamentales realizar denuncias anónimas de posibles actos de corrupción, con un programa informático que simula una conversación con usuarios ("chatbot") que guíe el proceso sin violentar las garantías de confidencialidad.
+   b.     Use AI to create predictive models that identify high-risk areas
+          for corruption within the government, based on historical patterns and real-time
+          data, helping to prioritize audits and internal controls.
 
-d. Diseño de herramientas para el análisis forense de grandes cantidades de datos que se manejan en auditorías e investigaciones de fraude, para lograr extraer información relevante que identifique irregularidades en contratos gubernamentales, compras o concesiones.
+   c.     Development of AI systems that allow citizens and employees of
+          governmental entities to make anonymous reports of possible acts of
+          corruption, with a software program that simulates a conversation with
+          users ("chatbot") that guides the process without violating the guarantees of
+          confidentiality.
 
-e. Dar apoyo a las entidades fiscalizadoras para automatizar ciertos aspectos del proceso de auditoría mediante IA, como la revisión de contratos, registros financieros y transacciones, reduciendo el margen de error humano y acelerando el proceso.
+   d. Design of tools for the forensic analysis of large amounts of data
+      handled in audits and fraud investigations, in order to extract
+      relevant information that identifies irregularities in government
+      contracts, purchases or concessions.
 
-f. Crear sistemas que permitan el monitoreo en tiempo real del uso de los fondos públicos, alertando automáticamente sobre transacciones fuera de lo común o sospechosas.
+   e.     Provide support to oversight entities to automate certain aspects of
+          the audit process through AI, such as the review of contracts, financial
+          records and transactions, reducing the margin of human error and accelerating
+          the process.
 
-g. Crear herramientas que identifiquen relaciones entre individuos, entidades y contratistas gubernamentales, analizando redes de contactos y posibles conflictos de interés que puedan ayudar a detectar actos de corrupción.
+   f.     Create systems that allow real-time monitoring of the use of public
+          funds, automatically alerting on unusual or suspicious transactions.
 
-h. Implementar plataformas que ofrezcan al público un acceso más intuitivo y automático a los datos gubernamentales, utilizando IA para generar informes o visualizaciones sobre el uso de los recursos públicos y la ejecución de contratos.
+   g. Create tools that identify relationships between individuals, entities and
+      government contractors, analyzing networks of contacts and possible conflicts
+      of interest that may help detect acts of corruption.
 
-i. Colaboración en el diseño de sistemas automatizados que verifiquen el cumplimiento de normativas legales en las compras y contrataciones gubernamentales, utilizando IA para asegurar que todos los procesos se realicen dentro de los marcos legales establecidos.
+   h. Implement platforms that offer the public more intuitive and
+      automatic access to government data, using AI to generate reports or
+      visualizations on the use of public resources and the execution of contracts.
 
-Sección 3.- Se conceden ciento ochenta (180) días al Puerto Rico Innovation and Technology Service (PRITS) luego de aprobada esta Resolución Conjunta, para llevar a cabo el estudio de viabilidad ordenado en esta Resolución Conjunta. Dicho estudio será remitido a la Gobernadora de Puerto Rico, a la Asamblea Legislativa de Puerto Rico, la Rama Judicial de Puerto Rico, a la Oficina del Contralor de Puerto Rico, a la Oficina del Inspector General y la Oficina de Ética Gubernamental para su análisis y acción pertinente.
+        i. Collaborate in the design of automated systems that verify
+           compliance with legal regulations in government purchases and contracting,
+           using AI to ensure that all processes are carried out
+           within the established legal frameworks.
 
-Sección 4.- Esta Resolución Conjunta comenzará a regir el 1ro de julio de 2025.
+      Section 3.- One hundred eighty (180) days are granted to the Puerto Rico Innovation and
+Technology Service (PRITS) after the approval of this Joint Resolution, to carry
+out the feasibility study ordered in this Joint Resolution. Said study shall be
+submitted to the Governor of Puerto Rico, to the Legislative Assembly of Puerto Rico, the
+Judicial Branch of Puerto Rico, to the Office of the Comptroller of Puerto Rico, to the Office of the
+Inspector General and the Office of Government Ethics for their analysis and pertinent
+action.
+
+       Section 4.- This Joint Resolution shall take effect on July 1, 2025.

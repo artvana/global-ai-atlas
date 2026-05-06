@@ -149126,7 +149126,7 @@
     "bill_number": "S 937",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "consumer_protection"
@@ -149527,8 +149527,8 @@
     "jurisdiction": "Puerto Rico",
     "jurisdiction_type": "subnational",
     "region": "US-PR",
-    "short_name": "Puerto Rico S 1210 — Innovation and Technology Services",
-    "full_name": "Puerto Rico S 1210 — Innovation and Technology Services",
+    "short_name": "Puerto Rico S 1210 — AI Monitoring of Public Auctions (PRITS)",
+    "full_name": "Puerto Rico S.B. 1210 — Amendment to Act 75-2019 to Require AI-Based Monitoring of Public Auction Processes",
     "instrument_type": "bill",
     "instrument_binding": false,
     "bill_number": "S 1210",
@@ -149561,7 +149561,9 @@
       "prohibited_categories": false,
       "agentic_ai_addressed": false,
       "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
+      "training_data_compensation": false,
+      "requires_transparency": true,
+      "requires_human_oversight": true
     },
     "enforcement_body": [],
     "max_penalty": null,
@@ -149574,21 +149576,32 @@
     "official_text_url": null,
     "summary_url": null,
     "last_verified": "2026-05-03",
-    "summary": "Relates to incorporating the development and implementation of a technological application based on artificial intelligence, for the efficient, transparent and automated monitoring of public auction processes in the government.",
+    "summary": "Amends Article 6(f) of Act 75-2019 (PRITS Act) to require PRITS to develop, implement, and supervise an AI-based digital platform for transparent, real-time monitoring of all public auction processes in Puerto Rico. Platform must detect irregularities, optimize administration, and provide public access to information. Requires coordination with Inspector General, General Services Administration, and Office of Government Ethics. PRITS must submit annual report to Legislature by June 30 each year.",
     "notable": null,
     "ai_specific": true,
     "country": "United States",
     "operative_dates": null,
     "topics": [
-      "Government Use",
-      "Impact Assessment"
+      "AI monitoring",
+      "public procurement",
+      "government AI use",
+      "transparency",
+      "PRITS"
     ],
     "sector_tags": [],
     "technology_tags": [],
-    "key_obligations": [],
+    "key_obligations": [
+      "PRITS must develop and implement AI platform for real-time monitoring of all government public auctions",
+      "Platform must detect irregularities and ensure administrative optimization",
+      "Public access to auction information must be ensured",
+      "Platform must comply with cybersecurity and personal data protection standards",
+      "PRITS must coordinate with Inspector General, GSA, and Office of Government Ethics",
+      "PRITS must include detailed summary on AI platform in annual legislative report (due June 30)"
+    ],
     "issue_positions": {},
     "text_path": "data/texts/us-pr-s1210-2026.md",
-    "legal_citation": null
+    "legal_citation": null,
+    "notes": "Introduced April 23, 2026 by Mr. Reyes Berríos. Amends Art. 6(f) of Act 75-2019."
   },
   {
     "id": "us-pr-s68-2025",
@@ -196022,5 +196035,1623 @@
     "instrument_binding": false,
     "country": "United States",
     "operative_dates": null
+  },
+  {
+    "id": "us-pr-hb824-2026",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico H.B. 824 — Cybersecurity Act AI Amendment",
+    "full_name": "Puerto Rico H.B. 824 — Amendment to Act 40-2024 (Cybersecurity Act) to Include Artificial Intelligence in Cybersecurity Education",
+    "instrument_type": "bill",
+    "bill_number": "H.B. 824",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "categories": [
+      "AI governance",
+      "cybersecurity",
+      "government AI use"
+    ],
+    "primary_category": "AI governance",
+    "scope": "government",
+    "who_regulated": [
+      "government agencies"
+    ],
+    "provisions": {
+      "requires_human_oversight": false,
+      "requires_impact_assessment": false,
+      "requires_transparency": false,
+      "requires_registration": false,
+      "prohibits_certain_uses": false,
+      "establishes_liability": false,
+      "requires_data_governance": false,
+      "requires_algorithmic_auditing": false,
+      "establishes_enforcement_body": false,
+      "imposes_penalties": false,
+      "protects_workers": false,
+      "protects_consumers": false,
+      "addresses_facial_recognition": false,
+      "addresses_deepfakes": false,
+      "addresses_autonomous_vehicles": false,
+      "addresses_healthcare_ai": false,
+      "addresses_financial_ai": false,
+      "addresses_educational_ai": true
+    },
+    "enforcement_body": "PRITS",
+    "max_penalty": null,
+    "preemption_status": null,
+    "legal_family": "civil_law",
+    "inspired_by": [
+      "Act 40-2024"
+    ],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=H+824",
+    "summary": "Amends Act 40-2024 (Cybersecurity Act of the Government of Puerto Rico) to expressly incorporate artificial intelligence as a topic in the virtual cybersecurity education program and continuing education course administered by PRITS. Passed House; received positive committee report from the Senate Committee on Science, Technology, and Artificial Intelligence in 2026.",
+    "topics": [
+      "cybersecurity",
+      "AI education",
+      "government training",
+      "PRITS"
+    ],
+    "sector_tags": [
+      "government",
+      "education",
+      "cybersecurity"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "cybersecurity"
+    ],
+    "key_obligations": [
+      "PRITS must include AI as a topic in the cybersecurity virtual education program",
+      "PRITS must include AI in the continuing education course on cybersecurity",
+      "No significant additional fiscal impact — content added to existing programs"
+    ],
+    "issue_positions": {
+      "pro_innovation": true,
+      "risk_based": true,
+      "precautionary": false,
+      "sector_specific": true,
+      "rights_based": false,
+      "market_oriented": false,
+      "state_centric": true,
+      "international_aligned": false,
+      "binding": false,
+      "voluntary": true
+    },
+    "text_path": "data/texts/us-pr-hb824-2026.md",
+    "ai_specific": true,
+    "instrument_binding": false,
+    "country": "US"
+  },
+  {
+    "id": "us-pr-hb968-2025",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico H.B. 968 — Ethical Use of AI in Educational Institutions",
+    "full_name": "Puerto Rico H.B. 968 — Act on the Ethical Use of Artificial Intelligence in Educational Institutions of Puerto Rico",
+    "instrument_type": "bill",
+    "bill_number": "H.B. 968",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "categories": [
+      "AI governance",
+      "education",
+      "AI ethics"
+    ],
+    "primary_category": "AI governance",
+    "scope": "public_and_private",
+    "who_regulated": [
+      "government agencies",
+      "educational institutions"
+    ],
+    "provisions": {
+      "requires_human_oversight": true,
+      "requires_impact_assessment": false,
+      "requires_transparency": true,
+      "requires_registration": true,
+      "prohibits_certain_uses": false,
+      "establishes_liability": false,
+      "requires_data_governance": true,
+      "requires_algorithmic_auditing": false,
+      "establishes_enforcement_body": false,
+      "imposes_penalties": false,
+      "protects_workers": false,
+      "protects_consumers": false,
+      "addresses_facial_recognition": false,
+      "addresses_deepfakes": false,
+      "addresses_autonomous_vehicles": false,
+      "addresses_healthcare_ai": false,
+      "addresses_financial_ai": false,
+      "addresses_educational_ai": true
+    },
+    "enforcement_body": "Department of Education; Department of State",
+    "max_penalty": null,
+    "preemption_status": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=H+968",
+    "summary": "Requires the Department of Education and all private educational institutions to establish and implement policies on the ethical use of AI. Policies must address safety, autonomy, privacy, transparency, diversity/inclusion, and accountability. Private institutions must file policies with the Department of State. Annual training required for students and staff. 180-day compliance window after enactment. PRITS provides technical guidance.",
+    "topics": [
+      "AI ethics",
+      "education",
+      "privacy",
+      "transparency",
+      "responsible AI"
+    ],
+    "sector_tags": [
+      "education",
+      "government"
+    ],
+    "technology_tags": [
+      "artificial intelligence"
+    ],
+    "key_obligations": [
+      "Department of Education must promulgate AI ethics policies for public schools",
+      "Private educational institutions must promulgate similar AI ethics policies",
+      "Private institutions must file policies with the Department of State",
+      "Policies must cover safety, autonomy, privacy, transparency, diversity, and accountability",
+      "Annual training for students and all staff on responsible AI use",
+      "PRITS provides technical advisory support",
+      "180-day compliance window from enactment"
+    ],
+    "issue_positions": {
+      "pro_innovation": true,
+      "risk_based": true,
+      "precautionary": true,
+      "sector_specific": true,
+      "rights_based": true,
+      "market_oriented": false,
+      "state_centric": false,
+      "international_aligned": true,
+      "binding": true,
+      "voluntary": false
+    },
+    "text_path": "data/texts/us-pr-hb968-2025.md",
+    "ai_specific": true,
+    "instrument_binding": true,
+    "country": "US"
+  },
+  {
+    "id": "us-pr-sr485-2026",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico S.R. 485 — Amendment to SR 133 (Electoral Technology Investigation)",
+    "full_name": "Puerto Rico Senate Resolution 485 — Amendment to S.R. 133 Extending Reporting Deadline for Electoral Technology Investigation",
+    "instrument_type": "resolution",
+    "bill_number": "S.R. 485",
+    "enacted_date": "2026-04-20",
+    "effective_date": "2026-04-20",
+    "status": "in_force",
+    "categories": [
+      "AI governance",
+      "elections"
+    ],
+    "primary_category": "AI governance",
+    "scope": "government",
+    "who_regulated": [
+      "government agencies"
+    ],
+    "provisions": {
+      "requires_human_oversight": false,
+      "requires_impact_assessment": false,
+      "requires_transparency": false,
+      "requires_registration": false,
+      "prohibits_certain_uses": false,
+      "establishes_liability": false,
+      "requires_data_governance": false,
+      "requires_algorithmic_auditing": false,
+      "establishes_enforcement_body": false,
+      "imposes_penalties": false,
+      "protects_workers": false,
+      "protects_consumers": false,
+      "addresses_facial_recognition": false,
+      "addresses_deepfakes": false,
+      "addresses_autonomous_vehicles": false,
+      "addresses_healthcare_ai": false,
+      "addresses_financial_ai": false,
+      "addresses_educational_ai": false
+    },
+    "enforcement_body": null,
+    "max_penalty": null,
+    "preemption_status": null,
+    "legal_family": "civil_law",
+    "inspired_by": [
+      "us-pr-sr133-2025"
+    ],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=S.R.+485",
+    "summary": "Amends Senate Resolution 133 to extend the deadline for the Senate Committee on Science, Technology, and Artificial Intelligence to submit its report on the State Elections Commission's technological capabilities. New deadline: conclusion of the 3rd Regular Session of the 20th Legislative Assembly. Approved on final vote April 20, 2026.",
+    "topics": [
+      "elections",
+      "electoral technology",
+      "AI oversight",
+      "legislative investigation"
+    ],
+    "sector_tags": [
+      "government",
+      "elections"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "electoral technology"
+    ],
+    "key_obligations": [
+      "Committee on Science, Technology, and Artificial Intelligence must submit investigation report by end of 3rd Regular Session"
+    ],
+    "issue_positions": {
+      "pro_innovation": false,
+      "risk_based": false,
+      "precautionary": false,
+      "sector_specific": true,
+      "rights_based": false,
+      "market_oriented": false,
+      "state_centric": true,
+      "international_aligned": false,
+      "binding": true,
+      "voluntary": false
+    },
+    "text_path": "data/texts/us-pr-sr485-2026.md",
+    "ai_specific": true,
+    "instrument_binding": true,
+    "country": "US"
+  },
+  {
+    "id": "us-pr-hb978-2025",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico H.B. 978 — Cyber Privacy Protection for Children (AI Amendment)",
+    "full_name": "Puerto Rico House Bill 978 — Amendment to the Cyber Privacy Protection Act for Children and Youth (Act 185-2024) adding digital duty of care, AI content protections, and economic rights for minor content creators",
+    "instrument_type": "bill",
+    "instrument_binding": false,
+    "bill_number": "H.B. 978",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "consumer_protection",
+      "privacy"
+    ],
+    "primary_category": "consumer_protection",
+    "scope": "single_issue",
+    "who_regulated": [
+      "developers",
+      "deployers",
+      "platforms"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": true,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": true,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=978",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Amends Act 185-2024 (Cyber Privacy Protection Act for Children and Youth) to impose a digital duty of care on social media platforms; require impact assessments on minors; prohibit addictive design features; protect minors from AI-generated deepfake content; and recognize economic rights of minor digital content creators.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Consumer Protection",
+      "Children Safety",
+      "Deepfakes"
+    ],
+    "sector_tags": [
+      "social_media",
+      "technology"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "deepfakes",
+      "recommendation algorithms"
+    ],
+    "key_obligations": [
+      "Platforms must exercise reasonable duty of care to prevent foreseeable harms to minors",
+      "Platforms must conduct impact assessments before introducing new features",
+      "Platforms must provide parental controls and usage limit tools",
+      "Prohibition on using minors' data for advertising"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-hb978-2025.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-hb1098-2026",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico H.B. 1098 — Rules of Civil Procedure (AI Evidence)",
+    "full_name": "Puerto Rico House Bill 1098 — Amendment to Rules of Civil Procedure requiring pre-trial disclosure of challenges to evidence created or manipulated through generative artificial intelligence",
+    "instrument_type": "bill",
+    "instrument_binding": false,
+    "bill_number": "H.B. 1098",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "AI governance"
+    ],
+    "primary_category": "AI governance",
+    "scope": "single_issue",
+    "who_regulated": [
+      "courts",
+      "attorneys"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "courts"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=1098",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Amends Puerto Rico Rules of Civil Procedure to require that disputes over the authenticity or admissibility of evidence manipulated or fabricated with generative AI be raised in the preliminary pre-trial attorney report; also removes fax number requirement from pleadings and adds reconsideration rules.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "AI in Judiciary",
+      "Evidence Law"
+    ],
+    "sector_tags": [
+      "legal",
+      "judiciary"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "generative AI"
+    ],
+    "key_obligations": [
+      "Attorneys must identify controversies regarding AI-manipulated evidence in preliminary pre-trial report",
+      "Challenges to AI-generated evidence must be raised before trial absent good cause"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-hb1098-2026.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-hb1099-2026",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico H.B. 1099 — Rules of Evidence (AI Authentication)",
+    "full_name": "Puerto Rico House Bill 1099 — Amendment to Puerto Rico Rules of Evidence creating a new rule for challenging evidence manipulated with generative artificial intelligence and modernizing authentication rules for electronic evidence",
+    "instrument_type": "bill",
+    "instrument_binding": false,
+    "bill_number": "H.B. 1099",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "AI governance"
+    ],
+    "primary_category": "AI governance",
+    "scope": "single_issue",
+    "who_regulated": [
+      "courts",
+      "attorneys"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "courts"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=1099",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Amends Puerto Rico Rules of Evidence to create a new Rule 901(c) allowing parties to challenge the authenticity of computer-generated evidence by showing it was manipulated with generative AI; also codifies journalist privilege, updates business record hearsay exceptions, and modernizes electronic evidence authentication (Rules 902(l) and (m)).",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "AI in Judiciary",
+      "Evidence Law",
+      "Deepfakes"
+    ],
+    "sector_tags": [
+      "legal",
+      "judiciary"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "generative AI"
+    ],
+    "key_obligations": [
+      "Parties may challenge admissibility of evidence manipulated with generative AI under new Rule 901(c)",
+      "Courts must rule on admissibility of AI-challenged evidence pursuant to Rule 109"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-hb1099-2026.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-hb1238-2026",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico H.B. 1238 — AI Deception of Authorities (Penal Code)",
+    "full_name": "Puerto Rico House Bill 1238 — Addition of Article 268A to Penal Code criminalizing use of artificial intelligence to produce deceptive content intended to deceive law enforcement or government officials",
+    "instrument_type": "bill",
+    "instrument_binding": false,
+    "bill_number": "H.B. 1238",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "criminal_law",
+      "AI governance"
+    ],
+    "primary_category": "AI governance",
+    "scope": "single_issue",
+    "who_regulated": [
+      "individuals"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": true,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "courts"
+    ],
+    "max_penalty": "3 years imprisonment for felony",
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=1238",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Adds Article 268A to the Puerto Rico Penal Code criminalizing the intentional use of AI to produce images, audio, videos, or documents (deepfakes) with the intent to deceive law enforcement officials or government officials conducting criminal investigations. Misdemeanor base offense; felony (3 years) if the underlying act would constitute a felony.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Criminal Law",
+      "Deepfakes",
+      "AI-generated content"
+    ],
+    "sector_tags": [
+      "public_safety",
+      "law_enforcement"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "deepfakes"
+    ],
+    "key_obligations": [
+      "Criminal prohibition on using AI to produce deceptive content intended to mislead law enforcement or government officials",
+      "Misdemeanor for base conduct; felony with 3-year fixed term if underlying conduct constitutes a felony"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-hb1238-2026.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-s101-2025",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico S 101 — AI Disclosure in Political Advertising",
+    "full_name": "Puerto Rico Senate Bill 101 — Amendment to the Act for Oversight of Political Campaigns and Electoral Code to require disclosure of AI-generated or AI-altered political advertising content and define artificial intelligence, generative AI, and deepfakes",
+    "instrument_type": "bill",
+    "instrument_binding": false,
+    "bill_number": "S 101",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "election_integrity",
+      "consumer_protection"
+    ],
+    "primary_category": "election_integrity",
+    "scope": "single_issue",
+    "who_regulated": [
+      "political_committees",
+      "campaigns",
+      "advertisers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": true,
+      "training_data_disclosure": false,
+      "content_labelling": true,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "State Elections Commission"
+    ],
+    "max_penalty": "$500 per false data/image; up to 3 years imprisonment for deepfake distribution",
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=101",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Amends the Act for Oversight of Political Campaigns (Act 222-2011) and Electoral Code (Act 58-2020) to require that political communications generated or altered by AI include clear disclosure; defines artificial intelligence, generative AI, AI-generated content, and deepfakes; and criminalizes the malicious creation or dissemination of AI-generated realistic imitations of persons without consent in election contexts.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Election Integrity",
+      "Political Advertising",
+      "Deepfakes",
+      "AI Disclosure"
+    ],
+    "sector_tags": [
+      "government",
+      "elections"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "generative AI",
+      "deepfakes"
+    ],
+    "key_obligations": [
+      "Political communications generated/altered by AI must clearly disclose AI use",
+      "Radio/TV communications must include audio disclosure of AI use",
+      "Prohibition on maliciously including false AI-generated data in electoral systems",
+      "Criminal penalties for non-consensual deepfake distribution"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-s101-2025.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-s769-2025",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico S 769 — AI Development and Innovation Institute Act",
+    "full_name": "Puerto Rico Senate Bill 769 — Puerto Rico Artificial Intelligence Development and Innovation Institute Act: creating a public-interest non-profit AI institute, AI development fund, and amending incentive code to promote AI research, commercialization, and talent development",
+    "instrument_type": "bill",
+    "instrument_binding": false,
+    "bill_number": "S 769",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "AI governance",
+      "economic_development"
+    ],
+    "primary_category": "AI governance",
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government",
+      "developers",
+      "academic_institutions"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": true,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "DDEC",
+      "AI Institute Board"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=769",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Creates the Puerto Rico Artificial Intelligence Development and Innovation Institute, a non-profit entity of public interest, to promote AI research, innovation, and commercialization; establishes the Puerto Rico AI Development and Innovation Fund ($10M annual allocation from Economic Incentives Fund); creates Divisions of Excellence including responsible AI ethics; requires adoption of Responsible AI Policy; and amends Act 60-2019 (Incentives Code) to provide additional tax credits for R&D through the Institute.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "AI Governance",
+      "Economic Development",
+      "Research and Innovation",
+      "AI Ethics"
+    ],
+    "sector_tags": [
+      "government",
+      "technology",
+      "research",
+      "education"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "machine learning"
+    ],
+    "key_obligations": [
+      "Institute must adopt Responsible AI Policy with ethics, non-discrimination, privacy, and data governance principles",
+      "Institute must adopt Code of Ethics and Intellectual Property Policy",
+      "Institute must publish annual AI Capabilities Map and Complementarity Plan",
+      "Annual reports to Governor and Legislative Assembly with audited financials",
+      "Resident Investor Individuals must contribute minimum $5,000/year to AI Fund"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-s769-2025.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-hr424-2025",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico H.R. 424 — Investigate AI Financial Fraud",
+    "full_name": "Puerto Rico House Resolution 424 — Ordering House Committees on Consumer Affairs and Banking/Insurance/Commerce to investigate AI-enabled financial fraud prevention",
+    "instrument_type": "resolution",
+    "instrument_binding": false,
+    "bill_number": "H.R. 424",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "enacted",
+    "superseded_by": null,
+    "categories": [
+      "AI governance",
+      "consumer_protection"
+    ],
+    "primary_category": "AI governance",
+    "scope": "single_issue",
+    "who_regulated": [
+      "government"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "House of Representatives Committees"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=424",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Orders the House Committees on Consumer Affairs and on Banking, Insurance and Commerce to conduct a thorough investigation on how to prevent financial fraud through the use of artificial intelligence, including identity theft, deepfakes for impersonation, phishing, and social media fraud. Committees must submit findings within 180 days.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Financial Regulation",
+      "AI Fraud",
+      "Consumer Protection"
+    ],
+    "sector_tags": [
+      "finance",
+      "government"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "deepfakes"
+    ],
+    "key_obligations": [
+      "Committees must investigate AI-enabled financial fraud prevention measures",
+      "Committees must consider interagency collaboration with PRITS, DACO, OCIF",
+      "Report with findings and recommendations due within 180 days"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-hr424-2025.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-hr488-2025",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico H.R. 488 — AI Data Center Energy Demand Investigation",
+    "full_name": "Puerto Rico House Resolution 488 — Ordering the House Committee on Government to investigate current electric power generation capacity and 5-year demand projections accounting for AI data center growth",
+    "instrument_type": "resolution",
+    "instrument_binding": false,
+    "bill_number": "H.R. 488",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "AI governance",
+      "energy"
+    ],
+    "primary_category": "AI governance",
+    "scope": "single_issue",
+    "who_regulated": [
+      "government"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "House Committee on Government"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=488",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Orders the House Committee on Government to investigate Puerto Rico's electric power generation capacity and 5-year demand projections, specifically accounting for the expected growth in electricity demand from AI data centers. Requires analysis from PREPA, LUMA Energy, Genera PR, and the Puerto Rico Energy Bureau.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Energy Policy",
+      "AI Infrastructure",
+      "Data Centers"
+    ],
+    "sector_tags": [
+      "energy",
+      "technology",
+      "government"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "data centers"
+    ],
+    "key_obligations": [
+      "Committee must investigate current generation capacity of all power plants",
+      "Committee must obtain 5-year demand projections accounting for AI data center growth",
+      "Report with findings due within 120 days"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-hr488-2025.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-sjr1-2025",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico S.J.R. 1 — AI Registry and Governance Study (PRITS)",
+    "full_name": "Puerto Rico Senate Joint Resolution 1 — Ordering PRITS to conduct a study on AI governance policies, risk management frameworks, and best practices for Puerto Rico, and create a registry of AI developers",
+    "instrument_type": "resolution",
+    "instrument_binding": false,
+    "bill_number": "S.J.R. 1",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "AI governance"
+    ],
+    "primary_category": "AI governance",
+    "scope": "comprehensive",
+    "who_regulated": [
+      "government"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": true,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "PRITS"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=1",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Orders PRITS to conduct a study proposing AI governance policies for Puerto Rico consistent with state and federal law, develop a risk management policy based on the NIST AI Risk Management Framework or ISO/IEC 42001, design best practices frameworks for ethical AI use, and maintain a registry of companies developing AI in Puerto Rico. Semi-annual progress reports to the Legislative Assembly starting July 2026.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "AI Governance",
+      "Risk Management",
+      "AI Registry"
+    ],
+    "sector_tags": [
+      "government",
+      "technology"
+    ],
+    "technology_tags": [
+      "artificial intelligence"
+    ],
+    "key_obligations": [
+      "PRITS must study and propose state AI governance policies",
+      "PRITS must develop AI risk management policy based on NIST AI RMF or ISO 42001",
+      "PRITS must design framework of best practices for ethical AI use in Puerto Rico",
+      "PRITS must create public registry of AI developers in Puerto Rico",
+      "Semi-annual progress reports to Legislative Assembly"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-sjr1-2025.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-s705-2026",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico S 705 — AI in Sports (Vetoed)",
+    "full_name": "Puerto Rico Senate Bill 705 — Addition of Article 24 to Organic Act of the Department of Recreation and Sports to promote innovation, technology, and artificial intelligence in sports (vetoed by Governor)",
+    "instrument_type": "bill",
+    "instrument_binding": false,
+    "bill_number": "S 705",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "vetoed",
+    "superseded_by": null,
+    "categories": [
+      "AI governance"
+    ],
+    "primary_category": "AI governance",
+    "scope": "single_issue",
+    "who_regulated": [
+      "government"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=705",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Proposed adding Article 24 to the Organic Act of the Department of Recreation and Sports to promote AI and technology in sports, including AI for athlete performance, injury reduction, ethical AI governance framework, biometric data protections, and an AI Oversight Committee. Vetoed by Governor González Colón on March 12, 2026, citing fiscal infeasibility (estimated $1.2M cost not budgeted) and insufficient human resources in the DRD.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Sports Technology",
+      "AI Governance",
+      "Biometrics"
+    ],
+    "sector_tags": [
+      "sports",
+      "government"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "biometrics"
+    ],
+    "key_obligations": [],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-s705-2026.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-s760-2025",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico S 760 — AI-Generated Revenge Pornography (Criminal)",
+    "full_name": "Puerto Rico Senate Bill 760 — Amendment to Act 21-2021 (Puerto Rico Pornographic Revenge Act) to criminalize disclosure of AI-generated or AI-altered explicit intimate material without consent",
+    "instrument_type": "bill",
+    "instrument_binding": false,
+    "bill_number": "S 760",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "criminal_law",
+      "privacy"
+    ],
+    "primary_category": "criminal_law",
+    "scope": "single_issue",
+    "who_regulated": [
+      "individuals"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": true,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": true,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "courts"
+    ],
+    "max_penalty": "8 years imprisonment (aggravated circumstances); 3 years fixed term base felony",
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=760",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Amends the Puerto Rico Pornographic Revenge Act (Act 21-2021) to explicitly cover intimate or sexual material produced by AI — including deepfakes. Criminalizes the unauthorized disclosure of real or AI-fabricated explicit material; felony (3 years) for dissemination, misdemeanor for threats; 8 years for extortion. Aligns with federal Take It Down Act (Public Law 119-12, 2025).",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Criminal Law",
+      "Deepfakes",
+      "Privacy",
+      "Sexual Violence"
+    ],
+    "sector_tags": [
+      "legal"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "deepfakes"
+    ],
+    "key_obligations": [
+      "Prohibition on disseminating AI-generated intimate content without consent",
+      "Felony (3-year fixed term) for dissemination; misdemeanor for threats of dissemination",
+      "8-year imprisonment for extortion using AI-generated intimate content",
+      "10-year statute of limitations"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-s760-2025.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-s820-2026",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico S 820 — Media and Information Literacy Act",
+    "full_name": "Puerto Rico Senate Bill 820 — Media and Information Literacy Act of Puerto Rico: requiring public school curriculum to include critical media literacy, AI literacy, and disinformation resistance competencies",
+    "instrument_type": "bill",
+    "instrument_binding": false,
+    "bill_number": "S 820",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "AI governance",
+      "education"
+    ],
+    "primary_category": "AI governance",
+    "scope": "single_issue",
+    "who_regulated": [
+      "government",
+      "educational_institutions"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Department of Education"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=820",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Creates the Media and Information Literacy Act of Puerto Rico, requiring the Department of Education to integrate media and digital literacy competencies into all K-12 subjects, with emphasis on identifying AI-generated content and deepfakes, understanding algorithmic bias, critical source evaluation, and responsible digital citizenship. Teachers must be trained; annual report to Legislature required.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Education",
+      "AI Literacy",
+      "Disinformation",
+      "Media Literacy"
+    ],
+    "sector_tags": [
+      "education",
+      "government"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "deepfakes",
+      "algorithms"
+    ],
+    "key_obligations": [
+      "DEPR must integrate media/AI literacy into all K-12 curriculum within 2 academic years",
+      "Teachers must receive continuous training in media/digital literacy",
+      "Annual report to Legislative Assembly on implementation progress",
+      "Regulations to be adopted within 180 days of enactment"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-s820-2026.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-s870-2025",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico S 870 — Comprehensive Criminal AI Misuse Law",
+    "full_name": "Puerto Rico Senate Bill 870 — Amendment to Penal Code (Act 146-2012) creating a new Title VII on Crimes Related to the Malicious Use of Artificial Intelligence: deepfakes, cyberbullying, fraud, cybercrime, discrimination, privacy violations, disinformation, and market manipulation",
+    "instrument_type": "bill",
+    "instrument_binding": false,
+    "bill_number": "S 870",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "criminal_law",
+      "AI governance"
+    ],
+    "primary_category": "AI governance",
+    "scope": "comprehensive",
+    "who_regulated": [
+      "individuals"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": true,
+      "anti_discrimination_standard": "intent_based",
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": true,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": true,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "courts",
+      "Department of Justice"
+    ],
+    "max_penalty": "8 years imprisonment (felony); $15,000 per privacy violation",
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=870",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Adds comprehensive criminal framework for malicious AI use to the Puerto Rico Penal Code. Creates new Title VII with Articles 310-317 covering: unauthorized commercial use of AI-generated image/voice without consent (felony); AI cyberbullying; AI fraud; AI cyberattacks; AI discrimination; AI privacy violations; AI disinformation affecting elections/health; and AI market manipulation. Also establishes AI use as a general aggravating circumstance (25% penalty increase, Article 64(k)).",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Criminal Law",
+      "AI Governance",
+      "Deepfakes",
+      "Privacy",
+      "Discrimination"
+    ],
+    "sector_tags": [
+      "legal",
+      "government"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "deepfakes",
+      "machine learning"
+    ],
+    "key_obligations": [
+      "Prohibition on unauthorized commercial use of AI-generated likeness/voice (felony, 3-6 years)",
+      "Prohibition on AI-powered cyberbullying (misdemeanor; felony for minors/severe harm)",
+      "AI used in fraud aggravates penalties by one degree",
+      "AI disinformation affecting elections/public safety is felony (1 year fixed)",
+      "AI use as aggravating circumstance adds 25% to any criminal penalty"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-s870-2025.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-s1226-2026",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico S 1226 — AI Transparency in Insurance Claims",
+    "full_name": "Puerto Rico Senate Bill 1226 — Act of Transparency and Supervision in the Use of Artificial Intelligence in Insurance Claims: amending the Insurance Code to require human review of all adverse insurance determinations and mandate disclosure of AI use",
+    "instrument_type": "bill",
+    "instrument_binding": false,
+    "bill_number": "S 1226",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "consumer_protection",
+      "AI governance"
+    ],
+    "primary_category": "AI governance",
+    "scope": "single_issue",
+    "who_regulated": [
+      "deployers",
+      "insurers"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": true,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": true,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": true,
+      "safe_harbor": false,
+      "prohibited_categories": true,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Insurance Commissioner"
+    ],
+    "max_penalty": "$25,000 per violation",
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=1226",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Creates new Chapter 55 of the Puerto Rico Insurance Code requiring that no adverse insurance determination (denial, reduction, or limitation of claim) be made exclusively by automated systems, algorithms, or AI; mandates qualified human professional review of all adverse determinations within 15 days; requires disclosure of AI participation in claim communications; establishes private right of action for consumers; creates presumption of arbitrariness when human review cannot be demonstrated; and authorizes Insurance Commissioner to impose fines of $5,000-$25,000 per violation.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Insurance",
+      "Consumer Protection",
+      "Human Oversight",
+      "Algorithmic Decisions"
+    ],
+    "sector_tags": [
+      "insurance",
+      "health"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "machine learning",
+      "algorithms"
+    ],
+    "key_obligations": [
+      "No adverse claim determination may be based exclusively on AI/automated systems",
+      "Qualified human professional must independently review and approve all adverse determinations",
+      "Human review must be provided within 15 days of request",
+      "Detailed records of human review and AI participation must be maintained",
+      "Denial communications must state AI was not the sole decision-maker",
+      "Insurers must document AI use in internal manuals"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-s1226-2026.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-sjr16-2025",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico S.J.R. 16 — AI Monitoring App for Public Auctions",
+    "full_name": "Puerto Rico Senate Joint Resolution 16 — Ordering PRITS to create and implement an AI-based application for monitoring public auction processes for transparency and fraud prevention",
+    "instrument_type": "resolution",
+    "instrument_binding": false,
+    "bill_number": "S.J.R. 16",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "AI governance",
+      "government_procurement"
+    ],
+    "primary_category": "AI governance",
+    "scope": "single_issue",
+    "who_regulated": [
+      "government"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "PRITS"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=16",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Orders PRITS to develop and implement an AI-based application for real-time monitoring of public auction processes in Puerto Rico, capable of detecting suspicious patterns, generating automatic alerts on irregularities, and providing accessible reports to oversight entities. Development plan due to Legislature within 90 days; quarterly implementation reports during first year.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Government Procurement",
+      "Transparency",
+      "Anti-Corruption"
+    ],
+    "sector_tags": [
+      "government",
+      "procurement"
+    ],
+    "technology_tags": [
+      "artificial intelligence"
+    ],
+    "key_obligations": [
+      "PRITS must develop AI monitoring application for public auctions",
+      "Application must include real-time monitoring, pattern detection, and automatic alerts",
+      "Development plan due to Legislative Assembly within 90 days",
+      "Quarterly progress reports during first year of implementation"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-sjr16-2025.md",
+    "legal_citation": null
+  },
+  {
+    "id": "us-pr-sjr86-2026",
+    "jurisdiction": "Puerto Rico",
+    "jurisdiction_type": "subnational",
+    "region": "US-PR",
+    "short_name": "Puerto Rico S.J.R. 86 — AI-Supported Precision Medicine Feasibility Study",
+    "full_name": "Puerto Rico Senate Joint Resolution 86 — Ordering Department of Health, in coordination with ASEM, UPR, and accredited medical schools, to investigate feasibility of an AI-supported Precision Medicine Program in Puerto Rico",
+    "instrument_type": "resolution",
+    "instrument_binding": false,
+    "bill_number": "S.J.R. 86",
+    "enacted_date": null,
+    "effective_date": null,
+    "status": "proposed",
+    "superseded_by": null,
+    "categories": [
+      "AI governance",
+      "healthcare"
+    ],
+    "primary_category": "AI governance",
+    "scope": "single_issue",
+    "who_regulated": [
+      "government",
+      "healthcare"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false
+    },
+    "enforcement_body": [
+      "Department of Health"
+    ],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "civil_law",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://oslpr.org/2025-2028/tl/medida.aspx?r=86",
+    "summary_url": null,
+    "last_verified": "2026-05-06",
+    "summary": "Orders the Puerto Rico Department of Health, in coordination with ASEM, the Science and Technology Trust, UPR Medical Sciences Campus, and accredited medical schools, to conduct a feasibility study on establishing a Precision Medicine Program supported by AI. Study must cover current use cases in oncology/chronic diseases/pharmacogenetics, infrastructure needs, human resources, legal/regulatory challenges around data protection, cost estimates, and equitable access strategies. Report due to Legislature within 270 days.",
+    "notable": null,
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Healthcare",
+      "Precision Medicine",
+      "AI in Health",
+      "Feasibility Study"
+    ],
+    "sector_tags": [
+      "healthcare",
+      "research"
+    ],
+    "technology_tags": [
+      "artificial intelligence",
+      "machine learning"
+    ],
+    "key_obligations": [
+      "Department of Health must conduct AI precision medicine feasibility study",
+      "Study must cover use cases, infrastructure, regulatory challenges, and equity",
+      "PRITS serves as technical advisor on government system interoperability aspects",
+      "Report due to Legislative Assembly within 270 days"
+    ],
+    "issue_positions": {},
+    "text_path": "data/texts/us-pr-sjr86-2026.md",
+    "legal_citation": null
   }
 ]
