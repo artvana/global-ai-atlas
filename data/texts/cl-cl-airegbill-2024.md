@@ -1,94 +1,322 @@
 ---
 id: cl-cl-airegbill-2024
-source_url: https://cadeproject.org/updates/chiles-artificial-intelligence-regulation-bill-advances-in-congress/
+source_url: https://cadeproject.org/updates/chiles-artificial-intelligence-regulation-bill-advances-to-the-senate/
 fetched_date: 2026-05-06
-fetch_status: UNAVAILABLE — URL returns 404 (page moved or removed from CADE project website)
-secondary_source: true
-notes: Original source URL returned 404. The CADE project appears to have a different URL for this content: https://cadeproject.org/updates/chiles-artificial-intelligence-regulation-bill-advances-to-the-senate/. Content below is synthesized from multiple secondary sources about Chile's AI Regulation Bill (Boletín 16821-19). Official bill text is available through the Chilean Chamber of Deputies portal (camara.cl).
-official_source_note: Chile AI Bill (Boletín 16821-19 / Boletín 15869-19 consolidated): Submitted May 7, 2024 by President Boric's government. Approved by Chamber of Deputies October 13, 2025. Currently under Senate review. Official text at https://www.camara.cl/legislacion/proyectosdeley/tramitacion.aspx?prmID=17429
+fetch_status: OK
 ---
 
-# Chile's Artificial Intelligence Regulation Bill (Boletín 16821-19)
+[Unofficial English translation. Original: Spanish.]
 
-## Overview
+Oficio Nº 20.843
 
-Chile's AI Regulation Bill (Boletín 16821-19) was submitted to the Chamber of Deputies on May 7, 2024 by President Gabriel Boric's government through the Ministry of Science, Technology, Knowledge and Innovation. The bill was consolidated with a previously presented parliamentary proposal (Boletín 15869-19) to advance more comprehensive and consensus-based regulation.
+VALPARAÍSO, 13 October 2025
 
-The bill seeks to ensure that the development and use of AI technologies respects people's rights, fosters innovation, and strengthens the State's capacity to address its risks and challenges.
+TO H.E. THE PRESIDENT OF THE H. SENATE
 
-## Legislative Timeline
+I have the honor to inform Your Excellency that, on the basis of the motion, the message, the reports and other background materials which I have the honor to forward to Y.E., the Chamber of Deputies has approved the following bill, which regulates artificial intelligence systems, corresponding to consolidated Bulletins Nos. 15.869-19 and 16.821-19:
 
-- **May 7, 2024**: Bill submitted to Chamber of Deputies by the executive branch
-- **August 2025**: Government introduces amendments aligning bill with National Data Centres Plan
-- **October 13, 2025**: Bill approved by Chamber of Deputies (Chamber of Origin)
-- **October 2025**: Dispatched to Senate for second constitutional review
-- **February 2026**: Bill continues senate review process
+BILL
 
-## Key Features
+"TITLE I
 
-### Risk Classification System
+GENERAL PROVISIONS
 
-The bill adopts a four-tier risk classification:
-1. **Unacceptable risk**: Prohibited AI uses
-2. **High risk**: Subject to strict requirements and conformity assessments
-3. **Limited risk**: Subject to specific transparency obligations
-4. **No-evident-risk**: Minimal requirements
+Article 1.- Purpose of the law. This law has as its purpose to regulate the uses of Artificial Intelligence systems (hereinafter AI), to promote their creation, development, innovation and implementation, and to provide a regulatory framework that ensures the sustainable and ethical development of AI in service of persons, respectful of democratic principles and the rule of law.
 
-### Prohibited Uses
+The State of Chile, through its institutions, shall promote the use and development of AI and its necessary infrastructure, shall ensure compliance with the institutional and regulatory framework under which the Republic of Chile is organized, with respect for the fundamental rights of persons enshrined in the Political Constitution of the Republic, and shall promote equality of rights in order to eliminate any form of arbitrary discrimination.
 
-The bill lists specific prohibited uses, including:
-- Subliminal manipulation techniques
-- Certain biometric remote-identification practices
-- Social scoring systems
-- Uses that exploit vulnerabilities of specific groups
+Article 2.- Scope of application. This law shall be applicable to:
 
-### Governance Structure
+1. Providers that place on the market or put into service AI systems in the national territory.
 
-The bill organizes governance along three pillars:
+2. Deployers of AI systems domiciled in the national territory.
 
-1. **Policy leadership**: Ministry of Science, Technology, Knowledge and Innovation takes lead role in policy coordination
-2. **Technical Advisory Council**: Multi-stakeholder council on AI to provide recommendations, produce yearly reports to Congress, and propose lists of high-risk or limited-risk uses
-3. **Supervisory functions**: Chile's data protection authority handles data-related violations; cybersecurity agencies handle incidents impacting system security
+3. Providers and deployers of AI systems domiciled abroad, where the output generated by the AI system is used in Chile.
 
-### Key Provisions
+4. Importers and distributors of AI systems, as well as authorized representatives of providers of AI systems, where such importers, distributors and authorized representatives are domiciled in the national territory.
 
-**Article 12**: Consent and transparency requirements — any deepfake of actual people requires express permission; all AI-generated content must have clear labeling
+In any event, this law shall not be applicable to:
 
-**Article 15**: Establishes distinction for manufacturing or dissemination of deepfakes that pose danger to "individual dignity, democratic integrity, or public security"
+a) AI systems developed and used for purposes of national defense. A reserved resolution issued by the Ministry of National Defense shall identify and list the AI systems falling within this exception.
 
-**Article 18**: Platform responsibility — platforms must implement procedures for removal of indicated deepfakes within 24 hours
+To give effect to the foregoing, the Ministry of National Defense shall issue a regulation with the criteria allowing the identification and listing of the AI systems mentioned in the preceding paragraph.
 
-### Penalties
+b) Research, testing and development activities of AI systems prior to their placing on the market or putting into service, provided that such activities are carried out with respect for the fundamental rights of persons. If damages are caused on the occasion of such activities, liability shall be incurred in accordance with Articles 12 and 18.
 
-Violations can result in:
-- Imprisonment of six months to three years for individuals
-- Financial fines up to 1,000 UTM (Unidad Tributaria Mensual)
-- Enforcement by Courts of Justice and Ministry of Science
+Testing in real-world conditions shall not be covered by this exemption.
 
-### Special Provisions
+c) AI components provided under free and open-source licenses, unless they are placed on the market or put into service by a provider as part of a high-risk AI system. If damages are caused on the occasion of this type of development, liability shall be incurred in accordance with the provisions of Article 19.
 
-The bill includes specific attention to:
-- AI literacy programmes
-- Measures to foster safe innovation
-- Recognition of the State's role in enabling AI infrastructure (added via August 2025 amendments)
-- Alignment with National Data Centres Plan
+Article 3.- Definitions. For the purposes of this law, the following shall be understood as:
 
-## Scope and Application
+1. AI system: a machine-based system, algorithm or mathematical model that, on the basis of explicit or implicit objectives, infers, from the input data it receives, how to generate outputs such as predictions, content, recommendations or decisions that may influence social, physical or virtual environments. Different AI systems may vary in their levels of autonomy and adaptability after their deployment.
 
-The bill establishes a nationwide, risk-based regulatory framework for the development, deployment, and use of AI systems affecting Chile. Its primary objectives are:
+2. General-purpose AI system: one capable of performing multiple general-application functions at the same time, such as image or voice recognition, audio processing, video generation, pattern detection, question answering, translation, among others, and which can provide both predictable and unpredictable outputs.
 
-(a) Promote responsible innovation
-(b) Protect fundamental rights and democratic principles
-(c) Create governance and enforcement mechanisms to manage AI-related harms
+3. Risk: the combination of the probability of harm occurring to persons, their health, safety or fundamental rights, and the severity of such harm.
 
-## International Context
+4. Significant risk: a risk resulting from the combination of its severity, intensity, probability of occurrence and duration of its effects, and its capacity to affect one or more natural persons.
 
-Chile's AI Bill is positioned as a progressive framework in the Latin American context. It is inspired by and broadly aligned with the European Union's AI Act risk-based approach, while adapted to Chile's specific legal and institutional context.
+5. Provider: the natural or legal person or State body that develops an AI system with a view to placing it on the market or putting it into service, free of charge or for consideration.
 
-## Creative and Research Exemptions
+6. Deployer: the natural or legal person or State body that uses an AI system, except where it concerns its private use, under the terms of Law No. 17.336, on intellectual property.
 
-Content created for art, journalism, or legal research purposes will not fall under prohibition provisions, provided it is labeled as AI-generated and is not used for fraudulent intent.
+7. Authorized representative: the natural or legal person domiciled in Chile who receives and accepts the written mandate from a provider of an AI system to comply with the obligations established in this law on behalf of such provider.
 
-## Background
+8. Importer: the natural or legal person domiciled in Chile who places on the market or puts into service an AI system bearing the name or trademark of a natural or legal person established outside the national territory.
 
-Chile's first National AI Policy was published in 2021 and updated in 2024. The AI regulation bill represents the legislative dimension of Chile's AI governance framework, building on the policy foundation established by the Ministry of Science.
+9. Distributor: the natural or legal person who is part of the supply chain, other than the provider or the importer, who makes an AI system available on the national market without affecting its properties.
+
+10. Operator: the provider, the deployer, the authorized representative, the importer and/or the distributor.
+
+11. Putting into service: the supply of an AI system for first use directly by the deployer or for own use in the national market, free of charge or for consideration, in accordance with its intended purpose.
+
+12. Biometric identification: the automated recognition of human physical, physiological or behavioral characteristics to determine the identity of a person, by comparing their biometric data with other data stored in a database.
+
+13. Remote biometric identification system: that AI system intended to identify natural persons at a distance, and to compare their biometric data with those contained in a reference database, without the operator of the AI system knowing in advance whether the person concerned is in such database and can be identified.
+
+14. Real-time remote biometric identification system: that in which the capture of biometric data, their comparison and the identification of a person occur without significant delay.
+
+15. Emotion recognition system: that AI system intended to detect or infer the emotions, thoughts, moods or intentions of individuals or groups on the basis of their biometric data and other techniques, the use of which infringes the fundamental rights of persons.
+
+16. Incident: the use of an AI system that produces any of the following consequences:
+
+a) the death of a person or serious harm to their health.
+
+b) serious disruption to the management and operation of public utility services or whose paralysis would cause serious harm to the health of persons, the country's economy, supply to the population or national security; or to those declared as critical infrastructure, in accordance with the second paragraph of subsection 21 of Article 32 of the Political Constitution of the Republic.
+
+c) the infringement of fundamental rights protected by the Constitution and the laws.
+
+d) Harm to the person or property of another, or environmental harm, in the terms of letter e) of Article 2 of Law No. 19.300, which approves the law on general bases of the environment.
+
+e) the infringement of copyright and related rights.
+
+17. Controlled testing space (regulatory sandbox): that controlled environment that facilitates the development, testing and validation of AI systems.
+
+18. Publicly accessible space: that physical place of public or private ownership which is accessible to the public, regardless of whether certain conditions must be met for access and regardless of any capacity restrictions.
+
+19. Biometric categorization: classification of persons according to specific categories, or inference of their characteristics and attributes, on the basis of their biometric data and biometric-based data, or that may be inferred from such data.
+
+20. Safety component of a product or AI system: that which fulfills a safety function for such product or system, or whose failure or malfunction generates an incident.
+
+21. Reasonably foreseeable misuse: the use of an AI system in a manner that does not correspond to its intended purpose indicated in the instructions for use established by the provider, but which may result from reasonably foreseeable human behavior or interaction with other systems, including other AI systems.
+
+22. Intended purpose: the use for which an operator conceives an AI system, including the specific context and conditions of use, according to the information provided in the instructions for use, the promotional and sales materials and statements, and the technical documentation.
+
+Article 4.- Principles applicable to AI systems. All operators to whom this law applies shall observe the following general principles:
+
+1. Human intervention and oversight: AI systems shall be developed and used as a tool in service of the human being, that respects human dignity and personal autonomy, and that operates in a manner that can be adequately controlled and supervised by human beings.
+
+2. Technical robustness and safety: AI systems shall be developed and used in a manner that minimizes foreseeable harm, and shall be technically resistant to unforeseen failures as well as to attempts at modification of the use or performance of the AI system for unlawful purposes by third parties.
+
+3. Privacy and data governance: AI systems shall be developed and used in accordance with the rules in force on privacy and protection of personal data, and shall promote that data processing complies with the regulations in terms of quality and integrity. Likewise, in AI systems of the State administration, efforts shall be made to ensure that the data they use are interoperable.
+
+4. Transparency and identification: AI systems shall be developed and used in such a way as to facilitate adequate traceability, in accordance with the provisions of the legal system in force. Furthermore, they shall be identified as artificial agents on each occasion when they interact with human beings, in such a way that the latter may know clearly and accurately and be aware that they are communicating or interacting with an AI system.
+
+5. Diversity and social equity: the uses of an AI system must be accessible and fair to all groups of society, with safeguarding of the fundamental rights of persons in order to avoid practices that reinforce inequalities, arbitrary or unlawful discrimination.
+
+6. Social and environmental well-being: AI systems shall be developed and used in a sustainable and respectful manner toward human beings and the environment. Therefore, those responsible for placing on the market, putting into service or using AI systems must review the long-term effects that their application generates on society, democracy and the environment. To this end, operators of AI systems must publish annual reports on environmental impact through the dissemination channels available to them, including social networks and webpages.
+
+7. Accountability and responsibility: AI systems must provide proper functioning throughout their life cycle on the part of those who design, develop, operate or deploy them, in relation to their proper functions and/or use.
+
+8. Protection of consumers' rights: AI systems shall be developed and used in accordance with the rules in force on protection of consumer rights; they must ensure fair treatment, delivery of truthful, timely and transparent information, and safeguarding of freedom of choice and safety in consumption.
+
+9. Gender equity: efforts shall be made to ensure that AI systems are developed and used as a tool for the promotion of gender equality and for the elimination of any unlawful or arbitrary discrimination or gender-based violence. Algorithms, especially generative ones, shall be designed in such a way as to avoid the reproduction of existing gender inequalities.
+
+10. Protection of copyright: AI systems shall be developed and used in accordance with the rules in force on intellectual property.
+
+11. Explainability: AI systems shall be created, developed, innovated, deployed and used in such a way that their outputs are understandable and intelligible to the persons they impact; and transparency and traceability shall be promoted in all their operations.
+
+The Ministry of Science, Technology, Knowledge and Innovation, the Personal Data Protection Agency (hereinafter "APDP") and the National Cybersecurity Agency (hereinafter "ANCI") shall incorporate these principles into the various guidelines aimed at providing assistance to the operator on how to develop and use AI systems, as well as when regulating and supervising within their respective spheres of competence. The foregoing shall be without prejudice to the directives and guidelines on this matter that the Digital Government Secretariat of the Ministry of Finance may issue within the scope of its legal powers, and to the competences vested in the Council for Transparency in accordance with the provisions of Law No. 20.285 on access to public information.
+
+Article 5.- Transparency obligations in certain AI systems. Every operator of AI systems that generate synthetic audio, image, video or text content shall ensure that their outputs are identifiable as artificially generated or manipulated.
+
+Article 6.- Classification of uses of AI systems. The uses of AI systems are classified, according to their risk, into the following categories:
+
+1. Uses of unacceptable risk: those that are incompatible with the respect and guarantee of the fundamental rights of persons, established in Article 7. The distribution, placing on the market or putting into service of AI systems intended for such uses is prohibited.
+
+2. High-risk uses: those uses of stand-alone AI systems or safety components of products whose use presents a significant risk of affecting the fundamental rights of persons, especially if these systems fail or are improperly used.
+
+3. Limited-risk use: those that present non-significant risks of manipulation, deception or error, as a result of their interaction with persons.
+
+4. Uses without obvious risk: all other uses that do not fall within the preceding categories.
+
+For the purposes of this law, "use" shall be understood as the development, testing and validation of AI systems, as well as their distribution, placing on the market, putting into service, or any activity carried out by an operator.
+
+TITLE II
+
+UNACCEPTABLE-RISK USES OF ARTIFICIAL INTELLIGENCE SYSTEMS
+
+Article 7.- Unacceptable-risk uses of AI systems. These shall be those falling within any of the following categories:
+
+1. Subliminal manipulation: AI systems that employ techniques imperceptible to persons and which have as their object the inducement of actions that cause harm to physical or mental health. In particular, the uses of AI systems that, through manipulation or deception, have as their purpose or effect the alteration of the behavior of one or more persons, the impairment of their capacity for informed decision-making and the inducement to adopt decisions that they reasonably would not have taken in their absence are prohibited.
+
+This prohibition shall not apply to AI systems intended for therapeutic purposes provided that they are carried out in accordance with the law. In these cases, the specific and express informed consent of the person shall be required.
+
+2. Exploitation of persons' characteristics to generate harmful behaviors: AI systems that take advantage of or exploit known characteristics of persons, such as personality traits, social or economic situation, age range, information relating to sexual life, sexual orientation, gender identity, physical or mental capacity, among others, that have as their object the substantial alteration of their behavior or the limitation of their will, with infringement of their fundamental rights or causation of harm to persons.
+
+Likewise, those uses of AI systems that are harmful or affect the honor, integrity and free development of the sexuality of persons shall be understood to be included within this category, in particular, those whose uses may signify an infringement of the rights of children and adolescents, in accordance with the provisions of Law No. 21.430, on guarantees and integral protection of the rights of children and adolescents.
+
+3. Categorization of persons based on sensitive personal data: biometric categorization systems or other data processing techniques that classify and identify natural persons on the basis of sensitive personal data, or that proceed from an inference regarding such attributes or characteristics, in such a way that such categorization causes unlawful or arbitrary discrimination.
+
+This prohibition shall not apply to AI systems intended to be used for authorized therapeutic purposes on the basis of informed, specific and express consent on the part of the natural persons exposed to them or, where applicable, their legal or judicial representative. In addition, the corresponding sanitary authorization shall be required, where applicable.
+
+4. Generic social scoring: AI systems that have as their purpose to evaluate or classify natural persons or groups of natural persons on the basis of their social behavior, socioeconomic level or known or inferred personal or personality characteristics, in such a way that the resulting scoring causes unlawful or arbitrary discrimination with respect to such persons or groups of persons.
+
+5. Real-time remote biometric identification in publicly accessible spaces: AI systems used for the analysis of video images in publicly accessible spaces that employ real-time remote biometric identification systems.
+
+6. Untargeted scraping of facial images: AI systems that create or expand facial recognition databases through the indiscriminate, mass and non-consensual scraping of facial images from the internet or from closed-circuit television.
+
+7. Assessment of emotional states of a person: AI systems that purport to infer the emotions of a natural person in the areas of criminal law enforcement, criminal procedure and border management, in workplaces and in educational institutions.
+
+TITLE III
+
+HIGH-RISK USE OF ARTIFICIAL INTELLIGENCE SYSTEMS
+
+Article 8.- High-risk use of AI Systems. The use of an AI system shall be considered high-risk when it presents a significant risk of affecting fundamental rights protected by the Political Constitution of the Republic, as well as consumer rights, copyright and related rights, whether the AI system is intended to be used as a safety component of a product, or is itself such product.
+
+The high-risk use of AI systems must seek respect for the fundamental rights of persons. Likewise, they must prevent the creation of stereotypes, as well as the degradation of persons or groups of persons who interact with this type of AI system.
+
+Article 9.- Applicable rules. AI systems whose uses are classified as high-risk must comply with the following rules:
+
+1. Establishment of risk management systems: They shall be subject to a continuous iterative process of risk assessment that shall be carried out throughout the entire life cycle of the system, which shall require periodic reviews and updates to seek its effectiveness and minimize the possibilities of failure or malfunction, according to the declared intended purpose.
+
+The risk management system may be integrated into existing risk management procedures, or part of them, that the operator has implemented because the law or the respective authority so requires, and shall incorporate measures against incidents applicable to the AI system in case of failures or malfunction.
+
+2. Data governance: If they use model training techniques with data, they must have data governance appropriate to their purpose and context of use.
+
+Likewise, they must incorporate data security and protection standards, and include mechanisms for prevention and management of information security incidents, according to their scope of application.
+
+3. Technical documentation: The required technical documentation shall be intelligible and shall be drafted in such a way as to demonstrate that it complies with the rules established in this law.
+
+4. Logging system: They must have functions that allow the recording of information and security events while in operation.
+
+The logs must be stored with adequate security measures to prevent their alteration, loss or unauthorized access. Their access shall be restricted to authorized personnel and to the competent supervisory authority.
+
+5. Human oversight mechanisms: They must have technical and operational mechanisms that allow their supervision by natural persons technically trained for this function, in a suitable and proportional manner. Oversight must guarantee that the system is used in accordance with its intended purpose and, in addition, identify and mitigate the risks associated with reasonably foreseeable misuse, in order to avoid negative impacts on the fundamental rights of persons.
+
+6. Accuracy, robustness and cybersecurity: The functioning of these systems must respect the principle of security by design and by default, have an adequate level of accuracy, resilience, security and cybersecurity, function in a reliable, predictable and resilient manner, and guarantee their security and resistance to incidents throughout their entire life cycle.
+
+Compliance with these requirements must be guaranteed through the implementation of security measures aligned with the provisions of Articles 3, 7 and 9 of Law No. 21.663, the framework cybersecurity law.
+
+In any event, for compliance with the preceding rules, differentiated standards may be established by virtue of the type and size of the operator. Special consideration shall be given to the characteristics and needs of smaller enterprises, as defined in Law No. 20.416, which establishes special rules for smaller enterprises.
+
+When the high-risk use of an AI system does not conform to the rules provided in this law, the operator shall immediately adopt the measures necessary to deactivate it, withdraw it from the market or suspend it. These measures shall be established within the aforementioned risk management system and shall be designed in accordance with their intended use.
+
+The APDP and the ANCI, within the scope of their competences, may require operators of these systems to follow specific supervisory procedures, regarding the matter regulated in this law, when there are indications of non-compliance with current regulations or potential risks to the exercise of fundamental rights.
+
+Article 10.- Post-implementation monitoring of the deployment, putting into service, distribution and placing on the market of high-risk AI system uses. Operators shall establish and document a monitoring system that is proportional and appropriate to the nature and risks identified in their uses.
+
+The monitoring system shall collect and analyze data provided by operators or gathered through other sources, with the objective of evaluating the functioning of high-risk AI system uses throughout their useful life. This process shall allow operators to determine the level of compliance with the rules of Article 9.
+
+Where applicable, post-monitoring shall include an analysis of the interaction with other AI system environments, including other interconnected devices and software that may influence their functioning or generate additional risks.
+
+TITLE IV
+
+LIMITED-RISK USES OF ARTIFICIAL INTELLIGENCE SYSTEMS
+
+Article 11.- Limited-risk use of AI Systems. The use of a system shall be considered limited-risk if it presents a non-significant risk of manipulation, deception or error, as a result of its interaction with persons.
+
+Limited-risk AI systems must guarantee transparency and security conditions proportional to their level of risk, in such a way that persons are informed clearly and accurately and allow them to recognize that they are interacting with an AI system.
+
+TITLE V
+
+INNOVATION SUPPORT MEASURES
+
+Article 12.- Liability arising from controlled testing spaces (regulatory sandboxes) for AI. Operators in controlled testing spaces for AI shall be liable for any damage caused to third parties as a result of the experimentation carried out in the controlled testing space.
+
+Provided that operators respect the provisions of this law and the guidelines provided by the bodies of the State Administration that enable these controlled testing spaces, they shall be exempt from payment of the administrative fines referred to in Article 17, without prejudice to liability for the damages they may cause.
+
+The use of a controlled testing space is not an enabling requirement for the development, testing and validation of AI systems, nor for their distribution, placing on the market, putting into service, nor for any activity carried out by an operator, and does not exempt from the obligations and responsibilities established in this law.
+
+Article 13.- Measures aimed at smaller enterprises and civil society organizations. The State, through the Ministries of Science, Technology, Knowledge and Innovation and of Economy, Development and Tourism, shall promote measures aimed at:
+
+1. Providing smaller enterprises established in the national territory with priority access to existing controlled testing spaces for AI, all of this in accordance with the existing budgetary availability.
+
+2. Promoting the realization of awareness-raising initiatives, capacity building and development of advanced digital competences in matters of uses linked to AI, adapted to the needs of smaller enterprises.
+
+The measures indicated in the preceding paragraph shall be directed to civil society organizations that develop or use AI systems, in accordance with objective, public and non-discriminatory criteria.
+
+Article 14.- The Ministry of Science, Technology, Knowledge and Innovation, within the framework of its functions and powers, in coordination with the Ministry of Economy, Development and Tourism, shall promote the ethical and responsible development of artificial intelligence in the country, with full respect for the fundamental rights guaranteed by the Constitution and the laws, and shall establish measures to support innovation based on AI systems. To this end, it may request the collaboration of entities or persons from the private sector, and from universities of the country, in accordance with the provisions of letters f) and m) of Article 5 of Law No. 21.105.
+
+It shall correspond especially to the Ministry of Science, Technology, Knowledge and Innovation to promote, design and develop programs aimed at citizen literacy and dissemination on AI matters, and to ensure the creation of instruments that allow the comprehension of the technology and educate about the rights and obligations regarding the uses of AI systems in the terms contained in this law, their advantages, potentialities and risks.
+
+TITLE VI
+
+CONFIDENTIALITY, INFRACTIONS AND SANCTIONS
+
+Article 15.- Confidentiality in the use of AI systems. Natural persons, legal persons and bodies of the State administration involved in the application of this law must respect the confidentiality of the information and data obtained from an AI system in the exercise of their functions and activities, so as to protect, in particular:
+
+1. Intellectual and industrial property rights and confidential business information and trade secrets of a natural or legal person, including source code.
+
+2. Personal data and their processing in accordance with current regulations.
+
+3. The public interest and national security.
+
+4. The integrity of criminal cases or administrative proceedings.
+
+The foregoing, without prejudice to other applicable laws regulating access, processing and protection of this information.
+
+Article 16.- Infractions. For purposes of the exercise of the powers of the Personal Data Protection Agency, the following shall be considered an infraction:
+
+1. Very serious: The use of an AI system by an operator that contravenes the provisions of Article 7 on uses of unacceptable risk. Recidivism of the same serious infraction within one year shall also be considered a very serious infraction.
+
+2. Serious: the non-compliance, by an operator, with the rules provided in Article 9 for high-risk uses. Recidivism of the same minor infraction within one year shall also be considered a serious infraction.
+
+3. Minor: the non-compliance, by an operator, with the transparency obligations provided regarding the limited-risk uses regulated in Article 11. Any infraction of the obligations established by this law and which does not have a specific sanction indicated shall also be considered a minor infraction.
+
+The sanctions provided in this article shall be applied without prejudice to the provisions of Law No. 21.719, in case the infraction involves the processing of personal data and its sanctioning regime is applicable.
+
+Article 17.- Sanctions. Infraction of the precepts of this law shall be sanctioned as follows:
+
+1. Minor infractions shall be sanctioned with a fine of up to 5,000 monthly tax units (UTM).
+
+2. Serious infractions shall be sanctioned with a fine of up to 10,000 monthly tax units (UTM).
+
+3. Very serious infractions shall be sanctioned with a fine of up to 20,000 monthly tax units (UTM).
+
+In determining the amount of the administrative fine, all the relevant circumstances of the particular situation shall be taken into consideration in each specific case, and due account shall be taken of:
+
+a) The duration of the infraction and its consequences, in light of the purpose of the use and scope of the AI system, and, where applicable, the severity, intensity, probability of occurrence and duration of its effects, as well as the number of persons affected and the level of damage caused.
+
+b) The size and volume of annual sales of the operator committing the infraction.
+
+c) The actions undertaken by the operator to mitigate the prejudice or damage suffered by persons.
+
+d) The degree of cooperation of the operator with the competent national authorities in order to remedy the infraction and mitigate its possible adverse effects.
+
+e) The specific role played by the provider, deployer, authorized representative, importer and/or distributor in the artificial intelligence value chain.
+
+f) The economic benefit obtained from the infraction.
+
+g) The recidivism of the offender.
+
+When for the same facts and legal grounds, the offender may be sanctioned in accordance with this law and another or other laws, of the possible sanctions, the most severe shall be imposed.
+
+Article 18.- Civil liability. The person who suffers harm as a consequence of the use of an AI system may bring a civil action for:
+
+1. The cessation of the acts generating harm.
+
+2. Compensation for damages.
+
+3. The adoption of the measures necessary to prevent the continuation of the infraction, when there is imminent danger of irreparable harm.
+
+4. The publication of the judgment at the expense of the convicted party, by means of announcements in a newspaper of the plaintiff's choice. This measure shall be applicable when the judgment so expressly indicates.
+
+The liabilities incurred by a natural or legal person for the infractions established in this law are understood without prejudice to other legal, civil and criminal liabilities that may correspond to it under current regulations.
+
+Article 19.- Procedure applicable in civil matters. The civil action established in Article 18 shall be processed in accordance with the summary procedure, in conformity with the provisions of Title XI of Book Three of the Code of Civil Procedure.
+
+Transitory article.- The rules of this law shall enter into force on the first business day of the twelfth month from its publication in the Official Gazette.
+
+*****
+
+Which I have the honor to communicate to Y.E.
+
+> JOSÉ MIGUEL CASTRO BASCUÑÁN
+>
+> President of the Chamber of Deputies
+
+MIGUEL LANDEROS PERKIĆ
+
+Secretary General of the Chamber of Deputies
