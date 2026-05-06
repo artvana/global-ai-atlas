@@ -27459,7 +27459,7 @@
     "full_name": "European Commission Proposal — Digital Omnibus Regulation Amending the AI Act (COM/2025)",
     "instrument_type": "regulation",
     "bill_number": "COM/2025/800",
-    "enacted_date": "2025-11-19",
+    "enacted_date": null,
     "effective_date": null,
     "status": "proposed",
     "superseded_by": null,
@@ -27623,7 +27623,7 @@
     "full_name": "European Commission Proposal — Digital Omnibus Regulation Amending GDPR, NIS2, Data Act, DORA and Related Instruments",
     "instrument_type": "regulation",
     "bill_number": "COM/2025/801",
-    "enacted_date": "2025-11-19",
+    "enacted_date": null,
     "effective_date": null,
     "status": "proposed",
     "superseded_by": null,
@@ -29823,7 +29823,8 @@
     },
     "text_path": "data/texts/apec-apec-cbpr-2011.md",
     "region": "International",
-    "official_url": "https://www.apec.org/docs/default-source/Groups/ECSG/CBPR/CBPR-ProgramRequirements.pdf"
+    "official_url": "https://www.apec.org/docs/default-source/Groups/ECSG/CBPR/CBPR-ProgramRequirements.pdf",
+    "full_name": "APEC Cross-Border Privacy Rules (CBPR) System"
   },
   {
     "id": "au-au-naistrategy-2021",
@@ -29869,7 +29870,8 @@
     },
     "text_path": "data/texts/au-au-naistrategy-2021.md",
     "region": "Asia-Pacific",
-    "superseded_by": "au-au-naianplan-2025"
+    "superseded_by": "au-au-naianplan-2025",
+    "full_name": "Australia's AI Action Plan 2021 — National Artificial Intelligence Strategy"
   },
   {
     "id": "bh-bh-pdpl-2018",
@@ -29910,7 +29912,8 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/bh-bh-pdpl-2018.md",
-    "region": "Middle East"
+    "region": "Middle East",
+    "full_name": "Bahrain Personal Data Protection Law 2018 (Law No. 30 of 2018)"
   },
   {
     "id": "ca-fed-aida-2022",
@@ -29956,7 +29959,8 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/ca-fed-aida-2022.md",
-    "region": "North America"
+    "region": "North America",
+    "full_name": "Artificial Intelligence and Data Act (AIDA) — Part 3 of Bill C-27, Canada"
   },
   {
     "id": "ca-fed-c63-2024",
@@ -29998,7 +30002,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/ca-fed-c63-2024.md",
-    "region": "North America"
+    "region": "North America",
+    "full_name": "Bill C-63 — Online Harms Act (Canada)"
   },
   {
     "id": "ci-ci-pdpa-2013",
@@ -30041,7 +30046,8 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/ci-ci-pdpa-2013.md",
-    "region": "Africa"
+    "region": "Africa",
+    "full_name": "Côte d'Ivoire Law No. 2013-450 on the Protection of Personal Data"
   },
   {
     "id": "cn-cn-aisafety-2024",
@@ -30082,7 +30088,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/cn-cn-aisafety-2024.md",
-    "region": "Asia-Pacific"
+    "region": "Asia-Pacific",
+    "full_name": "China AI Safety Governance Framework (SAC NTC260, 2024)"
   },
   {
     "id": "cr-cr-dpa-2011",
@@ -30125,7 +30132,8 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/cr-cr-dpa-2011.md",
-    "region": "Latin America"
+    "region": "Latin America",
+    "full_name": "Costa Rica Law No. 8968 — Protection of Personal Data"
   },
   {
     "id": "do-do-dpa-2013",
@@ -30168,7 +30176,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/do-do-dpa-2013.md",
-    "region": "Latin America"
+    "region": "Latin America",
+    "full_name": "Dominican Republic Law No. 172-13 on the Protection of Personal Data"
   },
   {
     "id": "dz-dz-pdpl-2018",
@@ -30211,7 +30220,8 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/dz-dz-pdpl-2018.md",
-    "region": "Africa"
+    "region": "Africa",
+    "full_name": "Algeria Law No. 18-07 on the Protection of Personal Data"
   },
   {
     "id": "ec-ec-lopdp-2021",
@@ -30255,7 +30265,8 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/ec-ec-lopdp-2021.md",
-    "region": "Latin America"
+    "region": "Latin America",
+    "full_name": "Ecuador Ley Orgánica de Protección de Datos Personales (LOPDP) 2021"
   },
   {
     "id": "eu-eu-ailiability-2022",
@@ -30325,7 +30336,8 @@
       "SI",
       "ES",
       "SE"
-    ]
+    ],
+    "full_name": "European Commission Proposal for an AI Liability Directive (COM/2022/496) — Withdrawn"
   },
   {
     "id": "eu-eu-dga-2022",
@@ -30401,7 +30413,8 @@
       "SI",
       "ES",
       "SE"
-    ]
+    ],
+    "full_name": "EU Regulation (EU) 2022/868 — Data Governance Act (DGA)"
   },
   {
     "id": "eu-eu-dsa-2022",
@@ -30478,7 +30491,8 @@
       "SI",
       "ES",
       "SE"
-    ]
+    ],
+    "full_name": "EU Regulation (EU) 2022/2065 — Digital Services Act (DSA)"
   },
   {
     "id": "g20-g20-aiprinciples-2019",
@@ -30520,12 +30534,13 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/g20-g20-aiprinciples-2019.md",
-    "region": "International"
+    "region": "International",
+    "full_name": "G20 AI Principles (Osaka, June 2019)"
   },
   {
     "id": "gb-gb-aiwhitepaper-2023",
     "short_name": "UK AI Regulation White Paper (2023)",
-    "jurisdiction": "GB",
+    "jurisdiction": "United Kingdom",
     "status": "in_force",
     "instrument_binding": false,
     "instrument_type": "policy_framework",
@@ -30566,7 +30581,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/gb-gb-aiwhitepaper-2023.md",
-    "region": "Europe"
+    "region": "Europe",
+    "full_name": "AI Regulation: A Pro-Innovation Approach (UK Government White Paper, 2023)"
   },
   {
     "id": "gh-gh-dpa-2012",
@@ -30608,7 +30624,8 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/gh-gh-dpa-2012.md",
-    "region": "Africa"
+    "region": "Africa",
+    "full_name": "Ghana Data Protection Act 2012 (Act 843)"
   },
   {
     "id": "in-in-meity-aiadvisory-2024",
@@ -30649,7 +30666,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/in-in-meity-aiadvisory-2024.md",
-    "region": "Asia-Pacific"
+    "region": "Asia-Pacific",
+    "full_name": "India MeitY AI Advisory Note — Responsible Development and Deployment of AI (March 2024)"
   },
   {
     "id": "int-bletchley-declaration-2023",
@@ -30691,7 +30709,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/int-bletchley-declaration-2023.md",
-    "region": "International"
+    "region": "International",
+    "full_name": "Bletchley Declaration on Frontier AI Safety (November 2023)"
   },
   {
     "id": "int-paris-aiaction-2025",
@@ -30735,7 +30754,8 @@
     },
     "text_path": "data/texts/int-paris-aiaction-2025.md",
     "region": "International",
-    "official_url": "https://www.elysee.fr/en/emmanuel-macron/2025/02/11/statement-on-inclusive-and-sustainable-artificial-intelligence-for-people-and-the-planet"
+    "official_url": "https://www.elysee.fr/en/emmanuel-macron/2025/02/11/statement-on-inclusive-and-sustainable-artificial-intelligence-for-people-and-the-planet",
+    "full_name": "Paris AI Action Summit Statement — Inclusive and Sustainable Artificial Intelligence for People and the Planet (February 2025)"
   },
   {
     "id": "int-seoul-aisafety-2024",
@@ -30780,7 +30800,8 @@
     },
     "text_path": "data/texts/int-seoul-aisafety-2024.md",
     "region": "International",
-    "official_url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024"
+    "official_url": "https://www.gov.uk/government/publications/seoul-declaration-for-safe-innovative-and-inclusive-ai-ai-seoul-summit-2024",
+    "full_name": "Seoul AI Safety Declarations 2024 (Ministerial Statement and Company Commitments)"
   },
   {
     "id": "jo-jo-pdpl-2023",
@@ -30822,7 +30843,8 @@
     },
     "text_path": "data/texts/jo-jo-pdpl-2023.md",
     "region": "Middle East",
-    "official_url": "https://www.modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/pdpl.pdf"
+    "official_url": "https://www.modee.gov.jo/ebv4.0/root_storage/en/eb_list_page/pdpl.pdf",
+    "full_name": "Jordan Personal Data Protection Law No. 24 of 2023"
   },
   {
     "id": "nz-nz-algorithmcharter-2020",
@@ -30863,7 +30885,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/nz-nz-algorithmcharter-2020.md",
-    "region": "Asia-Pacific"
+    "region": "Asia-Pacific",
+    "full_name": "Algorithm Charter for Aotearoa New Zealand (2020)"
   },
   {
     "id": "om-om-pdpl-2022",
@@ -30905,7 +30928,8 @@
     },
     "text_path": "data/texts/om-om-pdpl-2022.md",
     "region": "Middle East",
-    "official_url": "https://www.ita.gov.om/ITAPortal//Data/English/DocLibrary/2024115132533256/PROMULGATING%20THE%20PERSONAL%20DATA%20PROTECTION%20LAW.pdf"
+    "official_url": "https://www.ita.gov.om/ITAPortal//Data/English/DocLibrary/2024115132533256/PROMULGATING%20THE%20PERSONAL%20DATA%20PROTECTION%20LAW.pdf",
+    "full_name": "Oman Personal Data Protection Law 2022 (Royal Decree No. 6/2022)"
   },
   {
     "id": "pa-pa-dpa-2019",
@@ -30949,7 +30973,8 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/pa-pa-dpa-2019.md",
-    "region": "Latin America"
+    "region": "Latin America",
+    "full_name": "Panama Law No. 81 on the Protection of Personal Data"
   },
   {
     "id": "py-py-dpa-2020",
@@ -30992,7 +31017,8 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/py-py-dpa-2020.md",
-    "region": "Latin America"
+    "region": "Latin America",
+    "full_name": "Paraguay Law No. 6534 — Personal Data Protection"
   },
   {
     "id": "sg-sg-maigf-2020",
@@ -31037,7 +31063,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/sg-sg-maigf-2020.md",
-    "region": "Asia-Pacific"
+    "region": "Asia-Pacific",
+    "full_name": "Singapore Model AI Governance Framework, Second Edition (2020)"
   },
   {
     "id": "sn-sn-dpa-2008",
@@ -31080,7 +31107,8 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/sn-sn-dpa-2008.md",
-    "region": "Africa"
+    "region": "Africa",
+    "full_name": "Senegal Law No. 2008-12 on the Protection of Personal Data"
   },
   {
     "id": "tz-tz-pdpa-2022",
@@ -31125,7 +31153,8 @@
     },
     "text_path": "data/texts/tz-tz-pdpa-2022.md",
     "region": "Africa",
-    "official_url": "https://www.pdpc.go.tz/media/media/THE_PERSONAL_DATA_PROTECTION_ACT.pdf"
+    "official_url": "https://www.pdpc.go.tz/media/media/THE_PERSONAL_DATA_PROTECTION_ACT.pdf",
+    "full_name": "Tanzania Personal Data Protection Act 2022"
   },
   {
     "id": "ug-ug-dppa-2019",
@@ -31168,7 +31197,8 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/ug-ug-dppa-2019.md",
-    "region": "Africa"
+    "region": "Africa",
+    "full_name": "Uganda Data Protection and Privacy Act 2019"
   },
   {
     "id": "un-un-gdc-2024",
@@ -31211,7 +31241,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/un-un-gdc-2024.md",
-    "region": "International"
+    "region": "International",
+    "full_name": "United Nations Global Digital Compact (September 2024)"
   },
   {
     "id": "us-ca-sb1047-2024",
@@ -31254,7 +31285,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/us-ca-sb1047-2024.md",
-    "region": "North America"
+    "region": "North America",
+    "full_name": "California SB 1047 — Safe and Secure Innovation for Frontier Artificial Intelligence Models Act (vetoed)"
   },
   {
     "id": "us-dhs-aicisafety-2024",
@@ -31297,7 +31329,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/us-dhs-aicisafety-2024.md",
-    "region": "North America"
+    "region": "North America",
+    "full_name": "DHS Guidelines for AI Safety and Security in Critical Infrastructure (April 2024)"
   },
   {
     "id": "us-fed-eo13960-2020",
@@ -31338,7 +31371,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/us-fed-eo13960-2020.md",
-    "region": "North America"
+    "region": "North America",
+    "full_name": "Executive Order 13960 — Promoting the Use of Trustworthy Artificial Intelligence in the Federal Government"
   },
   {
     "id": "us-fed-nspm33-2021",
@@ -31380,7 +31414,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/us-fed-nspm33-2021.md",
-    "region": "North America"
+    "region": "North America",
+    "full_name": "National Security Presidential Memorandum 33 (NSPM-33) — National Security Strategy for United States Government-Supported Research and Development"
   },
   {
     "id": "us-fed-omm2410-2024",
@@ -31425,7 +31460,9 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/us-fed-omm2410-2024.md",
-    "region": "North America"
+    "region": "North America",
+    "superseded_by": "us-fed-omm2521-2025",
+    "full_name": "OMB Memorandum M-24-10: Advancing Governance, Innovation, and Risk Management for Agency Use of Artificial Intelligence"
   },
   {
     "id": "us-fed-omm2521-2025",
@@ -31465,7 +31502,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/us-fed-omm2521-2025.md",
-    "region": "North America"
+    "region": "North America",
+    "full_name": "OMB Memorandum M-25-21: Accelerating Federal Use of Artificial Intelligence through Innovation, Governance, and Public Trust"
   },
   {
     "id": "us-fed-ostp-aiborblueprint-2022",
@@ -31508,7 +31546,9 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/us-fed-ostp-aiborblueprint-2022.md",
-    "region": "North America"
+    "region": "North America",
+    "superseded_by": "us-fed-eo14110-2023",
+    "full_name": "Blueprint for an AI Bill of Rights — Making Automated Systems Work for the American People (OSTP, 2022)"
   },
   {
     "id": "us-md-sb936-2025",
@@ -31551,7 +31591,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/us-md-sb936-2025.md",
-    "region": "North America"
+    "region": "North America",
+    "full_name": "Maryland SB 936 — Artificial Intelligence — Consumer Protections (failed)"
   },
   {
     "id": "us-va-sb1090-2025",
@@ -31594,7 +31635,8 @@
       "biometric_protection": false
     },
     "region": "North America",
-    "text_path": "data/texts/us-va-sb1090-2025.md"
+    "text_path": "data/texts/us-va-sb1090-2025.md",
+    "full_name": "Virginia SB 1090 — High-Risk Artificial Intelligence Developer and Deployer Act"
   },
   {
     "id": "uy-uy-autodecision-2020",
@@ -31637,7 +31679,8 @@
       "biometric_protection": false
     },
     "text_path": "data/texts/uy-uy-autodecision-2020.md",
-    "region": "Latin America"
+    "region": "Latin America",
+    "full_name": "Uruguay Decree No. 64/020 — Automated Individual Decision-Making"
   },
   {
     "id": "uy-uy-dpa-2008",
@@ -31680,7 +31723,8 @@
       "biometric_protection": true
     },
     "text_path": "data/texts/uy-uy-dpa-2008.md",
-    "region": "Latin America"
+    "region": "Latin America",
+    "full_name": "Uruguay Law No. 18.331 — Protection of Personal Data and Habeas Data Action"
   },
   {
     "id": "zw-zw-cyberdata-2021",
@@ -31724,7 +31768,8 @@
     },
     "text_path": "data/texts/zw-zw-cyberdata-2021.md",
     "region": "Africa",
-    "official_url": "https://zimlii.org/akn/zw/act/2021/5/eng@2022-03-11"
+    "official_url": "https://zimlii.org/akn/zw/act/2021/5/eng@2022-03-11",
+    "full_name": "Zimbabwe Cybersecurity and Data Protection Act, 2021"
   },
   {
     "id": "us-al-hb365-2025",
@@ -182222,7 +182267,7 @@
     "bill_number": null,
     "enacted_date": "2024-09-05",
     "effective_date": null,
-    "status": "proposed",
+    "status": "enacted_not_yet_effective",
     "superseded_by": null,
     "primary_category": "general_ai_governance",
     "categories": [
@@ -182306,7 +182351,7 @@
     "bill_number": null,
     "enacted_date": "2024-09-05",
     "effective_date": null,
-    "status": "proposed",
+    "status": "enacted_not_yet_effective",
     "superseded_by": null,
     "primary_category": "general_ai_governance",
     "categories": [
@@ -184379,7 +184424,8 @@
     "text_file": "data/texts/eg-eg-naistrategy-2025.md",
     "text_quality": "full",
     "notes": "Second edition of the National AI Strategy, superseding the 2021 first edition. Explicitly states that Egyptian AI law is in its 'final development phase' at time of publication. Egypt ranked #52 on Tortoise Global AI Index 2024 with CAF self-score of 43.6/100. Benchmark countries studied: Brazil, China, South Korea, Saudi Arabia, Turkey, UAE.",
-    "text_path": "data/texts/eg-eg-naistrategy-2025.md"
+    "text_path": "data/texts/eg-eg-naistrategy-2025.md",
+    "full_name": "Egypt National AI Strategy 2025–2030"
   },
   {
     "id": "gh-gh-naistrategy-2025",
@@ -184483,7 +184529,8 @@
     "text_file": "data/texts/gh-gh-naistrategy-2025.md",
     "text_quality": "full",
     "notes": "Developed with support from GIZ FAIR Forward, British High Commission FCDO, Data Protection Commission, KNUST RAIL, and MinoHealth AI Labs/GUDRA AI. Strategy explicitly plans a private Ghanaian AGI lab competing globally (comparable in ambition to DeepSeek/OpenAI). GhanaChat government LLM mandate is a notable public-sector AI sovereignty provision. Ghana chairs no regional AI bodies as of publication but is active in AU and Arab League AI efforts. RAI Authority modelled on Singapore NAIO, Egypt NCAI, and UK Office for AI.",
-    "text_path": "data/texts/gh-gh-naistrategy-2025.md"
+    "text_path": "data/texts/gh-gh-naistrategy-2025.md",
+    "full_name": "Ghana National Artificial Intelligence Strategy 2025–2035"
   },
   {
     "id": "tz-tz-aiguide-2024",
@@ -184581,7 +184628,8 @@
     "text_file": "data/texts/tz-tz-aiguide-2024.md",
     "text_quality": "full",
     "notes": "Document published as 'Draft Version One' but labelled Version 2.0, June 2024. Explicitly non-binding in the absence of AI-specific legislation; frames itself as a transitional measure until a formal legal framework is enacted. Motivated in part by a 2022 Ministry of Health stakeholder meeting on AI in health (Policy Framework for Artificial Intelligence in Tanzania Health Sector, February 2022). References Tanzania Development Vision 2025 and 3rd National Five Year Development Plan 2021/22-2025/26. Notes Tanzania judiciary has deployed AI for court transcription and translation.",
-    "text_path": "data/texts/tz-tz-aiguide-2024.md"
+    "text_path": "data/texts/tz-tz-aiguide-2024.md",
+    "full_name": "Tanzania National AI Guidelines 2024"
   },
   {
     "id": "ae-ae-fdl25-2018",
@@ -184652,7 +184700,8 @@
     "text_file": "data/texts/ae-ae-fdl25-2018.md",
     "text_quality": "full",
     "notes": "Extremely brief (3 articles) but significant: establishes the UAE's federal regulatory sandbox mechanism for AI and future-technology projects. Predates the UAE's National AI Strategy 2031 and other AI-specific instruments. The 'future nature' framing is deliberately broad to capture technologies not yet covered by existing law. Proposed by the Minister of Cabinet Affairs and the Future, reflecting the UAE's ministerial portfolio structure at the time.",
-    "text_path": "data/texts/ae-ae-fdl25-2018.md"
+    "text_path": "data/texts/ae-ae-fdl25-2018.md",
+    "full_name": "UAE Federal Decree-Law No. 25 of 2018 — Use of Information and Communication Technology in Health Fields"
   },
   {
     "id": "ae-abudhabi-aiatclaw-2024",
@@ -184734,7 +184783,8 @@
     "text_file": "data/texts/ae-abudhabi-aiatclaw-2024.md",
     "text_quality": "full",
     "notes": "Replaces or supersedes functions previously held by the Advanced Technology Research Council (ATRC) established by Abu Dhabi Law No. 14/2020. The AIATC's mandate is broader, explicitly including investment and company establishment powers in addition to research coordination. The Council's power to directly invest in and establish AI companies (Article 4(12)) and to set approval conditions for strategic AI companies (Article 4(13)) gives it significant market-shaping authority. Note: 'Branches of the Office' in Article 3 appears to be a translation artifact — likely refers to branches of the Council.",
-    "text_path": "data/texts/ae-abudhabi-aiatclaw-2024.md"
+    "text_path": "data/texts/ae-abudhabi-aiatclaw-2024.md",
+    "full_name": "Abu Dhabi Law No. 4 of 2024 — Artificial Intelligence and Advanced Technology Council (AIATC)"
   },
   {
     "id": "ae-ae-naistrategy-2031",
@@ -184838,7 +184888,8 @@
     "text_file": "data/texts/ae-ae-naistrategy-2031.md",
     "text_quality": "full",
     "notes": "Published 2018 — one of the world's earliest national AI strategies, predating most comparable documents by 1-3 years. UAE was the first country to appoint a Minister of State for Artificial Intelligence (Omar Sultan Al Olama, 2017). The 'UAI' brand and four-level Seal of Approval certification system is a distinctive feature not widely replicated elsewhere. The proposal for a multilateral 'IPCC for AI' was announced in parallel with France's own AI strategy (Macron, March 2018); this eventually contributed to the formation of the Global Partnership on AI (GPAI) in 2020. Strategy was developed by the AI Office in consultation with global companies, politicians and AI experts.",
-    "text_path": "data/texts/ae-ae-naistrategy-2031.md"
+    "text_path": "data/texts/ae-ae-naistrategy-2031.md",
+    "full_name": "UAE National AI Strategy 2031"
   },
   {
     "id": "sa-sa-nsdai-2020",
@@ -184898,7 +184949,8 @@
     "text_file": "data/texts/sa-sa-nsdai-2020.md",
     "text_quality": "unavailable",
     "notes": "Source URL was dead at time of record creation (2026-05-05). Text not captured. Record is a provisional stub based on secondary sources. Should be re-fetched from SDAIA website or an archived copy. SDAIA was established by Royal Decree in 2019 as Saudi Arabia's apex data and AI authority. NSDAI is a foundational document for Saudi Vision 2030 AI ambitions.",
-    "text_path": "data/texts/sa-sa-nsdai-2020.md"
+    "text_path": "data/texts/sa-sa-nsdai-2020.md",
+    "full_name": "Saudi Arabia National Strategy for Data and Artificial Intelligence (NSDAI) 2020"
   },
   {
     "id": "ae-ae-aiguide-2019",
@@ -184986,7 +185038,8 @@
     "text_file": "data/texts/ae-ae-aiguide-2019.md",
     "text_quality": "full",
     "notes": "Document header says 'Version | 2018' (same as the National AI Strategy) but text references April 2019 UAE Cabinet approval of the National AI Strategy and 2019 OpenAI Dota 2 win as past events — likely published in late 2019. Companion/implementation document to ae-ae-naistrategy-2031 rather than a standalone policy instrument. Notable for documenting Smart Dubai's Ethical AI Toolkit and four-domain ethics framework (Ethics, Security, Humanity, Inclusiveness), which predates many comparable national ethical AI frameworks. Contains detailed survey of real UAE AI deployments across all major sectors as of 2019.",
-    "text_path": "data/texts/ae-ae-aiguide-2019.md"
+    "text_path": "data/texts/ae-ae-aiguide-2019.md",
+    "full_name": "UAE National AI Guide 2019 — Companion Guide to the UAE AI Strategy 2031"
   },
   {
     "id": "ae-ae-deepfakeguide-2021",
@@ -188998,7 +189051,7 @@
     "full_name": "MAS Guidelines on Artificial Intelligence Risk Management (Consultation Paper)",
     "instrument_type": "guidance",
     "bill_number": null,
-    "enacted_date": "2025-11-13",
+    "enacted_date": null,
     "effective_date": null,
     "status": "proposed",
     "superseded_by": null,
@@ -195232,7 +195285,7 @@
     "bill_number": null,
     "enacted_date": "2025-01-14",
     "effective_date": "2025-01-14",
-    "status": "revoked",
+    "status": "superseded",
     "superseded_by": "us-fed-eo14318-2025",
     "categories": [
       "general_ai_governance"
