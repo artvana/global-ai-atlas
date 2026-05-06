@@ -36,6 +36,20 @@ const RULES_PATH       = path.join(PROJECT_ROOT, 'data', 'rules.json')
 const PROGRESS_PATH    = path.join(PROJECT_ROOT, 'data', 'rules-progress.json')
 const TEXTS_DIR        = path.join(PROJECT_ROOT, 'data', 'texts')
 
+// ── model config ──────────────────────────────────────────────────────────────
+// Extraction uses Opus for precise MECE rule decomposition.
+// Matching uses Sonnet — it's a classification task that doesn't need Opus.
+
+const EXTRACTION_MODEL = 'claude-opus-4-7'
+const MATCHING_MODEL   = 'claude-sonnet-4-6'
+
+// Full text is sent up to this limit. Sonnet/Opus support 200k context;
+// reserve ~10k for the prompt template and output.
+const MAX_TEXT_CHARS = 190_000
+
+// Files below this length are treated as placeholder/error pages.
+const MIN_TEXT_LENGTH = 500
+
 // ── types ─────────────────────────────────────────────────────────────────────
 
 type RuleRelationship = 'origin' | 'identical' | 'agrees' | 'similar' | 'opposed' | 'rejected'
@@ -77,6 +91,7 @@ interface Law {
   status?: string
   instrument_binding?: boolean
   instrument_type?: string
+  ai_specific?: boolean
 }
 
 interface ExtractedRule {
@@ -108,14 +123,59 @@ function writeJSON(p: string, data: unknown): void {
   fs.writeFileSync(p, JSON.stringify(data, null, 2) + '\n', 'utf8')
 }
 
-const MIN_TEXT_LENGTH = 1000 // files below this are treated as placeholder/error pages
+/**
+ * Strip legislative markup that can confuse the extraction model:
+ * - Statenet amendment banners ("red struck out text denotes deleted text ...")
+ * - Statenet version header lines ("2025 CA A 578 Author: ... Version: ...")
+ * - HTML entities left over from HTML→text conversion
+ * - YAML frontmatter
+ * - Excessive blank lines
+ */
+function stripMarkup(raw: string): string {
+  let t = raw
+
+  // Strip YAML frontmatter
+  if (t.startsWith('---')) {
+    const fmEnd = t.indexOf('\n---\n', 4)
+    if (fmEnd >= 0) t = t.slice(fmEnd + 5)
+  }
+
+  // Decode common HTML entities
+  t = t
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, '&')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&sect;/g, '§')
+    .replace(/&para;/g, '¶')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&#(\d+);/g, (_, code) => {
+      const n = parseInt(code, 10)
+      return n > 31 && n < 127 ? String.fromCharCode(n) : ' '
+    })
+
+  // Remove Statenet amendment banner lines
+  // e.g. " red struck out text denotes deleted text 2025 CA A 578 Author: Foo Version: Chaptered ..."
+  t = t.replace(/\s*red struck out text denotes deleted text[^\n]*/gi, '')
+
+  // Remove bare Statenet version header lines that appear in the text body
+  // e.g. " 2025 CA A 578 Author: Bauer-Kahan Version: Chaptered Version Date: 10/06/2025 "
+  t = t.replace(/^\s*\d{4} [A-Z]{2} [A-Z]+ \d+\s+Author:.*?Version Date:[^\n]*\n?/gm, '')
+
+  // Collapse runs of 3+ blank lines to two
+  t = t.replace(/\n{3,}/g, '\n\n')
+
+  return t.trim()
+}
 
 function readFullText(law: Law): string | null {
   if (!law.text_path) return null
   const resolved = path.resolve(PROJECT_ROOT, law.text_path)
   if (!resolved.startsWith(PROJECT_ROOT + path.sep)) return null
   try {
-    const text = fs.readFileSync(resolved, 'utf8')
+    const raw = fs.readFileSync(resolved, 'utf8')
+    const text = stripMarkup(raw)
     if (text.length < MIN_TEXT_LENGTH) return null
     if (text.includes('Text not yet available') || text.includes('Text pending')) return null
     return text
@@ -158,7 +218,7 @@ async function callWithRetry(
 
 function buildExtractionPrompt(law: Law, text: string | null, isRejected = false): string {
   const body = text
-    ? `FULL LEGAL TEXT (first 40000 chars):\n${text.slice(0, 40000)}`
+    ? `FULL LEGAL TEXT (${text.length.toLocaleString()} chars):\n${text.slice(0, MAX_TEXT_CHARS)}`
     : `SUMMARY: ${law.summary}\n\nKEY OBLIGATIONS:\n${(law.key_obligations ?? []).join('\n')}`
 
   const instrumentContext = law.instrument_binding === false
@@ -314,7 +374,7 @@ async function matchByCategoryFirst(
 
       const rawMatches = await callWithRetry(async () => {
         const msg = await client.messages.create({
-          model: 'claude-sonnet-4-6',
+          model: MATCHING_MODEL,
           max_tokens: 8000,
           messages: [{ role: 'user', content: prompt }],
         })
@@ -347,6 +407,93 @@ async function matchByCategoryFirst(
   return categoryResults.flat()
 }
 
+// ── cross-category deduplication pass ────────────────────────────────────────
+// Run once after all laws are processed. Finds rules that appear to be
+// near-duplicates across adjacent categories (e.g. disclosure vs synthetic_media)
+// and logs them for manual review. Does not auto-merge — merging requires a human decision.
+
+async function runDeduplicationPass(client: Anthropic, rules: Rule[]): Promise<void> {
+  // Category pairs that are most likely to produce cross-category duplicates
+  const ADJACENT_PAIRS: [string, string][] = [
+    ['disclosure', 'synthetic_media'],
+    ['disclosure', 'consent'],
+    ['accountability_governance', 'institutional_framework'],
+    ['accountability_governance', 'conformity_assessment'],
+    ['risk_classification', 'conformity_assessment'],
+    ['employment_ai', 'human_oversight'],
+    ['data_subject_rights', 'private_redress'],
+    ['technical_documentation', 'conformity_assessment'],
+    ['training_data_quality', 'data_provenance'],
+  ]
+
+  const byCategory = new Map<string, Rule[]>()
+  for (const rule of rules) {
+    if (!byCategory.has(rule.category)) byCategory.set(rule.category, [])
+    byCategory.get(rule.category)!.push(rule)
+  }
+
+  const suspects: { rule_a: string; rule_b: string; cat_a: string; cat_b: string }[] = []
+
+  for (const [catA, catB] of ADJACENT_PAIRS) {
+    const rulesA = byCategory.get(catA) ?? []
+    const rulesB = byCategory.get(catB) ?? []
+    if (rulesA.length === 0 || rulesB.length === 0) continue
+
+    const listA = rulesA.map(r => `${r.rule_id}: ${r.rule_text.slice(0, 120)}`).join('\n')
+    const listB = rulesB.map(r => `${r.rule_id}: ${r.rule_text.slice(0, 120)}`).join('\n')
+
+    const prompt = `You are reviewing a cross-jurisdictional AI-law rules database for near-duplicate rules that were accidentally placed in different categories.
+
+Category A ("${catA}", ${rulesA.length} rules):
+${listA}
+
+Category B ("${catB}", ${rulesB.length} rules):
+${listB}
+
+Identify pairs of rules (one from A, one from B) that appear to describe the same substantive obligation and should likely be merged into a single rule. Be conservative — only flag genuine duplicates, not merely related rules.
+
+Return a JSON array:
+[{ "rule_id_a": "...", "rule_id_b": "...", "reason": "one sentence" }]
+
+If no duplicates found, return [].`
+
+    try {
+      const raw = await callWithRetry(async () => {
+        const msg = await client.messages.create({
+          model: MATCHING_MODEL,
+          max_tokens: 2000,
+          messages: [{ role: 'user', content: prompt }],
+        })
+        const content = msg.content[0]
+        return content.type === 'text' ? content.text : ''
+      })
+      const jsonStart = raw.indexOf('[')
+      const jsonEnd = raw.lastIndexOf(']')
+      if (jsonStart >= 0 && jsonEnd > jsonStart) {
+        const found = JSON.parse(raw.slice(jsonStart, jsonEnd + 1)) as Array<{
+          rule_id_a: string; rule_id_b: string; reason: string
+        }>
+        for (const f of found) {
+          suspects.push({ rule_a: f.rule_id_a, rule_b: f.rule_id_b, cat_a: catA, cat_b: catB })
+          console.log(`  DEDUP SUSPECT: ${f.rule_id_a} (${catA}) ↔ ${f.rule_id_b} (${catB}): ${f.reason}`)
+        }
+      }
+    } catch (err) {
+      console.error(`  Dedup check failed for ${catA}/${catB}: ${err}`)
+    }
+    await sleep(1000)
+  }
+
+  if (suspects.length > 0) {
+    const dedupPath = path.join(PROJECT_ROOT, 'data', 'dedup-suspects.json')
+    writeJSON(dedupPath, suspects)
+    console.log(`\n${suspects.length} deduplication suspects written to data/dedup-suspects.json`)
+    console.log('Review and manually merge as needed.')
+  } else {
+    console.log('\nDeduplication pass complete — no cross-category duplicates found.')
+  }
+}
+
 // ── main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -362,11 +509,18 @@ async function main() {
   const rawRegs = readJSON<Law[] | { regulations: Law[] }>(REGULATIONS_PATH, [])
   const allLaws: Law[] = Array.isArray(rawRegs) ? rawRegs : rawRegs.regulations
 
-  // Sort chronologically; laws with no enacted_date sort to the end
-  // Include failed/vetoed bills — they are processed as "rejected" negative premises
-  const laws = allLaws
+  // Filter: skip records where ai_specific is explicitly false —
+  // these are tangential omnibus provisions with no AI/data rules to extract.
+  const eligibleLaws = allLaws.filter(l => l.ai_specific !== false)
+
+  // Sort chronologically; laws with no enacted_date sort to the end.
+  // Include failed/vetoed bills — processed as "rejected" negative premises.
+  const laws = eligibleLaws
     .filter(l => l.status !== 'superseded')
     .sort((a, b) => (a.enacted_date ?? '9999').localeCompare(b.enacted_date ?? '9999'))
+
+  const skipped = allLaws.length - eligibleLaws.length
+  if (skipped > 0) console.log(`Skipping ${skipped} records with ai_specific=false`)
 
   // Load existing rules
   let rules: Rule[] = readJSON<Rule[]>(RULES_PATH, [])
@@ -379,6 +533,8 @@ async function main() {
 
   const toProcess = laws.filter(l => !processed.has(l.id))
   console.log(`Laws to process: ${toProcess.length} (of ${laws.length} total)`)
+  console.log(`Extraction model: ${EXTRACTION_MODEL} | Matching model: ${MATCHING_MODEL}`)
+  console.log(`Max text chars: ${MAX_TEXT_CHARS.toLocaleString()}`)
   console.log()
 
   for (let i = 0; i < toProcess.length; i++) {
@@ -386,7 +542,12 @@ async function main() {
     console.log(`[${i + 1}/${toProcess.length}] ${law.id} — ${law.short_name}`)
 
     const fullText = readFullText(law)
-    console.log(`  Full text: ${fullText ? `${fullText.length} chars` : 'not available, using summary'}`)
+    if (fullText) {
+      const truncated = fullText.length > MAX_TEXT_CHARS
+      console.log(`  Full text: ${fullText.length.toLocaleString()} chars${truncated ? ` (truncated to ${MAX_TEXT_CHARS.toLocaleString()})` : ''}`)
+    } else {
+      console.log(`  Full text: not available, using summary`)
+    }
 
     const isRejected = law.status === 'failed' || law.status === 'vetoed'
     if (isRejected) console.log(`  Status: REJECTED/FAILED — will record as negative premises`)
@@ -397,7 +558,7 @@ async function main() {
       const extractionPrompt = buildExtractionPrompt(law, fullText, isRejected)
       const rawExtraction = await callWithRetry(async () => {
         const msg = await client.messages.create({
-          model: 'claude-sonnet-4-6',
+          model: EXTRACTION_MODEL,
           max_tokens: 16000,
           messages: [{ role: 'user', content: extractionPrompt }],
         })
@@ -556,7 +717,12 @@ async function main() {
 
   console.log()
   console.log(`Done. rules.json now contains ${rules.length} rules across ${processed.size} processed laws.`)
-  console.log('Run "npm run embed-rules" to generate/refresh embeddings separately.')
+
+  // ── deduplication pass ───────────────────────────────────────────────────────
+  console.log('\nRunning cross-category deduplication pass...')
+  await runDeduplicationPass(client, rules)
+
+  console.log('\nRun "npm run embed-rules" to generate/refresh embeddings separately.')
 }
 
 main().catch(err => {
