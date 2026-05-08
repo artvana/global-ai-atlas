@@ -141,27 +141,33 @@ const REGIONAL_LABELS: Record<string, string> = {
 }
 
 const US_STATE_NAMES: Record<string, string> = {
-  'US-AL': 'Alabama',        'US-AR': 'Arkansas',       'US-AZ': 'Arizona',
-  'US-CA': 'California',     'US-CO': 'Colorado',       'US-CT': 'Connecticut',
-  'US-DE': 'Delaware',       'US-FL': 'Florida',        'US-GA': 'Georgia',
+  'US-AK': 'Alaska',         'US-AL': 'Alabama',        'US-AR': 'Arkansas',
+  'US-AZ': 'Arizona',        'US-CA': 'California',     'US-CO': 'Colorado',
+  'US-CT': 'Connecticut',    'US-DC': 'Washington D.C.','US-DE': 'Delaware',
+  'US-FL': 'Florida',        'US-GA': 'Georgia',        'US-GU': 'Guam',
   'US-HI': 'Hawaii',         'US-IA': 'Iowa',           'US-ID': 'Idaho',
   'US-IL': 'Illinois',       'US-IN': 'Indiana',        'US-KS': 'Kansas',
-  'US-KY': 'Kentucky',       'US-LA': 'Louisiana',      'US-MD': 'Maryland',
-  'US-ME': 'Maine',          'US-MI': 'Michigan',       'US-MN': 'Minnesota',
-  'US-MS': 'Mississippi',    'US-MT': 'Montana',        'US-NC': 'North Carolina',
-  'US-ND': 'North Dakota',   'US-NE': 'Nebraska',       'US-NH': 'New Hampshire',
+  'US-KY': 'Kentucky',       'US-LA': 'Louisiana',      'US-MA': 'Massachusetts',
+  'US-MD': 'Maryland',       'US-ME': 'Maine',          'US-MI': 'Michigan',
+  'US-MN': 'Minnesota',      'US-MO': 'Missouri',       'US-MS': 'Mississippi',
+  'US-MT': 'Montana',        'US-NC': 'North Carolina', 'US-ND': 'North Dakota',
+  'US-NE': 'Nebraska',       'US-NH': 'New Hampshire',  'US-NJ': 'New Jersey',
   'US-NM': 'New Mexico',     'US-NV': 'Nevada',         'US-NY': 'New York',
-  'US-NYC': 'New York City', 'US-OH': 'Ohio',           'US-OR': 'Oregon',
-  'US-PA': 'Pennsylvania',   'US-RI': 'Rhode Island',   'US-SC': 'South Carolina',
-  'US-SD': 'South Dakota',   'US-TN': 'Tennessee',      'US-TX': 'Texas',
-  'US-UT': 'Utah',           'US-VT': 'Vermont',        'US-WA': 'Washington',
+  'US-NYC': 'New York City', 'US-OH': 'Ohio',           'US-OK': 'Oklahoma',
+  'US-OR': 'Oregon',         'US-PA': 'Pennsylvania',   'US-PR': 'Puerto Rico',
+  'US-RI': 'Rhode Island',   'US-SC': 'South Carolina', 'US-SD': 'South Dakota',
+  'US-TN': 'Tennessee',      'US-TX': 'Texas',          'US-UT': 'Utah',
+  'US-VA': 'Virginia',       'US-VT': 'Vermont',        'US-WA': 'Washington',
   'US-WI': 'Wisconsin',      'US-WV': 'West Virginia',  'US-WY': 'Wyoming',
-  'US-PR': 'Puerto Rico',   'US-DC': 'Washington D.C.',
 }
 
 function lawColKey(law: AILaw): string {
+  if (law.country === 'European Union') return 'regional:EU'
   if (law.country === 'Global / Regional') return `regional:${law.region}`
-  if (law.country === 'United States') return law.region === 'US' ? 'US-FED' : law.region
+  if (law.country === 'United States') {
+    if (law.region === 'US' || law.region === 'North America') return 'US-FED'
+    return law.region
+  }
   return law.country
 }
 
