@@ -1,0 +1,56 @@
+[
+  {
+    "rule_a": "us-fl-s480-2026-282-0061-5-g",
+    "rule_b": "us-fl-s7026-2025-282-0061-5-h",
+    "cat_a": "accountability_governance",
+    "cat_b": "conformity_assessment"
+  },
+  {
+    "rule_a": "us-fl-s480-2026-282-0064-4-a",
+    "rule_b": "us-fl-s7026-2025-282-0064-4-a",
+    "cat_a": "accountability_governance",
+    "cat_b": "conformity_assessment"
+  },
+  {
+    "rule_a": "us-fl-s394-2025-101-5612-5-e",
+    "rule_b": "us-fl-s394-2025-101-5612-3",
+    "cat_a": "accountability_governance",
+    "cat_b": "conformity_assessment"
+  },
+  {
+    "rule_a": "us-nm-h401-2025-7-c",
+    "rule_b": "us-nm-h401-2025-5-c-2",
+    "cat_a": "accountability_governance",
+    "cat_b": "conformity_assessment"
+  },
+  {
+    "rule_a": "us-fl-s480-2026-97-0525-3-b",
+    "rule_b": "us-fl-s7026-2025-97-0525-3-b",
+    "cat_a": "risk_classification",
+    "cat_b": "conformity_assessment"
+  },
+  {
+    "rule_a": "us-fl-s480-2026-282-318-4-d",
+    "rule_b": "us-fl-s7026-2025-282-318-4-d",
+    "cat_a": "risk_classification",
+    "cat_b": "conformity_assessment"
+  },
+  {
+    "rule_a": "us-fl-s480-2026-282-0061-2-a",
+    "rule_b": "us-fl-s7026-2025-282-0061-2-a",
+    "cat_a": "risk_classification",
+    "cat_b": "conformity_assessment"
+  },
+  {
+    "rule_a": "us-ny-s1274-2025-995-b-4-i",
+    "rule_b": "us-ny-a3969-2025-995-b-4-i",
+    "cat_a": "technical_documentation",
+    "cat_b": "conformity_assessment"
+  },
+  {
+    "rule_a": "us-md-h823-2025-3-5-807-c",
+    "rule_b": "us-md-h823-2025-3-5-807-c-9",
+    "cat_a": "training_data_quality",
+    "cat_b": "data_provenance"
+  }
+]
