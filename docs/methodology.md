@@ -205,4 +205,67 @@ Laws flagged with `notable: "corpus boundary case — verify inclusion"` are inc
 
 ---
 
+## 8. Convergence Map Methodology
+
+The **Convergence Map** tab computes pairwise regulatory similarity across all jurisdictions in the database. This section documents the design decisions behind that computation.
+
+### 8.1 Rule corpus
+
+Similarity is computed over _substantive_ rules only. Rules in the `definitions_scope` and `institutional_framework` categories are excluded — they describe legal architecture rather than substantive obligations, and inflating similarity through shared boilerplate would misrepresent policy alignment.
+
+### 8.2 Adoption scores
+
+Each rule instance is assigned a numeric score reflecting how closely a jurisdiction has adopted the rule relative to the canonical origin:
+
+| Relationship label | Score | Meaning |
+|-------------------|-------|---------|
+| `origin`          | 5     | Jurisdiction originated this rule |
+| `identical`       | 4     | Verbatim or near-verbatim adoption |
+| `agrees`          | 3     | Substantively equivalent, different drafting |
+| `similar`         | 2     | Materially similar, notable differences |
+| `opposed`         | −1    | Explicit legal conflict with the rule |
+| `absent`          | 0     | No coverage |
+
+Where a jurisdiction has multiple laws covering the same rule, the highest positive score is used (taking the most adopted position); the opposed score is applied only if no positive score exists (i.e., the jurisdiction explicitly rejects what it has not adopted).
+
+### 8.3 Jurisdiction inheritance
+
+**EU member states** — EU regulations and directives are directly applicable or impose implementation obligations across all 27 EU member states. All EU instruments cascade to member country columns regardless of whether the instrument is technically binding or non-binding (e.g. EU guidelines and codes of practice are EU-wide in intent and effect).
+
+**Non-EU binding regional treaties** — Instruments from the Council of Europe, ASEAN/APAC bodies, and the African Union cascade to member country columns only when `instrument_binding = true` in the database.
+
+**International soft-law and non-binding regional instruments** — OECD, UNESCO, G7, G20, UN resolutions, ISO standards, and non-binding regional frameworks are routed to a dedicated **"International / UN" reference column** (`intl-ref`) rather than being cascaded to country columns. The rationale is that _publication is not adoption_: a country's membership in a body that produces a recommendation does not mean the country has adopted that recommendation as domestic law or policy.
+
+The `intl-ref` column appears in the display matrix so users can read `sim(country, intl-ref)` as an alignment indicator, but it is excluded from all country-to-country insight metrics (global mean, most-aligned pair, most-isolated jurisdiction, regional consistency scores).
+
+### 8.4 Similarity computation
+
+Pairwise similarity between two jurisdiction vectors is a modified cosine similarity:
+
+- **Norm**: computed over positive (adoption) scores only, so the conflict score does not artificially inflate the denominator.
+- **Dot product**: agreement (both positive) contributes `sᵢ × sⱼ`; regulatory conflict (one positive, one negative) contributes `3 × sᵢ × sⱼ` (conflict-weighted penalty); shared non-adoption contributes 0.
+- **Range**: [−1, 1] in principle; in practice close to [−0.05, 1] for real data.
+
+### 8.5 Colour scale
+
+The heatmap uses a **diverging scale centred on the dynamic global mean**, recalculated each time the filter changes:
+
+- **Neutral (white)** = global mean similarity for the current filter set
+- **Blue** = below mean (less convergent than average)
+- **Amber/orange** = above mean (more convergent than average)
+- Scale is capped at **mean ± 2σ** of pairwise values; values outside that range saturate at the terminal colour.
+- A perceptual gamma of 0.6 is applied to spread differences in the dense low-similarity band (0–10%) where ~90% of country pairs fall.
+- **Crimson** (outside the scale) = active regulatory conflict (negative cosine similarity).
+
+### 8.6 Known structural limitations
+
+| Limitation | Effect | Status |
+|-----------|--------|--------|
+| **Intra-EU structural inflation** | 16 EU member states have no domestic AI laws; their score vectors are entirely EU-sourced, giving them cosine sim = 1.0 with each other. This inflates EU regional consistency to ~100% and global mean by ~3 pp. | Excluded from most-aligned-pair insight; displayed as-is in matrix |
+| **intl-ref alignment is aspirational** | sim(country, intl-ref) reflects thematic overlap with international soft-law, not adoption. High alignment may mean a country's domestic laws happen to track OECD/UNESCO principles, not that it has formally endorsed them. | Documented; column is labelled "International / UN" |
+| **Non-binding CoE Convention** | The Council of Europe AI Convention is recorded as non-binding in the database; non-EU CoE members therefore do not receive CoE rule scores in their country columns and may drop from the matrix if they have no domestic AI laws. | This is correct for non-adopting members; will update when binding adoption is recorded |
+| **Rule coverage is not completeness** | A score of 2 ("similar") does not guarantee regulatory equivalence for compliance purposes — it indicates thematic overlap at rule granularity. | Design limitation |
+
+---
+
 *For questions about methodology: art@opendatalabs.xyz*
