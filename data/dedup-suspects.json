@@ -1,7 +1,13 @@
 [
   {
-    "rule_a": "us-fl-s480-2026-282-0061-5-g",
-    "rule_b": "us-fl-s7026-2025-282-0061-5-h",
+    "rule_a": "eu-eu-aiact-2024-article-19",
+    "rule_b": "eu-eu-aiact-2024-article-26-6",
+    "cat_a": "accountability_governance",
+    "cat_b": "conformity_assessment"
+  },
+  {
+    "rule_a": "us-fl-s480-2026-282-0061-5-h",
+    "rule_b": "us-fl-s7026-2025-282-0061-5-g",
     "cat_a": "accountability_governance",
     "cat_b": "conformity_assessment"
   },
@@ -12,14 +18,8 @@
     "cat_b": "conformity_assessment"
   },
   {
-    "rule_a": "us-fl-s394-2025-101-5612-5-e",
-    "rule_b": "us-fl-s394-2025-101-5612-3",
-    "cat_a": "accountability_governance",
-    "cat_b": "conformity_assessment"
-  },
-  {
-    "rule_a": "us-nm-h401-2025-7-c",
-    "rule_b": "us-nm-h401-2025-5-c-2",
+    "rule_a": "us-fl-s480-2026-282-006-5",
+    "rule_b": "us-fl-s7026-2025-282-0061-5-g",
     "cat_a": "accountability_governance",
     "cat_b": "conformity_assessment"
   },
@@ -30,14 +30,14 @@
     "cat_b": "conformity_assessment"
   },
   {
-    "rule_a": "us-fl-s480-2026-282-318-4-d",
-    "rule_b": "us-fl-s7026-2025-282-318-4-d",
+    "rule_a": "us-fl-s480-2026-282-0061-2-a",
+    "rule_b": "us-fl-s7026-2025-282-0061-2-a",
     "cat_a": "risk_classification",
     "cat_b": "conformity_assessment"
   },
   {
-    "rule_a": "us-fl-s480-2026-282-0061-2-a",
-    "rule_b": "us-fl-s7026-2025-282-0061-2-a",
+    "rule_a": "us-fl-s480-2026-282-318-4-d",
+    "rule_b": "us-fl-s7026-2025-282-318-4-d",
     "cat_a": "risk_classification",
     "cat_b": "conformity_assessment"
   },

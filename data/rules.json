@@ -380,6 +380,14 @@
         "notes": "Both require reasonable data security and data minimization for biometric/identity data, but this rule is specific to age verification data for companion chatbots and adds a data minimization requirement, whereas BIPA applies broadly to biometric identifiers and information.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 74",
+        "notes": "Both require security protection for biometric data, but the UNESCO recommendation is a voluntary instrument covering a broader range of sensitive data categories (genetic, health, criminal-record, protected-characteristic) whereas BIPA is a binding law focused narrowly on biometric identifiers with a 'reasonable standard of care' obligation.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -1160,6 +1168,14 @@
         "notes": "Both call for certification standards/seals for AI systems to ensure quality and reliability, but the Malaysia guideline frames it as a mandate to develop standards broadly while the UAE rule focuses on a specific UAI Seal of Approval certification.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 56",
+        "notes": "Both address certification of AI systems as a governance mechanism, but UNESCO's rule is a voluntary international recommendation emphasizing soft governance and mutual recognition calibrated to sensitivity, while the UAE rule specifically promotes a national UAI Seal of Approval.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -1796,6 +1812,14 @@
         "notes": "Both rules recommend establishing open data sharing infrastructure at a national level, but the Mauritius rule focuses on policy direction and a government data centre option, while the UAE rule emphasises a standardised national data-sharing programme with AI-ready data.",
         "instrument_binding": false,
         "instrument_type": "strategy"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 109",
+        "notes": "Both recommend facilitating private/shared access to data for beneficial purposes, but the UNESCO rule focuses on scientific research with privacy safeguards while the UAE rule focuses on a structured national data-sharing programme for AI-ready data; additionally, UNESCO's rule is a voluntary soft-law instrument whereas the UAE rule is a national strategy obligation.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -6207,6 +6231,14 @@
         "notes": "Both rules require consideration of fairness and diversity (race, gender, ethnicity) in AI systems, with the Malaysia rule being more explicit about protected characteristics.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 29",
+        "notes": "Both address minimizing discriminatory or biased AI outcomes, but the UNESCO rule is a broader soft-law recommendation covering the entire lifecycle while the UAE rule is narrower and focused on diversity in development and deployment.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -6667,6 +6699,14 @@
         "notes": "Both require representative and unbiased training data, but the Malaysia rule additionally mandates active bias mitigation steps and explicitly addresses diversity, going slightly beyond the UAE rule's evaluation framing.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 66",
+        "notes": "Both address ensuring training datasets avoid bias and stereotyping, but the UNESCO rule adds explicit disclosure obligations for AI actors and covers inequalities and prejudice more broadly, whereas the UAE rule focuses on representativeness of data.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -7626,6 +7666,14 @@
         "notes": "Both rules require pre-procurement/pre-deployment assessment of automated decision systems for disparate impact, but the Massachusetts rule focuses specifically on disproportionate or unfair impacts by governmental units while the Canadian directive requires publishing a completed Algorithmic Impact Assessment on an open portal; the scope, mechanism, and obligation level differ meaningfully.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 50",
+        "notes": "Both call for ethical/algorithmic impact assessments covering benefits, risks, and mitigation measures, but UNESCO's rule is a voluntary international recommendation with broader scope, while the Canadian directive is a binding government obligation with specific publication requirements.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -8555,6 +8603,14 @@
         "notes": "Both require disclosure that an AI system is being used in decision-making, but the AIGE rule additionally mandates disclosure of intended purpose, training data, biases, and data quality, going beyond the Canadian directive's plain-language notice requirement.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 38",
+        "notes": "Both require informing people when decisions are made or assisted by automated/AI systems, but the UNESCO recommendation is broader (covering safety and human rights impacts) and voluntary, while the Canadian directive is a binding government-sector obligation with specific channel requirements.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -9841,6 +9897,14 @@
         "notes": "Both require independent/peer review of AI systems before or during deployment scaled to risk, but the MAS rule is a voluntary financial-sector guideline recommending risk-scaled validation including independent reviews, whereas the Canadian directive is a binding government requirement to consult qualified experts and publish results.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 53",
+        "notes": "Both call for public-authority ethical/algorithmic impact assessments with oversight and auditing, but UNESCO's rule is a voluntary international recommendation for a regulatory framework, while the Canadian directive is a binding requirement to obtain peer review and publish results.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -9885,6 +9949,14 @@
         "notes": "Both rules require gender-based assessment of AI/automated systems, but the Chile policy is a voluntary soft-law instrument focused on lifecycle evaluation to prevent gender discrimination with proportionality to criticality, while Canada's directive mandates a Gender-based Analysis Plus at a specific development/modification stage under a binding directive.",
         "instrument_binding": false,
         "instrument_type": "strategy"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 87",
+        "notes": "Both require a gender perspective to be integrated into impact assessments for AI systems, but UNESCO's rule is a voluntary international recommendation covering rights, safety, and integrity more broadly, while Canada's directive mandates a specific Gender-based Analysis Plus during development.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -12195,6 +12267,14 @@
         "notes": "Both recommend considering ethical dimensions when developing and adopting AI, but the Mauritius rule is narrower in scope (focused on Mauritius context) while the OECD rule encompasses rule of law, human rights, democratic values, and diversity with explicit safeguards.",
         "instrument_binding": false,
         "instrument_type": "strategy"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 3(4)",
+        "notes": "Both require transparency and safeguards in AI systems, but Japan's rule is a binding statutory obligation specifically linking transparency to misuse/crime prevention, while the OECD principle is a broader recommendation covering rule of law, human rights, and democratic values.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -12696,6 +12776,14 @@
         "notes": "Both recommend advocating for responsible AI practices through cooperative agreements, but Malaysia's rule specifically targets contractual clauses while the OECD principle addresses broader stakeholder risk management cooperation.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 51",
+        "notes": "Both address due diligence and oversight to manage AI impacts on human rights and rule of law through cooperation among actors; UNESCO's scope explicitly includes human rights and international law while the OECD rule focuses on cooperative risk management.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -12853,6 +12941,14 @@
         "notes": "Both require governments to facilitate public and private investment in AI R&D&I, with CONPES 3.1 adding sectoral focus across different contexts.",
         "instrument_binding": true,
         "instrument_type": "policy_framework"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 6(1)",
+        "notes": "Both require R&D institutions to conduct AI research and disseminate results, but the OECD rule is addressed to governments facilitating investment while Japan's Art. 6(1) directly obligates R&D institutions themselves.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -13042,6 +13138,14 @@
         "notes": "Both recommend adopting AI and new technologies for improved public services, but the Mauritius rule is more narrowly focused on public service delivery rather than the broader digital ecosystem concept in the OECD recommendation.",
         "instrument_binding": false,
         "instrument_type": "strategy"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 14",
+        "notes": "Art. 14 requires the national government to secure and train AI human resources in cooperation with local governments, R&D institutions, and businesses, which overlaps with the OECD's digital ecosystem recommendation but is more specifically focused on workforce development.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -13427,6 +13531,14 @@
         "notes": "Both call for government policy frameworks addressing trustworthy/fair AI, but the Malaysia AIGE rule specifically focuses on fairness, unbiased data collection, and algorithmic decision-making guidelines, whereas the OECD recommendation addresses broader innovation-enabling policy and regulatory frameworks.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 4(1)",
+        "notes": "Both require governments to comprehensively formulate and implement AI promotion policies, but the Japan provision is a binding statutory obligation on 'the State' while the OECD rule is a non-binding recommendation with a focus on trustworthy AI and innovation balance.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -13552,6 +13664,14 @@
         "notes": "Both address developing adaptive/prospective policy analysis capabilities for AI, but CONPES 1.2 emphasizes anticipatory and strategic analysis for public policy construction specifically.",
         "instrument_binding": true,
         "instrument_type": "policy_framework"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 11",
+        "notes": "Both address promoting the transition from R&D to practical application/deployment, but Japan's Art. 11 is a binding statutory mandate including technology transfer from research to practical use, while the OECD rule is a non-binding policy recommendation.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -14078,6 +14198,14 @@
         "notes": "Both address robustness, security, and safety of AI systems throughout their lifecycle, but the EU AI Act imposes specific binding design requirements for accuracy, robustness, and cybersecurity on high-risk systems.",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 27",
+        "notes": "Both address safety and security throughout the AI lifecycle, but UNESCO frames it as a broader ethical recommendation covering vulnerabilities and attacks, while the G20 rule focuses on robustness and unreasonable safety risks; UNESCO is a voluntary instrument vs. G20 soft-law principles.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -14611,6 +14739,14 @@
         "notes": "Both address international AI governance leadership and interoperability across jurisdictions, but Japan's rule frames this as a binding government obligation to lead internationally while ensuring interoperability, whereas the G20 rule is a recommendation for governments to cooperate in sharing AI knowledge.",
         "instrument_binding": true,
         "instrument_type": "guidelines"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 3(5)",
+        "notes": "Both concern international cooperation on AI, but the Japan provision adds a specific normative framing around peace and development contributions and Japan's active engagement, whereas the G20 rule focuses on knowledge sharing and interoperability standards.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -16606,6 +16742,14 @@
         "notes": "Both address ongoing monitoring and periodic review of AI systems and governance structures, but the MAS rule adds structured change-management processes for model updates specific to financial institution AI deployment.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 133",
+        "notes": "Both call for continuous monitoring and periodic review of AI systems and governance measures proportionate to risks; UNESCO frames this as a broad international ethical recommendation while Singapore's framework focuses on organizational governance structure reviews triggered by significant changes.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -17400,6 +17544,14 @@
         "notes": "Both require data relevance, representativeness, and quality checks, but the Malaysia rule adds an explicit transparency obligation about data collection and bias-freedom that is absent from the Singapore rule.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 71",
+        "notes": "Both recommend continual evaluation and updating of training data quality with security considerations, but the UNESCO rule also includes feedback mechanisms and broader data governance strategies, and is a global soft-law instrument versus Singapore's national framework.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -17986,6 +18138,14 @@
         "notes": "Both define 'artificial intelligence' as systems performing functions associated with human cognition, but the Hawaii bill's definition focuses on capability ('models and systems capable of performing functions generally associated with human intelligence') while the Russian law emphasizes imitation of cognitive functions; additionally, this is a voluntary/advisory council instrument versus a binding regulation.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 2",
+        "notes": "Both define 'artificial intelligence' for statutory purposes, but Japan's definition focuses on technology that 'replaces human cognitive, reasoning, or perceptual functions' while Russia's defines AI as a 'complex of technological solutions that imitates human cognitive functions,' reflecting meaningfully different framing and scope.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -19231,6 +19391,14 @@
         "instrument_binding": true,
         "instrument_type": "statute",
         "variant_of": "us-fed-aiga-2020"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 19",
+        "notes": "Both establish a high-level interagency or cabinet-level body to comprehensively and systematically promote national AI policy, but Japan's Headquarters is chaired by the Prime Minister while the US Interagency Committee operates through OSTP/NSTC.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -20511,6 +20679,14 @@
         "notes": "Both grant rights to explanation/objection regarding AI decisions, but the AIGE rule bundles objection and explanation together as a general consumer right across all AI contexts, whereas the Mauritius rule is sector-specific (financial advisory) and separates explanation from human review.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 38",
+        "notes": "Both recognize the right to receive reasons/explanations for AI-based decisions, but the UNESCO recommendation is broader (covering all rights-affecting AI decisions, not just financial advisory contexts) and adds a submission/review mechanism; as a voluntary instrument matched against a binding rule, 'similar' is appropriate.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -23601,6 +23777,14 @@
         "notes": "Both require the government to establish legal and regulatory frameworks for AI that protect the public, though the Mauritius rule adds explicit mention of privacy and data protection alongside public safety.",
         "instrument_binding": false,
         "instrument_type": "strategy"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 13",
+        "notes": "Both require the government to establish legal/regulatory frameworks for AI, but Japan's rule is a binding statute specifying that measures must align with international norms and ensure proper implementation, while Tajikistan's rule is a non-binding strategy recommendation for legal and ethical frameworks.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -23671,6 +23855,14 @@
         "notes": "Both address AI adoption in government/public entities, but CONPES 6.1 frames it as digital transformation incorporating AI systems with broader institutional scope.",
         "instrument_binding": true,
         "instrument_type": "policy_framework"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 4(2)",
+        "notes": "Both require use of AI within government/electronic services for efficiency, but Japan's provision is a binding statutory mandate on national administrative agencies while the Tajikistan rule is a strategy-level requirement focused on e-government data processing.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -25340,6 +25532,14 @@
         "notes": "Both require understandable explanations of AI system workings to affected parties, but the Malaysia rule additionally covers capabilities, limitations, and potential impacts rather than focusing on mechanisms for requesting explanations of specific decisions.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 40",
+        "notes": "Both recommend explainability of AI decisions, but the UAE rule focuses on affected subjects' right to request explanations while this UNESCO recommendation addresses the broader obligation on developers/deployers to ensure algorithms are explainable; both are soft law but differ in scope and framing.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -25472,6 +25672,14 @@
         "notes": "Both address peaceful/non-harmful use of AI and restricting autonomous harm, but the UAE rule focuses on lethal autonomous weapons and autonomy while Bahrain's rule is a broader peaceful-purposes mandate.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 36",
+        "notes": "Both address the principle that AI should not autonomously make lethal or life-and-death decisions, but the UAE rule is also a voluntary framework recommendation focused on autonomous weapons and human harm, while the UNESCO rule is phrased more broadly as not ceding any life-and-death decisions to AI systems.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -25755,6 +25963,14 @@
         "notes": "Both require ultimate human controllability over AI systems in high-risk areas, but the Malaysia rule broadens scope beyond lethal/life-death decisions to include autonomous vehicles and other high-risk domains.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 26",
+        "notes": "Both rules restrict AI autonomy in irreversible or life-and-death decisions and require human determination, but UNESCO's rule is a voluntary recommendation with broader framing, while the UAE ethics rule is a binding requirement that also explicitly addresses shutdown capability.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -26385,6 +26601,14 @@
         "notes": "Both require privacy/data protection impact assessments incorporating broader considerations, but this rule is specific to online products likely accessed by children and is a binding state law, whereas the existing rule is a voluntary UAE ethics guideline with broader societal scope.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 34",
+        "notes": "Both recommend privacy impact assessments with privacy-by-design for algorithmic systems, but the UNESCO rule is a voluntary recommendation while ae-ae-aiethics-2022 is from a soft-law ethics framework; UNESCO's framing is broader and less prescriptive.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -26492,6 +26716,14 @@
         "notes": "Both address environmental impact evaluation of AI systems (energy/water consumption), but the Puerto Rico rule grants a government division binding authority to require such evaluations, while the Saudi Arabia rule is a voluntary recommendation for organizations to consider environmental impacts in design and operation.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 84",
+        "notes": "Both recommend assessing and reducing the environmental impact of AI systems, but UNESCO's rule extends the assessment across the full AI life cycle and includes data infrastructures, while the Saudi Arabia rule focuses on design and operation considerations.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -27531,6 +27763,14 @@
         "notes": "Both address documenting and assessing trade-offs across AI trustworthiness attributes during development, but this rule enumerates specific attributes (accuracy, robustness, privacy, fairness, explainability) in the context of adversarial ML, while the NIST RMF rule focuses on diverse team involvement in risk decisions.",
         "instrument_binding": false,
         "instrument_type": "standard"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 52",
+        "notes": "Both call for monitoring throughout the AI system lifecycle including algorithms, data, and involved actors; UNESCO is a broad voluntary ethical recommendation while NIST's rule focuses on diverse team involvement in risk management decisions.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -30168,6 +30408,14 @@
         "notes": "Both address ethics compliance in research contexts, but Vietnam's rule specifically targets AI used in scientific research with additional requirements around fraud and plagiarism prevention, whereas China's rule focuses on independent ethics review processes.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 108",
+        "notes": "Both require AI researchers to incorporate ethical considerations into their work; UNESCO's recommendation is broader covering training, designs, publications, and datasets, while China's rule focuses on independent and objective ethics review free from undue influence.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -33455,6 +33703,14 @@
         "notes": "Both recommend conducting public awareness/sensitization campaigns on AI adoption, differing mainly in phrasing and the GCC rule's additional emphasis on linguistic diversity.",
         "instrument_binding": false,
         "instrument_type": "strategy"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 15",
+        "notes": "Both require promoting AI education, learning, and public understanding, but Japan's Art. 15 is a binding statutory obligation on the government while the GCC rule is a non-binding recommendation to member states.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -35311,6 +35567,14 @@
         "notes": "Wyoming D 149 — Misleading Synthetic Media (Wyoming) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-sc-sb164-2025",
+        "relationship": "agrees",
+        "citation": "§ 7-25-230(F)(1)",
+        "notes": "Both exempt broadcasters airing AI-generated/deepfake political content as part of bona fide news coverage, but SC SB164 adds a requirement that broadcasters clearly acknowledge the content through disclosure, while Michigan's exemption is broader and unconditional for news airing.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -35755,6 +36019,14 @@
         "notes": "Wyoming D 149 — Misleading Synthetic Media (Wyoming) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-sc-sb164-2025",
+        "relationship": "agrees",
+        "citation": "§ 7-25-230(F)(4)",
+        "notes": "Both exempt materially deceptive or AI-generated political content that constitutes satire or parody from the applicable prohibition, using substantially the same concept though drafted independently.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -38067,6 +38339,14 @@
         "notes": "Both require government departments and agencies to cooperate with and furnish information to a central AI body, but the NJ rule applies to all state entities broadly while the Abu Dhabi rule is specific to the AIATC Board.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 25",
+        "notes": "Both empower the central AI body to request information and cooperation from other government bodies and agencies, but Japan's Art. 25 is broader in scope covering administrative agencies, local governments, and independent agencies, while the Abu Dhabi rule is specific to the AIATC Board.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -38573,6 +38853,14 @@
         "notes": "Both require compliance with applicable medical device regulations for medical AI applications, but this rule specifically references FDA standards and applies to AI/ML-enabled devices in health care settings, while the existing rule references Chinese medical device regulations and clinical validation requirements.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 122",
+        "notes": "Both address safety and efficacy requirements for health-related AI systems, but UNESCO's rule is a voluntary international recommendation that also emphasizes scientific/medical proof and patient involvement, while the Chinese rule specifically requires compliance with medical device regulations and clinical validation.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -39448,6 +39736,14 @@
         "notes": "Virginia S 775 — Political Campaign Advertisements (Virginia) proposed this rule but the bill was vetoed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-sc-sb164-2025",
+        "relationship": "similar",
+        "citation": "§ 7-25-230(C)",
+        "notes": "Both require format-specific AI-generated content disclaimers for political/election media, but SC SB164 uses a specific statutory disclosure phrase and applies to deepfakes broadly while NM HB182 covers AI-generated advertisements with different formatting specifications.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -40230,6 +40526,15 @@
         "notes": "Both impose criminal/civil penalties for knowingly distributing prohibited synthetic/deceptive media in election contexts, but Vermont S 23 uses a tiered civil fine structure ($1,000 base, $5,000 enhanced) rather than New Mexico's misdemeanor criminal penalty with fixed fine and imprisonment.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-sc-sb164-2025",
+        "relationship": "identical",
+        "citation": "§ 7-25-230(E)",
+        "notes": "South Carolina SB 164 § 7-25-230(E) adopts the same penalty structure as New Mexico HB 182 § 1-19-26-8(f): misdemeanor for willful/knowing distribution of prohibited deepfakes with up to 90 days imprisonment or a $500 fine, with escalating penalties — near-verbatim adoption of the same thresholds and offense classification.",
+        "instrument_binding": true,
+        "instrument_type": "statute",
+        "variant_of": "us-nm-hb182-2024"
       }
     ]
   },
@@ -46740,6 +47045,14 @@
         "notes": "Wyoming D 149 — Misleading Synthetic Media (Wyoming) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-sc-sb164-2025",
+        "relationship": "similar",
+        "citation": "§ 7-25-230(D)(1)",
+        "notes": "Both grant injunctive/equitable relief to candidates harmed by election-related deepfakes, but SC limits standing to depicted candidates only while AL also includes the AG, depicted individuals generally, and entities representing voters.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -47028,6 +47341,14 @@
         "notes": "Both provide for civil damages and attorney fees for candidates depicted in prohibited deepfakes, but the SC rule specifies general or special damages against the sponsor with fees for prevailing parties, while Alabama limits fee awards to plaintiffs other than the AG granted permanent injunctive relief.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-sc-sb164-2025",
+        "relationship": "similar",
+        "citation": "§ 7-25-230(D)(2)",
+        "notes": "Both allow prevailing candidates to recover attorney fees in deepfake election cases, but SC also explicitly provides for general or special damages against the sponsor, while AL limits the fee provision to successful injunctive relief plaintiffs other than the AG.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -49955,6 +50276,14 @@
         "notes": "Both address ensuring independence of AI oversight mechanisms, but the German rule specifically references Article 41(2) of Directive (EU) 2016/680 (law-enforcement data protection) as the independence standard for the AI Market Surveillance Chamber.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 62",
+        "notes": "Both address oversight mechanisms for AI systems including independent authorities, but the UNESCO rule is a voluntary recommendation focused on data protection authorities and sectoral oversight for human rights contexts, while the CoE Convention provision is binding and addresses coordination among multiple oversight mechanisms.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -52195,6 +52524,14 @@
         "notes": "West Virginia S 484 — Synthetic Media and Artificial Intelligence (West Virginia) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-sc-sb164-2025",
+        "relationship": "agrees",
+        "citation": "§ 7-25-230(F)(3)",
+        "notes": "Both exempt websites, newspapers, magazines, and similar periodicals from deepfake/deceptive media prohibitions when they clearly state the media does not accurately represent reality, though phrasing and structure differ slightly.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -53065,6 +53402,14 @@
         "notes": "Both address explainability and transparency at the model/algorithm level including rationale for design choices, but the Malaysia rule is more prescriptive about disclosing AI type and feature/model selection rationale while the Tanzania rule distinguishes multiple layers of transparency.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 70",
+        "notes": "Both voluntary instruments recommend context-sensitive, tailored transparency and explainability requirements across dimensions of AI systems, but the Tanzania guide distinguishes transparency/explainability/traceability at data/algorithm/output levels while UNESCO focuses on domain, use, audience, and feasibility as tailoring factors.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -57565,6 +57910,14 @@
         "notes": "Both address accountability in the AI value chain, but the Mauritius rule focuses on market participants self-defining liability parameters across the chain, while the Qatar rule assigns accountability specifically to Boards of Directors and senior management for AI system outcomes.",
         "instrument_binding": false,
         "instrument_type": "strategy"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 35",
+        "notes": "Both require accountability for AI outcomes to rest with identifiable human/legal persons, but UNESCO's recommendation is a broad ethical principle across the full lifecycle while Qatar's rule specifically assigns board/senior management accountability in financial institutions.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -60645,6 +60998,14 @@
         "notes": "Both address regulatory sandboxes for innovation, but the Mauritius rule focuses specifically on the Fintech space including bank account and licensing timeframes, while the CoE Convention provision is a general AI sandbox framework.",
         "instrument_binding": false,
         "instrument_type": "strategy"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 69",
+        "notes": "Both recommend regulatory sandboxes for testing AI laws and regulations in controlled environments, but the UNESCO rule is a voluntary recommendation encompassing both policy prototypes and sandboxes, while the CoE Convention article is a binding obligation on Parties to enable such environments.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -61002,6 +61363,14 @@
         "notes": "Both require testing AI systems using defined methods, but this rule is specifically focused on watermarking techniques for synthetic content detection accuracy and robustness, while the Chinese rule covers general test rules and sandbox simulations.",
         "instrument_binding": false,
         "instrument_type": "standard"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 51",
+        "notes": "Both recommend broad pre-release testing of AI systems including in real-world conditions, but UNESCO's rule is a voluntary international recommendation focused on human rights risk, while the Chinese standard is a technical recommendation about test methods and sandbox simulations.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -68046,6 +68415,14 @@
         "notes": "Both address data portability rights but the GDPR rule specifies the legal bases (consent/contract) and technical format requirements (structured, commonly used, machine-readable) more precisely than the Argentine guideline.",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 73",
+        "notes": "Both address personal data rights including access and control, but the UNESCO recommendation is broader (adding erasure, accountability, and independent oversight) and is a voluntary instrument, while the Argentine guide focuses specifically on portability and limitation of processing.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -68840,6 +69217,14 @@
         "notes": "Both establish controller/provider liability for damages caused by their processing or products, but the GDPR rule specifically allocates liability between controllers and processors based on GDPR infringement rather than product defect.",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 68",
+        "notes": "Both address liability frameworks for AI outcomes attributed to natural or legal persons; UNESCO recommends developing such frameworks as a policy matter and explicitly rejects legal personhood for AI, while the EU PLD is a binding rule imposing manufacturer liability for defective AI products.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -73417,6 +73802,14 @@
         "notes": "Malaysia's AIGE guideline bundles multiple EU AI Act Article 5 prohibited practices (cognitive behavioral manipulation, social scoring, real-time remote biometric identification) into a single voluntary recommendation, covering the same concepts but as soft-law guidance rather than binding prohibitions.",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 26",
+        "notes": "Both address prohibiting social scoring and mass surveillance by AI, but the EU AI Act binding rule specifically targets public authorities using AI for general social scoring, whereas the UNESCO recommendation is a broader voluntary instrument covering both social scoring and mass surveillance without binding force.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -74855,6 +75248,14 @@
         "relationship": "similar",
         "citation": "Data libraries provision",
         "notes": "Both rules contemplate the creation of datasets/libraries for AI training and allow for a public/authorised body to do so, but Kazakhstan's rule also explicitly permits private individuals to create data libraries and introduces the concept of library access conditions, making the scope and framing meaningfully different.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 12",
+        "notes": "Both rules require a state/public body to identify and organize datasets for AI training, but the Japanese provision is broader, covering facilities, equipment, and intellectual infrastructure in addition to datasets, and frames it as a general state obligation to promote development and sharing rather than a specific centre mandate.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -109202,6 +109603,14 @@
         "notes": "Both require informing users they are interacting with an AI system during direct interaction, but the Norway/EEA rule derives from EU AI Act Art. 50(1) with binding force and includes a 'unless obvious' exception framing, while the Colorado rule applies specifically to consumer-facing AI with somewhat different scope and context.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 127",
+        "notes": "Both require that users be able to identify when they are interacting with an AI rather than a human, but the UNESCO rule is a voluntary recommendation covering AI imitating human or animal characteristics broadly, while the Colorado provision is a binding deployer obligation specific to consumer-facing AI systems.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -110653,6 +111062,14 @@
         "notes": "Rule introduced in Bhutan National AI Strategy 2025 (Bhutan, 2025-10-01).",
         "instrument_binding": false,
         "instrument_type": "strategy"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Supp. Art. 2",
+        "notes": "Both require periodic review of AI policy implementation in light of changing conditions, but Japan's Supp. Art. 2 is a binding statutory obligation to review and take necessary measures, while Bhutan's rule is a non-binding recommendation for periodic strategy review.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -118981,6 +119398,14 @@
         "notes": "Rule introduced in UNICEF Guidance on AI and Children 3.0 (UNICEF, 2025-12-01).",
         "instrument_binding": false,
         "instrument_type": "guidance"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 86",
+        "notes": "Both are voluntary recommendations addressing energy and resource efficiency concerns related to AI, but the UNICEF rule focuses specifically on disproportionate effects on children's futures, whereas the UNESCO rule is a broader precautionary principle about resource-efficient AI methods and refraining from AI use where impacts are disproportionate.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -120769,6 +121194,14 @@
         "notes": "Rule introduced in Taiwan AI Basic Act (Taiwan, 2025-12-23).",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 18(1)-(2)",
+        "notes": "Both establish a requirement for a central government authority to formulate comprehensive AI policy and plans, but Japan's Art. 18 specifically mandates a 'Basic Plan for Artificial Intelligence' with defined content requirements and revision cycles, while Taiwan's Art. 2 designates a competent authority.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -120794,6 +121227,14 @@
         "relationship": "origin",
         "citation": "Art. 18",
         "notes": "Rule introduced in Taiwan AI Basic Act (Taiwan, 2025-12-23).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 10",
+        "notes": "Both require the government to take legislative, financial, and other measures to implement AI policies, but Japan's Art. 10 is broader in scope while Taiwan's Art. 18 specifically addresses completing legislative enactment/amendment of inconsistent laws.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -120824,6 +121265,14 @@
         "notes": "Rule introduced in Japan Basic AI Plan (2025) (Japan, 2025-12-23).",
         "instrument_binding": true,
         "instrument_type": "policy_framework"
+      },
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "similar",
+        "citation": "Art. 16",
+        "notes": "Both rules address Japan's state obligation to monitor AI-related harms and enforcement responses, but this rule focuses on collecting/analyzing information on rights infringements as a policy intelligence function, while the existing rule focuses on law enforcement capability-building against AI-enabled crimes.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -241270,6 +241719,14 @@
         "notes": "Both define 'deepfake' as intentionally created or manipulated audio/visual media, but the NJ bill uses a broader enumerated list of media types (video, film, sound recording, image, photograph, or technological representation) and this is a bill (status unclear from context), while the Maryland rule is from an enacted law with slightly different phrasing and scope.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-sc-sb164-2025",
+        "relationship": "similar",
+        "citation": "§ 7-25-230(A)(1)-(2)",
+        "notes": "Both define synthetic/deepfake media as content created or manipulated using digital technology to create realistic but false depictions, but SC SB164 specifically references GANs and frames it as 'synthetic media' whereas Maryland's definition uses 'deepfake' and references generative AI more broadly.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -280976,6 +281433,14 @@
         "notes": "West Virginia S 484 — Synthetic Media and Artificial Intelligence (West Virginia) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-sc-sb164-2025",
+        "relationship": "similar",
+        "citation": "§ 7-25-230(B)",
+        "notes": "Both prohibit distributing deceptive deepfakes of candidates within 90 days of an election, but NJ requires knowing or reckless disregard while SC uses a 'know or should know' (negligence) standard, and SC specifies 'on the ballot' as the candidate qualifier.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -310165,6 +310630,14 @@
         "notes": "Both rules exempt broadcasters from deepfake/AI political content liability, but this Pennsylvania bill adds law enforcement and streaming services/newspapers as additional exempt parties, and is from a voluntary/non-enacted instrument rather than a binding law.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-sc-sb164-2025",
+        "relationship": "agrees",
+        "citation": "§ 7-25-230(F)(2)",
+        "notes": "Both exempt broadcasters paid to air deepfake/deceptive political content when they have made a good faith effort to verify the content, though SC SB164 frames this specifically as a good faith effort to establish the depiction is not deceptive or fraudulent.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -336426,6 +336899,14 @@
         "notes": "Proposed in Washington H 1833 — Artificial Intelligence Grant Program (Washington, null) but bill was failed — negative premise only.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 113",
+        "notes": "Both address transparency toward users regarding AI-generated or AI-curated content, but the UNESCO rule is a voluntary recommendation covering automated generation, moderation, and curation by online operators broadly, while the Washington provision is a narrower proposed state guideline for AI consumer interactions.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -336462,6 +336943,14 @@
         "notes": "This rule proposes state AI guidelines covering human agency, oversight, and security testing for high-risk systems, which overlaps with the matched rule's requirement for accountability through oversight and auditability, but adds specifics about human agency retention and pre-deployment security testing.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 43",
+        "notes": "Both recommend oversight, impact assessment, auditability, and due diligence mechanisms including whistleblower protections for AI accountability; UNESCO is a voluntary international instrument while the Washington bill is a proposed state-level guideline.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -345970,6 +346459,14 @@
         "instrument_binding": true,
         "instrument_type": "statute",
         "variant_of": "eu-eu-aiact-2024"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 90",
+        "notes": "Both address eliminating gender stereotyping and discriminatory biases from AI datasets, but the UNESCO rule is a soft-law recommendation for proactive redress while the EU AI Act provision is a binding obligation tied to high-risk systems and specific contextual characteristics.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -348390,6 +348887,14 @@
         "notes": "POPIA Section 11(1) establishes a similar lawful-basis framework to GDPR Article 6/7 including consent, but enumerates grounds (legitimate interest, contractual necessity, legal obligation, etc.) in a single provision rather than separately, reflecting South African legislative structure.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 33",
+        "notes": "Both require a valid legal basis (including consent) for data processing and governance mechanisms, but the UNESCO recommendation is a voluntary soft-law instrument framing this as a multi-stakeholder governance recommendation rather than a binding legal obligation as in the GDPR.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -350967,6 +351472,14 @@
         "notes": "Rule introduced in National AI Initiative Act (2020) (United States, 2021-01-01).",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "similar",
+        "citation": "§ 64",
+        "notes": "Both recommend developing international/technical standards for measurable, testable AI safety and transparency, but UNESCO's rule is a voluntary international recommendation while the US NAI Act provision authorizes NIST to support standards for safety and robustness.",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
       }
     ]
   },
@@ -366392,6 +366905,285 @@
         "notes": "Rule introduced in NIST AI 100-2 E2025 — Adversarial Machine Learning (United States, 2025-03-24).",
         "instrument_binding": false,
         "instrument_type": "standard"
+      }
+    ]
+  },
+  {
+    "rule_id": "unesco-unesco-airecommendation-2021-55",
+    "rule_text": "You should ensure harms caused through AI systems are investigated and redressed by enacting strong enforcement and remedial mechanisms (recommendation).",
+    "rule_text_technical": "Member States should ensure that harms caused through AI systems are investigated and redressed by enacting strong enforcement mechanisms and remedial actions, including remediation mechanisms provided by private and public sector companies, promoting auditability and traceability.",
+    "category": "enforcement_penalties",
+    "tags": [
+      "enforcement",
+      "redress",
+      "remediation",
+      "investigation"
+    ],
+    "first_instance": {
+      "law_id": "unesco-unesco-airecommendation-2021",
+      "law_name": "UNESCO Recommendation on the Ethics of Artificial Intelligence",
+      "citation": "§ 55",
+      "date": "2021-11-23"
+    },
+    "instances": [
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "origin",
+        "citation": "§ 55",
+        "notes": "Rule introduced in UNESCO AI Ethics Recommendation (UNESCO, 2021-11-23).",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
+      }
+    ]
+  },
+  {
+    "rule_id": "unesco-unesco-airecommendation-2021-58",
+    "rule_text": "You should consider adding the role of an independent AI Ethics Officer or similar mechanism to oversee impact assessment, auditing and continuous monitoring (recommendation).",
+    "rule_text_technical": "Member States should encourage public entities, private sector companies and civil society organizations to involve different stakeholders in their AI governance and to consider adding the role of an independent AI Ethics Officer or some other mechanism to oversee ethical impact assessment, auditing and continuous monitoring, and to create a network of such officers.",
+    "category": "institutional_framework",
+    "tags": [
+      "ai_ethics_officer",
+      "governance",
+      "monitoring",
+      "independence"
+    ],
+    "first_instance": {
+      "law_id": "unesco-unesco-airecommendation-2021",
+      "law_name": "UNESCO Recommendation on the Ethics of Artificial Intelligence",
+      "citation": "§ 58",
+      "date": "2021-11-23"
+    },
+    "instances": [
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "origin",
+        "citation": "§ 58",
+        "notes": "Rule introduced in UNESCO AI Ethics Recommendation (UNESCO, 2021-11-23).",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
+      }
+    ]
+  },
+  {
+    "rule_id": "unesco-unesco-airecommendation-2021-63",
+    "rule_text": "You should ensure that AI systems used by the judiciary include sufficient safeguards to protect fundamental rights, judicial independence, and the principle of human oversight (recommendation).",
+    "rule_text_technical": "Member States should enhance judicial capacity to make decisions on AI systems and, when AI systems are used by the judiciary, ensure sufficient safeguards to guarantee protection of fundamental human rights, the rule of law, judicial independence and human oversight, ensuring trustworthy, public-interest oriented and human-centric use.",
+    "category": "human_oversight",
+    "tags": [
+      "judiciary",
+      "safeguards",
+      "judicial_independence",
+      "human_oversight"
+    ],
+    "first_instance": {
+      "law_id": "unesco-unesco-airecommendation-2021",
+      "law_name": "UNESCO Recommendation on the Ethics of Artificial Intelligence",
+      "citation": "§ 63",
+      "date": "2021-11-23"
+    },
+    "instances": [
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "origin",
+        "citation": "§ 63",
+        "notes": "Rule introduced in UNESCO AI Ethics Recommendation (UNESCO, 2021-11-23).",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
+      }
+    ]
+  },
+  {
+    "rule_id": "unesco-unesco-airecommendation-2021-104",
+    "rule_text": "You should subject AI systems used in learning to strict requirements for monitoring, ability assessment, or behaviour prediction, and prohibit misuse of learner data including for commercial purposes (recommendation).",
+    "rule_text_technical": "AI systems used in learning should be subject to strict requirements for monitoring, assessment of abilities, or prediction of learner behaviours, supporting learning without reducing cognitive abilities or extracting sensitive information, in compliance with personal data protection standards; data collected during learner interactions must not be subject to misuse, misappropriation or criminal exploitation, including commercial purposes.",
+    "category": "prohibited_applications",
+    "tags": [
+      "education",
+      "learner_data",
+      "monitoring",
+      "commercial_use"
+    ],
+    "first_instance": {
+      "law_id": "unesco-unesco-airecommendation-2021",
+      "law_name": "UNESCO Recommendation on the Ethics of Artificial Intelligence",
+      "citation": "§ 104",
+      "date": "2021-11-23"
+    },
+    "instances": [
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "origin",
+        "citation": "§ 104",
+        "notes": "Rule introduced in UNESCO AI Ethics Recommendation (UNESCO, 2021-11-23).",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
+      }
+    ]
+  },
+  {
+    "rule_id": "unesco-unesco-airecommendation-2021-120",
+    "rule_text": "You should take steps to ensure competitive markets, prevent abuse of dominant positions in AI markets, and respect ethical standards when exporting AI products to jurisdictions lacking such standards (recommendation).",
+    "rule_text_technical": "Member States should take appropriate steps to ensure competitive markets and consumer protection, prevent abuse of dominant market positions including monopolies in relation to AI systems throughout their life cycle, and AI actors developing AI in countries with established ethical standards should respect those standards when exporting, developing or applying AI in countries lacking such standards.",
+    "category": "enforcement_penalties",
+    "tags": [
+      "competition",
+      "market_dominance",
+      "consumer_protection",
+      "extraterritorial"
+    ],
+    "first_instance": {
+      "law_id": "unesco-unesco-airecommendation-2021",
+      "law_name": "UNESCO Recommendation on the Ethics of Artificial Intelligence",
+      "citation": "§ 120",
+      "date": "2021-11-23"
+    },
+    "instances": [
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "origin",
+        "citation": "§ 120",
+        "notes": "Rule introduced in UNESCO AI Ethics Recommendation (UNESCO, 2021-11-23).",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
+      }
+    ]
+  },
+  {
+    "rule_id": "unesco-unesco-airecommendation-2021-123",
+    "rule_text": "You should regulate AI prediction, detection and treatment solutions in healthcare with bias oversight, domain-expert inclusion, privacy compliance, informed consent, human final diagnosis, and ethical research review (recommendation).",
+    "rule_text_technical": "Member States should pay particular attention in regulating prediction, detection and treatment AI solutions in health care by: ensuring oversight to minimize bias; including the professional, patient or service user as 'domain expert' in algorithm development; ensuring privacy and meeting data protection requirements; ensuring informed consent for use and analysis of personal data without preventing access to care; ensuring final diagnosis and treatment decisions are taken by humans; and ensuring ethical research committee review prior to clinical use where necessary.",
+    "category": "human_oversight",
+    "tags": [
+      "healthcare_ai",
+      "informed_consent",
+      "human_decision",
+      "ethics_committee",
+      "bias"
+    ],
+    "first_instance": {
+      "law_id": "unesco-unesco-airecommendation-2021",
+      "law_name": "UNESCO Recommendation on the Ethics of Artificial Intelligence",
+      "citation": "§ 123",
+      "date": "2021-11-23"
+    },
+    "instances": [
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "origin",
+        "citation": "§ 123",
+        "notes": "Rule introduced in UNESCO AI Ethics Recommendation (UNESCO, 2021-11-23).",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
+      }
+    ]
+  },
+  {
+    "rule_id": "unesco-unesco-airecommendation-2021-130",
+    "rule_text": "You should put in place mechanisms to meaningfully engage children and young people in decisions about how AI systems impact their lives (recommendation).",
+    "rule_text_technical": "Member States and all stakeholders should put in place mechanisms to meaningfully engage children and young people in conversations, debates and decision-making with regard to the impact of AI systems on their lives and futures.",
+    "category": "accountability_governance",
+    "tags": [
+      "children",
+      "youth",
+      "participation",
+      "engagement"
+    ],
+    "first_instance": {
+      "law_id": "unesco-unesco-airecommendation-2021",
+      "law_name": "UNESCO Recommendation on the Ethics of Artificial Intelligence",
+      "citation": "§ 130",
+      "date": "2021-11-23"
+    },
+    "instances": [
+      {
+        "law_id": "unesco-unesco-airecommendation-2021",
+        "relationship": "origin",
+        "citation": "§ 130",
+        "notes": "Rule introduced in UNESCO AI Ethics Recommendation (UNESCO, 2021-11-23).",
+        "instrument_binding": false,
+        "instrument_type": "voluntary_framework"
+      }
+    ]
+  },
+  {
+    "rule_id": "jp-jp-aiprom-2025-art-7",
+    "rule_text": "If you develop or provide AI-based products or services or otherwise utilize AI in business, you must endeavor to improve efficiency and create new industries through proactive use of AI and cooperate with national and local government measures.",
+    "rule_text_technical": "Article 7 requires utilizing businesses—any person who intends to develop or provide products or services utilizing AI-related technologies, or otherwise utilize AI-related technologies in business activities—to endeavor, in accordance with the basic principles, to improve efficiency and sophistication of business and create new industries through proactive utilization, and to cooperate with measures implemented by the national and local governments under Articles 4 and 5.",
+    "category": "accountability_governance",
+    "tags": [
+      "business_responsibility",
+      "ai_deployers",
+      "industry_cooperation"
+    ],
+    "first_instance": {
+      "law_id": "jp-jp-aiprom-2025",
+      "law_name": "Act on Promotion of Research, Development and Utilization of Artificial Intelligence-Related Technologies",
+      "citation": "Art. 7",
+      "date": "2025-05-28"
+    },
+    "instances": [
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "origin",
+        "citation": "Art. 7",
+        "notes": "Rule introduced in Japan AI Promotion Act (Japan, 2025-05-28).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "jp-jp-aiprom-2025-art-18-3-4",
+    "rule_text": "The Prime Minister must seek Cabinet approval for the draft Basic Plan for Artificial Intelligence prepared by the AI Strategy Headquarters and, once approved, promptly publish the Plan.",
+    "rule_text_technical": "Article 18(3)-(4) require the Prime Minister to seek Cabinet approval for the draft Basic Plan for Artificial Intelligence prepared by the Headquarters for the Strategy of Artificial Intelligence, and upon Cabinet decision, to promptly publish the Basic Plan; per paragraph (5), the same applies mutatis mutandis to amendments.",
+    "category": "institutional_framework",
+    "tags": [
+      "cabinet_approval",
+      "publication",
+      "basic_plan",
+      "transparency"
+    ],
+    "first_instance": {
+      "law_id": "jp-jp-aiprom-2025",
+      "law_name": "Act on Promotion of Research, Development and Utilization of Artificial Intelligence-Related Technologies",
+      "citation": "Art. 18(3)-(4)",
+      "date": "2025-05-28"
+    },
+    "instances": [
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "origin",
+        "citation": "Art. 18(3)-(4)",
+        "notes": "Rule introduced in Japan AI Promotion Act (Japan, 2025-05-28).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "jp-jp-aiprom-2025-art-22",
+    "rule_text": "The Director-General of the AI Strategy Headquarters, who is the Prime Minister, must oversee the administrative affairs of the Headquarters and direct and supervise its staff.",
+    "rule_text_technical": "Article 22 designates the Director of the Artificial Intelligence Strategy Headquarters as the head of the Headquarters, filled by the Prime Minister, and requires the Director-General to oversee the administrative affairs of the Headquarters and direct and supervise its staff.",
+    "category": "institutional_framework",
+    "tags": [
+      "director_general",
+      "prime_minister",
+      "leadership"
+    ],
+    "first_instance": {
+      "law_id": "jp-jp-aiprom-2025",
+      "law_name": "Act on Promotion of Research, Development and Utilization of Artificial Intelligence-Related Technologies",
+      "citation": "Art. 22",
+      "date": "2025-05-28"
+    },
+    "instances": [
+      {
+        "law_id": "jp-jp-aiprom-2025",
+        "relationship": "origin",
+        "citation": "Art. 22",
+        "notes": "Rule introduced in Japan AI Promotion Act (Japan, 2025-05-28).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   }
