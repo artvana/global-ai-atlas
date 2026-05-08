@@ -241,9 +241,8 @@ function colSortKey(key: string): string {
 }
 
 // ── color mapping ─────────────────────────────────────────────────────────────
-// Diverging scale centred on the dynamic global mean, capped at ±2σ.
-// Below mean → blue; above mean → amber; conflicts → crimson (separate).
-// Gamma 0.6 spreads differences in the dense 0–10% band.
+// Sequential scale: white (0%) → amber-orange (mean + 2σ and above).
+// Sqrt spread opens up the dense 0–10% band. Conflicts → crimson (outside scale).
 
 function simToColor(v: number, mean = 0.067, std = 0.074): string {
   if (v < 0) {
@@ -251,15 +250,11 @@ function simToColor(v: number, mean = 0.067, std = 0.074): string {
     const t = Math.pow(Math.min(1, -v / 0.15), 0.7)
     return `rgb(${Math.round(239 + t * 16)},${Math.round(68 - t * 68)},${Math.round(68 - t * 68)})`
   }
-  const spread = Math.max(2 * std, 0.001)
-  const t = Math.max(-1, Math.min(1, (v - mean) / spread))
-  const s = Math.pow(Math.abs(t), 0.6)
-  if (t <= 0) {
-    // Below mean → white (#F9FAFB) to blue-700 (#1D4ED8)
-    return `rgb(${Math.round(249 - s * 220)},${Math.round(250 - s * 172)},${Math.round(251 - s * 35)})`
-  }
-  // Above mean → white (#F9FAFB) to amber-600 (#D97706)
-  return `rgb(${Math.round(249 - s * 32)},${Math.round(250 - s * 131)},${Math.round(251 - s * 245)})`
+  // Cap at mean + 2σ so the top of the scale is meaningful, not washed out by EU outliers
+  const cap = Math.max(mean + 2 * std, 0.01)
+  const t = Math.pow(Math.min(1, v / cap), 0.5)
+  // white (#FFFFFF) → orange-700 (#C2410C)
+  return `rgb(${Math.round(255 - t * 61)},${Math.round(255 - t * 190)},${Math.round(255 - t * 243)})`
 }
 
 // ── greedy nearest-neighbour seriation ────────────────────────────────────────
@@ -718,10 +713,11 @@ export function SimilarityHeatmap() {
               <div className="h-2.5 w-3 rounded-sm" style={{ background: 'rgb(220,38,38)' }} />
               <span className="text-[9px] text-odl-subtle">Conflict</span>
             </div>
-            <div className="flex items-center gap-1">
-              <div className="h-2.5 w-24 rounded-sm" style={{ background: 'linear-gradient(to right, rgb(29,78,216), rgb(249,250,251), rgb(217,119,6))' }} />
+            <div className="flex items-center gap-1.5">
+              <span className="text-[9px] text-odl-subtle">None</span>
+              <div className="h-2.5 w-28 rounded-sm" style={{ background: 'linear-gradient(to right, #ffffff, rgb(255,186,132), rgb(194,65,12))' }} />
+              <span className="text-[9px] text-odl-subtle">High</span>
             </div>
-            <span className="text-[9px] text-odl-subtle">Below avg · <span className="font-semibold">Mean</span> · Above avg</span>
           </div>
           {/* diagonal */}
           <div className="flex items-center gap-1.5">
