@@ -241,20 +241,24 @@ function colSortKey(key: string): string {
 }
 
 // ── color mapping ─────────────────────────────────────────────────────────────
-// Sequential scale: white (0%) → amber-orange (mean + 2σ and above).
-// Sqrt spread opens up the dense 0–10% band. Conflicts → crimson (outside scale).
+// Diverging traffic-light: red (no overlap) → yellow (mid) → green (convergent).
+// Capped at mean + 2σ. Sqrt spread opens the dense 0–10% band.
+// Explicit conflict (v < 0, opposed relationship) → dark maroon, outside the scale.
 
 function simToColor(v: number, mean = 0.067, std = 0.074): string {
   if (v < 0) {
-    // Active regulatory conflict — crimson, saturates around -0.15
-    const t = Math.pow(Math.min(1, -v / 0.15), 0.7)
-    return `rgb(${Math.round(239 + t * 16)},${Math.round(68 - t * 68)},${Math.round(68 - t * 68)})`
+    // Explicit regulatory conflict (opposed label) — dark maroon, distinct from scale
+    return 'rgb(127,29,29)'
   }
-  // Cap at mean + 2σ so the top of the scale is meaningful, not washed out by EU outliers
   const cap = Math.max(mean + 2 * std, 0.01)
   const t = Math.pow(Math.min(1, v / cap), 0.5)
-  // white (#FFFFFF) → orange-700 (#C2410C)
-  return `rgb(${Math.round(255 - t * 61)},${Math.round(255 - t * 190)},${Math.round(255 - t * 243)})`
+  // red-400 (#F87171) → yellow-400 (#FACC15) → green-500 (#22C55E)
+  if (t < 0.5) {
+    const s = t / 0.5
+    return `rgb(${Math.round(248 + s * (250 - 248))},${Math.round(113 + s * (204 - 113))},${Math.round(113 + s * (21 - 113))})`
+  }
+  const s = (t - 0.5) / 0.5
+  return `rgb(${Math.round(250 + s * (34 - 250))},${Math.round(204 + s * (197 - 204))},${Math.round(21 + s * (94 - 21))})`
 }
 
 // ── greedy nearest-neighbour seriation ────────────────────────────────────────
@@ -602,9 +606,9 @@ export function SimilarityHeatmap() {
     }
     return {
       agreed:   agreed.sort((a, b) => Math.min(b.si, b.sj) - Math.min(a.si, a.sj)).slice(0, 20),
-      onlyI:    onlyI.sort((a, b) => b.si - a.si).slice(0, 15),
-      onlyJ:    onlyJ.sort((a, b) => b.sj - a.sj).slice(0, 15),
-      conflict: conflict.slice(0, 10),
+      onlyI:    onlyI.sort((a, b) => b.si - a.si).slice(0, 30),
+      onlyJ:    onlyJ.sort((a, b) => b.sj - a.sj).slice(0, 30),
+      conflict: conflict.slice(0, 30),
     }
   }, [comparedPair, scores])
 
@@ -710,13 +714,13 @@ export function SimilarityHeatmap() {
           {/* colour scale */}
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-1">
-              <div className="h-2.5 w-3 rounded-sm" style={{ background: 'rgb(220,38,38)' }} />
-              <span className="text-[9px] text-odl-subtle">Conflict</span>
+              <div className="h-2.5 w-3 rounded-sm" style={{ background: 'rgb(127,29,29)' }} />
+              <span className="text-[9px] text-odl-subtle">Explicit conflict</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <span className="text-[9px] text-odl-subtle">None</span>
-              <div className="h-2.5 w-28 rounded-sm" style={{ background: 'linear-gradient(to right, #ffffff, rgb(255,186,132), rgb(194,65,12))' }} />
-              <span className="text-[9px] text-odl-subtle">High</span>
+              <span className="text-[9px] text-odl-subtle">Divergent</span>
+              <div className="h-2.5 w-28 rounded-sm" style={{ background: 'linear-gradient(to right, rgb(248,113,113), rgb(250,204,21), rgb(34,197,94))' }} />
+              <span className="text-[9px] text-odl-subtle">Convergent</span>
             </div>
           </div>
           {/* diagonal */}
@@ -877,12 +881,12 @@ export function SimilarityHeatmap() {
                         <div key={cols[j]}>
                           <div className="flex items-center justify-between mb-0.5">
                             <span className="text-[10px] text-odl-muted truncate mr-1" title={lbl}>{lbl}</span>
-                            <span className="text-[10px] font-medium flex-shrink-0" style={{ color: simToColor(sv) }}>
+                            <span className="text-[10px] font-medium flex-shrink-0" style={{ color: colorOf(sv) }}>
                               {(sv * 100).toFixed(0)}%
                             </span>
                           </div>
                           <div className="h-1.5 bg-odl-surface rounded-full overflow-hidden">
-                            <div className="h-full rounded-full" style={{ width: `${sv * 100}%`, background: simToColor(sv) }} />
+                            <div className="h-full rounded-full" style={{ width: `${sv * 100}%`, background: colorOf(sv) }} />
                           </div>
                         </div>
                       )
@@ -903,10 +907,10 @@ export function SimilarityHeatmap() {
                       <div className="h-1.5 w-16 rounded-full bg-odl-surface overflow-hidden">
                         <div className="h-full rounded-full" style={{
                           width: `${simMatrix[comparedPair.i][comparedPair.j] * 100}%`,
-                          background: simToColor(simMatrix[comparedPair.i][comparedPair.j]),
+                          background: colorOf(simMatrix[comparedPair.i][comparedPair.j]),
                         }} />
                       </div>
-                      <span className="text-[10px] font-semibold" style={{ color: simToColor(simMatrix[comparedPair.i][comparedPair.j]) }}>
+                      <span className="text-[10px] font-semibold" style={{ color: colorOf(simMatrix[comparedPair.i][comparedPair.j]) }}>
                         {(simMatrix[comparedPair.i][comparedPair.j] * 100).toFixed(0)}% similar
                       </span>
                     </div>
@@ -956,8 +960,54 @@ export function SimilarityHeatmap() {
                     )
                   }
 
+                  const totalDivergent = comparison.conflict.length + comparison.onlyI.length + comparison.onlyJ.length
                   return (
                     <>
+                      {/* Divergences (shown first — this is the signal) */}
+                      {totalDivergent > 0 && (
+                        <div className="mb-3">
+                          <div className="text-[9px] font-semibold text-red-700 uppercase tracking-wide mb-2">
+                            Divergences · {totalDivergent} rules
+                          </div>
+
+                          {/* Explicit conflict (one adopted, other opposed) */}
+                          {comparison.conflict.length > 0 && (
+                            <div className="mb-2">
+                              <div className="text-[9px] text-red-500 font-medium mb-1">
+                                Direct conflict — {comparison.conflict.length} rule{comparison.conflict.length !== 1 ? 's' : ''}
+                              </div>
+                              <div className="space-y-2">
+                                {comparison.conflict.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#FCA5A5" />)}
+                              </div>
+                            </div>
+                          )}
+
+                          {/* Coverage gap: A has it, B doesn't */}
+                          {comparison.onlyI.length > 0 && (
+                            <div className="mb-2">
+                              <div className="text-[9px] text-slate-500 font-medium mb-1">
+                                In {labelA} · not covered by {labelB} — {comparison.onlyI.length} rule{comparison.onlyI.length !== 1 ? 's' : ''}
+                              </div>
+                              <div className="space-y-2">
+                                {comparison.onlyI.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#93C5FD" />)}
+                              </div>
+                            </div>
+                          )}
+
+                          {/* Coverage gap: B has it, A doesn't */}
+                          {comparison.onlyJ.length > 0 && (
+                            <div className="mb-2">
+                              <div className="text-[9px] text-slate-500 font-medium mb-1">
+                                In {labelB} · not covered by {labelA} — {comparison.onlyJ.length} rule{comparison.onlyJ.length !== 1 ? 's' : ''}
+                              </div>
+                              <div className="space-y-2">
+                                {comparison.onlyJ.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#FCD34D" />)}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      )}
+
                       {/* Agreement */}
                       {comparison.agreed.length > 0 && (
                         <div className="mb-3">
@@ -966,42 +1016,6 @@ export function SimilarityHeatmap() {
                           </div>
                           <div className="space-y-2">
                             {comparison.agreed.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#6EE7B7" />)}
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Conflict */}
-                      {comparison.conflict.length > 0 && (
-                        <div className="mb-3">
-                          <div className="text-[9px] font-semibold text-red-700 uppercase tracking-wide mb-1.5">
-                            Disagreement · {comparison.conflict.length} rules
-                          </div>
-                          <div className="space-y-2">
-                            {comparison.conflict.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#FCA5A5" />)}
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Unique to A */}
-                      {comparison.onlyI.length > 0 && (
-                        <div className="mb-3">
-                          <div className="text-[9px] font-semibold text-sky-700 uppercase tracking-wide mb-1.5">
-                            Unique to {labelA} · {comparison.onlyI.length} rules
-                          </div>
-                          <div className="space-y-2">
-                            {comparison.onlyI.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#93C5FD" />)}
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Unique to B */}
-                      {comparison.onlyJ.length > 0 && (
-                        <div>
-                          <div className="text-[9px] font-semibold text-amber-700 uppercase tracking-wide mb-1.5">
-                            Unique to {labelB} · {comparison.onlyJ.length} rules
-                          </div>
-                          <div className="space-y-2">
-                            {comparison.onlyJ.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#FCD34D" />)}
                           </div>
                         </div>
                       )}
@@ -1044,9 +1058,9 @@ export function SimilarityHeatmap() {
             </div>
             <div className="flex items-center gap-2 mb-2">
               <div className="h-2 flex-1 rounded-full bg-odl-surface overflow-hidden">
-                <div className="h-full rounded-full" style={{ width: `${sv * 100}%`, background: simToColor(sv) }} />
+                <div className="h-full rounded-full" style={{ width: `${sv * 100}%`, background: colorOf(sv) }} />
               </div>
-              <span className="text-[11px] font-semibold" style={{ color: simToColor(sv) }}>
+              <span className="text-[11px] font-semibold" style={{ color: colorOf(sv) }}>
                 {(sv * 100).toFixed(0)}% similarity
               </span>
             </div>
