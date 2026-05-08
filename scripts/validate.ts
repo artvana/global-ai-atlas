@@ -1,9 +1,21 @@
 #!/usr/bin/env npx tsx
-import { readFileSync, writeFileSync } from 'fs'
+import { readFileSync, writeFileSync, existsSync } from 'fs'
 import { join } from 'path'
 
 const ROOT = join(import.meta.dirname, '..')
 const regulations = JSON.parse(readFileSync(join(ROOT, 'data/regulations.json'), 'utf8'))
+
+// Load rules to cross-check coverage
+const rulesPath = join(ROOT, 'data/rules.json')
+const rules: Array<{ instances: Array<{ law_id: string }> }> = existsSync(rulesPath)
+  ? JSON.parse(readFileSync(rulesPath, 'utf8'))
+  : []
+const lawsWithInstances = new Set<string>()
+for (const rule of rules) {
+  for (const inst of (rule.instances ?? [])) {
+    if (inst.law_id) lawsWithInstances.add(inst.law_id)
+  }
+}
 
 interface ValidationError {
   id: string
@@ -106,6 +118,11 @@ for (const law of regulations) {
     if (law.status === 'enacted_not_yet_effective' && law.effective_date < today) {
       warn(id, 'effective_date', `Status is enacted_not_yet_effective but effective_date ${law.effective_date} is in the past — consider updating to in_force`)
     }
+  }
+
+  // Binding in_force laws must have rule instances (coverage check)
+  if (law.instrument_binding && law.status === 'in_force' && law.ai_specific !== false && !lawsWithInstances.has(id)) {
+    warn(id, 'rules', 'Binding in_force law has no rule instances — run extract-rules.ts or set ai_specific=false')
   }
 
   // Provisions completeness
