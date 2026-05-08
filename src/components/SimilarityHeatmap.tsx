@@ -7,8 +7,13 @@ import { regulations } from '../data/regulations'
 // ── relationship → numeric score ──────────────────────────────────────────────
 
 const REL_SCORE: Record<string, number> = {
-  origin: 4, identical: 4, agrees: 4, similar: 3, opposed: -1, absent: 0,
+  origin: 5, identical: 4, agrees: 3, similar: 2, opposed: -1, absent: 0,
 }
+
+// Reserved column key for the international soft-law reference column.
+// Instruments that publish globally but bind nobody (OECD, UNESCO, G7, ISO, etc.)
+// score into this column instead of cascading to country columns.
+const INTL_REF_KEY = 'intl-ref'
 
 // Pairwise-meaningful stance labels — describes a jurisdiction's own position,
 // not its relationship to a canonical origin rule
@@ -164,6 +169,7 @@ const US_STATE_NAMES: Record<string, string> = {
 function lawColKey(law: AILaw): string {
   if (law.country === 'European Union') return 'regional:EU'
   if (law.country === 'Global / Regional') return `regional:${law.region}`
+  if (law.country === 'International') return INTL_REF_KEY
   if (law.country === 'United States') {
     if (law.region === 'US' || law.region === 'North America') return 'US-FED'
     return law.region
@@ -172,6 +178,7 @@ function lawColKey(law: AILaw): string {
 }
 
 function colLabel(key: string): string {
+  if (key === INTL_REF_KEY) return 'International / UN'
   if (key.startsWith('regional:')) return REGIONAL_LABELS[key.slice(9)] ?? key.slice(9)
   if (key === 'US-FED') return 'US Federal'
   if (key.startsWith('US-')) return US_STATE_NAMES[key] ?? key.slice(3)
@@ -219,6 +226,7 @@ const REGIONAL_EXPANSION: Record<string, Set<string> | null> = {
 }
 
 function colRegion(key: string): string {
+  if (key === INTL_REF_KEY) return 'Supranational'
   if (key.startsWith('regional:')) return 'Supranational'
   if (key === 'US-FED' || key.startsWith('US-')) return 'USA'
   if (EU_MEMBER_COUNTRIES.has(key)) return 'Western Europe'
@@ -336,19 +344,36 @@ export function SimilarityHeatmap() {
     const substantiveRules = allRules.filter(r => r.category !== 'definitions_scope' && r.category !== 'institutional_framework')
     const m = substantiveRules.length
 
-    // Build column set: supranational laws expand inline to member country columns.
-    // GCC records use country='Gulf Cooperation Council' rather than 'Global / Regional'.
+    // Build column set.
+    // EU (binding or non-binding) cascades to 27 member country columns.
+    // Non-EU regional soft-law (non-binding CoE, ASEAN, AU, GCC) and all
+    // Global/International instruments score into a single 'intl-ref' reference
+    // column instead — publication is not adoption.
     const colKeySet = new Set<string>()
     candidateLaws.forEach(l => {
       const k = lawColKey(l)
-      if (k.startsWith('regional:')) {
+      if (k === INTL_REF_KEY) {
+        colKeySet.add(INTL_REF_KEY)
+      } else if (k.startsWith('regional:')) {
         const region = k.slice(9)
-        if (region !== 'International') {
-          REGIONAL_EXPANSION[region]?.forEach(c => colKeySet.add(c))
+        if (region === 'EU') {
+          EU_MEMBER_COUNTRIES.forEach(c => colKeySet.add(c))
+        } else if (region === 'International') {
+          colKeySet.add(INTL_REF_KEY)
+        } else {
+          // CoE, APAC, Africa: cascade only if binding; soft-law goes to intl-ref
+          if (l.instrument_binding) {
+            REGIONAL_EXPANSION[region]?.forEach(c => colKeySet.add(c))
+          } else {
+            colKeySet.add(INTL_REF_KEY)
+          }
         }
-        // International: no new columns — score is applied to all existing columns below
       } else if (l.country === 'Gulf Cooperation Council') {
-        GCC_MEMBERS.forEach(c => colKeySet.add(c))
+        if (l.instrument_binding) {
+          GCC_MEMBERS.forEach(c => colKeySet.add(c))
+        } else {
+          colKeySet.add(INTL_REF_KEY)
+        }
       } else {
         colKeySet.add(k)
       }
@@ -376,22 +401,42 @@ export function SimilarityHeatmap() {
 
         const k = lawColKey(law)
 
-        if (k.startsWith('regional:')) {
+        if (k === INTL_REF_KEY) {
+          const cIdx = ci.get(INTL_REF_KEY)
+          if (cIdx !== undefined) applyScore(cIdx, rIdx, sc)
+        } else if (k.startsWith('regional:')) {
           const region = k.slice(9)
-          if (region === 'International') {
-            for (let cIdx = 0; cIdx < n; cIdx++) applyScore(cIdx, rIdx, sc)
+          if (region === 'EU') {
+            for (const member of EU_MEMBER_COUNTRIES) {
+              const cIdx = ci.get(member)
+              if (cIdx !== undefined) applyScore(cIdx, rIdx, sc)
+            }
+          } else if (region === 'International') {
+            const cIdx = ci.get(INTL_REF_KEY)
+            if (cIdx !== undefined) applyScore(cIdx, rIdx, sc)
           } else {
-            const members = REGIONAL_EXPANSION[region]
-            if (members) {
-              for (const member of members) {
-                const cIdx = ci.get(member)
-                if (cIdx !== undefined) applyScore(cIdx, rIdx, sc)
+            // CoE, APAC, Africa: cascade only if binding; soft-law → intl-ref
+            if (law.instrument_binding) {
+              const members = REGIONAL_EXPANSION[region]
+              if (members) {
+                for (const member of members) {
+                  const cIdx = ci.get(member)
+                  if (cIdx !== undefined) applyScore(cIdx, rIdx, sc)
+                }
               }
+            } else {
+              const cIdx = ci.get(INTL_REF_KEY)
+              if (cIdx !== undefined) applyScore(cIdx, rIdx, sc)
             }
           }
         } else if (law.country === 'Gulf Cooperation Council') {
-          for (const member of GCC_MEMBERS) {
-            const cIdx = ci.get(member)
+          if (law.instrument_binding) {
+            for (const member of GCC_MEMBERS) {
+              const cIdx = ci.get(member)
+              if (cIdx !== undefined) applyScore(cIdx, rIdx, sc)
+            }
+          } else {
+            const cIdx = ci.get(INTL_REF_KEY)
             if (cIdx !== undefined) applyScore(cIdx, rIdx, sc)
           }
         } else {
@@ -441,21 +486,32 @@ export function SimilarityHeatmap() {
     }
 
     // ── insights ──
+    // intlRefFIdx: index of the reference column in fCols (-1 if not present).
+    // It stays in the display matrix but is excluded from country-to-country metrics.
+    const intlRefFIdx = fCols.indexOf(INTL_REF_KEY)
     const avgSim = Array.from({ length: nF }, (_, i) => {
       let s = 0; for (let j = 0; j < nF; j++) if (i !== j) s += sim[i][j]
       return s / Math.max(nF - 1, 1)
     })
-    const globalAvg   = avgSim.reduce((s, x) => s + x, 0) / nF
-    const isolatedIdx = avgSim.indexOf(Math.min(...avgSim))
+    let globalAvgSum = 0, globalAvgCnt = 0, isolatedMin = Infinity, isolatedIdx = 0
+    for (let i = 0; i < nF; i++) {
+      if (i === intlRefFIdx) continue
+      globalAvgSum += avgSim[i]; globalAvgCnt++
+      if (avgSim[i] < isolatedMin) { isolatedMin = avgSim[i]; isolatedIdx = i }
+    }
+    const globalAvg = globalAvgCnt ? globalAvgSum / globalAvgCnt : 0
 
-    // Exclude intra-EU pairs from "most aligned" — their similarity is structural
-    // (shared EU law), not an independent policy convergence signal.
+    // Exclude intra-EU pairs and the intl-ref column from "most aligned" — both
+    // reflect structural inheritance rather than independent policy convergence.
     let topSim = 0, topI = 0, topJ = 1
-    for (let i = 0; i < nF; i++)
+    for (let i = 0; i < nF; i++) {
+      if (i === intlRefFIdx) continue
       for (let j = i + 1; j < nF; j++) {
+        if (j === intlRefFIdx) continue
         if (EU_MEMBER_COUNTRIES.has(fCols[i]) && EU_MEMBER_COUNTRIES.has(fCols[j])) continue
         if (sim[i][j] > topSim) { topSim = sim[i][j]; topI = i; topJ = j }
       }
+    }
 
     const colRegionOf = fCols.map(c => colRegion(c))
     let withinSum = 0, withinCnt = 0, crossSum = 0, crossCnt = 0
