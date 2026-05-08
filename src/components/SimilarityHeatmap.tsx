@@ -395,12 +395,19 @@ export function SimilarityHeatmap() {
       })
     })
 
+    // Drop columns with no coverage under the current filter to declutter the map
+    const activeMask = scores.map(sv => sv.some(s => s !== 0))
+    const fCols      = cols.filter((_, i) => activeMask[i])
+    const fScores    = scores.filter((_, i) => activeMask[i])
+    const nF         = fCols.length
+    const ciF        = new Map(fCols.map((c, i) => [c, i]))
+
     // Columns with at-risk preemption status (US state laws that may be federally preempted)
     const atRiskCols = new Set<string>()
     candidateLaws.forEach(l => {
       if ((l as any).preemption_status === 'at_risk') {
         const k = lawColKey(l)
-        if (ci.has(k)) atRiskCols.add(k)
+        if (ciF.has(k)) atRiskCols.add(k)
       }
     })
 
@@ -409,15 +416,15 @@ export function SimilarityHeatmap() {
     // active disagreement from mere absence.
     const CONFLICT_WEIGHT = 3
     const pos = (x: number) => Math.max(0, x)
-    const norms = scores.map(v => Math.sqrt(v.reduce((s, x) => s + pos(x) ** 2, 0)))
-    const sim: number[][] = Array.from({ length: n }, () => new Array(n).fill(0))
-    for (let i = 0; i < n; i++) {
+    const norms = fScores.map(v => Math.sqrt(v.reduce((s, x) => s + pos(x) ** 2, 0)))
+    const sim: number[][] = Array.from({ length: nF }, () => new Array(nF).fill(0))
+    for (let i = 0; i < nF; i++) {
       sim[i][i] = 1
-      for (let j = i + 1; j < n; j++) {
+      for (let j = i + 1; j < nF; j++) {
         if (!norms[i] || !norms[j]) continue
         let dot = 0
         for (let k = 0; k < m; k++) {
-          const si = scores[i][k], sj = scores[j][k]
+          const si = fScores[i][k], sj = fScores[j][k]
           if      (si > 0 && sj > 0) dot += si * sj                       // agreement
           else if (si > 0 && sj < 0) dot += CONFLICT_WEIGHT * si * sj     // conflict (negative)
           else if (si < 0 && sj > 0) dot += CONFLICT_WEIGHT * si * sj     // conflict (negative)
@@ -428,25 +435,25 @@ export function SimilarityHeatmap() {
     }
 
     // ── insights ──
-    const avgSim = Array.from({ length: n }, (_, i) => {
-      let s = 0; for (let j = 0; j < n; j++) if (i !== j) s += sim[i][j]
-      return s / Math.max(n - 1, 1)
+    const avgSim = Array.from({ length: nF }, (_, i) => {
+      let s = 0; for (let j = 0; j < nF; j++) if (i !== j) s += sim[i][j]
+      return s / Math.max(nF - 1, 1)
     })
-    const globalAvg   = avgSim.reduce((s, x) => s + x, 0) / n
+    const globalAvg   = avgSim.reduce((s, x) => s + x, 0) / nF
     const isolatedIdx = avgSim.indexOf(Math.min(...avgSim))
 
     // Exclude intra-EU pairs from "most aligned" — their similarity is structural
     // (shared EU law), not an independent policy convergence signal.
     let topSim = 0, topI = 0, topJ = 1
-    for (let i = 0; i < n; i++)
-      for (let j = i + 1; j < n; j++) {
-        if (EU_MEMBER_COUNTRIES.has(cols[i]) && EU_MEMBER_COUNTRIES.has(cols[j])) continue
+    for (let i = 0; i < nF; i++)
+      for (let j = i + 1; j < nF; j++) {
+        if (EU_MEMBER_COUNTRIES.has(fCols[i]) && EU_MEMBER_COUNTRIES.has(fCols[j])) continue
         if (sim[i][j] > topSim) { topSim = sim[i][j]; topI = i; topJ = j }
       }
 
-    const colRegionOf = cols.map(c => colRegion(c))
+    const colRegionOf = fCols.map(c => colRegion(c))
     let withinSum = 0, withinCnt = 0, crossSum = 0, crossCnt = 0
-    for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) {
+    for (let i = 0; i < nF; i++) for (let j = 0; j < nF; j++) {
       if (i === j) continue
       if (colRegionOf[i] === colRegionOf[j]) { withinSum += sim[i][j]; withinCnt++ }
       else                                   { crossSum  += sim[i][j]; crossCnt++ }
@@ -454,7 +461,7 @@ export function SimilarityHeatmap() {
     const withinAvg = withinCnt ? withinSum / withinCnt : 0
     const crossAvg  = crossCnt  ? crossSum  / crossCnt  : 0
 
-    const usIdxs = cols.map((c, i) => (c.startsWith('US-') && c !== 'US-FED') ? i : -1).filter(x => x >= 0)
+    const usIdxs = fCols.map((c, i) => (c.startsWith('US-') && c !== 'US-FED') ? i : -1).filter(x => x >= 0)
     let usSum = 0, usCnt = 0
     for (const i of usIdxs) for (const j of usIdxs)
       if (i !== j) { usSum += sim[i][j]; usCnt++ }
@@ -463,7 +470,7 @@ export function SimilarityHeatmap() {
     // Per-region consistency: average pairwise similarity within each region
     const regionScores: { region: string; avg: number; count: number }[] = []
     for (const region of REGION_ORDER) {
-      const idxs = cols.map((_c, i) => colRegionOf[i] === region ? i : -1).filter(i => i >= 0)
+      const idxs = fCols.map((_c, i) => colRegionOf[i] === region ? i : -1).filter(i => i >= 0)
       if (idxs.length < 2) continue
       let s = 0, cnt = 0
       for (const i of idxs) for (const j of idxs) {
@@ -474,7 +481,7 @@ export function SimilarityHeatmap() {
     regionScores.sort((a, b) => b.avg - a.avg)
 
     return {
-      cols, simMatrix: sim, scores, atRiskCols, substantiveRules,
+      cols: fCols, simMatrix: sim, scores: fScores, atRiskCols, substantiveRules,
       insights: { globalAvg, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, avgSim, regionScores },
     }
   }, [heatmapFilters])
