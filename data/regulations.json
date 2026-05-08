@@ -184009,7 +184009,7 @@
     "id": "asean-asean-aigov-genai-2025",
     "jurisdiction": "ASEAN",
     "jurisdiction_type": "supranational",
-    "region": "Asia-Pacific",
+    "region": "APAC",
     "short_name": "ASEAN Expanded Guide on AI Governance — Generative AI",
     "full_name": "Expanded ASEAN Guide on AI Governance and Ethics: Generative AI (2025)",
     "instrument_type": "guidelines",
@@ -184156,7 +184156,7 @@
     "text_path": "data/texts/asean-asean-aigov-genai-2025.md",
     "ai_specific": true,
     "instrument_binding": false,
-    "country": "ASEAN (Regional)",
+    "country": "Global / Regional",
     "operative_dates": "Published 2025; voluntary; member states implement at their own discretion.",
     "applies_in": [
       "Brunei",
@@ -184634,7 +184634,7 @@
   {
     "id": "ae-ae-fdl25-2018",
     "title": "Federal Decree Law No. (25) of 2018 on the Projects of Future Nature",
-    "country": "UAE",
+    "country": "United Arab Emirates",
     "jurisdiction": "UAE",
     "jurisdiction_type": "national",
     "region": "Middle East",
@@ -184706,7 +184706,7 @@
   {
     "id": "ae-abudhabi-aiatclaw-2024",
     "title": "Abu Dhabi Law No. 3/2024 on Establishing the Artificial Intelligence and Advanced Technology Council",
-    "country": "UAE",
+    "country": "United Arab Emirates",
     "jurisdiction": "Abu Dhabi",
     "jurisdiction_type": "subnational",
     "region": "Middle East",
@@ -184789,7 +184789,7 @@
   {
     "id": "ae-ae-naistrategy-2031",
     "title": "UAE National Strategy for Artificial Intelligence 2031",
-    "country": "UAE",
+    "country": "United Arab Emirates",
     "jurisdiction": "UAE",
     "jurisdiction_type": "national",
     "region": "Middle East",
@@ -184955,7 +184955,7 @@
   {
     "id": "ae-ae-aiguide-2019",
     "title": "UAE Artificial Intelligence Guide",
-    "country": "UAE",
+    "country": "United Arab Emirates",
     "jurisdiction": "UAE",
     "jurisdiction_type": "national",
     "region": "Middle East",
@@ -189568,7 +189568,7 @@
     "text_path": "data/texts/asean-asean-airoadmap-2025.md",
     "ai_specific": true,
     "instrument_binding": false,
-    "country": "ASEAN",
+    "country": "Global / Regional",
     "operative_dates": null
   },
   {
@@ -196176,7 +196176,7 @@
     "text_path": "data/texts/us-pr-hb824-2026.md",
     "ai_specific": true,
     "instrument_binding": false,
-    "country": "US",
+    "country": "United States",
     "last_verified": "2026-05-06"
   },
   {
@@ -196268,7 +196268,7 @@
     "text_path": "data/texts/us-pr-hb968-2025.md",
     "ai_specific": true,
     "instrument_binding": true,
-    "country": "US",
+    "country": "United States",
     "last_verified": "2026-05-06"
   },
   {
@@ -196354,7 +196354,7 @@
     "text_path": "data/texts/us-pr-sr485-2026.md",
     "ai_specific": true,
     "instrument_binding": true,
-    "country": "US",
+    "country": "United States",
     "last_verified": "2026-05-06"
   },
   {
