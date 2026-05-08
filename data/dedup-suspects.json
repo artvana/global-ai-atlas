@@ -1,67 +1,31 @@
 [
   {
-    "rule_a": "us-ca-ab2655-2024-20513-d",
-    "rule_b": "us-ca-ab2655-2024-20513-a",
-    "cat_a": "disclosure",
-    "cat_b": "synthetic_media"
-  },
-  {
-    "rule_a": "us-ca-sb981-2024-22671-g-1",
-    "rule_b": "us-ca-sb981-2024-22671-c-1",
-    "cat_a": "disclosure",
-    "cat_b": "synthetic_media"
-  },
-  {
-    "rule_a": "us-la-hb178-2025-art-1551-a-5-b",
-    "rule_b": "us-la-hb178-2025-art-1551-a-5-a",
-    "cat_a": "disclosure",
-    "cat_b": "synthetic_media"
-  },
-  {
-    "rule_a": "us-il-bipa-2008-15-d",
-    "rule_b": "us-il-bipa-2008-15-b-3",
-    "cat_a": "disclosure",
-    "cat_b": "consent"
-  },
-  {
-    "rule_a": "us-ny-a3008-2025-part-x-general-business-law-al",
-    "rule_b": "us-ny-a3008-2025-banking-law-746-6",
-    "cat_a": "disclosure",
-    "cat_b": "consent"
-  },
-  {
-    "rule_a": "eu-eu-gdpr-2016-recital-39",
-    "rule_b": "eu-eu-gdpr-2016-article-7-1",
-    "cat_a": "disclosure",
-    "cat_b": "consent"
-  },
-  {
-    "rule_a": "us-fed-nistai1004-2024-section-3-1-2-4-privacy-consid",
-    "rule_b": "us-fed-nistai1004-2024-3-3-1-1",
-    "cat_a": "disclosure",
-    "cat_b": "consent"
-  },
-  {
-    "rule_a": "us-ca-sb1047-2024-gov-code-11547-6-f",
-    "rule_b": "us-ca-sb1047-2024-gov-code-11547-6-b-c",
-    "cat_a": "accountability_governance",
-    "cat_b": "institutional_framework"
-  },
-  {
-    "rule_a": "us-wv-hb3187-2025-5a-6-9-e-6",
+    "rule_a": "us-wv-hb3187-2025-5a-6-9-e-4",
     "rule_b": "us-wv-hb3187-2025-5a-6-9-b",
     "cat_a": "accountability_governance",
     "cat_b": "institutional_framework"
   },
   {
-    "rule_a": "us-ut-sb149-2024-13-70-302-6",
-    "rule_b": "us-ut-sb149-2024-13-70-302-2-4",
+    "rule_a": "us-ca-sb1047-2024-gov-code-11547-6-b-c",
+    "rule_b": "us-ca-sb1047-2024-22603-a-3",
     "cat_a": "accountability_governance",
     "cat_b": "institutional_framework"
   },
   {
-    "rule_a": "us-fl-s7026-2025-282-006-2",
-    "rule_b": "us-fl-s480-2026-282-006-2",
+    "rule_a": "us-fl-s480-2026-282-318-3-b",
+    "rule_b": "us-fl-s7026-2025-282-318-3-b",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-fl-s480-2026-282-006-2",
+    "rule_b": "us-fl-s7026-2025-282-006-2",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-fl-s480-2026-282-3185-4-a",
+    "rule_b": "us-fl-s7026-2025-282-3185-4-a",
     "cat_a": "accountability_governance",
     "cat_b": "institutional_framework"
   },
@@ -78,50 +42,8 @@
     "cat_b": "institutional_framework"
   },
   {
-    "rule_a": "us-fl-s7026-2025-282-318-3-b",
-    "rule_b": "us-fl-s480-2026-282-318-3-b",
-    "cat_a": "accountability_governance",
-    "cat_b": "institutional_framework"
-  },
-  {
-    "rule_a": "us-fl-s7026-2025-282-3185-4-a",
-    "rule_b": "us-fl-s480-2026-282-3185-4-a",
-    "cat_a": "accountability_governance",
-    "cat_b": "institutional_framework"
-  },
-  {
-    "rule_a": "us-md-hb956-2025-3-5-807-h",
-    "rule_b": "us-md-hb956-2025-3-5-807-d",
-    "cat_a": "accountability_governance",
-    "cat_b": "institutional_framework"
-  },
-  {
-    "rule_a": "us-de-h233-2025-316-a-1",
-    "rule_b": "us-de-h233-2026-316-a-1",
-    "cat_a": "accountability_governance",
-    "cat_b": "institutional_framework"
-  },
-  {
-    "rule_a": "us-de-h233-2025-316-a-2-3",
-    "rule_b": "us-de-h233-2026-316-a-2-3",
-    "cat_a": "accountability_governance",
-    "cat_b": "institutional_framework"
-  },
-  {
-    "rule_a": "us-de-h233-2025-316-a-4",
-    "rule_b": "us-de-h233-2026-316-a-4",
-    "cat_a": "accountability_governance",
-    "cat_b": "institutional_framework"
-  },
-  {
     "rule_a": "us-fl-s480-2026-97-0525-3-b",
     "rule_b": "us-fl-s7026-2025-97-0525-3-b",
-    "cat_a": "risk_classification",
-    "cat_b": "conformity_assessment"
-  },
-  {
-    "rule_a": "us-fl-s480-2026-282-0061-2-a",
-    "rule_b": "us-fl-s7026-2025-282-0061-2-a",
     "cat_a": "risk_classification",
     "cat_b": "conformity_assessment"
   },
@@ -132,26 +54,14 @@
     "cat_b": "conformity_assessment"
   },
   {
-    "rule_a": "us-il-h4980-2026-10-c-3",
-    "rule_b": "us-ca-s7-2025-1524-c-1",
-    "cat_a": "employment_ai",
-    "cat_b": "human_oversight"
-  },
-  {
-    "rule_a": "us-wa-h2503-2026-sec-2-1-c-d",
-    "rule_b": "us-md-h1399-2026-14-1228-b-5-i",
-    "cat_a": "training_data_quality",
-    "cat_b": "data_provenance"
+    "rule_a": "us-ny-s1274-2025-995-b-4-i",
+    "rule_b": "us-ny-a3969-2025-995-b-4-i",
+    "cat_a": "technical_documentation",
+    "cat_b": "conformity_assessment"
   },
   {
     "rule_a": "us-md-h823-2025-3-5-807-c",
     "rule_b": "us-md-h823-2025-3-5-807-c-9",
-    "cat_a": "training_data_quality",
-    "cat_b": "data_provenance"
-  },
-  {
-    "rule_a": "us-wa-h2503-2026-sec-2-1-c-d",
-    "rule_b": "us-ca-ab2013-2024-3111-a-10-11",
     "cat_a": "training_data_quality",
     "cat_b": "data_provenance"
   }
