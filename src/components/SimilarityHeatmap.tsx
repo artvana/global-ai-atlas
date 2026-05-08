@@ -241,24 +241,20 @@ function colSortKey(key: string): string {
 }
 
 // ── color mapping ─────────────────────────────────────────────────────────────
-// Diverging traffic-light: red (no overlap) → yellow (mid) → green (convergent).
-// Capped at mean + 2σ. Sqrt spread opens the dense 0–10% band.
-// Explicit conflict (v < 0, opposed relationship) → dark maroon, outside the scale.
+// Diverging scale centred at 0 (no overlap = white).
+// Positive similarity → green-500; negative (explicit conflict) → red-500.
+// Cap the green side at mean + 2σ with sqrt spread to open the dense low band.
 
 function simToColor(v: number, mean = 0.067, std = 0.074): string {
   if (v < 0) {
-    // Explicit regulatory conflict (opposed label) — dark maroon, distinct from scale
-    return 'rgb(127,29,29)'
+    // Explicit conflict (opposed label) — white → red-500, saturates at ~-0.15
+    const t = Math.pow(Math.min(1, -v / 0.15), 0.7)
+    return `rgb(255,${Math.round(255 - t * 187)},${Math.round(255 - t * 187)})`
   }
+  // No overlap (v = 0) → white. Similarity → white → green-500 (#22C55E).
   const cap = Math.max(mean + 2 * std, 0.01)
   const t = Math.pow(Math.min(1, v / cap), 0.5)
-  // red-400 (#F87171) → yellow-400 (#FACC15) → green-500 (#22C55E)
-  if (t < 0.5) {
-    const s = t / 0.5
-    return `rgb(${Math.round(248 + s * (250 - 248))},${Math.round(113 + s * (204 - 113))},${Math.round(113 + s * (21 - 113))})`
-  }
-  const s = (t - 0.5) / 0.5
-  return `rgb(${Math.round(250 + s * (34 - 250))},${Math.round(204 + s * (197 - 204))},${Math.round(21 + s * (94 - 21))})`
+  return `rgb(${Math.round(255 - t * 221)},${Math.round(255 - t * 58)},${Math.round(255 - t * 161)})`
 }
 
 // ── greedy nearest-neighbour seriation ────────────────────────────────────────
@@ -713,15 +709,12 @@ export function SimilarityHeatmap() {
         <div className="flex items-center gap-6 flex-wrap">
           {/* colour scale */}
           <div className="flex items-center gap-2">
-            <div className="flex items-center gap-1">
-              <div className="h-2.5 w-3 rounded-sm" style={{ background: 'rgb(127,29,29)' }} />
-              <span className="text-[9px] text-odl-subtle">Explicit conflict</span>
-            </div>
             <div className="flex items-center gap-1.5">
-              <span className="text-[9px] text-odl-subtle">Divergent</span>
-              <div className="h-2.5 w-28 rounded-sm" style={{ background: 'linear-gradient(to right, rgb(248,113,113), rgb(250,204,21), rgb(34,197,94))' }} />
-              <span className="text-[9px] text-odl-subtle">Convergent</span>
+              <span className="text-[9px] text-odl-subtle">Conflict</span>
+              <div className="h-2.5 w-28 rounded-sm" style={{ background: 'linear-gradient(to right, rgb(239,68,68), #ffffff, rgb(34,197,94))' }} />
+              <span className="text-[9px] text-odl-subtle">Aligned</span>
             </div>
+            <span className="text-[9px] text-odl-subtle">· white = no overlap</span>
           </div>
           {/* diagonal */}
           <div className="flex items-center gap-1.5">
@@ -960,59 +953,54 @@ export function SimilarityHeatmap() {
                     )
                   }
 
-                  const totalDivergent = comparison.conflict.length + comparison.onlyI.length + comparison.onlyJ.length
                   return (
                     <>
-                      {/* Divergences (shown first — this is the signal) */}
-                      {totalDivergent > 0 && (
+                      {/* Disagreements — explicit conflict (one adopted, other opposed) */}
+                      {comparison.conflict.length > 0 && (
                         <div className="mb-3">
-                          <div className="text-[9px] font-semibold text-red-700 uppercase tracking-wide mb-2">
-                            Divergences · {totalDivergent} rules
+                          <div className="text-[9px] font-semibold text-red-700 uppercase tracking-wide mb-1.5">
+                            Disagreements · {comparison.conflict.length} rule{comparison.conflict.length !== 1 ? 's' : ''}
                           </div>
+                          <div className="space-y-2">
+                            {comparison.conflict.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#FCA5A5" />)}
+                          </div>
+                        </div>
+                      )}
 
-                          {/* Explicit conflict (one adopted, other opposed) */}
-                          {comparison.conflict.length > 0 && (
-                            <div className="mb-2">
-                              <div className="text-[9px] text-red-500 font-medium mb-1">
-                                Direct conflict — {comparison.conflict.length} rule{comparison.conflict.length !== 1 ? 's' : ''}
-                              </div>
-                              <div className="space-y-2">
-                                {comparison.conflict.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#FCA5A5" />)}
-                              </div>
-                            </div>
-                          )}
-
-                          {/* Coverage gap: A has it, B doesn't */}
+                      {/* Gaps — one jurisdiction has legislated, the other hasn't */}
+                      {(comparison.onlyI.length > 0 || comparison.onlyJ.length > 0) && (
+                        <div className="mb-3">
+                          <div className="text-[9px] font-semibold text-slate-500 uppercase tracking-wide mb-2">
+                            Gaps · {comparison.onlyI.length + comparison.onlyJ.length} rules
+                          </div>
                           {comparison.onlyI.length > 0 && (
                             <div className="mb-2">
-                              <div className="text-[9px] text-slate-500 font-medium mb-1">
-                                In {labelA} · not covered by {labelB} — {comparison.onlyI.length} rule{comparison.onlyI.length !== 1 ? 's' : ''}
+                              <div className="text-[9px] text-slate-400 font-medium mb-1">
+                                In {labelA} · not in {labelB} — {comparison.onlyI.length}
                               </div>
                               <div className="space-y-2">
-                                {comparison.onlyI.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#93C5FD" />)}
+                                {comparison.onlyI.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#CBD5E1" />)}
                               </div>
                             </div>
                           )}
-
-                          {/* Coverage gap: B has it, A doesn't */}
                           {comparison.onlyJ.length > 0 && (
                             <div className="mb-2">
-                              <div className="text-[9px] text-slate-500 font-medium mb-1">
-                                In {labelB} · not covered by {labelA} — {comparison.onlyJ.length} rule{comparison.onlyJ.length !== 1 ? 's' : ''}
+                              <div className="text-[9px] text-slate-400 font-medium mb-1">
+                                In {labelB} · not in {labelA} — {comparison.onlyJ.length}
                               </div>
                               <div className="space-y-2">
-                                {comparison.onlyJ.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#FCD34D" />)}
+                                {comparison.onlyJ.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#CBD5E1" />)}
                               </div>
                             </div>
                           )}
                         </div>
                       )}
 
-                      {/* Agreement */}
+                      {/* Alignments — both jurisdictions have legislated */}
                       {comparison.agreed.length > 0 && (
                         <div className="mb-3">
                           <div className="text-[9px] font-semibold text-emerald-700 uppercase tracking-wide mb-1.5">
-                            Agreement · {comparison.agreed.length} rules
+                            Alignments · {comparison.agreed.length} rules
                           </div>
                           <div className="space-y-2">
                             {comparison.agreed.map(e => <RuleCard key={activeRules[e.ruleIdx].rule_id} {...e} borderColor="#6EE7B7" />)}
