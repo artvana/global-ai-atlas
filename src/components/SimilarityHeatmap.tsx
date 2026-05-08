@@ -241,20 +241,25 @@ function colSortKey(key: string): string {
 }
 
 // ── color mapping ─────────────────────────────────────────────────────────────
+// Diverging scale centred on the dynamic global mean, capped at ±2σ.
+// Below mean → blue; above mean → amber; conflicts → crimson (separate).
+// Gamma 0.6 spreads differences in the dense 0–10% band.
 
-function simToColor(v: number): string {
+function simToColor(v: number, mean = 0.067, std = 0.074): string {
   if (v < 0) {
-    // Red for active conflict — saturates around -0.2
-    const t = Math.pow(Math.min(1, -v * 5), 0.7)
-    return `rgb(255,${Math.round(255 - t * 195)},${Math.round(255 - t * 195)})`
+    // Active regulatory conflict — crimson, saturates around -0.15
+    const t = Math.pow(Math.min(1, -v / 0.15), 0.7)
+    return `rgb(${Math.round(239 + t * 16)},${Math.round(68 - t * 68)},${Math.round(68 - t * 68)})`
   }
-  const t = Math.pow(Math.max(0, Math.min(1, v)), 0.65)
-  if (t < 0.5) {
-    const s = t / 0.5
-    return `rgb(${Math.round(248 + s * (56 - 248))},${Math.round(250 + s * (189 - 250))},${Math.round(252 + s * (248 - 252))})`
+  const spread = Math.max(2 * std, 0.001)
+  const t = Math.max(-1, Math.min(1, (v - mean) / spread))
+  const s = Math.pow(Math.abs(t), 0.6)
+  if (t <= 0) {
+    // Below mean → white (#F9FAFB) to blue-700 (#1D4ED8)
+    return `rgb(${Math.round(249 - s * 220)},${Math.round(250 - s * 172)},${Math.round(251 - s * 35)})`
   }
-  const s = (t - 0.5) / 0.5
-  return `rgb(${Math.round(56 + s * (7 - 56))},${Math.round(189 + s * (89 - 189))},${Math.round(248 + s * (133 - 248))})`
+  // Above mean → white (#F9FAFB) to amber-600 (#D97706)
+  return `rgb(${Math.round(249 - s * 32)},${Math.round(250 - s * 131)},${Math.round(251 - s * 245)})`
 }
 
 // ── greedy nearest-neighbour seriation ────────────────────────────────────────
@@ -501,6 +506,19 @@ export function SimilarityHeatmap() {
     }
     const globalAvg = globalAvgCnt ? globalAvgSum / globalAvgCnt : 0
 
+    // Std dev of raw off-diagonal country-to-country pairs (calibrates colour scale)
+    let pairSumSq = 0, pairSum = 0, pairCnt = 0
+    for (let i = 0; i < nF; i++) {
+      if (i === intlRefFIdx) continue
+      for (let j = i + 1; j < nF; j++) {
+        if (j === intlRefFIdx) continue
+        pairSum += sim[i][j]; pairSumSq += sim[i][j] ** 2; pairCnt++
+      }
+    }
+    const globalStd = pairCnt > 1
+      ? Math.sqrt(Math.max(0, pairSumSq / pairCnt - (pairSum / pairCnt) ** 2))
+      : 0.074
+
     // Exclude intra-EU pairs and the intl-ref column from "most aligned" — both
     // reflect structural inheritance rather than independent policy convergence.
     let topSim = 0, topI = 0, topJ = 1
@@ -544,12 +562,13 @@ export function SimilarityHeatmap() {
 
     return {
       cols: fCols, simMatrix: sim, scores: fScores, atRiskCols, substantiveRules,
-      insights: { globalAvg, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, avgSim, regionScores },
+      insights: { globalAvg, globalStd, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, avgSim, regionScores },
     }
   }, [heatmapFilters])
 
   const n = cols.length
-  const { globalAvg, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, regionScores } = insights
+  const { globalAvg, globalStd, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, regionScores } = insights
+  const colorOf = (v: number) => simToColor(v, globalAvg, globalStd)
   const activeRules = substantiveRules
 
   // ── ordered display ──
@@ -645,10 +664,10 @@ export function SimilarityHeatmap() {
           </div>
 
           <div className="px-4">
-            <div className="text-xs font-semibold leading-tight" style={{ color: simToColor(topSim) }}>
+            <div className="text-xs font-semibold leading-tight" style={{ color: colorOf(topSim) }}>
               {colLabel(cols[topI])} · {colLabel(cols[topJ])}
             </div>
-            <div className="text-[10px] font-bold mt-0.5" style={{ color: simToColor(topSim) }}>
+            <div className="text-[10px] font-bold mt-0.5" style={{ color: colorOf(topSim) }}>
               {(topSim * 100).toFixed(0)}% similar
             </div>
             <div className="text-[10px] text-odl-subtle mt-0.5">most aligned pair globally</div>
@@ -661,9 +680,9 @@ export function SimilarityHeatmap() {
                 <div key={region} className="flex items-center gap-1.5">
                   <span className="text-[9px] text-odl-muted truncate w-28 flex-shrink-0" title={region}>{region}</span>
                   <div className="h-1.5 flex-1 bg-odl-surface rounded-full overflow-hidden">
-                    <div className="h-full rounded-full" style={{ width: `${avg * 100}%`, background: simToColor(avg) }} />
+                    <div className="h-full rounded-full" style={{ width: `${avg * 100}%`, background: colorOf(avg) }} />
                   </div>
-                  <span className="text-[9px] font-medium flex-shrink-0" style={{ color: simToColor(avg) }}>{(avg * 100).toFixed(0)}%</span>
+                  <span className="text-[9px] font-medium flex-shrink-0" style={{ color: colorOf(avg) }}>{(avg * 100).toFixed(0)}%</span>
                   <span className="text-[8px] text-odl-subtle flex-shrink-0">({count})</span>
                 </div>
               ))}
@@ -695,9 +714,14 @@ export function SimilarityHeatmap() {
         <div className="flex items-center gap-6 flex-wrap">
           {/* colour scale */}
           <div className="flex items-center gap-2">
-            <span className="text-[9px] font-semibold text-red-500">Conflict</span>
-            <div className="h-2.5 w-32 rounded-sm" style={{ background: 'linear-gradient(to right, rgb(255,60,60), #F8FAFC, #38BDF8, #075985)' }} />
-            <span className="text-[9px] font-semibold text-sky-700">Convergent</span>
+            <div className="flex items-center gap-1">
+              <div className="h-2.5 w-3 rounded-sm" style={{ background: 'rgb(220,38,38)' }} />
+              <span className="text-[9px] text-odl-subtle">Conflict</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <div className="h-2.5 w-24 rounded-sm" style={{ background: 'linear-gradient(to right, rgb(29,78,216), rgb(249,250,251), rgb(217,119,6))' }} />
+            </div>
+            <span className="text-[9px] text-odl-subtle">Below avg · <span className="font-semibold">Mean</span> · Above avg</span>
           </div>
           {/* diagonal */}
           <div className="flex items-center gap-1.5">
@@ -807,7 +831,7 @@ export function SimilarityHeatmap() {
                     return (
                       <div key={cols[colOrig]} style={{
                         width: CELL, height: CELL,
-                        background: isDiag ? DIAG_COL : simToColor(sv),
+                        background: isDiag ? DIAG_COL : colorOf(sv),
                         borderTop:  bTop,
                         borderLeft: regionBounds.has(colPos) ? '2px solid #CBD5E1' : undefined,
                         outline: isComp ? '2px solid #7C3AED' : isHov ? '2px solid #0369A1' : undefined,
