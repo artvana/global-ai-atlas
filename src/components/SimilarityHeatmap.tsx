@@ -591,7 +591,7 @@ export function SimilarityHeatmap() {
 
     for (let k = 0; k < activeRules.length; k++) {
       const si = scores[i][k], sj = scores[j][k]
-      const iCovered = si >= 3, jCovered = sj >= 3
+      const iCovered = si > 0, jCovered = sj > 0
       const iOpposes = si < 0, jOpposes = sj < 0
 
       if (iCovered && jCovered)                         agreed.push({ ruleIdx: k, si, sj })
