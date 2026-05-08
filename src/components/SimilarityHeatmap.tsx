@@ -182,8 +182,37 @@ const EU_MEMBER_COUNTRIES = new Set([
   'Spain', 'Sweden',
 ])
 
+const GCC_MEMBERS = new Set([
+  'United Arab Emirates', 'Saudi Arabia', 'Qatar', 'Bahrain', 'Kuwait', 'Oman',
+])
+
+// Maps region codes (from Global / Regional laws) to member country sets.
+// null = International: apply to all jurisdictions already in the matrix.
+const REGIONAL_EXPANSION: Record<string, Set<string> | null> = {
+  EU: EU_MEMBER_COUNTRIES,
+  CoE: new Set([
+    'Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic',
+    'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary',
+    'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta',
+    'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden',
+    'United Kingdom', 'Switzerland', 'Norway', 'Iceland',
+    'Turkey', 'Serbia', 'Ukraine', 'Moldova', 'Azerbaijan',
+  ]),
+  APAC: new Set([
+    'China', 'Japan', 'South Korea', 'Taiwan',
+    'Singapore', 'Indonesia', 'Malaysia', 'Philippines', 'Thailand', 'Vietnam', 'Brunei Darussalam',
+    'India', 'Bangladesh', 'Pakistan', 'Sri Lanka',
+    'Australia', 'New Zealand',
+  ]),
+  Africa: new Set([
+    'South Africa', 'Nigeria', 'Kenya', 'Rwanda', 'Ethiopia', 'Ghana', 'Uganda', 'Tanzania',
+    'Zimbabwe', 'Ivory Coast', 'Senegal', 'Benin', 'Cameroon', 'Namibia', 'Zambia', 'Mauritius',
+    'Egypt', 'Morocco', 'Tunisia', 'Algeria',
+  ]),
+  International: null,
+}
+
 function colRegion(key: string): string {
-  if (key === 'regional:EU') return 'Western Europe'
   if (key.startsWith('regional:')) return 'Supranational'
   if (key === 'US-FED' || key.startsWith('US-')) return 'USA'
   if (EU_MEMBER_COUNTRIES.has(key)) return 'Western Europe'
@@ -192,7 +221,6 @@ function colRegion(key: string): string {
 
 function colSortKey(key: string): string {
   const r = REGION_ORDER.indexOf(colRegion(key)).toString().padStart(2, '0')
-  if (key === 'regional:EU') return `${r}_AA_European Union`  // EU sorts first within Europe
   if (key === 'US-FED') return `${r}_US_0`
   if (key.startsWith('US-')) return `${r}_US_1_${colLabel(key)}`
   return `${r}_ZZ_${colLabel(key)}`
@@ -302,59 +330,70 @@ export function SimilarityHeatmap() {
     const substantiveRules = allRules.filter(r => r.category !== 'definitions_scope' && r.category !== 'institutional_framework')
     const m = substantiveRules.length
 
-    // EU expansion only applies when in-force laws are included — EU law is binding on all 27 members.
-    const applyEuExpansion = heatmapFilters.in_force
-
-    // Compute EU baseline scores for expansion (binding EU laws only)
-    const euScoreVec = new Array(m).fill(0) as number[]
-    if (applyEuExpansion) {
-      substantiveRules.forEach((rule, rIdx) => {
-        rule.instances.forEach(inst => {
-          const law = lawById.get(inst.law_id)
-          if (!law?.instrument_binding || lawColKey(law) !== 'regional:EU') return
-          const sc = REL_SCORE[inst.relationship] ?? 0
-          if (sc > 0 && sc > euScoreVec[rIdx]) euScoreVec[rIdx] = sc
-          else if (sc < 0 && euScoreVec[rIdx] === 0) euScoreVec[rIdx] = sc
-        })
-      })
-    }
-
+    // Build column set: supranational laws expand inline to member country columns.
+    // GCC records use country='Gulf Cooperation Council' rather than 'Global / Regional'.
     const colKeySet = new Set<string>()
     candidateLaws.forEach(l => {
       const k = lawColKey(l)
-      if (k !== 'regional:EU') colKeySet.add(k)
+      if (k.startsWith('regional:')) {
+        const region = k.slice(9)
+        if (region !== 'International') {
+          REGIONAL_EXPANSION[region]?.forEach(c => colKeySet.add(c))
+        }
+        // International: no new columns — score is applied to all existing columns below
+      } else if (l.country === 'Gulf Cooperation Council') {
+        GCC_MEMBERS.forEach(c => colKeySet.add(c))
+      } else {
+        colKeySet.add(k)
+      }
     })
-    if (applyEuExpansion) EU_MEMBER_COUNTRIES.forEach(c => colKeySet.add(c))
+
     const cols = [...colKeySet].sort((a, b) => colSortKey(a).localeCompare(colSortKey(b)))
     const n    = cols.length
     const ci   = new Map(cols.map((c, i) => [c, i]))
 
     // scores[col][rule]: positive = adopted (3–4), negative (−1) = explicitly opposes, 0 = absent
     const scores: number[][] = Array.from({ length: n }, () => new Array(m).fill(0))
+
+    const applyScore = (cIdx: number, rIdx: number, sc: number) => {
+      if (sc > 0 && sc > scores[cIdx][rIdx]) scores[cIdx][rIdx] = sc
+      else if (sc < 0 && scores[cIdx][rIdx] === 0) scores[cIdx][rIdx] = sc
+    }
+
     substantiveRules.forEach((rule, rIdx) => {
       rule.instances.forEach(inst => {
         if (!candidateIds.has(inst.law_id)) return
         const law = lawById.get(inst.law_id)
         if (!law) return
-        const cIdx = ci.get(lawColKey(law))
-        if (cIdx === undefined) return
         const sc = REL_SCORE[inst.relationship] ?? 0
-        if (sc > 0 && sc > scores[cIdx][rIdx]) scores[cIdx][rIdx] = sc
-        else if (sc < 0 && scores[cIdx][rIdx] === 0) scores[cIdx][rIdx] = sc
+        if (sc === 0) return
+
+        const k = lawColKey(law)
+
+        if (k.startsWith('regional:')) {
+          const region = k.slice(9)
+          if (region === 'International') {
+            for (let cIdx = 0; cIdx < n; cIdx++) applyScore(cIdx, rIdx, sc)
+          } else {
+            const members = REGIONAL_EXPANSION[region]
+            if (members) {
+              for (const member of members) {
+                const cIdx = ci.get(member)
+                if (cIdx !== undefined) applyScore(cIdx, rIdx, sc)
+              }
+            }
+          }
+        } else if (law.country === 'Gulf Cooperation Council') {
+          for (const member of GCC_MEMBERS) {
+            const cIdx = ci.get(member)
+            if (cIdx !== undefined) applyScore(cIdx, rIdx, sc)
+          }
+        } else {
+          const cIdx = ci.get(k)
+          if (cIdx !== undefined) applyScore(cIdx, rIdx, sc)
+        }
       })
     })
-
-    // EU expansion: apply EU baseline as floor for all 27 member state columns
-    if (applyEuExpansion) {
-      const euMemberIdxs = cols.map((c, i) => EU_MEMBER_COUNTRIES.has(c) ? i : -1).filter(i => i >= 0)
-      for (let rIdx = 0; rIdx < m; rIdx++) {
-        const euSc = euScoreVec[rIdx]
-        if (euSc <= 0) continue
-        for (const mIdx of euMemberIdxs) {
-          if (scores[mIdx][rIdx] < euSc) scores[mIdx][rIdx] = euSc
-        }
-      }
-    }
 
     // Columns with at-risk preemption status (US state laws that may be federally preempted)
     const atRiskCols = new Set<string>()
