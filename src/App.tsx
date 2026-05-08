@@ -73,7 +73,7 @@ function App() {
           </div>
           <div className="flex items-center gap-4 text-xs text-odl-subtle">
             <span>{regulations.length} instruments · {(enforcementData as unknown[]).length} enforcement actions</span>
-            <span>Updated Apr 2026</span>
+            <span>Updated May 2026</span>
           </div>
         </div>
       </header>
@@ -95,7 +95,7 @@ function App() {
 
       <footer className="border-t border-odl-border mt-16 py-6">
         <div className="max-w-screen-xl mx-auto px-6 flex items-center justify-between text-xs text-odl-subtle">
-          <span>GAIA — Global AI Atlas · v1.0 · April 2026</span>
+          <span>GAIA — Global AI Atlas · v1.0 · May 2026</span>
           <div className="flex items-center gap-4">
             <a href="./docs/methodology.md" className="odl-link">Methodology</a>
             <span>MIT License</span>
