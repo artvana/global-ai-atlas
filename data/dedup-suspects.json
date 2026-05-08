@@ -52,5 +52,131 @@
     "rule_b": "us-md-h823-2025-3-5-807-c-9",
     "cat_a": "training_data_quality",
     "cat_b": "data_provenance"
+  },
+  {
+    "rule_a": "us-ut-sb180-2025-53-25-602-2-a",
+    "rule_b": "us-ny-a9253-2026-837-ww-3-b-i",
+    "cat_a": "disclosure",
+    "cat_b": "synthetic_media"
+  },
+  {
+    "rule_a": "us-nj-a2509-2025-n-j-s-2c-24-4-b-7",
+    "rule_b": "us-nj-a2951-2026-n-j-s-2c-24-4-b-7",
+    "cat_a": "disclosure",
+    "cat_b": "synthetic_media"
+  },
+  {
+    "rule_a": "us-ok-h4348-2026-12-o-s-2016-b-2",
+    "rule_b": "us-la-hb178-2025-art-1551-a-5-a",
+    "cat_a": "disclosure",
+    "cat_b": "synthetic_media"
+  },
+  {
+    "rule_a": "us-ca-a1946-2026-3273-66-e",
+    "rule_b": "us-ca-sb981-2024-22671-b-2",
+    "cat_a": "disclosure",
+    "cat_b": "synthetic_media"
+  },
+  {
+    "rule_a": "us-ms-s2059-2025-section-4-2-i",
+    "rule_b": "us-ms-s2429-2026-section-4-2-i",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-fl-s480-2026-14-205-2-a",
+    "rule_b": "us-fl-s7026-2025-20-70-2",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-mn-s1117-2025-sec-1-b",
+    "rule_b": "us-mn-h1150-2025-section-1-b",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-ms-s2059-2025-section-4-2-f",
+    "rule_b": "us-ms-s2429-2026-section-4-2-f",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-ny-s7691-2025-115-4-c",
+    "rule_b": "us-ny-a6874-2025-115-4-c",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-wa-h1833-2026-sec-2-5",
+    "rule_b": "us-wa-h1833-2025-sec-2-5",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-ms-s2059-2025-section-4-2-h",
+    "rule_b": "us-ms-s2429-2026-section-4-2-h",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-fl-s480-2026-282-3185-4-a",
+    "rule_b": "us-fl-s7026-2025-282-3185-4-a",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-ca-s813-2025-8898-1-c-2-4",
+    "rule_b": "us-ca-s813-2026-8898-1-c-2-4",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-ny-s7691-2025-115-2-d",
+    "rule_b": "us-ny-a6874-2025-115-2-d",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-ca-s813-2025-8898-1-e",
+    "rule_b": "us-ca-s813-2026-8898-1-e",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-fed-nai-act-2020-sec-232-new-238-c-2",
+    "rule_b": "us-fed-nai-act-2020-sec-232-2-a-b",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-de-h233-2025-316-a-2-3",
+    "rule_b": "us-de-h233-2026-316-a-2-3",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-de-h233-2025-316-a-4",
+    "rule_b": "us-de-h233-2026-316-a-4",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-al-s328-2026-section-3-c",
+    "rule_b": "us-al-h524-2026-section-3-c",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-de-h233-2025-316-a-1",
+    "rule_b": "us-de-h233-2026-316-a-1",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
+  },
+  {
+    "rule_a": "us-fl-s480-2026-282-318-3-b",
+    "rule_b": "us-fl-s7026-2025-282-318-3-b",
+    "cat_a": "accountability_governance",
+    "cat_b": "institutional_framework"
   }
 ]
