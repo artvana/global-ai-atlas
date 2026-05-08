@@ -40,8 +40,8 @@ const TEXTS_DIR        = path.join(PROJECT_ROOT, 'data', 'texts')
 // Extraction uses Opus for precise MECE rule decomposition.
 // Matching uses Sonnet — it's a classification task that doesn't need Opus.
 
-const EXTRACTION_MODEL = 'claude-opus-4-7'
-const MATCHING_MODEL   = 'claude-sonnet-4-6'
+const EXTRACTION_MODEL = process.env.EXTRACTION_MODEL ?? 'claude-opus-4-7'
+const MATCHING_MODEL   = process.env.MATCHING_MODEL   ?? 'claude-sonnet-4-6'
 
 // Full text is sent up to this limit. Sonnet/Opus support 200k context;
 // reserve ~10k for the prompt template and output.
