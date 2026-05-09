@@ -4,6 +4,8 @@ import { RULE_CATEGORY_LABELS } from '../types'
 import { rules as allRules } from '../data/rules'
 import { regulations } from '../data/regulations'
 
+const LAW_BY_ID = new Map(regulations.map(l => [l.id, l]))
+
 // ── relationship → numeric score ──────────────────────────────────────────────
 
 const REL_SCORE: Record<string, number> = {
@@ -1013,6 +1015,26 @@ export function SimilarityHeatmap() {
                 {(() => {
                   const labelA = colLabel(cols[comparedPair.i])
                   const labelB = colLabel(cols[comparedPair.j])
+                  const colKeyA = cols[comparedPair.i]
+                  const colKeyB = cols[comparedPair.j]
+
+                  function getSourceLaws(rule: typeof activeRules[0], colKey: string) {
+                    const matches = rule.instances.filter(inst => {
+                      const law = LAW_BY_ID.get(inst.law_id)
+                      if (!law || !heatmapFilters[classifyLaw(law)]) return false
+                      if ((REL_SCORE[inst.relationship] ?? 0) <= 0) return false
+                      const k = lawColKey(law)
+                      if (colKey === 'US') return k === 'US-FED' || k.startsWith('US-')
+                      if (EU_MEMBER_COUNTRIES.has(colKey)) return k === colKey || k === 'regional:EU'
+                      return k === colKey
+                    })
+                    matches.sort((a, b) => (REL_SCORE[b.relationship] ?? 0) - (REL_SCORE[a.relationship] ?? 0))
+                    const seen = new Set<string>()
+                    return matches
+                      .filter(inst => { if (seen.has(inst.law_id)) return false; seen.add(inst.law_id); return true })
+                      .slice(0, 3)
+                      .map(inst => LAW_BY_ID.get(inst.law_id)!)
+                  }
 
                   function RuleCard({ ruleIdx, si, sj, borderColor }: { ruleIdx: number; si: number; sj: number; borderColor: string }) {
                     const rule = activeRules[ruleIdx]
@@ -1036,17 +1058,43 @@ export function SimilarityHeatmap() {
                           {!isExpanded && truncated && <span className="text-odl-subtle"> …<span className="underline decoration-dotted ml-0.5">more</span></span>}
                           {isExpanded && truncated && <span className="text-odl-subtle ml-0.5 underline decoration-dotted">less</span>}
                         </div>
-                        <div className="flex flex-col gap-0.5 text-[9px]">
-                          <span className="text-odl-subtle">
-                            {labelA}: <span className={`font-medium ${si >= 3 ? 'text-odl-text' : si < 0 ? 'text-red-600' : 'text-slate-400'}`}>
-                              <Tip label={stanceLabel(si)} text={STANCE_TIPS[stanceLabel(si)]} />
+                        <div className="flex flex-col gap-1 text-[9px]">
+                          <div>
+                            <span className="text-odl-subtle">
+                              {labelA}: <span className={`font-medium ${si >= 3 ? 'text-odl-text' : si < 0 ? 'text-red-600' : 'text-slate-400'}`}>
+                                <Tip label={stanceLabel(si)} text={STANCE_TIPS[stanceLabel(si)]} />
+                              </span>
                             </span>
-                          </span>
-                          <span className="text-odl-subtle">
-                            {labelB}: <span className={`font-medium ${sj >= 3 ? 'text-odl-text' : sj < 0 ? 'text-red-600' : 'text-slate-400'}`}>
-                              <Tip label={stanceLabel(sj)} text={STANCE_TIPS[stanceLabel(sj)]} />
+                            {si > 0 && (
+                              <div className="flex flex-wrap gap-0.5 mt-0.5">
+                                {getSourceLaws(rule, colKeyA).map(law => (
+                                  <a key={law.id} href={law.source_url ?? '#'} target="_blank" rel="noopener noreferrer"
+                                    onClick={e => e.stopPropagation()}
+                                    className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[8px] text-odl-muted hover:text-odl-accent transition-colors border border-odl-border bg-odl-surface hover:bg-white">
+                                    {law.short_name} ↗
+                                  </a>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                          <div>
+                            <span className="text-odl-subtle">
+                              {labelB}: <span className={`font-medium ${sj >= 3 ? 'text-odl-text' : sj < 0 ? 'text-red-600' : 'text-slate-400'}`}>
+                                <Tip label={stanceLabel(sj)} text={STANCE_TIPS[stanceLabel(sj)]} />
+                              </span>
                             </span>
-                          </span>
+                            {sj > 0 && (
+                              <div className="flex flex-wrap gap-0.5 mt-0.5">
+                                {getSourceLaws(rule, colKeyB).map(law => (
+                                  <a key={law.id} href={law.source_url ?? '#'} target="_blank" rel="noopener noreferrer"
+                                    onClick={e => e.stopPropagation()}
+                                    className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[8px] text-odl-muted hover:text-odl-accent transition-colors border border-odl-border bg-odl-surface hover:bg-white">
+                                    {law.short_name} ↗
+                                  </a>
+                                ))}
+                              </div>
+                            )}
+                          </div>
                         </div>
                       </div>
                     )
