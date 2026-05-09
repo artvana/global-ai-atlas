@@ -20402,10 +20402,10 @@
       "education"
     ],
     "first_instance": {
-      "law_id": "us-ca-s607-2026",
-      "law_name": "us-ca-s607-2026",
-      "citation": "Education Code \u00a7 92900(d)(7)",
-      "date": ""
+      "law_id": "us-fed-nai-act-2020",
+      "law_name": "National Artificial Intelligence Initiative Act of 2020",
+      "citation": "Sec. 5201(a)",
+      "date": "2021-01-01"
     },
     "instances": [
       {
@@ -20426,7 +20426,7 @@
       },
       {
         "law_id": "us-fed-nai-act-2020",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Sec. 5201(a)",
         "notes": "Near-verbatim match with existing rule on NSF Director establishing National AI Research Institutes.",
         "instrument_binding": true,
@@ -20447,10 +20447,10 @@
       "voluntary_standards"
     ],
     "first_instance": {
-      "law_id": "g7-g7-hiroshimaprocess-2023",
-      "law_name": "g7-g7-hiroshimaprocess-2023",
-      "citation": "Principle 8",
-      "date": ""
+      "law_id": "us-fed-nai-act-2020",
+      "law_name": "National Artificial Intelligence Initiative Act of 2020",
+      "citation": "Sec. 233(a)-(b)(2)",
+      "date": "2021-01-01"
     },
     "instances": [
       {
@@ -20487,7 +20487,7 @@
       },
       {
         "law_id": "us-fed-nai-act-2020",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Sec. 233(a)-(b)(2)",
         "notes": "Both involve independent advisory bodies providing strategic and ethical guidance on AI, but this rule is specific to the JAIC board of advisors while the matched rule concerns NIST trustworthy AI standards.",
         "instrument_binding": true,
@@ -20506,10 +20506,10 @@
       "ai_outreach"
     ],
     "first_instance": {
-      "law_id": "tj-tj-naistrategy-2040",
-      "law_name": "tj-tj-naistrategy-2040",
-      "citation": "\u00a7 129",
-      "date": ""
+      "law_id": "us-fed-nai-act-2020",
+      "law_name": "National Artificial Intelligence Initiative Act of 2020",
+      "citation": "Sec. 234",
+      "date": "2021-01-01"
     },
     "instances": [
       {
@@ -20530,7 +20530,7 @@
       },
       {
         "law_id": "us-fed-nai-act-2020",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Sec. 234",
         "notes": "Both involve Secretary of Defense identifying AI use cases for enterprise management, but this rule is more specific about the number (five) and scope of use cases.",
         "instrument_binding": true,
@@ -20550,10 +20550,10 @@
       "education"
     ],
     "first_instance": {
-      "law_id": "ng-ng-nais-2024",
-      "law_name": "ng-ng-nais-2024",
-      "citation": "Pillar 3, Objective 3.3, Strategy 3.3.2",
-      "date": ""
+      "law_id": "us-fed-nai-act-2020",
+      "law_name": "National Artificial Intelligence Initiative Act of 2020",
+      "citation": "Sec. 5401(a)-(b)",
+      "date": "2021-01-01"
     },
     "instances": [
       {
@@ -20598,7 +20598,7 @@
       },
       {
         "law_id": "us-fed-nai-act-2020",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Sec. 5401(a)-(b)",
         "notes": "Near-verbatim match with existing rule on NSF funding research and education in AI systems and related fields.",
         "instrument_binding": true,
@@ -65410,10 +65410,10 @@
       "consumer_rights"
     ],
     "first_instance": {
-      "law_id": "uy-uy-naistrategy-2024",
-      "law_name": "uy-uy-naistrategy-2024",
-      "citation": "Principio 3",
-      "date": ""
+      "law_id": "cn-cn-pipl-2021",
+      "law_name": "Personal Information Protection Law of the People's Republic of China \u2014 AI-Relevant Provisions",
+      "citation": "Art. 70",
+      "date": "2021-08-20"
     },
     "instances": [
       {
@@ -65475,7 +65475,7 @@
       },
       {
         "law_id": "cn-cn-pipl-2021",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Art. 70",
         "notes": "Both address collective/group redress for violations affecting many individuals, but PIPL Art. 70 is a binding statute designating specific public-interest litigants (Procuratorate, consumer organizations, CAC-designated bodies), whereas the Malaysian guideline is a non-binding recommendation for a general consumer right to collective court action.",
         "instrument_binding": true,
@@ -72092,10 +72092,10 @@
       "false_negative"
     ],
     "first_instance": {
-      "law_id": "asean-asean-aigov-genai-2025",
-      "law_name": "asean-asean-aigov-genai-2025",
-      "citation": "\u00a7 3.7(a) \u2014 Content Provenance",
-      "date": ""
+      "law_id": "us-fed-nistai1004-2024",
+      "law_name": "NIST AI 100-4: Reducing Risks Posed by Synthetic Content \u2014 An Overview of Technical Approaches to Digital Content Transparency",
+      "citation": "Section 3.1.1 (Digital Watermarking - Accurately Detectable)",
+      "date": "2024-11-20"
     },
     "instances": [
       {
@@ -72284,7 +72284,7 @@
       },
       {
         "law_id": "us-fed-nistai1004-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Section 3.1.1 (Digital Watermarking - Accurately Detectable)",
         "notes": "Rule us-fed-nistai1004-2024-3-1-1 already captures this same requirement about accurate detectability with low false positive and false negative rates from NIST AI 100-4.",
         "instrument_binding": false,
@@ -72313,10 +72313,10 @@
       "hsm"
     ],
     "first_instance": {
-      "law_id": "cn-cn-ailabelling-2025",
-      "law_name": "cn-cn-ailabelling-2025",
-      "citation": "Art. 13",
-      "date": ""
+      "law_id": "us-fed-nistai1004-2024",
+      "law_name": "NIST AI 100-4: Reducing Risks Posed by Synthetic Content \u2014 An Overview of Technical Approaches to Digital Content Transparency",
+      "citation": "Section 3.1.2.5 (Security Considerations - Key Management)",
+      "date": "2024-11-20"
     },
     "instances": [
       {
@@ -72329,7 +72329,7 @@
       },
       {
         "law_id": "us-fed-nistai1004-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Section 3.1.2.5 (Security Considerations - Key Management)",
         "notes": "Near-verbatim match with the existing rule already recorded under rule_id us-fed-nistai1004-2024-3-1-2-5, which covers cryptographic key management best practices including hardware security modules or key vaults.",
         "instrument_binding": false,
@@ -72350,10 +72350,10 @@
       "transparency"
     ],
     "first_instance": {
-      "law_id": "cn-cn-ailabelling-2025",
-      "law_name": "cn-cn-ailabelling-2025",
-      "citation": "Art. 7",
-      "date": ""
+      "law_id": "us-fed-nistai1004-2024",
+      "law_name": "NIST AI 100-4: Reducing Risks Posed by Synthetic Content \u2014 An Overview of Technical Approaches to Digital Content Transparency",
+      "citation": "Section 3.3 (Labels and User Perception)",
+      "date": "2024-11-20"
     },
     "instances": [
       {
@@ -72478,7 +72478,7 @@
       },
       {
         "law_id": "us-fed-nistai1004-2024",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Section 3.3 (Labels and User Perception)",
         "notes": "Both address balancing the amount of provenance/label information shown to users, but this rule frames it as a design principle for labels specifically, while the matched rule focuses more broadly on calibrating provenance information quantity.",
         "instrument_binding": false,
@@ -72498,10 +72498,10 @@
       "high_risk"
     ],
     "first_instance": {
-      "law_id": "us-ca-a2713-2026",
-      "law_name": "us-ca-a2713-2026",
-      "citation": "\u00a7 22757.3.1(a)(2)(B)",
-      "date": ""
+      "law_id": "us-fed-nistai1004-2024",
+      "law_name": "NIST AI 100-4: Reducing Risks Posed by Synthetic Content \u2014 An Overview of Technical Approaches to Digital Content Transparency",
+      "citation": "Section 3.3.1.4 (Communicating Uncertainty)",
+      "date": "2024-11-20"
     },
     "instances": [
       {
@@ -72530,7 +72530,7 @@
       },
       {
         "law_id": "us-fed-nistai1004-2024",
-        "relationship": "agrees",
+        "relationship": "origin",
         "citation": "Section 3.3.1.4 (Communicating Uncertainty)",
         "notes": "Both rules address communicating uncertainty and reliability of detection or provenance data to users, with the same requirement expressed in slightly different phrasing.",
         "instrument_binding": false,
@@ -72550,10 +72550,10 @@
       "transparency"
     ],
     "first_instance": {
-      "law_id": "us-ny-s6954-2026",
-      "law_name": "us-ny-s6954-2026",
-      "citation": "\u00a7 1513(2)",
-      "date": ""
+      "law_id": "us-fed-nistai1004-2024",
+      "law_name": "NIST AI 100-4: Reducing Risks Posed by Synthetic Content \u2014 An Overview of Technical Approaches to Digital Content Transparency",
+      "citation": "Section 3.3.1.3 (Perceptions of Synthetic Origins)",
+      "date": "2024-11-20"
     },
     "instances": [
       {
@@ -72566,7 +72566,7 @@
       },
       {
         "law_id": "us-fed-nistai1004-2024",
-        "relationship": "agrees",
+        "relationship": "origin",
         "citation": "Section 3.3.1.3 (Perceptions of Synthetic Origins)",
         "notes": "Both rules address calibrating label terminology and tone to process-based versus impact-based goals, with the same substantive requirement expressed in marginally different wording.",
         "instrument_binding": false,
@@ -72587,10 +72587,10 @@
       "child_safety"
     ],
     "first_instance": {
-      "law_id": "global-unicef-aichildren-2025",
-      "law_name": "global-unicef-aichildren-2025",
-      "citation": "Requirement 2",
-      "date": ""
+      "law_id": "us-fed-nistai1004-2024",
+      "law_name": "NIST AI 100-4: Reducing Risks Posed by Synthetic Content \u2014 An Overview of Technical Approaches to Digital Content Transparency",
+      "citation": "Section 5.2 (Input Data Filtering)",
+      "date": "2024-11-20"
     },
     "instances": [
       {
@@ -72603,7 +72603,7 @@
       },
       {
         "law_id": "us-fed-nistai1004-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Section 5.2 (Input Data Filtering)",
         "notes": "Rule 0 is a near-verbatim match to the existing rule us-fed-nistai1004-2024-5-2, which covers filtering user input prompts to block CSAM and NCII generation.",
         "instrument_binding": false,
@@ -72625,10 +72625,10 @@
       "child_safety"
     ],
     "first_instance": {
-      "law_id": "us-wy-hb102-2025",
-      "law_name": "us-wy-hb102-2025",
-      "citation": "W.S. 6-4-303(b)(v)",
-      "date": ""
+      "law_id": "us-fed-nistai1004-2024",
+      "law_name": "NIST AI 100-4: Reducing Risks Posed by Synthetic Content \u2014 An Overview of Technical Approaches to Digital Content Transparency",
+      "citation": "Section 5.3 (Output Filtering)",
+      "date": "2024-11-20"
     },
     "instances": [
       {
@@ -72665,7 +72665,7 @@
       },
       {
         "law_id": "us-fed-nistai1004-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Section 5.3 (Output Filtering)",
         "notes": "Rule 1 is a near-verbatim match to the existing rule us-fed-nistai1004-2024-5-3, which covers output filtering to block harmful images such as CSAM and NCII.",
         "instrument_binding": false,
@@ -72687,10 +72687,10 @@
       "child_safety"
     ],
     "first_instance": {
-      "law_id": "us-wy-hb102-2025",
-      "law_name": "us-wy-hb102-2025",
-      "citation": "W.S. 6-4-303(b)(vi)",
-      "date": ""
+      "law_id": "us-fed-nistai1004-2024",
+      "law_name": "NIST AI 100-4: Reducing Risks Posed by Synthetic Content \u2014 An Overview of Technical Approaches to Digital Content Transparency",
+      "citation": "Section 5.4 (Hashing Confirmed AIG-CSAM and AIG-NCII)",
+      "date": "2024-11-20"
     },
     "instances": [
       {
@@ -72711,7 +72711,7 @@
       },
       {
         "law_id": "us-fed-nistai1004-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Section 5.4 (Hashing Confirmed AIG-CSAM and AIG-NCII)",
         "notes": "Rule 2 is a near-verbatim match to the existing rule us-fed-nistai1004-2024-5-4, which covers hashing confirmed AI-generated CSAM and NCII and contributing to shared hash databases.",
         "instrument_binding": false,
@@ -96647,14 +96647,14 @@
     ],
     "first_instance": {
       "law_id": "us-mn-h2594-2025",
-      "law_name": "us-mn-h2594-2025",
+      "law_name": "Minnesota H 2594 \u2014 Public Safety",
       "citation": "\u00a7 144.296",
-      "date": ""
+      "date": null
     },
     "instances": [
       {
         "law_id": "us-mn-h2594-2025",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "\u00a7 144.296",
         "notes": "This rule is functionally identical to the existing rule from us-mn-hb2432-2025, both prohibiting healthcare providers from releasing recordings of child abuse victims without a court order.",
         "instrument_binding": false,
@@ -96685,10 +96685,10 @@
       "protective_orders"
     ],
     "first_instance": {
-      "law_id": "us-mn-h2594-2025",
-      "law_name": "us-mn-h2594-2025",
-      "citation": "\u00a7 611A.90, subd. 3",
-      "date": ""
+      "law_id": "us-mn-hb2432-2025",
+      "law_name": "Minnesota House File 2432 \u2014 Public Safety \u2014 Artificial Intelligence Use",
+      "citation": "Article 5, Sec. 1 (13.03, Subd. 6)",
+      "date": "2025-05-23"
     },
     "instances": [
       {
@@ -96701,7 +96701,7 @@
       },
       {
         "law_id": "us-mn-hb2432-2025",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Article 5, Sec. 1 (13.03, Subd. 6)",
         "notes": "Near-verbatim match to existing rule requiring presiding officers to consider child victim recording protections when ruling on access to non-public data.",
         "instrument_binding": true,
@@ -96723,10 +96723,10 @@
       "platform_immunity"
     ],
     "first_instance": {
-      "law_id": "us-mo-h2273-2026",
-      "law_name": "us-mo-h2273-2026",
-      "citation": "\u00a7 573.110.5",
-      "date": ""
+      "law_id": "us-mn-hb2432-2025",
+      "law_name": "Minnesota House File 2432 \u2014 Public Safety \u2014 Artificial Intelligence Use",
+      "citation": "Article 4, Sec. 13 [617.2471]",
+      "date": "2025-05-23"
     },
     "instances": [
       {
@@ -96779,7 +96779,7 @@
       },
       {
         "law_id": "us-mn-hb2432-2025",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Article 4, Sec. 13 [617.2471]",
         "notes": "This rule is already catalogued under rule_id 'us-mn-hb2432-2025-617-2471' (attributed to first_law 'us-mo-h2273-2026'), establishing civil and criminal liability immunity for interactive computer service and telecommunications/information service providers regarding AI-generated content.",
         "instrument_binding": true,
@@ -96802,14 +96802,14 @@
     ],
     "first_instance": {
       "law_id": "us-mn-h2594-2025",
-      "law_name": "us-mn-h2594-2025",
+      "law_name": "Minnesota H 2594 \u2014 Public Safety",
       "citation": "\u00a7 246B.04, subd. 2",
-      "date": ""
+      "date": null
     },
     "instances": [
       {
         "law_id": "us-mn-h2594-2025",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "\u00a7 246B.04, subd. 2",
         "notes": "Both rules require the executive board to prohibit civilly committed sexual psychopathic personalities or sexually dangerous persons from receiving certain material, but the existing rule concerns having or receiving 'obscene material via the internet' while this rule concerns receiving 'obscene material' more broadly, representing a meaningful scope difference.",
         "instrument_binding": false,
@@ -96838,10 +96838,10 @@
       "data_collection"
     ],
     "first_instance": {
-      "law_id": "us-il-h3851-2025",
-      "law_name": "us-il-h3851-2025",
-      "citation": "105 ILCS 5/27-23.7(f)",
-      "date": ""
+      "law_id": "us-mn-hb2432-2025",
+      "law_name": "Minnesota House File 2432 \u2014 Public Safety \u2014 Artificial Intelligence Use",
+      "citation": "Article 5, Sec. 4 (121A.06, Subd. 2a)",
+      "date": "2025-05-23"
     },
     "instances": [
       {
@@ -96871,7 +96871,7 @@
       },
       {
         "law_id": "us-mn-hb2432-2025",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Article 5, Sec. 4 (121A.06, Subd. 2a)",
         "notes": "Near-verbatim restatement of the active-shooter after-action review filing requirement already captured in this law's own existing rule record.",
         "instrument_binding": true,
@@ -96893,10 +96893,10 @@
       "interagency"
     ],
     "first_instance": {
-      "law_id": "us-mn-s4284-2026",
-      "law_name": "us-mn-s4284-2026",
-      "citation": "\u00a7 299C.061, subd. 3(b)",
-      "date": ""
+      "law_id": "us-mn-hb2432-2025",
+      "law_name": "Minnesota House File 2432 \u2014 Public Safety \u2014 Artificial Intelligence Use",
+      "citation": "Article 3, Sec. 19 [299C.061], Subd. 6",
+      "date": "2025-05-23"
     },
     "instances": [
       {
@@ -96909,7 +96909,7 @@
       },
       {
         "law_id": "us-mn-hb2432-2025",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Article 3, Sec. 19 [299C.061], Subd. 6",
         "notes": "This rule is already recorded in the database as us-mn-hb2432-2025-299c-061-subd-6, attributed to us-mn-s4284-2026, covering the same obligation for state agencies to provide fraud-related data when making referrals to the Financial Crimes and Fraud Section.",
         "instrument_binding": true,
@@ -96932,14 +96932,14 @@
     ],
     "first_instance": {
       "law_id": "us-mn-hb2432-2025",
-      "law_name": "us-mn-hb2432-2025",
+      "law_name": "Minnesota House File 2432 \u2014 Public Safety \u2014 Artificial Intelligence Use",
       "citation": "Article 2, Sec. 21 [626.5536]",
-      "date": ""
+      "date": "2025-05-23"
     },
     "instances": [
       {
         "law_id": "us-mn-hb2432-2025",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Article 2, Sec. 21 [626.5536]",
         "notes": "Near-verbatim restatement of the ATF eTrace registration and data-sharing requirement already captured from Minnesota S1417-2025.",
         "instrument_binding": true,
@@ -96961,10 +96961,10 @@
       "public_officials"
     ],
     "first_instance": {
-      "law_id": "us-mn-s4223-2026",
-      "law_name": "us-mn-s4223-2026",
-      "citation": "\u00a7 10A.09, subd. 5(b) (new)",
-      "date": ""
+      "law_id": "us-mn-hb2432-2025",
+      "law_name": "Minnesota House File 2432 \u2014 Public Safety \u2014 Artificial Intelligence Use",
+      "citation": "Article 9, Sec. 6 (Minn. Stat. 13.991)",
+      "date": "2025-05-23"
     },
     "instances": [
       {
@@ -96977,7 +96977,7 @@
       },
       {
         "law_id": "us-mn-hb2432-2025",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Article 9, Sec. 6 (Minn. Stat. 13.991)",
         "notes": "Similar to existing judicial official personal data protection rule but this provision covers all government-collected personal information about judicial officials and classifies it as private data, while the matched rule focuses specifically on real property records.",
         "instrument_binding": true,
@@ -123257,7 +123257,7 @@
         "instrument_type": "statute"
       },
       {
-        "law_id": "us-me-h74-2025",
+        "law_id": "us-me-h74-2026",
         "relationship": "identical",
         "citation": "Sec. 1",
         "notes": "The existing rule text is a near-verbatim match for this rule requiring the Maine Arts Commission to study federal and national efforts to protect artists from AI-related copyright infringement.",
@@ -123288,14 +123288,14 @@
       "study"
     ],
     "first_instance": {
-      "law_id": "us-me-h74-2025",
+      "law_id": "us-me-h74-2026",
       "law_name": "Maine H 74 \u2014 Federal and National Efforts Study",
       "citation": "Sec. 1",
       "date": "2026-01-11"
     },
     "instances": [
       {
-        "law_id": "us-me-h74-2025",
+        "law_id": "us-me-h74-2026",
         "relationship": "origin",
         "citation": "Sec. 1",
         "notes": "Rule introduced in Maine H 74 \u2014 Federal and National Efforts Study (Maine, 2026-01-11).",
@@ -127281,14 +127281,14 @@
     ],
     "first_instance": {
       "law_id": "us-hi-s2967-2026",
-      "law_name": "us-hi-s2967-2026",
+      "law_name": "Hawaii S 2967 \u2014 Artificial Intelligence Consumer Protections",
       "citation": "\u00a7 480-J",
-      "date": ""
+      "date": null
     },
     "instances": [
       {
         "law_id": "us-hi-s2967-2026",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "\u00a7 480-J",
         "notes": "Both rules vest a state agency with authority to adopt rules implementing AI consumer protection legislation, but Hawaii S 2967 grants the executive director broader rulemaking scope (defining consequential decisions, high-risk AI systems, etc.) while Utah S 38 simply designates enforcement authority over an existing Act.",
         "instrument_binding": false,
@@ -127324,10 +127324,10 @@
       "division_jurisdiction"
     ],
     "first_instance": {
-      "law_id": "us-ca-s1119-2026",
-      "law_name": "us-ca-s1119-2026",
-      "citation": "\u00a7 22615(a)(2)",
-      "date": ""
+      "law_id": "us-ut-s38-2026",
+      "law_name": "Utah S 38 \u2014 Consumer Protection Modifications",
+      "citation": "13-2-102(2)(bb)",
+      "date": "2026-03-17"
     },
     "instances": [
       {
@@ -127340,7 +127340,7 @@
       },
       {
         "law_id": "us-ut-s38-2026",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "13-2-102(2)(bb)",
         "notes": "This rule is already captured in the database as rule us-ut-s38-2026-13-2-102-2-bb, assigning the Division of Consumer Protection authority over the Utah Minor Protection in Social Media Act.",
         "instrument_binding": true,
@@ -127361,10 +127361,10 @@
       "scope"
     ],
     "first_instance": {
-      "law_id": "us-la-h157-2026",
-      "law_name": "us-la-h157-2026",
-      "citation": "\u00a7 470.4(E)",
-      "date": ""
+      "law_id": "us-ut-s38-2026",
+      "law_name": "Utah S 38 \u2014 Consumer Protection Modifications",
+      "citation": "13-2-107(5)",
+      "date": "2026-03-17"
     },
     "instances": [
       {
@@ -127385,7 +127385,7 @@
       },
       {
         "law_id": "us-ut-s38-2026",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "13-2-107(5)",
         "notes": "This rule is already captured in the database as us-ut-s38-2026-13-2-107-5, establishing Utah Division of Consumer Protection jurisdiction for violations occurring partly in Utah or attempted from outside the state.",
         "instrument_binding": true,
@@ -130092,14 +130092,14 @@
     ],
     "first_instance": {
       "law_id": "us-wa-s5105-2026",
-      "law_name": "us-wa-s5105-2026",
+      "law_name": "Washington S 5105 \u2014 Sexually Explicit Depictions of Minors",
       "citation": "RCW 9.68A.110(5)",
-      "date": ""
+      "date": "2026-03-25"
     },
     "instances": [
       {
         "law_id": "us-wa-s5105-2026",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "RCW 9.68A.110(5)",
         "notes": "Both rules remove the prosecution's burden to prove the minor depicted is real, but this Washington rule specifically applies to the obscenity prong of fabricated/AI-generated depictions, while the Utah rule broadly addresses apparent child sexual abuse material without that specific prong limitation.",
         "instrument_binding": true,
@@ -130184,10 +130184,10 @@
       "minors"
     ],
     "first_instance": {
-      "law_id": "us-va-h171-2026",
-      "law_name": "us-va-h171-2026",
-      "citation": "\u00a7 22.1-70.2(A)(iii)",
-      "date": ""
+      "law_id": "us-ut-s38-2026",
+      "law_name": "Utah S 38 \u2014 Consumer Protection Modifications",
+      "citation": "Section 181-182, 76-5c-402(1)",
+      "date": "2026-03-17"
     },
     "instances": [
       {
@@ -130224,7 +130224,7 @@
       },
       {
         "law_id": "us-ut-s38-2026",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Section 181-182, 76-5c-402(1)",
         "notes": "Both require filtering of material harmful to minors, but this rule applies to ISPs upon consumer request rather than mandating technology protection measures on public library devices.",
         "instrument_binding": true,
@@ -130253,10 +130253,10 @@
       "judicial_process"
     ],
     "first_instance": {
-      "law_id": "us-fl-h1159-2026",
-      "law_name": "us-fl-h1159-2026",
-      "citation": "\u00a7 92.561, F.S.",
-      "date": ""
+      "law_id": "us-ut-h289-2026",
+      "law_name": "Utah H 289 \u2014 Child Sexual Abuse Material Amendments",
+      "citation": "77-4-201(2)",
+      "date": "2026-03-24"
     },
     "instances": [
       {
@@ -130301,7 +130301,7 @@
       },
       {
         "law_id": "us-ut-h289-2026",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "77-4-201(2)",
         "notes": "This rule is already recorded in the database as us-ut-h289-2026-77-4-201-2 with first_law us-fl-h1159-2026, indicating it is a near-verbatim copy of that Florida provision.",
         "instrument_binding": true,
@@ -138023,10 +138023,10 @@
       "central_complaints_body"
     ],
     "first_instance": {
-      "law_id": "eu-eu-gdpr-2016",
-      "law_name": "eu-eu-gdpr-2016",
-      "citation": "Article 77(1)",
-      "date": ""
+      "law_id": "za-za-popia-2013",
+      "law_name": "Protection of Personal Information Act 4 of 2013 (POPIA)",
+      "citation": "PAIA s.77A",
+      "date": "2013-11-26"
     },
     "instances": [
       {
@@ -138039,7 +138039,7 @@
       },
       {
         "law_id": "za-za-popia-2013",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "PAIA s.77A",
         "notes": "Both establish a complaint mechanism before a regulatory body for non-compliance, but POPIA specifies a 180-day time limit and an exhaustion-of-internal-remedies precondition, while the German rule concerns EU AI Act complaints without such conditions.",
         "instrument_binding": true,
@@ -138076,14 +138076,14 @@
     ],
     "first_instance": {
       "law_id": "eu-eu-cra-2024",
-      "law_name": "eu-eu-cra-2024",
+      "law_name": "Regulation (EU) 2024/2847 on Cybersecurity Requirements for Products with Digital Elements",
       "citation": "Recital 32",
-      "date": ""
+      "date": "2024-10-10"
     },
     "instances": [
       {
         "law_id": "eu-eu-cra-2024",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Recital 32",
         "notes": "Both rules require coordination between AI/product market surveillance authorities and cybersecurity/data protection authorities, but the CRA rule specifically mandates cooperation between national market surveillance authorities under the Cyber Resilience Act and data protection supervisory authorities, while the German rule addresses cooperation between AI Act market surveillance and the cybersecurity market surveillance authority designated under the Cyber Resilience Act.",
         "instrument_binding": true,
@@ -138112,10 +138112,10 @@
       "deemed_approval"
     ],
     "first_instance": {
-      "law_id": "us-ny-a3356-2025",
-      "law_name": "us-ny-a3356-2025",
-      "citation": "\u00a7 519(1)-(2)",
-      "date": ""
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
+      "citation": "Article 60(4)",
+      "date": "2024-06-13"
     },
     "instances": [
       {
@@ -138128,7 +138128,7 @@
       },
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Article 60(4)",
         "notes": "Both address conditions for real-world testing of high-risk AI systems outside sandboxes, but the EU AI Act Article 60(4) covers a broader set of conditions including market surveillance authority involvement, while the German law focuses on submission of a test plan.",
         "instrument_binding": true,
@@ -138201,14 +138201,14 @@
     ],
     "first_instance": {
       "law_id": "eu-eu-aiact-2024",
-      "law_name": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
       "citation": "Article 74(12)",
-      "date": ""
+      "date": "2024-06-13"
     },
     "instances": [
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Article 74(12)",
         "notes": "Both concern granting market surveillance authorities access to AI system documentation, but this rule extends specifically to training, validation, and testing datasets while DE-KIMIG frames non-access as an administrative offence under Article 21(2).",
         "instrument_binding": true,
@@ -138235,10 +138235,10 @@
       "education"
     ],
     "first_instance": {
-      "law_id": "us-ma-s1053-2025",
-      "law_name": "us-ma-s1053-2025",
-      "citation": "\u00a7 220(k)",
-      "date": ""
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
+      "citation": "Recital 44; Article 5(1)(f)",
+      "date": "2024-06-13"
     },
     "instances": [
       {
@@ -138267,7 +138267,7 @@
       },
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Recital 44; Article 5(1)(f)",
         "notes": "Norway's Kiloven Art 5(1)(f) is a direct transposition of EU AI Act Article 5(1)(f) prohibiting emotion inference in workplaces and educational settings except for medical or safety reasons.",
         "instrument_binding": true,
@@ -138367,14 +138367,14 @@
     ],
     "first_instance": {
       "law_id": "us-ma-s1053-2025",
-      "law_name": "us-ma-s1053-2025",
+      "law_name": "Massachusetts S 1053 \u2014 Facial Recognition Technology",
       "citation": "\u00a7 220(k)",
-      "date": ""
+      "date": null
     },
     "instances": [
       {
         "law_id": "us-ma-s1053-2025",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "\u00a7 220(k)",
         "notes": "Both restrict real-time or moving-image biometric surveillance by authorities, but the Massachusetts bill broadly prohibits law enforcement from analyzing any moving images/video via biometric systems (with a narrow exception), while the Norwegian rule focuses specifically on real-time remote biometric identification in public spaces for law enforcement.",
         "instrument_binding": false,
@@ -138410,14 +138410,14 @@
     ],
     "first_instance": {
       "law_id": "eu-eu-aiact-2024",
-      "law_name": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
       "citation": "Recital 53",
-      "date": ""
+      "date": "2024-06-13"
     },
     "instances": [
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Recital 53",
         "notes": "Both require documenting an assessment that an Annex III system is not high-risk before market placement, but the EU AI Act recital adds the requirement to provide the documentation to authorities on request.",
         "instrument_binding": true,
@@ -138444,10 +138444,10 @@
       "lifecycle"
     ],
     "first_instance": {
-      "law_id": "cl-cl-airegbill-2024",
-      "law_name": "cl-cl-airegbill-2024",
-      "citation": "Art. 9(1)",
-      "date": ""
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
+      "citation": "Recital 65",
+      "date": "2024-06-13"
     },
     "instances": [
       {
@@ -138460,7 +138460,7 @@
       },
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "agrees",
+        "relationship": "origin",
         "citation": "Recital 65",
         "notes": "Both require establishing, implementing, documenting and maintaining a risk management system throughout the entire lifecycle of high-risk AI systems, with the Norwegian law being a national implementation of this EU AI Act requirement.",
         "instrument_binding": true,
@@ -138488,10 +138488,10 @@
       "high_risk"
     ],
     "first_instance": {
-      "law_id": "us-az-h2917-2026",
-      "law_name": "us-az-h2917-2026",
-      "citation": "\u00a7 28-1249(A)-(B)",
-      "date": ""
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
+      "citation": "Recital 73",
+      "date": "2024-06-13"
     },
     "instances": [
       {
@@ -138520,7 +138520,7 @@
       },
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Recital 73",
         "notes": "Both require verification by qualified persons before action is taken on biometric identification results, but the Norwegian rule specifies 'at least two qualified persons' while the EU rule requires separate verification without specifying a minimum number of verifiers.",
         "instrument_binding": true,
@@ -138549,14 +138549,14 @@
     ],
     "first_instance": {
       "law_id": "eu-eu-aiact-2024",
-      "law_name": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
       "citation": "Recital 81",
-      "date": ""
+      "date": "2024-06-13"
     },
     "instances": [
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Recital 81",
         "notes": "Both require providers to have a quality management system and take corrective action; the Norwegian rule focuses specifically on corrective action and notification obligations while this recital covers the broader quality management and conformity assessment framework.",
         "instrument_binding": true,
@@ -138576,14 +138576,14 @@
     ],
     "first_instance": {
       "law_id": "eu-eu-aiact-2024",
-      "law_name": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
       "citation": "Recital 82",
-      "date": ""
+      "date": "2024-06-13"
     },
     "instances": [
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "agrees",
+        "relationship": "origin",
         "citation": "Recital 82",
         "notes": "Both require third-country providers to appoint an authorised representative in the Union by written mandate before placing high-risk AI systems on the market, with Norway implementing the EU AI Act requirement.",
         "instrument_binding": true,
@@ -138612,14 +138612,14 @@
     ],
     "first_instance": {
       "law_id": "eu-eu-aiact-2024",
-      "law_name": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
       "citation": "Recital 84",
-      "date": ""
+      "date": "2024-06-13"
     },
     "instances": [
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "agrees",
+        "relationship": "origin",
         "citation": "Recital 84",
         "notes": "Both address when distributors, importers, deployers, or third parties become subject to provider obligations by substantially modifying or rebranding a high-risk AI system.",
         "instrument_binding": true,
@@ -138648,14 +138648,14 @@
     ],
     "first_instance": {
       "law_id": "eu-eu-aiact-2024",
-      "law_name": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
       "citation": "Recital 96",
-      "date": ""
+      "date": "2024-06-13"
     },
     "instances": [
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "agrees",
+        "relationship": "origin",
         "citation": "Recital 96",
         "notes": "Both require public bodies and private entities providing public services to conduct fundamental rights impact assessments before deploying certain high-risk AI systems, with Norway implementing this EU AI Act requirement.",
         "instrument_binding": true,
@@ -138833,14 +138833,14 @@
     ],
     "first_instance": {
       "law_id": "eu-eu-aiact-2024",
-      "law_name": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
       "citation": "Article 51",
-      "date": ""
+      "date": "2024-06-13"
     },
     "instances": [
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Article 51",
         "notes": "Norway's Article 51 is a near-verbatim transposition of EU AI Act Article 51's systemic-risk classification rule including the 10^25 FLOPs threshold.",
         "instrument_binding": true,
@@ -138870,14 +138870,14 @@
     ],
     "first_instance": {
       "law_id": "eu-eu-aiact-2024",
-      "law_name": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
       "citation": "Article 52(1)",
-      "date": ""
+      "date": "2024-06-13"
     },
     "instances": [
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Article 52(1)",
         "notes": "Norway's Article 52 is a near-verbatim transposition of EU AI Act Article 52(1) requiring notification to the Commission without delay upon reaching the systemic-risk threshold.",
         "instrument_binding": true,
@@ -138897,10 +138897,10 @@
       "training_data"
     ],
     "first_instance": {
-      "law_id": "us-ny-a768-2025",
-      "law_name": "us-ny-a768-2025",
-      "citation": "\u00a7 1553(1)(a)",
-      "date": ""
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
+      "citation": "Recital 101",
+      "date": "2024-06-13"
     },
     "instances": [
       {
@@ -138937,7 +138937,7 @@
       },
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Recital 101",
         "notes": "Norway's Article 53(1)(a) is a near-verbatim transposition of EU AI Act Article 53 requiring GPAI providers to draw up and maintain technical documentation.",
         "instrument_binding": true,
@@ -139025,10 +139025,10 @@
       "general_purpose_ai"
     ],
     "first_instance": {
-      "law_id": "us-ri-s627-2025",
-      "law_name": "us-ri-s627-2025",
-      "citation": "\u00a7 6-61-6(a)(1)(E)",
-      "date": ""
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
+      "citation": "Recital 106",
+      "date": "2024-06-13"
     },
     "instances": [
       {
@@ -139041,7 +139041,7 @@
       },
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Recital 106",
         "notes": "Norway's Article 53(1)(c) is a near-verbatim transposition of EU AI Act Recital 106 requiring GPAI providers to implement a copyright compliance policy.",
         "instrument_binding": true,
@@ -139070,10 +139070,10 @@
       "general_purpose_ai"
     ],
     "first_instance": {
-      "law_id": "us-ny-s8331-2025",
-      "law_name": "us-ny-s8331-2025",
-      "citation": "\u00a7 338-a(1)(a)",
-      "date": ""
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
+      "citation": "Recital 107",
+      "date": "2024-06-13"
     },
     "instances": [
       {
@@ -139086,7 +139086,7 @@
       },
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Recital 107",
         "notes": "Both rules require providers of general-purpose AI models to publish a sufficiently detailed summary of training content; the Norwegian law mirrors this EU AI Act recital requirement near-verbatim.",
         "instrument_binding": true,
@@ -139116,14 +139116,14 @@
     ],
     "first_instance": {
       "law_id": "eu-eu-aiact-2024",
-      "law_name": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
       "citation": "Article 54(1)",
-      "date": ""
+      "date": "2024-06-13"
     },
     "instances": [
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Article 54(1)",
         "notes": "Norway's Article 54 is a near-verbatim transposition of EU AI Act Article 54(1) requiring third-country GPAI providers to appoint an authorised representative in the Union.",
         "instrument_binding": true,
@@ -139196,14 +139196,14 @@
     ],
     "first_instance": {
       "law_id": "eu-eu-aiact-2024",
-      "law_name": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
       "citation": "Article 55(1)(c)",
-      "date": ""
+      "date": "2024-06-13"
     },
     "instances": [
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "Article 55(1)(c)",
         "notes": "Both require reporting of serious incidents to market surveillance authorities, but this rule is specific to general-purpose AI models with systemic risk while the Norwegian rule concerns high-risk AI systems with a 15-day general timeframe.",
         "instrument_binding": true,
@@ -139222,10 +139222,10 @@
       "sanctions"
     ],
     "first_instance": {
-      "law_id": "tr-tr-aibill-2025",
-      "law_name": "tr-tr-aibill-2025",
-      "citation": "Art. 6(b)",
-      "date": ""
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
+      "citation": "Article 101(1)",
+      "date": "2024-06-13"
     },
     "instances": [
       {
@@ -139238,7 +139238,7 @@
       },
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Article 101(1)",
         "notes": "Near-verbatim restatement of the 3% of annual worldwide turnover or EUR 15,000,000 fine cap for providers of general-purpose AI models for infringements of relevant obligations.",
         "instrument_binding": true,
@@ -139268,14 +139268,14 @@
     ],
     "first_instance": {
       "law_id": "eu-eu-aiact-2024",
-      "law_name": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
       "citation": "Article 47(1)",
-      "date": ""
+      "date": "2024-06-13"
     },
     "instances": [
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Article 47(1)",
         "notes": "The Norwegian AI Act Article 47 mirrors the EU AI Act Article 47(1) requirement for providers to draw up a written EU declaration of conformity for each high-risk AI system and keep it available for 10 years.",
         "instrument_binding": true,
@@ -139312,10 +139312,10 @@
       "compliance"
     ],
     "first_instance": {
-      "law_id": "es-es-ailaw-draft-2025",
-      "law_name": "es-es-ailaw-draft-2025",
-      "citation": "High-Risk Requirements \u00a76",
-      "date": ""
+      "law_id": "eu-eu-aiact-2024",
+      "law_name": "Regulation (EU) 2024/1689 on Artificial Intelligence",
+      "citation": "Recital 129",
+      "date": "2024-06-13"
     },
     "instances": [
       {
@@ -139328,7 +139328,7 @@
       },
       {
         "law_id": "eu-eu-aiact-2024",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Recital 129",
         "notes": "The Norwegian AI Act provision mirrors the EU AI Act Article 48 requirement to affix CE marking visibly, legibly, and indelibly on high-risk AI systems.",
         "instrument_binding": true,
@@ -225075,6 +225075,23 @@
         "notes": "Proposed in Kansas S 405 \u2014 Train Artificial Intelligence for Unlawful Actions (Kansas, null) but bill was failed \u2014 negative premise only.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-tn-h1455-2026",
+        "relationship": "rejected",
+        "citation": "\u00a7 39-17-2002(a)(8)",
+        "notes": "Proposed in Tennessee H 1455 \u2014 Criminal Offenses (Tennessee, null) but bill was failed \u2014 negative premise only.",
+        "instrument_binding": false,
+        "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-tn-s1493-2026",
+        "relationship": "identical",
+        "citation": "\u00a7 39-17-2002(a)(8)",
+        "notes": "Near-verbatim match with the existing Tennessee H1455 rule prohibiting training AI to simulate a human being in appearance, voice, or other mannerisms.",
+        "instrument_binding": true,
+        "instrument_type": "statute",
+        "variant_of": "us-tn-h1455-2026"
       }
     ]
   },
@@ -256513,14 +256530,14 @@
     ],
     "first_instance": {
       "law_id": "us-ny-s5025-2026",
-      "law_name": "us-ny-s5025-2026",
+      "law_name": "New York S 5025 \u2014 Dignity for All Students",
       "citation": "\u00a7 11(8)",
-      "date": ""
+      "date": null
     },
     "instances": [
       {
         "law_id": "us-ny-s5025-2026",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "\u00a7 11(8)",
         "notes": "Both rules address cyberbullying through electronic/digital communications, but Minnesota's rule focuses on school bullying policy treatment while this New York bill defines cyberbullying in the context of a student dignity/anti-harassment law with a broader scope including coercive control.",
         "instrument_binding": false,
@@ -262285,10 +262302,10 @@
       "recordings"
     ],
     "first_instance": {
-      "law_id": "us-mn-h2594-2025",
-      "law_name": "us-mn-h2594-2025",
-      "citation": "\u00a7 13.821(a)",
-      "date": ""
+      "law_id": "us-mn-hb2432-2025",
+      "law_name": "Minnesota House File 2432 \u2014 Public Safety \u2014 Artificial Intelligence Use",
+      "citation": "Article 5, Sec. 2 (13.821)",
+      "date": "2025-05-23"
     },
     "instances": [
       {
@@ -262310,7 +262327,7 @@
       },
       {
         "law_id": "us-mn-hb2432-2025",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Article 5, Sec. 2 (13.821)",
         "notes": "Near-verbatim match to existing rule prohibiting data subjects from obtaining child abuse victim recordings without court or administrative order.",
         "instrument_binding": true,
@@ -262332,14 +262349,14 @@
     ],
     "first_instance": {
       "law_id": "us-mn-s1577-2025",
-      "law_name": "us-mn-s1577-2025",
+      "law_name": "Minnesota S 1577 \u2014 Public Safety",
       "citation": "\u00a7 617.246, subd. 1(f)(2)(iv)",
-      "date": ""
+      "date": null
     },
     "instances": [
       {
         "law_id": "us-mn-s1577-2025",
-        "relationship": "similar",
+        "relationship": "origin",
         "citation": "\u00a7 617.246, subd. 1(f)(2)(iv)",
         "notes": "Both rules address sexually explicit material depicting minors under Minnesota \u00a7 617 et seq., but this new rule specifically targets AI-generated pornographic works depicting individuals indistinguishable from actual minors, whereas the existing rule covers child-like sex dolls (physical objects), making the subject matter and medium meaningfully different.",
         "instrument_binding": false,
@@ -262368,14 +262385,14 @@
     ],
     "first_instance": {
       "law_id": "us-mn-hb2432-2025",
-      "law_name": "us-mn-hb2432-2025",
+      "law_name": "Minnesota House File 2432 \u2014 Public Safety \u2014 Artificial Intelligence Use",
       "citation": "Article 3, Sec. 19 [299C.061], Subd. 4",
-      "date": ""
+      "date": "2025-05-23"
     },
     "instances": [
       {
         "law_id": "us-mn-hb2432-2025",
-        "relationship": "identical",
+        "relationship": "origin",
         "citation": "Article 3, Sec. 19 [299C.061], Subd. 4",
         "notes": "Near-verbatim restatement of the $100,000 fraud referral requirement already captured from Minnesota S1417-2025.",
         "instrument_binding": true,
@@ -266262,43 +266279,6 @@
     ]
   },
   {
-    "rule_id": "us-ms-s2429-2026-section-4-2-f",
-    "rule_text": "The task force should propose criteria by which the state could monitor and evaluate the effects of AI on student learning outcomes.",
-    "rule_text_technical": "The task force shall propose criteria by which the state could monitor and evaluate the effects of AI on student learning outcomes.",
-    "category": "institutional_framework",
-    "tags": [
-      "monitoring",
-      "evaluation_criteria",
-      "learning_outcomes",
-      "ai_impact",
-      "students"
-    ],
-    "first_instance": {
-      "law_id": "us-ms-s2429-2026",
-      "law_name": "Mississippi S 2429 \u2014 Artificial Intelligence in Education Task Force Act",
-      "citation": "Section 4(2)(f)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ms-s2429-2026",
-        "relationship": "rejected",
-        "citation": "Section 4(2)(f)",
-        "notes": "Proposed in Mississippi S 2429 \u2014 Artificial Intelligence in Education Task Force Act (Mississippi, null) but bill was failed \u2014 negative premise only.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ms-s2059-2025",
-        "relationship": "rejected",
-        "citation": "Section 2",
-        "notes": "Mississippi S 2059 \u2014 Artificial Intelligence in Education Task Force Act (Mississippi) proposed this rule but the bill was failed \u2014 negative premise.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
     "rule_id": "us-ms-s2429-2026-section-4-2-h",
     "rule_text": "The task force should recommend common requirements for state and district procurement of AI-powered software, including content filters protecting students from age-inappropriate content, parental review of content minor students enter, vendor training/support, and prohibitions on unauthorized sale of student or teacher data.",
     "rule_text_technical": "The task force shall recommend a set of common requirements for state and district/institution procurement of AI-powered software, including requirements for content filters protecting students from age-inappropriate content, requirements allowing parents/guardians to review content minor students enter, vendor-provided training and support for district/institution technology staff, and prohibitions on unauthorized sale of student or teacher data.",
@@ -266321,35 +266301,6 @@
         "law_id": "us-ms-s2429-2026",
         "relationship": "rejected",
         "citation": "Section 4(2)(h)",
-        "notes": "Proposed in Mississippi S 2429 \u2014 Artificial Intelligence in Education Task Force Act (Mississippi, null) but bill was failed \u2014 negative premise only.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-ms-s2429-2026-section-4-2-i",
-    "rule_text": "The task force should identify opportunities for fostering collaboration between K-12 education, community colleges, higher education institutions, workforce development programs, and AI-affected industry sectors to prepare students for AI-related careers.",
-    "rule_text_technical": "The task force shall identify opportunities for fostering collaboration between K-12 education, technical and community colleges, institutions of higher learning, workforce development programs and industry sectors affected by AI such that students are prepared for future careers that involve AI technologies.",
-    "category": "institutional_framework",
-    "tags": [
-      "collaboration",
-      "workforce_development",
-      "career_preparation",
-      "higher_education",
-      "industry_partnership"
-    ],
-    "first_instance": {
-      "law_id": "us-ms-s2429-2026",
-      "law_name": "Mississippi S 2429 \u2014 Artificial Intelligence in Education Task Force Act",
-      "citation": "Section 4(2)(i)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ms-s2429-2026",
-        "relationship": "rejected",
-        "citation": "Section 4(2)(i)",
         "notes": "Proposed in Mississippi S 2429 \u2014 Artificial Intelligence in Education Task Force Act (Mississippi, null) but bill was failed \u2014 negative premise only.",
         "instrument_binding": false,
         "instrument_type": "bill"
@@ -267701,6 +267652,14 @@
         "notes": "Proposed in Mississippi S 2059 \u2014 Artificial Intelligence in Education Task Force Act (Mississippi, null) but bill was failed \u2014 negative premise only.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-ms-s2429-2026",
+        "relationship": "rejected",
+        "citation": "Section 4(2)(f)",
+        "notes": "Proposed in Mississippi S 2429 \u2014 Artificial Intelligence in Education Task Force Act (Mississippi, null) but bill was failed \u2014 negative premise only.",
+        "instrument_binding": false,
+        "instrument_type": "bill"
       }
     ]
   },
@@ -267756,6 +267715,14 @@
         "relationship": "rejected",
         "citation": "Section 4(2)(i)",
         "notes": "Proposed in Mississippi S 2059 \u2014 Artificial Intelligence in Education Task Force Act (Mississippi, null) but bill was failed \u2014 negative premise only.",
+        "instrument_binding": false,
+        "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-ms-s2429-2026",
+        "relationship": "rejected",
+        "citation": "Section 4(2)(i)",
+        "notes": "Proposed in Mississippi S 2429 \u2014 Artificial Intelligence in Education Task Force Act (Mississippi, null) but bill was failed \u2014 negative premise only.",
         "instrument_binding": false,
         "instrument_type": "bill"
       }
@@ -280172,42 +280139,6 @@
     ]
   },
   {
-    "rule_id": "us-nj-s2860-2026-1-b-3",
-    "rule_text": "The program should assist employers in establishing and administering AI apprenticeship programs that comply with State and federal apprenticeship standards.",
-    "rule_text_technical": "The program shall assist employers in establishing and administering apprenticeship programs that comply with State and federal apprenticeship standards.",
-    "category": "institutional_framework",
-    "tags": [
-      "compliance",
-      "apprenticeship_standards",
-      "employer_assistance",
-      "ai_training"
-    ],
-    "first_instance": {
-      "law_id": "us-nj-s2860-2026",
-      "law_name": "New Jersey S 2860 \u2014 Artificial Intelligence Apprenticeship Program",
-      "citation": "\u00a7 1(b)(3)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-nj-s2860-2026",
-        "relationship": "origin",
-        "citation": "\u00a7 1(b)(3)",
-        "notes": "Rule introduced in New Jersey S 2860 \u2014 Artificial Intelligence Apprenticeship Program (New Jersey, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-nj-a4935-2025",
-        "relationship": "similar",
-        "citation": "\u00a7 1(a)",
-        "notes": "Both rules concern AI apprenticeship program establishment within New Jersey's workforce development apparatus, but the new rule formally establishes a named 'Artificial Intelligence Apprenticeship Program' within the Department of Labor and Workforce Development, while the existing rule merely recommends that a program assist employers in establishing AI apprenticeship programs complying with State and federal standards.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
     "rule_id": "us-nj-s2860-2026-2-a",
     "rule_text": "Employers (taxpayers) may claim a corporation business tax credit equal to one-half of wages paid to a qualified AI industry apprentice, capped at $5,000 per apprentice per privilege period, for privilege periods beginning in 2026.",
     "rule_text_technical": "For privilege periods beginning in 2026, a taxpayer shall be allowed a credit against the tax imposed pursuant to section 5 of P.L.1945, c.162 (C.54:10A-5) equal to one-half of the wages paid to a qualified artificial intelligence industry apprentice for the privilege period, not to exceed $5,000 per apprentice per privilege period.",
@@ -284911,6 +284842,14 @@
         "relationship": "origin",
         "citation": "\u00a7 1(b)(3)",
         "notes": "Rule introduced in New Jersey A 4935 \u2014 Artificial Intelligence Apprenticeships (New Jersey, null).",
+        "instrument_binding": false,
+        "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-nj-s2860-2026",
+        "relationship": "origin",
+        "citation": "\u00a7 1(b)(3)",
+        "notes": "Rule introduced in New Jersey S 2860 \u2014 Artificial Intelligence Apprenticeship Program (New Jersey, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
       }
@@ -320071,43 +320010,6 @@
         "relationship": "identical",
         "citation": "\u00a7 39-17-2002(a)(5)",
         "notes": "Near-verbatim match with the existing Tennessee H1455 rule prohibiting training AI to act as or provide information as a licensed mental health or healthcare professional.",
-        "instrument_binding": true,
-        "instrument_type": "statute",
-        "variant_of": "us-tn-h1455-2026"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-tn-h1455-2026-39-17-2002-a-8",
-    "rule_text": "You cannot knowingly train artificial intelligence to simulate a human being, including in appearance, voice, or other mannerisms.",
-    "rule_text_technical": "It is an offense for a person to knowingly train artificial intelligence to simulate a human being, including in appearance, voice, or other mannerisms; violation is a Class A felony.",
-    "category": "prohibited_applications",
-    "tags": [
-      "ai_training",
-      "human_simulation",
-      "synthetic_media",
-      "criminal_offense"
-    ],
-    "first_instance": {
-      "law_id": "us-tn-h1455-2026",
-      "law_name": "Tennessee H 1455 \u2014 Criminal Offenses",
-      "citation": "\u00a7 39-17-2002(a)(8)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-tn-h1455-2026",
-        "relationship": "rejected",
-        "citation": "\u00a7 39-17-2002(a)(8)",
-        "notes": "Proposed in Tennessee H 1455 \u2014 Criminal Offenses (Tennessee, null) but bill was failed \u2014 negative premise only.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-tn-s1493-2026",
-        "relationship": "identical",
-        "citation": "\u00a7 39-17-2002(a)(8)",
-        "notes": "Near-verbatim match with the existing Tennessee H1455 rule prohibiting training AI to simulate a human being in appearance, voice, or other mannerisms.",
         "instrument_binding": true,
         "instrument_type": "statute",
         "variant_of": "us-tn-h1455-2026"
