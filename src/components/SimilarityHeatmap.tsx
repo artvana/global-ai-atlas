@@ -688,7 +688,7 @@ export function SimilarityHeatmap() {
             </span>
             <span className="text-[10px] text-odl-subtle">·</span>
             <span className="text-[10px] text-odl-subtle">
-              Best aligned: <span className="font-semibold text-odl-text">{colLabel(cols[topI])} ↔ {colLabel(cols[topJ])}</span>
+              <Tip label="Best aligned" text="The two jurisdictions with the highest cosine similarity across their full rule portfolios — the most independent regulatory convergence in the dataset. Intra-EU pairs are excluded since their similarity is structural (shared EU law), not independent." />: <span className="font-semibold text-odl-text">{colLabel(cols[topI])} ↔ {colLabel(cols[topJ])}</span>
               {' '}({(topSim * 100).toFixed(0)}%)
             </span>
           </div>
