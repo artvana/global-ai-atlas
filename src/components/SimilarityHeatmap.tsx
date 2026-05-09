@@ -1063,7 +1063,7 @@ export function SimilarityHeatmap() {
                             {si > 0 && (
                               <div className="flex flex-wrap gap-0.5 mt-0.5">
                                 {getSourceLaws(rule, colKeyA).map(law => (
-                                  <a key={law.id} href={law.source_url ?? '#'} target="_blank" rel="noopener noreferrer"
+                                  <a key={law.id} href={law.official_text_url ?? law.summary_url ?? '#'} target="_blank" rel="noopener noreferrer"
                                     onClick={e => e.stopPropagation()}
                                     className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[8px] text-odl-muted hover:text-odl-accent transition-colors border border-odl-border bg-odl-surface hover:bg-white">
                                     {law.short_name} ↗
@@ -1081,7 +1081,7 @@ export function SimilarityHeatmap() {
                             {sj > 0 && (
                               <div className="flex flex-wrap gap-0.5 mt-0.5">
                                 {getSourceLaws(rule, colKeyB).map(law => (
-                                  <a key={law.id} href={law.source_url ?? '#'} target="_blank" rel="noopener noreferrer"
+                                  <a key={law.id} href={law.official_text_url ?? law.summary_url ?? '#'} target="_blank" rel="noopener noreferrer"
                                     onClick={e => e.stopPropagation()}
                                     className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[8px] text-odl-muted hover:text-odl-accent transition-colors border border-odl-border bg-odl-surface hover:bg-white">
                                     {law.short_name} ↗
