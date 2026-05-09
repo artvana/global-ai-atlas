@@ -24,6 +24,13 @@ function stanceLabel(score: number): string {
   return 'Not regulated'
 }
 
+const STANCE_TIPS: Record<string, string> = {
+  'Fully adopted':      'This jurisdiction has enacted a rule that is identical or nearly identical to this provision (similarity score 4–5 of 5).',
+  'Partially adopted':  'This jurisdiction has enacted a broadly similar rule, but with meaningful differences in scope or obligation (score 3 of 5).',
+  'Explicitly opposes': 'This jurisdiction has a rule that directly conflicts with or prohibits what this provision requires.',
+  'Not regulated':      'No rule covering this topic has been identified in this jurisdiction under the current filter.',
+}
+
 // ── region / jurisdiction helpers ─────────────────────────────────────────────
 
 // World Bank regional groupings + Supranational for international bodies
@@ -302,6 +309,23 @@ function classifyLaw(l: { instrument_binding?: boolean; status?: string }): LawB
 
 interface HoverState  { i: number; j: number; x: number; y: number }
 interface ComparedPair { i: number; j: number }
+
+// Inline definition tooltip — dotted underline, hover card above the term.
+function Tip({ label, text }: { label: React.ReactNode; text: string }) {
+  const [show, setShow] = useState(false)
+  return (
+    <span className="relative inline-block"
+      onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
+      <span className="border-b border-dotted border-current cursor-help">{label}</span>
+      {show && (
+        <span style={{ position: 'absolute', bottom: '100%', left: '50%', transform: 'translateX(-50%)', marginBottom: 6, width: 240, zIndex: 9999 }}
+          className="block bg-white border border-odl-border rounded shadow-lg px-2.5 py-2 text-[10px] text-odl-text leading-relaxed pointer-events-none font-normal not-italic whitespace-normal">
+          {text}
+        </span>
+      )}
+    </span>
+  )
+}
 
 export function SimilarityHeatmap() {
   const [heatmapFilters, setHeatmapFilters] = useState<HeatmapFilters>(DEFAULT_HEATMAP_FILTERS)
@@ -648,7 +672,7 @@ export function SimilarityHeatmap() {
         <div className="flex-shrink-0">
           <h2 className="text-sm font-semibold text-odl-text">Regulatory Convergence Map</h2>
           <p className="text-xs text-odl-muted mt-0.5">
-            Cosine similarity of jurisdiction coverage profiles · {n} jurisdictions · {activeRules.length} substantive rules
+            <Tip label="Cosine similarity" text="Measures how alike two jurisdictions' rule portfolios are regardless of size. 100% = identical coverage; 0% = no rules in common; negative = explicit conflicts." /> of jurisdiction coverage profiles · {n} jurisdictions · <Tip label={`${activeRules.length} substantive rules`} text="Rules covering concrete policy choices. Definitions and institutional framework rules are excluded — they inflate similarity scores without reflecting genuine policy alignment." />
           </p>
           {/* inline stats strip */}
           <div className="flex items-center gap-3 mt-1.5 flex-wrap">
@@ -657,8 +681,8 @@ export function SimilarityHeatmap() {
             </span>
             <span className="text-[10px] text-odl-subtle">·</span>
             <span className="text-[10px] text-odl-subtle">
-              Within-region <span className="font-semibold text-odl-text">{(withinAvg * 100).toFixed(0)}%</span>
-              {' '}vs cross-region <span className="font-semibold text-odl-text">{(crossAvg * 100).toFixed(0)}%</span>
+              <Tip label="Within-region" text="Average similarity between jurisdictions in the same World Bank region — reflects shared legal traditions and regulatory coordination." /> <span className="font-semibold text-odl-text">{(withinAvg * 100).toFixed(0)}%</span>
+              {' '}vs <Tip label="cross-region" text="Average similarity between jurisdictions in different World Bank regions — reflects global diffusion of AI regulatory ideas." /> <span className="font-semibold text-odl-text">{(crossAvg * 100).toFixed(0)}%</span>
             </span>
             <span className="text-[10px] text-odl-subtle">·</span>
             <span className="text-[10px] text-odl-subtle">
@@ -721,7 +745,8 @@ export function SimilarityHeatmap() {
           {/* preemption */}
           <div className="flex items-center gap-1">
             <span className="text-[9px]">⚠</span>
-            <span className="text-[9px] text-odl-subtle">Federal preemption risk</span>
+            <Tip label={<span className="text-[9px] text-odl-subtle">Federal preemption risk</span>}
+              text="Some US state AI laws may be invalidated or overridden if Congress enacts conflicting federal legislation. Jurisdictions marked ⚠ have laws flagged as having elevated preemption exposure." />
           </div>
           {/* interaction hint */}
           <span className="text-[9px] text-odl-subtle italic ml-auto">Click a label to rank · Click a cell to compare rules</span>
@@ -1014,12 +1039,12 @@ export function SimilarityHeatmap() {
                         <div className="flex flex-col gap-0.5 text-[9px]">
                           <span className="text-odl-subtle">
                             {labelA}: <span className={`font-medium ${si >= 3 ? 'text-odl-text' : si < 0 ? 'text-red-600' : 'text-slate-400'}`}>
-                              {stanceLabel(si)}
+                              <Tip label={stanceLabel(si)} text={STANCE_TIPS[stanceLabel(si)]} />
                             </span>
                           </span>
                           <span className="text-odl-subtle">
                             {labelB}: <span className={`font-medium ${sj >= 3 ? 'text-odl-text' : sj < 0 ? 'text-red-600' : 'text-slate-400'}`}>
-                              {stanceLabel(sj)}
+                              <Tip label={stanceLabel(sj)} text={STANCE_TIPS[stanceLabel(sj)]} />
                             </span>
                           </span>
                         </div>
