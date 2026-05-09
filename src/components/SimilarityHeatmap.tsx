@@ -62,13 +62,13 @@ const REGION_COLORS: Record<string, string> = {
 
 const REGION_SHORT: Record<string, string> = {
   Supranational:               'Intl',
-  'North America':             'N.Am',
-  'Latin America & Caribbean': 'LAC',
-  'Europe & Central Asia':     'ECA',
-  'Middle East & North Africa':'MENA',
-  'Sub-Saharan Africa':        'SSA',
-  'South Asia':                'S.Asia',
-  'East Asia & Pacific':       'EAP',
+  'North America':             'N. America',
+  'Latin America & Caribbean': 'Lat. America',
+  'Europe & Central Asia':     'Europe & C. Asia',
+  'Middle East & North Africa':'Mid. East & N. Africa',
+  'Sub-Saharan Africa':        'Sub-Saharan Africa',
+  'South Asia':                'South Asia',
+  'East Asia & Pacific':       'E. Asia & Pacific',
   Other:                       'Other',
 }
 
@@ -891,7 +891,7 @@ export function SimilarityHeatmap() {
 
         {/* sidebar */}
         {true && (
-          <div className="w-64 flex-shrink-0 panel p-3 overflow-y-auto" style={{ maxHeight: '72vh' }}>
+          <div className="w-72 flex-shrink-0 panel p-3 overflow-y-auto" style={{ maxHeight: '72vh' }}>
 
             {/* region×region overview (empty state) */}
             {selected === null && comparedPair === null && (
@@ -899,12 +899,12 @@ export function SimilarityHeatmap() {
                 <div className="text-[10px] font-semibold text-odl-text mb-0.5">Cross-Region Similarity</div>
                 <div className="text-[9px] text-odl-subtle mb-2">Average regulatory alignment between region pairs · click a cell or label on the map to drill in</div>
                 <div className="overflow-x-auto">
-                  <table className="text-[8px] border-collapse">
+                  <table className="border-collapse" style={{ fontSize: 8 }}>
                     <thead>
                       <tr>
-                        <th className="w-10" />
+                        <th style={{ minWidth: 10 }} />
                         {presentRegions.map(r => (
-                          <th key={r} className="w-6 pb-1 font-normal" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', height: 48, verticalAlign: 'bottom' }}>
+                          <th key={r} className="pb-1 font-normal" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', height: 90, verticalAlign: 'bottom', width: 30 }}>
                             <span style={{ color: REGION_COLORS[r] ?? '#64748B' }}>{REGION_SHORT[r] ?? r}</span>
                           </th>
                         ))}
@@ -913,20 +913,29 @@ export function SimilarityHeatmap() {
                     <tbody>
                       {presentRegions.map((rA, ri) => (
                         <tr key={rA}>
-                          <td className="pr-1 text-right font-normal whitespace-nowrap" style={{ color: REGION_COLORS[rA] ?? '#64748B' }}>
+                          <td className="pr-1.5 font-normal whitespace-nowrap text-right" style={{ color: REGION_COLORS[rA] ?? '#64748B' }}>
                             {REGION_SHORT[rA] ?? rA}
                           </td>
                           {presentRegions.map((rB, rj) => {
                             const v = regionMatrix[ri]?.[rj]
                             const isDiag = ri === rj
+                            const bg = isNaN(v) ? '#F1F5F9' : simToColor(v, globalAvg, globalStd)
+                            // Use dark text on light cells, light text on dark cells
+                            const textColor = (!isNaN(v) && v > globalAvg) ? 'rgba(0,0,0,0.55)' : 'rgba(0,0,0,0.45)'
                             return (
-                              <td key={rB} title={`${rA} × ${rB}: ${isNaN(v) ? 'n/a' : (v * 100).toFixed(0) + '%'}`}
+                              <td key={rB}
+                                title={`${rA} × ${rB}: ${isNaN(v) ? 'n/a' : (v * 100).toFixed(0) + '%'}`}
                                 style={{
-                                  width: 20, height: 20,
-                                  background: isDiag ? '#F8FAFC' : isNaN(v) ? '#F1F5F9' : simToColor(v, globalAvg, globalStd),
+                                  width: 30, height: 26,
+                                  background: isDiag && isNaN(v) ? '#F1F5F9' : bg,
                                   border: '1px solid #E2E8F0',
+                                  textAlign: 'center', verticalAlign: 'middle',
+                                  color: textColor,
+                                  fontWeight: isDiag ? 600 : 400,
                                 }}
-                              />
+                              >
+                                {!isNaN(v) ? `${(v * 100).toFixed(0)}%` : ''}
+                              </td>
                             )
                           })}
                         </tr>
@@ -934,23 +943,7 @@ export function SimilarityHeatmap() {
                     </tbody>
                   </table>
                 </div>
-                {/* region consistency ranking */}
-                {insights.regionScores.length > 0 && (
-                  <div className="mt-3">
-                    <div className="text-[9px] font-semibold text-odl-text uppercase tracking-wide mb-1">Within-region consistency</div>
-                    <div className="space-y-1">
-                      {insights.regionScores.map(({ region, avg }) => (
-                        <div key={region} className="flex items-center gap-1.5">
-                          <div className="h-1.5 rounded-full flex-1 bg-odl-surface overflow-hidden">
-                            <div className="h-full rounded-full" style={{ width: `${avg * 100}%`, background: REGION_COLORS[region] ?? '#64748B', opacity: 0.7 }} />
-                          </div>
-                          <span className="text-[8px] text-odl-subtle w-16 flex-shrink-0 truncate" title={region}>{REGION_SHORT[region] ?? region}</span>
-                          <span className="text-[8px] text-odl-muted flex-shrink-0">{(avg * 100).toFixed(0)}%</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
+                <div className="text-[8px] text-odl-subtle mt-1.5 italic">Diagonal = within-region consistency</div>
               </>
             )}
 
