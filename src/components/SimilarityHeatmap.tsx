@@ -27,10 +27,10 @@ function stanceLabel(score: number): string {
 }
 
 const STANCE_TIPS: Record<string, string> = {
-  'Fully adopted':      'This jurisdiction has enacted a rule that is identical or nearly identical to this provision (similarity score 4–5 of 5).',
-  'Partially adopted':  'This jurisdiction has enacted a broadly similar rule, but with meaningful differences in scope or obligation (score 3 of 5).',
-  'Explicitly opposes': 'This jurisdiction has a rule that directly conflicts with or prohibits what this provision requires.',
-  'Not regulated':      'No rule covering this topic has been identified in this jurisdiction under the current filter.',
+  'Fully adopted':      'This jurisdiction has this rule on the books, worded nearly the same way.',
+  'Partially adopted':  'A version of this rule exists, but scoped differently or with different conditions.',
+  'Explicitly opposes': 'This jurisdiction has actively legislated against this requirement.',
+  'Not regulated':      'No matching rule found under the current filter.',
 }
 
 // ── region / jurisdiction helpers ─────────────────────────────────────────────
@@ -674,7 +674,7 @@ export function SimilarityHeatmap() {
         <div className="flex-shrink-0">
           <h2 className="text-sm font-semibold text-odl-text">Regulatory Convergence Map</h2>
           <p className="text-xs text-odl-muted mt-0.5">
-            <Tip label="Cosine similarity" text="Measures how alike two jurisdictions' rule portfolios are regardless of size. 100% = identical coverage; 0% = no rules in common; negative = explicit conflicts." /> of jurisdiction coverage profiles · {n} jurisdictions · <Tip label={`${activeRules.length} substantive rules`} text="Rules covering concrete policy choices. Definitions and institutional framework rules are excluded — they inflate similarity scores without reflecting genuine policy alignment." />
+            <Tip label="Cosine similarity" text="How similar two jurisdictions' AI rulebooks are — 0% means nothing in common, 100% means identical. Negative values mean active disagreement." /> of jurisdiction coverage profiles · {n} jurisdictions · <Tip label={`${activeRules.length} substantive rules`} text="Excludes definitions and administrative boilerplate. Only rules that say what you must or can't do." />
           </p>
           {/* inline stats strip */}
           <div className="flex items-center gap-3 mt-1.5 flex-wrap">
@@ -683,12 +683,12 @@ export function SimilarityHeatmap() {
             </span>
             <span className="text-[10px] text-odl-subtle">·</span>
             <span className="text-[10px] text-odl-subtle">
-              <Tip label="Within-region" text="Average similarity between jurisdictions in the same World Bank region — reflects shared legal traditions and regulatory coordination." /> <span className="font-semibold text-odl-text">{(withinAvg * 100).toFixed(0)}%</span>
-              {' '}vs <Tip label="cross-region" text="Average similarity between jurisdictions in different World Bank regions — reflects global diffusion of AI regulatory ideas." /> <span className="font-semibold text-odl-text">{(crossAvg * 100).toFixed(0)}%</span>
+              <Tip label="Within-region" text="How similar countries in the same region are to each other." /> <span className="font-semibold text-odl-text">{(withinAvg * 100).toFixed(0)}%</span>
+              {' '}vs <Tip label="cross-region" text="How similar countries in different regions are to each other." /> <span className="font-semibold text-odl-text">{(crossAvg * 100).toFixed(0)}%</span>
             </span>
             <span className="text-[10px] text-odl-subtle">·</span>
             <span className="text-[10px] text-odl-subtle">
-              <Tip label="Best aligned" text="The two jurisdictions with the highest cosine similarity across their full rule portfolios — the most independent regulatory convergence in the dataset. Intra-EU pairs are excluded since their similarity is structural (shared EU law), not independent." />: <span className="font-semibold text-odl-text">{colLabel(cols[topI])} ↔ {colLabel(cols[topJ])}</span>
+              <Tip label="Best aligned" text="The two jurisdictions that have converged most on the same rules. EU member pairs are excluded — they share law by default, so that's not really convergence." />: <span className="font-semibold text-odl-text">{colLabel(cols[topI])} ↔ {colLabel(cols[topJ])}</span>
               {' '}({(topSim * 100).toFixed(0)}%)
             </span>
           </div>
@@ -737,7 +737,7 @@ export function SimilarityHeatmap() {
           <div className="flex items-center gap-1">
             <span className="text-[9px]">⚠</span>
             <Tip label={<span className="text-[9px] text-odl-subtle">Federal preemption risk</span>}
-              text="Some US state AI laws may be invalidated or overridden if Congress enacts conflicting federal legislation. Jurisdictions marked ⚠ have laws flagged as having elevated preemption exposure." />
+              text="If Congress passes a federal AI law, some state laws could be overridden. ⚠ flags states where this risk has been identified." />
           </div>
           {/* interaction hint */}
           <span className="text-[9px] text-odl-subtle italic ml-auto">Click a label to rank · Click a cell to compare rules</span>
