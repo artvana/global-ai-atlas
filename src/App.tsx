@@ -1,6 +1,5 @@
 import { useState, lazy, Suspense, Component, type ReactNode } from 'react'
 import { SearchInterface } from './components/SearchInterface'
-import { AnalysisCharts } from './components/AnalysisCharts'
 import { EnforcementView } from './components/EnforcementView'
 import { MCPDocs } from './components/MCPDocs'
 import { SimilarityHeatmap } from './components/SimilarityHeatmap'
@@ -11,14 +10,13 @@ import enforcementData from '../data/enforcement.json'
 // Lazy-load the map so a react-simple-maps compat error doesn't crash the whole app
 const GAIAMap = lazy(() => import('./components/GAIAMap').then(m => ({ default: m.GAIAMap })))
 
-type Tab = 'convergence' | 'stats' | 'map' | 'laws' | 'enforcement' | 'mcp'
+type Tab = 'convergence' | 'map' | 'laws' | 'enforcement' | 'mcp'
 
 const TAB_LABELS: Record<Tab, string> = {
   convergence: 'Convergence Map',
-  stats:       'Summary Stats',
-  map:         'GAIA Map',
+  map:         'Global Map',
   laws:        'Laws Database',
-  enforcement: 'Enforcement',
+  enforcement: 'Enforcement (beta)',
   mcp:         'MCP Server',
 }
 
@@ -63,7 +61,7 @@ function App() {
             </div>
             <div className="h-4 w-px bg-odl-border" />
             <nav className="flex gap-0.5">
-              {(['convergence', 'stats', 'map', 'laws', 'enforcement', 'mcp'] as Tab[]).map(t => (
+              {(['convergence', 'map', 'laws', 'enforcement', 'mcp'] as Tab[]).map(t => (
                 <button
                   key={t}
                   onClick={() => setTab(t)}
@@ -95,7 +93,6 @@ function App() {
             </Suspense>
           </ErrorBoundary>
         )}
-        {tab === 'stats'       && <ErrorBoundary resetKey="stats"><AnalysisCharts laws={regulations} /></ErrorBoundary>}
         {tab === 'enforcement' && <ErrorBoundary resetKey="enforcement"><EnforcementView /></ErrorBoundary>}
         {tab === 'mcp'         && <ErrorBoundary resetKey="mcp"><MCPDocs /></ErrorBoundary>}
       </main>
