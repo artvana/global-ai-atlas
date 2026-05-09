@@ -495,7 +495,7 @@ export function SimilarityHeatmap() {
       if ((l as any).preemption_status === 'at_risk') {
         const k = lawColKey(l)
         if (usCollapsed && (k === 'US-FED' || k.startsWith('US-'))) {
-          if (usHasStates) atRiskCols.add('US')
+          // don't propagate ⚠ to the collapsed 'US' column — only show on individual states
         } else if (ciF.has(k)) {
           atRiskCols.add(k)
         }
@@ -810,7 +810,12 @@ export function SimilarityHeatmap() {
                     <div
                       title={showExpand ? 'Expand to individual US states' : 'Collapse US states'}
                       onClick={e => { e.stopPropagation(); setUsCollapsed(v => !v); setSelected(null); setCompared(null) }}
-                      style={{ fontSize: 10, lineHeight: 1, marginBottom: 3, cursor: 'pointer', color: REGION_COLORS['North America'] }}
+                      style={{
+                        fontSize: 13, lineHeight: 1, marginBottom: 4, cursor: 'pointer',
+                        color: REGION_COLORS['North America'],
+                        background: '#EFF6FF', borderRadius: 3, padding: '1px 2px',
+                        border: `1px solid ${REGION_COLORS['North America']}`,
+                      }}
                     >
                       {showExpand ? '⊞' : '⊟'}
                     </div>
