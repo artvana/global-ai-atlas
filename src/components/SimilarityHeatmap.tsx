@@ -708,17 +708,6 @@ export function SimilarityHeatmap() {
               </label>
             ))}
           </div>
-          {/* USA expand/collapse toggle */}
-          {usHasStates && (
-            <button
-              onClick={() => { setUsCollapsed(v => !v); setSelected(null); setCompared(null) }}
-              className="flex items-center gap-1 px-2.5 py-1 text-xs rounded border border-odl-border bg-white text-odl-muted hover:text-odl-text transition-colors"
-              title={usCollapsed ? 'Expand to show individual US states' : 'Collapse to single United States column'}
-            >
-              <span style={{ color: REGION_COLORS['USA'] }}>🇺🇸</span>
-              {usCollapsed ? 'Expand states' : 'Collapse states'}
-            </button>
-          )}
         </div>
       </div>
 
@@ -802,10 +791,14 @@ export function SimilarityHeatmap() {
               const key      = cols[origIdx]
               const isSelCol = selected === origIdx
               const isAtRisk = atRiskCols.has(key)
+              // Show expand/collapse toggle on the US collapsed column,
+              // and a collapse toggle on US-FED (leftmost US column when expanded)
+              const showExpand   = key === 'US' && usHasStates
+              const showCollapse = key === 'US-FED' && usHasStates
               return (
                 <div key={key} style={{
-                  height: HEADER_H, width: CELL, display: 'flex',
-                  alignItems: 'flex-end', justifyContent: 'center', paddingBottom: 3,
+                  height: HEADER_H, width: CELL, display: 'flex', flexDirection: 'column',
+                  alignItems: 'center', justifyContent: 'flex-end', paddingBottom: 3,
                   borderLeft: regionBounds.has(pos) ? '2px solid #CBD5E1' : undefined,
                   opacity: selected !== null && !isSelCol ? 0.3 : 1,
                   transition: 'opacity 0.15s', cursor: 'pointer',
@@ -813,6 +806,15 @@ export function SimilarityHeatmap() {
                 }}
                   onClick={() => setSelected(p => p === origIdx ? null : origIdx)}
                 >
+                  {(showExpand || showCollapse) && (
+                    <div
+                      title={showExpand ? 'Expand to individual US states' : 'Collapse US states'}
+                      onClick={e => { e.stopPropagation(); setUsCollapsed(v => !v); setSelected(null); setCompared(null) }}
+                      style={{ fontSize: 10, lineHeight: 1, marginBottom: 3, cursor: 'pointer', color: REGION_COLORS['North America'] }}
+                    >
+                      {showExpand ? '⊞' : '⊟'}
+                    </div>
+                  )}
                   <span style={{
                     writingMode: 'vertical-rl', transform: 'rotate(180deg)',
                     fontSize: 9, whiteSpace: 'nowrap',
