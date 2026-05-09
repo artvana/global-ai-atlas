@@ -275,29 +275,6 @@ function simToColor(v: number, mean = 0.067, std = 0.074): string {
   return `rgb(${Math.round(255 - t * 221)},${Math.round(255 - t * 58)},${Math.round(255 - t * 161)})`
 }
 
-// ── greedy nearest-neighbour seriation ────────────────────────────────────────
-
-function greedySeriation(sim: number[][], n: number): number[] {
-  let bestAvg = -1, start = 0
-  for (let i = 0; i < n; i++) {
-    const avg = sim[i].reduce((s, x) => s + x, 0) / n
-    if (avg > bestAvg) { bestAvg = avg; start = i }
-  }
-  const visited = new Set([start])
-  const order = [start]
-  let cur = start
-  while (order.length < n) {
-    let best = -1, bestJ = -1
-    for (let j = 0; j < n; j++) {
-      if (!visited.has(j) && sim[cur][j] > best) { best = sim[cur][j]; bestJ = j }
-    }
-    if (bestJ < 0) break
-    visited.add(bestJ); order.push(bestJ); cur = bestJ
-  }
-  for (let i = 0; i < n; i++) if (!visited.has(i)) order.push(i)
-  return order
-}
-
 // ── layout constants ──────────────────────────────────────────────────────────
 
 const CELL     = 13
