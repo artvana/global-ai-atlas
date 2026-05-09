@@ -26,104 +26,70 @@ function stanceLabel(score: number): string {
 
 // ── region / jurisdiction helpers ─────────────────────────────────────────────
 
+// World Bank regional groupings + Supranational for international bodies
 const REGION_ORDER = [
   'Supranational',
-  'USA',
-  'Canada',
-  'Latin America',
-  'Western Europe',
-  'Eastern Europe & Central Asia',
-  'East Asia',
-  'South Asia',
-  'Southeast Asia',
-  'Pacific',
+  'North America',
+  'Latin America & Caribbean',
+  'Europe & Central Asia',
   'Middle East & North Africa',
   'Sub-Saharan Africa',
+  'South Asia',
+  'East Asia & Pacific',
   'Other',
 ]
 
 const REGION_COLORS: Record<string, string> = {
-  Supranational:                   '#6D28D9',
-  USA:                             '#1D4ED8',
-  Canada:                          '#0891B2',
-  'Latin America':                 '#0D9488',
-  'Western Europe':                '#059669',
-  'Eastern Europe & Central Asia': '#4D7C0F',
-  'East Asia':                     '#D97706',
-  'South Asia':                    '#A16207',
-  'Southeast Asia':                '#B45309',
-  Pacific:                         '#0C4A6E',
-  'Middle East & North Africa':    '#DC2626',
-  'Sub-Saharan Africa':            '#9D174D',
-  Other:                           '#64748B',
+  Supranational:               '#6D28D9',
+  'North America':             '#1D4ED8',
+  'Latin America & Caribbean': '#0D9488',
+  'Europe & Central Asia':     '#059669',
+  'Middle East & North Africa':'#DC2626',
+  'Sub-Saharan Africa':        '#9D174D',
+  'South Asia':                '#A16207',
+  'East Asia & Pacific':       '#D97706',
+  Other:                       '#64748B',
 }
 
 const REGION_SHORT: Record<string, string> = {
-  Supranational: 'Intl',
-  USA: 'USA',
-  Canada: 'CA',
-  'Latin America': 'LATAM',
-  'Western Europe': 'W.Eur',
-  'Eastern Europe & Central Asia': 'E.Eur',
-  'East Asia': 'E.Asia',
-  'South Asia': 'S.Asia',
-  'Southeast Asia': 'SE.Asia',
-  Pacific: 'PAC',
-  'Middle East & North Africa': 'MENA',
-  'Sub-Saharan Africa': 'SSA',
-  Other: 'Other',
+  Supranational:               'Intl',
+  'North America':             'N.Am',
+  'Latin America & Caribbean': 'LAC',
+  'Europe & Central Asia':     'ECA',
+  'Middle East & North Africa':'MENA',
+  'Sub-Saharan Africa':        'SSA',
+  'South Asia':                'S.Asia',
+  'East Asia & Pacific':       'EAP',
+  Other:                       'Other',
 }
 
 const COUNTRY_REGION: Record<string, string> = {
-  // Canada
-  Canada: 'Canada',
+  // North America
+  Canada: 'North America',
   // Latin America & Caribbean
-  Brazil: 'Latin America', Mexico: 'Latin America', Argentina: 'Latin America',
-  Chile: 'Latin America', Colombia: 'Latin America', Peru: 'Latin America',
-  Ecuador: 'Latin America', Uruguay: 'Latin America', Panama: 'Latin America',
-  Paraguay: 'Latin America', 'Costa Rica': 'Latin America',
-  'Dominican Republic': 'Latin America', 'Trinidad and Tobago': 'Latin America',
-  // Western Europe (non-EU members; EU members handled via EU_MEMBER_COUNTRIES)
-  'United Kingdom': 'Western Europe',
-  Switzerland:      'Western Europe',
-  Norway:           'Western Europe',
-  Iceland:          'Western Europe',
-  // Eastern Europe & Central Asia
-  Russia:      'Eastern Europe & Central Asia',
-  Ukraine:     'Eastern Europe & Central Asia',
-  Serbia:      'Eastern Europe & Central Asia',
-  Turkey:      'Eastern Europe & Central Asia',
-  Kazakhstan:  'Eastern Europe & Central Asia',
-  Uzbekistan:  'Eastern Europe & Central Asia',
-  Azerbaijan:  'Eastern Europe & Central Asia',
-  Kyrgyzstan:  'Eastern Europe & Central Asia',
-  Tajikistan:  'Eastern Europe & Central Asia',
-  Moldova:     'Eastern Europe & Central Asia',
-  // East Asia
-  China:                   'East Asia',
-  Japan:                   'East Asia',
-  'South Korea':           'East Asia',
-  Taiwan:                  'East Asia',
-  'Hong Kong':             'East Asia',
-  'China (Hong Kong SAR)': 'East Asia',
-  // South Asia
-  India:      'South Asia',
-  Bangladesh: 'South Asia',
-  Pakistan:   'South Asia',
-  'Sri Lanka': 'South Asia',
-  Bhutan:     'South Asia',
-  Nepal:      'South Asia',
-  // Southeast Asia
-  Singapore:           'Southeast Asia',
-  Indonesia:           'Southeast Asia',
-  Malaysia:            'Southeast Asia',
-  Philippines:         'Southeast Asia',
-  Thailand:            'Southeast Asia',
-  Vietnam:             'Southeast Asia',
-  'Brunei Darussalam': 'Southeast Asia',
-  // Pacific
-  Australia:    'Pacific',
-  'New Zealand': 'Pacific',
+  Brazil: 'Latin America & Caribbean', Mexico: 'Latin America & Caribbean',
+  Argentina: 'Latin America & Caribbean', Chile: 'Latin America & Caribbean',
+  Colombia: 'Latin America & Caribbean', Peru: 'Latin America & Caribbean',
+  Ecuador: 'Latin America & Caribbean', Uruguay: 'Latin America & Caribbean',
+  Panama: 'Latin America & Caribbean', Paraguay: 'Latin America & Caribbean',
+  'Costa Rica': 'Latin America & Caribbean',
+  'Dominican Republic': 'Latin America & Caribbean',
+  'Trinidad and Tobago': 'Latin America & Caribbean',
+  // Europe & Central Asia (non-EU; EU members handled via EU_MEMBER_COUNTRIES)
+  'United Kingdom': 'Europe & Central Asia',
+  Switzerland:      'Europe & Central Asia',
+  Norway:           'Europe & Central Asia',
+  Iceland:          'Europe & Central Asia',
+  Russia:           'Europe & Central Asia',
+  Ukraine:          'Europe & Central Asia',
+  Serbia:           'Europe & Central Asia',
+  Turkey:           'Europe & Central Asia',
+  Kazakhstan:       'Europe & Central Asia',
+  Uzbekistan:       'Europe & Central Asia',
+  Azerbaijan:       'Europe & Central Asia',
+  Kyrgyzstan:       'Europe & Central Asia',
+  Tajikistan:       'Europe & Central Asia',
+  Moldova:          'Europe & Central Asia',
   // Middle East & North Africa
   'United Arab Emirates': 'Middle East & North Africa',
   'Saudi Arabia':         'Middle East & North Africa',
@@ -154,6 +120,29 @@ const COUNTRY_REGION: Record<string, string> = {
   Cameroon:        'Sub-Saharan Africa',
   Namibia:         'Sub-Saharan Africa',
   Zambia:          'Sub-Saharan Africa',
+  // South Asia
+  India:       'South Asia',
+  Bangladesh:  'South Asia',
+  Pakistan:    'South Asia',
+  'Sri Lanka': 'South Asia',
+  Bhutan:      'South Asia',
+  Nepal:       'South Asia',
+  // East Asia & Pacific (East Asia + Southeast Asia + Pacific)
+  China:                   'East Asia & Pacific',
+  Japan:                   'East Asia & Pacific',
+  'South Korea':           'East Asia & Pacific',
+  Taiwan:                  'East Asia & Pacific',
+  'Hong Kong':             'East Asia & Pacific',
+  'China (Hong Kong SAR)': 'East Asia & Pacific',
+  Singapore:               'East Asia & Pacific',
+  Indonesia:               'East Asia & Pacific',
+  Malaysia:                'East Asia & Pacific',
+  Philippines:             'East Asia & Pacific',
+  Thailand:                'East Asia & Pacific',
+  Vietnam:                 'East Asia & Pacific',
+  'Brunei Darussalam':     'East Asia & Pacific',
+  Australia:               'East Asia & Pacific',
+  'New Zealand':           'East Asia & Pacific',
 }
 
 const REGIONAL_LABELS: Record<string, string> = {
@@ -245,8 +234,8 @@ const REGIONAL_EXPANSION: Record<string, Set<string> | null> = {
 function colRegion(key: string): string {
   if (key === INTL_REF_KEY) return 'Supranational'
   if (key.startsWith('regional:')) return 'Supranational'
-  if (key === 'US' || key === 'US-FED' || key.startsWith('US-')) return 'USA'
-  if (EU_MEMBER_COUNTRIES.has(key)) return 'Western Europe'
+  if (key === 'US' || key === 'US-FED' || key.startsWith('US-')) return 'North America'
+  if (EU_MEMBER_COUNTRIES.has(key)) return 'Europe & Central Asia'
   return COUNTRY_REGION[key] ?? 'Other'
 }
 
@@ -280,7 +269,7 @@ function simToColor(v: number, mean = 0.067, std = 0.074): string {
 const CELL     = 13
 const HEADER_H = 114
 const LABEL_W  = 136
-const DIAG_COL = '#FFFFFF'
+const DIAG_COL = '#E2E8F0'
 
 // ── component ─────────────────────────────────────────────────────────────────
 
@@ -721,7 +710,7 @@ export function SimilarityHeatmap() {
           </div>
           {/* diagonal */}
           <div className="flex items-center gap-1.5">
-            <div className="h-3 w-3 rounded-sm border border-odl-border" style={{ background: DIAG_COL }} />
+            <div className="h-3 w-3 rounded-sm" style={{ background: DIAG_COL }} />
             <span className="text-[9px] text-odl-subtle">Same jurisdiction</span>
           </div>
           {/* region boundary */}
