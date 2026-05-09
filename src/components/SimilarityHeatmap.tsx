@@ -338,7 +338,6 @@ interface HoverState  { i: number; j: number; x: number; y: number }
 interface ComparedPair { i: number; j: number }
 
 export function SimilarityHeatmap() {
-  const [sortMode, setSortMode]           = useState<'region' | 'cluster'>('region')
   const [heatmapFilters, setHeatmapFilters] = useState<HeatmapFilters>(DEFAULT_HEATMAP_FILTERS)
   const [selected, setSelected]           = useState<number | null>(null)
   const [hover, setHover]                 = useState<HoverState | null>(null)
@@ -631,25 +630,24 @@ export function SimilarityHeatmap() {
   }, [heatmapFilters, usCollapsed])
 
   const n = cols.length
-  const { globalAvg, globalStd, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, regionScores } = insights
+  const { globalAvg, globalStd, topI, topJ, topSim, withinAvg, crossAvg } = insights
   const colorOf = (v: number) => simToColor(v, globalAvg, globalStd)
   const activeRules = substantiveRules
 
   // ── ordered display ──
   const order = useMemo(
-    () => sortMode === 'cluster' ? greedySeriation(simMatrix, n) : Array.from({ length: n }, (_, i) => i),
-    [sortMode, simMatrix, n],
+    () => Array.from({ length: n }, (_, i) => i),
+    [n],
   )
 
   // ── region boundaries ──
   const regionBounds = useMemo(() => {
-    if (sortMode === 'cluster') return new Set<number>()
     const s = new Set<number>()
     for (let p = 1; p < order.length; p++) {
       if (colRegion(cols[order[p]]) !== colRegion(cols[order[p - 1]])) s.add(p)
     }
     return s
-  }, [order, cols, sortMode])
+  }, [order, cols])
 
   // ── rule comparison for clicked pair ──
   const comparison = useMemo(() => {
@@ -718,19 +716,6 @@ export function SimilarityHeatmap() {
               </label>
             ))}
           </div>
-          {/* sort mode */}
-          <div className="flex items-center gap-1.5">
-            <span className="text-xs text-odl-subtle">Order:</span>
-            {(['region', 'cluster'] as const).map(m => (
-              <button key={m} onClick={() => setSortMode(m)}
-                title={m === 'cluster' ? 'Reorders jurisdictions so the most similar regulatory frameworks appear adjacent' : undefined}
-                className={`px-2.5 py-1 text-xs rounded transition-colors ${
-                  sortMode === m ? 'bg-odl-accent text-white' : 'text-odl-muted hover:text-odl-text border border-odl-border bg-white'
-                }`}>
-                {m === 'region' ? 'By Region' : 'By Similarity'}
-              </button>
-            ))}
-          </div>
           {/* USA expand/collapse toggle */}
           {usHasStates && (
             <button
@@ -763,12 +748,10 @@ export function SimilarityHeatmap() {
             <span className="text-[9px] text-odl-subtle">Same jurisdiction</span>
           </div>
           {/* region boundary */}
-          {sortMode === 'region' && (
-            <div className="flex items-center gap-1.5">
-              <div className="h-3 border-l-2 border-slate-400" />
-              <span className="text-[9px] text-odl-subtle">Region boundary</span>
-            </div>
-          )}
+          <div className="flex items-center gap-1.5">
+            <div className="h-3 border-l-2 border-slate-400" />
+            <span className="text-[9px] text-odl-subtle">Region boundary</span>
+          </div>
           {/* preemption */}
           <div className="flex items-center gap-1">
             <span className="text-[9px]">⚠</span>
@@ -963,7 +946,7 @@ export function SimilarityHeatmap() {
                   <div className="mt-3">
                     <div className="text-[9px] font-semibold text-odl-text uppercase tracking-wide mb-1">Within-region consistency</div>
                     <div className="space-y-1">
-                      {insights.regionScores.map(({ region, avg, count }) => (
+                      {insights.regionScores.map(({ region, avg }) => (
                         <div key={region} className="flex items-center gap-1.5">
                           <div className="h-1.5 rounded-full flex-1 bg-odl-surface overflow-hidden">
                             <div className="h-full rounded-full" style={{ width: `${avg * 100}%`, background: REGION_COLORS[region] ?? '#64748B', opacity: 0.7 }} />
