@@ -58,6 +58,22 @@ const REGION_COLORS: Record<string, string> = {
   Other:                           '#64748B',
 }
 
+const REGION_SHORT: Record<string, string> = {
+  Supranational: 'Intl',
+  USA: 'USA',
+  Canada: 'CA',
+  'Latin America': 'LATAM',
+  'Western Europe': 'W.Eur',
+  'Eastern Europe & Central Asia': 'E.Eur',
+  'East Asia': 'E.Asia',
+  'South Asia': 'S.Asia',
+  'Southeast Asia': 'SE.Asia',
+  Pacific: 'PAC',
+  'Middle East & North Africa': 'MENA',
+  'Sub-Saharan Africa': 'SSA',
+  Other: 'Other',
+}
+
 const COUNTRY_REGION: Record<string, string> = {
   // Canada
   Canada: 'Canada',
@@ -180,6 +196,7 @@ function lawColKey(law: AILaw): string {
 function colLabel(key: string): string {
   if (key === INTL_REF_KEY) return 'International / UN'
   if (key.startsWith('regional:')) return REGIONAL_LABELS[key.slice(9)] ?? key.slice(9)
+  if (key === 'US') return 'United States'
   if (key === 'US-FED') return 'US Federal'
   if (key.startsWith('US-')) return US_STATE_NAMES[key] ?? key.slice(3)
   return key
@@ -228,14 +245,15 @@ const REGIONAL_EXPANSION: Record<string, Set<string> | null> = {
 function colRegion(key: string): string {
   if (key === INTL_REF_KEY) return 'Supranational'
   if (key.startsWith('regional:')) return 'Supranational'
-  if (key === 'US-FED' || key.startsWith('US-')) return 'USA'
+  if (key === 'US' || key === 'US-FED' || key.startsWith('US-')) return 'USA'
   if (EU_MEMBER_COUNTRIES.has(key)) return 'Western Europe'
   return COUNTRY_REGION[key] ?? 'Other'
 }
 
 function colSortKey(key: string): string {
   const r = REGION_ORDER.indexOf(colRegion(key)).toString().padStart(2, '0')
-  if (key === 'US-FED') return `${r}_US_0`
+  if (key === 'US') return `${r}_US_0`
+  if (key === 'US-FED') return `${r}_US_0b`
   if (key.startsWith('US-')) return `${r}_US_1_${colLabel(key)}`
   return `${r}_ZZ_${colLabel(key)}`
 }
@@ -326,6 +344,8 @@ export function SimilarityHeatmap() {
   const [hover, setHover]                 = useState<HoverState | null>(null)
   const [comparedPair, setCompared]       = useState<ComparedPair | null>(null)
   const [expanded, setExpanded]           = useState<Set<string>>(new Set())
+  const [usCollapsed, setUsCollapsed]     = useState(true)
+  const [methodologyOpen, setMethodologyOpen] = useState(false)
 
   const toggleBucket = (bucket: LawBucket) => {
     setHeatmapFilters(f => ({ ...f, [bucket]: !f[bucket] }))
@@ -334,7 +354,7 @@ export function SimilarityHeatmap() {
   }
 
   // ── compute coverage vectors + cosine similarity ──
-  const { cols, simMatrix, scores, atRiskCols, insights, substantiveRules } = useMemo(() => {
+  const { cols, simMatrix, scores, atRiskCols, insights, substantiveRules, regionMatrix, presentRegions, usHasStates } = useMemo(() => {
     const candidateLaws = regulations.filter(l => heatmapFilters[classifyLaw(l)])
     const candidateIds = new Set(candidateLaws.map(l => l.id))
     const lawById = new Map(regulations.map(l => [l.id, l]))
@@ -447,18 +467,47 @@ export function SimilarityHeatmap() {
     })
 
     // Drop columns with no coverage under the current filter to declutter the map
-    const activeMask = scores.map(sv => sv.some(s => s !== 0))
-    const fCols      = cols.filter((_, i) => activeMask[i])
-    const fScores    = scores.filter((_, i) => activeMask[i])
-    const nF         = fCols.length
-    const ciF        = new Map(fCols.map((c, i) => [c, i]))
+    const activeMask  = scores.map(sv => sv.some(s => s !== 0))
+    let fCols         = cols.filter((_, i) => activeMask[i])
+    let fScores       = scores.filter((_, i) => activeMask[i])
+    const ciF         = new Map(fCols.map((c, i) => [c, i]))
+
+    // USA collapse: merge all US-FED + US-* columns into a single 'United States' column
+    const usHasStates = fCols.some(c => c === 'US-FED' || c.startsWith('US-'))
+    if (usCollapsed && usHasStates) {
+      const usColIdxs = fCols.map((c, i) => (c === 'US-FED' || c.startsWith('US-')) ? i : -1).filter(x => x >= 0)
+      const usIdxSet  = new Set(usColIdxs)
+      const mergedUS  = new Array(m).fill(0)
+      for (const ui of usColIdxs) {
+        for (let k = 0; k < m; k++) {
+          if (fScores[ui][k] > 0 && fScores[ui][k] > mergedUS[k]) mergedUS[k] = fScores[ui][k]
+          else if (fScores[ui][k] < 0 && mergedUS[k] === 0) mergedUS[k] = fScores[ui][k]
+        }
+      }
+      const baseCols   = fCols.filter((_, i) => !usIdxSet.has(i))
+      const baseScores = fScores.filter((_, i) => !usIdxSet.has(i))
+      const usSortKey  = colSortKey('US')
+      const insertAt   = baseCols.findIndex(c => colSortKey(c) > usSortKey)
+      if (insertAt < 0) {
+        fCols   = [...baseCols, 'US']
+        fScores = [...baseScores, mergedUS]
+      } else {
+        fCols   = [...baseCols.slice(0, insertAt), 'US', ...baseCols.slice(insertAt)]
+        fScores = [...baseScores.slice(0, insertAt), mergedUS, ...baseScores.slice(insertAt)]
+      }
+    }
+    let nF = fCols.length
 
     // Columns with at-risk preemption status (US state laws that may be federally preempted)
     const atRiskCols = new Set<string>()
     candidateLaws.forEach(l => {
       if ((l as any).preemption_status === 'at_risk') {
         const k = lawColKey(l)
-        if (ciF.has(k)) atRiskCols.add(k)
+        if (usCollapsed && (k === 'US-FED' || k.startsWith('US-'))) {
+          if (usHasStates) atRiskCols.add('US')
+        } else if (ciF.has(k)) {
+          atRiskCols.add(k)
+        }
       }
     })
 
@@ -555,11 +604,31 @@ export function SimilarityHeatmap() {
     }
     regionScores.sort((a, b) => b.avg - a.avg)
 
+    // Region×region cross-similarity matrix for the overview sidebar
+    const presentRegions = REGION_ORDER.filter(region =>
+      fCols.some(c => colRegion(c) === region && c !== INTL_REF_KEY)
+    )
+    const regionMatrix: number[][] = presentRegions.map((rA, ri) =>
+      presentRegions.map((rB, rj) => {
+        const idxsA = fCols.map((c, i) => (colRegion(c) === rA && c !== INTL_REF_KEY) ? i : -1).filter(x => x >= 0)
+        const idxsB = fCols.map((c, i) => (colRegion(c) === rB && c !== INTL_REF_KEY) ? i : -1).filter(x => x >= 0)
+        if (ri === rj) {
+          let s = 0, cnt = 0
+          for (const i of idxsA) for (const j of idxsA) if (i !== j) { s += sim[i][j]; cnt++ }
+          return cnt ? s / cnt : NaN
+        }
+        let s = 0, cnt = 0
+        for (const i of idxsA) for (const j of idxsB) { s += sim[i][j]; cnt++ }
+        return cnt ? s / cnt : NaN
+      })
+    )
+
     return {
       cols: fCols, simMatrix: sim, scores: fScores, atRiskCols, substantiveRules,
       insights: { globalAvg, globalStd, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, avgSim, regionScores },
+      regionMatrix, presentRegions, usHasStates,
     }
-  }, [heatmapFilters])
+  }, [heatmapFilters, usCollapsed])
 
   const n = cols.length
   const { globalAvg, globalStd, isolatedIdx, topI, topJ, topSim, withinAvg, crossAvg, usStateAvg, regionScores } = insights
@@ -611,12 +680,28 @@ export function SimilarityHeatmap() {
   return (
     <div>
       {/* ── header + controls ── */}
-      <div className="flex items-start justify-between mb-4 gap-4">
+      <div className="flex items-start justify-between mb-3 gap-4">
         <div className="flex-shrink-0">
           <h2 className="text-sm font-semibold text-odl-text">Regulatory Convergence Map</h2>
           <p className="text-xs text-odl-muted mt-0.5">
-            Cosine similarity of jurisdiction coverage profiles · {n} jurisdictions · {activeRules.length} substantive rules (of {allRules.length} total)
+            Cosine similarity of jurisdiction coverage profiles · {n} jurisdictions · {activeRules.length} substantive rules
           </p>
+          {/* inline stats strip */}
+          <div className="flex items-center gap-3 mt-1.5 flex-wrap">
+            <span className="text-[10px] text-odl-subtle">
+              Avg similarity <span className="font-semibold text-odl-text">{(globalAvg * 100).toFixed(0)}%</span>
+            </span>
+            <span className="text-[10px] text-odl-subtle">·</span>
+            <span className="text-[10px] text-odl-subtle">
+              Within-region <span className="font-semibold text-odl-text">{(withinAvg * 100).toFixed(0)}%</span>
+              {' '}vs cross-region <span className="font-semibold text-odl-text">{(crossAvg * 100).toFixed(0)}%</span>
+            </span>
+            <span className="text-[10px] text-odl-subtle">·</span>
+            <span className="text-[10px] text-odl-subtle">
+              Best aligned: <span className="font-semibold text-odl-text">{colLabel(cols[topI])} ↔ {colLabel(cols[topJ])}</span>
+              {' '}({(topSim * 100).toFixed(0)}%)
+            </span>
+          </div>
         </div>
         <div className="flex items-center gap-4 flex-wrap justify-end">
           {/* instrument checkboxes */}
@@ -638,70 +723,26 @@ export function SimilarityHeatmap() {
             <span className="text-xs text-odl-subtle">Order:</span>
             {(['region', 'cluster'] as const).map(m => (
               <button key={m} onClick={() => setSortMode(m)}
+                title={m === 'cluster' ? 'Reorders jurisdictions so the most similar regulatory frameworks appear adjacent' : undefined}
                 className={`px-2.5 py-1 text-xs rounded transition-colors ${
                   sortMode === m ? 'bg-odl-accent text-white' : 'text-odl-muted hover:text-odl-text border border-odl-border bg-white'
                 }`}>
-                {m === 'region' ? 'By Region' : 'Cluster'}
+                {m === 'region' ? 'By Region' : 'By Similarity'}
               </button>
             ))}
           </div>
+          {/* USA expand/collapse toggle */}
+          {usHasStates && (
+            <button
+              onClick={() => { setUsCollapsed(v => !v); setSelected(null); setCompared(null) }}
+              className="flex items-center gap-1 px-2.5 py-1 text-xs rounded border border-odl-border bg-white text-odl-muted hover:text-odl-text transition-colors"
+              title={usCollapsed ? 'Expand to show individual US states' : 'Collapse to single United States column'}
+            >
+              <span style={{ color: REGION_COLORS['USA'] }}>🇺🇸</span>
+              {usCollapsed ? 'Expand states' : 'Collapse states'}
+            </button>
+          )}
         </div>
-      </div>
-
-      {/* ── key findings ── */}
-      <div className="panel p-4 mb-4">
-        <div className="text-[10px] font-semibold text-odl-subtle uppercase tracking-wider mb-3">Key Findings</div>
-        <div className="grid grid-cols-4 divide-x divide-odl-border gap-0">
-
-          <div className="pr-4">
-            <div className="text-2xl font-semibold text-odl-text">{(globalAvg * 100).toFixed(0)}%</div>
-            <div className="text-[10px] text-odl-muted mt-0.5 leading-snug">avg. regulatory similarity across all {n}×{n} jurisdiction pairs</div>
-          </div>
-
-          <div className="px-4">
-            <div className="text-xs font-semibold leading-tight" style={{ color: colorOf(topSim) }}>
-              {colLabel(cols[topI])} · {colLabel(cols[topJ])}
-            </div>
-            <div className="text-[10px] font-bold mt-0.5" style={{ color: colorOf(topSim) }}>
-              {(topSim * 100).toFixed(0)}% similar
-            </div>
-            <div className="text-[10px] text-odl-subtle mt-0.5">most aligned pair globally</div>
-          </div>
-
-          <div className="px-4">
-            <div className="text-[10px] font-semibold text-odl-text mb-1.5">Regional Consistency</div>
-            <div className="space-y-1">
-              {regionScores.slice(0, 4).map(({ region, avg, count }) => (
-                <div key={region} className="flex items-center gap-1.5">
-                  <span className="text-[9px] text-odl-muted truncate w-28 flex-shrink-0" title={region}>{region}</span>
-                  <div className="h-1.5 flex-1 bg-odl-surface rounded-full overflow-hidden">
-                    <div className="h-full rounded-full" style={{ width: `${avg * 100}%`, background: colorOf(avg) }} />
-                  </div>
-                  <span className="text-[9px] font-medium flex-shrink-0" style={{ color: colorOf(avg) }}>{(avg * 100).toFixed(0)}%</span>
-                  <span className="text-[8px] text-odl-subtle flex-shrink-0">({count})</span>
-                </div>
-              ))}
-            </div>
-            <div className="text-[8px] text-odl-subtle mt-1">within-region avg · {(withinAvg * 100).toFixed(0)}% vs {(crossAvg * 100).toFixed(0)}% cross-region</div>
-          </div>
-
-          <div className="pl-4">
-            <div className="text-xs font-semibold text-odl-muted leading-tight">{colLabel(cols[isolatedIdx])}</div>
-            <div className="text-[10px] font-bold text-slate-400 mt-0.5">{(insights.avgSim[isolatedIdx] * 100).toFixed(0)}% avg</div>
-            <div className="text-[10px] text-odl-subtle mt-0.5">most isolated · least integrated into global frameworks</div>
-          </div>
-
-        </div>
-
-        {/* US states note */}
-        {usStateAvg > 0 && (
-          <div className="mt-3 pt-3 border-t border-odl-border flex items-center gap-2">
-            <div className="text-[10px] text-odl-subtle">
-              <span className="font-medium text-odl-muted">US state internal coherence:</span>{' '}
-              states share {(usStateAvg * 100).toFixed(0)}% avg similarity with each other — driven by shared synthetic-media and employment-AI legislation.
-            </div>
-          </div>
-        )}
       </div>
 
       {/* ── legend ── */}
@@ -745,6 +786,29 @@ export function SimilarityHeatmap() {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* ── methodology note ── */}
+      <div className="mb-3">
+        <button
+          onClick={() => setMethodologyOpen(v => !v)}
+          className="flex items-center gap-1 text-[10px] text-odl-subtle hover:text-odl-muted transition-colors"
+        >
+          <span>{methodologyOpen ? '▾' : '▸'}</span>
+          <span>ⓘ How this works</span>
+        </button>
+        {methodologyOpen && (
+          <div className="mt-1.5 px-3 py-2 bg-odl-surface border border-odl-border rounded text-[10px] text-odl-muted leading-relaxed max-w-2xl">
+            Each jurisdiction is represented as a vector of rule-coverage scores across {activeRules.length} substantive AI policy rules
+            (definitions and institutional framework rules excluded to avoid boilerplate inflation).
+            Similarity is the cosine of that vector — 100% means identical rule portfolios, 0% means no overlap, negative means explicit conflict.
+            EU instruments cascade to all 27 member states; binding regional treaties cascade to members; non-binding international soft-law
+            (OECD, UNESCO, G7) scores into a shared reference column rather than individual countries.
+            {usHasStates && (usCollapsed
+              ? ' The "United States" column shows the highest-coverage score across all federal and state laws combined.'
+              : ' US federal and state laws are shown as separate columns.')}
+          </div>
+        )}
       </div>
 
       {/* ── main layout ── */}
@@ -850,8 +914,69 @@ export function SimilarityHeatmap() {
         </div>
 
         {/* sidebar */}
-        {(selected !== null || comparedPair !== null) && (
+        {true && (
           <div className="w-64 flex-shrink-0 panel p-3 overflow-y-auto" style={{ maxHeight: '72vh' }}>
+
+            {/* region×region overview (empty state) */}
+            {selected === null && comparedPair === null && (
+              <>
+                <div className="text-[10px] font-semibold text-odl-text mb-0.5">Cross-Region Similarity</div>
+                <div className="text-[9px] text-odl-subtle mb-2">Average regulatory alignment between region pairs · click a cell or label on the map to drill in</div>
+                <div className="overflow-x-auto">
+                  <table className="text-[8px] border-collapse">
+                    <thead>
+                      <tr>
+                        <th className="w-10" />
+                        {presentRegions.map(r => (
+                          <th key={r} className="w-6 pb-1 font-normal" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)', height: 48, verticalAlign: 'bottom' }}>
+                            <span style={{ color: REGION_COLORS[r] ?? '#64748B' }}>{REGION_SHORT[r] ?? r}</span>
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {presentRegions.map((rA, ri) => (
+                        <tr key={rA}>
+                          <td className="pr-1 text-right font-normal whitespace-nowrap" style={{ color: REGION_COLORS[rA] ?? '#64748B' }}>
+                            {REGION_SHORT[rA] ?? rA}
+                          </td>
+                          {presentRegions.map((rB, rj) => {
+                            const v = regionMatrix[ri]?.[rj]
+                            const isDiag = ri === rj
+                            return (
+                              <td key={rB} title={`${rA} × ${rB}: ${isNaN(v) ? 'n/a' : (v * 100).toFixed(0) + '%'}`}
+                                style={{
+                                  width: 20, height: 20,
+                                  background: isDiag ? '#F8FAFC' : isNaN(v) ? '#F1F5F9' : simToColor(v, globalAvg, globalStd),
+                                  border: '1px solid #E2E8F0',
+                                }}
+                              />
+                            )
+                          })}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                {/* region consistency ranking */}
+                {insights.regionScores.length > 0 && (
+                  <div className="mt-3">
+                    <div className="text-[9px] font-semibold text-odl-text uppercase tracking-wide mb-1">Within-region consistency</div>
+                    <div className="space-y-1">
+                      {insights.regionScores.map(({ region, avg, count }) => (
+                        <div key={region} className="flex items-center gap-1.5">
+                          <div className="h-1.5 rounded-full flex-1 bg-odl-surface overflow-hidden">
+                            <div className="h-full rounded-full" style={{ width: `${avg * 100}%`, background: REGION_COLORS[region] ?? '#64748B', opacity: 0.7 }} />
+                          </div>
+                          <span className="text-[8px] text-odl-subtle w-16 flex-shrink-0 truncate" title={region}>{REGION_SHORT[region] ?? region}</span>
+                          <span className="text-[8px] text-odl-muted flex-shrink-0">{(avg * 100).toFixed(0)}%</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </>
+            )}
 
             {/* similarity ranking (selected jurisdiction) */}
             {selected !== null && comparedPair === null && (
