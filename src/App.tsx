@@ -4,6 +4,7 @@ import { AnalysisCharts } from './components/AnalysisCharts'
 import { EnforcementView } from './components/EnforcementView'
 import { MCPDocs } from './components/MCPDocs'
 import { SimilarityHeatmap } from './components/SimilarityHeatmap'
+import { LawDetail } from './components/LawDetail'
 import { regulations } from './data/regulations'
 import enforcementData from '../data/enforcement.json'
 
@@ -45,10 +46,10 @@ class ErrorBoundary extends Component<{ children: ReactNode; resetKey?: string }
 function App() {
   const [tab, setTab] = useState<Tab>('convergence')
   const [lawModalId, setLawModalId] = useState<string | null>(null)
+  const lawModal = lawModalId ? regulations.find(r => r.id === lawModalId) ?? null : null
 
   function openLaw(id: string) {
     setLawModalId(id)
-    setTab('laws')
   }
 
   return (
@@ -86,7 +87,7 @@ function App() {
 
       <main className="max-w-screen-xl mx-auto px-6 py-6">
         {tab === 'convergence' && <ErrorBoundary resetKey="convergence"><SimilarityHeatmap onViewLaw={openLaw} /></ErrorBoundary>}
-        {tab === 'laws'        && <ErrorBoundary resetKey="laws"><SearchInterface initialLawId={lawModalId} onModalClose={() => setLawModalId(null)} /></ErrorBoundary>}
+        {tab === 'laws'        && <ErrorBoundary resetKey="laws"><SearchInterface /></ErrorBoundary>}
         {tab === 'map'         && (
           <ErrorBoundary resetKey="map">
             <Suspense fallback={<div className="py-16 text-center text-xs text-odl-subtle">Loading map…</div>}>
@@ -98,6 +99,8 @@ function App() {
         {tab === 'enforcement' && <ErrorBoundary resetKey="enforcement"><EnforcementView /></ErrorBoundary>}
         {tab === 'mcp'         && <ErrorBoundary resetKey="mcp"><MCPDocs /></ErrorBoundary>}
       </main>
+
+      {lawModal && <LawDetail law={lawModal} onClose={() => setLawModalId(null)} />}
 
       <footer className="border-t border-odl-border mt-16 py-6">
         <div className="max-w-screen-xl mx-auto px-6 flex items-center justify-between text-xs text-odl-subtle">
