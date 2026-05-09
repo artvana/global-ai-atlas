@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback, useEffect } from 'react'
 import Fuse from 'fuse.js'
 import type { AILaw, FilterState, SortField, SortDir } from '../types'
 import { regulations } from '../data/regulations'
@@ -77,11 +77,18 @@ function exportJSON(laws: AILaw[]) {
   URL.revokeObjectURL(url)
 }
 
-export function SearchInterface() {
+export function SearchInterface({ initialLawId, onModalClose }: { initialLawId?: string | null, onModalClose?: () => void }) {
   const [filters, setFilters] = useState<FilterState>(EMPTY_FILTERS)
   const [sortField, setSortField] = useState<SortField>('enacted_date')
   const [sortDir, setSortDir] = useState<SortDir>('desc')
   const [selected, setSelected] = useState<AILaw | null>(null)
+
+  useEffect(() => {
+    if (initialLawId) {
+      const law = regulations.find(r => r.id === initialLawId)
+      if (law) setSelected(law)
+    }
+  }, [initialLawId])
 
   const handleSort = useCallback((field: SortField) => {
     setSortDir(prev => sortField === field ? (prev === 'asc' ? 'desc' : 'asc') : 'desc')
@@ -161,7 +168,7 @@ export function SearchInterface() {
         <LawTable laws={filtered} sortField={sortField} sortDir={sortDir} onSort={handleSort} onSelect={setSelected} />
       </div>
 
-      {selected && <LawDetail law={selected} onClose={() => setSelected(null)} />}
+      {selected && <LawDetail law={selected} onClose={() => { setSelected(null); onModalClose?.() }} />}
     </div>
   )
 }

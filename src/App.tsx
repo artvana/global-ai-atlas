@@ -44,6 +44,12 @@ class ErrorBoundary extends Component<{ children: ReactNode; resetKey?: string }
 
 function App() {
   const [tab, setTab] = useState<Tab>('convergence')
+  const [lawModalId, setLawModalId] = useState<string | null>(null)
+
+  function openLaw(id: string) {
+    setLawModalId(id)
+    setTab('laws')
+  }
 
   return (
     <div className="min-h-screen bg-odl-surface">
@@ -79,8 +85,8 @@ function App() {
       </header>
 
       <main className="max-w-screen-xl mx-auto px-6 py-6">
-        {tab === 'convergence' && <ErrorBoundary resetKey="convergence"><SimilarityHeatmap /></ErrorBoundary>}
-        {tab === 'laws'        && <ErrorBoundary resetKey="laws"><SearchInterface /></ErrorBoundary>}
+        {tab === 'convergence' && <ErrorBoundary resetKey="convergence"><SimilarityHeatmap onViewLaw={openLaw} /></ErrorBoundary>}
+        {tab === 'laws'        && <ErrorBoundary resetKey="laws"><SearchInterface initialLawId={lawModalId} onModalClose={() => setLawModalId(null)} /></ErrorBoundary>}
         {tab === 'map'         && (
           <ErrorBoundary resetKey="map">
             <Suspense fallback={<div className="py-16 text-center text-xs text-odl-subtle">Loading map…</div>}>

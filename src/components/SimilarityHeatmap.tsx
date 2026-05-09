@@ -329,7 +329,7 @@ function Tip({ label, text }: { label: React.ReactNode; text: string }) {
   )
 }
 
-export function SimilarityHeatmap() {
+export function SimilarityHeatmap({ onViewLaw }: { onViewLaw?: (id: string) => void } = {}) {
   const [heatmapFilters, setHeatmapFilters] = useState<HeatmapFilters>(DEFAULT_HEATMAP_FILTERS)
   const [selected, setSelected]           = useState<number | null>(null)
   const [hover, setHover]                 = useState<HoverState | null>(null)
@@ -1068,11 +1068,11 @@ export function SimilarityHeatmap() {
                             {si > 0 && (
                               <div className="flex flex-wrap gap-0.5 mt-0.5">
                                 {getSourceLaws(rule, colKeyA).map(law => (
-                                  <a key={law.id} href={law.official_text_url ?? law.summary_url ?? '#'} target="_blank" rel="noopener noreferrer"
-                                    onClick={e => e.stopPropagation()}
+                                  <button key={law.id}
+                                    onClick={e => { e.stopPropagation(); onViewLaw?.(law.id) }}
                                     className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[8px] text-odl-muted hover:text-odl-accent transition-colors border border-odl-border bg-odl-surface hover:bg-white">
                                     {law.short_name} ↗
-                                  </a>
+                                  </button>
                                 ))}
                               </div>
                             )}
