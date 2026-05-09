@@ -21,8 +21,7 @@ const INTL_REF_KEY = 'intl-ref'
 // not its relationship to a canonical origin rule
 function stanceLabel(score: number): string {
   if (score >= 4) return 'Fully adopted'
-  if (score >= 3) return 'Partially adopted'
-  if (score >= 1) return 'Loosely related'
+  if (score >= 1) return 'Partially adopted'
   if (score < 0)  return 'Explicitly opposes'
   return 'Not regulated'
 }
@@ -30,7 +29,6 @@ function stanceLabel(score: number): string {
 const STANCE_TIPS: Record<string, string> = {
   'Fully adopted':      'This jurisdiction has this rule on the books, worded nearly the same way.',
   'Partially adopted':  'A version of this rule exists, but scoped differently or with different conditions.',
-  'Loosely related':    'A broadly related rule exists but the overlap is indirect or partial.',
   'Explicitly opposes': 'This jurisdiction has actively legislated against this requirement.',
   'Not regulated':      'No matching rule found under the current filter.',
 }
