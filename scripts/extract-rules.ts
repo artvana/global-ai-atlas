@@ -262,7 +262,7 @@ ${body}
 For each rule, output a JSON object:
 {
   "citation": "the specific article/section reference, e.g. '§ 15(b)' or 'Art. 5(1)(h)'",
-  "rule_text": "plain English, 1-2 sentences, using 'You must...', 'You cannot...', or 'Individuals have the right to...' framing. Assume the reader is a business or policy-maker subject to this law.",
+  "rule_text": "plain English, 1-2 sentences, using 'You must...', 'You cannot...', or 'Individuals have the right to...' framing. Assume the reader is a business or policy-maker subject to this law. CRITICAL: do NOT include section numbers (§ 15(b), Art. 6(3), s.29D), statutory citations (47 U.S.C. § 230, 18 U.S.C. § 2258A), or cross-references to other specific provisions. Express the rule as a self-contained, portable principle that a reader from a different jurisdiction can understand without access to this law.",
   "rule_text_technical": "precise legal framing preserving all qualifications and conditions",
   "category": "one of: biometric_data | prohibited_applications | conformity_assessment | human_oversight | data_subject_rights | disclosure | enforcement_penalties | risk_classification | training_data_quality | foundation_models | consent | employment_ai | synthetic_media | accountability_governance | data_provenance | private_redress | registration_notification | explainability | technical_documentation | institutional_framework | definitions_scope",
   "tags": ["array of 3-6 lowercase snake_case keywords"]
