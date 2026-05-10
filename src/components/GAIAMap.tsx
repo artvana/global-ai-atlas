@@ -6,7 +6,10 @@ import { regulations } from '../data/regulations'
 import rulesData from '../../data/rules.json'
 import topoData from 'world-atlas/countries-110m.json'
 
-const rules = rulesData as Rule[]
+const BINDING_LAW_IDS = new Set(regulations.filter(l => l.instrument_binding).map(l => l.id))
+
+// Rule explorer only shows rules with at least one instance from a binding law
+const rules = (rulesData as Rule[]).filter(r => r.instances.some(i => BINDING_LAW_IDS.has(i.law_id)))
 
 // ── ISO lookups ───────────────────────────────────────────────────────────
 const COUNTRY_TO_ISO: Record<string, string> = {
