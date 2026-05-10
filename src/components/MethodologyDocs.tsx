@@ -143,20 +143,6 @@ export function MethodologyDocs() {
         legislative tracking and historical analysis.
       </P>
 
-      {/* 2. Source Hierarchy */}
-      <H2 id="sources">2. Source Hierarchy</H2>
-      <P>When sources conflict, the following priority order applies:</P>
-      <Table
-        headers={['Priority', 'Source', 'Authoritative for']}
-        rows={[
-          ['1', 'Official government text (congress.gov, federalregister.gov, eur-lex.europa.eu, cac.gov.cn, state legislature sites)', 'Enacted date, effective date, bill number, penalty amounts'],
-          ['2', 'IAPP AI Governance Legislation Tracker', 'US state law status, most current'],
-          ['3', 'NCSL AI Legislation Database', 'US state law historical record'],
-          ['4', 'Troutman Privacy Blog', 'Weekly state updates, 2025–2026 enactments'],
-          ['5', 'DLA Piper Global AI Regulatory Tracker', 'International law cross-check'],
-          ['6', 'Baker Botts / King & Spalding / Nelson Mullins client alerts', 'Penalty details and compliance analysis'],
-        ]}
-      />
 
       {/* 3. Rule Extraction */}
       <H2 id="extraction">3. Rule Extraction</H2>
