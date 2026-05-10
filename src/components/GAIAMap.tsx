@@ -8,8 +8,11 @@ import topoData from 'world-atlas/countries-110m.json'
 
 const BINDING_LAW_IDS = new Set(regulations.filter(l => l.instrument_binding).map(l => l.id))
 
-// Rule explorer only shows rules with at least one instance from a binding law
-const rules = (rulesData as Rule[]).filter(r => r.instances.some(i => BINDING_LAW_IDS.has(i.law_id)))
+// Rule explorer: binding instances only, no policy-language text
+const rules = (rulesData as Rule[]).filter(r =>
+  r.instances.some(i => BINDING_LAW_IDS.has(i.law_id)) &&
+  !/\(recommendation\)/i.test(r.rule_text)
+)
 
 // ── ISO lookups ───────────────────────────────────────────────────────────
 const COUNTRY_TO_ISO: Record<string, string> = {
