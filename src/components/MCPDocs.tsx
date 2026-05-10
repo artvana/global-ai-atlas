@@ -80,6 +80,30 @@ const TOOLS = [
     what: 'Summary counts by jurisdiction, status, category, and year. Useful for the intro paragraph of any research note.',
     ask: '"Give me headline statistics on global AI regulation for my article."',
   },
+  {
+    name: 'List rule categories',
+    tool: 'list_rule_categories',
+    what: 'List all 21 canonical policy-area categories with their rule counts, sorted by count. Use this to orient before searching rules.',
+    ask: '"What policy areas are covered in the rules database?"',
+  },
+  {
+    name: 'Search rules',
+    tool: 'search_rules',
+    what: 'Keyword search over rule text and tags. Returns rule ID, category, rule text, and how many jurisdictions have adopted each result. Optionally filter by category.',
+    ask: '"Find all rules about biometric data consent across binding laws."',
+  },
+  {
+    name: 'Get rule detail',
+    tool: 'get_rule',
+    what: 'Retrieve a specific rule by ID, including the full list of law instances, relationship type per jurisdiction, and total adoption count.',
+    ask: '"Show me all the jurisdictions that have adopted rule acc-gov-001."',
+  },
+  {
+    name: 'Rule consensus',
+    tool: 'get_rule_consensus',
+    what: 'Return the most widely adopted rules, ranked by the number of jurisdictions that have enacted identical or agreeing versions. Optionally scope to a single category.',
+    ask: '"Which accountability and governance requirements are most universally adopted across binding AI laws?"',
+  },
 ]
 
 export function MCPDocs() {

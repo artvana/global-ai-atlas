@@ -2,6 +2,7 @@ import { useState, lazy, Suspense, Component, type ReactNode } from 'react'
 import { SearchInterface } from './components/SearchInterface'
 import { EnforcementView } from './components/EnforcementView'
 import { MCPDocs } from './components/MCPDocs'
+import { MethodologyDocs } from './components/MethodologyDocs'
 import { SimilarityHeatmap } from './components/SimilarityHeatmap'
 import { LawDetail } from './components/LawDetail'
 import { regulations } from './data/regulations'
@@ -10,14 +11,15 @@ import enforcementData from '../data/enforcement.json'
 // Lazy-load the map so a react-simple-maps compat error doesn't crash the whole app
 const GAIAMap = lazy(() => import('./components/GAIAMap').then(m => ({ default: m.GAIAMap })))
 
-type Tab = 'convergence' | 'map' | 'laws' | 'enforcement' | 'mcp'
+type Tab = 'convergence' | 'map' | 'laws' | 'enforcement' | 'mcp' | 'methodology'
 
 const TAB_LABELS: Record<Tab, string> = {
-  convergence: 'Convergence Map',
-  map:         'Global Map',
-  laws:        'Laws Database',
-  enforcement: 'Enforcement (beta)',
-  mcp:         'MCP Server',
+  convergence:  'Convergence Map',
+  map:          'Global Map',
+  laws:         'Laws Database',
+  enforcement:  'Enforcement (beta)',
+  mcp:          'MCP Server',
+  methodology:  'Methodology',
 }
 
 class ErrorBoundary extends Component<{ children: ReactNode; resetKey?: string }, { error: Error | null }> {
@@ -61,7 +63,7 @@ function App() {
             </div>
             <div className="h-4 w-px bg-odl-border" />
             <nav className="flex gap-0.5">
-              {(['convergence', 'map', 'laws', 'enforcement', 'mcp'] as Tab[]).map(t => (
+              {(['convergence', 'map', 'laws', 'enforcement', 'mcp', 'methodology'] as Tab[]).map(t => (
                 <button
                   key={t}
                   onClick={() => setTab(t)}
@@ -95,6 +97,7 @@ function App() {
         )}
         {tab === 'enforcement' && <ErrorBoundary resetKey="enforcement"><EnforcementView /></ErrorBoundary>}
         {tab === 'mcp'         && <ErrorBoundary resetKey="mcp"><MCPDocs /></ErrorBoundary>}
+        {tab === 'methodology' && <ErrorBoundary resetKey="methodology"><MethodologyDocs /></ErrorBoundary>}
       </main>
 
       {lawModal && <LawDetail law={lawModal} onClose={() => setLawModalId(null)} />}
@@ -103,7 +106,7 @@ function App() {
         <div className="max-w-screen-xl mx-auto px-6 flex items-center justify-between text-xs text-odl-subtle">
           <span>GAIA — Global AI Atlas · v1.0 · May 2026</span>
           <div className="flex items-center gap-4">
-            <a href="./docs/methodology.md" className="odl-link">Methodology</a>
+            <button onClick={() => setTab('methodology')} className="odl-link">Methodology</button>
             <span>MIT License</span>
           </div>
         </div>
