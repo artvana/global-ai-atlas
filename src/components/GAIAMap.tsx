@@ -113,7 +113,7 @@ interface TooltipData {
   adoption?: AdoptionEntry | null
 }
 
-export function GAIAMap() {
+export function GAIAMap({ onViewLaw }: { onViewLaw?: (id: string) => void } = {}) {
   const [tooltip, setTooltip]             = useState<TooltipData | null>(null)
   const [zoom, setZoom]                   = useState(1)
   const [bindingFilter, setBindingFilter] = useState<BindingFilter>('all')
@@ -441,49 +441,37 @@ export function GAIAMap() {
         </div>
       )}
 
-      {/* ── Law-count mode: global bodies + top jurisdictions ────────────── */}
+      {/* ── Law-count mode: global / regional instruments ────────────────── */}
       {!selectedRule && (
-        <>
-          <section>
-            <h3 className="text-xs font-semibold text-odl-subtle tracking-[0.08em] uppercase mb-3 pb-1.5 border-b border-odl-border">
-              Global / Regional Instruments
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {Object.entries(
-                filteredRegs.filter(l => l.country === 'Global / Regional')
-                  .reduce<Record<string, AILaw[]>>((acc, l) => { acc[l.jurisdiction] = [...(acc[l.jurisdiction] ?? []), l]; return acc }, {})
-              ).sort((a, b) => b[1].length - a[1].length).map(([body, laws]) => (
-                <div key={body} className="flex items-center justify-between px-3 py-2 border border-odl-border rounded text-xs">
-                  <span className="font-medium text-odl-text">{body}</span>
-                  <span className="text-odl-subtle font-mono">{laws.length} instrument{laws.length !== 1 ? 's' : ''}</span>
+        <section>
+          <h3 className="text-xs font-semibold text-odl-subtle tracking-[0.08em] uppercase mb-3 pb-1.5 border-b border-odl-border">
+            Global / Regional Instruments
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
+            {Object.entries(
+              filteredRegs.filter(l => l.country === 'Global / Regional')
+                .reduce<Record<string, AILaw[]>>((acc, l) => { acc[l.jurisdiction] = [...(acc[l.jurisdiction] ?? []), l]; return acc }, {})
+            ).sort((a, b) => b[1].length - a[1].length).map(([body, laws]) => (
+              <div key={body}>
+                <div className="text-[10px] font-semibold text-odl-subtle uppercase tracking-wide mb-1.5">{body}</div>
+                <div className="space-y-1">
+                  {laws.map(law => (
+                    <button
+                      key={law.id}
+                      onClick={() => onViewLaw?.(law.id)}
+                      className="w-full text-left px-3 py-2 border border-odl-border rounded text-xs hover:border-odl-accent hover:bg-odl-surface transition-colors flex items-center justify-between gap-2"
+                    >
+                      <span className="font-medium text-odl-text leading-snug">{law.short_name}</span>
+                      <span className={`flex-shrink-0 text-[10px] px-1.5 py-0.5 rounded font-mono ${law.instrument_binding ? 'bg-odl-accent/10 text-odl-accent' : 'bg-odl-surface text-odl-subtle border border-odl-border'}`}>
+                        {law.instrument_binding ? 'binding' : 'policy'}
+                      </span>
+                    </button>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </section>
-
-          <section>
-            <h3 className="text-xs font-semibold text-odl-subtle tracking-[0.08em] uppercase mb-3 pb-1.5 border-b border-odl-border">
-              Most Active Jurisdictions
-            </h3>
-            <div className="space-y-1.5">
-              {(() => {
-                const entries = [...lawsByISO.entries()]
-                  .map(([iso, laws]) => ({ country: ISO_TO_COUNTRY[iso] ?? iso, laws, effective: laws.length + (EU_MEMBER_ISO.has(iso) ? euLaws.length : 0) }))
-                  .sort((a, b) => b.effective - a.effective).slice(0, 10)
-                const max = Math.max(...entries.map(e => e.effective), 1)
-                return entries.map(({ country, laws, effective }) => (
-                  <div key={country} className="flex items-center gap-3 text-xs">
-                    <span className="text-odl-muted w-36 flex-shrink-0 text-right">{country}</span>
-                    <div className="flex-1 h-2 bg-odl-surface rounded-sm overflow-hidden">
-                      <div className="h-full rounded-sm" style={{ width: `${(effective / max) * 100}%`, backgroundColor: getCountColor(effective) }} />
-                    </div>
-                    <span className="text-odl-subtle font-mono w-6 text-right">{laws.length}</span>
-                  </div>
-                ))
-              })()}
-            </div>
-          </section>
-        </>
+              </div>
+            ))}
+          </div>
+        </section>
       )}
 
       {/* ── Tooltip ──────────────────────────────────────────────────────── */}

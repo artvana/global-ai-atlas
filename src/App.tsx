@@ -89,7 +89,7 @@ function App() {
         {tab === 'map'         && (
           <ErrorBoundary resetKey="map">
             <Suspense fallback={<div className="py-16 text-center text-xs text-odl-subtle">Loading map…</div>}>
-              <GAIAMap />
+              <GAIAMap onViewLaw={openLaw} />
             </Suspense>
           </ErrorBoundary>
         )}
