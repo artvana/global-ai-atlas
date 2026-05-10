@@ -287,7 +287,6 @@ export function GAIAMap({ onViewLaw }: { onViewLaw?: (id: string) => void } = {}
               </button>
               <span className="text-xs text-odl-subtle">·</span>
               <span className="text-xs font-medium text-odl-text">{CAT_LABELS[ruleCategory] ?? ruleCategory}</span>
-              <span className="text-[10px] text-odl-subtle">({CAT_RULE_COUNTS[ruleCategory]} rules, sorted by adoption)</span>
             </div>
             <input
               ref={searchRef}
