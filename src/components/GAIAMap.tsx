@@ -12,19 +12,25 @@ const rules = rulesData as Rule[]
 const COUNTRY_TO_ISO: Record<string, string> = {
   'Algeria':'012','Argentina':'032','Australia':'036','Azerbaijan':'031',
   'Bahrain':'048','Bangladesh':'050','Benin':'204','Bhutan':'064','Brazil':'076',
-  'Canada':'124','Chile':'152','China':'156','Colombia':'170',
-  'Denmark':'208','Egypt':'818','Ethiopia':'231','Finland':'246','France':'250',
-  'Germany':'276','Ghana':'288','Hungary':'348','India':'356','Indonesia':'360',
-  'Ireland':'372','Israel':'376','Italy':'380','Japan':'392','Kazakhstan':'398',
-  'Kenya':'404','Malaysia':'458','Mauritius':'480','Mexico':'484','Moldova':'498',
-  'Morocco':'504','Namibia':'516','Nepal':'524','New Zealand':'554','Nigeria':'566',
-  'Oman':'512','Pakistan':'586','Peru':'604','Philippines':'608','Qatar':'634',
-  'Romania':'642','Russia':'643','Rwanda':'646','Saudi Arabia':'682','Serbia':'688',
-  'Singapore':'702','South Africa':'710','South Korea':'410','Spain':'724',
-  'Sri Lanka':'144','Sweden':'752','Switzerland':'756','Taiwan':'158',
-  'Tajikistan':'762','Tanzania':'834','Thailand':'764','Trinidad and Tobago':'780',
-  'Tunisia':'788','Turkey':'792','Ukraine':'804','United Arab Emirates':'784',
-  'United Kingdom':'826','United States':'840','Uruguay':'858','Uzbekistan':'860',
+  'Brunei Darussalam':'096','Cameroon':'120','Canada':'124','Chile':'152',
+  'China':'156','Colombia':'170','Costa Rica':'188','Denmark':'208',
+  'Dominican Republic':'214','Ecuador':'218','Egypt':'818','Estonia':'233',
+  'Ethiopia':'231','Finland':'246','France':'250','Germany':'276','Ghana':'288',
+  'Hungary':'348','India':'356','Indonesia':'360','Ireland':'372','Israel':'376',
+  'Italy':'380','Ivory Coast':'384','Japan':'392','Jordan':'400',
+  'Kazakhstan':'398','Kenya':'404','Kuwait':'414','Kyrgyzstan':'417',
+  'Latvia':'428','Lithuania':'440','Malaysia':'458','Malta':'470',
+  'Mauritius':'480','Mexico':'484','Moldova':'498','Morocco':'504',
+  'Namibia':'516','Nepal':'524','New Zealand':'554','Nigeria':'566',
+  'Norway':'578','Oman':'512','Pakistan':'586','Panama':'591','Paraguay':'600',
+  'Peru':'604','Philippines':'608','Qatar':'634','Romania':'642',
+  'Russia':'643','Rwanda':'646','Saudi Arabia':'682','Senegal':'686',
+  'Serbia':'688','Singapore':'702','South Africa':'710','South Korea':'410',
+  'Spain':'724','Sri Lanka':'144','Sweden':'752','Switzerland':'756',
+  'Taiwan':'158','Tajikistan':'762','Tanzania':'834','Thailand':'764',
+  'Trinidad and Tobago':'780','Tunisia':'788','Turkey':'792','Uganda':'800',
+  'Ukraine':'804','United Arab Emirates':'784','United Kingdom':'826',
+  'United States':'840','Uruguay':'858','Uzbekistan':'860',
   'Vietnam':'704','Zambia':'894','Zimbabwe':'716',
 }
 const ISO_TO_COUNTRY = Object.fromEntries(Object.entries(COUNTRY_TO_ISO).map(([c, iso]) => [iso, c]))
@@ -109,7 +115,7 @@ const ruleFuse = new Fuse(rules, {
 interface AdoptionEntry { relationship: string; lawName: string; lawId: string }
 interface TooltipData {
   x: number; y: number; country: string
-  nationalLaws?: AILaw[]; euLaws?: AILaw[]
+  laws?: AILaw[]
   adoption?: AdoptionEntry | null
 }
 
@@ -126,15 +132,25 @@ export function GAIAMap({ onViewLaw }: { onViewLaw?: (id: string) => void } = {}
   // Reset search when category changes
   useEffect(() => { setRuleQuery('') }, [ruleCategory])
 
-  // ── Filtered regulations for law-count mode ───────────────────────────
+  // ── Filtered regulations for law-count mode (in force only) ──────────
   const filteredRegs = useMemo(() => {
-    if (bindingFilter === 'binding') return regulations.filter(l => l.instrument_binding)
-    if (bindingFilter === 'policy')  return regulations.filter(l => !l.instrument_binding)
-    return regulations
+    const inForce = regulations.filter(l => l.status === 'in_force')
+    if (bindingFilter === 'binding') return inForce.filter(l => l.instrument_binding)
+    if (bindingFilter === 'policy')  return inForce.filter(l => !l.instrument_binding)
+    return inForce
   }, [bindingFilter])
 
+  // Supranational blocs — cascaded to all member-state ISO codes
   const euLaws = useMemo(() =>
-    filteredRegs.filter(l => l.country === 'Global / Regional' && l.jurisdiction === 'European Union')
+    filteredRegs.filter(l => l.country === 'European Union')
+  , [filteredRegs])
+
+  const gccLaws = useMemo(() =>
+    filteredRegs.filter(l => l.country === 'Gulf Cooperation Council')
+  , [filteredRegs])
+
+  const aseanLaws = useMemo(() =>
+    filteredRegs.filter(l => l.country === 'Global / Regional' && l.jurisdiction === 'ASEAN')
   , [filteredRegs])
 
   const lawsByISO = useMemo(() => {
@@ -328,9 +344,9 @@ export function GAIAMap({ onViewLaw }: { onViewLaw?: (id: string) => void } = {}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 flex-1 mr-4">
               {[
                 { label: 'Countries Covered', value: totalCovered },
-                { label: 'Total Instruments',  value: filteredRegs.filter(l => l.country !== 'Global / Regional').length },
-                { label: 'Supranational',      value: filteredRegs.filter(l => l.country === 'Global / Regional').length },
-                { label: 'Binding Laws',       value: filteredRegs.filter(l => l.instrument_binding && l.country !== 'Global / Regional').length },
+                { label: 'National Instruments', value: filteredRegs.filter(l => l.country !== 'Global / Regional' && l.country !== 'European Union' && l.country !== 'Gulf Cooperation Council').length },
+                { label: 'Supranational',        value: filteredRegs.filter(l => l.country === 'Global / Regional' || l.country === 'European Union' || l.country === 'Gulf Cooperation Council').length },
+                { label: 'Binding Laws',         value: filteredRegs.filter(l => l.instrument_binding && l.country !== 'Global / Regional' && l.country !== 'European Union' && l.country !== 'Gulf Cooperation Council').length },
               ].map(s => (
                 <div key={s.label} className="panel p-3 text-center">
                   <div className="text-lg font-bold text-odl-text font-mono">{s.value}</div>
@@ -379,12 +395,15 @@ export function GAIAMap({ onViewLaw }: { onViewLaw?: (id: string) => void } = {}
                     hoverFill = entry ? fill : '#D1D5DB'
                     tooltipData = { x: 0, y: 0, country, adoption: entry }
                   } else {
-                    const nationalLaws = lawsByISO.get(iso) ?? []
-                    const isEU = EU_MEMBER_ISO.has(iso)
-                    const n = nationalLaws.length + (isEU ? euLaws.length : 0)
-                    fill = getCountColor(n)
-                    hoverFill = n > 0 ? '#0D4A8A' : '#D1D5DB'
-                    tooltipData = { x: 0, y: 0, country, nationalLaws, euLaws: isEU ? euLaws : [] }
+                    const laws = [
+                      ...(lawsByISO.get(iso) ?? []),
+                      ...(EU_MEMBER_ISO.has(iso)    ? euLaws    : []),
+                      ...(GCC_MEMBER_ISO.has(iso)   ? gccLaws   : []),
+                      ...(ASEAN_MEMBER_ISO.has(iso) ? aseanLaws : []),
+                    ]
+                    fill = getCountColor(laws.length)
+                    hoverFill = laws.length > 0 ? '#0D4A8A' : '#D1D5DB'
+                    tooltipData = { x: 0, y: 0, country, laws }
                   }
 
                   return (
@@ -488,20 +507,14 @@ export function GAIAMap({ onViewLaw }: { onViewLaw?: (id: string) => void } = {}
                 <div className="text-odl-subtle truncate">via {tooltip.adoption.lawName}</div>
               </>
             ) : <div className="text-odl-muted">Not regulated</div>
-          ) : (tooltip.euLaws && tooltip.nationalLaws && (
-            tooltip.euLaws.length > 0 && tooltip.nationalLaws.length === 0 ? (
-              <>
-                <div className="text-odl-muted mb-1">{tooltip.euLaws.length} EU instrument{tooltip.euLaws.length !== 1 ? 's' : ''} · no national laws</div>
-                {tooltip.euLaws.slice(0, 4).map(l => <div key={l.id} className="text-odl-subtle leading-snug truncate">— {l.short_name}</div>)}
-              </>
-            ) : (
-              <>
-                <div className="text-odl-muted mb-1">{tooltip.nationalLaws.length} national{tooltip.euLaws.length > 0 ? ` + ${tooltip.euLaws.length} EU` : ''} instrument{(tooltip.nationalLaws.length + tooltip.euLaws.length) !== 1 ? 's' : ''}</div>
-                {tooltip.nationalLaws.slice(0, 3).map(l => <div key={l.id} className="text-odl-subtle leading-snug truncate">— {l.short_name}</div>)}
-                {tooltip.nationalLaws.length > 3 && <div className="text-odl-subtle mt-0.5">+{tooltip.nationalLaws.length - 3} more</div>}
-                {tooltip.euLaws.length > 0 && <div className="text-odl-subtle mt-1 pt-1 border-t border-odl-border/50">+ {tooltip.euLaws.length} EU instrument{tooltip.euLaws.length !== 1 ? 's' : ''}</div>}
-              </>
-            )
+          ) : (tooltip.laws && (
+            tooltip.laws.length === 0
+              ? <div className="text-odl-muted">No instruments in force</div>
+              : <>
+                  <div className="text-odl-muted mb-1">{tooltip.laws.length} instrument{tooltip.laws.length !== 1 ? 's' : ''} in force</div>
+                  {tooltip.laws.slice(0, 4).map(l => <div key={l.id} className="text-odl-subtle leading-snug truncate">— {l.short_name}</div>)}
+                  {tooltip.laws.length > 4 && <div className="text-odl-subtle mt-0.5">+{tooltip.laws.length - 4} more</div>}
+                </>
           ))}
         </div>
       )}
