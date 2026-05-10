@@ -267,9 +267,6 @@ export function GAIAMap({ onViewLaw }: { onViewLaw?: (id: string) => void } = {}
                 <div className="text-xs font-medium text-odl-text leading-snug">
                   {CAT_LABELS[cat] ?? cat}
                 </div>
-                <div className="text-[10px] text-odl-subtle mt-0.5">
-                  {CAT_RULE_COUNTS[cat]} rules
-                </div>
               </button>
             ))}
           </div>
