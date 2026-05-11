@@ -11,7 +11,7 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs'
 import { join } from 'path'
-import { execSync } from 'child_process'
+import { execFileSync } from 'child_process'
 import * as cheerio from 'cheerio'
 import TurndownService from 'turndown'
 
@@ -342,10 +342,11 @@ for (const law of toProcess) {
     })()
 
     if (needsCurlCert) {
-      const raw = execSync(
-        `curl -sL --insecure --max-time 30 -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36" "${url}"`,
-        { maxBuffer: 20 * 1024 * 1024 },
-      )
+      const raw = execFileSync('curl', [
+        '-sL', '--insecure', '--max-time', '30',
+        '-A', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+        url,
+      ], { maxBuffer: 20 * 1024 * 1024 })
       bodyText = extractTextFromHtml(raw.toString(), url)
       console.log(`HTML via curl (${Math.round(bodyText.length / 1000)}k chars)`)
     } else {

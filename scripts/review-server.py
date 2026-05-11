@@ -15,6 +15,7 @@ Provides:
   - "Mark Reviewed (no changes)" button: marks law as verified without changes
 """
 
+import html as html_module
 import json, os, re, sys, yaml, threading, time
 from datetime import date
 from pathlib import Path
@@ -121,7 +122,9 @@ def get_text_excerpt(r, max_chars=1500):
     text_path = r.get("text_path", "")
     if not text_path:
         return None
-    full_path = PROJECT_ROOT / text_path
+    full_path = (PROJECT_ROOT / text_path).resolve()
+    if not str(full_path).startswith(str(PROJECT_ROOT.resolve()) + os.sep):
+        return None
     if not full_path.exists():
         return None
     body = full_path.read_text(errors="replace")
@@ -335,6 +338,8 @@ def apply_agent_result(law_id, result, reviewed_by="art@opendatalabs.xyz"):
 
 def fetch_and_save_text(law_id, url):
     """Fetch URL content, convert to clean text, save as law text file. Returns (ok, message)."""
+    if not re.fullmatch(r"[a-z0-9][a-z0-9\-]{2,80}", law_id):
+        return False, "invalid law_id"
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=15) as resp:
@@ -1013,23 +1018,32 @@ class ReviewHandler(BaseHTTPRequestHandler):
             regs, _, _ = load_data()
             r = next((x for x in regs if x["id"] == law_id), None)
             if r and r.get("text_path"):
-                full_path = PROJECT_ROOT / r["text_path"]
+                text_path_val = r["text_path"]
+                full_path = (PROJECT_ROOT / text_path_val).resolve()
+                # Guard against path traversal
+                if not str(full_path).startswith(str(PROJECT_ROOT.resolve()) + os.sep):
+                    self.send_html("<h1>Forbidden</h1>", 403)
+                    return
                 if full_path.exists():
                     content = full_path.read_text(errors="replace")
                     name = r.get("short_name", law_id)
-                    html = f"""<!DOCTYPE html><html><head><title>{name} — Full Text</title>
+                    safe_name    = html_module.escape(name)
+                    safe_law_id  = html_module.escape(law_id)
+                    safe_content = html_module.escape(content)
+                    safe_path    = html_module.escape(text_path_val)
+                    html_out = f"""<!DOCTYPE html><html><head><title>{safe_name} — Full Text</title>
 <style>body{{font-family:-apple-system,sans-serif;max-width:860px;margin:0 auto;padding:24px;}}
 .back{{color:#0d6efd;text-decoration:none;font-size:.875rem;display:block;margin-bottom:16px;}}
 pre{{white-space:pre-wrap;font-size:.82rem;line-height:1.6;background:#f8f9fa;padding:16px;border-radius:6px;border:1px solid #e9ecef;}}
 h1{{font-size:1.2rem;margin-bottom:4px;}}
 .meta{{color:#666;font-size:.82rem;margin-bottom:16px;}}
 </style></head><body>
-<a href="/review/{law_id}" class="back">← Back to review card</a>
-<h1>{name}</h1>
-<div class="meta"><code>{law_id}</code> · {r.get("text_path","")}</div>
-<pre>{content}</pre>
+<a href="/review/{safe_law_id}" class="back">← Back to review card</a>
+<h1>{safe_name}</h1>
+<div class="meta"><code>{safe_law_id}</code> · {safe_path}</div>
+<pre>{safe_content}</pre>
 </body></html>"""
-                    self.send_html(html)
+                    self.send_html(html_out)
                 else:
                     self.send_html("<h1>Text file not found</h1>", 404)
             else:
@@ -1104,6 +1118,9 @@ h1{{font-size:1.2rem;margin-bottom:4px;}}
             text = body.get("text", "")
             if not law_id or not text:
                 self.send_json({"error": "missing law_id or text"}, 400)
+                return
+            if not re.fullmatch(r"[a-z0-9][a-z0-9\-]{2,80}", law_id):
+                self.send_json({"error": "invalid law_id"}, 400)
                 return
             text_path = PROJECT_ROOT / "data" / "texts" / f"{law_id}.md"
             out = f"---\nid: {law_id}\nsaved_date: {TODAY}\n---\n\n{text}"

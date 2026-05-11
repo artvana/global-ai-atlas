@@ -492,7 +492,7 @@ export function SimilarityHeatmap({ onViewLaw }: { onViewLaw?: (id: string) => v
     // Columns with at-risk preemption status (US state laws that may be federally preempted)
     const atRiskCols = new Set<string>()
     candidateLaws.forEach(l => {
-      if ((l as any).preemption_status === 'at_risk') {
+      if (l.preemption_status === 'at_risk') {
         const k = lawColKey(l)
         if (usCollapsed && (k === 'US-FED' || k.startsWith('US-'))) {
           // don't propagate ⚠ to the collapsed 'US' column — only show on individual states
@@ -897,8 +897,7 @@ export function SimilarityHeatmap({ onViewLaw }: { onViewLaw?: (id: string) => v
         </div>
 
         {/* sidebar */}
-        {true && (
-          <div className="w-72 flex-shrink-0 panel p-3 overflow-y-auto" style={{ maxHeight: '72vh' }}>
+        <div className="w-72 flex-shrink-0 panel p-3 overflow-y-auto" style={{ maxHeight: '72vh' }}>
 
             {/* region×region overview (empty state) */}
             {selected === null && comparedPair === null && (
@@ -1160,7 +1159,6 @@ export function SimilarityHeatmap({ onViewLaw }: { onViewLaw?: (id: string) => v
               </>
             )}
           </div>
-        )}
       </div>
 
       {/* ── hover tooltip ── */}

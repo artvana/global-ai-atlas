@@ -38,3 +38,8 @@ data/pdfs/
 
 # Backup files
 data/*.bak
+
+# Operational workflow state (not source)
+data/review-status.json
+data/rules-large-progress.json
+data/embeddings.json
