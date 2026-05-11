@@ -54,11 +54,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-odl-surface">
-      <header className="bg-white border-b border-odl-border sticky top-0 z-40">
+      <header className="bg-odl-bg border-b border-odl-border sticky top-0 z-40">
         <div className="max-w-screen-xl mx-auto px-6 py-0 flex items-center justify-between h-12">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
-              <span className="text-sm font-semibold text-odl-text">GAIA</span>
+              <span className="font-display text-base font-normal tracking-wide text-odl-text">GAIA</span>
               <span className="text-odl-subtle text-xs">Global AI Atlas</span>
             </div>
             <div className="h-4 w-px bg-odl-border" />

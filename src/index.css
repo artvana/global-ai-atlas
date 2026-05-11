@@ -6,9 +6,9 @@
 
 body {
   margin: 0;
-  background-color: #F8F9FA;
-  color: #18181B;
-  font-family: 'Space Grotesk', system-ui, sans-serif;
+  background-color: #f9f6f1;
+  color: #2a1f14;
+  font-family: 'Inter Tight', 'Helvetica Neue', Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -17,9 +17,9 @@ body {
 #root { min-height: 100vh; }
 
 ::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: #F1F3F5; }
-::-webkit-scrollbar-thumb { background: #D4D4D8; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #A1A1AA; }
+::-webkit-scrollbar-track { background: #f0ebe4; }
+::-webkit-scrollbar-thumb { background: #c8bfb4; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #a09082; }
 
 .badge {
   display: inline-flex;
@@ -34,17 +34,17 @@ body {
 }
 
 .panel {
-  background: #FFFFFF;
-  border: 1px solid #E4E4E7;
+  background: #ffffff;
+  border: 1px solid #ddd5ca;
   border-radius: 4px;
 }
 
 .odl-link {
-  color: #1870D5;
+  color: #8b7355;
   text-decoration: none;
   transition: color 0.15s;
 }
 .odl-link:hover {
-  color: #1559B0;
+  color: #7a6447;
   text-decoration: underline;
 }

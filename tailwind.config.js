@@ -5,31 +5,32 @@ export default {
     extend: {
       colors: {
         odl: {
-          bg:            '#FFFFFF',
-          surface:       '#F8F9FA',
-          'surface-2':   '#F1F3F5',
-          border:        '#E4E4E7',
-          'border-strong':'#D4D4D8',
-          text:          '#18181B',
-          muted:         '#71717A',
-          subtle:        '#A1A1AA',
-          accent:        '#1870D5',
-          'accent-hover':'#1559B0',
-          'accent-light':'#3B82F6',
-          'accent-bg':   '#EFF6FF',
-          green:         '#16A34A',
-          'green-bg':    '#F0FDF4',
-          yellow:        '#CA8A04',
-          'yellow-bg':   '#FEFCE8',
-          red:           '#DC2626',
-          'red-bg':      '#FEF2F2',
-          orange:        '#EA580C',
-          'orange-bg':   '#FFF7ED',
+          bg:             '#f9f6f1',   // sand
+          surface:        '#f0ebe4',   // stone
+          'surface-2':    '#e8e2d9',
+          border:         '#ddd5ca',
+          'border-strong':'#c8bfb4',
+          text:           '#2a1f14',   // ink
+          muted:          '#7a6555',   // ink-mid
+          subtle:         '#a09082',   // ink-muted
+          accent:         '#8b7355',   // bark
+          'accent-hover': '#7a6447',
+          'accent-light': '#b09a84',
+          'accent-bg':    '#f5ede5',
+          green:          '#2d6a4f',
+          'green-bg':     '#f0f7f3',
+          yellow:         '#92650a',
+          'yellow-bg':    '#fdf8ee',
+          red:            '#b91c1c',
+          'red-bg':       '#fef3f2',
+          orange:         '#c2410c',
+          'orange-bg':    '#fff4ef',
         },
       },
       fontFamily: {
-        mono: ['IBM Plex Mono', 'Consolas', 'monospace'],
-        sans: ['Space Grotesk', 'system-ui', 'sans-serif'],
+        display: ['Fraunces', 'Georgia', 'serif'],
+        sans:    ['Inter Tight', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+        mono:    ['IBM Plex Mono', 'Consolas', 'monospace'],
       },
       borderRadius: {
         card: '4px',
