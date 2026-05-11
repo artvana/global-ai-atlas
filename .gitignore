@@ -42,4 +42,18 @@ data/*.bak
 # Operational workflow state (not source)
 data/review-status.json
 data/rules-large-progress.json
+data/rules-progress.json
+data/rules-large-progress.json
+data/dedup-suspects.json
 data/embeddings.json
+
+# Internal review notes and workflow files
+data/reviews/
+
+# Claude Code local settings
+.claude/
+
+# Source data dumps (not part of the open dataset)
+NCSL_AI_Legislation_Database_with_links*.csv
+ai_legislation_database.tsv
+COWORKER_FETCH_LIST.md
