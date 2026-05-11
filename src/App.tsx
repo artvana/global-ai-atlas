@@ -107,6 +107,7 @@ function App() {
           <span>GAIA — Global AI Atlas · v1.0 · May 2026</span>
           <div className="flex items-center gap-4">
             <button onClick={() => setTab('methodology')} className="odl-link">Methodology</button>
+            <a href="mailto:art@abal.art" className="odl-link">art@abal.art</a>
             <span>MIT License</span>
           </div>
         </div>

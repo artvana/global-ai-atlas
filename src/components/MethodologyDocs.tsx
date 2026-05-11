@@ -85,7 +85,7 @@ export function MethodologyDocs() {
         <h1 className="text-xl font-bold text-odl-text mb-1 leading-tight">
           GAIA: Global AI Atlas — Methodology
         </h1>
-        <p className="text-xs text-odl-muted">Version 1.1 · May 2026 · <a href="mailto:art@opendatalabs.xyz" className="odl-link">art@opendatalabs.xyz</a></p>
+        <p className="text-xs text-odl-muted">Version 1.1 · May 2026 · <a href="mailto:art@abal.art" className="odl-link">art@abal.art</a></p>
       </div>
 
       {/* Abstract */}
@@ -367,7 +367,7 @@ export function MethodologyDocs() {
           <a href="https://github.com/artvana/global-ai-atlas" target="_blank" rel="noreferrer" className="odl-link">
             github.com/artvana/global-ai-atlas
           </a>
-          {' '}· Questions or corrections: <a href="mailto:art@opendatalabs.xyz" className="odl-link">art@opendatalabs.xyz</a>
+          {' '}· Questions or corrections: <a href="mailto:art@abal.art" className="odl-link">art@abal.art</a>
         </p>
       </div>
 
