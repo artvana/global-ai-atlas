@@ -43853,34 +43853,6 @@
     ]
   },
   {
-    "rule_id": "us-vt-h878-2024-20-v-s-a-4626-a",
-    "rule_text": "You cannot fly a drone for hobby or recreational purposes at an altitude below 100 feet above privately owned real property without prior written consent from the property owner.",
-    "rule_text_technical": "A person shall not fly a drone for hobby or recreational purposes at an altitude of less than 100 feet above privately owned real property unless the person has obtained prior written consent from the property owner.",
-    "category": "prohibited_applications",
-    "tags": [
-      "drone",
-      "private_property",
-      "altitude_restriction",
-      "consent"
-    ],
-    "first_instance": {
-      "law_id": "us-vt-h878-2024",
-      "law_name": "Vermont Act 161 of 2024 (H.878) — Nonconsensual Deepfake Pornography",
-      "citation": "20 V.S.A. § 4626(a)",
-      "date": "2024-06-01"
-    },
-    "instances": [
-      {
-        "law_id": "us-vt-h878-2024",
-        "relationship": "origin",
-        "citation": "20 V.S.A. § 4626(a)",
-        "notes": "Rule introduced in Vermont H.878 / Act 161 (Deepfake Pornography) (Vermont, 2024-06-01).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
     "rule_id": "us-vt-h878-2024-13-v-s-a-3835-a",
     "rule_text": "You cannot place a camera or other surveillance device on privately owned real property with intent to surveil a person or the property unless you have obtained prior written consent from the property owner.",
     "rule_text_technical": "A person shall not place a camera or other surveillance device on any privately owned real property with the intent to conduct surveillance on a person or the property unless the person has obtained prior written consent from the property owner.",
@@ -59543,34 +59515,6 @@
     ]
   },
   {
-    "rule_id": "sg-sg-eioa-2024-presidential-elections-act-s-1",
-    "rule_text": "The Returning Officer must publish and maintain on a publicly accessible Internet website a list of every presidential candidate who has deposited the required sum and consented to publication, after the writ of election is issued and before the end of nomination proceedings.",
-    "rule_text_technical": "After a writ of election is issued and before the end of nomination proceedings under the writ, the Returning Officer must publish and maintain, on an Internet website accessible to the general public, a list of every candidate who has (a) deposited the sum required by this section; and (b) consented to having his or her name so published.",
-    "category": "disclosure",
-    "tags": [
-      "candidate_list",
-      "returning_officer",
-      "publication",
-      "presidential_election"
-    ],
-    "first_instance": {
-      "law_id": "sg-sg-eioa-2024",
-      "law_name": "Elections (Integrity of Online Advertising) (Amendment) Act 2024 (Singapore)",
-      "citation": "Presidential Elections Act s 10(2A) (as inserted by s 3(a))",
-      "date": "2024-10-15"
-    },
-    "instances": [
-      {
-        "law_id": "sg-sg-eioa-2024",
-        "relationship": "origin",
-        "citation": "Presidential Elections Act s 10(2A) (as inserted by s 3(a))",
-        "notes": "Rule introduced in Singapore Elections (AI Integrity) Act 2024 (Singapore, 2024-10-15).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
     "rule_id": "global-fsb-aistability-2024-section-4-2-2",
     "rule_text": "Authorities should implement transparency requirements and volatility control mechanisms (such as circuit breakers) to mitigate AI-driven market correlation vulnerabilities, supported by improved data and surveillance mechanisms (recommendation).",
     "rule_text_technical": "It is recommended that regulatory authorities consider enhanced transparency requirements and market exchanges adopt circuit breaker mechanisms to mitigate vulnerabilities associated with AI-driven market correlations, complemented by better data and surveillance mechanisms enabling consistent monitoring to take pre-emptive action against the accumulation of correlation-related imbalances.",
@@ -70694,33 +70638,6 @@
     ]
   },
   {
-    "rule_id": "us-mt-hb82-2025-45-5-504-1",
-    "rule_text": "You cannot knowingly expose your genitals or intimate parts via electronic communication under circumstances likely to cause affront or alarm in order to abuse, humiliate, harass, or for sexual gratification.",
-    "rule_text_technical": "A person commits the offense of indecent exposure if the person knowingly or purposely exposes the person's genitals or intimate parts by any means, including electronic communication as defined in 45-5-625(5)(a), under circumstances in which the person knows the conduct is likely to cause affront or alarm in order to abuse, humiliate, harass, or degrade another or to arouse or gratify sexual desire.",
-    "category": "prohibited_applications",
-    "tags": [
-      "electronic_exposure",
-      "online_harassment",
-      "digital_offense"
-    ],
-    "first_instance": {
-      "law_id": "us-mt-hb82-2025",
-      "law_name": "Montana House Bill 82 — Crimes Against Children — AI-Generated Sexual Exploitation Material",
-      "citation": "§ 45-5-504(1)",
-      "date": "2025-04-07"
-    },
-    "instances": [
-      {
-        "law_id": "us-mt-hb82-2025",
-        "relationship": "origin",
-        "citation": "§ 45-5-504(1)",
-        "notes": "Rule introduced in Montana HB 82 — AI-Generated CSAM (Montana, 2025-04-07).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
     "rule_id": "us-mt-hb82-2025-46-23-502-10-a-xvii",
     "rule_text": "Grooming of a child for a sexual offense is classified as a 'sexual offense', subjecting offenders to sex offender registration, psychosexual evaluation, and risk-level designation requirements.",
     "rule_text_technical": "'Sexual offense' includes any violation, attempt, solicitation, or conspiracy to commit a violation of [section 1], grooming of a child for a sexual offense, triggering the registration, evaluation, and designation provisions of Title 46, chapter 23.",
@@ -76396,96 +76313,6 @@
         "relationship": "rejected",
         "citation": "§ 2.2-2569",
         "notes": "Virginia S 621 — Commission On Artificial Intelligence (Virginia) proposed this rule but the bill was failed — negative premise.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-nd-hb1613-2025-29-29-4-02-1",
-    "rule_text": "You cannot use information obtained from an unmanned aerial vehicle or robot in a prosecution or proceeding unless the information was obtained pursuant to a search warrant or a recognized warrant exception.",
-    "rule_text_technical": "Information obtained from an unmanned aerial vehicle or robot is not admissible in a prosecution or proceeding within the state unless the information was obtained pursuant to the authority of a search warrant or in accordance with exceptions to the warrant requirement.",
-    "category": "prohibited_applications",
-    "tags": [
-      "drones",
-      "robots",
-      "evidence_admissibility",
-      "warrant",
-      "law_enforcement"
-    ],
-    "first_instance": {
-      "law_id": "us-nd-hb1613-2025",
-      "law_name": "North Dakota House Bill 1613 — Law Enforcement Use of Drones and Robots — AI Systems",
-      "citation": "§ 29-29.4-02(1)",
-      "date": "2025-04-28"
-    },
-    "instances": [
-      {
-        "law_id": "us-nd-hb1613-2025",
-        "relationship": "origin",
-        "citation": "§ 29-29.4-02(1)",
-        "notes": "Rule introduced in North Dakota HB 1613 — Law Enforcement AI Drones and Robots (North Dakota, 2025-04-28).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      },
-      {
-        "law_id": "us-az-h2917-2026",
-        "relationship": "similar",
-        "citation": "§ 28-1246(A)",
-        "notes": "Both prohibit sharing or using government-collected surveillance data outside strict legal boundaries, but Arizona H 2917 specifically prohibits sharing ALPR data with any external entity while North Dakota focuses on use in prosecutions/warrants.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ia-h2087-2026",
-        "relationship": "similar",
-        "citation": "§ 29C.6(1)(b)(5)",
-        "notes": "Both rules restrict government use of drones/UAVs in ways that implicate civil liberties, but North Dakota's rule prohibits use of drone-obtained information in prosecutions without lawful authorization, while Iowa's rule prohibits authorizing drone/UAV/robotics/AI use within disaster emergency proclamations — a different scope, context, and mechanism.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-mn-hb2432-2025",
-        "relationship": "similar",
-        "citation": "Article 5, Sec. 23 (Minn. Stat. 626.19, subd. 3)",
-        "notes": "Both restrict law enforcement use of UAV/drone-collected information, but North Dakota broadly restricts use in prosecutions while Minnesota specifies permitted purposes for UAV deployment by law enforcement agencies.",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-nd-hb1613-2025-29-29-4-02-2",
-    "rule_text": "You cannot use information obtained from a drone or robot in an affidavit of probable cause to obtain a search warrant unless it was obtained under a warrant, a warrant exception, or through monitoring of public lands or international borders.",
-    "rule_text_technical": "Information obtained from the operation of an unmanned aerial vehicle or robot may not be used in an affidavit of probable cause in an effort to obtain a search warrant, unless the information was obtained under the circumstances described in subdivision a or b of subsection 1 or was obtained through the monitoring of public lands or international borders.",
-    "category": "prohibited_applications",
-    "tags": [
-      "drones",
-      "robots",
-      "probable_cause",
-      "surveillance",
-      "law_enforcement"
-    ],
-    "first_instance": {
-      "law_id": "us-nd-hb1613-2025",
-      "law_name": "North Dakota House Bill 1613 — Law Enforcement Use of Drones and Robots — AI Systems",
-      "citation": "§ 29-29.4-02(2)",
-      "date": "2025-04-28"
-    },
-    "instances": [
-      {
-        "law_id": "us-nd-hb1613-2025",
-        "relationship": "origin",
-        "citation": "§ 29-29.4-02(2)",
-        "notes": "Rule introduced in North Dakota HB 1613 — Law Enforcement AI Drones and Robots (North Dakota, 2025-04-28).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      },
-      {
-        "law_id": "us-az-h2917-2026",
-        "relationship": "similar",
-        "citation": "§ 28-1247(A)",
-        "notes": "Both require warrants for accessing surveillance data, but Arizona H 2917 requires probable cause warrants specifying the license plate and time period for ALPR data access while North Dakota focuses on drone/robot data in probable cause affidavits.",
         "instrument_binding": false,
         "instrument_type": "bill"
       }
@@ -105884,35 +105711,6 @@
     ]
   },
   {
-    "rule_id": "us-ca-a82-2025-penal-code-629-51-a-5",
-    "rule_text": "Courts cannot issue orders or warrants for interception of wire/electronic communications, pen register/trap and trace devices, or search warrants for the purpose of investigating or recovering evidence of a violation of law arising out of providing, facilitating, obtaining, or attempting to provide/facilitate/obtain a legally protected health care activity that is lawful under California law.",
-    "rule_text_technical": "'Prohibited violation' means any violation of law that creates liability for, or arising out of, either providing, facilitating, or obtaining a legally protected health care activity, as defined in Section 1549.15, that is lawful under California law, or intending or attempting to provide, facilitate, or obtain a legally protected health care activity, as defined in Section 1549.15, that is lawful under California law. The chapter prohibits issuance of orders or warrants to investigate prohibited violations.",
-    "category": "prohibited_applications",
-    "tags": [
-      "wiretap",
-      "pen_register",
-      "search_warrant",
-      "shield_provision",
-      "surveillance_limit"
-    ],
-    "first_instance": {
-      "law_id": "us-ca-a82-2025",
-      "law_name": "California A 82 — Health Care: Legally Protected Health Care Activity",
-      "citation": "Penal Code § 629.51(a)(5)",
-      "date": "2025-10-13"
-    },
-    "instances": [
-      {
-        "law_id": "us-ca-a82-2025",
-        "relationship": "origin",
-        "citation": "Penal Code § 629.51(a)(5)",
-        "notes": "Rule introduced in California A 82 — Health Care: Legally Protected Health Care Activity (California, 2025-10-13).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
     "rule_id": "us-ca-a82-2025-gov-code-6215-2-g",
     "rule_text": "You cannot falsely attest in an Address Confidentiality Program application that disclosure of the address would endanger safety, or knowingly provide false or incorrect information when applying; doing so is a misdemeanor.",
     "rule_text_technical": "A person who falsely attests in an application that disclosure of the applicant's address would endanger the applicant's safety or the safety of the applicant's family or the minor or incapacitated person on whose behalf the application is made, or who knowingly provides false or incorrect information upon making an application, is guilty of a misdemeanor.",
@@ -105993,35 +105791,6 @@
         "law_id": "us-ca-a82-2025",
         "relationship": "origin",
         "citation": "Penal Code § 1269b(f)(2)",
-        "notes": "Rule introduced in California A 82 — Health Care: Legally Protected Health Care Activity (California, 2025-10-13).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-ca-a82-2025-penal-code-13778-2-a",
-    "rule_text": "State and local law enforcement agencies and officers cannot knowingly arrest or knowingly participate in the arrest of any person for performing, supporting, aiding in, or obtaining a legally protected health care activity in California, if that activity is lawful under California law.",
-    "rule_text_technical": "A state or local law enforcement agency or officer shall not knowingly arrest or knowingly participate in the arrest of any person for performing, supporting, or aiding in the performance of a legally protected health care activity, as defined in Section 1549.15, in this state, or obtaining a legally protected health care activity in this state, if the legally protected health care activity is lawful under the laws of this state.",
-    "category": "prohibited_applications",
-    "tags": [
-      "law_enforcement",
-      "arrest_prohibition",
-      "shield_provision",
-      "interstate",
-      "health_care_activity"
-    ],
-    "first_instance": {
-      "law_id": "us-ca-a82-2025",
-      "law_name": "California A 82 — Health Care: Legally Protected Health Care Activity",
-      "citation": "Penal Code § 13778.2(a)",
-      "date": "2025-10-13"
-    },
-    "instances": [
-      {
-        "law_id": "us-ca-a82-2025",
-        "relationship": "origin",
-        "citation": "Penal Code § 13778.2(a)",
         "notes": "Rule introduced in California A 82 — Health Care: Legally Protected Health Care Activity (California, 2025-10-13).",
         "instrument_binding": true,
         "instrument_type": "statute"
@@ -120757,34 +120526,6 @@
     ]
   },
   {
-    "rule_id": "us-mo-h2273-2026-210-1080-4-5",
-    "rule_text": "Child care providers cannot employ or allow presence of any staff member who has pled guilty or been found guilty of any pornography or related offense under chapter 573 (which now encompasses child sexual abuse material offenses).",
-    "rule_text_technical": "Upon completion of the criminal background check, any child care staff member or prospective child care staff member shall be ineligible for employment or presence at a licensed or license-exempt child care facility or unlicensed registered child care facility, and disqualified from receipt of state or federal funds for child care services, if such person has pled guilty or nolo contendere to or been found guilty of any misdemeanor or felony for pornography or related offense as defined in chapter 573.",
-    "category": "employment_ai",
-    "tags": [
-      "background_check",
-      "csam",
-      "child_care",
-      "disqualifying_offense"
-    ],
-    "first_instance": {
-      "law_id": "us-mo-h2273-2026",
-      "law_name": "Missouri H 2273 — Anti Trafficking Efforts",
-      "citation": "§ 210.1080.4(5)",
-      "date": "2026-04-07"
-    },
-    "instances": [
-      {
-        "law_id": "us-mo-h2273-2026",
-        "relationship": "origin",
-        "citation": "§ 210.1080.4(5)",
-        "notes": "Rule introduced in Missouri H 2273 — Anti Trafficking Efforts (Missouri, 2026-04-07).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
     "rule_id": "us-mo-h2273-2026-210-1080-2",
     "rule_text": "Before employing or allowing presence of a child care staff member, you must request a criminal background check (FBI fingerprint check, National Sex Offender Registry, and state criminal/sex offender/child abuse registries) from the department.",
     "rule_text_technical": "Prior to the employment or presence of a child care staff member in a licensed, license-exempt, or unlicensed registered child care facility, the child care provider shall request the results of a criminal background check from the department, which includes an FBI fingerprint check, search of the National Crime Information Center's National Sex Offender Registry, and searches of state criminal registries, sex offender registries, and child abuse and neglect registries in Missouri and each state where the staff member resided in the preceding five years.",
@@ -122456,64 +122197,6 @@
     ]
   },
   {
-    "rule_id": "us-al-s292-2026-35-21-5-a",
-    "rule_text": "If you are a real estate agent or broker, you cannot enter into an agreement to sell or lease real property when the seller is unknown to you and is not physically present, unless the seller provides government-issued identification and ownership records of the property.",
-    "rule_text_technical": "A real estate agent or broker licensed under Chapter 27 of Title 34 may not enter into an agreement to sell or lease real property when the seller is unknown to the agent/broker and is not physically present to meet with them, unless the seller provides government-issued identification and ownership records of the real property.",
-    "category": "biometric_data",
-    "tags": [
-      "identity_verification",
-      "real_estate",
-      "government_id",
-      "fraud_prevention",
-      "seller_verification"
-    ],
-    "first_instance": {
-      "law_id": "us-al-s292-2026",
-      "law_name": "Alabama S 292 — Alabama Property Protection Act of 2026",
-      "citation": "§ 35-21-5(a)",
-      "date": "2026-04-15"
-    },
-    "instances": [
-      {
-        "law_id": "us-al-s292-2026",
-        "relationship": "origin",
-        "citation": "§ 35-21-5(a)",
-        "notes": "Rule introduced in Alabama S 292 — Alabama Property Protection Act of 2026 (Alabama, 2026-04-15).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-al-s292-2026-35-21-5-b",
-    "rule_text": "If you are a settlement agent, you must conduct identity document validation and identity verification of the seller before closing any transfer of Class III properties that are vacant or non-owner-occupied and unencumbered by a security instrument.",
-    "rule_text_technical": "Prior to closing any transfer of Class III properties (as defined in Section 40-8-1), a settlement agent shall conduct identity document validation and identity verification of the seller of real property that is vacant or not owner-occupied and unencumbered by a security instrument.",
-    "category": "biometric_data",
-    "tags": [
-      "identity_verification",
-      "settlement_agent",
-      "closing",
-      "identity_documents",
-      "real_estate"
-    ],
-    "first_instance": {
-      "law_id": "us-al-s292-2026",
-      "law_name": "Alabama S 292 — Alabama Property Protection Act of 2026",
-      "citation": "§ 35-21-5(b)",
-      "date": "2026-04-15"
-    },
-    "instances": [
-      {
-        "law_id": "us-al-s292-2026",
-        "relationship": "origin",
-        "citation": "§ 35-21-5(b)",
-        "notes": "Rule introduced in Alabama S 292 — Alabama Property Protection Act of 2026 (Alabama, 2026-04-15).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
     "rule_id": "us-al-s292-2026-35-21-5-d",
     "rule_text": "You must maintain documentation demonstrating compliance with the seller identity verification requirements for five years.",
     "rule_text_technical": "The documentation demonstrating compliance required under Section 35-21-5 shall be maintained for five years.",
@@ -122618,35 +122301,6 @@
         "law_id": "us-al-s292-2026",
         "relationship": "origin",
         "citation": "§ 12-13-55(b)",
-        "notes": "Rule introduced in Alabama S 292 — Alabama Property Protection Act of 2026 (Alabama, 2026-04-15).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-al-s292-2026-8-19j-2-a",
-    "rule_text": "If you operate an online real estate platform and a listing originates directly from a property owner (not first listed with a licensed broker or MLS), you must require a copy of the owner's unexpired government-issued photo ID and ownership documentation (deed, county recorder records, title history, or will) before publicly publishing the listing.",
-    "rule_text_technical": "For a listing that originates from an online real estate platform through a direct contract with the property owner and is not first listed with a licensed real estate broker, real estate brokerage, or multiple listing service, the platform shall require, before publishing/hosting/advertising/disseminating: (1) a copy of the owner's unexpired government-issued ID with photo, name, and address; and (2) a copy of the official county recorder's records showing owner of record, a copy of the deed with the owner's name, a title history, or a last will and testament.",
-    "category": "biometric_data",
-    "tags": [
-      "online_platform",
-      "identity_verification",
-      "ownership_verification",
-      "real_estate_platform",
-      "listing_requirements"
-    ],
-    "first_instance": {
-      "law_id": "us-al-s292-2026",
-      "law_name": "Alabama S 292 — Alabama Property Protection Act of 2026",
-      "citation": "§ 8-19J-2(a)",
-      "date": "2026-04-15"
-    },
-    "instances": [
-      {
-        "law_id": "us-al-s292-2026",
-        "relationship": "origin",
-        "citation": "§ 8-19J-2(a)",
         "notes": "Rule introduced in Alabama S 292 — Alabama Property Protection Act of 2026 (Alabama, 2026-04-15).",
         "instrument_binding": true,
         "instrument_type": "statute"
@@ -122793,34 +122447,6 @@
     ]
   },
   {
-    "rule_id": "us-al-s292-2026-36-20-73-1-a",
-    "rule_text": "Notaries must positively identify a signatory through personal knowledge or examination of government-issued photo ID before acknowledging a signature, and the acknowledgment must occur in the notary's physical presence within Alabama, except as otherwise allowed.",
-    "rule_text_technical": "Except as otherwise provided, any signature acknowledged by a notary public shall be executed within this state and in the physical presence of the notary public at the time of acknowledgment, only after the notary has positively identified the prospective signatory via personal knowledge or examination of photo identification issued by a governmental entity or agency.",
-    "category": "biometric_data",
-    "tags": [
-      "notary",
-      "identity_verification",
-      "photo_id",
-      "physical_presence"
-    ],
-    "first_instance": {
-      "law_id": "us-al-s292-2026",
-      "law_name": "Alabama S 292 — Alabama Property Protection Act of 2026",
-      "citation": "§ 36-20-73.1(a)",
-      "date": "2026-04-15"
-    },
-    "instances": [
-      {
-        "law_id": "us-al-s292-2026",
-        "relationship": "origin",
-        "citation": "§ 36-20-73.1(a)",
-        "notes": "Rule introduced in Alabama S 292 — Alabama Property Protection Act of 2026 (Alabama, 2026-04-15).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
     "rule_id": "us-al-s292-2026-36-20-73-1-d-2",
     "rule_text": "If conducting remote notarization via two-way audio-video communication, the notary must be physically located in Alabama and must record and maintain the audio-video communication for seven years.",
     "rule_text_technical": "An individual may personally appear before an acknowledging notary through the use of two-way audio-video communication technology that allows the notary and a remotely located signatory to communicate simultaneously by sight and sound, provided that: (i) the notary public is physically located in this state; and (ii) the two-way audio-video communication is recorded and maintained for a period of seven years by the notary public.",
@@ -122870,34 +122496,6 @@
         "law_id": "us-al-s292-2026",
         "relationship": "origin",
         "citation": "§ 36-20-73.1(e)(1)",
-        "notes": "Rule introduced in Alabama S 292 — Alabama Property Protection Act of 2026 (Alabama, 2026-04-15).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-al-s292-2026-36-20-73-1-e-2",
-    "rule_text": "Before performing a remote electronic notarial act, the notary must verify that the remotely located signatory does not appear incompetent, lacking understanding, or acting involuntarily or under duress.",
-    "rule_text_technical": "The remote notary shall verify that the remotely located signatory does not appear, in the judgment of the electronic notary, to be incompetent, lacking in understanding of the nature and consequences of the transaction requiring the notarial act, or acting involuntarily, under duress, or under undue influence.",
-    "category": "human_oversight",
-    "tags": [
-      "remote_notarization",
-      "competency_check",
-      "duress_check",
-      "human_judgment"
-    ],
-    "first_instance": {
-      "law_id": "us-al-s292-2026",
-      "law_name": "Alabama S 292 — Alabama Property Protection Act of 2026",
-      "citation": "§ 36-20-73.1(e)(2)",
-      "date": "2026-04-15"
-    },
-    "instances": [
-      {
-        "law_id": "us-al-s292-2026",
-        "relationship": "origin",
-        "citation": "§ 36-20-73.1(e)(2)",
         "notes": "Rule introduced in Alabama S 292 — Alabama Property Protection Act of 2026 (Alabama, 2026-04-15).",
         "instrument_binding": true,
         "instrument_type": "statute"
@@ -122988,34 +122586,6 @@
     ]
   },
   {
-    "rule_id": "us-al-s292-2026-36-20-73-1-h-1",
-    "rule_text": "An electronic notary must refuse to perform a remote electronic notarial act if there are reasonable grounds to believe the signatory appears incompetent, lacks understanding of the transaction, or is acting involuntarily, under duress, or under undue influence.",
-    "rule_text_technical": "An electronic notary shall refuse to perform a remote electronic notarial act if the electronic notary has reasonable grounds to believe the remotely located signatory appears in the judgment of the electronic notary to be incompetent, lacking in understanding of the nature and consequences of the transaction requiring the notarial act, or acting involuntarily, under duress, or under undue influence.",
-    "category": "human_oversight",
-    "tags": [
-      "refusal_obligation",
-      "remote_notarization",
-      "competency",
-      "duress"
-    ],
-    "first_instance": {
-      "law_id": "us-al-s292-2026",
-      "law_name": "Alabama S 292 — Alabama Property Protection Act of 2026",
-      "citation": "§ 36-20-73.1(h)(1)",
-      "date": "2026-04-15"
-    },
-    "instances": [
-      {
-        "law_id": "us-al-s292-2026",
-        "relationship": "origin",
-        "citation": "§ 36-20-73.1(h)(1)",
-        "notes": "Rule introduced in Alabama S 292 — Alabama Property Protection Act of 2026 (Alabama, 2026-04-15).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
     "rule_id": "us-al-s292-2026-36-20-73-1-h-2",
     "rule_text": "An electronic notary must refuse to perform a remote electronic notarial act if the communication technology is not secure or the image of the signatory appears to be artificially generated.",
     "rule_text_technical": "An electronic notary shall refuse to perform a remote electronic notarial act if the electronic notary becomes aware that the communication technology is not secure or the image presented of the signatory appears to be artificially generated.",
@@ -123038,34 +122608,6 @@
         "law_id": "us-al-s292-2026",
         "relationship": "origin",
         "citation": "§ 36-20-73.1(h)(2)",
-        "notes": "Rule introduced in Alabama S 292 — Alabama Property Protection Act of 2026 (Alabama, 2026-04-15).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-al-s292-2026-36-20-73-1-j",
-    "rule_text": "You cannot use remote notarization to notarize an absentee ballot application, an absentee ballot affidavit, or for any purpose related to voting.",
-    "rule_text_technical": "Remote notarization may not be used to notarize an absentee ballot application or an absentee ballot affidavit, or for any purpose related to voting.",
-    "category": "prohibited_applications",
-    "tags": [
-      "voting",
-      "absentee_ballot",
-      "remote_notarization_prohibition",
-      "election_integrity"
-    ],
-    "first_instance": {
-      "law_id": "us-al-s292-2026",
-      "law_name": "Alabama S 292 — Alabama Property Protection Act of 2026",
-      "citation": "§ 36-20-73.1(j)",
-      "date": "2026-04-15"
-    },
-    "instances": [
-      {
-        "law_id": "us-al-s292-2026",
-        "relationship": "origin",
-        "citation": "§ 36-20-73.1(j)",
         "notes": "Rule introduced in Alabama S 292 — Alabama Property Protection Act of 2026 (Alabama, 2026-04-15).",
         "instrument_binding": true,
         "instrument_type": "statute"
@@ -124721,34 +124263,6 @@
         "notes": "Both prohibit using deepfake/intimate-image material as a tool for extortion or threats, but the Ohio rule specifically targets malicious deepfake recordings falsely depicting speech or actions, while the Vermont rule covers a broader range of threat types including crime accusations, injury threats, and immigration status exposure.",
         "instrument_binding": false,
         "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-vt-h626-2026-13-v-s-a-2605-b",
-    "rule_text": "You cannot intentionally view the intimate areas of another person, or view a person engaged in sexual conduct, without their knowledge and consent, where the person has a reasonable expectation of privacy.",
-    "rule_text_technical": "No person shall intentionally view: (1) the intimate areas of another person without that person's knowledge and consent while the person is in a place where, or under circumstances in which, the person would have a reasonable expectation of privacy; or (2) a person engaged in sexual conduct without that person's knowledge and consent while the person is in a place where, or under circumstances in which, the person would have a reasonable expectation of privacy.",
-    "category": "prohibited_applications",
-    "tags": [
-      "voyeurism",
-      "viewing",
-      "reasonable_expectation_of_privacy",
-      "consent"
-    ],
-    "first_instance": {
-      "law_id": "us-vt-h626-2026",
-      "law_name": "Vermont H 626 — Sexual Extortion, Voyeurism",
-      "citation": "13 V.S.A. § 2605(b)",
-      "date": "2026-04-28"
-    },
-    "instances": [
-      {
-        "law_id": "us-vt-h626-2026",
-        "relationship": "origin",
-        "citation": "13 V.S.A. § 2605(b)",
-        "notes": "Rule introduced in Vermont H 626 — Sexual Extortion, Voyeurism (Vermont, 2026-04-28).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
       }
     ]
   },
@@ -181491,34 +181005,6 @@
     ]
   },
   {
-    "rule_id": "us-fl-s1178-2026-775-36-2",
-    "rule_text": "Without state or federal approval, you cannot prevent another person in Florida from violating foreign laws that are not also Florida or US laws, nor investigate, monitor, or surveil another person in Florida for purposes of preventing such violations.",
-    "rule_text_technical": "Without the approval of the state or the United States, a person may not (a) prevent another person in this state from violating the laws of a foreign government which are not also the laws of this state or the United States; or (b) investigate, monitor, or surveil another person in this state for the purpose of preventing the other person from violating the laws of a foreign government which are not also the laws of this state or the United States.",
-    "category": "prohibited_applications",
-    "tags": [
-      "surveillance",
-      "foreign_law_enforcement",
-      "monitoring",
-      "transnational_repression"
-    ],
-    "first_instance": {
-      "law_id": "us-fl-s1178-2026",
-      "law_name": "Florida S 1178 — Foreign Influence",
-      "citation": "§ 775.36(2)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-fl-s1178-2026",
-        "relationship": "rejected",
-        "citation": "§ 775.36(2)",
-        "notes": "Proposed in Florida S 1178 — Foreign Influence (Florida, null) but bill was failed — negative premise only.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
     "rule_id": "us-fl-s1194-2026-1001-03-20-a-2",
     "rule_text": "Students must disclose how AI was used in their academic work.",
     "rule_text_technical": "The statewide AI policies must require a student to disclose how AI was used in his or her work.",
@@ -188280,154 +187766,6 @@
     ]
   },
   {
-    "rule_id": "us-ga-s505-2026-33-9-4-9-33-9-21-p",
-    "rule_text": "You cannot base any standard or rating plan for vehicle insurance, in whole or in part, directly or indirectly, on race, creed, or ethnic extraction.",
-    "rule_text_technical": "No insurer shall base any standard or rating plan on vehicle insurance, in whole or in part, directly or indirectly, upon race, creed, or ethnic extraction.",
-    "category": "prohibited_applications",
-    "tags": [
-      "anti_discrimination",
-      "protected_characteristics",
-      "vehicle_insurance",
-      "rating"
-    ],
-    "first_instance": {
-      "law_id": "us-ga-s505-2026",
-      "law_name": "Georgia S 505 — Prior Approval for Consumer Insurance Rates Act",
-      "citation": "§ 33-9-4(9) / § 33-9-21(p)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ga-s505-2026",
-        "relationship": "rejected",
-        "citation": "§ 33-9-4(9) / § 33-9-21(p)",
-        "notes": "Proposed in Georgia S 505 — Prior Approval for Consumer Insurance Rates Act (Georgia, null) but bill was failed — negative premise only.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-il-s124-2025",
-        "relationship": "similar",
-        "citation": "§ 143.19.4(c)",
-        "notes": "Both prohibit use of race, creed, and similar protected characteristics in automobile insurance underwriting or rating, but the Illinois rule enumerates a broader list of prohibited factors (including sex/gender, marital status, national origin, religion, age, income, credit score, education, occupation, and others) and explicitly covers algorithmic or AI-driven use of those factors.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-il-h1252-2025",
-        "relationship": "similar",
-        "citation": "§ 143.19.4(b)(1) and (c)",
-        "notes": "Both prohibit basing automobile insurance underwriting or rating decisions on protected characteristics, but this Illinois rule explicitly covers algorithmic and AI-driven methods and extends the prohibition to coverage terms and affiliate placement, going beyond Georgia's race/creed/ethnic-extraction restriction.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ny-a1273-2025",
-        "relationship": "similar",
-        "citation": "§ 2619(a)",
-        "notes": "Both prohibit using socioeconomic or protected characteristics in vehicle insurance rating/classification, but NY A1273 covers a broader set of socioeconomic factors (age, marital status, etc.) while GA S505 specifically targets race, creed, and ethnic extraction.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ny-s4082-2025",
-        "relationship": "similar",
-        "citation": "§ 2619(a)(8)",
-        "notes": "Both prohibit using certain consumer characteristics (credit/socioeconomic proxies vs. race/creed) as rating factors for vehicle insurance, but this rule specifically targets credit scores as a prohibited rating factor rather than protected class characteristics.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-ga-s505-2026-33-9-4-10-33-9-21-q",
-    "rule_text": "You cannot base any standard or rating plan for vehicle insurance, in whole or in part, directly or indirectly, on a physical disability of the insured unless the disability directly impairs the ability of the insured to drive a motor vehicle.",
-    "rule_text_technical": "No insurer shall base any standard or rating plan on vehicle insurance, in whole or in part, directly or indirectly, upon any physical disability of an insured unless the disability directly impairs the ability of the insured to drive a motor vehicle.",
-    "category": "prohibited_applications",
-    "tags": [
-      "disability",
-      "discrimination",
-      "vehicle_insurance",
-      "rating"
-    ],
-    "first_instance": {
-      "law_id": "us-ga-s505-2026",
-      "law_name": "Georgia S 505 — Prior Approval for Consumer Insurance Rates Act",
-      "citation": "§ 33-9-4(10) / § 33-9-21(q)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ga-s505-2026",
-        "relationship": "rejected",
-        "citation": "§ 33-9-4(10) / § 33-9-21(q)",
-        "notes": "Proposed in Georgia S 505 — Prior Approval for Consumer Insurance Rates Act (Georgia, null) but bill was failed — negative premise only.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-il-s124-2025",
-        "relationship": "similar",
-        "citation": "§ 143.19.4(b)(1)",
-        "notes": "Both prohibit use of protected characteristics in automobile insurance decisions, but the Illinois rule additionally covers refusal to issue or renew policies and affiliate placement based on prohibited factors, while the Georgia rule focuses specifically on physical disability as a rating factor.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ny-a1273-2025",
-        "relationship": "similar",
-        "citation": "§ 2619(b)(4)",
-        "notes": "Both prohibit refusing to issue motor vehicle insurance based on prohibited characteristics, but NY A1273 targets socioeconomic factors broadly while GA S505 specifically addresses physical disability of the insured.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-ga-s505-2026-33-9-21-i",
-    "rule_text": "You cannot charge similarly situated risks materially different premiums without actuarial justification; such rates will be deemed unfairly discriminatory by the Commissioner.",
-    "rule_text_technical": "A rate shall be deemed unfairly discriminatory if the Commissioner determines that, according to his or her judgment, similarly situated risks are charged materially different premiums without actuarial justification.",
-    "category": "prohibited_applications",
-    "tags": [
-      "unfair_discrimination",
-      "actuarial_justification",
-      "pricing",
-      "fairness"
-    ],
-    "first_instance": {
-      "law_id": "us-ga-s505-2026",
-      "law_name": "Georgia S 505 — Prior Approval for Consumer Insurance Rates Act",
-      "citation": "§ 33-9-21(i)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ga-s505-2026",
-        "relationship": "rejected",
-        "citation": "§ 33-9-21(i)",
-        "notes": "Proposed in Georgia S 505 — Prior Approval for Consumer Insurance Rates Act (Georgia, null) but bill was failed — negative premise only.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-il-s124-2025",
-        "relationship": "similar",
-        "citation": "§ 143.19.4(b)(2)",
-        "notes": "Both prohibit unfairly discriminatory rating or classification practices in vehicle insurance, but the Illinois rule explicitly targets classification plans, scoring models, and algorithmic tools used to establish rates or tier placement, while the Georgia rule focuses on materially different premiums for similarly situated risks without actuarial justification.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ny-a1273-2025",
-        "relationship": "similar",
-        "citation": "§ 2619(b)(2)",
-        "notes": "Both prohibit discriminatory distinctions in premiums or rates, but NY A1273 focuses on prohibited socioeconomic factors while GA S505 focuses on actuarial justification for materially different premiums between similarly situated risks.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
     "rule_id": "us-ga-s505-2026-33-9-21-s-1",
     "rule_text": "The Commissioner must post a redacted version of each rate filing (which includes algorithmic models and bias testing documentation) on the department's website and allow for public comments for no fewer than 30 days.",
     "rule_text_technical": "Following a rate filing, the Commissioner shall post a redacted version of each rate filing on the department's website in compliance with Article 4 of Chapter 18 of Title 50, and shall allow for public comments for no fewer than 30 days.",
@@ -189424,34 +188762,6 @@
         "relationship": "similar",
         "citation": "Art. 312",
         "notes": "Both prohibit AI-assisted impersonation and fraud, but the PR rule is broader, covering AI-generated false information and scams generally with aggravated fraud penalties, while the GA rule focuses on fraudulent use of identifying information via electronic communications.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-ga-h1034-2026-16-9-109-1-b-2",
-    "rule_text": "You cannot knowingly possess with intent to fraudulently use, sell, or distribute identifying information obtained through prohibited impersonation solicitations.",
-    "rule_text_technical": "It shall be unlawful for any person, with actual knowledge, conscious avoidance of actual knowledge, or willfully, to possess with intent to use in a fraudulent manner, sell, or distribute any identifying information obtained in violation of paragraph (1) of this subsection.",
-    "category": "prohibited_applications",
-    "tags": [
-      "identifying_information",
-      "fraud",
-      "data_misuse",
-      "trafficking"
-    ],
-    "first_instance": {
-      "law_id": "us-ga-h1034-2026",
-      "law_name": "Georgia H 1034 — Tech Support Impersonation and Remote Access Protection",
-      "citation": "§ 16-9-109.1(b)(2)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ga-h1034-2026",
-        "relationship": "rejected",
-        "citation": "§ 16-9-109.1(b)(2)",
-        "notes": "Proposed in Georgia H 1034 — Tech Support Impersonation and Remote Access Protection (Georgia, null) but bill was failed — negative premise only.",
         "instrument_binding": false,
         "instrument_type": "bill"
       }
@@ -190482,98 +189792,6 @@
         "relationship": "rejected",
         "citation": "§ 10-1-393.22(b)(2)(C)(i)",
         "notes": "Proposed in Georgia H 1439 — Surveillance Pricing Act (Georgia, null) but bill was failed — negative premise only.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-ga-h1439-2026-10-1-393-22-b-2-c-ii",
-    "rule_text": "If you use electronic shelf displays to adjust prices, you cannot increase the price of an essential commodity (such as milk, bread, eggs, baby formula, or hygiene products) more than once during any 24-hour period.",
-    "rule_text_technical": "A retail food establishment using electronic shelf displays shall not increase the price of an essential commodity more than once during each 24 hour period.",
-    "category": "prohibited_applications",
-    "tags": [
-      "electronic_shelf_label",
-      "essential_commodity",
-      "price_frequency",
-      "consumer_protection"
-    ],
-    "first_instance": {
-      "law_id": "us-ga-h1439-2026",
-      "law_name": "Georgia H 1439 — Surveillance Pricing Act",
-      "citation": "§ 10-1-393.22(b)(2)(C)(ii)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ga-h1439-2026",
-        "relationship": "rejected",
-        "citation": "§ 10-1-393.22(b)(2)(C)(ii)",
-        "notes": "Proposed in Georgia H 1439 — Surveillance Pricing Act (Georgia, null) but bill was failed — negative premise only.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-hi-h465-2025",
-        "relationship": "similar",
-        "citation": "§ 480-__(a)",
-        "notes": "Both rules restrict dynamic/AI-enabled pricing adjustments on essential food items, but Hawaii H 465 focuses specifically on food items sold or qualifying under federal nutrition programs (e.g., SNAP/WIC), while the Georgia rule targets essential commodities broadly and prohibits price increases via electronic shelf displays without that federal program framing.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-hi-s785-2025",
-        "relationship": "similar",
-        "citation": "§ 480-__(a)",
-        "notes": "Both rules restrict dynamic/algorithmic pricing on essential food items, but Hawaii S 785 targets SNAP-eligible foods using AI-enabled dynamic pricing broadly, while the Georgia rule specifically prohibits price increases on essential commodities via electronic shelf displays during declared emergencies; the scope, trigger conditions, and covered goods differ meaningfully.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-il-h3838-2026",
-        "relationship": "similar",
-        "citation": "§ 1.5(f-10)",
-        "notes": "Both rules restrict algorithmic/AI-enabled dynamic pricing for consumer goods, but the Illinois rule targets real-time demand-based pricing in ticket sales specifically, while the Georgia rule prohibits intra-day price increases on essential commodities via electronic shelf displays; the sector, trigger, and scope differ meaningfully.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-il-h3838-2025",
-        "relationship": "similar",
-        "citation": "§ 1.5(f-10)",
-        "notes": "Both rules restrict real-time algorithmic price adjustments for consumer goods, but the Georgia rule specifically targets essential commodities via electronic shelf displays, while the Illinois H 3838 rule broadly prohibits dynamic/AI-enabled pricing in ticket sales and resale contexts.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ia-s2278-2026",
-        "relationship": "similar",
-        "citation": "§ 554J.2(3)",
-        "notes": "Both rules restrict algorithmic or dynamic pricing via electronic shelf displays in food/retail contexts, but the Iowa bill is a voluntary instrument and specifically prohibits 'personalized algorithmic pricing or surveillance pricing' via digital labels, while the Georgia rule prohibits price increases on essential commodities and requires equal pricing across consumers using electronic displays.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-nj-s3952-2026",
-        "relationship": "similar",
-        "citation": "§ 3(b)(2)",
-        "notes": "Both restrict dynamic/algorithmic price increases on essential food commodities, but NJ S3952 broadly prohibits all dynamic pricing in grocery retail while GA h1439 specifically restricts price increases on essential commodities via electronic shelf displays; scope and mechanism differ meaningfully.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ok-h3959-2026",
-        "relationship": "similar",
-        "citation": "§ 502(C)",
-        "notes": "Both restrict use of electronic shelf displays for algorithmic or surveillance pricing, but the Oklahoma rule targets the use of ESLs to display personalized pricing while the Georgia rule focuses on price increases for essential commodities; the Oklahoma rule is broader in scope.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-pa-s1205-2026",
-        "relationship": "similar",
-        "citation": "Section 2(4)(xx.1)",
-        "notes": "Both rules prohibit dynamic/variable pricing of essential goods, but the Georgia rule specifically targets electronic shelf displays and price increases on enumerated commodities, while the Pennsylvania bill broadly prohibits any dynamic pricing of essential goods or services varying within a 24-hour period; as a soft-law bill the obligation level also differs from Georgia's binding statute.",
         "instrument_binding": false,
         "instrument_type": "bill"
       }
@@ -198322,43 +197540,6 @@
     ]
   },
   {
-    "rule_id": "us-il-s3020-2026-725-ilcs-5-112a-3-b-4-ix",
-    "rule_text": "You cannot engage in doxing as defined in the Civil Liability for Doxing Act, as it is presumed to constitute harassment in domestic violence cases.",
-    "rule_text_technical": "Engaging in doxing as defined in the Civil Liability for Doxing Act is presumed to cause emotional distress and constitutes harassment under this Article.",
-    "category": "prohibited_applications",
-    "tags": [
-      "doxing",
-      "personal_information",
-      "harassment",
-      "privacy",
-      "online_harm"
-    ],
-    "first_instance": {
-      "law_id": "us-il-s3020-2026",
-      "law_name": "Illinois S 3020 — Domestic Violence and Harassment",
-      "citation": "725 ILCS 5/112A-3(b)(4)(ix)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-il-s3020-2026",
-        "relationship": "origin",
-        "citation": "725 ILCS 5/112A-3(b)(4)(ix)",
-        "notes": "Rule introduced in Illinois S 3020 — Domestic Violence and Harassment (Illinois, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-il-h4312-2026",
-        "relationship": "agrees",
-        "citation": "725 ILCS 5/112A-3(b)(4)(ii)",
-        "notes": "Both rules prohibit doxing as a form of harassment under Illinois domestic violence protection law (725 ILCS 5/112A-3), but this rule specifically frames it as doxing of a petitioner causing emotional distress, while the existing rule references the Civil Liability for Doxing Act definition more generally.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
     "rule_id": "us-il-s3114-2026-30-b",
     "rule_text": "Physicians have the right to appeal downcoded claims in batches when claims involve substantially similar downcoding issues, without restriction.",
     "rule_text_technical": "Physicians shall have the right to appeal in batches of similar claims involving substantially similar downcoding issues, without restriction.",
@@ -201099,34 +200280,6 @@
     ]
   },
   {
-    "rule_id": "us-il-h4312-2026-725-ilcs-5-112a-3-b-4-vii",
-    "rule_text": "You cannot repeatedly contact a petitioner directly or indirectly through any means, including telephonic, electronic, or online communications.",
-    "rule_text_technical": "Repeatedly contacting the petitioner directly or indirectly through any means including telephonic, electronic, or online communications is presumed to be harassment causing emotional distress.",
-    "category": "prohibited_applications",
-    "tags": [
-      "electronic_communications",
-      "harassment",
-      "online_contact",
-      "domestic_violence"
-    ],
-    "first_instance": {
-      "law_id": "us-il-h4312-2026",
-      "law_name": "Illinois H 4312 — Criminal Procedure of 1963",
-      "citation": "725 ILCS 5/112A-3(b)(4)(vii)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-il-h4312-2026",
-        "relationship": "origin",
-        "citation": "725 ILCS 5/112A-3(b)(4)(vii)",
-        "notes": "Rule introduced in Illinois H 4312 — Criminal Procedure of 1963 (Illinois, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
     "rule_id": "us-il-h4312-2026-725-ilcs-5-112a-3-b-4-viii",
     "rule_text": "You cannot use an electronic tracking or monitoring device, system, or other electronic means, or acquire tracking information to determine a petitioner's location, movement, or travel patterns without their knowledge or consent.",
     "rule_text_technical": "Using an electronic tracking or monitoring device, a system or other electronic means, or acquiring tracking information to determine the petitioner's location, movement, or travel patterns without the petitioner's knowledge or consent is presumed to be harassment causing emotional distress.",
@@ -203223,33 +202376,6 @@
         "law_id": "us-il-h5003-2026",
         "relationship": "origin",
         "citation": "§ 20.1(d)",
-        "notes": "Rule introduced in Illinois H 5003 — Wellness and Oversight for Psychological Resources Act (Illinois, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-il-h5003-2026-20-1-f-3",
-    "rule_text": "You cannot charge research participants fees beyond those disclosed in and permitted by the IRB-approved research protocol.",
-    "rule_text_technical": "An academic medical center shall not charge research participants fees beyond those disclosed in and permitted by the IRB-approved research protocol.",
-    "category": "prohibited_applications",
-    "tags": [
-      "fee_restrictions",
-      "research_participants",
-      "irb_protocol"
-    ],
-    "first_instance": {
-      "law_id": "us-il-h5003-2026",
-      "law_name": "Illinois H 5003 — Wellness and Oversight for Psychological Resources Act",
-      "citation": "§ 20.1(f)(3)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-il-h5003-2026",
-        "relationship": "origin",
-        "citation": "§ 20.1(f)(3)",
         "notes": "Rule introduced in Illinois H 5003 — Wellness and Oversight for Psychological Resources Act (Illinois, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
@@ -209046,64 +208172,6 @@
         "relationship": "agrees",
         "citation": "§ 29C.6(1)(b)(5)",
         "notes": "Both rules prohibit using drones, unmanned aerial vehicles, advanced robotics, or AI-based systems in the context of a state of disaster emergency, but Iowa H 279 frames it as prohibiting authorization through a proclamation while us-ia-s2093-2026 frames it as prohibiting enforcement via such systems, indicating independent drafting with the same substantive prohibition.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-ia-s2093-2026-29c-6-1-b-8",
-    "rule_text": "You cannot, through a state of disaster emergency proclamation, require identification and monitoring of persons at risk of contracting a contagious or infectious disease through contact with a contagious person, compel compliance with such identification and monitoring efforts, or impose penalties for refusing to participate.",
-    "rule_text_technical": "A measure dictated in a state of disaster emergency proclamation shall not require identification and monitoring of persons who may be at risk of contracting a contagious or infectious disease by virtue of contact with a contagious person in a manner consistent with known or suspected modes of transmission; require a person to comply with such identification and monitoring efforts including efforts that infringe on a person's freedom of association; or establish, authorize, or enforce penalties for a person's refusal to participate in the identification and monitoring efforts.",
-    "category": "prohibited_applications",
-    "tags": [
-      "contact_tracing",
-      "monitoring",
-      "freedom_of_association",
-      "public_health",
-      "emergency_powers"
-    ],
-    "first_instance": {
-      "law_id": "us-ia-s2093-2026",
-      "law_name": "Iowa S 2093 — State of Disaster Emergencies",
-      "citation": "§ 29C.6(1)(b)(8)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ia-s2093-2026",
-        "relationship": "origin",
-        "citation": "§ 29C.6(1)(b)(8)",
-        "notes": "Rule introduced in Iowa S 2093 — State of Disaster Emergencies (Iowa, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-ia-s2093-2026-135-144-3",
-    "rule_text": "The department's reasonable measures to prevent transmission of infectious disease cannot include requiring monitoring of persons at risk through contact with a contagious person, compelling compliance with identification and monitoring efforts, or imposing penalties for refusal to participate.",
-    "rule_text_technical": "Reasonable measures taken to prevent the transmission of infectious disease shall not include requiring monitoring of persons who may be at risk of contracting a contagious or infectious disease by virtue of contact with a contagious person in a manner consistent with known or suspected modes of transmission; requiring a person to comply with identification and monitoring efforts including efforts that infringe on a person's freedom of association; or establishing, authorizing, or enforcing penalties for a person's refusal to participate in the identification and monitoring efforts.",
-    "category": "prohibited_applications",
-    "tags": [
-      "contact_tracing",
-      "public_health_data",
-      "monitoring",
-      "freedom_of_association",
-      "infectious_disease"
-    ],
-    "first_instance": {
-      "law_id": "us-ia-s2093-2026",
-      "law_name": "Iowa S 2093 — State of Disaster Emergencies",
-      "citation": "§ 135.144(3)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ia-s2093-2026",
-        "relationship": "origin",
-        "citation": "§ 135.144(3)",
-        "notes": "Rule introduced in Iowa S 2093 — State of Disaster Emergencies (Iowa, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
       }
@@ -215858,34 +214926,6 @@
     ]
   },
   {
-    "rule_id": "us-ky-h20-2025-section-4-krs-508-152-2-d",
-    "rule_text": "If you are on probation or parole for a crime under KRS Chapter 508, you cannot use a tracking device to track a motor vehicle operated or occupied by a victim or family member of the victim without their knowledge and consent.",
-    "rule_text_technical": "A person is guilty of unlawful use of a tracking device when he or she intentionally, while on probation or parole for a crime defined in KRS Chapter 508, uses a tracking device to track the location of a motor vehicle operated or occupied by a victim of the crime or by a family member of the victim without the knowledge and consent of the victim or family member.",
-    "category": "prohibited_applications",
-    "tags": [
-      "tracking_device",
-      "probation",
-      "parole",
-      "victim_protection"
-    ],
-    "first_instance": {
-      "law_id": "us-ky-h20-2025",
-      "law_name": "Kentucky H 20 — Privacy Protection",
-      "citation": "Section 4 / KRS 508.152(2)(d)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ky-h20-2025",
-        "relationship": "rejected",
-        "citation": "Section 4 / KRS 508.152(2)(d)",
-        "notes": "Proposed in Kentucky H 20 — Privacy Protection (Kentucky, null) but bill was failed — negative premise only.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
     "rule_id": "us-ky-h20-2025-section-4-krs-508-152-4-e",
     "rule_text": "If you lease vehicles and install a tracking device after original manufacture, you must provide the lessee with clear written notice that the vehicle may be tracked, accompanied by a signed acknowledgment from the lessee.",
     "rule_text_technical": "Subsection (2) does not apply to a device or service providing the lessee of the vehicle with clear notice that the vehicle may be tracked; for a lessor who installs a tracking device subsequent to original vehicle manufacture, the notice shall be provided in writing with an acknowledgment signed by the lessee, regardless of whether the tracking device is original equipment, a retrofit, or an aftermarket product.",
@@ -218516,64 +217556,6 @@
     ]
   },
   {
-    "rule_id": "us-la-h784-2026-r-s-15-541-24-a",
-    "rule_text": "If you are convicted of unlawful deepfakes under R.S. 14:73.13(A) or (B)(2), the offense is classified as a 'sex offense' triggering sex offender registration and notification requirements.",
-    "rule_text_technical": "The definition of 'sex offense' in R.S. 15:541(24)(a) is amended to include deferred adjudication, adjudication withheld, or conviction for the perpetration or attempted perpetration of or conspiracy to commit unlawful deepfakes under R.S. 14:73.13(A) or (B)(2), thereby subjecting offenders to the registration and notification regime under Chapter 3-B of Title 15.",
-    "category": "synthetic_media",
-    "tags": [
-      "deepfakes",
-      "sex_offense",
-      "registration",
-      "synthetic_media",
-      "criminal_classification"
-    ],
-    "first_instance": {
-      "law_id": "us-la-h784-2026",
-      "law_name": "Louisiana H 784 — Sex Offense and Registry",
-      "citation": "R.S. 15:541(24)(a)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-la-h784-2026",
-        "relationship": "origin",
-        "citation": "R.S. 15:541(24)(a)",
-        "notes": "Rule introduced in Louisiana H 784 — Sex Offense and Registry (Louisiana, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-la-h784-2026-r-s-15-541-25-c",
-    "rule_text": "If you are convicted of producing or distributing unlawful deepfakes depicting a minor under R.S. 14:73.13(A) or (B)(2), the offense is classified as a 'sexual offense against a victim who is a minor', triggering 25-year registration and notification obligations.",
-    "rule_text_technical": "R.S. 15:541(25)(c) is enacted to define 'sexual offense against a victim who is a minor' to include conviction for perpetration, attempted perpetration, or conspiracy to commit unlawful deepfakes depicting a minor in violation of R.S. 14:73.13(A) or (B)(2), which under R.S. 15:544(B)(1) requires 25 years of registration and notification.",
-    "category": "synthetic_media",
-    "tags": [
-      "deepfakes",
-      "minors",
-      "csam_adjacent",
-      "registration",
-      "sexual_offense"
-    ],
-    "first_instance": {
-      "law_id": "us-la-h784-2026",
-      "law_name": "Louisiana H 784 — Sex Offense and Registry",
-      "citation": "R.S. 15:541(25)(c)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-la-h784-2026",
-        "relationship": "origin",
-        "citation": "R.S. 15:541(25)(c)",
-        "notes": "Rule introduced in Louisiana H 784 — Sex Offense and Registry (Louisiana, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
     "rule_id": "us-la-h784-2026-r-s-15-543-1-1-l",
     "rule_text": "If you are required to register as a sex offender, you must disclose to law enforcement every email address, online screen name, other online identity, and any static IP addresses you use to communicate on the Internet.",
     "rule_text_technical": "Pursuant to the written notification form prescribed in R.S. 15:543.1, registrants must provide to the appropriate law enforcement agency every e-mail address, online screen name, or other online identity, including any static IP addresses, used by the offender to communicate on the Internet.",
@@ -218681,35 +217663,6 @@
         "law_id": "us-la-h784-2026",
         "relationship": "origin",
         "citation": "R.S. 15:543.1(19)",
-        "notes": "Rule introduced in Louisiana H 784 — Sex Offense and Registry (Louisiana, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-la-h784-2026-r-s-15-543-1-1-g",
-    "rule_text": "If you are required to register as a sex offender, you must provide to law enforcement a current photograph, fingerprints, palm prints, and a DNA sample.",
-    "rule_text_technical": "Under the registration information requirements in R.S. 15:543.1(1)(g), registrants must provide a current photograph, fingerprints, palm prints, and a DNA sample to each registering law enforcement agency.",
-    "category": "biometric_data",
-    "tags": [
-      "biometric_collection",
-      "dna",
-      "fingerprints",
-      "palm_prints",
-      "sex_offender_registry"
-    ],
-    "first_instance": {
-      "law_id": "us-la-h784-2026",
-      "law_name": "Louisiana H 784 — Sex Offense and Registry",
-      "citation": "R.S. 15:543.1(1)(g)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-la-h784-2026",
-        "relationship": "origin",
-        "citation": "R.S. 15:543.1(1)(g)",
         "notes": "Rule introduced in Louisiana H 784 — Sex Offense and Registry (Louisiana, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
@@ -220976,74 +219929,6 @@
         "relationship": "rejected",
         "citation": "Section 2(b)–(d)",
         "notes": "Proposed in Maryland H 195 — Studies on the Use of Emerging Technology (Maryland, null) but bill was failed — negative premise only.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-md-s221-2026-11-207-a-5",
-    "rule_text": "You cannot use a computer to knowingly compile, transmit, publish, or disseminate any notice, advertisement, or a minor's identifying information (name, telephone, residence, physical characteristics) for the purpose of facilitating or soliciting unlawful sadomasochistic abuse or sexual conduct of or with a minor.",
-    "rule_text_technical": "A person may not use a computer to knowingly compile, enter, transmit, make, print, publish, reproduce, cause, allow, buy, sell, receive, exchange, or disseminate any notice, statement, advertisement, or minor's name, telephone number, place of residence, physical characteristics, or other descriptive or identifying information for the purpose of engaging in, facilitating, encouraging, offering, or soliciting unlawful sadomasochistic abuse or sexual conduct of or with a minor.",
-    "category": "prohibited_applications",
-    "tags": [
-      "child_protection",
-      "computer_use",
-      "minor_identifying_information",
-      "solicitation"
-    ],
-    "first_instance": {
-      "law_id": "us-md-s221-2026",
-      "law_name": "Maryland S 221 — Child Pornography Prohibition",
-      "citation": "§ 11-207(a)(5)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-md-s221-2026",
-        "relationship": "origin",
-        "citation": "§ 11-207(a)(5)",
-        "notes": "Rule introduced in Maryland S 221 — Child Pornography Prohibition (Maryland, null).",
-        "instrument_binding": true,
-        "instrument_type": "statute"
-      },
-      {
-        "law_id": "us-md-h670-2026",
-        "relationship": "rejected",
-        "citation": "§ 11-207(a)(5)",
-        "notes": "Maryland H 670 — Child Pornography and Prohibitions and Penalties (Maryland) proposed this rule but the bill was failed — negative premise.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-md-h364-2025",
-        "relationship": "rejected",
-        "citation": "§ 11-207(a)(5)",
-        "notes": "Maryland H 364 — Child Pornography (Maryland) proposed this rule but the bill was failed — negative premise.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-md-s545-2025",
-        "relationship": "rejected",
-        "citation": "§ 11-207(a)(5)",
-        "notes": "Maryland S 545 — Child Pornography (Maryland) proposed this rule but the bill was failed — negative premise.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ma-h1931-2026",
-        "relationship": "similar",
-        "citation": "§ 29F(a)",
-        "notes": "Both prohibit distribution or dissemination of child sexual material including AI-generated depictions, but the Massachusetts rule focuses on visual depictions of minors in sexual acts and non-consensual explicit material, while the Maryland rule is broader in scope covering advertising and identifying information.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-nj-s3823-2025",
-        "relationship": "similar",
-        "citation": "§ 22 (N.J.S.2C:34-3(b))",
-        "notes": "Both address prohibitions related to distributing obscene or exploitative material to minors, but this rule specifically covers sale/distribution of obscene material to persons under 18 including AI-generated depictions of purported children, while the Maryland rule focuses on advertising/transmitting minor identifying information.",
         "instrument_binding": false,
         "instrument_type": "bill"
       }

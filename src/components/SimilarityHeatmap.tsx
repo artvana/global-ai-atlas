@@ -357,7 +357,8 @@ export function SimilarityHeatmap({ onViewLaw }: { onViewLaw?: (id: string) => v
       r.category !== 'institutional_framework' &&
       r.category !== 'data_subject_rights' &&
       r.category !== 'private_redress' &&
-      r.category !== 'enforcement_penalties'
+      r.category !== 'enforcement_penalties' &&
+      r.category !== 'disclosure'
     )
     const m = substantiveRules.length
 
