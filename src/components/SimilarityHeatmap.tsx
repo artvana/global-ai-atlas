@@ -352,7 +352,13 @@ export function SimilarityHeatmap({ onViewLaw }: { onViewLaw?: (id: string) => v
 
     // Exclude definitions_scope from similarity — definitional boilerplate creates
     // false convergence signal that obscures genuine substantive policy alignment.
-    const substantiveRules = allRules.filter(r => r.category !== 'definitions_scope' && r.category !== 'institutional_framework')
+    const substantiveRules = allRules.filter(r =>
+      r.category !== 'definitions_scope' &&
+      r.category !== 'institutional_framework' &&
+      r.category !== 'data_subject_rights' &&
+      r.category !== 'private_redress' &&
+      r.category !== 'enforcement_penalties'
+    )
     const m = substantiveRules.length
 
     // Build column set.
