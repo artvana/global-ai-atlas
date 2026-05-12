@@ -373348,8 +373348,8 @@
   },
   {
     "rule_id": "uk-uk-onlinesafety-2023-section-17",
-    "rule_text": "You must protect content of democratic importance when making content moderation decisions on Category 1 services.",
-    "rule_text_technical": "Providers of Category 1 user-to-user services must operate systems and processes designed to ensure the importance of free expression of content of democratic importance is taken into account when making moderation decisions, in accordance with section 17.",
+    "rule_text": "Large online platforms must protect content of democratic importance when making content moderation decisions.",
+    "rule_text_technical": "Providers of large user-to-user services must operate systems and processes designed to ensure the importance of free expression of content of democratic importance is taken into account when making moderation decisions, in accordance with section 17 of the UK Online Safety Act 2023.",
     "category": "data_subject_rights",
     "tags": [
       "freedom_of_expression",
@@ -373377,7 +373377,7 @@
   {
     "rule_id": "uk-uk-onlinesafety-2023-section-18",
     "rule_text": "You must take particular care with news publisher content before taking action against it on your service.",
-    "rule_text_technical": "Providers of Category 1 services must comply with the duties in section 18 regarding news publisher content, including notification and appeal rights before removing or restricting access to such content.",
+    "rule_text_technical": "Providers of large online platforms must comply with the duties regarding news publisher content, including notification and appeal rights before removing or restricting access to such content.",
     "category": "data_subject_rights",
     "tags": [
       "news_publisher",
@@ -373403,8 +373403,8 @@
   },
   {
     "rule_id": "uk-uk-onlinesafety-2023-section-19",
-    "rule_text": "You must put in place systems to protect journalistic content shared on your Category 1 service.",
-    "rule_text_technical": "Providers of Category 1 services must operate systems and processes designed to ensure the importance of free expression of journalistic content is taken into account when making moderation decisions, including expedited complaints procedures, under section 19.",
+    "rule_text": "Large online platforms must put in place systems to protect journalistic content shared on their service.",
+    "rule_text_technical": "Providers of large online platforms must operate systems and processes designed to ensure the importance of free expression of journalistic content is taken into account when making moderation decisions, including expedited complaints procedures.",
     "category": "data_subject_rights",
     "tags": [
       "journalistic_content",
@@ -373538,8 +373538,8 @@
   },
   {
     "rule_id": "uk-uk-onlinesafety-2023-section-38",
-    "rule_text": "You must operate Category 1 services using proportionate systems and processes to prevent users encountering fraudulent advertising.",
-    "rule_text_technical": "Providers of Category 1 services must comply with duties in section 38 to use proportionate systems and processes to prevent and minimise users encountering fraudulent advertisements on the service.",
+    "rule_text": "Large online platforms must use proportionate systems and processes to prevent users encountering fraudulent advertising.",
+    "rule_text_technical": "Providers of large online platforms must use proportionate systems and processes to prevent and minimise users encountering fraudulent advertisements on the service.",
     "category": "accountability_governance",
     "tags": [
       "fraudulent_advertising",
@@ -373565,8 +373565,8 @@
   },
   {
     "rule_id": "uk-uk-onlinesafety-2023-section-39",
-    "rule_text": "You must operate Category 2A search services using proportionate systems and processes to minimise the risk of users encountering fraudulent advertising in search results.",
-    "rule_text_technical": "Providers of Category 2A search services must comply with duties in section 39 to use proportionate systems and processes to minimise the risk of users encountering fraudulent advertisements via search.",
+    "rule_text": "Large search engines must use proportionate systems and processes to minimise the risk of users encountering fraudulent advertising in search results.",
+    "rule_text_technical": "Providers of large search services must use proportionate systems and processes to minimise the risk of users encountering fraudulent advertisements via search.",
     "category": "accountability_governance",
     "tags": [
       "fraudulent_advertising",
@@ -373592,8 +373592,8 @@
   },
   {
     "rule_id": "uk-uk-onlinesafety-2023-section-64",
-    "rule_text": "You must offer adult users of Category 1 services the option to verify their identity.",
-    "rule_text_technical": "Providers of Category 1 user-to-user services must offer adult users a form of identity verification in accordance with section 64, regardless of whether the user is in the UK.",
+    "rule_text": "Large online platforms must offer adult users the option to verify their identity.",
+    "rule_text_technical": "Providers of large user-to-user services must offer adult users a form of identity verification, regardless of whether the user is in the UK.",
     "category": "data_subject_rights",
     "tags": [
       "identity_verification",
@@ -373647,8 +373647,8 @@
   },
   {
     "rule_id": "uk-uk-onlinesafety-2023-section-71",
-    "rule_text": "You may only take action against users of Category 1 services in accordance with your published terms of service.",
-    "rule_text_technical": "Providers of Category 1 services must comply with section 71 by acting against users only in accordance with the relevant provisions of their terms of service applicable to that user.",
+    "rule_text": "Large online platforms may only take action against users in accordance with their published terms of service.",
+    "rule_text_technical": "Providers of large online platforms must act against users only in accordance with the relevant provisions of their terms of service applicable to that user.",
     "category": "data_subject_rights",
     "tags": [
       "terms_of_service",
@@ -373675,8 +373675,8 @@
   },
   {
     "rule_id": "uk-uk-onlinesafety-2023-section-75",
-    "rule_text": "You must have written processes for dealing with requests for information from coroners and parents about a deceased child user's use of your Category 1 service.",
-    "rule_text_technical": "Providers of Category 1 services must comply with section 75 duties regarding information about use of the service by deceased child users, including written and clear processes for handling such requests.",
+    "rule_text": "You must have written processes for dealing with requests for information from coroners and parents about a deceased child user's use of your platform.",
+    "rule_text_technical": "Providers of large online platforms must maintain written and clear processes for handling requests regarding information about use of the service by deceased child users.",
     "category": "data_subject_rights",
     "tags": [
       "deceased_users",
@@ -373814,8 +373814,8 @@
   },
   {
     "rule_id": "uk-uk-onlinesafety-2023-section-14",
-    "rule_text": "You must assess how Category 1 services enable users to understand and control their experience with the service.",
-    "rule_text_technical": "Providers of Category 1 services must conduct assessments under section 14 in respect of the user empowerment duty in section 15(2), including identifying relevant content and the proportionate measures needed.",
+    "rule_text": "Large online platforms must assess how their services enable users to understand and control their experience.",
+    "rule_text_technical": "Providers of large online platforms must conduct user empowerment assessments, identifying relevant content and the proportionate measures needed to support user understanding and control.",
     "category": "risk_classification",
     "tags": [
       "user_empowerment",
