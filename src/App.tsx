@@ -44,7 +44,7 @@ class ErrorBoundary extends Component<{ children: ReactNode; resetKey?: string }
 }
 
 function App() {
-  const [tab, setTab] = useState<Tab>('convergence')
+  const [tab, setTab] = useState<Tab>('map')
   const [lawModalId, setLawModalId] = useState<string | null>(null)
   const lawModal = lawModalId ? regulations.find(r => r.id === lawModalId) ?? null : null
 
@@ -63,7 +63,7 @@ function App() {
             </div>
             <div className="h-4 w-px bg-odl-border" />
             <nav className="flex gap-0.5">
-              {(['convergence', 'map', 'laws', 'enforcement', 'mcp', 'methodology'] as Tab[]).map(t => (
+              {(['map', 'convergence', 'laws', 'enforcement', 'mcp', 'methodology'] as Tab[]).map(t => (
                 <button
                   key={t}
                   onClick={() => setTab(t)}

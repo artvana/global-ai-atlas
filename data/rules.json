@@ -5881,8 +5881,8 @@
   },
   {
     "rule_id": "ca-fed-admdirective-2019-appendix-c-notice-level-iii-iv",
-    "rule_text": "For Level III and IV systems, the plain-language notice posted through service delivery channels must additionally direct clients to the published explanation required under Explanation Level I.",
-    "rule_text_technical": "For impact Levels III and IV, in addition to the plain language notice posted through all service delivery channels, the notice must direct clients to the published explanation required under Explanation level I.",
+    "rule_text": "For high-impact automated decision systems, the plain-language notice posted through service delivery channels must additionally direct clients to the published explanation of how the system works.",
+    "rule_text_technical": "For Level III and IV automated decision systems under the Canadian Directive on Automated Decision-Making, the plain-language notice posted through service delivery channels must additionally direct clients to the published explanation required under Explanation Level I.",
     "category": "disclosure",
     "tags": [
       "high_impact",
@@ -5908,8 +5908,8 @@
   },
   {
     "rule_id": "ca-fed-admdirective-2019-appendix-c-explanation-level-i",
-    "rule_text": "For Level II-IV systems, in addition to the published general explanation, you must provide each client with a more detailed plain-language explanation of any decision that denies a benefit or service or involves regulatory action, including the principal factors and how the system's output was used by human officers.",
-    "rule_text_technical": "For impact Levels II-IV, a more detailed, meaningful, plain language explanation must be provided to the client with any decision that results in the denial of a benefit or service, or involves a regulatory action, informing the client of the reason or justification including principal factors (e.g. decision tree, scoring or weights) and how the automated decision system output was used by human officers, with a link to the published level I explanation.",
+    "rule_text": "For automated decision systems with moderate-to-high impact, you must provide each affected client with a plain-language explanation of any decision that denies a benefit or service, including the principal factors considered and how the system's output was used.",
+    "rule_text_technical": "For Level II-IV automated decision systems under the Canadian Directive on Automated Decision-Making, in addition to a published general explanation, you must provide each client with a more detailed plain-language explanation of any decision that denies a benefit or service or involves regulatory action, including the principal factors and how the system's output was used by human officers.",
     "category": "explainability",
     "tags": [
       "individualized_explanation",
