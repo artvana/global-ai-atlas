@@ -97,6 +97,11 @@ jobs:
           If nothing new was found, do not modify data/regulations.json.
           PROMPT
 
+      # ── Step 1b: Fetch full text for newly added laws ─────────────────────────
+      - name: Fetch full text for new laws
+        run: npm run fetch-texts:skip
+        continue-on-error: true   # blocked sites shouldn't stop the rest of the run
+
       # ── Step 2: Effective date promotions (no LLM needed) ────────────────────
       - name: Promote enacted laws whose effective date has passed
         run: |
@@ -211,7 +216,7 @@ jobs:
                 .instrument_binding == true and
                 (.status == "in_force" or .status == "enacted_not_yet_effective")
               )
-            ] | .[0:8]
+            ]
           ' data/regulations.json > /tmp/new-laws.json
           echo "New binding laws: $(jq -r '[.[].id] | join(", ")' /tmp/new-laws.json)"
 
