@@ -1,0 +1,106 @@
+name: Enrich Bill Stages
+
+on:
+  workflow_dispatch:   # Manual trigger only — run once, or re-run to refresh
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci --legacy-peer-deps
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Enrich bill stages
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude --print --dangerously-skip-permissions --allowedTools "WebSearch,Read,Write" "
+          You are enriching the GAIA bill stage database.
+          Today is $(date +%Y-%m-%d).
+
+          Read data/regulations.json. Extract all records where status='proposed'.
+
+          For each US state that has proposed bills, do a web search to find current
+          legislative status. Search queries like:
+            '[State] AI bills 2025 2026 committee passed signed status'
+            'site:legiscan.com [State] artificial intelligence bill 2026'
+
+          Work through ALL 33 states with proposed bills. For each bill where you can
+          determine the current stage, update the record in data/regulations.json with:
+
+          - 'legislative_stage': one of:
+              'introduced'        — filed but no committee action
+              'in_committee'      — referred to committee
+              'passed_committee'  — cleared committee, eligible for floor vote
+              'passed_one_chamber' — passed house or senate (specify which in last_action_description)
+              'passed_legislature' — passed both chambers, awaiting governor
+              'awaiting_signature' — on governor's desk
+              'unknown'           — could not determine
+
+          - 'last_action_date': 'YYYY-MM-DD' or null if unknown
+          - 'last_action_description': brief plain-English description, e.g.
+              'Passed Senate 32-6, referred to House Commerce Committee'
+
+          ALSO: if a bill has been enacted (signed by governor), update:
+            status → 'enacted_not_yet_effective' or 'in_force' as appropriate
+            enacted_date → date signed
+            legislative_stage → (remove or set to null, not applicable)
+
+          ALSO: if a bill has definitively failed (session ended without passage,
+          tabled, or withdrawn), update:
+            status → 'failed'
+            legislative_stage → (remove or set to null)
+
+          Rules:
+          - Be conservative: only update when you find a reliable source.
+          - If uncertain, set legislative_stage to 'unknown' and leave last_action_date null.
+          - Do not invent information. Source must be official legislature website,
+            LegiScan, Ballotpedia, or a major news outlet.
+          - Process all 33 states — do not skip any.
+          - Write the complete updated regulations.json when finished.
+          "
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/regulations.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Validate if changed
+        if: steps.changes.outputs.changed == 'true'
+        run: npm run validate
+
+      - name: Open pull request
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: enrich-stages/${{ github.run_id }}
+          commit-message: "data: enrich legislative stages for proposed bills — ${{ github.run_id }}"
+          title: "Bill stage enrichment — ${{ github.run_id }}"
+          body: |
+            One-time enrichment of `legislative_stage`, `last_action_date`, and
+            `last_action_description` fields for proposed bills in `data/regulations.json`.
+
+            Please review:
+            - Stages match official legislative records
+            - Any status changes (enacted/failed) are correct
+            - Sources are reliable (legislature websites, LegiScan, Ballotpedia)
+
+            Merge when satisfied.
+          labels: automated, data-update, bill-stages

@@ -20,7 +20,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
       - run: npm ci --legacy-peer-deps
@@ -87,6 +87,44 @@ jobs:
           Do NOT add duplicates. Check existing IDs and short_names first.
           Be conservative — one verified entry beats five uncertain ones.
           If nothing new was found, do not modify data/regulations.json.
+          "
+
+      - name: Update bill stages
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude --print --dangerously-skip-permissions --allowedTools "WebSearch,Read,Write" "
+          You are maintaining the GAIA bill stage database.
+          Today is $(date +%Y-%m-%d). The database is at data/regulations.json.
+
+          TASK 1 — Catch enacted and failed bills:
+          Search the web for US state AI bills that were signed into law OR failed/died
+          in the past 7 days. Search queries like:
+            'AI bill signed governor [week] 2026'
+            'AI bill failed vetoed state legislature [week] 2026'
+          For any bill you find in data/regulations.json (match by bill_number or short_name):
+          - If signed: update status → 'in_force' or 'enacted_not_yet_effective',
+            set enacted_date, remove legislative_stage field
+          - If failed/died: update status → 'failed', remove legislative_stage field
+
+          TASK 2 — Advance stages for high-momentum bills:
+          Look at all records in data/regulations.json where status='proposed' and
+          legislative_stage is 'passed_one_chamber', 'passed_legislature', or
+          'awaiting_signature'. These are close to becoming law — verify their current
+          status and update accordingly.
+
+          Also check records where legislative_stage='passed_committee' and search for
+          whether they have since received a floor vote.
+
+          For any updated bill, set:
+          - legislative_stage: updated value
+          - last_action_date: 'YYYY-MM-DD'
+          - last_action_description: one plain-English sentence
+          - last_verified: '$(date +%Y-%m-%d)'
+
+          Be conservative — only update when you have a reliable source (official
+          legislature website, LegiScan, Ballotpedia, or major news).
+          If nothing changed, do not modify data/regulations.json.
           "
 
       - name: Check for changes
