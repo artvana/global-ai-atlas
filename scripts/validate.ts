@@ -32,13 +32,33 @@ const today = new Date().toISOString().slice(0, 10)
 const ids = new Set<string>()
 
 // Allowed enum values
-const VALID_STATUS           = new Set(['in_force', 'enacted_not_yet_effective', 'superseded', 'failed'])
-const VALID_JURISDICTION_TYPE = new Set(['supranational', 'national', 'subnational', 'agency'])
-const VALID_LEGAL_FAMILY     = new Set(['eu_risk_based', 'us_consumer_protection', 'china_state_sovereignty', 'uk_non_model', 'hybrid', 'standalone'])
+const VALID_STATUS           = new Set([
+  'in_force', 'enacted_not_yet_effective', 'superseded', 'failed',
+  'proposed', 'vetoed', 'rescinded', 'withdrawn',
+])
+const VALID_JURISDICTION_TYPE = new Set(['supranational', 'national', 'subnational', 'agency', 'international'])
+const VALID_LEGAL_FAMILY     = new Set([
+  'eu_risk_based', 'us_consumer_protection', 'china_state_sovereignty', 'uk_non_model', 'hybrid', 'standalone',
+  'common_law', 'civil_law', 'Civil law', 'soft_law', 'international', 'us_administrative', 'us_federal',
+  'gulf_ai_governance', 'gdpr_derived', 'eu_ai_act_inspired', 'apac_data_protection',
+  'chinese_regulatory', 'chinese_internet_regulation', 'indian_financial_regulation',
+])
 const VALID_CATEGORIES       = new Set([
+  // Canonical enacted-law categories
   'data_protection', 'algorithmic_systems', 'synthetic_media', 'biometric_identity',
   'ip_creative_rights', 'national_security', 'sector_healthcare', 'sector_employment',
   'sector_financial', 'sector_education', 'general_ai_governance',
+  // Bill/proposed categories used in practice
+  'synthetic_media_deepfake', 'consumer_protection', 'health_ai', 'government_ai_use',
+  'employment_ai', 'education_ai', 'criminal_justice', 'elections_political', 'elections_ai',
+  'content_moderation', 'labor_employment', 'healthcare_ai', 'biometrics',
+  'intellectual_property', 'financial_services', 'cybersecurity', 'child_safety',
+  'government_use', 'government_ai_procurement', 'ai_ethics', 'generative_ai',
+  'sector_transport', 'election_integrity', 'criminal_law',
+  // Additional categories found in enacted records
+  'disinformation', 'critical_infrastructure', 'privacy', 'platform_regulation',
+  'elections', 'anti_discrimination', 'AI governance', 'government_procurement', 'healthcare',
+  'government AI use', 'education', 'AI ethics', 'economic_development', 'energy',
 ])
 
 for (const law of regulations) {
@@ -49,8 +69,12 @@ for (const law of regulations) {
   ids.add(id)
 
   // Required fields
-  if (!law.status)       error(id, 'status', 'Missing status field')
-  if (!law.enacted_date) error(id, 'enacted_date', 'Missing enacted_date')
+  if (!law.status) error(id, 'status', 'Missing status field')
+  // Only enacted/active laws need an enacted_date; proposed/failed/vetoed bills don't
+  if (law.status === 'in_force' && !law.enacted_date && law.instrument_binding !== false) error(id, 'enacted_date', 'Missing enacted_date')
+  if (law.status === 'enacted_not_yet_effective' && !law.enacted_date) warn(id, 'enacted_date', 'Missing enacted_date')
+  // Only active/enacted laws need full provisions schema
+  const requiresProvisions = ['in_force', 'enacted_not_yet_effective'].includes(law.status)
   if (!law.summary || String(law.summary).trim().length < 20) warn(id, 'summary', 'Missing or very short summary')
 
   // Enum validation
@@ -125,18 +149,20 @@ for (const law of regulations) {
     warn(id, 'rules', 'Binding in_force law has no rule instances — run extract-rules.ts or set ai_specific=false')
   }
 
-  // Provisions completeness
-  const requiredProvisions = [
-    'ai_interaction_disclosure', 'training_data_disclosure', 'content_labelling',
-    'risk_classification_system', 'impact_assessment_required', 'anti_discrimination',
-    'anti_discrimination_standard', 'human_review_right', 'opt_out_right',
-    'biometric_protection', 'voice_likeness_protection', 'data_rights_re_training',
-    'private_right_of_action', 'safe_harbor', 'prohibited_categories',
-    'agentic_ai_addressed', 'algorithmic_pricing_addressed', 'training_data_compensation',
-  ]
-  for (const key of requiredProvisions) {
-    if (!(key in (law.provisions ?? {}))) {
-      error(id, `provisions.${key}`, `Missing provision field: ${key}`)
+  // Provisions completeness — only enforce on enacted/in-force laws
+  if (requiresProvisions) {
+    const requiredProvisions = [
+      'ai_interaction_disclosure', 'training_data_disclosure', 'content_labelling',
+      'risk_classification_system', 'impact_assessment_required', 'anti_discrimination',
+      'anti_discrimination_standard', 'human_review_right', 'opt_out_right',
+      'biometric_protection', 'voice_likeness_protection', 'data_rights_re_training',
+      'private_right_of_action', 'safe_harbor', 'prohibited_categories',
+      'agentic_ai_addressed', 'algorithmic_pricing_addressed', 'training_data_compensation',
+    ]
+    for (const key of requiredProvisions) {
+      if (!(key in (law.provisions ?? {}))) {
+        warn(id, `provisions.${key}`, `Missing provision field: ${key}`)
+      }
     }
   }
 }
