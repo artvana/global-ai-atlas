@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-05-15",
+    "trigger": "manual",
+    "added": [],
+    "promoted": [],
+    "stage_updates": 0,
+    "enforcement_added": 23,
+    "rules_added": 8379,
+    "total_instruments": 2482,
+    "note": "GAIA launched publicly. Database seeded with 2,482 AI regulatory instruments spanning 60+ jurisdictions, 8,379 comparative rules, and 23 enforcement actions."
+  }
+]

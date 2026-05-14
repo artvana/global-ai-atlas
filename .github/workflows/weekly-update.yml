@@ -409,6 +409,94 @@ jobs:
         if: steps.changes.outputs.changed == 'true'
         run: npm run validate
 
+      - name: Generate changelog entry
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          TRIGGER="${{ github.event_name == 'schedule' && 'scheduled' || 'manual' }}"
+
+          # Snapshot the pre-change state from git HEAD
+          git show HEAD:data/regulations.json > /tmp/reg-before.json 2>/dev/null || echo '[]' > /tmp/reg-before.json
+          git show HEAD:data/enforcement.json > /tmp/enf-before.json 2>/dev/null || echo '[]' > /tmp/enf-before.json
+          git show HEAD:data/rules.json > /tmp/rules-before.json 2>/dev/null || echo '[]' > /tmp/rules-before.json
+
+          # New instruments (IDs that didn't exist before)
+          jq -s '
+            (.[0] | map({(.id): 1}) | add // {}) as $before |
+            [.[1][] | select($before[.id] | not) | {
+              id,
+              name: (.short_name // .name // ""),
+              jurisdiction: (.country // ""),
+              status
+            }]
+          ' /tmp/reg-before.json data/regulations.json > /tmp/cl-added.json
+
+          # Promoted (status changed to in_force or enacted_not_yet_effective)
+          jq -s '
+            (.[0] | map({(.id): .status}) | add // {}) as $before |
+            [.[1][] | select(
+              $before[.id] != null and
+              $before[.id] != .status and
+              (.status == "in_force" or .status == "enacted_not_yet_effective")
+            ) | {
+              id,
+              name: (.short_name // .name // ""),
+              from: $before[.id],
+              to: .status
+            }]
+          ' /tmp/reg-before.json data/regulations.json > /tmp/cl-promoted.json
+
+          # Count bill stage updates
+          STAGE_UPDATES=$(jq -s '
+            (.[0] | map({(.id): (.legislative_stage // "")}) | add // {}) as $before |
+            [.[1][] | select(
+              $before[.id] != null and
+              ($before[.id] != (.legislative_stage // "")) and
+              (.legislative_stage != null and .legislative_stage != "unknown")
+            )] | length
+          ' /tmp/reg-before.json data/regulations.json)
+
+          # New enforcement actions
+          ENFORCEMENT_ADDED=$(jq -s '
+            (.[0] | map({(.id): 1}) | add // {}) as $before |
+            [.[1][] | select($before[.id] | not)] | length
+          ' /tmp/enf-before.json data/enforcement.json)
+
+          # New rules
+          RULES_ADDED=$(jq -s '
+            (.[0] | map({(.rule_id): 1}) | add // {}) as $before |
+            [.[1][] | select($before[.rule_id] | not)] | length
+          ' /tmp/rules-before.json data/rules.json)
+
+          TOTAL=$(jq length data/regulations.json)
+
+          # Build the entry
+          jq -n \
+            --arg date "$TODAY" \
+            --arg trigger "$TRIGGER" \
+            --argjson added "$(cat /tmp/cl-added.json)" \
+            --argjson promoted "$(cat /tmp/cl-promoted.json)" \
+            --argjson stage_updates "$STAGE_UPDATES" \
+            --argjson enforcement_added "$ENFORCEMENT_ADDED" \
+            --argjson rules_added "$RULES_ADDED" \
+            --argjson total "$TOTAL" \
+            '{date: $date, trigger: $trigger, added: $added, promoted: $promoted,
+              stage_updates: $stage_updates, enforcement_added: $enforcement_added,
+              rules_added: $rules_added, total_instruments: $total}' \
+            > /tmp/cl-entry.json
+
+          # Prepend to changelog, keep at most 52 entries (1 year of weekly runs)
+          if [ -f data/changelog.json ]; then
+            jq --slurpfile entry /tmp/cl-entry.json '[$entry[0]] + . | .[0:52]' \
+              data/changelog.json > /tmp/cl-new.json
+          else
+            jq -s '.' /tmp/cl-entry.json > /tmp/cl-new.json
+          fi
+          mv /tmp/cl-new.json data/changelog.json
+
+          echo "Changelog entry written: $(jq '{added: (.added|length), promoted: (.promoted|length), stage_updates, enforcement_added, rules_added}' /tmp/cl-entry.json)"
+        continue-on-error: true   # don't block the PR if changelog generation fails
+
       - name: Open pull request
         if: steps.changes.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6

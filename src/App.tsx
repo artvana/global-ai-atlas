@@ -1,25 +1,23 @@
 import { useState, lazy, Suspense, Component, type ReactNode } from 'react'
 import { SearchInterface } from './components/SearchInterface'
-import { EnforcementView } from './components/EnforcementView'
+import { WhatsNew } from './components/WhatsNew'
 import { BillsTracker } from './components/BillsTracker'
 import { MCPDocs } from './components/MCPDocs'
 import { MethodologyDocs } from './components/MethodologyDocs'
 import { SimilarityHeatmap } from './components/SimilarityHeatmap'
 import { LawDetail } from './components/LawDetail'
 import { regulations } from './data/regulations'
-import enforcementData from '../data/enforcement.json'
-
 // Lazy-load the map so a react-simple-maps compat error doesn't crash the whole app
 const GAIAMap = lazy(() => import('./components/GAIAMap').then(m => ({ default: m.GAIAMap })))
 
-type Tab = 'convergence' | 'map' | 'laws' | 'bills' | 'enforcement' | 'mcp' | 'methodology'
+type Tab = 'convergence' | 'map' | 'laws' | 'bills' | 'whatsnew' | 'mcp' | 'methodology'
 
 const TAB_LABELS: Record<Tab, string> = {
   convergence:  'Convergence Map',
   map:          'Global Map',
   laws:         'Laws Database',
   bills:        'Bills Tracker',
-  enforcement:  'Enforcement (beta)',
+  whatsnew:     'What\'s New',
   mcp:          'MCP Server',
   methodology:  'Methodology',
 }
@@ -65,7 +63,7 @@ function App() {
             </div>
             <div className="h-4 w-px bg-odl-border" />
             <nav className="flex gap-0.5">
-              {(['map', 'convergence', 'laws', 'bills', 'enforcement', 'mcp', 'methodology'] as Tab[]).map(t => (
+              {(['map', 'convergence', 'laws', 'bills', 'whatsnew', 'mcp', 'methodology'] as Tab[]).map(t => (
                 <button
                   key={t}
                   onClick={() => setTab(t)}
@@ -81,7 +79,7 @@ function App() {
             </nav>
           </div>
           <div className="flex items-center gap-4 text-xs text-odl-subtle">
-            <span>{regulations.length} instruments · {(enforcementData as unknown[]).length} enforcement actions</span>
+            <span>{regulations.length} instruments</span>
             <span>Updated May 2026</span>
           </div>
         </div>
@@ -98,7 +96,7 @@ function App() {
           </ErrorBoundary>
         )}
         {tab === 'bills'       && <ErrorBoundary resetKey="bills"><BillsTracker /></ErrorBoundary>}
-        {tab === 'enforcement' && <ErrorBoundary resetKey="enforcement"><EnforcementView /></ErrorBoundary>}
+        {tab === 'whatsnew'    && <ErrorBoundary resetKey="whatsnew"><WhatsNew /></ErrorBoundary>}
         {tab === 'mcp'         && <ErrorBoundary resetKey="mcp"><MCPDocs /></ErrorBoundary>}
         {tab === 'methodology' && <ErrorBoundary resetKey="methodology"><MethodologyDocs /></ErrorBoundary>}
       </main>
