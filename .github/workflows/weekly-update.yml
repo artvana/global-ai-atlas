@@ -28,6 +28,13 @@ jobs:
       - name: Install Claude Code CLI
         run: npm install -g @anthropic-ai/claude-code
 
+      # Snapshot current law IDs so we can identify what was added this run
+      - name: Snapshot existing law IDs
+        run: |
+          jq '[.[].id]' data/regulations.json > /tmp/original-ids.json
+          echo "Snapshotted $(jq length /tmp/original-ids.json) existing law IDs"
+
+      # ── Step 1: New enacted regulations ──────────────────────────────────────
       - name: Research and add new regulations
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -90,6 +97,26 @@ jobs:
           If nothing new was found, do not modify data/regulations.json.
           PROMPT
 
+      # ── Step 2: Effective date promotions (no LLM needed) ────────────────────
+      - name: Promote enacted laws whose effective date has passed
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          jq --arg today "$TODAY" '
+            map(
+              if .status == "enacted_not_yet_effective"
+                 and .effective_date != null
+                 and .effective_date <= $today
+              then . + {status: "in_force", last_verified: $today}
+              else .
+              end
+            )
+          ' data/regulations.json > /tmp/regulations-promoted.json
+          BEFORE=$(jq length data/regulations.json)
+          PROMOTED=$(jq --arg today "$TODAY" '[.[] | select(.status == "in_force" and .last_verified == $today)] | length' /tmp/regulations-promoted.json)
+          mv /tmp/regulations-promoted.json data/regulations.json
+          echo "Promoted $PROMOTED law(s) to in_force"
+
+      # ── Step 3: Bill stage updates ────────────────────────────────────────────
       - name: Update bill stages
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -107,7 +134,7 @@ jobs:
           For any bill you find in data/regulations.json (match by bill_number or short_name):
           - If signed: update status to in_force or enacted_not_yet_effective,
             set enacted_date, remove legislative_stage field
-          - If failed/died: update status to failed, remove legislative_stage field
+          - If failed/died/vetoed: update status to failed or vetoed, remove legislative_stage field
 
           TASK 2 — Advance stages for high-momentum bills:
           Look at all records in data/regulations.json where status=proposed and
@@ -129,10 +156,133 @@ jobs:
           If nothing changed, do not modify data/regulations.json.
           PROMPT
 
+      # ── Step 4: Enforcement actions ───────────────────────────────────────────
+      - name: Research new enforcement actions
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          cat << PROMPT | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,Read,Write"
+          You are maintaining the GAIA enforcement actions database.
+          Today is $TODAY. The file is data/enforcement.json.
+
+          Search the web for AI-related enforcement actions in the past 7 days:
+          - FTC actions involving AI, algorithms, or automated decision systems
+          - GDPR fines from EU data protection authorities (CNIL, ICO, BfDI, etc.) involving AI
+          - US state attorney general actions under biometric or AI laws (Illinois BIPA, etc.)
+          - SEC, CFPB, EEOC, or HHS enforcement involving AI tools
+          - Significant court judgments (not settlements — judgments only)
+
+          Search queries:
+            FTC AI enforcement action 2026
+            GDPR fine artificial intelligence 2026
+            BIPA settlement 2026
+            AI discrimination lawsuit ruling 2026
+
+          For each new action found, append a record to data/enforcement.json:
+          {
+            "id": "{law_slug}-{respondent_slug}-{YYYY}",
+            "law_id": "matching law ID from data/regulations.json, or null if unknown",
+            "law_short_name": "short name of the law invoked",
+            "date": "YYYY-MM-DD",
+            "enforcement_body": "agency or court name",
+            "respondent": "company or individual name",
+            "violation_type": "one-line description of what was violated",
+            "amount_usd": null or integer dollar amount,
+            "outcome": "brief outcome (e.g. Consent decree, Civil penalty of $X, Injunction)",
+            "summary": "2-3 sentence plain English summary of the case.",
+            "source_url": "official press release, court filing, or regulator announcement URL"
+          }
+
+          Rules:
+          - Read data/enforcement.json first — do not add duplicates
+          - Only add actions with an official source URL (regulator website, PACER, court site)
+          - Be conservative: one verified action beats five uncertain ones
+          - If nothing new found, do not modify data/enforcement.json
+          PROMPT
+
+      # ── Step 5: Extract rules for newly added laws ────────────────────────────
+      - name: Identify newly added laws
+        run: |
+          jq --slurpfile orig /tmp/original-ids.json '
+            ($orig[0] | map({(.): 1}) | add // {}) as $known |
+            [ .[] | select(
+                ($known[.id] | not) and
+                .instrument_binding == true and
+                (.status == "in_force" or .status == "enacted_not_yet_effective")
+              )
+            ] | .[0:8]
+          ' data/regulations.json > /tmp/new-laws.json
+          echo "New binding laws: $(jq -r '[.[].id] | join(", ")' /tmp/new-laws.json)"
+
+      - name: Extract rules for new laws
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          NEW_COUNT=$(jq length /tmp/new-laws.json)
+          if [ "$NEW_COUNT" = "0" ]; then
+            echo "No new laws to extract rules for — skipping"
+            exit 0
+          fi
+          TODAY=$(date +%Y-%m-%d)
+          cat << PROMPT | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,WebFetch,Read,Write"
+          You are extracting legal rules for newly added laws in the GAIA database.
+          Today is $TODAY.
+
+          The file /tmp/new-laws.json lists the new laws added this run.
+          The existing rules database is at data/rules.json (array of rule objects).
+
+          For each law in /tmp/new-laws.json:
+          1. Read its source_url or official_text_url using WebFetch to get the law text.
+             If the URL is unavailable, use the law's summary and key_obligations fields.
+          2. Extract the distinct substantive legal rules — specific obligations, prohibitions,
+             and rights. Skip pure definitions, recitals, and administrative boilerplate.
+          3. For each extracted rule, search data/rules.json for an existing rule it matches:
+             - identical: same rule, same wording
+             - agrees: same obligation, different wording or scope
+             - similar: related but meaningfully different
+             - opposed: explicitly contradicts an existing rule
+          4. If it matches an existing rule, add a new instance to that rule's instances array.
+             If it is genuinely new, add a new rule entry.
+
+          Rule object format (for NEW rules only):
+          {
+            "rule_id": "r-XXXX",  ← use the next available 4-digit number after existing rules
+            "rule_text": "Plain English statement of what the rule requires or prohibits",
+            "rule_text_technical": "Precise legal/technical formulation with citations",
+            "category": "one of: definitions_scope | transparency | data_governance | risk_management | prohibited_uses | human_oversight | enforcement | institutional_framework | sector_specific | synthetic_media | biometric | employment | liability",
+            "tags": ["relevant", "keywords"],
+            "first_instance": {
+              "law_id": "...",
+              "law_name": "...",
+              "citation": "Section X",
+              "date": "YYYY-MM-DD"
+            },
+            "instances": [{ ...instance object... }]
+          }
+
+          Instance object format (added to EXISTING rules OR included in first_instance of NEW rules):
+          {
+            "law_id": "...",
+            "relationship": "origin|identical|agrees|similar|opposed",
+            "citation": "Section or Article reference",
+            "notes": "One sentence on scope, differences, or context",
+            "instrument_binding": true
+          }
+
+          Write the complete updated data/rules.json when done (same array format).
+          Prefer adding instances to existing rules over creating new ones.
+          Quality over quantity — 3 well-matched rules beat 15 uncertain ones.
+          PROMPT
+        continue-on-error: true   # don't block the PR if extraction fails
+
+      # ── Step 6: Validate & open PR ────────────────────────────────────────────
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet data/regulations.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet data/regulations.json data/enforcement.json data/rules.json \
+            && echo "changed=false" >> $GITHUB_OUTPUT \
+            || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Validate if changed
         if: steps.changes.outputs.changed == 'true'
@@ -149,10 +299,14 @@ jobs:
           body: |
             Automated weekly update from the GAIA curator agent.
 
-            Changes to `data/regulations.json` above. Please review:
-            - Source URLs are official government/regulatory body publications
-            - Metadata fields follow the schema (jurisdiction_type, category, legal_family)
-            - No duplicates of existing records
+            Changes across `data/regulations.json`, `data/enforcement.json`, and `data/rules.json`.
+
+            Please review:
+            - New laws: source URLs are official government/regulatory body publications
+            - Effective date promotions: check `in_force` status changes are correct
+            - Bill stage updates: stages match official legislature records
+            - Enforcement actions: source URLs are official regulator/court publications
+            - Rule extractions: instances reference correct laws and relationships
 
             Merge when satisfied. The deploy workflow will publish to GitHub Pages automatically.
           labels: automated, data-update
