@@ -62261,6 +62261,14 @@
         "notes": "Both require extraterritorial entities to designate a domestic representative and notify authorities, but China's PIPL applies to personal information handlers broadly under Art. 3(2) while Korea's AI Basic Act targets AI providers without a domestic address, and the reporting authority and scope differ.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "agrees",
+        "citation": "PIPA Article 39-11 (as amended 2023)",
+        "notes": "South Korea's 2023 PIPA amendments extend the foreign-controller domestic representative obligation beyond the prior information-and-communications-services scope, requiring foreign online service providers processing Korean residents' data to designate a domestic representative for regulatory contact.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -119526,6 +119534,14 @@
         "notes": "Both rules require high school students to complete a computer science course as a graduation requirement, but the Ohio rule applies to students entering ninth grade on or after July 1, 2029 while the Mississippi rule has different timing and framing; both are soft/voluntary instruments with 'should' language.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-ga-s179-2026",
+        "relationship": "agrees",
+        "citation": "O.C.G.A. § 20-2-149.3(b)(1)",
+        "notes": "Georgia S 179 (2026) similarly defines 'computer science' for the graduation-required course to include 'computer science ethics, artificial intelligence, emerging technologies, and logical critical thinking,' ensuring instruction in AI is part of the required course.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -188412,6 +188428,14 @@
         "notes": "Rule introduced in Hawaii S 2167 — Patients Bill of Rights (Hawaii, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "similar",
+        "citation": "PIPA Article 34 (as amended 2023)",
+        "notes": "South Korea's 2023 PIPA amendments similarly impose a 72-hour notification deadline to the Personal Information Protection Commission for personal data breaches; scope is general (all controllers) versus Hawaii's health-plan-specific rule.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -197164,6 +197188,14 @@
         "notes": "Both extend computer science graduation or course-offering requirements to non-traditional school types, but Ohio S 326 applies as a soft-law recommendation to community schools, while Illinois' provision is a binding mandate applying to all high school students including those in alternative settings.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-ga-s179-2026",
+        "relationship": "agrees",
+        "citation": "O.C.G.A. § 20-2-149.3(c)(4)(A)",
+        "notes": "Georgia S 179 (2026) similarly makes a computer science course (which by definition includes artificial intelligence and emerging technologies) a high school graduation requirement, beginning with the 2031-2032 school year for students graduating in 2037 or later.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -354365,6 +354397,14 @@
         "notes": "Rule introduced in Bahrain PDPL 2018 (Bahrain, 2018-07-12).",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "agrees",
+        "citation": "Loi 18-07",
+        "notes": "Algeria Law No. 18-07 similarly requires controllers to notify the national data protection authority (ANPDP) before standard processing, with prior authorization required for high-risk processing categories.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -372294,6 +372334,505 @@
         "relationship": "origin",
         "citation": "O.C.G.A. § 20-2-149.3(c)(4), (b)(1)",
         "notes": "Makes computer science (including AI and emerging technologies) a high-school graduation requirement starting with the class of 2037, alongside existing K-12 CS course-offering mandates.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-nm-hb20-2025-section-2-b",
+    "rule_text": "New Mexico's Technology and Innovation Division within the Economic Development Department must coordinate state policy and ecosystem development for target sectors that explicitly include artificial intelligence (as part of advanced computing), and must develop and maintain a statewide technology and innovation strategic plan and innovation metrics for those sectors.",
+    "rule_text_technical": "Section 2(B) and 2(C) of the Economic Development Department Act, as enacted by HB 20, establish the technology and innovation division and authorize it to coordinate sector ecosystems, develop and maintain a statewide technology and innovation strategic plan, collect and report innovation metrics, and support technology transfer for target sectors defined to include 'advanced computing, which includes artificial intelligence, quantum computing and cybersecurity.'",
+    "category": "institutional_framework",
+    "tags": [
+      "state_innovation_authority",
+      "ai_target_sector",
+      "strategic_plan",
+      "economic_development"
+    ],
+    "first_instance": {
+      "law_id": "us-nm-hb20-2025",
+      "law_name": "New Mexico HB 20 — Technology and Innovation Division",
+      "citation": "§ 9-15-4; § 2(B)–(C)",
+      "date": "2025-04-09"
+    },
+    "instances": [
+      {
+        "law_id": "us-nm-hb20-2025",
+        "relationship": "origin",
+        "citation": "§ 9-15-4; § 2(B)–(C)",
+        "notes": "Rule introduced in New Mexico HB 20 — Technology and Innovation Division (2025-04-09).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-nm-hb20-2025-section-7-rdd-fund",
+    "rule_text": "The Research, Development and Deployment Fund supports project funding for emerging technologies, start-ups, and research initiatives in target sectors including artificial intelligence, subject to eligibility criteria, match requirements, and reporting on jobs, return on investment, and program performance.",
+    "rule_text_technical": "Sections 5–11 of HB 20 enact the Research, Development and Deployment Fund Act, creating a non-reverting fund administered by the Economic Development Department to make awards (with applicant match and priorities for rural, tribal, and high-wage projects) to public entities and businesses pursuing innovation in target sectors that include advanced computing/artificial intelligence; annual reporting to the legislature and governor is required.",
+    "category": "institutional_framework",
+    "tags": [
+      "ai_funding",
+      "innovation_fund",
+      "research_grants",
+      "reporting_requirement"
+    ],
+    "first_instance": {
+      "law_id": "us-nm-hb20-2025",
+      "law_name": "New Mexico HB 20 — Technology and Innovation Division",
+      "citation": "Sections 5–11 (RDD Fund Act)",
+      "date": "2025-04-09"
+    },
+    "instances": [
+      {
+        "law_id": "us-nm-hb20-2025",
+        "relationship": "origin",
+        "citation": "Sections 5–11 (RDD Fund Act)",
+        "notes": "Rule introduced in New Mexico HB 20 — Technology and Innovation Division (2025-04-09).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-ut-sb332-2025-63i-2-213-5",
+    "rule_text": "Utah's Artificial Intelligence Policy Act remains in force until repealed on July 1, 2027 (sunset date extended from May 1, 2025).",
+    "rule_text_technical": "Section 63I-2-213(5) is amended by SB 332 to provide that Title 13, Chapter 72 (Artificial Intelligence Policy Act) is repealed on July 1, 2027, instead of May 1, 2025.",
+    "category": "institutional_framework",
+    "tags": [
+      "sunset_clause",
+      "uaipa",
+      "repeal_date_extension"
+    ],
+    "first_instance": {
+      "law_id": "us-ut-sb332-2025",
+      "law_name": "Utah SB 332 — UAIPA 2025 Amendments",
+      "citation": "§ 63I-2-213(5)",
+      "date": "2025-03-25"
+    },
+    "instances": [
+      {
+        "law_id": "us-ut-sb332-2025",
+        "relationship": "origin",
+        "citation": "§ 63I-2-213(5)",
+        "notes": "Rule introduced in Utah SB 332 — UAIPA 2025 Amendments (2025-03-25).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-ut-sb149-2024",
+        "relationship": "similar",
+        "citation": "§ 63I-2-213(70)",
+        "notes": "UAIPA originally sunsetted May 1, 2025 under SB 149 (2024); SB 332 (2025) extends repeal date to July 1, 2027.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "il-il-ppa13-2024-scraping-ai-training",
+    "rule_text": "You may not scrape personal data from publicly accessible sources to train artificial intelligence systems without a lawful basis under the Privacy Protection Law.",
+    "rule_text_technical": "Privacy Protection Law Amendment No. 13 (2024) prohibits the unauthorized scraping of personal data for use in training AI systems; lawful processing requires consent or another statutory basis even where data is publicly available online.",
+    "category": "data_provenance",
+    "tags": [
+      "scraping_prohibition",
+      "ai_training_data",
+      "lawful_basis",
+      "public_sources"
+    ],
+    "first_instance": {
+      "law_id": "il-il-ppa13-2024",
+      "law_name": "Israel Privacy Protection Law Amendment No. 13 (2024)",
+      "citation": "Privacy Protection Law (Amendment 13)",
+      "date": "2024-08-05"
+    },
+    "instances": [
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "origin",
+        "citation": "Privacy Protection Law (Amendment 13)",
+        "notes": "Rule introduced in Israel Privacy Protection Law Amendment No. 13 (2024) (2024-08-05).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "il-il-ppa13-2024-automated-decision-impact-assessment",
+    "rule_text": "You must conduct a privacy impact assessment before deploying automated decision-making systems that process personal data in ways that may significantly affect individuals.",
+    "rule_text_technical": "Privacy Protection Law Amendment No. 13 (2024) requires data controllers to assess the privacy and discrimination impacts of automated decision-making systems prior to deployment, documenting risks and mitigation measures.",
+    "category": "risk_classification",
+    "tags": [
+      "impact_assessment",
+      "automated_decision_making",
+      "pre_deployment"
+    ],
+    "first_instance": {
+      "law_id": "il-il-ppa13-2024",
+      "law_name": "Israel Privacy Protection Law Amendment No. 13 (2024)",
+      "citation": "Privacy Protection Law (Amendment 13)",
+      "date": "2024-08-05"
+    },
+    "instances": [
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "origin",
+        "citation": "Privacy Protection Law (Amendment 13)",
+        "notes": "Rule introduced in Israel Privacy Protection Law Amendment No. 13 (2024) (2024-08-05).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "il-il-ppa13-2024-ai-processing-disclosure",
+    "rule_text": "You must disclose to data subjects when their personal data will be processed using artificial intelligence or automated decision-making, including the purpose and significance of the processing.",
+    "rule_text_technical": "Privacy Protection Law Amendment No. 13 (2024) requires data controllers to provide transparent disclosure to data subjects regarding AI-based or automated processing of their personal data, including the logic, significance, and consequences of that processing.",
+    "category": "disclosure",
+    "tags": [
+      "ai_disclosure",
+      "automated_processing_transparency",
+      "data_subject_information"
+    ],
+    "first_instance": {
+      "law_id": "il-il-ppa13-2024",
+      "law_name": "Israel Privacy Protection Law Amendment No. 13 (2024)",
+      "citation": "Privacy Protection Law (Amendment 13)",
+      "date": "2024-08-05"
+    },
+    "instances": [
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "origin",
+        "citation": "Privacy Protection Law (Amendment 13)",
+        "notes": "Rule introduced in Israel Privacy Protection Law Amendment No. 13 (2024) (2024-08-05).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "kr-kr-pipa-2023-art-37-2-right-to-explanation",
+    "rule_text": "You must, upon a data subject's request, provide an explanation of the logic, significance, and consequences of an automated decision (including profiling) that produces legal or similarly significant effects on the data subject.",
+    "rule_text_technical": "PIPA Article 37-2 (introduced by the 2023 amendments) gives data subjects the right to request from a personal information controller an explanation of automated decisions producing rights-affecting effects, including the criteria, logic, and likely consequences of the processing.",
+    "category": "explainability",
+    "tags": [
+      "right_to_explanation",
+      "automated_decision_making",
+      "profiling",
+      "transparency"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-pipa-2023",
+      "law_name": "South Korea PIPA (2023 Amendments)",
+      "citation": "Article 37-2",
+      "date": "2023-03-14"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "origin",
+        "citation": "Article 37-2",
+        "notes": "Rule introduced in South Korea PIPA (2023 Amendments) (2023-03-14).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "kr-kr-pipa-2023-art-37-2-right-to-human-review",
+    "rule_text": "You must offer data subjects the right to object to a fully automated decision that has legal or similarly significant effects on them and to require human review of that decision.",
+    "rule_text_technical": "PIPA Article 37-2 (introduced by the 2023 amendments) requires personal information controllers using fully automated decision-making with significant effects on data subjects to grant the data subject a right to refuse the decision and to demand human intervention or review.",
+    "category": "data_subject_rights",
+    "tags": [
+      "right_to_human_review",
+      "automated_decision_making",
+      "right_to_object",
+      "human_intervention"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-pipa-2023",
+      "law_name": "South Korea PIPA (2023 Amendments)",
+      "citation": "Article 37-2",
+      "date": "2023-03-14"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "origin",
+        "citation": "Article 37-2",
+        "notes": "Rule introduced in South Korea PIPA (2023 Amendments) (2023-03-14).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "kr-kr-pipa-2023-art-37-2-suspend-automated-decision",
+    "rule_text": "You must suspend or otherwise mitigate the effects of an automated decision when a data subject has lawfully objected to it, until the controller has completed human review of the decision.",
+    "rule_text_technical": "PIPA Article 37-2 (introduced by the 2023 amendments) requires personal information controllers to halt or reverse the effects of automated decisions challenged by data subjects pending the outcome of human review of the decision.",
+    "category": "data_subject_rights",
+    "tags": [
+      "pause_processing",
+      "automated_decision_making",
+      "human_review",
+      "effects_suspension"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-pipa-2023",
+      "law_name": "South Korea PIPA (2023 Amendments)",
+      "citation": "Article 37-2",
+      "date": "2023-03-14"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "origin",
+        "citation": "Article 37-2",
+        "notes": "Rule introduced in South Korea PIPA (2023 Amendments) (2023-03-14).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "dz-dz-pdpl-2018-declaration-authorization",
+    "rule_text": "You must declare standard processing of personal data to the National Personal Data Protection Authority (ANPDP) before commencing processing, and you must obtain prior authorization from the ANPDP for high-risk processing categories.",
+    "rule_text_technical": "Algeria Law No. 18-07 establishes a tiered registration regime: standard processing activities must be declared to the Autorité nationale de protection des données à caractère personnel (ANPDP) prior to processing, while specified high-risk processing categories require prior ANPDP authorization.",
+    "category": "registration_notification",
+    "tags": [
+      "declaration_regime",
+      "prior_authorization",
+      "high_risk_processing",
+      "anpdp"
+    ],
+    "first_instance": {
+      "law_id": "dz-dz-pdpl-2018",
+      "law_name": "Algeria Law No. 18-07 on the Protection of Personal Data",
+      "citation": "Loi 18-07",
+      "date": "2018-06-10"
+    },
+    "instances": [
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "origin",
+        "citation": "Loi 18-07",
+        "notes": "Rule introduced in Algeria Law No. 18-07 on the Protection of Personal Data (2018-06-10).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "dz-dz-pdpl-2018-lawful-basis",
+    "rule_text": "You must process personal data only on a lawful basis (consent, contract, legal obligation, vital interests, public interest, or other authorized ground) under Algerian law.",
+    "rule_text_technical": "Algeria Law No. 18-07 requires all processing of personal data to rest on a defined lawful basis, including consent of the data subject or other statutory grounds; processing without such a basis is unlawful.",
+    "category": "definitions_scope",
+    "tags": [
+      "lawful_basis",
+      "consent",
+      "personal_data",
+      "principles_of_processing"
+    ],
+    "first_instance": {
+      "law_id": "dz-dz-pdpl-2018",
+      "law_name": "Algeria Law No. 18-07 on the Protection of Personal Data",
+      "citation": "Loi 18-07",
+      "date": "2018-06-10"
+    },
+    "instances": [
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "origin",
+        "citation": "Loi 18-07",
+        "notes": "Rule introduced in Algeria Law No. 18-07 on the Protection of Personal Data (2018-06-10).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "dz-dz-pdpl-2018-sensitive-data",
+    "rule_text": "You may not process sensitive personal data (such as health, genetic, biometric, racial, religious, or political data) except with the explicit consent of the data subject or on a specific legal authority recognized by Algerian law.",
+    "rule_text_technical": "Algeria Law No. 18-07 prohibits the processing of categories of sensitive personal data (including health, genetic, biometric, racial, religious, philosophical, political, and trade union information) unless the data subject has given explicit consent or a specific statutory or judicial authorization applies.",
+    "category": "data_subject_rights",
+    "tags": [
+      "sensitive_data",
+      "special_categories",
+      "explicit_consent",
+      "health_data",
+      "biometric_data"
+    ],
+    "first_instance": {
+      "law_id": "dz-dz-pdpl-2018",
+      "law_name": "Algeria Law No. 18-07 on the Protection of Personal Data",
+      "citation": "Loi 18-07",
+      "date": "2018-06-10"
+    },
+    "instances": [
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "origin",
+        "citation": "Loi 18-07",
+        "notes": "Rule introduced in Algeria Law No. 18-07 on the Protection of Personal Data (2018-06-10).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "dz-dz-pdpl-2018-breach-notification",
+    "rule_text": "You must notify the National Personal Data Protection Authority (ANPDP) of significant personal data breaches.",
+    "rule_text_technical": "Algeria Law No. 18-07 requires data controllers to notify the ANPDP of breaches of personal data that may pose a significant risk to data subjects, in accordance with implementing regulations.",
+    "category": "registration_notification",
+    "tags": [
+      "breach_notification",
+      "anpdp",
+      "incident_reporting"
+    ],
+    "first_instance": {
+      "law_id": "dz-dz-pdpl-2018",
+      "law_name": "Algeria Law No. 18-07 on the Protection of Personal Data",
+      "citation": "Loi 18-07",
+      "date": "2018-06-10"
+    },
+    "instances": [
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "origin",
+        "citation": "Loi 18-07",
+        "notes": "Rule introduced in Algeria Law No. 18-07 on the Protection of Personal Data (2018-06-10).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "dz-dz-pdpl-2018-cross-border-transfer",
+    "rule_text": "You may not transfer personal data outside Algeria except to countries that provide an adequate level of protection or with the prior approval of the National Personal Data Protection Authority (ANPDP).",
+    "rule_text_technical": "Algeria Law No. 18-07 restricts cross-border transfers of personal data: such transfers are permitted only to jurisdictions deemed to provide adequate protection or pursuant to ANPDP approval, derogation, or another statutory exception.",
+    "category": "data_subject_rights",
+    "tags": [
+      "cross_border_transfer",
+      "adequacy",
+      "anpdp_approval",
+      "international_transfers"
+    ],
+    "first_instance": {
+      "law_id": "dz-dz-pdpl-2018",
+      "law_name": "Algeria Law No. 18-07 on the Protection of Personal Data",
+      "citation": "Loi 18-07",
+      "date": "2018-06-10"
+    },
+    "instances": [
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "origin",
+        "citation": "Loi 18-07",
+        "notes": "Rule introduced in Algeria Law No. 18-07 on the Protection of Personal Data (2018-06-10).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-md-mdfutureboard-2026-2-5-302-2-5-303",
+    "rule_text": "Maryland's Future Board (within the Department of Commerce) must develop, evaluate, and revise a visionary plan for the future of Maryland that imagines trends in robotics and automation, artificial intelligence, advanced manufacturing, data aggregations, and other industry-disruptive technologies, and recommend projects to the Governor and General Assembly.",
+    "rule_text_technical": "Sections 2.5-302 and 2.5-303 of the Economic Development Article (added by HB 1473 / SB 770) require Maryland's Future Board to develop a visionary plan covering future trends in robotics and automation, artificial intelligence, advanced manufacturing, data aggregations, and other disruptive technologies, to evaluate the plan annually, and to recommend supporting projects to the Governor and General Assembly each August 1 beginning in 2027.",
+    "category": "institutional_framework",
+    "tags": [
+      "visionary_plan",
+      "state_planning",
+      "ai_strategy",
+      "economic_development",
+      "maryland_future_board"
+    ],
+    "first_instance": {
+      "law_id": "us-md-h1473-2026",
+      "law_name": "Maryland H 1473 — Maryland's Future Board",
+      "citation": "§ 2.5-302, § 2.5-303",
+      "date": "2026-04-10"
+    },
+    "instances": [
+      {
+        "law_id": "us-md-h1473-2026",
+        "relationship": "origin",
+        "citation": "§ 2.5-302, § 2.5-303",
+        "notes": "Rule introduced in Maryland H 1473 — Maryland's Future Board (2026-04-10).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-md-s770-2026",
+        "relationship": "identical",
+        "citation": "§ 2.5-302, § 2.5-303",
+        "notes": "Companion Senate bill enacting the same Maryland's Future Board provisions with identical text.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-md-mdfutureboard-2026-comptroller-ai-study",
+    "rule_text": "The Maryland Comptroller must study economic growth trends in Maryland, examining (among other factors) job replacement due to the rise in artificial intelligence and the need for universal basic income or advanced technology workforce training, and report findings to the General Assembly.",
+    "rule_text_technical": "Section 2 of HB 1473 / SB 770 directs the Comptroller (with optional independent consultant) to study Maryland's economic growth trends — including state migration, job replacement due to the rise in artificial intelligence, and the need for universal basic income or advanced technology workforce training — and to report results to the General Assembly on or before December 1, 2026.",
+    "category": "employment_ai",
+    "tags": [
+      "workforce_study",
+      "ai_job_displacement",
+      "comptroller_report",
+      "ubi",
+      "advanced_technology_training"
+    ],
+    "first_instance": {
+      "law_id": "us-md-h1473-2026",
+      "law_name": "Maryland H 1473 — Maryland's Future Board",
+      "citation": "Section 2(a)–(b)",
+      "date": "2026-04-10"
+    },
+    "instances": [
+      {
+        "law_id": "us-md-h1473-2026",
+        "relationship": "origin",
+        "citation": "Section 2(a)–(b)",
+        "notes": "Rule introduced in Maryland H 1473 — Maryland's Future Board (2026-04-10).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-md-s770-2026",
+        "relationship": "identical",
+        "citation": "Section 2(a)–(b)",
+        "notes": "Companion Senate bill enacting the same Comptroller AI workforce study mandate with identical text.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-md-s198-2026-16-420-c-1-iv",
+    "rule_text": "Prince George's Community College's Aerospace Technology Studies Program curriculum must include artificial intelligence in aerospace alongside aerospace systems technology, avionics and electronics, and advanced manufacturing.",
+    "rule_text_technical": "Section 16-420(C)(1) of the Education Article (added by SB 198) requires the Board of Community College Trustees for Prince George's County, in consultation with industry experts, to develop the Aerospace Technology Studies Program curriculum to include aerospace systems technology, avionics and electronics, advanced manufacturing, and artificial intelligence in aerospace.",
+    "category": "definitions_scope",
+    "tags": [
+      "ai_curriculum",
+      "aerospace_ai",
+      "community_college",
+      "workforce_training"
+    ],
+    "first_instance": {
+      "law_id": "us-md-s198-2026",
+      "law_name": "Maryland S 198 — Aerospace Technology Studies Program",
+      "citation": "§ 16-420(C)(1)(IV)",
+      "date": "2026-04-10"
+    },
+    "instances": [
+      {
+        "law_id": "us-md-s198-2026",
+        "relationship": "origin",
+        "citation": "§ 16-420(C)(1)(IV)",
+        "notes": "Rule introduced in Maryland S 198 — Aerospace Technology Studies Program (2026-04-10).",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
