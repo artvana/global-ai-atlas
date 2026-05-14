@@ -45,13 +45,28 @@ jobs:
           The database is at data/regulations.json in the current directory.
           Today is $TODAY. Search the web for AI regulations enacted in the past 7 days.
 
-          Search for:
+          Run the following searches and synthesise results before writing anything.
+
+          ENGLISH-LANGUAGE SEARCHES:
           - New AI laws signed into law by national governments
           - New US state AI bills enacted (signed by governor)
           - New executive orders on AI
           - New agency rules from FTC, NIST, FDA, SEC, CFPB, EEOC
-          - New EU regulations or implementing acts
+          - New EU regulations or implementing acts (search EUR-Lex for "artificial intelligence" published in past 7 days)
           - New frameworks from OECD, UN, UNESCO, G7, African Union, ASEAN
+
+          NON-ENGLISH JURISDICTIONS — search these directly even if not in English news:
+          - Japan: search "AI 規制 法律" and check METI (meti.go.jp) and FSA (fsa.go.jp) for new AI guidelines or rules
+          - South Korea: search "인공지능 규제 법률" and check MSIT (msit.go.kr)
+          - China: check CAC (cyberspace.gov.cn) and MIIT (miit.gov.cn) for new AI regulations published this week
+          - Brazil: search "inteligência artificial lei" and check ANPD (gov.br/anpd) and Senado Federal
+          - France/Germany/Italy: check national gazette sites for AI-specific implementing measures under EU AI Act
+          - India: check MeitY (meity.gov.in) for new AI policy instruments
+
+          IMPLEMENTING ACTS — check for secondary legislation under existing frameworks:
+          - EU AI Act delegated/implementing regulations published in the Official Journal this week
+          - US federal agency guidance documents or final rules that implement AI-specific requirements
+          - Any state-level implementing regulations under recently enacted AI statutes
 
           Only add instruments that are genuinely newly enacted — not proposed or in committee.
 

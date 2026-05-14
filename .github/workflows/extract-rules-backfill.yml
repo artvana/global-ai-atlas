@@ -1,0 +1,168 @@
+name: Extract Rules Backfill
+
+# Fires automatically whenever regulations.json lands on main (weekly PR merge).
+# Also runnable manually to process any historically uncovered laws.
+on:
+  push:
+    branches: [main]
+    paths: ['data/regulations.json']
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci --legacy-peer-deps
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      # Find all binding enacted laws that have zero instances in rules.json.
+      # Sort newest-first so laws just added by the weekly update are processed first.
+      # Cap at 20 per run — repeated fires will drain the backlog over time.
+      - name: Find laws missing rule coverage
+        run: |
+          jq -s '
+            (.[1] | [.[].instances[].law_id] | unique | map({(.): 1}) | add // {}) as $covered |
+            [ .[0][] |
+              select(
+                .instrument_binding == true and
+                (.status == "in_force" or .status == "enacted_not_yet_effective") and
+                (.ai_specific != false) and
+                ($covered[.id] | not)
+              )
+            ] |
+            sort_by(.enacted_date // "0000-00-00") | reverse |
+            .[0:20]
+          ' data/regulations.json data/rules.json > /tmp/uncovered-laws.json
+          COUNT=$(jq length /tmp/uncovered-laws.json)
+          echo "Laws missing rule coverage: $COUNT (processing up to 20 this run)"
+          jq -r '.[].id' /tmp/uncovered-laws.json
+
+      - name: Skip if nothing to process
+        id: check
+        run: |
+          COUNT=$(jq length /tmp/uncovered-laws.json)
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+
+      - name: Extract rules for uncovered laws
+        if: steps.check.outputs.count != '0'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          cat << PROMPT | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,WebFetch,Read,Write"
+          You are extracting legal rules for laws that currently have no coverage in the
+          GAIA rules database. Today is $TODAY.
+
+          /tmp/uncovered-laws.json — laws to process (binding, enacted, no rule instances yet)
+          data/rules.json          — the rules database to update
+          data/texts/              — directory of full law text files ({id}.md)
+
+          For each law in /tmp/uncovered-laws.json, work through these steps:
+
+          STEP 1 — Get the law text:
+            a. Check if data/texts/{id}.md exists. If yes, read it — this is the best source.
+            b. If not, try WebFetch on source_url or official_text_url.
+            c. If both fail, use the summary and key_obligations fields as a fallback.
+
+          STEP 2 — Extract substantive rules:
+            Extract every distinct legal obligation, prohibition, and right the law creates.
+            Skip: pure definitions, recitals, findings, purpose statements, and
+            administrative boilerplate (agency creation, appropriations, severability).
+            Aim for 3–20 rules per law depending on length and complexity.
+
+          STEP 3 — Match against existing rules in data/rules.json:
+            For each extracted rule, scan data/rules.json for a matching existing rule.
+            Relationships:
+              identical  — same obligation, essentially same wording
+              agrees     — same requirement, different scope or wording
+              similar    — related concept, meaningfully different
+              opposed    — explicitly contradicts an existing rule
+            If a match is found, add a new instance to that rule's instances array.
+            If no match, create a new rule entry.
+
+          NEW rule object format:
+          {
+            "rule_id": "r-XXXX",   ← next available 4-digit number (check max in data/rules.json)
+            "rule_text": "Plain English statement of the obligation or prohibition",
+            "rule_text_technical": "Precise formulation with section citations",
+            "category": "one of: definitions_scope | transparency | data_governance |
+                         risk_management | prohibited_uses | human_oversight | enforcement |
+                         institutional_framework | sector_specific | synthetic_media |
+                         biometric | employment | liability",
+            "tags": ["keyword1", "keyword2"],
+            "first_instance": {
+              "law_id": "...",
+              "law_name": "...",
+              "citation": "§ X / Art. Y",
+              "date": "YYYY-MM-DD"
+            },
+            "instances": [{ see instance format below }]
+          }
+
+          Instance object (add to existing rules OR include in first_instance of new rules):
+          {
+            "law_id": "...",
+            "relationship": "origin|identical|agrees|similar|opposed",
+            "citation": "§ X / Art. Y",
+            "notes": "One sentence on scope, jurisdiction, or key differences",
+            "instrument_binding": true
+          }
+
+          Write the complete updated data/rules.json when finished.
+
+          Quality rules:
+          - Prefer adding instances to existing rules over creating new ones
+          - One well-matched rule beats five uncertain ones
+          - Do not create duplicate rule_ids — check the current max before numbering
+          - Process all laws in /tmp/uncovered-laws.json before writing output
+          PROMPT
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/rules.json \
+            && echo "changed=false" >> $GITHUB_OUTPUT \
+            || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Validate if changed
+        if: steps.changes.outputs.changed == 'true'
+        run: npm run validate
+
+      - name: Open pull request
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: rules-backfill/${{ github.run_id }}
+          commit-message: "data: extract rules for previously uncovered laws — ${{ github.run_id }}"
+          title: "Rules backfill — ${{ github.run_id }}"
+          body: |
+            Rule extraction for binding enacted laws that had no coverage in `data/rules.json`.
+
+            This run processed up to 20 laws (newest-first). If the backlog is not empty,
+            the next merge to `data/regulations.json` will trigger another pass.
+
+            Please review before merging:
+            - Rule instances reference correct laws and citations
+            - Relationship labels (identical / agrees / similar / opposed) are accurate
+            - No duplicate rule_ids introduced
+            - New rules are genuinely novel, not duplicates of existing ones
+
+            Merging this PR updates the Convergence Map for all affected jurisdictions.
+          labels: automated, data-update, rules

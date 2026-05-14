@@ -1,0 +1,120 @@
+name: Monthly Re-verification
+
+on:
+  schedule:
+    - cron: '0 10 1 * *'   # 1st of each month at 10:00 UTC
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  reverify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci --legacy-peer-deps
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      # Rotate through all in_force laws over ~10 months by sampling every 10th
+      # record, with the offset advancing each month so different laws are checked.
+      - name: Sample laws for this month
+        run: |
+          OFFSET=$(( ($(date +%-m) - 1) % 10 ))
+          jq --argjson offset "$OFFSET" '
+            [.[] | select(.status == "in_force" and .instrument_binding == true)] |
+            to_entries |
+            map(select(.key % 10 == $offset)) |
+            map(.value) |
+            .[0:50]
+          ' data/regulations.json > /tmp/sample-laws.json
+          echo "Sampled $(jq length /tmp/sample-laws.json) laws for re-verification (offset $OFFSET)"
+
+      - name: Re-verify sampled laws
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          cat << PROMPT | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,WebFetch,Read,Write"
+          You are re-verifying existing records in the GAIA AI regulation database.
+          Today is $TODAY. The database is at data/regulations.json.
+
+          The file /tmp/sample-laws.json contains a sample of in_force laws to re-verify.
+
+          For each law in the sample, investigate:
+
+          TASK 1 — Source URL health:
+          Use WebFetch to check the source_url. If it returns a 404, redirect, or
+          clearly wrong page, search for the correct current URL and update source_url.
+          Set last_verified to $TODAY if the URL is confirmed live.
+
+          TASK 2 — Amendment detection:
+          Search "[law short_name] amended 2025 2026" and "[jurisdiction] [law topic] amendment".
+          If the law has been materially amended:
+          - Update summary to note the amendment
+          - If the amendment is substantial enough to warrant a new record, add one with
+            status=in_force and a superseded_by link from the old record to the new one
+          - Set last_verified to $TODAY
+
+          TASK 3 — Status corrections:
+          Check for laws still marked enacted_not_yet_effective whose effective date has
+          clearly passed with no controversy. Update to in_force if confirmed.
+          Check for laws that have been formally repealed or superseded — update
+          status to superseded and add superseded_by if a replacement exists.
+
+          TASK 4 — Metadata accuracy:
+          Spot-check enacted_date, jurisdiction, and country fields against the source.
+          Correct any clear errors found.
+
+          Rules:
+          - Update data/regulations.json directly for any corrections found
+          - Always set last_verified to $TODAY on any record you touch
+          - Only make changes you can verify from an official source
+          - If a record looks correct, set last_verified to $TODAY and move on
+          - If nothing needs changing on a record, still update last_verified
+          PROMPT
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/regulations.json \
+            && echo "changed=false" >> $GITHUB_OUTPUT \
+            || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Validate if changed
+        if: steps.changes.outputs.changed == 'true'
+        run: npm run validate
+
+      - name: Open pull request
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: monthly-reverify/${{ github.run_id }}
+          commit-message: "data: monthly re-verification pass — ${{ github.run_id }}"
+          title: "Monthly re-verification — ${{ github.run_id }}"
+          body: |
+            Monthly re-verification of ~50 sampled `in_force` laws.
+
+            Changes may include:
+            - Updated `source_url` for dead links
+            - `last_verified` refreshed for confirmed-live records
+            - Status corrections (e.g. `enacted_not_yet_effective` → `in_force`)
+            - Summary updates reflecting amendments
+            - New records for substantial amendments with `superseded_by` links
+
+            Please review before merging — source corrections should be checked
+            against official government/regulatory body sites.
+          labels: automated, data-update, reverification
