@@ -1,0 +1,73 @@
+name: LegiScan Bill Stage Sync
+
+# Runs every Tuesday — complements the Monday weekly update.
+# Also runnable manually (e.g. after getting a new LegiScan API key).
+on:
+  schedule:
+    - cron: '0 10 * * 2'   # Every Tuesday 10:00 UTC
+  workflow_dispatch:
+    inputs:
+      state:
+        description: 'Limit to one state (e.g. CA). Leave blank for all states.'
+        required: false
+        default: ''
+
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci --legacy-peer-deps
+
+      - name: Sync bill stages from LegiScan
+        env:
+          LEGISCAN_API_KEY: ${{ secrets.LEGISCAN_API_KEY }}
+        run: |
+          if [ -n "${{ github.event.inputs.state }}" ]; then
+            npx tsx scripts/update-bill-stages-legiscan.ts --state "${{ github.event.inputs.state }}"
+          else
+            npx tsx scripts/update-bill-stages-legiscan.ts
+          fi
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/regulations.json \
+            && echo "changed=false" >> $GITHUB_OUTPUT \
+            || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Validate if changed
+        if: steps.changes.outputs.changed == 'true'
+        run: npm run validate
+
+      - name: Open pull request
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: legiscan-sync/${{ github.run_id }}
+          commit-message: "data: LegiScan bill stage sync — ${{ github.run_id }}"
+          title: "LegiScan bill stage sync — ${{ github.run_id }}"
+          body: |
+            Automated sync of US state bill stages via LegiScan API.
+
+            Changes may include:
+            - Bills marked `failed` — died in committee when session ended
+            - Bills marked `vetoed` — governor veto confirmed
+            - Bills promoted to `in_force` — signed into law
+            - `legislative_stage` updated (introduced / in_committee / passed_committee / passed_one_chamber / passed_legislature)
+            - `last_action_date` and `last_action_description` populated
+
+            Please spot-check a few status changes against official state legislature sites before merging.
+          labels: automated, data-update, bill-stages
