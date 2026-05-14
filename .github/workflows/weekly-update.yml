@@ -112,7 +112,93 @@ jobs:
           If nothing new was found, do not modify data/regulations.json.
           PROMPT
 
-      # ── Step 1b: Fetch full text for newly added laws ─────────────────────────
+      # ── Step 1b: Discover international proposed bills ───────────────────────
+      - name: Discover international proposed bills
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          cat << PROMPT | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,WebFetch,Read,Write"
+          You are discovering newly introduced AI legislation globally for GAIA.
+          Today is $TODAY. The database is at data/regulations.json.
+
+          Search each parliament below for AI-related bills introduced or significantly
+          advanced in the past 7 days. For each parliament, run at least one targeted search.
+
+          SUPRANATIONAL:
+          - EU: search EUR-Lex for new Commission proposals or Parliament reports on AI
+            (eur-lex.europa.eu, search type:proposal subject:artificial-intelligence)
+          - Council of Europe: check recent AI-related instruments or recommendations
+          - OECD/UN: any new AI governance instruments or frameworks
+
+          EUROPE:
+          - UK: search bills.parliament.uk "artificial intelligence" — new bills this week
+          - Germany: search bundestag.de for AI-related Gesetzentwürfe (draft laws)
+          - France: search assemblee-nationale.fr for IA or intelligence artificielle bills
+          - Netherlands: search tweedekamer.nl for AI-related wetsvoorstellen
+
+          NORTH AMERICA:
+          - Canada: search LEGISinfo (parl.ca/legisinfo) for "artificial intelligence" bills
+            in the House of Commons or Senate introduced this week
+
+          ASIA-PACIFIC:
+          - Japan: search "人工知能 法案" (AI bill) at kokkai.ndl.go.jp or news sources
+          - South Korea: search "인공지능 법안" at assembly.go.kr
+          - Australia: search aph.gov.au/Bills_Legislation for AI-related bills
+          - Singapore: search parliament.gov.sg for AI-related bills or motions
+          - India: check loksabha.nic.in for AI-related Private Member Bills or Government Bills
+
+          LATIN AMERICA:
+          - Brazil: search camara.leg.br "inteligência artificial" for new PL (project of law)
+          - Mexico: search congreso.gob.mx for IA legislation
+
+          AFRICA & MIDDLE EAST:
+          - South Africa: check parliament.gov.za for AI-related bills
+          - UAE/Saudi Arabia: search for new AI regulatory instruments
+          - Kenya/Rwanda/Ghana: check recent AI governance instruments
+
+          For each newly introduced bill found that is NOT already in data/regulations.json,
+          add a record with status=proposed:
+          {
+            "id": "{iso2}-{jx_slug}-{bill_slug}-{year}",
+            "short_name": "Short descriptive name",
+            "full_name": "Official bill title",
+            "country": "Country name",
+            "jurisdiction": "Parliament or legislature name",
+            "jurisdiction_type": "national|supranational|subnational",
+            "region": "e.g. Europe & Central Asia",
+            "status": "proposed",
+            "bill_number": "Official bill/dossier number",
+            "legislative_stage": "introduced|in_committee|passed_committee|passed_one_chamber|passed_legislature|awaiting_signature|unknown",
+            "last_action_date": "$TODAY",
+            "last_action_description": "One sentence describing current status",
+            "last_verified": "$TODAY",
+            "source_url": "Official parliament URL for this bill",
+            "official_text_url": "Direct URL to bill text if available, else null",
+            "primary_category": "one of the standard categories",
+            "categories": ["..."],
+            "legal_family": "appropriate value",
+            "instrument_binding": true,
+            "ai_specific": true,
+            "summary": "2-3 sentence plain English summary of what the bill would do.",
+            "inspired_by": [],
+            "influenced": []
+          }
+
+          Stage mapping guide:
+            introduced        = filed/introduced, no committee action yet
+            in_committee      = referred to and under consideration by committee
+            passed_committee  = committee approved/reported the bill
+            passed_one_chamber = passed one house (House of Commons, Bundestag, etc.)
+            passed_legislature = passed all required chambers
+            awaiting_signature = awaiting presidential/royal assent or promulgation
+
+          Check existing records first — do not add duplicates (check bill_number and short_name).
+          Be conservative: only add bills clearly focused on AI with an official source URL.
+          If nothing new found, do not modify data/regulations.json.
+          PROMPT
+
+      # ── Step 1c: Fetch full text for newly added laws ─────────────────────────
       - name: Fetch full text for new laws
         run: npm run fetch-texts:skip
         continue-on-error: true   # blocked sites shouldn't stop the rest of the run
@@ -136,7 +222,7 @@ jobs:
           mv /tmp/regulations-promoted.json data/regulations.json
           echo "Promoted $PROMOTED law(s) to in_force"
 
-      # ── Step 3: Bill stage updates ────────────────────────────────────────────
+      # ── Step 3: Bill stage updates (US + international) ──────────────────────
       - name: Update bill stages
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -146,34 +232,51 @@ jobs:
           You are maintaining the GAIA bill stage database.
           Today is $TODAY. The database is at data/regulations.json.
 
-          TASK 1 — Catch enacted and failed bills:
-          Search the web for US state AI bills that were signed into law OR failed/died
-          in the past 7 days. Search queries like:
-            AI bill signed governor 2026
-            AI bill failed vetoed state legislature 2026
-          For any bill you find in data/regulations.json (match by bill_number or short_name):
-          - If signed: update status to in_force or enacted_not_yet_effective,
-            set enacted_date, remove legislative_stage field
-          - If failed/died/vetoed: update status to failed or vetoed, remove legislative_stage field
+          TASK 1 — Catch enacted and failed bills (US states):
+          Search for US state AI bills signed into law OR failed/died in the past 7 days:
+            "AI bill signed governor 2026"
+            "AI bill failed vetoed state legislature 2026"
+          For any bill found in data/regulations.json (match by bill_number or short_name):
+          - Signed: status → in_force or enacted_not_yet_effective, set enacted_date,
+            remove legislative_stage
+          - Failed/died/vetoed: status → failed or vetoed, remove legislative_stage
 
-          TASK 2 — Advance stages for high-momentum bills:
-          Look at all records in data/regulations.json where status=proposed and
-          legislative_stage is passed_one_chamber, passed_legislature, or
-          awaiting_signature. These are close to becoming law — verify their current
-          status and update accordingly.
+          TASK 2 — Catch enacted and failed international bills:
+          Search for AI bills enacted or failed in the past 7 days in these jurisdictions:
+          - UK: "UK artificial intelligence bill royal assent 2026" / "AI bill rejected Lords Commons"
+          - EU: check EUR-Lex for any AI legislative procedures moved to in_force this week
+          - Canada: "Canada artificial intelligence act passed 2026"
+          - Australia: "Australia AI bill passed 2026"
+          - Japan: "人工知能 法律 成立 2026" (AI law enacted)
+          - South Korea: "인공지능 법 통과 2026" (AI law passed)
+          - Brazil: "lei inteligência artificial sancionada 2026"
+          - Any other country where an AI bill was enacted or failed
+          Match against existing records and update status accordingly.
 
-          Also check records where legislative_stage=passed_committee and search for
-          whether they have since received a floor vote.
+          TASK 3 — Advance high-momentum bills (all jurisdictions):
+          Read all records in data/regulations.json where status=proposed and
+          legislative_stage is awaiting_signature, passed_legislature, or
+          passed_one_chamber. Verify current status for each and update if changed.
 
-          For any updated bill, set:
+          Also check passed_committee records — search for whether they have had a floor vote.
+
+          Priority sources by jurisdiction:
+          - US states: LegiScan, official state legislature websites, Ballotpedia
+          - UK: bills.parliament.uk
+          - EU: eur-lex.europa.eu/procedure
+          - Canada: parl.ca/legisinfo
+          - Australia: aph.gov.au/Bills_Legislation
+          - Japan: kokkai.ndl.go.jp
+          - Korea: assembly.go.kr
+          - Brazil: camara.leg.br / senado.leg.br
+
+          For any updated record set:
           - legislative_stage: updated value
           - last_action_date: YYYY-MM-DD
           - last_action_description: one plain-English sentence
           - last_verified: $TODAY
 
-          Be conservative — only update when you have a reliable source (official
-          legislature website, LegiScan, Ballotpedia, or major news).
-          If nothing changed, do not modify data/regulations.json.
+          Only update when you have a reliable source. If nothing changed, do not modify.
           PROMPT
 
       # ── Step 4: Enforcement actions ───────────────────────────────────────────
