@@ -21,9 +21,7 @@ interface Regulation {
   country?: string
 }
 
-const bills = (regulations as Regulation[]).filter(r =>
-  r.status === 'proposed' || r.status === 'failed' || r.status === 'vetoed'
-)
+const bills = (regulations as Regulation[]).filter(r => r.status === 'proposed')
 
 const CATEGORY_LABELS: Record<string, string> = {
   synthetic_media_deepfake: 'Synthetic Media',
@@ -42,17 +40,6 @@ const CATEGORY_LABELS: Record<string, string> = {
   ip_creative_rights: 'IP & Creative Rights',
 }
 
-const STATUS_CONFIG: Record<string, { label: string; classes: string }> = {
-  proposed: { label: 'Proposed', classes: 'bg-odl-yellow-bg text-odl-yellow border border-odl-yellow/30' },
-  failed:   { label: 'Failed',   classes: 'bg-odl-red-bg text-odl-red border border-odl-red/30' },
-  vetoed:   { label: 'Vetoed',   classes: 'bg-odl-orange-bg text-odl-orange border border-odl-orange/30' },
-}
-
-function StatusBadge({ status }: { status: string }) {
-  const cfg = STATUS_CONFIG[status]
-  if (!cfg) return null
-  return <span className={`inline-flex px-1.5 py-0.5 rounded text-[10px] font-medium ${cfg.classes}`}>{cfg.label}</span>
-}
 
 function getYear(bill: Regulation): string {
   const m = bill.id.match(/-(\d{4})$/)
@@ -64,7 +51,6 @@ function getStateCode(region: string): string {
 }
 
 export function BillsTracker() {
-  const [statusFilter, setStatusFilter] = useState<string>('')
   const [categoryFilter, setCategoryFilter] = useState<string>('')
   const [stateFilter, setStateFilter] = useState<string>('')
   const [yearFilter, setYearFilter] = useState<string>('')
@@ -96,7 +82,6 @@ export function BillsTracker() {
   const filtered = useMemo(() => {
     const q = search.toLowerCase()
     return bills.filter(b => {
-      if (statusFilter && b.status !== statusFilter) return false
       if (categoryFilter && b.primary_category !== categoryFilter) return false
       if (stateFilter && b.region !== stateFilter) return false
       if (yearFilter && getYear(b) !== yearFilter) return false
@@ -104,12 +89,9 @@ export function BillsTracker() {
           !b.jurisdiction.toLowerCase().includes(q)) return false
       return true
     })
-  }, [statusFilter, categoryFilter, stateFilter, yearFilter, search])
+  }, [categoryFilter, stateFilter, yearFilter, search])
 
-  const proposedCount = bills.filter(b => b.status === 'proposed').length
-  const failedCount   = bills.filter(b => b.status === 'failed').length
-  const vetoedCount   = bills.filter(b => b.status === 'vetoed').length
-  const stateCount    = new Set(usStateBills.map(b => b.region)).size
+  const stateCount = new Set(usStateBills.map(b => b.region)).size
 
   function toggleExpand(id: string) {
     setExpanded(prev => prev === id ? null : id)
@@ -119,16 +101,15 @@ export function BillsTracker() {
     <div className="flex flex-col gap-6">
       <div>
         <h2 className="text-sm font-semibold text-odl-text mb-1">Legislative Tracker</h2>
-        <p className="text-xs text-odl-muted">Proposed, failed, and vetoed AI legislation across US states and global jurisdictions.</p>
+        <p className="text-xs text-odl-muted">Active AI bills currently before legislatures — not yet signed into law.</p>
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
         {[
-          { label: 'Proposed', value: proposedCount, color: 'text-odl-yellow' },
-          { label: 'Failed',   value: failedCount,   color: 'text-odl-red' },
-          { label: 'Vetoed',   value: vetoedCount,   color: 'text-odl-orange' },
-          { label: 'US States Active', value: stateCount, color: 'text-odl-text' },
+          { label: 'Active Bills', value: bills.length, color: 'text-odl-text' },
+          { label: 'US States',    value: stateCount,   color: 'text-odl-text' },
+          { label: 'Other Jurisdictions', value: globalBills.length, color: 'text-odl-text' },
         ].map(s => (
           <div key={s.label} className="panel p-3 text-center">
             <div className={`text-lg font-bold font-mono ${s.color}`}>{s.value}</div>
@@ -155,16 +136,6 @@ export function BillsTracker() {
           className="bg-white border border-odl-border text-odl-text rounded-md px-2.5 py-1.5 text-xs outline-none focus:border-odl-accent min-w-[220px]"
         />
         <select
-          value={statusFilter}
-          onChange={e => setStatusFilter(e.target.value)}
-          className="bg-white border border-odl-border text-odl-text rounded-md px-2.5 py-1.5 text-xs outline-none focus:border-odl-accent"
-        >
-          <option value="">All statuses</option>
-          <option value="proposed">Proposed</option>
-          <option value="failed">Failed</option>
-          <option value="vetoed">Vetoed</option>
-        </select>
-        <select
           value={stateFilter}
           onChange={e => setStateFilter(e.target.value)}
           className="bg-white border border-odl-border text-odl-text rounded-md px-2.5 py-1.5 text-xs outline-none focus:border-odl-accent"
@@ -189,9 +160,9 @@ export function BillsTracker() {
           {years.map(y => <option key={y} value={y}>{y}</option>)}
         </select>
         <span className="text-xs text-odl-muted ml-1">{filtered.length.toLocaleString()} bill{filtered.length !== 1 ? 's' : ''}</span>
-        {(statusFilter || categoryFilter || stateFilter || yearFilter || search) && (
+        {(categoryFilter || stateFilter || yearFilter || search) && (
           <button
-            onClick={() => { setStatusFilter(''); setCategoryFilter(''); setStateFilter(''); setYearFilter(''); setSearch('') }}
+            onClick={() => { setCategoryFilter(''); setStateFilter(''); setYearFilter(''); setSearch('') }}
             className="text-xs text-odl-accent hover:text-odl-accent-hover underline"
           >Clear</button>
         )}
@@ -206,7 +177,6 @@ export function BillsTracker() {
                 <th className="text-left px-4 py-2.5 text-odl-muted font-medium whitespace-nowrap">Bill</th>
                 <th className="text-left px-4 py-2.5 text-odl-muted font-medium whitespace-nowrap">Jurisdiction</th>
                 <th className="text-left px-4 py-2.5 text-odl-muted font-medium whitespace-nowrap">Category</th>
-                <th className="text-left px-4 py-2.5 text-odl-muted font-medium whitespace-nowrap">Status</th>
                 <th className="text-left px-4 py-2.5 text-odl-muted font-medium whitespace-nowrap">Year</th>
                 <th className="text-left px-4 py-2.5 text-odl-muted font-medium whitespace-nowrap">Topics</th>
               </tr>
@@ -231,9 +201,6 @@ export function BillsTracker() {
                     <td className="px-4 py-3 text-odl-muted whitespace-nowrap">
                       {bill.primary_category ? (CATEGORY_LABELS[bill.primary_category] ?? bill.primary_category) : '—'}
                     </td>
-                    <td className="px-4 py-3">
-                      <StatusBadge status={bill.status} />
-                    </td>
                     <td className="px-4 py-3 font-mono text-odl-muted">
                       {getYear(bill)}
                     </td>
@@ -250,7 +217,7 @@ export function BillsTracker() {
                   </tr>
                   {expanded === bill.id && (
                     <tr key={`${bill.id}-exp`} className="border-b border-odl-border/60 bg-odl-accent-bg/20">
-                      <td colSpan={6} className="px-4 py-4">
+                      <td colSpan={5} className="px-4 py-4">
                         <div className="text-xs text-odl-text leading-relaxed mb-2 max-w-3xl">
                           {bill.summary ?? bill.full_name}
                         </div>
