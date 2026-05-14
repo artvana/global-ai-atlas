@@ -1,7 +1,7 @@
 name: Enrich Bill Stages
 
 on:
-  workflow_dispatch:   # Manual trigger only — run once, or re-run to refresh
+  workflow_dispatch:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -26,55 +26,67 @@ jobs:
       - name: Install Claude Code CLI
         run: npm install -g @anthropic-ai/claude-code
 
+      - name: Extract proposed bills to working file
+        run: |
+          jq '[.[] | select(.status == "proposed")]' data/regulations.json > data/proposed-bills.json
+          echo "Extracted $(jq length data/proposed-bills.json) proposed bills"
+
       - name: Enrich bill stages
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           claude --print --dangerously-skip-permissions --allowedTools "WebSearch,Read,Write" "
-          You are enriching the GAIA bill stage database.
+          You are enriching legislative stage data for the GAIA AI regulation database.
           Today is $(date +%Y-%m-%d).
 
-          Read data/regulations.json. Extract all records where status='proposed'.
+          The file data/proposed-bills.json contains all proposed AI bills (already extracted
+          for you — do NOT touch data/regulations.json directly).
 
-          For each US state that has proposed bills, do a web search to find current
-          legislative status. Search queries like:
-            '[State] AI bills 2025 2026 committee passed signed status'
-            'site:legiscan.com [State] artificial intelligence bill 2026'
+          Your task: for each bill, research its current legislative stage and update
+          the record with three new fields:
 
-          Work through ALL 33 states with proposed bills. For each bill where you can
-          determine the current stage, update the record in data/regulations.json with:
+            legislative_stage — one of:
+              'introduced'          filed but no committee action yet
+              'in_committee'        referred to and pending in committee
+              'passed_committee'    cleared committee, heading to floor
+              'passed_one_chamber'  passed house or senate
+              'passed_legislature'  passed both chambers
+              'awaiting_signature'  on governor's desk
+              'unknown'             could not determine (use this as default)
 
-          - 'legislative_stage': one of:
-              'introduced'        — filed but no committee action
-              'in_committee'      — referred to committee
-              'passed_committee'  — cleared committee, eligible for floor vote
-              'passed_one_chamber' — passed house or senate (specify which in last_action_description)
-              'passed_legislature' — passed both chambers, awaiting governor
-              'awaiting_signature' — on governor's desk
-              'unknown'           — could not determine
+            last_action_date — 'YYYY-MM-DD' or null
 
-          - 'last_action_date': 'YYYY-MM-DD' or null if unknown
-          - 'last_action_description': brief plain-English description, e.g.
-              'Passed Senate 32-6, referred to House Commerce Committee'
+            last_action_description — one plain-English sentence, e.g.
+              'Passed Senate 32–6, referred to House Commerce Committee'
 
-          ALSO: if a bill has been enacted (signed by governor), update:
-            status → 'enacted_not_yet_effective' or 'in_force' as appropriate
-            enacted_date → date signed
-            legislative_stage → (remove or set to null, not applicable)
+          ALSO update status if the bill has resolved:
+            - Signed into law → status: 'in_force' or 'enacted_not_yet_effective',
+              add enacted_date, remove legislative_stage
+            - Failed/died/tabled → status: 'failed', remove legislative_stage
 
-          ALSO: if a bill has definitively failed (session ended without passage,
-          tabled, or withdrawn), update:
-            status → 'failed'
-            legislative_stage → (remove or set to null)
+          Strategy — work state by state:
+            For each state, run ONE search like:
+              '[State name] AI artificial intelligence bill 2025 2026 passed signed committee'
+            Then match results to specific bill_numbers in the file.
+            Also try: 'site:legiscan.com [State] artificial intelligence 2026'
 
           Rules:
-          - Be conservative: only update when you find a reliable source.
-          - If uncertain, set legislative_stage to 'unknown' and leave last_action_date null.
-          - Do not invent information. Source must be official legislature website,
-            LegiScan, Ballotpedia, or a major news outlet.
-          - Process all 33 states — do not skip any.
-          - Write the complete updated regulations.json when finished.
+            - Default legislative_stage to 'unknown' if you cannot find reliable info.
+            - Only use official legislature sites, LegiScan, Ballotpedia, or major news.
+            - Do not invent data.
+            - After processing all states, write the complete updated array back to
+              data/proposed-bills.json (same format, array of objects).
           "
+
+      - name: Merge enriched bills back into regulations.json
+        run: |
+          jq --slurpfile enriched data/proposed-bills.json \
+            '($enriched[0] | map({(.id): .}) | add) as $map |
+             map(if $map[.id] then $map[.id] else . end)' \
+            data/regulations.json > /tmp/regulations-updated.json
+          mv /tmp/regulations-updated.json data/regulations.json
+          echo "Merged $(jq length data/proposed-bills.json) enriched bills back"
+          rm data/proposed-bills.json
 
       - name: Check for changes
         id: changes
@@ -94,13 +106,11 @@ jobs:
           commit-message: "data: enrich legislative stages for proposed bills — ${{ github.run_id }}"
           title: "Bill stage enrichment — ${{ github.run_id }}"
           body: |
-            One-time enrichment of `legislative_stage`, `last_action_date`, and
-            `last_action_description` fields for proposed bills in `data/regulations.json`.
+            Enrichment of `legislative_stage`, `last_action_date`, and
+            `last_action_description` for proposed bills in `data/regulations.json`.
 
-            Please review:
+            Please review before merging:
             - Stages match official legislative records
-            - Any status changes (enacted/failed) are correct
+            - Status changes (enacted/failed) are accurate
             - Sources are reliable (legislature websites, LegiScan, Ballotpedia)
-
-            Merge when satisfied.
           labels: automated, data-update, bill-stages
