@@ -11852,6 +11852,14 @@
         "notes": "Both rules require an impact assessment before deploying high-risk automated processing, but Mexico's rule uses 'Algorithmic Impact Assessment' and specifies a scale criterion ('large numbers of data subjects'), whereas Uruguay's rule uses 'Data Protection Impact Assessment' framed around 'significant changes' to high-risk automated decision-making systems.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "agrees",
+        "citation": "Amendment No. 13 to PPL 5741-1981",
+        "notes": "Both require a data protection impact assessment for high-risk automated processing; Israel's amendment applies the obligation specifically to AI profiling and automated decisions about Israeli residents.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -24469,6 +24477,22 @@
         "notes": "Both establish the right to object to processing based on legitimate interests and for marketing/profiling purposes, independently drafted with similar substantive scope.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "similar",
+        "citation": "Amendment No. 13 to PPL 5741-1981",
+        "notes": "Both confer rights against purely automated processing; the DIFC rule frames it as a right to object to profiling, while Israel's amendment frames it as an affirmative right to human review of consequential AI-based decisions.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "agrees",
+        "citation": "PIPA Art. 37-2 (Act No. 19234)",
+        "notes": "Both confer rights against purely automated processing; Korea's amendment is broader, covering any consequential automated decision (not just profiling for marketing/behavioral targeting) and requiring suspension of decision effects during human review.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -26677,6 +26701,14 @@
         "notes": "Both require disclosure when AI is used to generate or substantially alter political advertising content, but the Puerto Rico rule focuses on the financier's disclosure obligation while Michigan's targets the creator/publisher/distributor, and the scope of what triggers disclosure may differ.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-mn-hf4114-2024",
+        "relationship": "similar",
+        "citation": "Minn. Stat. § 211B.17 (as amended by HF 4114)",
+        "notes": "Both require prominent disclosure that political content is AI-generated; Michigan's rule applies to any qualified political advertisement generated substantially by AI, while Minnesota's rule is narrower — triggered only within 90 days of an election and only for materially deceptive depictions of candidates.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -31575,6 +31607,14 @@
         "notes": "Virginia S 571 — Synthetic Media (Virginia) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-mn-hf4114-2024",
+        "relationship": "agrees",
+        "citation": "Minn. Stat. § 211B.17 (as amended by HF 4114)",
+        "notes": "Both prohibit distributing materially deceptive AI-generated media depicting a candidate within 90 days of an election absent disclosure; Minnesota's law adds a criminal misdemeanor and a private right of action for affected candidates.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -64316,6 +64356,14 @@
         "instrument_binding": true,
         "instrument_type": "statute",
         "variant_of": "eu-eu-aioffice-prohibited-2025"
+      },
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "similar",
+        "citation": "Amendment No. 13 to PPL 5741-1981",
+        "notes": "Both prohibit untargeted scraping of personal data for AI development, but the EU AI Act narrowly targets the creation/expansion of facial recognition databases, while Israel's Amendment 13 reaches any unauthorized scraping of personal data for AI/LLM training.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -304114,6 +304162,14 @@
         "notes": "Wyoming H 91 — Ban on Government Social Scoring With AI (Wyoming) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "similar",
+        "citation": "Amendment No. 13 to PPL 5741-1981",
+        "notes": "Texas TRAIGA prohibits deploying AI trained with biometric identifiers and untargeted internet scraping for unique identification, while Israel's Amendment 13 prohibits unauthorized scraping of any personal data for AI training and reaches earlier in the lifecycle (training, not deployment).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -346797,6 +346853,14 @@
         "notes": "Both specify the content requirements for a data processing notification to the authority, covering controller identity, purposes, data categories, and safeguards, though Zimbabwe adds retention periods and Senegal adds interconnections and data origins.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "agrees",
+        "citation": "Law No. 18-07",
+        "notes": "Both require controllers to declare processing activities to the national data protection authority (ANPDP in Algeria, CDP in Senegal) with content specifying purposes, data categories, and security measures; Algerian law additionally requires prior authorization for higher-risk processing.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -347034,6 +347098,14 @@
         "relationship": "similar",
         "citation": "Cross-Border Data Transfers",
         "notes": "Both rules restrict cross-border data transfers to countries lacking adequate protection and require regulatory authorization, but the Côte d'Ivoire law specifies ARTCI as the approving authority and frames the adequacy standard differently from Senegal's CDP-based authorization framework.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "agrees",
+        "citation": "Law No. 18-07",
+        "notes": "Both restrict cross-border transfers to countries lacking adequate protection unless the controller obtains DPA authorization on the basis of additional safeguards; Algerian law applies a similar adequacy-or-authorization regime through the ANPDP.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -353776,6 +353848,22 @@
         "relationship": "similar",
         "citation": "Art. 22C(2)(b) UK GDPR",
         "notes": "Both concern rights regarding automated decision-making, but the existing rule covers the right to obtain information about such decisions while this UK rule specifically grants the right to make representations about solely automated significant decisions, a narrower and distinct procedural right.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "agrees",
+        "citation": "Amendment No. 13 to PPL 5741-1981",
+        "notes": "Both confer a right to information about automated decision-making, including the logic and consequences; Israel's amendment explicitly extends the right to AI-based decisions and applies extraterritorially to controllers processing Israeli residents' data.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "agrees",
+        "citation": "PIPA Art. 37-2 (Act No. 19234)",
+        "notes": "Both grant data subjects the right to obtain meaningful information about the logic, significance, and consequences of automated decision-making concerning them; Korea's amendment additionally pauses decision effects pending review and applies the right to AI systems in high-stakes domains such as hiring and credit.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -371404,6 +371492,808 @@
         "relationship": "origin",
         "citation": "§ 29(2)",
         "notes": "Rule introduced in Finland AI Supervision Act 2025 (Finland, 2025-12-22).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-mi-h4048-2025-mcl-777-17b-752-388-3",
+    "rule_text": "If you disseminate an intimate deep fake with aggravating factors, the offense is classified as a Class F felony with a statutory maximum penalty of 3 years' imprisonment.",
+    "rule_text_technical": "MCL 777.17b (as amended by 2025 PA 12 / HB 4048) adds the offense under MCL 752.388(3) — 'Dissemination of intimate deep fake with aggravating factors' — to the felony classification table as a Class F (Person) felony with a 3-year statutory maximum.",
+    "category": "enforcement_penalties",
+    "tags": [
+      "intimate_deepfake",
+      "criminal_sentencing",
+      "felony_classification",
+      "synthetic_media",
+      "nonconsensual_imagery"
+    ],
+    "first_instance": {
+      "law_id": "us-mi-h4048-2025",
+      "law_name": "Michigan H 4048 — Deep Fakes",
+      "citation": "MCL 777.17b (752.388(3))",
+      "date": "2025-08-26"
+    },
+    "instances": [
+      {
+        "law_id": "us-mi-h4048-2025",
+        "relationship": "origin",
+        "citation": "MCL 777.17b (752.388(3))",
+        "notes": "Sentencing-guidelines classification placing dissemination of an intimate deep fake with aggravating factors at Class F (3-year max) under Michigan's sentencing grid. Effective August 26, 2025; contingent on enactment of companion HB 4047.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-nd-h1410-2025-section-1-2-b",
+    "rule_text": "During the 2025–26 legislative interim, the North Dakota Legislative Management must include in its study of crimes against children a review of state laws on the use of artificial intelligence in crimes relating to sexual performance of a minor or possession of prohibited materials.",
+    "rule_text_technical": "Section 1(2)(b) of HB 1410 (2025) directs the Legislative Management to include in its 2025–26 interim study a review of 'State laws relating to the use of artificial intelligence for crimes relating to sexual performance of a minor or possession of certain prohibited materials.'",
+    "category": "institutional_framework",
+    "tags": [
+      "legislative_study",
+      "ai_csam",
+      "interim_committee",
+      "child_protection",
+      "study_mandate"
+    ],
+    "first_instance": {
+      "law_id": "us-nd-h1410-2025",
+      "law_name": "North Dakota H 1410 — Legislative Management Study",
+      "citation": "HB 1410 § 1(2)(b)",
+      "date": "2025-04-16"
+    },
+    "instances": [
+      {
+        "law_id": "us-nd-h1410-2025",
+        "relationship": "origin",
+        "citation": "HB 1410 § 1(2)(b)",
+        "notes": "Directs an interim legislative study to review state laws on AI use in crimes against minors and to report findings and recommended legislation to the 70th Legislative Assembly.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-nm-hb20-2025-section-2-b-12",
+    "rule_text": "The New Mexico Technology and Innovation Division must coordinate innovation initiatives — including those involving artificial intelligence — across state agencies, identifying opportunities for collaboration, aligning resources, reducing duplication of effort, and maximizing the impact of state investments.",
+    "rule_text_technical": "Section 2(B)(12) of HB 20 (2025) requires the Technology and Innovation Division of the Economic Development Department to coordinate innovation initiatives across state agencies in 'target sectors,' defined in Section 2(C) to include 'advanced computing, which includes artificial intelligence, quantum computing and cybersecurity.'",
+    "category": "institutional_framework",
+    "tags": [
+      "state_ai_coordination",
+      "innovation_division",
+      "target_sectors",
+      "cross_agency"
+    ],
+    "first_instance": {
+      "law_id": "us-nm-hb20-2025",
+      "law_name": "New Mexico HB 20 — Technology and Innovation AI Division",
+      "citation": "HB 20 § 2(B)(12), § 2(C)",
+      "date": "2025-04-09"
+    },
+    "instances": [
+      {
+        "law_id": "us-nm-hb20-2025",
+        "relationship": "origin",
+        "citation": "HB 20 § 2(B)(12), § 2(C)",
+        "notes": "Creates the Technology and Innovation Division within the Economic Development Department and tasks it with coordinating cross-agency innovation activities in target sectors that expressly include AI.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-ut-sb332-2025-utah-code-63i-2-213-5",
+    "rule_text": "Utah's Artificial Intelligence Policy Act (Title 13, Chapter 72) remains in force and is repealed on July 1, 2027, extending the prior sunset date by two years.",
+    "rule_text_technical": "Section 63I-2-213(5) (as amended by SB 332, 2025) provides that 'Title 13, Chapter 72, Artificial Intelligence Policy Act, is repealed July 1, 2027,' replacing the prior repeal date of July 1, 2025.",
+    "category": "definitions_scope",
+    "tags": [
+      "sunset_clause",
+      "uaipa",
+      "repeal_date",
+      "statutory_duration"
+    ],
+    "first_instance": {
+      "law_id": "us-ut-sb332-2025",
+      "law_name": "Utah SB 332 (UAIPA 2025 Amendments)",
+      "citation": "Utah Code § 63I-2-213(5)",
+      "date": "2025-03-25"
+    },
+    "instances": [
+      {
+        "law_id": "us-ut-sb332-2025",
+        "relationship": "origin",
+        "citation": "Utah Code § 63I-2-213(5)",
+        "notes": "Sunset extension keeping the UAIPA framework operative until July 1, 2027 to allow time to develop a permanent governance framework.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "il-il-ppa13-2024-ai-training-scraping-prohibition",
+    "rule_text": "You cannot scrape personal data from the internet for the purpose of training artificial intelligence or machine-learning models without a lawful basis (such as informed consent of the data subjects).",
+    "rule_text_technical": "Amendment No. 13 to Israel's Protection of Privacy Law 5741-1981 (2024) prohibits the unauthorized scraping of personal data from publicly accessible online sources for AI/LLM training and treats such collection as unlawful processing absent informed consent or another statutory basis; enforced by the Privacy Protection Authority with administrative fines up to NIS 2 million.",
+    "category": "data_provenance",
+    "tags": [
+      "ai_training_data",
+      "scraping_prohibition",
+      "consent",
+      "personal_data",
+      "llm"
+    ],
+    "first_instance": {
+      "law_id": "il-il-ppa13-2024",
+      "law_name": "Israel Privacy Protection Law Amendment No. 13",
+      "citation": "Amendment No. 13 to PPL 5741-1981",
+      "date": "2024-08-05"
+    },
+    "instances": [
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "origin",
+        "citation": "Amendment No. 13 to PPL 5741-1981",
+        "notes": "Among the first national data protection laws to expressly prohibit unauthorized scraping of personal data for AI/LLM training, regardless of whether the scraped data is biometric.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "il-il-ppa13-2024-ai-automated-decision-transparency",
+    "rule_text": "If you make automated decisions about individuals using AI, you must disclose to those individuals that automated processing is being used and provide meaningful information about the logic, significance, and expected consequences of the decision.",
+    "rule_text_technical": "Amendment No. 13 to Israel's PPL 5741-1981 (2024) requires controllers performing AI-based automated decisions affecting Israeli data subjects to provide notice of the automated processing, the underlying logic, the significance of the processing, and the expected consequences for the data subject.",
+    "category": "disclosure",
+    "tags": [
+      "automated_decision_making",
+      "transparency",
+      "ai_disclosure",
+      "right_to_information"
+    ],
+    "first_instance": {
+      "law_id": "il-il-ppa13-2024",
+      "law_name": "Israel Privacy Protection Law Amendment No. 13",
+      "citation": "Amendment No. 13 to PPL 5741-1981",
+      "date": "2024-08-05"
+    },
+    "instances": [
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "origin",
+        "citation": "Amendment No. 13 to PPL 5741-1981",
+        "notes": "Imposes a GDPR-style transparency duty specifically extended to AI-based processing of Israeli data subjects.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "il-il-ppa13-2024-right-human-review-automated",
+    "rule_text": "Individuals have the right to request human review of automated decisions — including AI-based decisions — that produce legal or similarly significant effects on them.",
+    "rule_text_technical": "Amendment No. 13 to Israel's PPL 5741-1981 (2024) grants data subjects the right to demand human review of automated decisions affecting them and to obtain meaningful intervention beyond purely algorithmic processing.",
+    "category": "data_subject_rights",
+    "tags": [
+      "human_review",
+      "automated_decision_making",
+      "data_subject_right",
+      "ai_decisions"
+    ],
+    "first_instance": {
+      "law_id": "il-il-ppa13-2024",
+      "law_name": "Israel Privacy Protection Law Amendment No. 13",
+      "citation": "Amendment No. 13 to PPL 5741-1981",
+      "date": "2024-08-05"
+    },
+    "instances": [
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "origin",
+        "citation": "Amendment No. 13 to PPL 5741-1981",
+        "notes": "Codifies a right to demand human review of consequential automated decisions, including those produced by AI systems.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "il-il-ppa13-2024-ai-training-consent",
+    "rule_text": "Before using personal data to train an artificial intelligence model, you must obtain informed consent from the data subjects or rely on another lawful statutory basis.",
+    "rule_text_technical": "Amendment No. 13 to Israel's PPL 5741-1981 (2024) requires controllers to obtain informed consent of data subjects for the use of their personal data in AI training, or to rely on another lawful basis prescribed by the Act; processing without a basis is enforceable by administrative fines.",
+    "category": "consent",
+    "tags": [
+      "ai_training_data",
+      "informed_consent",
+      "personal_data",
+      "lawful_basis"
+    ],
+    "first_instance": {
+      "law_id": "il-il-ppa13-2024",
+      "law_name": "Israel Privacy Protection Law Amendment No. 13",
+      "citation": "Amendment No. 13 to PPL 5741-1981",
+      "date": "2024-08-05"
+    },
+    "instances": [
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "origin",
+        "citation": "Amendment No. 13 to PPL 5741-1981",
+        "notes": "Imposes an informed-consent requirement specifically for the use of personal data in AI training, supplementing the general PPL processing-basis rules.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "il-il-ppa13-2024-bias-discrimination-safeguards",
+    "rule_text": "If you operate AI or automated decision-making systems that process personal data, you must implement safeguards against bias and discrimination in those systems.",
+    "rule_text_technical": "Amendment No. 13 to Israel's PPL 5741-1981 (2024) obliges controllers using AI-based automated decision-making to adopt technical and organizational safeguards designed to prevent discriminatory outcomes against data subjects, consistent with Israel's existing equality laws.",
+    "category": "accountability_governance",
+    "tags": [
+      "bias_mitigation",
+      "anti_discrimination",
+      "ai_accountability",
+      "automated_decisions"
+    ],
+    "first_instance": {
+      "law_id": "il-il-ppa13-2024",
+      "law_name": "Israel Privacy Protection Law Amendment No. 13",
+      "citation": "Amendment No. 13 to PPL 5741-1981",
+      "date": "2024-08-05"
+    },
+    "instances": [
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "origin",
+        "citation": "Amendment No. 13 to PPL 5741-1981",
+        "notes": "Requires data controllers to maintain bias/discrimination safeguards for AI-driven personal data processing, deferring to Israel's existing civil-rights framework for substantive discrimination standards.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "il-il-ppa13-2024-administrative-fines",
+    "rule_text": "If you violate the Privacy Protection Law's processing, transparency, or AI-related obligations, you may face administrative fines of up to NIS 2,000,000 imposed by the Privacy Protection Authority.",
+    "rule_text_technical": "Amendment No. 13 to Israel's PPL 5741-1981 (2024) authorizes the Privacy Protection Authority (PPA) to impose administrative monetary penalties of up to NIS 2,000,000 (~$540,000 USD) for violations of the Act, with separate civil remedies under existing law for affected data subjects.",
+    "category": "enforcement_penalties",
+    "tags": [
+      "administrative_fine",
+      "ppa_enforcement",
+      "monetary_penalty",
+      "israel"
+    ],
+    "first_instance": {
+      "law_id": "il-il-ppa13-2024",
+      "law_name": "Israel Privacy Protection Law Amendment No. 13",
+      "citation": "Amendment No. 13 to PPL 5741-1981",
+      "date": "2024-08-05"
+    },
+    "instances": [
+      {
+        "law_id": "il-il-ppa13-2024",
+        "relationship": "origin",
+        "citation": "Amendment No. 13 to PPL 5741-1981",
+        "notes": "Expands PPA enforcement powers and introduces administrative fines up to NIS 2 million for privacy and AI-related violations.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-mn-hf4114-2024-private-right-of-action",
+    "rule_text": "If you are a political candidate depicted in a materially deceptive AI-generated audio or visual media distributed without disclosure within 90 days of an election, you may bring a civil action against the distributor for injunctive relief and damages of up to $1,000 per violation or actual damages.",
+    "rule_text_technical": "Minnesota HF 4114 (2024), amending Minn. Stat. § 211B.17, creates a private right of action for any candidate whose likeness is depicted in a materially deceptive AI-generated political ad distributed within 90 days of an election without the required disclosure; remedies include injunctive relief and damages up to $1,000 per violation or actual damages, whichever is greater.",
+    "category": "private_redress",
+    "tags": [
+      "private_right_of_action",
+      "election_deepfake",
+      "civil_action",
+      "candidate_remedy"
+    ],
+    "first_instance": {
+      "law_id": "us-mn-hf4114-2024",
+      "law_name": "Minnesota AI and Elections Disclosure Act",
+      "citation": "Minn. Stat. § 211B.17 (as amended by HF 4114)",
+      "date": "2024-05-20"
+    },
+    "instances": [
+      {
+        "law_id": "us-mn-hf4114-2024",
+        "relationship": "origin",
+        "citation": "Minn. Stat. § 211B.17 (as amended by HF 4114)",
+        "notes": "Empowers depicted candidates to seek civil remedies (injunctive relief plus damages capped at $1,000 per violation or actual damages) against distributors of non-disclosed AI election deepfakes.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-mn-hf4114-2024-criminal-misdemeanor",
+    "rule_text": "You commit a criminal misdemeanor if you create or distribute a materially deceptive AI-generated audio or visual media depicting a political candidate within 90 days of an election without the required disclosure that the content is AI-generated.",
+    "rule_text_technical": "Minnesota HF 4114 (2024), amending Minn. Stat. § 211B.17, criminalizes the creation or distribution within 90 days of an election of materially deceptive AI-generated media depicting an identifiable candidate absent prominent disclosure that the content is AI-generated; offense is enforceable by the Minnesota Secretary of State and the courts.",
+    "category": "prohibited_applications",
+    "tags": [
+      "criminal_misdemeanor",
+      "election_deepfake",
+      "synthetic_media",
+      "deceptive_intent"
+    ],
+    "first_instance": {
+      "law_id": "us-mn-hf4114-2024",
+      "law_name": "Minnesota AI and Elections Disclosure Act",
+      "citation": "Minn. Stat. § 211B.17 (as amended by HF 4114)",
+      "date": "2024-05-20"
+    },
+    "instances": [
+      {
+        "law_id": "us-mn-hf4114-2024",
+        "relationship": "origin",
+        "citation": "Minn. Stat. § 211B.17 (as amended by HF 4114)",
+        "notes": "Establishes criminal liability (misdemeanor) for undisclosed AI election deepfakes, separate from the civil cause of action.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-mn-hf4114-2024-platform-knowing-distribution",
+    "rule_text": "If you operate a platform that knowingly distributes materially deceptive AI-generated political content depicting a candidate within 90 days of an election without the required disclosure, you can be held liable under the Act.",
+    "rule_text_technical": "Minnesota HF 4114 (2024), amending Minn. Stat. § 211B.17, extends liability to online platforms and other distributors that knowingly disseminate AI-generated election deepfakes lacking the prescribed disclosure label within the 90-day pre-election window.",
+    "category": "prohibited_applications",
+    "tags": [
+      "platform_liability",
+      "knowing_distribution",
+      "election_deepfake",
+      "synthetic_media"
+    ],
+    "first_instance": {
+      "law_id": "us-mn-hf4114-2024",
+      "law_name": "Minnesota AI and Elections Disclosure Act",
+      "citation": "Minn. Stat. § 211B.17 (as amended by HF 4114)",
+      "date": "2024-05-20"
+    },
+    "instances": [
+      {
+        "law_id": "us-mn-hf4114-2024",
+        "relationship": "origin",
+        "citation": "Minn. Stat. § 211B.17 (as amended by HF 4114)",
+        "notes": "Reaches platforms that knowingly distribute non-disclosed AI election content, in contrast to Michigan's PA 263/266 which exempts distribution platforms from liability for missing disclosures by upstream advertisers.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "kr-kr-pipa-2023-art-37-2-human-review-automated",
+    "rule_text": "Individuals have the right to object to purely automated decisions — including AI-based decisions — that produce legal or similarly significant effects, and to demand human review by the controller.",
+    "rule_text_technical": "PIPA Art. 37-2 (as added by Act No. 19234, 2023) grants data subjects the right to refuse fully automated decisions producing legal or significant effects and to request human intervention; controllers must respond to such requests and provide a means of review by a human decision-maker.",
+    "category": "data_subject_rights",
+    "tags": [
+      "right_to_human_review",
+      "automated_decision_making",
+      "ai_decisions",
+      "data_subject_right"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-pipa-2023",
+      "law_name": "South Korea PIPA — 2023 Amendments",
+      "citation": "PIPA Art. 37-2 (Act No. 19234)",
+      "date": "2023-03-14"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "origin",
+        "citation": "PIPA Art. 37-2 (Act No. 19234)",
+        "notes": "One of the first statutes in Asia-Pacific to grant an explicit right to refuse fully automated decisions and demand human review, applicable to AI in hiring, credit, healthcare, and other high-stakes domains.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "kr-kr-pipa-2023-art-37-2-notice-automated-decision-rights",
+    "rule_text": "If you make automated decisions about individuals that produce legal or significant effects, you must notify those individuals of their right to receive an explanation of the decision and to request human review.",
+    "rule_text_technical": "PIPA Art. 37-2 (as added by Act No. 19234, 2023) requires personal information controllers using automated decision-making with legal or significant effects to give data subjects notice of their right to explanation and human review, and to provide a means of exercising those rights.",
+    "category": "disclosure",
+    "tags": [
+      "notification",
+      "automated_decision_rights",
+      "transparency",
+      "ai_disclosure"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-pipa-2023",
+      "law_name": "South Korea PIPA — 2023 Amendments",
+      "citation": "PIPA Art. 37-2 (Act No. 19234)",
+      "date": "2023-03-14"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "origin",
+        "citation": "PIPA Art. 37-2 (Act No. 19234)",
+        "notes": "Requires affirmative notice of automated decision-rights so individuals can exercise the new statutory right to explanation and human review.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "kr-kr-pipa-2023-art-37-2-suspend-effects-pending-review",
+    "rule_text": "If a data subject objects to a purely automated decision and requests human review, you must suspend the effects of that automated decision pending the human review.",
+    "rule_text_technical": "PIPA Art. 37-2 (as added by Act No. 19234, 2023) requires controllers to suspend the effects of a fully automated decision once the affected data subject files a request for human review, until the human reviewer renders a decision.",
+    "category": "human_oversight",
+    "tags": [
+      "human_in_the_loop",
+      "automated_decision_making",
+      "suspension_of_decision",
+      "ai_decisions"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-pipa-2023",
+      "law_name": "South Korea PIPA — 2023 Amendments",
+      "citation": "PIPA Art. 37-2 (Act No. 19234)",
+      "date": "2023-03-14"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "origin",
+        "citation": "PIPA Art. 37-2 (Act No. 19234)",
+        "notes": "Unusual procedural protection requiring controllers to pause downstream effects of an automated decision while human review is pending.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "kr-kr-pipa-2023-72-hour-breach-notification",
+    "rule_text": "If you experience a personal data breach, you must notify the Personal Information Protection Commission (PIPC) within 72 hours of becoming aware of the breach.",
+    "rule_text_technical": "PIPA (as amended by Act No. 19234, 2023) requires personal information controllers to notify the Personal Information Protection Commission of a personal data breach within 72 hours of becoming aware of it, aligning Korea's breach notification timeline with the EU GDPR's standard.",
+    "category": "registration_notification",
+    "tags": [
+      "breach_notification",
+      "72_hour",
+      "pipc",
+      "incident_reporting"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-pipa-2023",
+      "law_name": "South Korea PIPA — 2023 Amendments",
+      "citation": "PIPA (Act No. 19234) — breach notification provisions",
+      "date": "2023-03-14"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "origin",
+        "citation": "PIPA (Act No. 19234) — breach notification provisions",
+        "notes": "Imposes a GDPR-aligned 72-hour notification window to the PIPC for personal data breaches.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "kr-kr-pipa-2023-foreign-domestic-representative",
+    "rule_text": "If you are a foreign online service provider that processes the personal data of Korean residents, you must designate a domestic representative in the Republic of Korea responsible for compliance with PIPA.",
+    "rule_text_technical": "PIPA (as amended by Act No. 19234, 2023) clarifies extraterritorial scope and requires foreign online service providers that process the personal data of Korean residents to designate a domestic representative in Korea to act on the controller's behalf for compliance and enforcement purposes.",
+    "category": "institutional_framework",
+    "tags": [
+      "extraterritorial_scope",
+      "domestic_representative",
+      "foreign_controller",
+      "pipc"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-pipa-2023",
+      "law_name": "South Korea PIPA — 2023 Amendments",
+      "citation": "PIPA (Act No. 19234) — extraterritorial scope provisions",
+      "date": "2023-03-14"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "origin",
+        "citation": "PIPA (Act No. 19234) — extraterritorial scope provisions",
+        "notes": "Expands PIPC jurisdiction over foreign providers by requiring designation of a domestic representative for compliance.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "kr-kr-pipa-2023-admin-fines-up-to-3-percent",
+    "rule_text": "If you violate PIPA, the Personal Information Protection Commission may impose administrative penalties of up to KRW 30 billion or 3% of your global revenue, whichever is greater.",
+    "rule_text_technical": "PIPA (as amended by Act No. 19234, 2023) authorizes the Personal Information Protection Commission to impose administrative penalty surcharges of up to KRW 30 billion or 3% of the violator's global annual revenue (whichever is greater) for substantial violations of the Act.",
+    "category": "enforcement_penalties",
+    "tags": [
+      "administrative_fine",
+      "global_revenue",
+      "pipc_enforcement",
+      "monetary_penalty"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-pipa-2023",
+      "law_name": "South Korea PIPA — 2023 Amendments",
+      "citation": "PIPA (Act No. 19234) — penalty provisions",
+      "date": "2023-03-14"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-pipa-2023",
+        "relationship": "origin",
+        "citation": "PIPA (Act No. 19234) — penalty provisions",
+        "notes": "Replaces a fixed-amount fine ceiling with a revenue-based cap, aligning Korea's enforcement scale with GDPR-style global-revenue penalties.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "dz-dz-pdpl-2018-prior-authorization-high-risk",
+    "rule_text": "If you intend to process personal data in a high-risk manner — including sensitive data or high-risk uses — you must obtain prior authorization from the ANPDP (Algeria's National Data Protection Authority) before commencing the processing.",
+    "rule_text_technical": "Algeria's Law No. 18-07 on the Protection of Personal Data (2018) requires data controllers to obtain prior authorization from the National Authority for the Protection of Personal Data (ANPDP) for high-risk processing activities, including processing involving sensitive data categories such as health, biometric, genetic, political, religious, and criminal data.",
+    "category": "registration_notification",
+    "tags": [
+      "prior_authorization",
+      "anpdp",
+      "high_risk_processing",
+      "sensitive_data",
+      "registration"
+    ],
+    "first_instance": {
+      "law_id": "dz-dz-pdpl-2018",
+      "law_name": "Algeria Personal Data Protection Law (Law No. 18-07)",
+      "citation": "Law No. 18-07",
+      "date": "2018-06-10"
+    },
+    "instances": [
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "origin",
+        "citation": "Law No. 18-07",
+        "notes": "Requires ANPDP authorization before commencing high-risk data processing, complementing the general declaration regime for routine processing.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "dz-dz-pdpl-2018-sensitive-data-explicit-consent",
+    "rule_text": "If you process sensitive personal data — including health, genetic, biometric, political, religious, or criminal data — you must obtain explicit consent from the data subject or have specific legal authority to do so.",
+    "rule_text_technical": "Algeria's Law No. 18-07 (2018) classifies sensitive personal data — including health, genetic, biometric, political opinions, religious beliefs, and criminal records — and prohibits processing such data without explicit consent or another specific legal basis.",
+    "category": "consent",
+    "tags": [
+      "sensitive_data",
+      "explicit_consent",
+      "biometric",
+      "genetic_data",
+      "special_category"
+    ],
+    "first_instance": {
+      "law_id": "dz-dz-pdpl-2018",
+      "law_name": "Algeria Personal Data Protection Law (Law No. 18-07)",
+      "citation": "Law No. 18-07",
+      "date": "2018-06-10"
+    },
+    "instances": [
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "origin",
+        "citation": "Law No. 18-07",
+        "notes": "Establishes heightened consent and processing requirements for an expansive list of sensitive data categories, including biometric data used by AI systems.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "dz-dz-pdpl-2018-data-subject-rights",
+    "rule_text": "If you process someone's personal data, you must honour their rights to information, access, rectification, opposition, and deletion in relation to that data.",
+    "rule_text_technical": "Algeria's Law No. 18-07 (2018) grants data subjects the rights to (i) be informed about processing, (ii) access their data, (iii) rectify inaccurate data, (iv) oppose processing on legitimate grounds, and (v) request deletion, exercisable against any controller subject to the Act.",
+    "category": "data_subject_rights",
+    "tags": [
+      "access",
+      "rectification",
+      "opposition",
+      "deletion",
+      "information_right"
+    ],
+    "first_instance": {
+      "law_id": "dz-dz-pdpl-2018",
+      "law_name": "Algeria Personal Data Protection Law (Law No. 18-07)",
+      "citation": "Law No. 18-07",
+      "date": "2018-06-10"
+    },
+    "instances": [
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "origin",
+        "citation": "Law No. 18-07",
+        "notes": "Standard GDPR-style data subject rights bundle; opposition and deletion rights can be invoked against AI-driven personal data processing under the Act.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "dz-dz-pdpl-2018-security-measures",
+    "rule_text": "If you process personal data, you must implement appropriate technical and organizational security measures to protect the data against loss, unauthorized access, alteration, disclosure, or destruction.",
+    "rule_text_technical": "Algeria's Law No. 18-07 (2018) requires data controllers and processors to implement appropriate technical and organizational measures to safeguard personal data against unauthorized access, alteration, disclosure, or destruction, taking into account the state of the art and the nature of the data.",
+    "category": "accountability_governance",
+    "tags": [
+      "security_measures",
+      "data_protection",
+      "technical_measures",
+      "organizational_measures"
+    ],
+    "first_instance": {
+      "law_id": "dz-dz-pdpl-2018",
+      "law_name": "Algeria Personal Data Protection Law (Law No. 18-07)",
+      "citation": "Law No. 18-07",
+      "date": "2018-06-10"
+    },
+    "instances": [
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "origin",
+        "citation": "Law No. 18-07",
+        "notes": "Generic security obligation tied to the risk profile of the data; applies equally to data ingested into or generated by AI systems.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "dz-dz-pdpl-2018-breach-notification-anpdp",
+    "rule_text": "If you experience a significant personal data breach, you must notify Algeria's National Data Protection Authority (ANPDP) of the breach.",
+    "rule_text_technical": "Algeria's Law No. 18-07 (2018) obliges data controllers to notify the ANPDP of significant personal data breaches affecting individuals' rights, enabling supervisory action and where appropriate further notification to affected data subjects.",
+    "category": "registration_notification",
+    "tags": [
+      "breach_notification",
+      "anpdp",
+      "incident_reporting",
+      "data_breach"
+    ],
+    "first_instance": {
+      "law_id": "dz-dz-pdpl-2018",
+      "law_name": "Algeria Personal Data Protection Law (Law No. 18-07)",
+      "citation": "Law No. 18-07",
+      "date": "2018-06-10"
+    },
+    "instances": [
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "origin",
+        "citation": "Law No. 18-07",
+        "notes": "Imposes a breach notification duty to the ANPDP, the supervisory authority created by the Act.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "dz-dz-pdpl-2018-criminal-penalties",
+    "rule_text": "If you commit serious violations of Algeria's Personal Data Protection Law, you may face fines of up to DZD 5,000,000 and imprisonment of up to 5 years.",
+    "rule_text_technical": "Algeria's Law No. 18-07 (2018) provides for criminal penalties of up to DZD 5,000,000 (~$37,000 USD) and up to 5 years' imprisonment for serious violations such as unauthorized processing of sensitive data, unlawful cross-border transfers, or processing without ANPDP authorization where required.",
+    "category": "enforcement_penalties",
+    "tags": [
+      "criminal_penalty",
+      "fine",
+      "imprisonment",
+      "algeria",
+      "data_protection_offense"
+    ],
+    "first_instance": {
+      "law_id": "dz-dz-pdpl-2018",
+      "law_name": "Algeria Personal Data Protection Law (Law No. 18-07)",
+      "citation": "Law No. 18-07",
+      "date": "2018-06-10"
+    },
+    "instances": [
+      {
+        "law_id": "dz-dz-pdpl-2018",
+        "relationship": "origin",
+        "citation": "Law No. 18-07",
+        "notes": "Backs the Act with criminal penalties — fines plus imprisonment — for serious processing offenses.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-md-h1473-2026-future-board-ai-planning",
+    "rule_text": "Maryland's Future Board must develop and revise a visionary plan for the state's future that imagines and addresses trends in artificial intelligence, robotics and automation, advanced manufacturing, data aggregations, and other industry-disruptive technologies.",
+    "rule_text_technical": "Md. Code, Economic Development § 2.5-301(E) and § 2.5-302 (as added by H 1473 and parallel S 770, 2026) establish Maryland's Future Board within the Department of Commerce and require it to develop a 'visionary plan' that imagines future trends in (i) robotics and automation, (ii) artificial intelligence, (iii) advanced manufacturing, (iv) data aggregations, and (v) other industry disruptive technologies.",
+    "category": "institutional_framework",
+    "tags": [
+      "state_planning",
+      "future_board",
+      "ai_strategy",
+      "visionary_plan",
+      "maryland"
+    ],
+    "first_instance": {
+      "law_id": "us-md-h1473-2026",
+      "law_name": "Maryland H 1473 — Economic Development (Maryland's Future Board)",
+      "citation": "Md. Code, Econ. Dev. § 2.5-301(E), § 2.5-302",
+      "date": "2026-04-10"
+    },
+    "instances": [
+      {
+        "law_id": "us-md-h1473-2026",
+        "relationship": "origin",
+        "citation": "Md. Code, Econ. Dev. § 2.5-301(E), § 2.5-302",
+        "notes": "House version establishing Maryland's Future Board with an explicit duty to incorporate AI and other disruptive technologies into long-range state planning.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-md-s770-2026",
+        "relationship": "identical",
+        "citation": "Md. Code, Econ. Dev. § 2.5-301(E), § 2.5-302",
+        "notes": "Senate companion bill enacting the same Maryland's Future Board scheme with identical AI-inclusive visionary-plan duty.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-md-s198-2026-aerospace-program-ai-curriculum",
+    "rule_text": "Prince George's Community College, in establishing its Aerospace Technology Studies Program, must develop a curriculum that includes the application of artificial intelligence in aerospace alongside aerospace systems technology, avionics and electronics, and advanced manufacturing.",
+    "rule_text_technical": "Md. Code, Education § 16-420(C)(1) (as added by SB 198, 2026) requires the Board of Community College Trustees for Prince George's County to develop the Aerospace Technology Studies Program curriculum to include (i) aerospace systems technology, (ii) avionics and electronics, (iii) advanced manufacturing, and (iv) artificial intelligence in aerospace.",
+    "category": "institutional_framework",
+    "tags": [
+      "education_curriculum",
+      "ai_in_aerospace",
+      "workforce_training",
+      "community_college",
+      "maryland"
+    ],
+    "first_instance": {
+      "law_id": "us-md-s198-2026",
+      "law_name": "Maryland S 198 — Aerospace and Aviation Systems Technology Programs",
+      "citation": "Md. Code, Educ. § 16-420(C)(1)",
+      "date": "2026-04-10"
+    },
+    "instances": [
+      {
+        "law_id": "us-md-s198-2026",
+        "relationship": "origin",
+        "citation": "Md. Code, Educ. § 16-420(C)(1)",
+        "notes": "Mandates an AI-in-aerospace curriculum component for the new Prince George's CC aerospace program; the Act sunsets June 30, 2028 unless extended.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-ga-s179-2026-cs-graduation-requirement",
+    "rule_text": "Beginning with the 2031-2032 school year, each local Georgia board of education must require students graduating in 2037 or later to complete a computer science course — which encompasses artificial intelligence and emerging technologies — or a CTAE course embedded with computer science as a condition of high school graduation.",
+    "rule_text_technical": "O.C.G.A. § 20-2-149.3(c)(4)(A)-(B) (as amended by SB 179, 2026) makes a computer science course a high school graduation requirement starting in the 2031-2032 school year for the class of 2037, with 'computer science' expressly defined at § 20-2-149.3(b)(1) to include 'the study of computers, algorithmic processes, coding, computer science ethics, artificial intelligence, emerging technologies, and logical critical thinking.'",
+    "category": "institutional_framework",
+    "tags": [
+      "education_curriculum",
+      "ai_literacy",
+      "high_school_graduation",
+      "computer_science",
+      "georgia"
+    ],
+    "first_instance": {
+      "law_id": "us-ga-s179-2026",
+      "law_name": "Georgia S 179 — Elementary and Secondary Education",
+      "citation": "O.C.G.A. § 20-2-149.3(c)(4), (b)(1)",
+      "date": "2026-03-23"
+    },
+    "instances": [
+      {
+        "law_id": "us-ga-s179-2026",
+        "relationship": "origin",
+        "citation": "O.C.G.A. § 20-2-149.3(c)(4), (b)(1)",
+        "notes": "Makes computer science (including AI and emerging technologies) a high-school graduation requirement starting with the class of 2037, alongside existing K-12 CS course-offering mandates.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
