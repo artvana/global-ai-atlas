@@ -32,10 +32,11 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          claude --print --dangerously-skip-permissions --allowedTools "WebSearch,Read,Write" "
+          TODAY=$(date +%Y-%m-%d)
+          cat << PROMPT | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,Read,Write"
           You are the weekly curator for GAIA — Global AI Atlas.
           The database is at data/regulations.json in the current directory.
-          Today is $(date +%Y-%m-%d). Search the web for AI regulations enacted in the past 7 days.
+          Today is $TODAY. Search the web for AI regulations enacted in the past 7 days.
 
           Search for:
           - New AI laws signed into law by national governments
@@ -49,83 +50,84 @@ jobs:
 
           For each new instrument, append a record to data/regulations.json with these fields:
           {
-            \"id\": \"{iso}-{jurisdiction_slug}-{law_slug}-{year}\",
-            \"short_name\": \"...\",
-            \"full_name\": \"...\",
-            \"country\": \"Country name or 'Global / Regional'\",
-            \"jurisdiction\": \"Country, state, agency, or body name\",
-            \"jurisdiction_type\": \"supranational|national|subnational|agency\",
-            \"region\": \"e.g. North America\",
-            \"status\": \"in_force|enacted_not_yet_effective\",
-            \"enacted_date\": \"YYYY-MM-DD\",
-            \"effective_date\": null,
-            \"operative_dates\": null,
-            \"last_verified\": \"$(date +%Y-%m-%d)\",
-            \"source_url\": \"official URL\",
-            \"primary_category\": \"one of: data_protection|algorithmic_systems|synthetic_media|biometric_identity|ip_creative_rights|national_security|sector_healthcare|sector_employment|sector_financial|sector_education|general_ai_governance\",
-            \"categories\": [\"...\"],
-            \"legal_family\": \"eu_risk_based|us_consumer_protection|china_state_sovereignty|uk_non_model|hybrid|standalone\",
-            \"instrument_binding\": true,
-            \"ai_specific\": true,
-            \"summary\": \"2-3 sentence plain English summary.\",
-            \"provisions\": {
-              \"private_right_of_action\": false,
-              \"max_penalty_usd_approx\": null,
-              \"enforcement_body\": null,
-              \"extraterritorial\": false
+            "id": "{iso}-{jurisdiction_slug}-{law_slug}-{year}",
+            "short_name": "...",
+            "full_name": "...",
+            "country": "Country name or Global / Regional",
+            "jurisdiction": "Country, state, agency, or body name",
+            "jurisdiction_type": "supranational|national|subnational|agency",
+            "region": "e.g. North America",
+            "status": "in_force|enacted_not_yet_effective",
+            "enacted_date": "YYYY-MM-DD",
+            "effective_date": null,
+            "operative_dates": null,
+            "last_verified": "$TODAY",
+            "source_url": "official URL",
+            "primary_category": "one of: data_protection|algorithmic_systems|synthetic_media|biometric_identity|ip_creative_rights|national_security|sector_healthcare|sector_employment|sector_financial|sector_education|general_ai_governance",
+            "categories": ["..."],
+            "legal_family": "eu_risk_based|us_consumer_protection|china_state_sovereignty|uk_non_model|hybrid|standalone",
+            "instrument_binding": true,
+            "ai_specific": true,
+            "summary": "2-3 sentence plain English summary.",
+            "provisions": {
+              "private_right_of_action": false,
+              "max_penalty_usd_approx": null,
+              "enforcement_body": null,
+              "extraterritorial": false
             },
-            \"inspired_by\": [],
-            \"influenced\": []
+            "inspired_by": [],
+            "influenced": []
           }
 
           jurisdiction_type rules:
-          - UN/EU/OECD/ASEAN/G7/African Union → supranational (country = 'Global / Regional')
-          - National law → national (jurisdiction = country)
-          - US state / Canadian province → subnational
-          - FTC/NIST/FDA/SEC/CFPB/EEOC → agency
+          - UN/EU/OECD/ASEAN/G7/African Union: supranational (country = Global / Regional)
+          - National law: national (jurisdiction = country)
+          - US state / Canadian province: subnational
+          - FTC/NIST/FDA/SEC/CFPB/EEOC: agency
 
           Do NOT add duplicates. Check existing IDs and short_names first.
           Be conservative — one verified entry beats five uncertain ones.
           If nothing new was found, do not modify data/regulations.json.
-          "
+          PROMPT
 
       - name: Update bill stages
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          claude --print --dangerously-skip-permissions --allowedTools "WebSearch,Read,Write" "
+          TODAY=$(date +%Y-%m-%d)
+          cat << PROMPT | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,Read,Write"
           You are maintaining the GAIA bill stage database.
-          Today is $(date +%Y-%m-%d). The database is at data/regulations.json.
+          Today is $TODAY. The database is at data/regulations.json.
 
           TASK 1 — Catch enacted and failed bills:
           Search the web for US state AI bills that were signed into law OR failed/died
           in the past 7 days. Search queries like:
-            'AI bill signed governor [week] 2026'
-            'AI bill failed vetoed state legislature [week] 2026'
+            AI bill signed governor 2026
+            AI bill failed vetoed state legislature 2026
           For any bill you find in data/regulations.json (match by bill_number or short_name):
-          - If signed: update status → 'in_force' or 'enacted_not_yet_effective',
+          - If signed: update status to in_force or enacted_not_yet_effective,
             set enacted_date, remove legislative_stage field
-          - If failed/died: update status → 'failed', remove legislative_stage field
+          - If failed/died: update status to failed, remove legislative_stage field
 
           TASK 2 — Advance stages for high-momentum bills:
-          Look at all records in data/regulations.json where status='proposed' and
-          legislative_stage is 'passed_one_chamber', 'passed_legislature', or
-          'awaiting_signature'. These are close to becoming law — verify their current
+          Look at all records in data/regulations.json where status=proposed and
+          legislative_stage is passed_one_chamber, passed_legislature, or
+          awaiting_signature. These are close to becoming law — verify their current
           status and update accordingly.
 
-          Also check records where legislative_stage='passed_committee' and search for
+          Also check records where legislative_stage=passed_committee and search for
           whether they have since received a floor vote.
 
           For any updated bill, set:
           - legislative_stage: updated value
-          - last_action_date: 'YYYY-MM-DD'
+          - last_action_date: YYYY-MM-DD
           - last_action_description: one plain-English sentence
-          - last_verified: '$(date +%Y-%m-%d)'
+          - last_verified: $TODAY
 
           Be conservative — only update when you have a reliable source (official
           legislature website, LegiScan, Ballotpedia, or major news).
           If nothing changed, do not modify data/regulations.json.
-          "
+          PROMPT
 
       - name: Check for changes
         id: changes

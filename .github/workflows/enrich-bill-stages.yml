@@ -35,9 +35,10 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          claude --print --dangerously-skip-permissions --allowedTools "WebSearch,Read,Write" "
+          TODAY=$(date +%Y-%m-%d)
+          cat << PROMPT | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,Read,Write"
           You are enriching legislative stage data for the GAIA AI regulation database.
-          Today is $(date +%Y-%m-%d).
+          Today is $TODAY.
 
           The file data/proposed-bills.json contains all proposed AI bills (already extracted
           for you — do NOT touch data/regulations.json directly).
@@ -46,37 +47,37 @@ jobs:
           the record with three new fields:
 
             legislative_stage — one of:
-              'introduced'          filed but no committee action yet
-              'in_committee'        referred to and pending in committee
-              'passed_committee'    cleared committee, heading to floor
-              'passed_one_chamber'  passed house or senate
-              'passed_legislature'  passed both chambers
-              'awaiting_signature'  on governor's desk
-              'unknown'             could not determine (use this as default)
+              introduced          filed but no committee action yet
+              in_committee        referred to and pending in committee
+              passed_committee    cleared committee, heading to floor
+              passed_one_chamber  passed house or senate
+              passed_legislature  passed both chambers
+              awaiting_signature  on governor's desk
+              unknown             could not determine (use this as default)
 
-            last_action_date — 'YYYY-MM-DD' or null
+            last_action_date — YYYY-MM-DD or null
 
             last_action_description — one plain-English sentence, e.g.
-              'Passed Senate 32–6, referred to House Commerce Committee'
+              Passed Senate 32-6, referred to House Commerce Committee
 
           ALSO update status if the bill has resolved:
-            - Signed into law → status: 'in_force' or 'enacted_not_yet_effective',
+            - Signed into law: status = in_force or enacted_not_yet_effective,
               add enacted_date, remove legislative_stage
-            - Failed/died/tabled → status: 'failed', remove legislative_stage
+            - Failed/died/tabled: status = failed, remove legislative_stage
 
           Strategy — work state by state:
             For each state, run ONE search like:
-              '[State name] AI artificial intelligence bill 2025 2026 passed signed committee'
+              [State name] AI artificial intelligence bill 2025 2026 passed signed committee
             Then match results to specific bill_numbers in the file.
-            Also try: 'site:legiscan.com [State] artificial intelligence 2026'
+            Also try: site:legiscan.com [State] artificial intelligence 2026
 
           Rules:
-            - Default legislative_stage to 'unknown' if you cannot find reliable info.
+            - Default legislative_stage to unknown if you cannot find reliable info.
             - Only use official legislature sites, LegiScan, Ballotpedia, or major news.
             - Do not invent data.
             - After processing all states, write the complete updated array back to
               data/proposed-bills.json (same format, array of objects).
-          "
+          PROMPT
 
       - name: Merge enriched bills back into regulations.json
         run: |
