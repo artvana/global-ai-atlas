@@ -37841,9 +37841,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ak-h251-2026.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2026-01-20",
+    "last_action_description": "Read the first time; referred to House Health & Social Services and Judiciary Committees"
   },
   {
     "id": "us-ak-s283-2026",
@@ -38063,9 +38063,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ak-s33-2025.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2025-04-29",
+    "last_action_description": "Heard and held in Senate State Affairs Committee"
   },
   {
     "id": "us-ak-s64-2025",
@@ -38079,7 +38079,7 @@
     "bill_number": "S 64",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "vetoed",
     "superseded_by": null,
     "categories": [
       "synthetic_media_deepfake",
@@ -38134,9 +38134,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ak-s64-2025.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "last_action_date": "2026-05-04",
+    "last_action_description": "Legislature failed to override Governor Dunleavy's veto (38-22, 40 votes needed); veto sustained. Governor vetoed bill on 2026-04-30"
   },
   {
     "id": "us-az-s1707-2026",
@@ -47813,7 +47812,7 @@
     "bill_number": "H 1030",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "consumer_protection"
@@ -47867,9 +47866,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-co-h1030-2026.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "last_action_date": "2026-05-12",
+    "last_action_description": "Postponed Indefinitely (killed) in House Energy and Environment Committee in final days of 2026 session"
   },
   {
     "id": "us-co-h1049-2026",
@@ -47883,7 +47881,7 @@
     "bill_number": "H 1049",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "synthetic_media_deepfake"
@@ -47936,9 +47934,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-co-h1049-2026.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "last_action_date": "2026-02-12",
+    "last_action_description": "Postponed Indefinitely by House Committee on State, Civic, Military, & Veterans Affairs on a 9-2 vote"
   },
   {
     "id": "us-co-h1139-2026",
@@ -48147,9 +48144,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-co-h1210-2026.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "awaiting_signature",
+    "last_action_date": "2026-05-07",
+    "last_action_description": "House concurred with Senate amendments (Senate passed 19-15 on 2026-05-06); sent to Governor Polis"
   },
   {
     "id": "us-co-h1263-2026",
@@ -80932,9 +80929,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-me-s223-2025.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2025-06-25",
+    "last_action_description": "Carried over, in the same posture, to any special or regular session of the 132nd Legislature pursuant to Joint Order SP 800; in Judiciary Committee"
   },
   {
     "id": "us-me-s411-2025",
@@ -81138,9 +81135,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-me-s509-2025.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2025-06-25",
+    "last_action_description": "Carried over to any special or regular session of the 132nd Legislature pursuant to Joint Order SP 800; previously passed Senate 18-15 on 2025-04-10"
   },
   {
     "id": "us-me-s531-2025",
@@ -81154,7 +81151,7 @@
     "bill_number": "S 531",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "health_ai",
@@ -81209,9 +81206,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-me-s531-2025.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "last_action_date": "2026-01-27",
+    "last_action_description": "Placed in Legislative Files (Dead); not reported out of committee after carry-over"
   },
   {
     "id": "us-me-h558-2025",
@@ -135075,9 +135071,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-nc-h507-2026.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2025-03-26",
+    "last_action_description": "Passed first reading; referred to House Committee on Rules, Calendar, and Operations"
   },
   {
     "id": "us-nc-s787-2026",
@@ -135145,9 +135141,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-nc-s787-2026.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2026-04-23",
+    "last_action_description": "Re-referred to Senate Committee on Appropriations/Base Budget"
   },
   {
     "id": "us-nc-s287-2025",
@@ -151571,9 +151567,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-sc-h4509-2025.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2025-05-06",
+    "last_action_description": "Introduced and referred to House Committee on Invitations and Memorial Resolutions"
   },
   {
     "id": "us-sd-s168-2026",
