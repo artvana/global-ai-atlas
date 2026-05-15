@@ -47,6 +47,15 @@ const ASEAN_MEMBER_ISO = new Set(['096','116','360','418','458','104','608','702
 
 const LAW_BY_ID = new Map(regulations.map(l => [l.id, l]))
 
+function distinctCountries(rule: Rule): number {
+  const seen = new Set<string>()
+  for (const inst of rule.instances) {
+    const law = LAW_BY_ID.get(inst.law_id)
+    if (law) seen.add(law.country)
+  }
+  return seen.size
+}
+
 // ── Colour scales ─────────────────────────────────────────────────────────
 type BindingFilter = 'all' | 'binding' | 'policy'
 
@@ -175,7 +184,7 @@ export function GAIAMap({ onViewLaw }: { onViewLaw?: (id: string) => void } = {}
     if (!ruleCategory) return []
     return rules
       .filter(r => r.category === ruleCategory)
-      .sort((a, b) => b.instances.length - a.instances.length)
+      .sort((a, b) => distinctCountries(b) - distinctCountries(a))
   }, [ruleCategory])
 
   const displayedRules = useMemo(() => {
@@ -304,7 +313,7 @@ export function GAIAMap({ onViewLaw }: { onViewLaw?: (id: string) => void } = {}
                   className="w-full text-left px-3 py-2 border border-odl-border rounded hover:border-odl-accent hover:bg-odl-surface transition-colors flex items-start gap-3"
                 >
                   <span className="text-[10px] font-mono text-white bg-odl-accent rounded px-1.5 py-0.5 flex-shrink-0 mt-0.5">
-                    {rule.instances.length}
+                    {distinctCountries(rule)}
                   </span>
                   <p className="text-xs text-odl-text line-clamp-2 leading-relaxed">{rule.rule_text}</p>
                 </button>
@@ -330,7 +339,7 @@ export function GAIAMap({ onViewLaw }: { onViewLaw?: (id: string) => void } = {}
                   {CAT_LABELS[selectedRule.category] ?? selectedRule.category}
                 </span>
                 <span className="text-[10px] text-white bg-odl-accent rounded px-1.5 py-0.5 font-mono">
-                  {selectedRule.instances.length} jurisdictions
+                  {distinctCountries(selectedRule)} {distinctCountries(selectedRule) === 1 ? 'country' : 'countries'}
                 </span>
               </div>
               <p className="text-xs text-odl-text leading-relaxed">{selectedRule.rule_text}</p>

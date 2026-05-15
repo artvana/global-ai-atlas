@@ -23143,9 +23143,9 @@
     "country": "Russia",
     "operative_dates": null,
     "text_path": "data/texts/ru-ru-ailaw-2025.md",
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2026-02-07",
+    "last_action_description": "State Duma preparing bill on safe AI use; Government-submitted AI foundations draft under parliamentary review"
   },
   {
     "id": "nist-us-ai600-1-2024",
@@ -28209,9 +28209,9 @@
     "country": "Germany",
     "operative_dates": "Cabinet adopted 11 February 2026; Bundestag passage expected 2026; effective date TBD",
     "text_quality": "unavailable",
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2026-03-23",
+    "last_action_description": "Bundestag Digital Committee held expert hearing on KI-MIG after first reading on 20 March 2026"
   },
   {
     "id": "uk-uk-admcode-2026",
@@ -28490,9 +28490,9 @@
     "country": "Norway",
     "operative_dates": "Consultation closed September 2025; Storting introduction expected 2026; EEA entry into force pending Joint Committee decision",
     "text_path": "data/texts/no-no-kiloven-2026.md",
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2025-09-30",
+    "last_action_description": "Public consultation closed; Storting submission delayed past Easter 2026 due to EEA negotiations"
   },
   {
     "id": "ru-ru-ailaw169-2025",
@@ -28777,9 +28777,9 @@
     "country": "Turkey",
     "operative_dates": "Pending; submitted to Grand National Assembly 7 November 2025",
     "text_path": "data/texts/tr-tr-aibill-2025.md",
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2025-11-07",
+    "last_action_description": "Bill 2/3358 submitted to TBMM and under committee review; covers AI definition, deepfakes, takedown obligations"
   },
   {
     "id": "jp-jp-appi-2022",
@@ -182656,9 +182656,9 @@
     "instrument_binding": false,
     "country": "Colombia",
     "operative_dates": "Submitted to Senate July 2025; in committee as of May 2026.",
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2025-07-28",
+    "last_action_description": "Government submitted AI regulation bill to Senate; no legislative priority set, early committee stage"
   },
   {
     "id": "cl-cl-naipolicy-2024",
@@ -182915,9 +182915,9 @@
     "instrument_binding": false,
     "country": "Chile",
     "operative_dates": "Introduced 7 May 2024; passed Chamber of Deputies 13 October 2025; in Senate first reading.",
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2025-10-13",
+    "last_action_description": "Passed Chamber of Deputies on 13 October 2025; dispatched to Senate for second constitutional review"
   },
   {
     "id": "pe-pe-law32314-2025",
@@ -185589,9 +185589,9 @@
     "instrument_binding": false,
     "country": "Singapore",
     "operative_dates": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2026-01-31",
+    "last_action_description": "MAS consultation on AI Risk Management Guidelines closed 31 January 2026; final guidelines not yet published"
   },
   {
     "id": "np-np-naipolicy-2025",
@@ -186663,9 +186663,9 @@
     "instrument_binding": false,
     "country": "Spain",
     "operative_dates": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2026-03-25",
+    "last_action_description": "Economic and Social Council issued Opinion 03/2026; draft not yet submitted to Cortes Generales"
   },
   {
     "id": "ro-ro-naistrategy-2024",
@@ -190498,9 +190498,9 @@
     "instrument_binding": false,
     "country": "Russia",
     "operative_dates": null,
-    "legislative_stage": "unknown",
-    "last_action_date": null,
-    "last_action_description": null
+    "legislative_stage": "in_committee",
+    "last_action_date": "2026-04-15",
+    "last_action_description": "MinCifry public consultation closed 15 April 2026; bill not yet submitted to parliament"
   },
   {
     "id": "ru-ru-cbraicodeethics-2025",
