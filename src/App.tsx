@@ -15,7 +15,7 @@ type Tab = 'convergence' | 'map' | 'laws' | 'bills' | 'whatsnew' | 'mcp' | 'meth
 const TAB_LABELS: Record<Tab, string> = {
   convergence:  'Convergence Map',
   map:          'Global Map',
-  laws:         'Laws Database',
+  laws:         'Database',
   bills:        'Bills Tracker',
   whatsnew:     'What\'s New',
   mcp:          'MCP Server',
@@ -95,7 +95,7 @@ function App() {
             </Suspense>
           </ErrorBoundary>
         )}
-        {tab === 'bills'       && <ErrorBoundary resetKey="bills"><BillsTracker /></ErrorBoundary>}
+        {tab === 'bills'       && <ErrorBoundary resetKey="bills"><BillsTracker onViewLaw={openLaw} /></ErrorBoundary>}
         {tab === 'whatsnew'    && <ErrorBoundary resetKey="whatsnew"><WhatsNew /></ErrorBoundary>}
         {tab === 'mcp'         && <ErrorBoundary resetKey="mcp"><MCPDocs /></ErrorBoundary>}
         {tab === 'methodology' && <ErrorBoundary resetKey="methodology"><MethodologyDocs /></ErrorBoundary>}

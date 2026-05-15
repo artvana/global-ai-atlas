@@ -101,12 +101,13 @@ function getStateCode(region: string): string {
 
 const HOT_STAGES = new Set(['awaiting_signature', 'passed_legislature', 'passed_one_chamber'])
 
-export function BillsTracker() {
+interface BillsTrackerProps { onViewLaw?: (id: string) => void }
+
+export function BillsTracker({ onViewLaw }: BillsTrackerProps) {
   const [stateFilter, setStateFilter]     = useState<string>('')
   const [categoryFilter, setCategoryFilter] = useState<string>('')
   const [stageFilter, setStageFilter]     = useState<string>('')
   const [search, setSearch]               = useState('')
-  const [expanded, setExpanded]           = useState<string | null>(null)
 
   const usStateBills = useMemo(() => bills.filter(b => b.region?.startsWith('US-')), [])
   const globalBills  = useMemo(() => bills.filter(b => !b.region?.startsWith('US-')), [])
@@ -265,54 +266,35 @@ export function BillsTracker() {
             </thead>
             <tbody>
               {filtered.map(bill => (
-                <>
-                  <tr
-                    key={bill.id}
-                    onClick={() => setExpanded(prev => prev === bill.id ? null : bill.id)}
-                    className="border-b border-odl-border/60 hover:bg-odl-accent-bg/30 transition-colors cursor-pointer select-none"
-                  >
-                    <td className="px-4 py-3 max-w-[240px]">
-                      <div className="font-medium text-odl-text leading-tight">{bill.short_name}</div>
-                      {bill.bill_number && (
-                        <div className="text-odl-subtle font-mono text-[10px] mt-0.5">{bill.bill_number}</div>
-                      )}
-                    </td>
-                    <td className="px-4 py-3 text-odl-muted whitespace-nowrap">
-                      {bill.region?.startsWith('US-') ? getStateCode(bill.region) : bill.jurisdiction}
-                    </td>
-                    <td className="px-4 py-3 text-odl-muted max-w-[160px]">
-                      {bill.primary_category ? (CATEGORY_LABELS[bill.primary_category] ?? bill.primary_category) : '—'}
-                    </td>
-                    <td className="px-4 py-3 min-w-[240px]">
-                      <StagePipeline stage={bill.legislative_stage} />
-                      {bill.last_action_description && (
-                        <div className="text-[10px] text-odl-subtle mt-1 leading-snug max-w-xs">
-                          {bill.last_action_description}
-                          {bill.last_action_date && (
-                            <span className="font-mono ml-1.5">{bill.last_action_date}</span>
-                          )}
-                        </div>
-                      )}
-                    </td>
-                  </tr>
-                  {expanded === bill.id && (
-                    <tr key={`${bill.id}-exp`} className="border-b border-odl-border/60 bg-odl-accent-bg/20">
-                      <td colSpan={4} className="px-4 py-4">
-                        <div className="text-xs text-odl-text leading-relaxed mb-3 max-w-3xl">
-                          {bill.summary ?? bill.full_name}
-                        </div>
-                        <div className="flex items-center gap-4 text-[10px] text-odl-subtle">
-                          {bill.official_text_url && (
-                            <a href={bill.official_text_url} target="_blank" rel="noreferrer" className="odl-link">
-                              Official text →
-                            </a>
-                          )}
-                          {bill.last_verified && <span>Verified {bill.last_verified}</span>}
-                        </div>
-                      </td>
-                    </tr>
-                  )}
-                </>
+                <tr
+                  key={bill.id}
+                  onClick={() => onViewLaw?.(bill.id)}
+                  className="border-b border-odl-border/60 hover:bg-odl-accent-bg/30 transition-colors cursor-pointer select-none"
+                >
+                  <td className="px-4 py-3 max-w-[240px]">
+                    <div className="font-medium text-odl-text leading-tight">{bill.short_name}</div>
+                    {bill.bill_number && (
+                      <div className="text-odl-subtle font-mono text-[10px] mt-0.5">{bill.bill_number}</div>
+                    )}
+                  </td>
+                  <td className="px-4 py-3 text-odl-muted whitespace-nowrap">
+                    {bill.region?.startsWith('US-') ? getStateCode(bill.region) : bill.jurisdiction}
+                  </td>
+                  <td className="px-4 py-3 text-odl-muted max-w-[160px]">
+                    {bill.primary_category ? (CATEGORY_LABELS[bill.primary_category] ?? bill.primary_category) : '—'}
+                  </td>
+                  <td className="px-4 py-3 min-w-[240px]">
+                    <StagePipeline stage={bill.legislative_stage} />
+                    {bill.last_action_description && (
+                      <div className="text-[10px] text-odl-subtle mt-1 leading-snug max-w-xs">
+                        {bill.last_action_description}
+                        {bill.last_action_date && (
+                          <span className="font-mono ml-1.5">{bill.last_action_date}</span>
+                        )}
+                      </div>
+                    )}
+                  </td>
+                </tr>
               ))}
             </tbody>
           </table>
