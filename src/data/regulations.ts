@@ -27,6 +27,8 @@ export const STATUS_LABELS: Record<string, string> = {
   withdrawn:                 'Withdrawn',
   pending:                   'Pending',
   draft:                     'Draft',
+  proposed:                  'Proposed',
+  vetoed:                    'Vetoed',
 }
 
 export const JURISDICTION_TYPE_LABELS: Record<string, string> = {
@@ -57,6 +59,8 @@ export const STATUS_COLORS: Record<string, string> = {
   withdrawn:                 'text-odl-muted bg-odl-surface border-odl-border',
   pending:                   'text-odl-yellow bg-odl-yellow-bg border-yellow-200',
   draft:                     'text-odl-yellow bg-odl-yellow-bg border-yellow-200',
+  proposed:                  'text-odl-accent bg-odl-accent-bg border-odl-accent/30',
+  vetoed:                    'text-odl-muted bg-odl-surface border-odl-border',
 }
 
 export const INSTRUMENT_TYPE_LABELS: Record<string, string> = {

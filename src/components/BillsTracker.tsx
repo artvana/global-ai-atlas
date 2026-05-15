@@ -184,7 +184,7 @@ export function BillsTracker({ onViewLaw }: BillsTrackerProps) {
           </h3>
           <div className="divide-y divide-odl-border/40">
             {hotBills.map(bill => (
-              <div key={bill.id} className="flex items-start gap-4 py-2.5 first:pt-0 last:pb-0">
+              <div key={bill.id} onClick={() => onViewLaw?.(bill.id)} className="flex items-start gap-4 py-2.5 first:pt-0 last:pb-0 cursor-pointer hover:bg-odl-surface/60 transition-colors rounded -mx-2 px-2">
                 <div className="pt-0.5 shrink-0">
                   <StagePipeline stage={bill.legislative_stage} />
                 </div>

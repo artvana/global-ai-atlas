@@ -159,15 +159,15 @@ export function LawDetail({ law, onClose }: Props) {
               )}
               <Row label="Region">{law.region}</Row>
               {law.bill_number && <Row label="Bill No.">{law.bill_number}</Row>}
-              <Row label="Instrument">{law.instrument_type.replace(/_/g, ' ')}</Row>
-              <Row label="Enacted"><span className="font-mono">{law.enacted_date}</span></Row>
+              <Row label="Instrument">{law.instrument_type?.replace(/_/g, ' ') ?? '—'}</Row>
+              <Row label="Enacted"><span className="font-mono">{law.enacted_date ?? '—'}</span></Row>
               <Row label="Effective"><span className="font-mono">{law.effective_date ?? '—'}</span></Row>
               {law.operative_dates && (
                 <Row label="Operative Dates">{law.operative_dates}</Row>
               )}
-              <Row label="Scope">{law.scope.replace(/_/g, ' ')}</Row>
-              <Row label="Applies to">{law.who_regulated.join(', ')}</Row>
-              <Row label="Legislative Genealogy">{LEGAL_FAMILY_LABELS[law.legal_family] ?? law.legal_family}</Row>
+              {law.scope && <Row label="Scope">{law.scope.replace(/_/g, ' ')}</Row>}
+              {law.who_regulated?.length > 0 && <Row label="Applies to">{law.who_regulated.join(', ')}</Row>}
+              {law.legal_family && <Row label="Legislative Genealogy">{LEGAL_FAMILY_LABELS[law.legal_family] ?? law.legal_family}</Row>}
               <Row label="Legal Citation"><span className="font-mono text-odl-muted">{law.legal_citation || '—'}</span></Row>
             </section>
 
@@ -187,18 +187,21 @@ export function LawDetail({ law, onClose }: Props) {
             )}
 
             {/* Enforcement */}
-            <section>
-              <SectionHeading>Enforcement</SectionHeading>
-              <Row label="Body">{law.enforcement_body.join(', ')}</Row>
-              <Row label="Max Penalty">{law.max_penalty ?? '—'}</Row>
-              {law.max_penalty_usd_approx != null && (
-                <Row label="Approx. USD">${law.max_penalty_usd_approx.toLocaleString()}</Row>
-              )}
-              <Row label="Preemption">{law.preemption_status.replace(/_/g, ' ')}</Row>
-              {law.preemption_notes && <Row label="Preemption Notes">{law.preemption_notes}</Row>}
-            </section>
+            {(law.enforcement_body?.length > 0 || law.max_penalty || law.preemption_status) && (
+              <section>
+                <SectionHeading>Enforcement</SectionHeading>
+                {law.enforcement_body?.length > 0 && <Row label="Body">{law.enforcement_body.join(', ')}</Row>}
+                <Row label="Max Penalty">{law.max_penalty ?? '—'}</Row>
+                {law.max_penalty_usd_approx != null && (
+                  <Row label="Approx. USD">${law.max_penalty_usd_approx.toLocaleString()}</Row>
+                )}
+                {law.preemption_status && <Row label="Preemption">{law.preemption_status.replace(/_/g, ' ')}</Row>}
+                {law.preemption_notes && <Row label="Preemption Notes">{law.preemption_notes}</Row>}
+              </section>
+            )}
 
             {/* Categories */}
+            {law.categories?.length > 0 && (
             <section>
               <SectionHeading>Categories</SectionHeading>
               <div className="flex flex-wrap gap-1.5">
@@ -213,8 +216,10 @@ export function LawDetail({ law, onClose }: Props) {
                 ))}
               </div>
             </section>
+            )}
 
             {/* Provisions */}
+            {law.provisions && (
             <section>
               <SectionHeading>Provisions</SectionHeading>
               <div className="grid grid-cols-2 gap-x-6">
@@ -230,6 +235,7 @@ export function LawDetail({ law, onClose }: Props) {
                 })}
               </div>
             </section>
+            )}
 
             {/* Issue Positions */}
             {issueEntries.length > 0 && (
@@ -302,10 +308,10 @@ export function LawDetail({ law, onClose }: Props) {
             )}
 
             {/* Legislative Lineage */}
-            {(law.inspired_by.length > 0 || law.influenced.length > 0) && (
+            {((law.inspired_by?.length ?? 0) > 0 || (law.influenced?.length ?? 0) > 0) && (
               <section>
                 <SectionHeading>Legislative Lineage</SectionHeading>
-                {law.inspired_by.length > 0 && (
+                {law.inspired_by?.length > 0 && (
                   <div className="mb-4">
                     <div className="text-[11px] text-odl-subtle uppercase tracking-wide mb-1.5">Derived from</div>
                     <div className="flex flex-wrap gap-1.5">
@@ -315,7 +321,7 @@ export function LawDetail({ law, onClose }: Props) {
                     </div>
                   </div>
                 )}
-                {law.influenced.length > 0 && (
+                {law.influenced?.length > 0 && (
                   <div>
                     <div className="text-[11px] text-odl-subtle uppercase tracking-wide mb-1.5">Influenced</div>
                     <div className="flex flex-wrap gap-1.5">
