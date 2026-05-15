@@ -24,11 +24,11 @@ const bills = (regulations as unknown as Bill[]).filter(r => r.status === 'propo
 
 const STAGES = [
   { key: 'introduced',         label: 'Introduced' },
-  { key: 'in_committee',       label: 'Committee' },
-  { key: 'passed_committee',   label: 'Cleared committee' },
+  { key: 'in_committee',       label: 'In committee' },
+  { key: 'passed_committee',   label: 'Committee cleared' },
   { key: 'passed_one_chamber', label: 'Passed chamber' },
-  { key: 'passed_legislature', label: 'Passed both' },
-  { key: 'awaiting_signature', label: "Gov. desk" },
+  { key: 'passed_legislature', label: 'Passed legislature' },
+  { key: 'awaiting_signature', label: 'Awaiting assent' },
 ]
 
 const STAGE_ORDER: Record<string, number> = Object.fromEntries(
@@ -152,7 +152,7 @@ export function BillsTracker({ onViewLaw }: BillsTrackerProps) {
     <div className="flex flex-col gap-6">
       <div>
         <h2 className="text-sm font-semibold text-odl-text mb-1">Legislative Tracker</h2>
-        <p className="text-xs text-odl-muted">Active AI bills currently before legislatures — not yet signed into law.</p>
+        <p className="text-xs text-odl-muted">Active AI legislative proposals currently before legislatures worldwide — not yet enacted.</p>
       </div>
 
       {/* Stats */}
