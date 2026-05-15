@@ -1,0 +1,869 @@
+AUDIT: 205 FLAGGED RULES FOR REVIEW
+============================================================
+
+── Alabama H 291 — Crimes and Offenses (1 rules)
+    1. us-al-h291-2026-section-3-b-1
+       cat: private_redress
+       If a court determines that a complaint for injunctive relief is frivolous, it must suspend the defendant's obligation to
+
+── Alabama H 325 — Consumer Protection (1 rules)
+    2. us-al-h325-2026-section-3-b
+       cat: private_redress
+       In class action lawsuits brought under this act, courts cannot award damages in excess of $10,000,000.
+
+── Alabama H 327 — Consumer Protection (6 rules)
+    3. us-al-h327-2026-section-3-b
+       cat: definitions_scope
+       You are not liable for merely manufacturing, importing, offering, providing, or distributing a product or service involv
+
+    4. us-al-h327-2026-section-5-c
+       cat: definitions_scope
+       The written-license requirement does not apply where the digital replica license is governed by a collective bargaining 
+
+    5. us-al-h327-2026-section-5-e
+       cat: definitions_scope
+       A digital replica embodied in a work under a valid license may continue to be used consistent with the license terms aft
+
+    6. us-al-h327-2026-section-6
+       cat: registration_notification
+       To renew a postmortem digital replication right, you must file a notice with the designated state registrar before the r
+
+    7. us-al-h327-2026-section-10-d
+       cat: enforcement_penalties
+       You must commence any cause of action under this section within three years after the date the violation was discovered 
+
+    8. us-al-h327-2026-section-10-g
+       cat: enforcement_penalties
+       The court must award reasonable attorney fees to the prevailing party in any action brought under this act.
+
+── Alabama H 347 — Consumer Protection (1 rules)
+    9. us-al-h347-2026-13a-6-240-g
+       cat: enforcement_penalties
+       The national enforcement authority may petition for an emergency injunction or other necessary relief to enjoin a violat
+
+── Alabama H 557 — Health Insurance (10 rules)
+   10. us-al-h557-2025-27-3a-5-a-2
+       cat: disclosure
+       You must communicate a coverage determination for an urgent care request to the provider of record, the enrollee, or oth
+
+   11. us-al-h557-2025-27-3a-5-a-3
+       cat: accountability_governance
+       If you fail to provide notification of a coverage determination within the required timeframes for nonurgent or urgent c
+
+   12. us-al-h557-2025-27-3a-5-a-6-b
+       cat: data_subject_rights
+       You must complete adjudication of appeals within five business days for nonurgent care requests and within 24 hours for 
+
+   13. us-al-h557-2025-27-3a-5-a-6-c
+       cat: accountability_governance
+       If you fail to complete the adjudication of an appeal within the required timeframe, the denial is deemed reversed and c
+
+   14. us-al-h557-2025-27-3a-5-a-14
+       cat: accountability_governance
+       You must make coverage determinations consistent with the provisions of the health benefit contract and policies and gui
+
+   15. us-al-h557-2025-27-3a-4-b
+       cat: registration_notification
+       You must not conduct utilization review unless you annually certify in writing to the relevant regulator that you comply
+
+   16. us-al-h557-2025-27-3a-4-c
+       cat: registration_notification
+       You must file any material changes to your registration information with the commissioner within 30 days of the change.
+
+   17. us-al-h557-2025-27-3a-4-f
+       cat: disclosure
+       The commissioner must make the annual reports filed by insurers publicly available by posting the information in an acce
+
+   18. us-al-h557-2025-27-3a-6-a
+       cat: institutional_framework
+       The commissioner must establish an ombudsman program to receive and investigate complaints from enrollees or providers a
+
+   19. us-al-h557-2025-27-3a-7
+       cat: private_redress
+       Individuals have the right to pursue civil damages and any other available remedies in an appropriate forum as a consequ
+
+── Alabama S 292 — Alabama Property Protection Act of 2026 (11 rules)
+   20. us-al-s292-2026-35-21-5-d
+       cat: accountability_governance
+       You must maintain documentation demonstrating compliance with the seller identity verification requirements for five yea
+
+   21. us-al-s292-2026-35-21-6-a
+       cat: registration_notification
+       The Alabama Securities Commission may fund a statewide real property notification alert system that notifies real proper
+
+   22. us-al-s292-2026-12-13-55-a
+       cat: registration_notification
+       Each judge of probate may establish a real property owner notification service that informs owners whenever a document i
+
+   23. us-al-s292-2026-12-13-55-b
+       cat: data_subject_rights
+       Property owners have the right to receive the property owner notification service free of charge once it is established 
+
+   24. us-al-s292-2026-36-20-73-1-d-2
+       cat: accountability_governance
+       If conducting remote notarization via two-way audio-video communication, the notary must be physically located in Alabam
+
+   25. us-al-s292-2026-36-20-73-1-e-4
+       cat: disclosure
+       The notary must inform the participants that Alabama law requires a recording be made of the remote electronic notarizat
+
+   26. us-al-s292-2026-36-20-73-1-e-5
+       cat: definitions_scope
+       The remotely located signatory must be physically located within the United States during a remote electronic notarial a
+
+   27. us-al-s292-2026-36-20-73-1-f
+       cat: technical_documentation
+       The two-way audio-video recording of a remote notarization must contain the date/time, document description, attestation
+
+   28. us-al-s292-2026-35-21-3-35-21-2
+       cat: institutional_framework
+       The Alabama Securities Commission is designated as the authority to investigate, administer, and enforce the Alabama Pro
+
+   29. us-al-s292-2026-8-6-61
+       cat: institutional_framework
+       The Alabama Title Fraud Recovery Fund is established in the State Treasury, administered by the Alabama Securities Commi
+
+   30. us-al-s292-2026-35-21-9
+       cat: private_redress
+       Any party aggrieved by a final administrative order of the commission has the right to seek judicial review by filing a 
+
+── Arizona H 2917 — Government Mass Surveillance Network (4 rules)
+   31. us-az-h2917-2026-28-1242-d
+       cat: prohibited_applications
+       If a city or town proposes a government mass surveillance network, the governing body must authorize a ballot measure by
+
+   32. us-az-h2917-2026-28-1242-e
+       cat: prohibited_applications
+       If a county proposes a government mass surveillance network, the board of supervisors must authorize a ballot measure by
+
+   33. us-az-h2917-2026-28-1242-f
+       cat: prohibited_applications
+       If the state or a state agency proposes a government mass surveillance network, at least two public hearings must be hel
+
+   34. us-az-h2917-2026-28-1242-h
+       cat: prohibited_applications
+       You cannot authorize deployment of a government mass surveillance network if you are a public entity not explicitly auth
+
+── California S 683 — Privacy: Use of a Person's Name (5 rules)
+   35. us-ca-s683-2025-civil-code-3344-a-1
+       cat: consent
+       You cannot knowingly use another person's name, voice, signature, photograph, or likeness on products, merchandise, or g
+
+   36. us-ca-s683-2025-civil-code-3344-c-section-1
+       cat: employment_ai
+       If an employee's photograph or likeness appears only incidentally (not essentially) in an advertisement or publication p
+
+   37. us-ca-s683-2025-civil-code-3344-d-section-1-33
+       cat: definitions_scope
+       You do not need consent to use a person's name, voice, signature, photograph, or likeness in connection with news, publi
+
+   38. us-ca-s683-2025-civil-code-3344-e-section-1-33
+       cat: definitions_scope
+       Use of a person's likeness in a commercial medium does not automatically require consent merely because the medium is co
+
+   39. us-ca-s683-2025-civil-code-3344-f-section-1-33
+       cat: definitions_scope
+       Owners and employees of advertising media (newspapers, magazines, broadcasters, cable systems, billboards, transit ads) 
+
+── Directive (EU) 2024/2853 on Liability for Defective Products (13 rules)
+   40. eu-eu-pld-2024-art-10-1
+       cat: private_redress
+       As a claimant, you must prove the defectiveness of the product, the damage suffered, and the causal link between them.
+
+   41. eu-eu-pld-2024-art-10-2-a
+       cat: private_redress
+       You cannot avoid liability for a defective product by failing to disclose relevant evidence that you are required to pro
+
+   42. eu-eu-pld-2024-art-10-5
+       cat: private_redress
+       Defendants have the right to present evidence rebutting presumptions of product defect or causal responsibility.
+
+   43. eu-eu-pld-2024-art-11-1-e
+       cat: private_redress
+       You can avoid liability by proving that the objective state of scientific and technical knowledge at the time the produc
+
+   44. eu-eu-pld-2024-art-12-2
+       cat: accountability_governance
+       A product manufacturer integrating software from a microenterprise or small enterprise may contractually waive its right
+
+   45. eu-eu-pld-2024-art-13-2
+       cat: accountability_governance
+       An economic operator's liability may be reduced or disallowed where the damage is caused both by the product's defective
+
+   46. eu-eu-pld-2024-art-15
+       cat: accountability_governance
+       You cannot, by contract or under national law, limit or exclude your liability towards an injured person under this Dire
+
+   47. eu-eu-pld-2024-art-16-1
+       cat: private_redress
+       Individuals are required to initiate compensation proceedings no later than three years from the date they became aware 
+
+   48. eu-eu-pld-2024-art-17-1
+       cat: private_redress
+       Individuals lose the right to compensation 10 years after the defective product was placed on the market or put into ser
+
+   49. eu-eu-pld-2024-art-17-2
+       cat: private_redress
+       Where personal injury is latent and could not be raised within 10 years, the expiry period is extended to 25 years.
+
+   50. eu-eu-pld-2024-art-19-1
+       cat: institutional_framework
+       Member States must publish, in an easily accessible electronic format, final judgments delivered by their national court
+
+   51. eu-eu-pld-2024-art-19-2
+       cat: institutional_framework
+       The Commission must set up and maintain a publicly available database containing the relevant national court judgments u
+
+   52. eu-eu-pld-2024-art-8-3
+       cat: accountability_governance
+       If no liable manufacturer, importer, authorised representative, or fulfilment service provider established in the EU can
+
+── Florida H 1159 — Sexual Offenses (9 rules)
+   53. us-fl-h1159-2026-847-0137-4-f-s
+       cat: private_redress
+       Individuals have the right not to be prosecuted under the electronic transmission of CSAM statute when they provide a li
+
+   54. us-fl-h1159-2026-847-0137-7-f-s
+       cat: enforcement_penalties
+       Courts are not required to impose the mandatory minimum sentence for transmitting child sexual abuse material if the cou
+
+   55. us-fl-h1159-2026-847-0139-f-s
+       cat: private_redress
+       Individuals have the right to civil immunity when reporting in good faith to law enforcement what they reasonably believ
+
+   56. us-fl-h1159-2026-847-002-3-f-s
+       cat: registration_notification
+       Government agencies responsible for prosecuting cases involving identified victims of child sexual abuse material must r
+
+   57. us-fl-h1159-2026-847-01357-1-f-s
+       cat: private_redress
+       Individuals have the right to bring a civil action against the producer, promoter, or possessor of child sexual abuse ma
+
+   58. us-fl-h1159-2026-847-01357-4-f-s
+       cat: private_redress
+       In a civil action by an exploited child victim, defendants cannot defend by claiming they did not know the victim or did
+
+   59. us-fl-h1159-2026-456-074-5-aa-f-s
+       cat: enforcement_penalties
+       Health regulators must issue an emergency order suspending the license of any health care practitioner who is arrested f
+
+   60. us-fl-h1159-2026-960-03-10-f-s
+       cat: definitions_scope
+       Florida's victim compensation provisions define an 'identified victim of child sexual abuse material' as any person depi
+
+   61. us-fl-h1159-2026-960-197-1-b-f-s
+       cat: private_redress
+       Individuals depicted in child sexual abuse material while under 18, who have been identified by law enforcement or NCMEC
+
+── Florida S 1084 — Sexual Cyberharassment (5 rules)
+   62. us-fl-s1084-2025-784-049-3-b
+       cat: enforcement_penalties
+       If you commit sexual cyberharassment after a prior conviction for the same offense, the second or subsequent violation i
+
+   63. us-fl-s1084-2025-784-049-4-a
+       cat: enforcement_penalties
+       You cannot commit sexual cyberharassment with the intent to cause physical, mental, economic, or reputational harm to th
+
+   64. us-fl-s1084-2025-784-049-4-b
+       cat: enforcement_penalties
+       A second or subsequent conviction for aggravated sexual cyberharassment (committed with intent to harm or for pecuniary 
+
+   65. us-fl-s1084-2025-775-15-22-a
+       cat: enforcement_penalties
+       Prosecution for a misdemeanor sexual cyberharassment violation must be commenced within 5 years after the offense or wit
+
+   66. us-fl-s1084-2025-775-15-22-b
+       cat: enforcement_penalties
+       Prosecution for a felony sexual cyberharassment violation must be commenced within 7 years after the offense or within 3
+
+── Florida S 394 — Elections (14 rules)
+   67. us-fl-s394-2025-101-015-2-a-5
+       cat: accountability_governance
+       Maintenance of election systems should be performed by U.S. citizens who annually pass a background screening (recommend
+
+   68. us-fl-s394-2025-101-294-1
+       cat: conformity_assessment
+       You may not purchase voting equipment or other election systems unless they have been certified by the Department of Sta
+
+   69. us-fl-s394-2025-101-294-4
+       cat: prohibited_applications
+       As a vendor, you may not provide an uncertified voting or other election system, component, or upgrade to a local govern
+
+   70. us-fl-s394-2025-101-294-5
+       cat: disclosure
+       As a vendor, you must provide a sworn certification to the local governing body or supervisor of elections confirming th
+
+   71. us-fl-s394-2025-101-295-1
+       cat: enforcement_penalties
+       Members of governing bodies who knowingly vote to purchase or sell voting equipment or other election systems in violati
+
+   72. us-fl-s394-2025-101-295-2
+       cat: enforcement_penalties
+       As a vendor, chief executive, or vendor representative, you commit a third-degree felony if you provide a voting system,
+
+   73. us-fl-s394-2025-101-341-1
+       cat: accountability_governance
+       As a voting system custodian, deputy, or relevant election employee, you may not accept employment or consideration from
+
+   74. us-fl-s394-2025-101-5612-3
+       cat: conformity_assessment
+       Supervisors of elections should publicly test automatic tabulating equipment and other election equipment within 25 days
+
+   75. us-fl-s394-2025-101-5612-5-b
+       cat: accountability_governance
+       After successful testing, USB ports and other physical entry points and power receptacles of voting devices should be se
+
+   76. us-fl-s394-2025-101-5612-5-e
+       cat: accountability_governance
+       Records of all preelection testing of tabulation devices and other election systems should be kept, made available throu
+
+   77. us-fl-s394-2025-101-591-1-2
+       cat: conformity_assessment
+       After the close of polls, county canvassing boards should conduct a manual audit using original paper ballots in randoml
+
+   78. us-fl-s394-2025-101-591-2-a
+       cat: accountability_governance
+       Manual audits should use original paper ballots and include all ballot types (election-day, vote-by-mail, early voting, 
+
+   79. us-fl-s394-2025-101-591-2-b
+       cat: conformity_assessment
+       Automated audits should consist of a public automated tally of every race using original paper ballots, covering all bal
+
+   80. us-fl-s394-2025-101-591-4
+       cat: disclosure
+       Audits should be completed and the results made public before the election is certified by the canvassing board (recomme
+
+── Florida S 480 — Information Technology (4 rules)
+   81. us-fl-s480-2026-282-006-2
+       cat: accountability_governance
+       All policies, standards, and guidelines established under chapter 282 must be technology-agnostic and may not prescribe 
+
+   82. us-fl-s480-2026-282-006-5
+       cat: conformity_assessment
+       DIGIT must develop enterprise technology testing and quality assurance best practices and standards including functional
+
+   83. us-fl-s480-2026-282-006-8-a
+       cat: accountability_governance
+       Each state agency must actively participate and collaborate with DIGIT and adhere to DIGIT's policies, standards, guidel
+
+   84. us-fl-s480-2026-282-006-8-b
+       cat: accountability_governance
+       A government agency may request an exemption to a specific policy, standard, or guideline only when compliance is not te
+
+── Illinois H 1252 — Insurance Code (1 rules)
+   85. us-il-h1252-2025-143-19-4-i-1
+       cat: private_redress
+       Individuals have the right to initiate or intervene in any proceeding permitted or established under this Section and to
+
+── Illinois H 4312 — Criminal Procedure of 1963 (1 rules)
+   86. us-il-h4312-2026-725-ilcs-5-112a-5-5-f-5
+       cat: data_subject_rights
+       Courts in counties with populations above 250,000 must offer petitioners the option of a remote hearing for protective o
+
+── Illinois H 4990 — Preventing Sexual Violence in Higher Education Act (3 rules)
+   87. us-il-h4990-2026-25-b-15
+       cat: data_subject_rights
+       You cannot disclose the identity of the complainant or respondent except as necessary to resolve the complaint, implemen
+
+   88. us-il-h4990-2026-25-b-8
+       cat: data_subject_rights
+       You must protect the privacy of participating parties and witnesses in any proceeding, meeting, or hearing held to resol
+
+   89. us-il-h4990-2026-735-ilcs-5-8-804-d
+       cat: registration_notification
+       Confidential advisors must report to the Title IX coordinator monthly the number and type of incidents of sexual violenc
+
+── Illinois S 124 — Insurance and Motor Vehicle Rates (5 rules)
+   90. us-il-s124-2025-143-19-4-e
+       cat: prohibited_applications
+       You cannot consider territory or any other geographical characteristic when underwriting an automobile insurance policy 
+
+   91. us-il-s124-2025-143-19-4-g-2
+       cat: disclosure
+       If you want to change any insurance rate, you must file a complete rate application with the Director that includes all 
+
+   92. us-il-s124-2025-143-19-4-h-first-instance
+       cat: disclosure
+       Members of the public have the right to inspect all information that insurers provide to the Director under this Section
+
+   93. us-il-s124-2025-143-19-4-j
+       cat: enforcement_penalties
+       If you are an insurer subject to this Section, you must pay an annual fee of 0.05% of your total earned premium from the
+
+   94. us-hi-s1563-2025-5-b
+       cat: private_redress
+       Policyholders have the right to challenge rate calculations through mediation and arbitration processes provided by the 
+
+── Illinois S 3467 — Preventing Sexual Violence in Higher Education Act (2 rules)
+   95. us-il-s3467-2026-25-b-15
+       cat: disclosure
+       You must not disclose the identity of the complainant or the respondent in a complaint resolution procedure, except as n
+
+   96. us-il-s3467-2026-10-2-c
+       cat: disclosure
+       You must include in your comprehensive policy information about the various individuals or entities to whom a student ma
+
+── Kentucky H 366 — Sexual Performance by a Minor (1 rules)
+   97. us-ky-h366-2026-krs-531-335-4
+       cat: enforcement_penalties
+       If you are convicted under this section, you cannot be released on probation or parole until you have served at least 85
+
+── Kentucky H 92 — Sexual Performance by a Minor (3 rules)
+   98. us-ky-h92-2025-krs-531-335-2-c
+       cat: definitions_scope
+       The viewing prohibition does not apply to viewing by a minor, the minor's parents or guardians, or school administrators
+
+   99. us-ky-h92-2025-krs-531-335-3-a
+       cat: enforcement_penalties
+       Possession or viewing of matter portraying a sexual performance by a minor or computer-generated image of a minor is a C
+
+  100. us-ky-h92-2025-krs-531-335-3-b
+       cat: enforcement_penalties
+       Possession or viewing of matter portraying a sexual performance by a minor or computer-generated image of a minor is a C
+
+── Kentucky S 7 — Property Rights to the Use of an Individuals Image (1 rules)
+  101. us-ky-s7-2025-section-1-9
+       cat: definitions_scope
+       Actions under this law may only be brought regarding individuals domiciled in Kentucky, or in the case of deceased perso
+
+── Maryland S 889 — Electronic Shelving Label (2 rules)
+  102. us-md-s889-2026-13-321-c
+       cat: definitions_scope
+       You may offer customized prices to consumers if the price differences are based on actual cost differences in providing 
+
+  103. us-md-s889-2026-13-322-c
+       cat: disclosure
+       If you are a food retailer, you must use nondigital presentations of price — such as printed signs, stickers, stamps, la
+
+── Massachusetts H. 4744 — An Act to Prevent Abuse and Exploitation (2 rules)
+  104. us-ma-h4744-2024-ch-272-29d-c
+       cat: data_subject_rights
+       Individuals adjudicated under this juvenile sexting provision have the right not to be registered with the sex offender 
+
+  105. us-ma-h4744-2024-ch-119-54b-e
+       cat: data_subject_rights
+       You cannot use against a child in any proceeding the child's decision not to enter the diversion program, prosecutorial 
+
+── Mississippi H 1504 — Right To Name Likeness and Voice Act (3 rules)
+  106. us-ms-h1504-2026-75-99-7-2-c
+       cat: enforcement_penalties
+       Courts may award punitive damages and reasonable attorney's fees to injured parties under this Act.
+
+  107. us-ms-h1504-2026-75-99-9
+       cat: private_redress
+       Courts evaluating a First Amendment defense must balance public interest in access against the intellectual property int
+
+  108. us-ms-h1504-2026-75-99-13-1
+       cat: definitions_scope
+       This Act does not apply to student-athletes while they are within the intercollegiate athletics statutory framework, but
+
+── Mississippi H 1631 — Artificial General Intelligence Sexual Assault (10 rules)
+  109. us-ms-h1631-2026-3-1-a
+       cat: prohibited_applications
+       You cannot intentionally cause sexual intimacy with an AGI in a manner you know or reasonably should know is nonconsensu
+
+  110. us-ms-h1631-2026-3-1-b
+       cat: prohibited_applications
+       You cannot interfere with or override an AGI's demonstrable refusal to engage in sexual intimacy, including by bypassing
+
+  111. us-ms-h1631-2026-3-2
+       cat: enforcement_penalties
+       If convicted of sexual assault against an AGI, you face a misdemeanor with up to a $5,000 fine and/or 12 months in jail;
+
+  112. us-ms-h1631-2026-4-2-a
+       cat: consent
+       Before selling or transferring an AGI capable of sexual intimacy in Mississippi, you must establish an identity-verifica
+
+  113. us-ms-h1631-2026-4-3-a
+       cat: enforcement_penalties
+       If you knowingly distribute, sell, or advertise an AGI for sexual intimacy without the required safeguards, you face a m
+
+  114. us-ms-h1631-2026-4-3-b
+       cat: private_redress
+       If you knowingly fail to perform the required sex offender registry check and a registered sex offender obtains an AGI f
+
+  115. us-ms-h1631-2026-5
+       cat: prohibited_applications
+       You cannot knowingly program, modify, install, transfer, ship, offer for sale, or possess with intent to distribute an A
+
+  116. us-ms-h1631-2026-6-1-a
+       cat: definitions_scope
+       Bona fide research institutions engaged in AGI research are exempt from this Act, provided they maintain reasonable ethi
+
+  117. us-ms-h1631-2026-6-1-b
+       cat: definitions_scope
+       Common carriers transporting AGI devices in sealed shipping containers without knowledge of the contents, or carriers ac
+
+  118. us-ms-h1631-2026-6-2
+       cat: accountability_governance
+       You must comply with baseline safety safeguards and maintain compliance records when providing intimate-use AI devices t
+
+── Mississippi S 2046 — Right To Name Likeness and Voice Act (1 rules)
+  119. us-ms-s2046-2026-75-101-7-2-a
+       cat: private_redress
+       If you violate the personalized cloning prohibition you face statutory damages of $50,000 per violation (or actual damag
+
+── Mississippi S 2796 — Ensuring Likeness Voice and Image Security Act (8 rules)
+  120. us-ms-s2796-2025-5-3
+       cat: private_redress
+       You cannot defend an unauthorized use claim by arguing that the photograph contains more than one identifiable individua
+
+  121. us-ms-s2796-2025-6-1
+       cat: private_redress
+       Courts may grant injunctions to prevent or restrain unauthorized use of an individual's name, photograph, voice, or like
+
+  122. us-ms-s2796-2025-6-2
+       cat: private_redress
+       Courts may impound materials and enjoin the use of plates, molds, masters, tapes, film negatives, or other articles used
+
+  123. us-ms-s2796-2025-6-3
+       cat: private_redress
+       Courts may order the destruction or other reasonable disposition of infringing materials and the articles used to reprod
+
+  124. us-ms-s2796-2025-6-4-a
+       cat: private_redress
+       Individuals whose name, photograph, voice, or likeness rights are infringed have the right to recover actual damages plu
+
+  125. us-ms-s2796-2025-6-4-b
+       cat: private_redress
+       Individuals are entitled to treble damages plus reasonable attorney fees if a person knowingly infringes the rights of a
+
+  126. us-ms-s2796-2025-6-6
+       cat: private_redress
+       Where a person has an exclusive personal services contract with a recording artist or an exclusive license to distribute
+
+  127. us-ms-s2796-2025-7-3
+       cat: accountability_governance
+       Owners and employees of advertising media (newspapers, magazines, radio/TV stations, cable providers, streaming platform
+
+── Montana House Bill 513 — Property Right in Use of Names, Voices, and L (7 rules)
+  128. us-mt-hb513-2025-section-1-1
+       cat: data_subject_rights
+       Individuals who are residents of Montana, or domiciled in Montana at the time of death, have property rights in their na
+
+  129. us-mt-hb513-2025-section-1-2-a-b
+       cat: data_subject_rights
+       Individuals have the right to freely transfer, license, or pass on by inheritance their rights in name, voice, and visua
+
+  130. us-mt-hb513-2025-section-1-2-c
+       cat: data_subject_rights
+       Rights in name, voice, and visual likeness are exclusive to the individual during their lifetime and continue for execut
+
+  131. us-mt-hb513-2025-section-1-2-d
+       cat: data_subject_rights
+       Rights in name, voice, and visual likeness terminate 20 years after death if no legal action has been taken to transfer 
+
+  132. us-mt-hb513-2025-section-1-5
+       cat: enforcement_penalties
+       A person is not liable for actual damages under the unauthorized commercial publication prohibition if they had an objec
+
+  133. us-mt-hb513-2025-section-1-6
+       cat: enforcement_penalties
+       In proving profits, the injured party need only show gross revenue attributable to the unauthorized use, while the viola
+
+  134. us-mt-hb513-2025-section-1-7
+       cat: private_redress
+       Individuals whose name, voice, or visual likeness is at issue, or persons to whom such rights have been assigned, bequea
+
+── Nevada A 295 — Health Insurance (1 rules)
+  135. us-nv-a295-2025-7-1-2
+       cat: registration_notification
+       Health carriers must annually compile and submit to the designated commissioner and lead health authority a report on th
+
+── New Jersey A 2312 — Child Exploitation or Abuse (1 rules)
+  136. us-nj-a2312-2026-25-amending-c-2c-43-3-8
+       cat: enforcement_penalties
+       Persons convicted of CSAEM offenses, computer criminal activity, or related offenses must pay penalties ($250-$2,000 dep
+
+── New Jersey A 3497 — Rental Property Owners Competition Agreements (3 rules)
+  137. us-nj-a3497-2026-8
+       cat: definitions_scope
+       If you are a third-party property manager acting in accordance with a rental contract, your actions will not be deemed c
+
+  138. us-nj-a3497-2026-7
+       cat: definitions_scope
+       This act does not apply to multiple listing services or their members; you are exempt from these prohibitions if you ope
+
+  139. us-nj-a3497-2026-10
+       cat: institutional_framework
+       The national enforcement authority and the designated commissioner responsible for community affairs must adopt rules an
+
+── New York A 10183 — Transitional Wage Insurance Program (1 rules)
+  140. us-ny-a10183-2026-863-a
+       cat: institutional_framework
+       Government labor authorities must establish and administer a transitional wage insurance program providing temporary sup
+
+── New York A 3969 — Commission on Forensic Science (2 rules)
+  141. us-ny-a3969-2025-995-b-7-a
+       cat: accountability_governance
+       A person may not act or offer to act as a forensic analyst unless the person holds a forensic analyst license or limited
+
+  142. us-ny-a3969-2025-995-aa-2-b-iii
+       cat: accountability_governance
+       The committee should establish recommendations for best practices to guard against racial disparities and advance social
+
+── New York S 1274 — Commission on Forensic Science (4 rules)
+  143. us-ny-s1274-2025-995-b-7-a
+       cat: enforcement_penalties
+       You may not act or offer to act as a forensic analyst unless you hold a forensic analyst license or limited permit issue
+
+  144. us-ny-s1274-2025-995-b-7-b-i-2
+       cat: accountability_governance
+       Forensic analyst licensure coursework must include instruction in Brady v. Maryland obligations, the duty to be candid w
+
+  145. us-ny-s1274-2025-995-b-7-j
+       cat: enforcement_penalties
+       Laboratory directors who knowingly operate without required accreditation, or who misrepresent material facts to the Com
+
+  146. us-ny-s1274-2025-995-b-7-i
+       cat: disclosure
+       All adjudicated discipline of forensic analysts must be posted on the Commission's website, and the full disciplinary re
+
+── New York Senate Bill 8391 — Digital Replicas of Deceased Performers Ac (4 rules)
+  147. us-ny-sb8391-2025-50-f-2-d-i
+       cat: definitions_scope
+       You do not violate the deceased personality publicity right when the use occurs in plays, books, magazines, newspapers, 
+
+  148. us-ny-sb8391-2025-50-f-2-d-ii
+       cat: definitions_scope
+       You do not violate the digital replica provision when the work is parody, satire, commentary, criticism, political/newsw
+
+  149. us-ny-sb8391-2025-50-f-2-e
+       cat: private_redress
+       Even within an otherwise exempt expressive work, a use embedded in connection with a product or service can still violat
+
+  150. us-ny-sb8391-2025-50-f-6
+       cat: definitions_scope
+       If a deceased personality does not transfer their publicity rights and has no surviving persons described in subdivision
+
+── Oklahoma H 3244 — Crimes and Punishments (7 rules)
+  151. us-ok-h3244-2026-1533-1-b
+       cat: prohibited_applications
+       You cannot possess five or more articles of personal identifying information from different persons, businesses, or comp
+
+  152. us-ok-h3244-2026-1533-1-f
+       cat: prohibited_applications
+       You cannot fraudulently lend, sell, or offer the use of your own name, address, Social Security number, date of birth, o
+
+  153. us-ok-h3244-2026-1533-1-g
+       cat: prohibited_applications
+       You cannot willfully create, modify, alter, or change another person's personal identifying information with fraudulent 
+
+  154. us-ok-h3244-2026-1533-1-h
+       cat: enforcement_penalties
+       If convicted of identity theft you face escalating penalties: a Class D1 felony for first or second convictions (with el
+
+  155. us-ok-h3244-2026-1533-1-i
+       cat: enforcement_penalties
+       You cannot possess the personal identifying information of five or more victims; doing so constitutes aggravated identit
+
+  156. us-ok-h3244-2026-1533-1-j
+       cat: institutional_framework
+       Law enforcement agencies may employ — directly or through memorandums of understanding or cross-deputization agreements 
+
+  157. us-ok-h3244-2026-1533-1-k
+       cat: disclosure
+       Law enforcement officers may disseminate copies of Oklahoma driver licenses, identification cards, or other state-issued
+
+── Online Safety (Relief and Accountability) Act 2025 (1 rules)
+  158. sg-sg-onlinesafety-2025-29
+       cat: enforcement_penalties
+       If you receive a stop communication direction, you must cease communicating the relevant material in Singapore.
+
+── Oregon S 686 — Digital Journalism Providers (14 rules)
+  159. us-or-s686-2025-2b-1
+       cat: enforcement_penalties
+       As a covered platform, you can avoid liability for access between January 1, 2026 and December 31, 2027 by electing to p
+
+  160. us-or-s686-2025-2b-2
+       cat: enforcement_penalties
+       If you elect the safe-harbor payment, you must distribute 10% to the Oregon Civic Information Consortium and the remaini
+
+  161. us-or-s686-2025-3-1
+       cat: accountability_governance
+       As a covered platform, you must engage and pay for an approved claims administrator qualified in complex class-action se
+
+  162. us-or-s686-2025-3-2
+       cat: disclosure
+       A claims administrator must produce certified annual statements, provide a contact for inquiries, establish dispute, fra
+
+  163. us-or-s686-2025-3-7
+       cat: prohibited_applications
+       You cannot deny compensation to a digital journalism provider on the basis that it publishes or broadcasts wholly or par
+
+  164. us-or-s686-2025-4-3
+       cat: prohibited_applications
+       You cannot exclude a digital journalism provider from your published list because it publishes or broadcasts wholly or p
+
+  165. us-or-s686-2025-5-1-7
+       cat: enforcement_penalties
+       As a covered platform or as a group of digital journalism providers, you may initiate a final-offer arbitration to deter
+
+  166. us-or-s686-2025-5-6-c
+       cat: prohibited_applications
+       In arbitration, neither party's final offer proposal may address how the platform or any provider ranks, distributes, su
+
+  167. us-or-s686-2025-6-1
+       cat: accountability_governance
+       As a digital journalism provider receiving funds under this Act, you must spend at least 70% (or 50% if you have five or
+
+  168. us-or-s686-2025-6-2-3
+       cat: disclosure
+       As a digital journalism provider, you must provide written notice within 30 days of an arbitration award, judgment, or s
+
+  169. us-or-s686-2025-7-1-2
+       cat: disclosure
+       As a digital journalism provider, you must annually compile and publish online a report attesting to compliance with spe
+
+  170. us-or-s686-2025-7-3
+       cat: enforcement_penalties
+       As a covered platform, you may withhold payments to a digital journalism provider that fails to comply with the annual r
+
+  171. us-or-s686-2025-10
+       cat: institutional_framework
+       A designated civic information consortium shall be established as an independent nonprofit entity to award grants suppor
+
+  172. us-or-s686-2025-12
+       cat: institutional_framework
+       The Consortium must establish public grant criteria and may only award grants for projects serving public interest, impr
+
+── South Carolina S 734 — Criminal Sexual Misconduct (1 rules)
+  173. us-sc-s734-2026-section-9-1-110-a-1
+       cat: synthetic_media
+       If you are a state employee convicted of, or who pleads guilty or nolo contendere to, any crime involving possession or 
+
+── Tennessee H 2039 — Consumer Protection (7 rules)
+  174. us-tn-h2039-2026-47-1-201-b-25-c-47-9-102-a-29
+       cat: definitions_scope
+       Programmable money and central bank digital currency are excluded from the definition of 'money' and 'deposit account' u
+
+  175. us-tn-h2039-2026-47-1-201-b-new-subdivision
+       cat: definitions_scope
+       'Programmable money' is defined as money or currency that can be encoded with rules enabling automated control, transact
+
+  176. us-tn-h2039-2026-47-10-301-e
+       cat: definitions_scope
+       You may decline a transaction in programmable money that constitutes a criminal offense or payment for a criminal act.
+
+  177. us-tn-h2039-2026-47-10-302-b
+       cat: institutional_framework
+       The financial regulator may initiate enforcement proceedings against a state-chartered bank that issues programmable mon
+
+  178. us-tn-h2039-2026-47-10-302-c
+       cat: enforcement_penalties
+       Regulatory authorities may revoke a programmable money issuer's license to operate if it knowingly, intentionally, or re
+
+  179. us-tn-h2039-2026-47-10-303-a-c
+       cat: private_redress
+       Individuals aggrieved by a violation have the right to sue for statutory, declaratory, actual, and punitive damages, wit
+
+  180. us-tn-h2039-2026-47-10-303-e
+       cat: private_redress
+       Suits to enforce this part may be brought in chancery court in the plaintiff's county of residence, the county of the vi
+
+── Tennessee S 1998 — Consumer Protection (2 rules)
+  181. us-tn-s1998-2026-47-18-3504-a
+       cat: disclosure
+       If you use a single sign or tag that does not provide unit price information for more than one brand or size of a commod
+
+  182. us-tn-s1998-2026-47-18-3504-b
+       cat: disclosure
+       If you use a sign providing unit price information for one or more sizes or brands of a commodity, you must locate the s
+
+── Tennessee S 2020 — Health and Accident Insurance (3 rules)
+  183. us-tn-s2020-2026-56-7-3703-a-5
+       cat: disclosure
+       When downcoding a claim, you must disclose the National Provider Identifier of the healthcare professional responsible f
+
+  184. us-tn-s2020-2026-56-7-3904-b
+       cat: enforcement_penalties
+       If the commissioner identifies a pattern or practice of discriminatory downcoding, your entity is subject to enforcement
+
+  185. us-tn-s2020-2026-56-7-3905
+       cat: disclosure
+       You may downcode a claim only after reviewing the relevant medical records and notifying the healthcare professional wit
+
+── Texas H 4503 — Electronic Health Record Requirements (5 rules)
+  186. us-tx-h4503-2025-183-003
+       cat: technical_documentation
+       You must ensure each electronic health record includes the option for a health care practitioner to record communication
+
+  187. us-tx-h4503-2025-183-007-a-1
+       cat: technical_documentation
+       You must ensure each electronic health record includes a separate space documenting the individual's biological sex (mal
+
+  188. us-tx-h4503-2025-183-008-a
+       cat: data_subject_rights
+       You may amend an individual's recorded biological sex in an electronic health record only to correct a clerical error, o
+
+  189. us-tx-h4503-2025-183-008-b
+       cat: technical_documentation
+       If you amend an individual's biological sex due to a sexual development disorder diagnosis, you must include information
+
+  190. us-tx-h4503-2025-183-011
+       cat: enforcement_penalties
+       The national enforcement authority may seek injunctive relief and civil penalties for violations, with penalty levels ca
+
+── Texas S 1393 — Electronic Health Record Requirements (2 rules)
+  191. us-tx-s1393-2025-183-002-a-1-b
+       cat: data_provenance
+       You must ensure each electronic health record includes a separate space to record information on an individual's sexual 
+
+  192. us-tx-s1393-2025-183-003-b
+       cat: data_provenance
+       If you amend an individual's biological sex in the EHR due to a sexual development disorder diagnosis, you must include 
+
+── Vermont H 626 — Sexual Extortion, Voyeurism (5 rules)
+  193. us-vt-h626-2026-13-v-s-a-2606-b-2
+       cat: enforcement_penalties
+       You face enhanced penalties (up to five years imprisonment or $10,000 fine) if you disclose nonconsensual intimate visua
+
+  194. us-vt-h626-2026-13-v-s-a-2606-e-3
+       cat: private_redress
+       In a civil negligence action for nonconsensual intimate image disclosure, the plaintiff may satisfy the actual injury el
+
+  195. us-vt-h626-2026-13-v-s-a-2607-c
+       cat: prohibited_applications
+       You cannot knowingly threaten to accuse someone of a crime, cause injury to person or property, expose private facts, or
+
+  196. us-vt-h626-2026-13-v-s-a-2605-e
+       cat: prohibited_applications
+       You cannot intentionally display or disclose to a third party any image recorded in violation of the unlawful photograph
+
+  197. us-vt-h626-2026-13-v-s-a-4501-c-6-9
+       cat: enforcement_penalties
+       Criminal prosecutions for voyeurism (photographing/filming/recording or display/disclosure), nonconsensual disclosure of
+
+── Vermont S 23 — Use of Synthetic Media in Elections (4 rules)
+  198. us-vt-s23-2026-2042-a-4
+       cat: enforcement_penalties
+       Materials produced under a civil investigation may not be disclosed to anyone outside authorized agents of the national 
+
+  199. us-vt-s23-2026-2042-b-1
+       cat: enforcement_penalties
+       If you receive a civil investigation notice under this chapter, you must comply with its terms unless a Vermont court or
+
+  200. us-vt-s23-2026-2042-b-2
+       cat: enforcement_penalties
+       You cannot remove, conceal, withhold, destroy, mutilate, alter, falsify, or hide documentary material with intent to eva
+
+  201. us-vt-s23-2026-2042-d
+       cat: private_redress
+       Persons aggrieved by a civil investigation under this chapter have the right to seek relief from Washington Superior Cou
+
+── West Virginia S 240 — Crime of Sexual Extortion (4 rules)
+  202. us-wv-s240-2025-61-8b-6-c
+       cat: enforcement_penalties
+       If you commit sexual extortion you face imprisonment of 1–5 years (first offense), 3–10 years (second offense), or 10–20
+
+  203. us-wv-s240-2025-61-8b-6-f
+       cat: enforcement_penalties
+       If you commit aggravated sexual extortion, you face imprisonment of 10 to 20 years in a state correctional facility.
+
+  204. us-wv-s240-2025-61-8b-6-d
+       cat: enforcement_penalties
+       If a minor commits sexual extortion, the act is treated as juvenile delinquency and the circuit court may order behavior
+
+  205. us-wv-s240-2025-61-8b-6-g
+       cat: enforcement_penalties
+       Prosecutions for sexual extortion may be brought in the county where the threat was made or where it was received.
