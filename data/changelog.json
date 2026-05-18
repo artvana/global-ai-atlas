@@ -1,5 +1,35 @@
 [
   {
+    "date": "2026-05-18",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "us-co-sb189-2026",
+        "name": "Colorado SB 26-189 (Automated Decision-Making Technology)",
+        "jurisdiction": "United States",
+        "status": "enacted_not_yet_effective"
+      },
+      {
+        "id": "fr-fr-presomptionia-2025",
+        "name": "France AI Cultural Content Use Presumption Bill",
+        "jurisdiction": "France",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-ok-s1734-2026",
+        "name": "Oklahoma S 1734 — State Responsible Technology in Schools Act",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      }
+    ],
+    "stage_updates": 6,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2484
+  },
+  {
     "date": "2026-05-15",
     "trigger": "manual",
     "added": [],
