@@ -99,7 +99,7 @@ export function LawTable({ laws, sortField, sortDir, onSort, onSelect }: Props) 
                 </span>
               </td>
               <td className="px-4 py-3 text-center">
-                {law.provisions.private_right_of_action
+                {law.provisions?.private_right_of_action
                   ? <span className="text-odl-green font-semibold text-sm">✓</span>
                   : <span className="text-odl-subtle">–</span>}
               </td>

@@ -194196,6 +194196,26 @@
     "summary": "Senator Laure Darcos's bill would establish a rebuttable legal presumption that providers of generative AI systems used protected cultural content (texts, images, photographs, music, articles) when training their models, reversing the burden of proof so AI developers must demonstrate non-use rather than rights-holders proving infringement. Adopted by the French Senate on 8 April 2026 and transmitted to the Assemblée nationale on 9 April 2026, the bill is intended to give French and European cultural-content rights-holders a practical evidentiary tool against opaque generative AI training practices.",
     "inspired_by": [],
     "influenced": [],
-    "text_path": "data/texts/fr-fr-presomptionia-2025.md"
+    "text_path": "data/texts/fr-fr-presomptionia-2025.md",
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": true,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": true,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": true
+    }
   }
 ]

@@ -59,9 +59,9 @@ function exportCSV(laws: AILaw[]) {
     l.instrument_type, l.bill_number, l.enacted_date, l.effective_date, l.status,
     l.primary_category, l.scope, l.legal_family, l.ai_specific, l.instrument_binding,
     l.max_penalty, l.max_penalty_usd_approx,
-    l.provisions.private_right_of_action, l.preemption_status, l.official_text_url, l.last_verified,
+    l.provisions?.private_right_of_action, l.preemption_status, l.official_text_url, l.last_verified,
     l.summary,
-    ...provKeys.map(k => (l.provisions as unknown as Record<string, unknown>)[k]),
+    ...provKeys.map(k => (l.provisions as unknown as Record<string, unknown>)?.[k]),
   ].map(csvCell))
   const csv = [headers.map(csvCell).join(','), ...rows.map(r => r.join(','))].join('\n')
   const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8' })
@@ -104,7 +104,7 @@ export function SearchInterface() {
     if (filters.status) results = results.filter(l => l.status === filters.status)
     if (filters.legal_family) results = results.filter(l => l.legal_family === filters.legal_family)
     if (filters.instrument_type) results = results.filter(l => l.instrument_type === filters.instrument_type)
-    if (filters.private_right_of_action) results = results.filter(l => l.provisions.private_right_of_action)
+    if (filters.private_right_of_action) results = results.filter(l => l.provisions?.private_right_of_action)
     if (filters.ai_specific) results = results.filter(l => l.ai_specific)
     if (filters.instrument_binding) results = results.filter(l => l.instrument_binding)
     if (filters.effective_date_from) results = results.filter(l => l.effective_date && l.effective_date >= filters.effective_date_from)
