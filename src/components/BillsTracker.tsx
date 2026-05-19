@@ -6,6 +6,7 @@ interface Bill {
   jurisdiction: string
   jurisdiction_type: string
   region: string
+  country?: string
   short_name: string
   full_name: string
   bill_number?: string
@@ -104,18 +105,23 @@ const HOT_STAGES = new Set(['awaiting_signature', 'passed_legislature', 'passed_
 interface BillsTrackerProps { onViewLaw?: (id: string) => void }
 
 export function BillsTracker({ onViewLaw }: BillsTrackerProps) {
+  const [view, setView]                   = useState<'us' | 'global'>('us')
   const [stateFilter, setStateFilter]     = useState<string>('')
+  const [countryFilter, setCountryFilter] = useState<string>('')
   const [categoryFilter, setCategoryFilter] = useState<string>('')
   const [stageFilter, setStageFilter]     = useState<string>('')
   const [search, setSearch]               = useState('')
 
   const usStateBills = useMemo(() => bills.filter(b => b.region?.startsWith('US-')), [])
   const globalBills  = useMemo(() => bills.filter(b => !b.region?.startsWith('US-')), [])
-  const hotBills     = useMemo(() =>
-    bills
+
+  const activeBills = view === 'us' ? usStateBills : globalBills
+
+  const hotBills = useMemo(() =>
+    activeBills
       .filter(b => HOT_STAGES.has(b.legislative_stage ?? ''))
       .sort((a, b) => (STAGE_ORDER[b.legislative_stage ?? ''] ?? 0) - (STAGE_ORDER[a.legislative_stage ?? ''] ?? 0)),
-  [])
+  [activeBills])
 
   const states = useMemo(() => {
     const seen = new Set<string>()
@@ -124,18 +130,26 @@ export function BillsTracker({ onViewLaw }: BillsTrackerProps) {
       .sort()
   }, [usStateBills])
 
+  const countries = useMemo(() => {
+    const seen = new Set<string>()
+    return globalBills.map(b => b.country ?? b.jurisdiction)
+      .filter((c): c is string => { if (!c || seen.has(c)) return false; seen.add(c); return true })
+      .sort()
+  }, [globalBills])
+
   const categories = useMemo(() => {
     const seen = new Set<string>()
-    return bills.map(b => b.primary_category).filter((c): c is string => {
+    return activeBills.map(b => b.primary_category).filter((c): c is string => {
       if (!c || seen.has(c)) return false; seen.add(c); return true
     }).sort()
-  }, [])
+  }, [activeBills])
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase()
-    return bills
+    return activeBills
       .filter(b => {
-        if (stateFilter && b.region !== stateFilter) return false
+        if (view === 'us' && stateFilter && b.region !== stateFilter) return false
+        if (view === 'global' && countryFilter && (b.country ?? b.jurisdiction) !== countryFilter) return false
         if (categoryFilter && b.primary_category !== categoryFilter) return false
         if (stageFilter && (b.legislative_stage ?? 'unknown') !== stageFilter) return false
         if (q && !b.short_name.toLowerCase().includes(q) &&
@@ -144,36 +158,78 @@ export function BillsTracker({ onViewLaw }: BillsTrackerProps) {
         return true
       })
       .sort((a, b) => (STAGE_ORDER[b.legislative_stage ?? ''] ?? 0) - (STAGE_ORDER[a.legislative_stage ?? ''] ?? 0))
-  }, [stateFilter, categoryFilter, stageFilter, search])
+  }, [view, activeBills, stateFilter, countryFilter, categoryFilter, stageFilter, search])
 
-  const hasFilters = stateFilter || categoryFilter || stageFilter || search
+  function switchView(v: 'us' | 'global') {
+    setView(v)
+    setStateFilter('')
+    setCountryFilter('')
+    setCategoryFilter('')
+    setStageFilter('')
+    setSearch('')
+  }
+
+  const hasFilters = stateFilter || countryFilter || categoryFilter || stageFilter || search
 
   return (
     <div className="flex flex-col gap-6">
-      <div>
-        <h2 className="text-sm font-semibold text-odl-text mb-1">Legislative Tracker</h2>
-        <p className="text-xs text-odl-muted">Active AI legislative proposals currently before legislatures worldwide — not yet enacted.</p>
+      <div className="flex items-start justify-between gap-4 flex-wrap">
+        <div>
+          <h2 className="text-sm font-semibold text-odl-text mb-1">Legislative Tracker</h2>
+          <p className="text-xs text-odl-muted">Active AI legislative proposals currently before legislatures worldwide — not yet enacted.</p>
+        </div>
+        <div className="flex items-center gap-1 bg-odl-surface border border-odl-border rounded-md p-0.5 shrink-0">
+          <button
+            onClick={() => switchView('us')}
+            className={`px-3 py-1 text-xs rounded font-medium transition-colors ${view === 'us' ? 'bg-white text-odl-text shadow-sm' : 'text-odl-muted hover:text-odl-text'}`}
+          >US States</button>
+          <button
+            onClick={() => switchView('global')}
+            className={`px-3 py-1 text-xs rounded font-medium transition-colors ${view === 'global' ? 'bg-white text-odl-text shadow-sm' : 'text-odl-muted hover:text-odl-text'}`}
+          >Global</button>
+        </div>
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        <div className="panel p-3 text-center">
-          <div className="text-lg font-bold font-mono text-odl-text">{bills.length}</div>
-          <div className="text-[10px] text-odl-subtle mt-0.5">Active Bills</div>
+      {view === 'us' ? (
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="panel p-3 text-center">
+            <div className="text-lg font-bold font-mono text-odl-text">{usStateBills.length}</div>
+            <div className="text-[10px] text-odl-subtle mt-0.5">US State Bills</div>
+          </div>
+          <div className="panel p-3 text-center">
+            <div className="text-lg font-bold font-mono text-odl-text">{new Set(usStateBills.map(b => b.region)).size}</div>
+            <div className="text-[10px] text-odl-subtle mt-0.5">States Active</div>
+          </div>
+          <div className="panel p-3 text-center">
+            <div className="text-lg font-bold font-mono text-odl-green">{hotBills.length}</div>
+            <div className="text-[10px] text-odl-subtle mt-0.5">Passed ≥1 Chamber</div>
+          </div>
+          <div className="panel p-3 text-center">
+            <div className="text-lg font-bold font-mono text-odl-text">{usStateBills.filter(b => !b.legislative_stage || b.legislative_stage === 'unknown').length}</div>
+            <div className="text-[10px] text-odl-subtle mt-0.5">Stage Unknown</div>
+          </div>
         </div>
-        <div className="panel p-3 text-center">
-          <div className="text-lg font-bold font-mono text-odl-text">{new Set(usStateBills.map(b => b.region)).size}</div>
-          <div className="text-[10px] text-odl-subtle mt-0.5">US States</div>
+      ) : (
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="panel p-3 text-center">
+            <div className="text-lg font-bold font-mono text-odl-text">{globalBills.length}</div>
+            <div className="text-[10px] text-odl-subtle mt-0.5">Bills</div>
+          </div>
+          <div className="panel p-3 text-center">
+            <div className="text-lg font-bold font-mono text-odl-text">{new Set(globalBills.map(b => b.country ?? b.jurisdiction)).size}</div>
+            <div className="text-[10px] text-odl-subtle mt-0.5">Countries</div>
+          </div>
+          <div className="panel p-3 text-center">
+            <div className="text-lg font-bold font-mono text-odl-green">{hotBills.length}</div>
+            <div className="text-[10px] text-odl-subtle mt-0.5">Passed ≥1 Chamber</div>
+          </div>
+          <div className="panel p-3 text-center">
+            <div className="text-lg font-bold font-mono text-odl-text">{new Set(globalBills.map(b => b.region)).size}</div>
+            <div className="text-[10px] text-odl-subtle mt-0.5">Regions</div>
+          </div>
         </div>
-        <div className="panel p-3 text-center">
-          <div className="text-lg font-bold font-mono text-odl-green">{hotBills.length}</div>
-          <div className="text-[10px] text-odl-subtle mt-0.5">Passed ≥1 Chamber</div>
-        </div>
-        <div className="panel p-3 text-center">
-          <div className="text-lg font-bold font-mono text-odl-text">{globalBills.length}</div>
-          <div className="text-[10px] text-odl-subtle mt-0.5">Non-US Bills</div>
-        </div>
-      </div>
+      )}
 
       {/* Close to passing spotlight */}
       {hotBills.length > 0 && (
@@ -218,14 +274,25 @@ export function BillsTracker({ onViewLaw }: BillsTrackerProps) {
           onChange={e => setSearch(e.target.value)}
           className="bg-white border border-odl-border text-odl-text rounded-md px-2.5 py-1.5 text-xs outline-none focus:border-odl-accent min-w-[200px]"
         />
-        <select
-          value={stateFilter}
-          onChange={e => setStateFilter(e.target.value)}
-          className="bg-white border border-odl-border text-odl-text rounded-md px-2.5 py-1.5 text-xs outline-none focus:border-odl-accent"
-        >
-          <option value="">All jurisdictions</option>
-          {states.map(s => <option key={s} value={s}>{getStateCode(s)}</option>)}
-        </select>
+        {view === 'us' ? (
+          <select
+            value={stateFilter}
+            onChange={e => setStateFilter(e.target.value)}
+            className="bg-white border border-odl-border text-odl-text rounded-md px-2.5 py-1.5 text-xs outline-none focus:border-odl-accent"
+          >
+            <option value="">All states</option>
+            {states.map(s => <option key={s} value={s}>{getStateCode(s)}</option>)}
+          </select>
+        ) : (
+          <select
+            value={countryFilter}
+            onChange={e => setCountryFilter(e.target.value)}
+            className="bg-white border border-odl-border text-odl-text rounded-md px-2.5 py-1.5 text-xs outline-none focus:border-odl-accent"
+          >
+            <option value="">All countries</option>
+            {countries.map(c => <option key={c} value={c}>{c}</option>)}
+          </select>
+        )}
         <select
           value={categoryFilter}
           onChange={e => setCategoryFilter(e.target.value)}
@@ -246,7 +313,7 @@ export function BillsTracker({ onViewLaw }: BillsTrackerProps) {
         <span className="text-xs text-odl-muted">{filtered.length.toLocaleString()} bills</span>
         {hasFilters && (
           <button
-            onClick={() => { setStateFilter(''); setCategoryFilter(''); setStageFilter(''); setSearch('') }}
+            onClick={() => { setStateFilter(''); setCountryFilter(''); setCategoryFilter(''); setStageFilter(''); setSearch('') }}
             className="text-xs text-odl-accent hover:text-odl-accent-hover underline"
           >Clear</button>
         )}
