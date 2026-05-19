@@ -28694,7 +28694,7 @@
     "influenced": [],
     "official_text_url": "https://www2.tbmm.gov.tr/d28/2/2-3358.pdf",
     "summary_url": null,
-    "last_verified": "2026-05-01",
+    "last_verified": "2026-05-19",
     "summary": "Turkish omnibus bill amending multiple laws to address AI: introduces statutory AI definition; mandates deepfake content labelling; creates 6-hour takedown obligation for AI-generated content violating personal rights; grants BTK emergency blocking powers for harmful AI-generated content; establishes joint liability for AI developers and platform operators; amends Internet Law (No. 5651), Turkish Penal Code, KVKK (Law 6698), Electronic Commerce Law, and Cybersecurity Law. Submitted to Grand National Assembly November 2025; passage timeline uncertain.",
     "notable": "Submitted to Grand National Assembly November 7, 2025; passage timeline uncertain. 6-hour takedown obligation is shorter than EU DSA timeframes.",
     "legal_citation": "Kanun Teklifi Esas No. 2/3358",
@@ -28778,8 +28778,8 @@
     "operative_dates": "Pending; submitted to Grand National Assembly 7 November 2025",
     "text_path": "data/texts/tr-tr-aibill-2025.md",
     "legislative_stage": "in_committee",
-    "last_action_date": "2025-11-07",
-    "last_action_description": "Bill 2/3358 submitted to TBMM and under committee review; covers AI definition, deepfakes, takedown obligations"
+    "last_action_date": "2025-11-10",
+    "last_action_description": "Bill referred to the Industry, Trade, Energy, Natural Resources, Information and Technology Commission (primary), with Justice and Digital Media commissions as secondary; remains under committee review."
   },
   {
     "id": "jp-jp-appi-2022",
@@ -40388,7 +40388,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB412",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Relates to copyrighted materials. Requires a developer of a generative artificial intelligence model to document any covered materials that the developer knows were used by the developer to train the model. Requires the developer to make available a mechanism on the developer's website allowing a rights owner to submit a request for information. Authorizes a rights owner who complies with specified requirements for submitting a request that is not provided with information to bring a civil action.",
     "notable": null,
     "ai_specific": true,
@@ -40404,9 +40404,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a412-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-06",
-    "last_action_description": "Re-referred to Coms. on P., D.T., & C.P., JUD., and APPR."
+    "last_action_description": "Passed Assembly and re-referred in Senate to Privacy/D.T./C.P., Judiciary, and Appropriations Committees on May 6, 2026; designated a two-year measure by the Senate."
   },
   {
     "id": "us-ca-s430-2026",
@@ -40735,7 +40735,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB813",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Require the agency to establish the California AI Standards and Safety Commission and would provide for its membership. Requires the commission to take certain actions related to the safety of artificial intelligence, including maintaining formal liaison relationships with state agencies deploying or procuring artificial intelligence, providing artificial intelligence technical expertise and artificial intelligence risk assessment.",
     "notable": null,
     "ai_specific": true,
@@ -40752,9 +40752,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s813-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-04",
-    "last_action_description": "Referred to Assembly Com. on Privacy and Consumer Protection; passed Senate 31-7 on 2026-01-27"
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2026-01-27",
+    "last_action_description": "Passed Senate 31-7 on January 27, 2026; referred to Assembly Committee on Privacy and Consumer Protection."
   },
   {
     "id": "us-ca-s867-2026",
@@ -41105,8 +41105,8 @@
     "text_path": "data/texts/us-ca-s947-2026.md",
     "legal_citation": null,
     "legislative_stage": "introduced",
-    "last_action_date": "2026-05-14",
-    "last_action_description": "Read second time and amended. Ordered to second reading."
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-s951-2026",
@@ -41316,8 +41316,8 @@
     "text_path": "data/texts/us-ca-s1011-2026.md",
     "legal_citation": null,
     "legislative_stage": "introduced",
-    "last_action_date": "2026-05-08",
-    "last_action_description": "Set for hearing May 14."
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time and amended. Ordered to second reading."
   },
   {
     "id": "us-ca-s1015-2026",
@@ -41599,8 +41599,8 @@
     "text_path": "data/texts/us-ca-s1111-2026.md",
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2026-04-30",
-    "last_action_description": "In Assembly. Read first time. Held at Desk."
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Referred to Coms. on P. & C.P. and PUB. S."
   },
   {
     "id": "us-ca-s1119-2026",
@@ -41958,8 +41958,8 @@
     "text_path": "data/texts/us-ca-s1159-2026.md",
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2026-05-04",
-    "last_action_description": "In Assembly. Read first time. Held at Desk."
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Referred to Coms. on P. & C.P. and JUD."
   },
   {
     "id": "us-ca-a1159-2026",
@@ -42012,7 +42012,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1159",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Applies the provisions of the K-12 Pupil Online Personal Information Protection Act and the Early Learning Personal Information Protection Act to an operator of a website, online service, online application, or mobile application with actual knowledge that the site, service, or application is used for the applicable school purposes and was designed or marketed for those purposes. Enacts the Higher Education Student Information Protection Act. Authorizes a harmed student or pupil to bring a civil action.",
     "notable": null,
     "ai_specific": true,
@@ -42029,9 +42029,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1159-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-01-27",
-    "last_action_description": "In Senate. Read first time. To Com. on RLS. for assignment. Passed Assembly 65-5 on 2026-01-26."
+    "last_action_description": "Passed Assembly 65-5 on January 26, 2026; read first time in Senate and referred to Senate Rules Committee on January 27."
   },
   {
     "id": "us-ca-s1181-2026",
@@ -43025,9 +43025,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1979-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2026-05-14",
-    "last_action_description": "From committee: Do pass. (Ayes 11. Noes 4.) (May 14)."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-a1988-2026",
@@ -43168,9 +43168,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2023-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2026-05-14",
-    "last_action_description": "From committee: Do pass. (Ayes 12. Noes 3.) (May 14)."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-a2025-2026",
@@ -43586,9 +43586,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2212-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2026-05-14",
-    "last_action_description": "From committee: Amend, and do pass as amended. (Ayes 11. Noes 0.) (May 14)."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time and amended. Ordered returned to second reading."
   },
   {
     "id": "us-ca-a2245-2026",
@@ -44228,9 +44228,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2545-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2026-05-14",
-    "last_action_description": "From committee: Do pass. (Ayes 15. Noes 0.) (May 14)."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-a2575-2026",
@@ -98515,9 +98515,9 @@
     "instrument_type": "bill",
     "instrument_binding": false,
     "bill_number": "H 1606",
-    "enacted_date": null,
+    "enacted_date": "2026-05-08",
     "effective_date": null,
-    "status": "proposed",
+    "status": "in_force",
     "superseded_by": null,
     "categories": [
       "synthetic_media_deepfake"
@@ -98555,7 +98555,7 @@
     "influenced": [],
     "official_text_url": "https://www.revisor.mn.gov/bills/bill.php?b=HF1606&f=2025&ssn=0&y=2025",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-19",
     "summary": "Relates to commerce, prohibits access to nudification technology.",
     "notable": null,
     "ai_specific": true,
@@ -98570,9 +98570,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-mn-h1606-2025.md",
     "legal_citation": null,
-    "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2026-04-23",
-    "last_action_description": "Minnesota House passed AI-generated explicit images of children bill 132-1 on April 23, 2026."
+    "last_action_date": "2026-05-08",
+    "last_action_description": "Governor Walz signed HF 1606, banning access to AI 'nudification' technology, into law on May 8, 2026; effective August 1, 2026."
   },
   {
     "id": "us-mn-s1783-2025",
@@ -107379,7 +107378,7 @@
     "bill_number": "L 642",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "health_ai",
@@ -107419,7 +107418,7 @@
     "influenced": [],
     "official_text_url": "https://nebraskalegislature.gov/bills/search_by_number.php?Legislature=109&type=bill&number=L642&Submit=Search",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-19",
     "summary": "Adopts the Artificial Intelligence Consumer Protection Act.",
     "notable": null,
     "ai_specific": true,
@@ -107438,9 +107437,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ne-l642-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-01-07",
-    "last_action_description": "Artificial Intelligence Consumer Protection Act designated as a carryover bill on January 7, 2026 for the second session."
+    "last_action_date": "2026-04-17",
+    "last_action_description": "Indefinitely postponed by the Nebraska Legislature on April 17, 2026, ending consideration of the AI Consumer Protection Act."
   },
   {
     "id": "us-nv-a126-2025",
@@ -137130,7 +137128,7 @@
     "influenced": [],
     "official_text_url": "https://www.legislature.ohio.gov/legislation/legislation-summary?id=GA136-HB-84",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Establish the Innocence Act Enforcement Fund, designate specified provisions of law as the Innocence Act, clarifies the Attorney General enforcement authority, relates to the innocence act enforcement fund that shall be used for the payment of expenses incurred by the office of the attorney general, requires the organization to ensure the location-based technology provider performs the geolocation check and not transfer any information collected to any other party except for the purpose of age verification.",
     "notable": null,
     "ai_specific": true,
@@ -137145,9 +137143,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-oh-h84-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-03-25",
-    "last_action_description": "Passed House 95-1 on 3/18/2026; referred to Senate Judiciary Committee 3/25/2026. Ohio 2-year session (2025-2026) still active."
+    "last_action_description": "Passed House 95-1 on March 18, 2026; referred to Senate Judiciary Committee on March 25, 2026."
   },
   {
     "id": "us-oh-s393-2026",
@@ -179944,7 +179942,7 @@
     "influenced": [],
     "official_text_url": "https://www.shura.bh",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-19",
     "summary": "Submitted to the Bahrain Shura Council on 28 February 2024 by five members (Ref. 16 Q F6 D2), this 38-article proposed law would create the first binding AI regulatory framework in Bahrain, covering all persons residing in or operating from the Kingdom. It establishes: a licensing regime for commercial AI development and sale; an AI Unit within a designated Ministry for oversight, licensing, and enforcement; design requirements mandating human supervisability and non-discrimination; prohibitions on dangerous robots, deepfakes, and exclusive AI decision-making over life or freedom; civil liability for programmers and robot owners; and a tiered criminal penalty structure reaching imprisonment plus BD 20,000 (≈,000) for deepfake manipulation offenses. The explanatory memo explicitly cites inspiration from the EU AI Act and the Arab Guiding Law on AI, while emphasizing cultural and religious values. Entry into force would be six months after Gazette publication, with Executive Regulations due within three months. The proposal was cleared as legally admissible by the Shura Council Legal Advisors Authority.",
     "notable": "First proposed binding AI law in Bahrain, intended to complement the non-binding General AI Policy (iGA, 2025). Explicitly draws on the EU AI Act and Arab AI Guiding Law. Notable provisions: Art. 12 bars exclusive AI decisions over life/freedom/bodily integrity; Art. 8 requires patient consent for AI in surgery; Art. 33 allows dissolution of legal persons as penalty for recidivism. High-risk program classification tables delegated to Executive Regulations (Art. 36).",
     "legal_citation": "Proposed Law on Regulating Artificial Intelligence Technologies and Their Uses, Ref. 16 Q F6 D2, submitted to the Bahrain Shura Council 28 February 2024",
@@ -180040,7 +180038,7 @@
     "operative_dates": "Submitted to Shura Council 28 February 2024. Not yet enacted. If enacted, would enter into force six months after Gazette publication.",
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2024-11-23",
-    "last_action_description": "Bahraini government submitted a formal written response to Parliament's Council of Representatives raising concerns about the bill's scope (entities-based-in-Bahrain limitation), overlapping coverage with existing laws (Personal Data Protection Law, cybercrime statutes), and the Cabinet's role in detailed AI strategy. The government proposed a 'Regulatory Sandbox' approach as an alternative. Bill remains pending in the Council of Representatives, with no confirmed advancement through 2025–early 2026; parallel non-binding General AI Policy (Version 1.0) was issued May 2025 via the iGA."
+    "last_action_description": "Bill remains under review by the Council of Representatives after unanimous Shura Council approval; no further chamber action recorded as of May 2026."
   },
   {
     "id": "sg-sg-pdpcaiguidelines-2024",
@@ -182539,7 +182537,7 @@
     "influenced": [],
     "official_text_url": "https://connectontech.bakermckenzie.com/colombia-the-government-of-colombia-introduces-a-new-bill-to-regulate-artificial-intelligence/",
     "summary_url": null,
-    "last_verified": "2026-05-06",
+    "last_verified": "2026-05-19",
     "summary": "Proposed comprehensive AI regulation bill submitted to the Colombian Senate in July 2025 and currently in committee. It establishes a four-tier risk classification system (prohibited, high, limited, and minimal risk) closely modelled on the EU AI Act and Brazil's PL 2338. The Ministry of Science, Technology and Innovation (MinCiencias) would serve as the supervisory authority, with fines of up to 3,000 monthly minimum wages for violations. The bill has not yet been enacted.",
     "notable": null,
     "legal_citation": "Proyecto de Ley No. 422 de 2025, Colombian Senate (submitted July 2025)",
@@ -182613,8 +182611,8 @@
     "country": "Colombia",
     "operative_dates": "Submitted to Senate July 2025; in committee as of May 2026.",
     "legislative_stage": "in_committee",
-    "last_action_date": "2025-07-28",
-    "last_action_description": "Government submitted AI regulation bill to Senate; no legislative priority set, early committee stage"
+    "last_action_date": "2025-09-08",
+    "last_action_description": "National Government filed an urgency message (mensaje de urgencia) to accelerate the bill's processing in the Sixth Commission of the Senate; ponencia for first debate is pending and joint Senate-Chamber commission sessions were authorized."
   },
   {
     "id": "cl-cl-naipolicy-2024",
@@ -182797,7 +182795,7 @@
     "influenced": [],
     "official_text_url": "https://cadeproject.org/updates/chiles-artificial-intelligence-regulation-bill-advances-to-the-senate/",
     "summary_url": null,
-    "last_verified": "2026-05-06",
+    "last_verified": "2026-05-19",
     "summary": "Chile's AI regulation bill (Boletín 16821-19), introduced in May 2024, establishes a risk-based framework with four tiers: unacceptable, high, limited, and no-evident risk. The bill is aligned with UNESCO ethics recommendations and closely follows the EU AI Act model. It passed the Chamber of Deputies on 13 October 2025 and is currently in its first reading in the Senate. Passed the Chamber of Deputies on 13 October 2025 (Oficio No. 20,843); pending Senate consideration.",
     "notable": null,
     "legal_citation": "Proyecto de Ley Boletines Nos. 15869-19 y 16821-19 (consolidated), Cámara de Diputados de Chile; passed Chamber 13 October 2025, sent to Senate",
@@ -182872,8 +182870,8 @@
     "country": "Chile",
     "operative_dates": "Introduced 7 May 2024; passed Chamber of Deputies 13 October 2025; in Senate first reading.",
     "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2025-10-13",
-    "last_action_description": "Passed Chamber of Deputies on 13 October 2025; dispatched to Senate for second constitutional review"
+    "last_action_date": "2026-04-24",
+    "last_action_description": "Senate Commission on Future Challenges, Science, Technology and Innovation held a seminar on AI regulation with industry and academic experts as part of the bill's second-constitutional-review committee deliberations."
   },
   {
     "id": "pe-pe-law32314-2025",
@@ -194197,5 +194195,79 @@
     "inspired_by": [],
     "influenced": [],
     "text_path": "data/texts/fr-fr-presomptionia-2025.md"
+  },
+  {
+    "id": "us-vt-eo04-26-2026",
+    "jurisdiction": "Vermont",
+    "jurisdiction_type": "subnational",
+    "region": "US-VT",
+    "short_name": "Vermont EO 04-26 (AI Economic Task Force)",
+    "full_name": "Executive Order 04-26 — Establishing the Vermont Artificial Intelligence Economic Task Force",
+    "instrument_type": "executive_order",
+    "instrument_binding": true,
+    "bill_number": "EO 04-26",
+    "enacted_date": "2026-05-18",
+    "effective_date": "2026-05-18",
+    "status": "in_force",
+    "superseded_by": null,
+    "categories": [
+      "general_ai_governance"
+    ],
+    "primary_category": "general_ai_governance",
+    "scope": "single_issue",
+    "who_regulated": [
+      "government_only"
+    ],
+    "provisions": {
+      "ai_interaction_disclosure": false,
+      "training_data_disclosure": false,
+      "content_labelling": false,
+      "risk_classification_system": false,
+      "impact_assessment_required": false,
+      "anti_discrimination": false,
+      "anti_discrimination_standard": null,
+      "human_review_right": false,
+      "opt_out_right": false,
+      "biometric_protection": false,
+      "voice_likeness_protection": false,
+      "data_rights_re_training": false,
+      "private_right_of_action": false,
+      "safe_harbor": false,
+      "prohibited_categories": false,
+      "agentic_ai_addressed": false,
+      "algorithmic_pricing_addressed": false,
+      "training_data_compensation": false,
+      "extraterritorial": false
+    },
+    "enforcement_body": [],
+    "max_penalty": null,
+    "max_penalty_usd_approx": null,
+    "preemption_status": null,
+    "preemption_notes": null,
+    "legal_family": "us_consumer_protection",
+    "inspired_by": [],
+    "influenced": [],
+    "official_text_url": "https://governor.vermont.gov/press-release/governor-phil-scott-establishes-vermont-ai-economic-task-force",
+    "summary_url": null,
+    "last_verified": "2026-05-19",
+    "summary": "Vermont Governor Phil Scott signed Executive Order 04-26 on May 18, 2026, establishing the Vermont Artificial Intelligence Economic Task Force to assess how AI is reshaping the state's economy sector by sector and to recommend workforce, investment, and policy actions. The Task Force operates three working groups (including Economic Acceleration, charged with delivering Vermont's AI readiness framework by year-end, and Small Business Competitiveness, charged with delivering an AI adoption toolkit) and must identify priority opportunities within 90 days.",
+    "notable": "Complements the existing Council on Artificial Intelligence created by Act 132 of 2022, which governs AI use within state government. Chaired by former Vermont Gas Systems CEO Neale Lunderville with the Secretaries of the Agency of Digital Services and the Agency of Commerce and Community Development as ex officio co-chairs.",
+    "ai_specific": true,
+    "country": "United States",
+    "operative_dates": null,
+    "topics": [
+      "Government Use",
+      "Economic Development",
+      "Oversight/Governance",
+      "Workforce"
+    ],
+    "sector_tags": [
+      "government_services"
+    ],
+    "technology_tags": [],
+    "key_obligations": [],
+    "issue_positions": {},
+    "text_path": "data/texts/us-vt-eo04-26-2026.md",
+    "legal_citation": "Vt. Exec. Order No. 04-26 (May 18, 2026)"
   }
 ]

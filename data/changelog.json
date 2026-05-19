@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-05-19",
+    "trigger": "manual",
+    "added": [
+      {
+        "id": "us-vt-eo04-26-2026",
+        "name": "Vermont EO 04-26 (AI Economic Task Force)",
+        "jurisdiction": "United States",
+        "status": "in_force"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-mn-h1606-2025",
+        "name": "Minnesota H 1606 — Access to Nudification Technology",
+        "from": "proposed",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 8,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2485
+  },
+  {
     "date": "2026-05-18",
     "trigger": "scheduled",
     "added": [

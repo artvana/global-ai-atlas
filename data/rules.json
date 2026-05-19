@@ -75204,6 +75204,14 @@
         "notes": "Washington H 1833 — Artificial Intelligence Grant Program (Washington) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-vt-eo04-26-2026",
+        "relationship": "agrees",
+        "citation": "EO 04-26 (May 18, 2026)",
+        "notes": "Vermont EO 04-26 establishes the Vermont Artificial Intelligence Economic Task Force within the executive branch to coordinate AI economic policy; same establishment obligation as WV but framed around economic adaptation rather than general AI policy and standing alongside Vermont's existing Council on Artificial Intelligence.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
       }
     ]
   },
@@ -75421,6 +75429,14 @@
         "notes": "Both require a task force to develop best practices or policies for public sector AI use, but the West Virginia rule is binding ('must') and broader, while this Illinois bill is a voluntary recommendation specifically targeting procurement, deployment, and use of generative AI systems by state agencies.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-vt-eo04-26-2026",
+        "relationship": "similar",
+        "citation": "EO 04-26 — first deliverable (90-day mandate)",
+        "notes": "Vermont's Task Force must work with the Agency of Digital Services to identify up to five priority opportunities for AI in state-agency operations and design an education program for state-agency leaders; narrower than WV's broad 'best practices for public sector AI' but directed at the same public-sector AI use objective.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
       }
     ]
   },
@@ -75576,6 +75592,14 @@
         "notes": "Missouri H 865 — Task Forces (Missouri) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-vt-eo04-26-2026",
+        "relationship": "agrees",
+        "citation": "EO 04-26 — Economic Acceleration and Small Business Competitiveness working groups",
+        "notes": "Vermont's Task Force is charged with identifying priority economic opportunities the state should support (AI readiness framework, small business AI adoption toolkit) within 90 days; same substantive duty as the WV provision and binding as a state executive order.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
       }
     ]
   },
