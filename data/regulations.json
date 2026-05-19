@@ -40318,7 +40318,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB300",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Require a companion chatbot operator to take the above actions when it has constructive knowledge that a user is a minor. Requires an operator to prevent its companion chatbot from producing or facilitating the exchange of any sexually explicit material or proposing sexually explicit conduct.",
     "notable": null,
     "ai_specific": true,
@@ -40334,9 +40334,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s300-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-11",
-    "last_action_description": "Referred to Assembly Com. on Privacy and Consumer Protection; passed Senate 38-0 on 2026-01-26"
+    "last_action_description": "Referred to Com. on P. & C.P."
   },
   {
     "id": "us-ca-a412-2026",
@@ -40524,7 +40524,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB574",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Obligates an attorney who uses generative artificial intelligence to practice law to ensure that confidential personal identifying, or other nonpublic information, is not entered into a public generative artificial intelligence system. Requires an attorney to ensure that reasonable steps are taken to verify the accuracy of generative artificial intelligence material and to correct any erroneous or hallucinated output in any material used by the attorney.",
     "notable": null,
     "ai_specific": true,
@@ -40541,7 +40541,7 @@
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-01-29",
-    "last_action_description": "In Assembly. Read first time. Held at Desk. Passed Senate 39-0."
+    "last_action_description": "In Assembly. Read first time. Held at Desk."
   },
   {
     "id": "us-ca-s607-2026",
@@ -40593,7 +40593,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB607",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides that existing law authorizes the Regents of the University of California to establish 4 California Institutes for Science and Innovation at separate campuses of the University of California for specified purposes. Provides that existing law authorizes the concentration of each institute to include, among other concentrations, medicine, bioengineering, or space. Authorizes the concentration of an institute to include artificial intelligence.",
     "notable": null,
     "ai_specific": true,
@@ -40610,7 +40610,7 @@
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-01-20",
-    "last_action_description": "Read third time. Passed Senate. (Ayes 37. Noes 0.) Ordered to the Assembly."
+    "last_action_description": "In Assembly. Read first time. Held at Desk."
   },
   {
     "id": "us-ca-s719-2026",
@@ -40663,7 +40663,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB719",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides that existing law, until January 1, 2029, requires the Department of Technology to annually submit to certain legislative committees a report regarding a specified required comprehensive inventory of all high-risk automated decision systems that have been, or are being, used, developed, or procured by a state agency. Extends that reporting requirement until January 1, 2032.",
     "notable": null,
     "ai_specific": true,
@@ -40679,9 +40679,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s719-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-04",
-    "last_action_description": "Referred to Assembly Com. on Privacy and Consumer Protection; previously passed Senate"
+    "last_action_description": "Referred to Com. on P. & C.P."
   },
   {
     "id": "us-ca-s813-2026",
@@ -40806,7 +40806,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB867",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Prohibits, until 1/1/2031, the manufacture, sale, exchange, possession with intent to sell or exchange, and exposition or offer for sale or exchange to a retailer a toy, as defined, that includes a companion chatbot, and would make violations of the bill subject to the same civil liability as violations of the provisions applicable to operators of companion chatbots in the above-described paragraph.",
     "notable": null,
     "ai_specific": true,
@@ -40821,9 +40821,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s867-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-08",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; previously passed committee with Do pass recommendation"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-s903-2026",
@@ -40876,7 +40876,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB903",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Regulates the use of artificial intelligence by licensed professionals providing psychotherapy services. Prohibits an individual, corporation, or entity from using artificial intelligence to record or transcribe psychotherapeutic communications or sessions or to triage or screen a person for the need for psychotherapy services unless the patient or their authorized representative is informed that artificial intelligence will be used and provides consent.",
     "notable": null,
     "ai_specific": true,
@@ -40892,9 +40892,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s903-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-08",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; passed prior committee 11-0 on 2026-04-13"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-s916-2026",
@@ -40947,7 +40947,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB916",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides that existing law provides that in a civil action brought by a plaintiff to challenge a housing development project that meets or exceeds the requirements for low or moderate income housing, a defendant may seek an order requiring the plaintiff to furnish an undertaking as security for costs and damages. Provides that existing law authorizes the court to limit the amount of the undertaking or to decline that requirement under certain conditions. Applies provisions to a student housing development.",
     "notable": null,
     "ai_specific": true,
@@ -40964,8 +40964,8 @@
     "text_path": "data/texts/us-ca-s916-2026.md",
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2026-05-07",
-    "last_action_description": "Read third time. Passed Senate. (Ayes 36. Noes 0.) Ordered to the Assembly. In Assembly, held at desk."
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Referred to Coms. on JUD. and APPR."
   },
   {
     "id": "us-ca-s928-2026",
@@ -41018,7 +41018,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB928",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides that existing law requires certain community college employees to be a person who meets specified minimum qualifications. Requires the instructor of record for a course of instruction to be a person who meets the rule provided by the Trustees of the California State University to serve as a faculty employee teaching credit instruction or noncredit instruction.",
     "notable": null,
     "ai_specific": true,
@@ -41035,8 +41035,8 @@
     "text_path": "data/texts/us-ca-s928-2026.md",
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2026-04-23",
-    "last_action_description": "Read third time. Passed Senate. (Ayes 37. Noes 0.) Ordered to the Assembly. In Assembly, held at desk."
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Referred to Com. on HIGHER ED."
   },
   {
     "id": "us-ca-s947-2026",
@@ -41088,7 +41088,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB947",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires an employer that primarily relied upon an ADS to make a disciplinary, termination, or deactivation decision to provide the affected worker with a written postuse notice, as specified.",
     "notable": null,
     "ai_specific": true,
@@ -41104,9 +41104,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s947-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-08",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; amended 2026-04-22, do pass as amended recommendation"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "Read second time and amended. Ordered to second reading."
   },
   {
     "id": "us-ca-s951-2026",
@@ -41159,7 +41159,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB951",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires an employer to provide a written technology hiring disruption notice to the Employment Development Department and the local workforce investment board when it executes a technological cessation in hiring directly and primarily due to the adoption of artificial intelligence or other automating technology. Imposes various reporting requirements on the Employment Development Department.",
     "notable": null,
     "ai_specific": true,
@@ -41176,9 +41176,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s951-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-08",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; amended 2026-04-22, do pass as amended recommendation"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-s1000-2026",
@@ -41230,7 +41230,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1000",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides that the California AI Transparency Act requires a covered provider to make available an AI detection tool at no cost to the user. Provides that existing law requires a covered provider to include a certain latent disclosure in AI generated image, video, or audio content, or content that is any combination thereof, created by the covered providers GenAI system. Requires a covered provider to include in the latent disclosure whether the content is generated or modified by artificial intelligence.",
     "notable": null,
     "ai_specific": true,
@@ -41246,9 +41246,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1000-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-08",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; previously passed committee with Do pass recommendation on 2026-04-14"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-s1011-2026",
@@ -41300,7 +41300,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1011",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires every public utility to furnish and maintain adequate, efficient, just, and reasonable service, instrumentalities, equipment, and facilities, as are necessary to promote the safety, health, comfort, and convenience of its customers, its employees, and the public. Requires the commission, on or before a specified date, to adopt standards for an electrical or gas corporation's use of artificial intelligence models, as provided.",
     "notable": null,
     "ai_specific": true,
@@ -41315,9 +41315,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1011-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "introduced",
     "last_action_date": "2026-05-08",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; placed on suspense file after May 4 hearing"
+    "last_action_description": "Set for hearing May 14."
   },
   {
     "id": "us-ca-s1015-2026",
@@ -41370,7 +41370,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1015",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Makes any adult person who recruits, induces, coerces, or persuades a minor to commit an illegal act against another minor, or to solicit physical harm, sexual conduct, or images of an intimate body part, from another minor, or who utilizes a minor as a conduit of communication to facilitate any such acts guilty of a crime punishable either as a misdemeanor or a felony. Relates to images of an intimate body part that is produced by artificial intelligence and depicts the identity of another minor.",
     "notable": null,
     "ai_specific": true,
@@ -41387,9 +41387,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1015-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-08",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; last amended 2026-04-09"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-s1050-2026",
@@ -41442,7 +41442,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1050",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Makes it an unlawful advertising practice for a person to create and cause to be published in an advertising medium an advertisement that includes a synthetic performer without a clear and conspicuous disclosure that the performer is synthetic. Prohibits an advertising medium from transmitting, distributing, displaying, airing, or otherwise making available an advertisement containing a synthetic performer if a court of competent jurisdiction has issued an order.",
     "notable": null,
     "ai_specific": true,
@@ -41459,9 +41459,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1050-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-12",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; placed on suspense file after May 11 hearing"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-s1074-2026",
@@ -41475,7 +41475,7 @@
     "bill_number": "S 1074",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "consumer_protection"
@@ -41513,7 +41513,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1074",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Prohibits a covered provider from preferencing its own products, services, or lines of business over those of another business user, including manipulating the order of search results or rankings to favor the products or services of the covered provider. Prohibits a covered provider from restricting interoperability or data portability, including restricting a business user or consumer from obtaining a copy of their data in a useful and portable format. Relates to actions for civil or criminal penalties.",
     "notable": null,
     "ai_specific": true,
@@ -41528,9 +41528,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1074-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
     "last_action_date": "2026-04-20",
-    "last_action_description": "Failed passage in committee (Ayes 3, Noes 3); reconsideration granted. In Senate Public Safety, Data Technology, and Consumer Protection Committee."
+    "last_action_description": "April 20 set for first hearing. Failed passage in committee. (Ayes 3. Noes 3.) Reconsideration granted."
   },
   {
     "id": "us-ca-s1111-2026",
@@ -41583,7 +41582,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1111",
     "summary_url": null,
-    "last_verified": "2026-05-18",
+    "last_verified": "2026-05-19",
     "summary": "Provides that existing law creates a civil cause of action against any person who knowingly uses the name, voice, signature, photograph, or likeness of another person, without their consent, for specified purposes. Clarifies that a voice or likeness includes a digital replica. Clarifies that false impersonation includes the use of a digital replica with the intent to impersonate another.",
     "notable": null,
     "ai_specific": true,
@@ -41601,7 +41600,7 @@
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-04-30",
-    "last_action_description": "Senate passed SB 1111 (digital replicas impersonation clarification) 36-0 on April 30; bill referred to Assembly."
+    "last_action_description": "In Assembly. Read first time. Held at Desk."
   },
   {
     "id": "us-ca-s1119-2026",
@@ -41654,7 +41653,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1119",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires an operator of a companion chatbot to do various things with respect to child safety and companion chatbots, including annually performing and documenting a comprehensive risk assessment to identify any child safety risk posed by the design, configuration, and operation of the companion chatbot that assesses, among other things, the likelihood of a covered harm occurring to users.",
     "notable": null,
     "ai_specific": true,
@@ -41671,9 +41670,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1119-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-12",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; amended 2026-04-28, do pass as amended recommendation"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-s1133-2026",
@@ -41726,7 +41725,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1133",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides for the Ready to Learn, Ready for Health Act. Requires, when the Health Education Framework for California Public Schools is next revised on or after the specified date, the Instructional Quality Commission to consider including information on evidence based preventative health instruction, including information on nutrition, food literacy, sleep, movement, stress management, and digital balance in an integrated manner that discusses these key health factors and the interrelationship between them.",
     "notable": null,
     "ai_specific": true,
@@ -41743,9 +41742,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1133-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-11",
-    "last_action_description": "Referred to Assembly Com. on Education; passed Senate 2026-04-30"
+    "last_action_description": "Referred to Com. on ED."
   },
   {
     "id": "us-ca-s1142-2026",
@@ -41797,7 +41796,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1142",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Enacts the Digital Dignity Act. Provides that subject to specified liability a person who, by distributing content with actual knowledge that the content includes a digital replica, is found guilty of violating a criminal provision for which false impersonation of another is a required element or is found liable in a civil action arising from the use or portrayal through a digital replica.",
     "notable": null,
     "ai_specific": true,
@@ -41812,9 +41811,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1142-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-12",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; amended 2026-04-23, Do pass as amended recommendation"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "May 14 hearing: Held in committee and under submission."
   },
   {
     "id": "us-ca-s1146-2026",
@@ -41868,7 +41867,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1146",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires, subject to specified exceptions, a person who creates or causes to be created an advertisement that includes the image, audio, or video of a digital replica or synthetic performer depicted as a health care provider that is generated or substantially altered using artificial intelligence or other computer technology to promote the sale of a health related consumer product or service to include a clear and conspicuous disclosure that no human health care provider is depicted.",
     "notable": null,
     "ai_specific": true,
@@ -41886,9 +41885,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1146-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-08",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; amended 2026-04-16, do pass as amended recommendation"
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read third time. Passed. (Ayes 36. Noes 0.) Ordered to the Assembly."
   },
   {
     "id": "us-ca-s1159-2026",
@@ -41941,7 +41940,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1159",
     "summary_url": null,
-    "last_verified": "2026-05-18",
+    "last_verified": "2026-05-19",
     "summary": "Specifies that, for purposes of the State Public Records Act, the Bagley Keene Open Meeting Act, the Ralph M. Brown Act, the Political Reform Act of 1974, the Administrative Procedure Act, and the California Environmental Quality Act, the terms person, interested person, participant, member of the public, and any other similar terms under each act referring to those who may engage with governmental agencies, do not include artificial intelligence.",
     "notable": null,
     "ai_specific": true,
@@ -41960,7 +41959,7 @@
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-04",
-    "last_action_description": "Senate passed SB 1159 (AI Transparency and Governance) 38-0 on May 4; bill referred to Assembly."
+    "last_action_description": "In Assembly. Read first time. Held at Desk."
   },
   {
     "id": "us-ca-a1159-2026",
@@ -42085,7 +42084,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1181",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires the Office of Emergency Services, in consultation with the State Department of Education, to establish the Central Valley School Safety Coordination Pilot Program for the purpose of studying and evaluating improved communication pathways between local educational agencies and regional fusion centers regarding credible safety threats affecting school communities.",
     "notable": null,
     "ai_specific": true,
@@ -42101,9 +42100,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1181-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-12",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; placed on suspense file after May 11 hearing; amended 2026-04-28"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-s1217-2026",
@@ -42156,7 +42155,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1217",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires the Department of Justice to establish the Nonconsensual Intimate Image Clearinghouse to allow individuals who were exploited in the State to submit a request for the removal of nonconsensual intimate images from covered platforms. Requires the department to transmit verified identifiers of images to covered platforms and require those platforms to remove verified matches within 48 hours of receipt and to prevent the images from being uploaded again.",
     "notable": null,
     "ai_specific": true,
@@ -42173,9 +42172,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1217-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-12",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; amended 2026-04-23, Do pass as amended on 2026-04-22"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "May 14 hearing: Held in committee and under submission."
   },
   {
     "id": "us-ca-s1248-2026",
@@ -42229,7 +42228,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1248",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Imposes certain restrictions on the use of an automated decision system by a state agency to confer services, defined as, among other things, the issuance of professional licenses and provision of public benefits.",
     "notable": null,
     "ai_specific": true,
@@ -42246,9 +42245,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1248-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-08",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; Do pass recommendation on 2026-04-21"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "May 14 hearing: Held in committee and under submission."
   },
   {
     "id": "us-ca-s1276-2026",
@@ -42301,7 +42300,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1276",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Makes a person guilty of a misdemeanor or a felony if the person downloads, streams, or accesses through electronic or digital media material that depicts a person under 18 years of age engaged in an act of sexual conduct, except as specified.",
     "notable": null,
     "ai_specific": true,
@@ -42318,9 +42317,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s1276-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-08",
-    "last_action_description": "Set for hearing May 14 in Senate Appropriations Committee; placed on appropriations suspense file 2026-04-27"
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-a1337-2026",
@@ -42441,7 +42440,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1609",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Prohibits a large private business from representing that a customer service chatbot is a human. Requires the large private business to provide certain disclosures if a reasonable person interacting with the chatbot would be misled to believe they are interacting with a human. Requires a large private business to provide customers with human customer service support and communications within a specified number of minutes of requesting human customer service.",
     "notable": null,
     "ai_specific": true,
@@ -42456,9 +42455,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1609-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-a1651-2026",
@@ -42511,7 +42510,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1651",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires the State Bar to disclose, on its internet website, the use of artificial intelligence generated content in developing or administering State Bar examinations. Requires the State Bar to disclose, on the cover page of study materials, the use of artificial intelligence generated content in examination study material it, among other things, publishes or endorses.",
     "notable": null,
     "ai_specific": true,
@@ -42527,9 +42526,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1651-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-06",
-    "last_action_description": "Referred to Senate Com. on JUD. Passed Assembly 68-0 on 2026-04-16."
+    "last_action_description": "Referred to Com. on JUD."
   },
   {
     "id": "us-ca-a1705-2026",
@@ -42581,7 +42580,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1705",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires an operator of a pornographic internet website, among other things, to exercise ordinary care and reasonable diligence to ensure that each instance of sexually explicit content displayed on the operator's pornographic internet website does not include a depicted individual. Defines terms, including depicted person, for its purposes.",
     "notable": null,
     "ai_specific": true,
@@ -42596,9 +42595,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1705-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-04-22",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Hearing scheduled May 14."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-a1766-2026",
@@ -42651,7 +42650,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1766",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires the Instructional Quality Commission, when the health curriculum framework is next revised on or after January 1, 2027, to consider providing for inclusion in that framework recommendations related to school districts, county offices of education, and charter schools providing annual, developmentally appropriate lessons for each grade served by the local educational agency about how to prevent human trafficking and how to prevent exploitation for labor and services.",
     "notable": null,
     "ai_specific": true,
@@ -42667,9 +42666,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1766-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-07",
-    "last_action_description": "Read second time. Ordered to Consent Calendar. Passed Appropriations Committee 14-0 on 2026-05-06. Awaiting Assembly floor vote."
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "In Senate. Read first time. To Com. on RLS. for assignment."
   },
   {
     "id": "us-ca-a1792-2026",
@@ -42722,7 +42721,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1792",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires the Instructional Quality Commission, during the next revision of the publication �Health Framework for California Public Schools,� to consider including, and recommending for adoption by the State Board of Education, specific content related to sexual health instruction to educate pupils about dating abuse and digital violence.",
     "notable": null,
     "ai_specific": true,
@@ -42738,9 +42737,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1792-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-07",
-    "last_action_description": "Read second time. Ordered to third reading. Passed Appropriations Committee 10-0 on 2026-05-06. Awaiting Assembly floor vote."
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "In Senate. Read first time. To Com. on RLS. for assignment."
   },
   {
     "id": "us-ca-a1883-2026",
@@ -42794,7 +42793,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1883",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Prohibits an employer from using a workplace surveillance tool on workers for various purposes. Includes preventing compliance with laws or regulations, inferring information about workers engaging in a protected activity, making inferences about an individual's emotional state or based on their gait, or collecting neural data. Prohibits an employer from using facial recognition technology, unless it is used strictly to open a locked device or grant access to locked or secure areas.",
     "notable": null,
     "ai_specific": true,
@@ -42811,9 +42810,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1883-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-04-29",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Hearing scheduled May 14."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time and amended. Ordered returned to second reading."
   },
   {
     "id": "us-ca-a1898-2026",
@@ -42866,7 +42865,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1898",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires an employer to provide a written notice to a worker that a workplace artificial intelligence tool was used to assist the employer in making employment related decisions or to surveil workers in the workplace. Requires the notice to be given to a worker within a specified time and requires the notice to contain specified information, including the specific employment related decisions likely to be affected by the use of the workplace AI tool. Provides for civil actions for damages.",
     "notable": null,
     "ai_specific": true,
@@ -42883,9 +42882,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1898-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-04-29",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee hearing scheduled May 14."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-a1946-2026",
@@ -42938,7 +42937,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1946",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Makes a social media company liable to a depicted individual, as defined, for actual and statutory damages, as provided. Imposes a civil penalty on a noncomplying company to be collected in a civil action by certain public attorneys, including the Attorney General. Establishes the Survivor Support Fund within the state treasury and makes moneys in the fund available, upon appropriation by the Legislature, for grants by the State Victim Compensation Board to community-based organizations.",
     "notable": null,
     "ai_specific": true,
@@ -42955,9 +42954,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1946-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time and amended. Ordered returned to second reading."
   },
   {
     "id": "us-ca-a1979-2026",
@@ -43010,7 +43009,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1979",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires a health facility, clinic, physician's office, or office or a group practice to ensure that no clinical decision, is based solely on the output of a clinical decision support system, as defined, and that a licensed health care professional exercises independent professional judgment when reviewing and approving a clinical decision that is based on the output of a clinical decision support system.",
     "notable": null,
     "ai_specific": true,
@@ -43026,9 +43025,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1979-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-13",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee hearing May 14."
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "From committee: Do pass. (Ayes 11. Noes 4.) (May 14)."
   },
   {
     "id": "us-ca-a1988-2026",
@@ -43081,7 +43080,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1988",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides for the Preventing AI User Self Endangerment (PAUSE) Act. Requires an operator of companion chatbots to adopt and make publicly available a policy governing its protocol for identifying and responding to credible crisis expressions and, for each companion chatbot an operator makes available to users in the State, implement a system for monitoring and detecting credible crisis expressions in user conversations with companion chatbots.",
     "notable": null,
     "ai_specific": true,
@@ -43097,9 +43096,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1988-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-a2023-2026",
@@ -43152,7 +43151,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2023",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Relates to artificial intelligence. Requires an operator of a companion chatbot to, on or before specified date to do various things with respect to child safety and companion chatbots, including annually perform and document a comprehensive risk assessment to identify any child safety risk, as defined, posed by the design, configuration, and operation of the companion chatbot that assesses, among other things, the likelihood of a covered harm, as defined, occurring to child users.",
     "notable": null,
     "ai_specific": true,
@@ -43169,9 +43168,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2023-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-13",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "From committee: Do pass. (Ayes 12. Noes 3.) (May 14)."
   },
   {
     "id": "us-ca-a2025-2026",
@@ -43224,7 +43223,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2025",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires a person who includes a digitally altered image, as defined, in an advertisement or other promotional material for the rental of real property to include a disclosure, as specified.",
     "notable": null,
     "ai_specific": true,
@@ -43240,9 +43239,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2025-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-07",
-    "last_action_description": "Read second time. Ordered to Consent Calendar. Passed Appropriations Committee 14-0 on 2026-05-06. Awaiting Assembly floor vote."
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "In Senate. Read first time. To Com. on RLS. for assignment."
   },
   {
     "id": "us-ca-a2027-2026",
@@ -43294,7 +43293,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2027",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Prohibits an employer from using a workers personal information to train an artificial intelligence system to replicate, automate, or replace a workers job, and prohibits an employer from selling, disclosing, or otherwise providing access to a workers personal information to a third party for the purpose of training an AI system to replicate, automate, or replace a job. Authorizes a worker who suffered a violation to bring a civil action for damages, injunctive relief, punitive damages, and attorneys fees.",
     "notable": null,
     "ai_specific": true,
@@ -43310,9 +43309,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2027-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-a2071-2026",
@@ -43364,7 +43363,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2071",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires the State Department of Education, on or before a specified date, to develop a plan to expand mental health instruction in State public schools. Requires the department, on or before a specified date, to develop a plan to expand digital wellness instruction in the state public schools, as provided.",
     "notable": null,
     "ai_specific": true,
@@ -43379,9 +43378,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2071-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "introduced",
     "last_action_date": "2026-05-11",
-    "last_action_description": "Ordered to third reading. Removed from Consent Calendar. Listed on Assembly 3rd Reading File (Item 119) on 2026-05-14. Awaiting Assembly floor vote."
+    "last_action_description": "Ordered to third reading."
   },
   {
     "id": "us-ca-a2148-2026",
@@ -43433,7 +43432,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2148",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Establishes a system of public elementary and secondary education in this state. Requires school districts, county offices of education, and charter schools employ personnel to provide instruction to and services for pupils in kindergarten and grades 1 to 12, inclusive, at school sites throughout the state. Defines, for purposes of the Education Code, both a public school employee and a contractor providing services in a public school to mean a natural person.",
     "notable": null,
     "ai_specific": true,
@@ -43448,9 +43447,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2148-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-13",
-    "last_action_description": "Referred to Senate Coms. on ED. and L., P.E. & R. Passed Assembly 76-0 on 2026-05-04."
+    "last_action_description": "Referred to Coms. on ED. and L., P.E. & R."
   },
   {
     "id": "us-ca-a2169-2026",
@@ -43502,7 +43501,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2169",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Enacts the Digital Choice Act. Requires a social media company or a person that makes an artificial intelligence model available to a third party for use, modification, copying, or combination with other software, defined as a deployer, to allow a consumer to request a copy of the consumer's personal information, contextual data, and social graph and would require the social media company or deployer to respond to that request within five business days.",
     "notable": null,
     "ai_specific": true,
@@ -43518,9 +43517,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2169-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-13",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-a2212-2026",
@@ -43572,7 +43571,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2212",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires, in order to receive State funds for student financial assistance, the governing board of a community college district, the Trustees of the State University, the Regents of the University of California, and the governing boards of independent postsecondary educational institutions to update their sexual harassment policies to include, among other things, a list of organizations to assist students and employees with the removal of digitized sexually explicit material from digital platforms.",
     "notable": null,
     "ai_specific": true,
@@ -43587,9 +43586,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2212-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee hearing May 14."
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "From committee: Amend, and do pass as amended. (Ayes 11. Noes 0.) (May 14)."
   },
   {
     "id": "us-ca-a2245-2026",
@@ -43641,7 +43640,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2245",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Creates a producer responsibility program for lubricants waste that is not covered by the Oil Recycling Enhancement Act and packaging associated with lubricant products. Requires a producer responsibility organization to provide a convenient collection and management system. Requires the charge be set at an amount that is adequate to cover CalRecycle's and DTSC's actual and reasonable costs of administering and enforcing the program.",
     "notable": null,
     "ai_specific": true,
@@ -43656,9 +43655,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2245-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-a2291-2026",
@@ -43711,7 +43710,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2291",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires the State Department of Education to conduct a study on nonconsensual artificial intimate images involving pupils in the specified grades. Requires the study to include, among other things, a summary of the resources for schools regarding nonconsensual artificial intimate images and the effects of nonconsensual artificial intimate images on pupils.",
     "notable": null,
     "ai_specific": true,
@@ -43727,9 +43726,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2291-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "introduced",
     "last_action_date": "2026-04-09",
-    "last_action_description": "In committee: Set, first hearing. Hearing canceled at the request of author. In Assembly Education Committee."
+    "last_action_description": "In committee: Set, first hearing. Hearing canceled at the request of author."
   },
   {
     "id": "us-ca-a2392-2026",
@@ -43782,7 +43781,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2392",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires the California Community Colleges and the California State University, and requests the University of California, before providing a generative artificial intelligence (GenAI) system to students, faculty, or staff, to as specified, convene a joint working group to present recommendations for procurement standards and training, which the bill would require to be submitted on or before a specified date.",
     "notable": null,
     "ai_specific": true,
@@ -43798,9 +43797,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2392-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Amended 2026-04-23; passed prior committee unanimously."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-a2403-2026",
@@ -43853,7 +43852,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2403",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Excludes any commercial that is created entirely by generative artificial intelligence, as specified, or that utilizes generative artificial intelligence, automated technologies, or autonomous vehicles in a manner that replaces or diminishes the job functions customarily performed by a human worker in the production. Requires any bill authorizing a new tax expenditure to contain, among other things, specific goals, purposes, and objectives that the tax expenditure will achieve.",
     "notable": null,
     "ai_specific": true,
@@ -43870,9 +43869,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2403-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-a2412-2026",
@@ -43925,7 +43924,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2412",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides that existing law requires a State agency or department that utilizes generative artificial intelligence to directly communicate with a person regarding government services and benefits to ensure that those communications include a disclaimer that indicates to the person that the communication was generated by GenAI. Requires that disclaimer when a State agency or department communicates with the public.",
     "notable": null,
     "ai_specific": true,
@@ -43941,9 +43940,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2412-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-13",
-    "last_action_description": "Referred to Senate Coms. on G.O. and P., D.T., & C.P. Passed Assembly 73-0 on 2026-04-05."
+    "last_action_description": "Referred to Coms. on G.O. and P., D.T., & C.P."
   },
   {
     "id": "us-ca-a2431-2026",
@@ -43996,7 +43995,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2431",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides that existing law sets forth requirements by which a health care service plan or health insurer reimburses a provider for health care services. Requires a determination to downcode a claim, which is the unilateral alteration by a payer of the service or procedure code submitted on a claim resulting in a lower payment, to include a documented review of the clinical information supporting the billed service.",
     "notable": null,
     "ai_specific": true,
@@ -44012,9 +44011,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2431-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee hearing May 14."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-a2487-2026",
@@ -44067,7 +44066,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2487",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Enacts the Artificial Intelligence Education and Workforce Development Act to accomplish specified goals, including, among others, empowering and supporting community college instructors in using and deploying artificial intelligence responsibly in administrative and classroom settings, and strengthening the States AI and technology workforce pipeline by upskilling and educating all workers so they can benefit from AI.",
     "notable": null,
     "ai_specific": true,
@@ -44084,9 +44083,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2487-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "introduced",
     "last_action_date": "2026-04-07",
-    "last_action_description": "In committee: Set, first hearing. Hearing canceled at the request of author. In Assembly Higher Education Committee."
+    "last_action_description": "In committee: Set, first hearing. Hearing canceled at the request of author."
   },
   {
     "id": "us-ca-a2504-2026",
@@ -44140,7 +44139,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2504",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Relates to the Chancellor of the California Community Colleges. Requires the chancellors office to implement the Future of Creative Industries Pilot Program and to select up to a specified number of community college districts to participate in the pilot program. Requires the chancellors office to submit a report to the Legislature evaluating the effectiveness of the pilot program.",
     "notable": null,
     "ai_specific": true,
@@ -44159,9 +44158,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2504-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee hearing May 14."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-a2545-2026",
@@ -44213,7 +44212,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2545",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Establishes the State Artificial Intelligence Worker Impact Data Assessment Project and establishes the State Artificial Intelligence Worker Impact Data Assessment Project Advisory Panel in the Employment Development Department. Requires the EDD, in consultation with the advisory panel, to perform an assessment of data sources and collection methods regarding the use and impact of advanced artificial intelligence systems on the labor force. Requires the advisory panel to submit a report to the Legislature.",
     "notable": null,
     "ai_specific": true,
@@ -44229,9 +44228,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2545-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "From committee: Do pass. (Ayes 15. Noes 0.) (May 14)."
   },
   {
     "id": "us-ca-a2575-2026",
@@ -44284,7 +44283,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2575",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires a health facility, clinic, physician's office, or office of a group practice that uses or deploys a clinical decision support system, as defined, for patient care to provide written notice of required information to any licensed health care professional or other person using a clinical decision support system or viewing outputs from a clinical decision support system.",
     "notable": null,
     "ai_specific": true,
@@ -44301,9 +44300,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2575-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-13",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-a2582-2026",
@@ -44356,7 +44355,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2582",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires a person who commits prostitution with intent to receive compensation, money, or anything of value from another person to, for a first or second violation of those provisions, be offered a diversion program pursuant to specified provisions.",
     "notable": null,
     "ai_specific": true,
@@ -44372,9 +44371,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2582-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-04-22",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-a2583-2026",
@@ -44427,7 +44426,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2583",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Enacts the AI for Main Street Act, which would require the Small Business Advocate to provide assistance to small businesses in evaluating artificial intelligence concerning operations, including by providing information, guidance, and training, developing training materials, and conducting outreach.",
     "notable": null,
     "ai_specific": true,
@@ -44443,9 +44442,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2583-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-a2653-2026",
@@ -44497,7 +44496,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2653",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires the Department of Industrial Relations, in consultation with the Department of Technology, to convene a Foundation Model Labor and Procurement Working Group consisting of 9 members, assess labor practices underlying the development of modern foundation models and associated artificial intelligence systems and develop recommendations regarding whether and how the state should incorporate labor standards into procurement decisions for foundation models and associated artificial intelligence systems.",
     "notable": null,
     "ai_specific": true,
@@ -44512,9 +44511,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2653-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-14",
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-a2656-2026",
@@ -44567,7 +44566,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2656",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Relates to the deployment of generative artificial intelligence (GenAI) tools by the State. Requires certain State and local public employers to provide written notice to a recognized employee organization at least a specified number of days before taking an action to develop, purchase, implement, or utilize GenAI to perform a service that is within the scope of work of the job classification represented by the recognized employee organization.",
     "notable": null,
     "ai_specific": true,
@@ -44583,9 +44582,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2656-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-05-06",
-    "last_action_description": "In committee: Set, first hearing. Referred to APPR. suspense file. Assembly Appropriations Committee hearing May 14."
+    "legislative_stage": "introduced",
+    "last_action_date": "2026-05-18",
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-a2713-2026",
@@ -44638,7 +44637,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2713",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides that the State AI Transparency Act requires a large online platform to detect whether any provenance data that is compliant with widely adopted specifications adopted by an established standards-setting body is embedded into or attached to content distributed on the large online platform. Requires a large online platform to detect any system provenance data that is embedded into, attached to, or associated with content.",
     "notable": null,
     "ai_specific": true,
@@ -44655,9 +44654,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a2713-2026.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "introduced",
     "last_action_date": "2026-04-22",
-    "last_action_description": "Read second time. Ordered to third reading. Passed committee 15-0 on 2026-04-20. Awaiting Assembly floor vote."
+    "last_action_description": "Read second time. Ordered to third reading."
   },
   {
     "id": "us-ca-s7-2025",
@@ -44920,7 +44919,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB52",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Makes it unlawful for any person to sell, license, or provide to a certain number or more persons a rental pricing algorithm with the intent or reasonable expectation that it be used by a specified number or more persons to set rental terms for residential premises. Makes it unlawful for a person to set or adopt rental terms based on the recommendation of a rental pricing algorithm if the person knows or should know that the rental pricing algorithm processes nonpublic competitor data for certain purposes.",
     "notable": null,
     "ai_specific": true,
@@ -44936,9 +44935,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s52-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-08-29",
-    "last_action_description": "Held in committee and under submission. Assembly Appropriations Committee suspense file. 2025-2026 session bill still active."
+    "last_action_description": "August 29 hearing: Held in committee and under submission."
   },
   {
     "id": "us-ca-s57-2025",
@@ -45059,7 +45058,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB69",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires the Attorney General to establish and maintain a specified program to build internal expertise in artificial intelligence, including its applications, risks, regulatory implications, and civil rights impacts. Requires, on or before the specified date, and annually thereafter, the Attorney General to submit a public report to the Legislature describing the program, key developments in artificial intelligence law and policy, and recommendations for additional State oversight or safeguards.",
     "notable": null,
     "ai_specific": true,
@@ -45075,9 +45074,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s69-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-08-29",
-    "last_action_description": "Held in committee and under submission. Senate Appropriations Committee. 2025-2026 session bill still active."
+    "last_action_description": "August 29 hearing: Held in committee and under submission."
   },
   {
     "id": "us-ca-a82-2025",
@@ -45195,7 +45194,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB222",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires the State Energy Resources Conservation and Development Commission to establish a process for the owner of a data center to submit the power usage effectiveness ratio for the data center to the Energy Commission on a biannual basis. Requires the Energy Commission, as part of the 2027 edition of the Integrated Energy Policy Report, to include an assessment of electrical load trends for data centers.",
     "notable": null,
     "ai_specific": true,
@@ -45211,9 +45210,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a222-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-08-29",
-    "last_action_description": "In committee: Held under submission. Senate Appropriations Committee suspense file. 2025-2026 session bill still active."
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-s238-2025",
@@ -45266,7 +45265,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB238",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires an employer to annually provide a notice to the Department of Industrial Relations, in the Labor and Workforce Development Agency, of all the workplace surveillance tools the employer is using in the workplace. Requires the notice to include, among other information, the personal information that will be collected from workers and consumers and whether they will have the option of opting out of the collection of personal information.",
     "notable": null,
     "ai_specific": true,
@@ -45282,9 +45281,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s238-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-07-16",
-    "last_action_description": "July 16 hearing postponed by committee. In Assembly Privacy and Consumer Protection Committee. Previously passed Senate Labor and Employment Committee with Do pass recommendation."
+    "last_action_description": "July 16 hearing postponed by committee."
   },
   {
     "id": "us-ca-s241-2025",
@@ -45541,7 +45540,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB279",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides that existing law requires the State Board of Education to adopt standards, rules, and regulations for school library services. Requires the Superintendent of Public Instruction to consider recommending revisions to the standards for school library services to the State Board. Requires the Superintendent to convene a group of experts to assist the Superintendent in developing revisions. Requires the Superintendent, in consultation with the Instructional Quality Commission, to hold public hearings.",
     "notable": null,
     "ai_specific": true,
@@ -45556,9 +45555,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a279-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-08-29",
-    "last_action_description": "Held under submission. Senate Appropriations Committee suspense file. 2025-2026 session bill still active."
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-s295-2025",
@@ -45750,7 +45749,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB384",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides for the Preventing Algorithmic Price Fixing Act. Prohibits a person from selling, licensing, providing, or price-setting algorithm with the intent or reasonable expectation that it be used by a specified number or more competitors in the same market if the person knows or should know that the algorithm processes nonpublic data to set either a price or supply level of a good or service or a rent or occupancy level of rental property. Provides a user of such algorithm an affirmative defense.",
     "notable": null,
     "ai_specific": true,
@@ -45766,9 +45765,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s384-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-08-29",
-    "last_action_description": "Held in committee and under submission. Assembly Appropriations Committee suspense file. 2025-2026 session bill still active."
+    "last_action_description": "August 29 hearing: Held in committee and under submission."
   },
   {
     "id": "us-ca-a392-2025",
@@ -45820,7 +45819,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB392",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires a person who operates a website to exercise ordinary care and reasonable diligence to ensure that any sexually explicit content uploaded to the operator's pornographic internet website does not include a depicted individual. Requires an operator of a pornographic website to verify a user's email address before permitting the user to upload sexually explicit content to the operator's website. Authorizes a depicted individual and a public prosecutor to bring a civil action to enforce such provisions.",
     "notable": null,
     "ai_specific": true,
@@ -45835,9 +45834,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a392-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-08-29",
-    "last_action_description": "In committee: Held under submission. Senate Appropriations Committee suspense file. 2025-2026 session bill still active."
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-a410-2025",
@@ -45889,7 +45888,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB410",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires a person who uses a bot to autonomously communicate with another to ensure that the bot discloses to any person with whom the bot communicates when the bot first communicates with the person that the bot is a bot and not a human being. Authorizes the Attorney General, a district attorney, a county counsel, a city attorney, or a city prosecutor to bring a civil action to punish noncompliance.",
     "notable": null,
     "ai_specific": true,
@@ -45905,9 +45904,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a410-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-08-29",
-    "last_action_description": "Held under submission. Senate Appropriations Committee suspense file. 2025-2026 session bill still active."
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-a412-2025",
@@ -45959,7 +45958,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB412",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Relates to copyrighted materials. Requires a developer of a generative artificial intelligence model to document any covered materials that the developer knows were used by the developer to train the model. Requires the developer to make available a mechanism on the developer's website allowing a rights owner to submit a request for information. Authorizes a rights owner who complies with specified requirements for submitting a request that is not provided with information to bring a civil action.",
     "notable": null,
     "ai_specific": true,
@@ -45974,9 +45973,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a412-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-06",
-    "last_action_description": "Re-referred to Coms. on P., D.T., & C.P., JUD., and APPR. 2025 bill carried to 2026 session."
+    "last_action_description": "Re-referred to Coms. on P., D.T., & C.P., JUD., and APPR."
   },
   {
     "id": "us-ca-s420-2025",
@@ -46030,7 +46029,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB420",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires a developer or a deployer of a high-risk automated decision system to perform an impact assessment before making it publicly available or deploying it. Authorizes the Attorney General or the Civil Rights Department to allow a developer or deployer to cure certain violations. Prohibits an agency from awarding a contract for a high-risk automated decision system unless the person to whom the contract is awarded has certified that the system does not violate, among other civil rights laws, this bill.",
     "notable": null,
     "ai_specific": true,
@@ -46047,9 +46046,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s420-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-06-09",
-    "last_action_description": "Referred to Assembly Coms. on P. & C.P. and JUD. Passed Senate 2025-06-02. 2025-2026 session bill."
+    "last_action_description": "Referred to Coms. on P. & C.P. and JUD."
   },
   {
     "id": "us-ca-s430-2025",
@@ -46240,7 +46239,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB502",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Sets forth additional requirements relating to the color and font size of the disclosure's text. Exempts an election communication from the prohibition if the content includes a disclosure stating that the communication has been generated or substantially altered using artificial intelligence. Exempts an advertisement or other election communication from these prohibitions if a reasonable person would understand that the content was satire or parody.",
     "notable": null,
     "ai_specific": true,
@@ -46257,9 +46256,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a502-2025.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-09-08",
-    "last_action_description": "Ordered to inactive file at the request of Senator Blakespear. Bill listed in Senate Inactive File as of 2026-05-14; dormant but not permanently dead."
+    "last_action_description": "Ordered to inactive file at the request of Senator Blakespear."
   },
   {
     "id": "us-ca-s503-2025",
@@ -46313,7 +46312,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB503",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Specifies that the Department of Public Health is not required to independently inspect, test, or evaluate the functionality of an artificial intelligence system. Requires, beginning January 1, 2027, developers to provide a report identifying compliance efforts with the specified provisions to the department before making an artificial intelligence system commercially or publicly available to a deployer.",
     "notable": null,
     "ai_specific": true,
@@ -46331,9 +46330,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s503-2025.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-09-10",
-    "last_action_description": "Ordered to inactive file on request of Assembly Member Aguiar-Curry. Bill dormant but technically not permanently failed."
+    "last_action_description": "Ordered to inactive file on request of Assembly Member Aguiar-Curry."
   },
   {
     "id": "us-ca-a512-2025",
@@ -46926,7 +46925,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB813",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides that existing law requires the Department of Technology to conduct a comprehensive inventory of all high risk automated decision systems that have been proposed for use, development or procurement by, or are being used, developed, or procured by, a State agency. Establishes a process by which the Attorney General designates a private entity as a multistakeholder regulatory organization. Authorizes the Attorney General to establish a fee structure for charging fees to applicants and designated MROs.",
     "notable": null,
     "ai_specific": true,
@@ -46942,9 +46941,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s813-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-04",
-    "last_action_description": "Referred to Assembly Com. on Privacy and Consumer Protection; passed Senate 31-7 on 2026-01-27. 2025 bill carried to 2026."
+    "last_action_description": "Referred to Com. on P. & C.P."
   },
   {
     "id": "us-ca-s833-2025",
@@ -46997,7 +46996,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB833",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides that existing law requires the Technology Recovery Plan element of the State Administrative Manual to ensure the inclusion of cybersecurity strategy incident response standards. Requires an operator responsible for operating, managing, overseeing, or controlling access to critical infrastructure, that deploys a covered artificial intelligence (AI) system to establish a human oversight mechanism that ensures a human monitors the system's operations in real time.",
     "notable": null,
     "ai_specific": true,
@@ -47013,9 +47012,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-s833-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-08-29",
-    "last_action_description": "August 29 hearing postponed by committee. In Assembly Appropriations Committee. Passed prior committee 15-0. 2025-2026 session bill still active."
+    "last_action_description": "August 29 hearing postponed by committee."
   },
   {
     "id": "us-ca-a887-2025",
@@ -47067,7 +47066,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB887",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Establishes the California Computer Science Demonstration Grant Program for specified purposes, including increasing the number of public high schools offering a computer science course to increase pupil access to computer science education and increasing the computer science course access of pupils eligible for free or reduced-priced meals and pupils that are underrepresented in the field of computer science.",
     "notable": null,
     "ai_specific": true,
@@ -47082,9 +47081,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a887-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-08-29",
-    "last_action_description": "In committee: Held under submission. Senate Appropriations Committee suspense file. 2025-2026 session bill still active."
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-a979-2025",
@@ -47209,7 +47208,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1018",
     "summary_url": null,
-    "last_verified": "2026-05-18",
+    "last_verified": "2026-05-19",
     "summary": "Requires a deployer of a covered automated decision system to take certain actions, including conduct impact assessments of the covered ADS and provide deployers to whom the developer transfers the covered ADS with certain information, including a high-level summary of the results of those impact assessments.",
     "notable": null,
     "ai_specific": true,
@@ -47234,7 +47233,7 @@
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-09-13",
-    "last_action_description": "AB 1018 (Automated Decisions Safety Act) ordered to inactive file at request of Senator Wiener on Sept 13, 2025; can be revived in 2026 biennial session."
+    "last_action_description": "Ordered to inactive file at the request of Senator Wiener."
   },
   {
     "id": "us-ca-a1024-2025",
@@ -47492,7 +47491,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1159",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Applies the provisions of the K-12 Pupil Online Personal Information Protection Act and the Early Learning Personal Information Protection Act to an operator of a website, online service, online application, or mobile application with actual knowledge that the site, service, or application is used for the applicable school purposes and was designed or marketed for those purposes. Enacts the Higher Education Student Information Protection Act. Authorizes a harmed student or pupil to bring a civil action.",
     "notable": null,
     "ai_specific": true,
@@ -47508,9 +47507,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1159-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-01-27",
-    "last_action_description": "In Senate. Read first time. To Com. on RLS. for assignment. Passed Assembly 65-5 on 2026-01-26. 2025 bill carried to 2026."
+    "last_action_description": "In Senate. Read first time. To Com. on RLS. for assignment."
   },
   {
     "id": "us-ca-a1242-2025",
@@ -47562,7 +47561,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1242",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Relates to the Dymally-Alatorre Bilingual Services Act. Revises the definition of substantial number of non-English-speaking people to include the higher of either the people served by or eligible to be served by a State agency. Requires the State Health and Human Services Agency to designate a Language Access Director to ensure individuals with limited English proficiency and individuals who are deaf or hard of hearing have meaningful access to government programs and services.",
     "notable": null,
     "ai_specific": true,
@@ -47577,9 +47576,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1242-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-08-29",
-    "last_action_description": "In committee: Held under submission. Senate Appropriations Committee suspense file. 2025-2026 session bill still active."
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-ca-a1331-2025",
@@ -47632,7 +47631,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1331",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Limits the use of workplace surveillance tools by employers, including by prohibiting an employer from monitoring or surveilling workers in employee-only, employer-designated areas. Provides workers with the right to leave behind workplace surveillance tools that are on their person or in their possession during off-duty hours. Prohibits a worker from removing or physically tampering with any component of a workplace surveillance tool that is part of or embedded in employer equipment or vehicles.",
     "notable": null,
     "ai_specific": true,
@@ -47648,9 +47647,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1331-2025.md",
     "legal_citation": null,
-    "legislative_stage": "unknown",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-09-13",
-    "last_action_description": "Ordered to inactive file at the request of Senator Limon. Listed in Senate Inactive File as of 2026-05-14 (Item A-47). Bill dormant but not permanently dead."
+    "last_action_description": "Ordered to inactive file at the request of Senator Limón."
   },
   {
     "id": "us-ca-a1337-2025",
@@ -47702,7 +47701,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1337",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Provides that the Information Practices Act of 1977 prescribes a set of requirements, prohibitions, and remedies applicable to agencies with regard to their collection, storage, and disclosure of personal information. Prohibits an agency from using records containing personal information for any purpose or purposes other than the purpose or purposes for which that personal information was collected, except as required or authorized by State law.",
     "notable": null,
     "ai_specific": true,
@@ -47717,9 +47716,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1337-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-04-27",
-    "last_action_description": "Withdrawn from committee; re-referred to Com. on RLS. (Senate Rules Committee). 2025 bill carried to 2026."
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2026-05-06",
+    "last_action_description": "Re-referred to Com. on P., D.T., & C.P."
   },
   {
     "id": "us-ca-a1405-2025",
@@ -47771,7 +47770,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1405",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-19",
     "summary": "Requires the Government Operations Agency to establish a mechanism on the agency's website allowing artificial intelligence auditors to enroll with the agency and allowing natural persons to report misconduct by an enrolled AI auditor. Requires the agency to publish information provided by an enrolled AI auditor on the agency's website, retain specified reports, and share reports submitted by persons reporting misconduct with other State agencies. Requires an AI auditor to enroll with the agency.",
     "notable": null,
     "ai_specific": true,
@@ -47787,9 +47786,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ca-a1405-2025.md",
     "legal_citation": null,
-    "legislative_stage": "in_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2025-08-29",
-    "last_action_description": "Held under submission. Senate Appropriations Committee suspense file. 2025-2026 session bill still active."
+    "last_action_description": "In committee: Held under submission."
   },
   {
     "id": "us-co-h1030-2026",
