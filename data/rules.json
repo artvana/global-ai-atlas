@@ -2498,6 +2498,14 @@
         "notes": "Both grant individuals the right to correct inaccurate personal data, with Pakistan additionally covering completion of incomplete data, reflecting the same core rectification right adopted independently.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-co-sb189-2026",
+        "relationship": "agrees",
+        "citation": "Consumer data access and correction rights",
+        "notes": "Colorado SB 26-189 grants consumers the right to request the personal data a covered ADMT used about them and to correct factually inaccurate information; narrower than CCPA in that it is tied to ADMT-driven consequential decisions, but the underlying correction right is the same.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -14872,6 +14880,14 @@
         "relationship": "agrees",
         "citation": "EDSTA s. 15.1",
         "notes": "Both rules establish a right to human review of algorithmic/AI decisions, but Ontario's rule is broader (covering all AI-influenced decisions affecting individuals in public sector context) while the Mauritius rule is sector-specific to financial advisory AI recommendations.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-co-sb189-2026",
+        "relationship": "agrees",
+        "citation": "Right to meaningful human review",
+        "notes": "Colorado SB 26-189 gives consumers a right to request meaningful human review and reconsideration following an adverse consequential decision produced by a covered ADMT; same substantive right as the Mauritius FSC rule but limited to consequential decisions and triggered by an adverse outcome.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -40324,6 +40340,14 @@
         "relationship": "similar",
         "citation": "Section 3(6)(c)",
         "notes": "Both require disclosure of how high-risk AI systems work including third-party components, but the Kentucky rule applies to public-facing disclaimers by government entities using generative AI, whereas the Colorado rule targets developers providing disclosure statements to deployers about high-risk systems.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-co-sb189-2026",
+        "relationship": "agrees",
+        "citation": "Developer documentation provisions",
+        "notes": "Colorado SB 26-189 repeals SB 24-205 and re-imposes a developer-to-deployer documentation duty (intended uses, training data categories, known limitations, usage/human-review instructions) for covered ADMT; scope narrowed from high-risk AI generally to ADMT making consequential decisions.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -96462,6 +96486,14 @@
         "relationship": "similar",
         "citation": "Section 3(6)(b)(3)",
         "notes": "Both grant individuals a right to appeal consequential AI-driven decisions, but the Colorado rule specifies the deployer must provide disclosure and an appeal opportunity following an adverse decision in a defined high-risk AI context, while the Kentucky rule is broader and vaguer, requiring only 'readily available options to appeal' without specifying the sector, process, or disclosure obligations.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-co-sb189-2026",
+        "relationship": "agrees",
+        "citation": "Post-adverse-outcome disclosure (30-day)",
+        "notes": "Colorado SB 26-189 requires a deployer to furnish a plain-language explanation of the covered ADMT's role within 30 days after an adverse consequential outcome; same post-decision disclosure obligation as the SB 25B-004 rule, with an explicit 30-day deadline.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -371703,6 +371735,14 @@
         "relationship": "origin",
         "citation": "Amendment No. 13 to PPL 5741-1981",
         "notes": "Imposes a GDPR-style transparency duty specifically extended to AI-based processing of Israeli data subjects.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-co-sb189-2026",
+        "relationship": "agrees",
+        "citation": "Point-of-interaction consumer notice",
+        "notes": "Colorado SB 26-189 requires deployers to provide clear and conspicuous notice to consumers at the point of interaction with a covered ADMT used for a consequential decision; same upfront transparency obligation as Israel's Amendment 13 rule, but limited to consequential-decision ADMT rather than all AI-driven automated decisions.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }

@@ -27516,7 +27516,7 @@
     "influenced": [],
     "official_text_url": "https://digital-strategy.ec.europa.eu/en/policies/digital-omnibus",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "European Commission legislative proposal (19 November 2025) to amend the EU AI Act as part of the Digital Omnibus package. Key changes: defer Annex III high-risk AI obligations to 2 December 2027 and Annex I to 2 August 2028; narrow AI literacy obligations; expand SME/SMC exemptions; add legitimate interest legal basis for AI training data; postpone Article 50(2) watermarking obligations to 2 December 2026; add Article 5 prohibition on AI-generated CSAM and non-consensual intimate imagery. Council general approach adopted 13 March 2026; EP negotiating position adopted 26 March 2026 (569-45-23); second trilogue failed 28 April 2026; provisional trilogue agreement reached 7 May 2026.",
     "notable": "Provisional trilogue agreement reached 7 May 2026 after second trilogue stalled on Annex I conformity assessment architecture; formal adoption by co-legislators pending.",
     "legal_citation": null,
@@ -38470,7 +38470,7 @@
     "influenced": [],
     "official_text_url": "https://www.azleg.gov/legtext/57leg/2R/bills/hb2371.htm",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Relates to arbitration, relates to divorce proceedings, relates to artificial intelligence.",
     "notable": null,
     "ai_specific": true,
@@ -38748,7 +38748,7 @@
     "influenced": [],
     "official_text_url": "https://www.azleg.gov/legtext/57leg/2R/bills/hb2592.htm",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Relates to regulation of artificial intelligence systems, budget units, legislative ratification of rules, annual report and definitions.",
     "notable": null,
     "ai_specific": true,
@@ -38886,7 +38886,7 @@
     "influenced": [],
     "official_text_url": "https://www.azleg.gov/legtext/57leg/2R/bills/hb2917.htm",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Relates to government mass surveillance network, provides that any local government or state agency in this state may not operate or establish a government mass surveillance network without notification and approval by a majority of the voters.",
     "notable": null,
     "ai_specific": true,
@@ -41583,7 +41583,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1111",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Provides that existing law creates a civil cause of action against any person who knowingly uses the name, voice, signature, photograph, or likeness of another person, without their consent, for specified purposes. Clarifies that a voice or likeness includes a digital replica. Clarifies that false impersonation includes the use of a digital replica with the intent to impersonate another.",
     "notable": null,
     "ai_specific": true,
@@ -41601,7 +41601,7 @@
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-04-30",
-    "last_action_description": "In Assembly. Read first time. Held at Desk. Passed Senate 36-0 on 2026-04-30."
+    "last_action_description": "Senate passed SB 1111 (digital replicas impersonation clarification) 36-0 on April 30; bill referred to Assembly."
   },
   {
     "id": "us-ca-s1119-2026",
@@ -41941,7 +41941,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1159",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Specifies that, for purposes of the State Public Records Act, the Bagley Keene Open Meeting Act, the Ralph M. Brown Act, the Political Reform Act of 1974, the Administrative Procedure Act, and the California Environmental Quality Act, the terms person, interested person, participant, member of the public, and any other similar terms under each act referring to those who may engage with governmental agencies, do not include artificial intelligence.",
     "notable": null,
     "ai_specific": true,
@@ -41960,7 +41960,7 @@
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-04",
-    "last_action_description": "Read third time. Passed Senate. (Ayes 38. Noes 0.) Ordered to the Assembly."
+    "last_action_description": "Senate passed SB 1159 (AI Transparency and Governance) 38-0 on May 4; bill referred to Assembly."
   },
   {
     "id": "us-ca-a1159-2026",
@@ -47209,7 +47209,7 @@
     "influenced": [],
     "official_text_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1018",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Requires a deployer of a covered automated decision system to take certain actions, including conduct impact assessments of the covered ADS and provide deployers to whom the developer transfers the covered ADS with certain information, including a high-level summary of the results of those impact assessments.",
     "notable": null,
     "ai_specific": true,
@@ -47233,8 +47233,8 @@
     "text_path": "data/texts/us-ca-a1018-2025.md",
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2025-08-29",
-    "last_action_description": "Passed Senate 5-2 on automated decision systems but was later ordered inactive without being formally vetoed."
+    "last_action_date": "2025-09-13",
+    "last_action_description": "AB 1018 (Automated Decisions Safety Act) ordered to inactive file at request of Senator Wiener on Sept 13, 2025; can be revived in 2026 biennial session."
   },
   {
     "id": "us-ca-a1024-2025",
@@ -47979,7 +47979,7 @@
     "influenced": [],
     "official_text_url": "https://leg.colorado.gov/bills/hb26-1139",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Requires entities that use an artificial intelligence system or algorithm for utilization review to ensure that the system complies with certain requirements, relates to the unauthorized practice of psychotherapy, requires disclosure of a clients right to consent to a disclosure of confidential communications, prohibits a health insurance carrier and a payer of services under the Medical Assistance Act and the Childrens Basic Health Plan Act from paying for psychotherapy services conducted by an AI system.",
     "notable": null,
     "ai_specific": true,
@@ -47995,9 +47995,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-co-h1139-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_legislature",
+    "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-11",
-    "last_action_description": "Passed both chambers (Senate 33-2) and now awaits Governor Polis's signature; restricts AI in health insurance coverage decisions."
+    "last_action_description": "Senate Third Reading passed with no amendments on May 11; bill (AI in health care coverage decisions) transmitted to Governor Polis."
   },
   {
     "id": "us-co-h1195-2026",
@@ -48050,7 +48050,7 @@
     "influenced": [],
     "official_text_url": "https://leg.colorado.gov/bills/hb26-1195",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Prohibits psychologists, professional counselors, social workers, clinical social workers, marriage and family therapists, addiction counselors, unlicensed psychotherapists and other individuals lawfully permitted to provide psychotherapy services in the State from using an artificial intelligence system to directly interact with clients in any form of therapeutic communication, generate therapeutic recommendations or treatment plans without review by regulated professionals, or to detect mental states.",
     "notable": null,
     "ai_specific": true,
@@ -48066,9 +48066,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-co-h1195-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_legislature",
+    "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-11",
-    "last_action_description": "Passed both chambers and awaits Governor Polis's signature; restricts AI use in psychotherapy services."
+    "last_action_description": "Senate Third Reading passed with no amendments on May 11; bill (AI in psychotherapy services restrictions) transmitted to Governor Polis."
   },
   {
     "id": "us-co-h1210-2026",
@@ -48120,7 +48120,7 @@
     "influenced": [],
     "official_text_url": "https://leg.colorado.gov/bills/hb26-1210",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Prohibits discrimination against a consumer or worker through the use of automated decision systems used to engage in individualized price setting based on surveillance data regarding a consumer, prohibits individualized wage setting based on such data regarding a worker, specifies activities that are not prohibited as individualized price or wage setting based on surveillance data regarding a consumer or worker, provides that the Attorney General or a district attorney may bring certain civil actions.",
     "notable": null,
     "ai_specific": true,
@@ -48137,7 +48137,7 @@
     "legal_citation": null,
     "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-07",
-    "last_action_description": "House concurred with Senate amendments (Senate passed 19-15 on 2026-05-06); sent to Governor Polis"
+    "last_action_description": "House concurred in Senate amendments 43-21 and repassed bill; awaiting Governor Polis signature or veto."
   },
   {
     "id": "us-co-h1263-2026",
@@ -48190,7 +48190,7 @@
     "influenced": [],
     "official_text_url": "https://leg.colorado.gov/bills/hb26-1263",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Concerns requirements for an operator of a conversational artificial intelligence service, defines a conversational artificial intelligence service as an artificial intelligence system that is accessible to the general public and that primarily simulates human conversation and interaction through textual, visual, or aural communications.",
     "notable": null,
     "ai_specific": true,
@@ -48207,9 +48207,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-co-h1263-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_legislature",
-    "last_action_date": "2026-05-11",
-    "last_action_description": "Passed both chambers and awaits Governor Polis's signature; imposes conversational AI service operator requirements effective January 1, 2027."
+    "legislative_stage": "awaiting_signature",
+    "last_action_date": "2026-05-12",
+    "last_action_description": "House concurred in Senate amendments and repassed HB 1263 (Conversational AI Service Operator Requirements) on May 12; Governor Polis said he will sign."
   },
   {
     "id": "us-co-s4-2025",
@@ -49222,7 +49222,7 @@
     "influenced": [],
     "official_text_url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=SB-4&which_year=2026",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Concerns consumer privacy and protection, requires the controller to perform its responsibility to respond to a consumer's rights when the controller processes that consumer's personal data by automated means, applies when such data is used for profiling to make a solely automated decision that results in either providing or denying an employment opportunity, prohibits controller to sell, share or transfer, or allow any other person to access, precise geolocation data.",
     "notable": null,
     "ai_specific": true,
@@ -49239,7 +49239,7 @@
     "legal_citation": null,
     "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-04",
-    "last_action_description": "Passed House 141-6 and Senate 31-4; sent to Governor Lamont who announced he plans to sign. Session adjourned 5/6/2026."
+    "last_action_description": "House passed SB 4 (Consumer Privacy / data broker registry / surveillance pricing ban) 141-6 on May 4; bill awaiting Governor Lamont signature."
   },
   {
     "id": "us-ct-s5-2026",
@@ -49292,7 +49292,7 @@
     "influenced": [],
     "official_text_url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=SB-5&which_year=2026",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Concerns online safety, establishes various requirements concerning artificial intelligence, artificial intelligence systems, artificial intelligence technologies, artificial intelligence companions and automated employment-related decision processes and an Artificial Intelligence Policy Office to be overseen by an Artificial Intelligence Policy Director, requires subscription-based artificial intelligence providers to make consumer disclosure.",
     "notable": null,
     "ai_specific": true,
@@ -49311,7 +49311,7 @@
     "legal_citation": null,
     "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-01",
-    "last_action_description": "Passed House 131-17 May 1 after Senate passage 32-4 on April 21; Governor Lamont has said he plans to sign the Connecticut AI Responsibility and Transparency Act."
+    "last_action_description": "House passed SB 5 (Connecticut AI Responsibility and Transparency Act) 131-17 on May 1; Lamont spokesperson confirmed he plans to sign."
   },
   {
     "id": "us-ct-s86-2026",
@@ -49435,7 +49435,7 @@
     "influenced": [],
     "official_text_url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=SB-292&which_year=2026",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Concerns the definition of child sexual abuse material, expands the definition of child sexual abuse material, provides for the definition of a visual depiction of a subject when described as indistinguishable, excludes the definition to a visual depiction that is a drawing, cartoon, sculpture or painting of a person under sixteen years of age.",
     "notable": null,
     "ai_specific": true,
@@ -49506,7 +49506,7 @@
     "influenced": [],
     "official_text_url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=SB-325&which_year=2026",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Prohibits the disclosure of the residential address of public school employees under the freedom of information act, establishes a task force concerning mass requests under the act.",
     "notable": null,
     "ai_specific": true,
@@ -49577,7 +49577,7 @@
     "influenced": [],
     "official_text_url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=SB-342&which_year=2026",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Requires health carriers and preferred provider networks that contract with providers to pay equal reimbursement rates for certain outpatient services to all providers in a geographic area, clarifies that health carriers and health plan administrators may use certain utilization management tools, relates to anti steering clauses, prohibits insurers from requiring step therapy for prescription drugs used to treat all forms of cancer and certain diseases, relates to algorithmic or automatic claim downcoding.",
     "notable": null,
     "ai_specific": true,
@@ -49647,7 +49647,7 @@
     "influenced": [],
     "official_text_url": "https://www.cga.ct.gov/2026/TOB/S/PDF/2026SB-00417-R00-SB.PDF",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Requires the Department of Economic and Community Development to develop a plan to establish an artificial intelligence small business program, incentivizes small businesses to adopt and deploy artificial intelligence for purposes of achieving improvements in productivity and the quality of any products or services offered by such small businesses, establishes a competitive small business environment for the development and deployment of artificial intelligence technologies.",
     "notable": null,
     "ai_specific": true,
@@ -49663,9 +49663,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ct-s417-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_legislature",
+    "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-05",
-    "last_action_description": "AN ACT REQUIRING DECD TO DEVELOP A PLAN FOR AN AI SMALL BUSINESS PROGRAM — passed both chambers; sent to Governor Lamont. Session adjourned 5/6/2026."
+    "last_action_description": "House passed SB 417 (DECD AI small business program plan) 150-0 on May 5 after Senate 36-0 passage; bill transmitted to Governor Lamont."
   },
   {
     "id": "us-ct-s435-2026",
@@ -49792,7 +49792,7 @@
     "influenced": [],
     "official_text_url": "https://www.cga.ct.gov/2026/TOB/S/PDF/2026SB-00483-R00-SB.PDF",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Establishes the crime of digital forgery, provides that a person is guilty of digital forgery when such person, with intent to cause financial injury to another person, creates and disseminates a visual representation or audio recording that such person knows or should have known is a digitally forged likeness.",
     "notable": null,
     "ai_specific": true,
@@ -49810,7 +49810,7 @@
     "legal_citation": null,
     "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-06",
-    "last_action_description": "Passed House 149-1 and Senate 33-0 on 5/6/2026; sent to Governor Lamont."
+    "last_action_description": "Senate (33-0) and House (149-1) passed SB 483 (Crime of Digital Forgery) on May 6; bill transmitted to Governor Lamont."
   },
   {
     "id": "us-ct-s515-2026",
@@ -50003,7 +50003,7 @@
     "influenced": [],
     "official_text_url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=HB-5125&which_year=2026",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Concerns entertainment event tickets, specifies the circumstances in which a ticket reseller may enter into a contract with, or accept consideration from, a purchaser for the resale of a ticket to an entertainment event, establishes and modifies various requirements concerning the sale or resale of a ticket to an entertainment event by way of an Internet website or online technology platform, defines various terms concerning tickets to entertainment events.",
     "notable": null,
     "ai_specific": true,
@@ -50018,9 +50018,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ct-h5125-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_legislature",
+    "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-06",
-    "last_action_description": "Entertainment Event Tickets bill — passed both chambers; sent to Governor Lamont. Session adjourned 5/6/2026."
+    "last_action_description": "Both chambers passed HB 5125 (Entertainment Event Tickets — covers AI bot-resale practices); bill transmitted to Governor Lamont."
   },
   {
     "id": "us-ct-h5229-2026",
@@ -50072,7 +50072,7 @@
     "influenced": [],
     "official_text_url": "https://www.cga.ct.gov/asp/cgabillstatus/cgabillstatus.asp?selBillType=Bill&bill_num=HB-5229&which_year=2026",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Provides that a master wagering licensee and a licensed online gaming operator, online gaming service provider and sports wagering retailer shall establish a telephone number to enable a person to receive assistance to resolve any problem the person is experiencing with an electronic wagering platform, provides that once an owner of an online account initiates a withdrawal request, such licensee shall not cancel or modify a pending withdrawal except to, among other things, comply with fraud prevention.",
     "notable": null,
     "ai_specific": true,
@@ -50089,7 +50089,7 @@
     "legal_citation": null,
     "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-13",
-    "last_action_description": "Gaming/sports-betting reform bill banning AI-driven personalized promotions — passed House 145-4 and Senate 32-1; sent to Governor Lamont; provisions take effect 7/1/2026 if signed."
+    "last_action_description": "House (May 4) and Senate (May 6) passed HB 5229 (Gaming, sports betting advertising restrictions, prediction markets study); bill awaiting Governor Lamont signature."
   },
   {
     "id": "us-ct-h5342-2026",
@@ -50212,7 +50212,7 @@
     "influenced": [],
     "official_text_url": "https://www.cga.ct.gov/2026/TOB/H/PDF/2026HB-05497-R00-HB.PDF",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Establishes a task force to study the effects of artificial intelligence on the trades industry, includes an examination of job displacement of employees in the trades industry as a result of artificial intelligence being used in the trades industry and current coursework and curriculum of the Technical and Education Career System regarding the use of artificial intelligence.",
     "notable": null,
     "ai_specific": true,
@@ -52042,7 +52042,7 @@
     "influenced": [],
     "official_text_url": "https://legis.delaware.gov/BillDetail?LegislationId=233",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Requires regulated utilities to establish a separate rate for large energy-use facilities that mitigates the risk of costs associated with expanding infrastructure and maintaining reliability in the face of growing demand from being shifted to residential, small business, and other electric customers.",
     "notable": null,
     "ai_specific": true,
@@ -52186,7 +52186,7 @@
     "influenced": [],
     "official_text_url": "https://legis.delaware.gov/BillDetail?LegislationId=233",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Requires regulated utilities to establish a separate rate for large energy-use facilities that mitigates the risk of costs associated with expanding infrastructure and maintaining reliability in the face of growing demand from being shifted to residential, small business, and other electric customers.",
     "notable": null,
     "ai_specific": true,
@@ -58860,7 +58860,7 @@
     "influenced": [],
     "official_text_url": "https://capitol.hawaii.gov/session2026/lists/measure_indiv.aspx?billtype=HB&billnumber=1682",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Enacts the Uniform Civil Remedies for Unauthorized Disclosure of Intimate Images Act.",
     "notable": null,
     "ai_specific": true,
@@ -59489,7 +59489,7 @@
     "influenced": [],
     "official_text_url": "https://capitol.hawaii.gov/session2026/lists/measure_indiv.aspx?billtype=HB&billnumber=2137",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Prohibits certain harmful uses of and mandates disclosure for realistic digital imitations generated by artificial intelligence (AI), establishes certain exemptions, provides for civil actions and civil remedies for individuals injured by unauthorized AI-generated realistic digital imitations, requires the disclosure of the use of synthetic performers in advertising, establishes civil fines.",
     "notable": null,
     "ai_specific": true,
@@ -59510,7 +59510,7 @@
     "legal_citation": null,
     "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-07",
-    "last_action_description": "Transmitted to Governor"
+    "last_action_description": "Hawaii Legislature approved HB 2137 (deepfake digital imitation protections, synthetic performer disclosure) and sent to Governor Green on May 7."
   },
   {
     "id": "us-hi-s2167-2026",
@@ -59844,7 +59844,7 @@
     "influenced": [],
     "official_text_url": "https://capitol.hawaii.gov/session2026/lists/measure_indiv.aspx?billtype=HB&billnumber=2319",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Amends the functions and responsibilities of the State Health Planning and Development Agency, adds a new definition of health care, amends the exemption threshold for bed changes to up to thirty per cent of existing licensed bed types, exempts the Department of Health from certificate of need requirements.",
     "notable": null,
     "ai_specific": true,
@@ -60399,7 +60399,7 @@
     "influenced": [],
     "official_text_url": "https://capitol.hawaii.gov/session2026/lists/measure_indiv.aspx?billtype=HB&billnumber=2502",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Requires operators of conversational artificial intelligence services in the State to issue certain disclosures to account holders and users, requires operators to develop protocols to respond to prompts or content associated with, and prevent the production of, suicidal ideations in account holders and users, establishes protections for minor account holders of conversational artificial intelligence services, requires operators to submit annual reports to the Department of Commerce and Consumer Affairs.",
     "notable": null,
     "ai_specific": true,
@@ -61381,7 +61381,7 @@
     "influenced": [],
     "official_text_url": "https://capitol.hawaii.gov/session2026/lists/measure_indiv.aspx?billtype=SB&billnumber=3001",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Requires operators of conversational artificial intelligence services in the State to issue certain disclosures to account holders and users, requires operators to develop protocols to prevent the production of suicidal ideations in account holders and users. establishes protections for account holders and users of conversational artificial intelligence services. establishes protections for minor account holders and users of conversational artificial intelligence services.",
     "notable": null,
     "ai_specific": true,
@@ -61400,7 +61400,7 @@
     "legal_citation": null,
     "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-08",
-    "last_action_description": "Enrolled to the Governor as the Artificial Intelligence Disclosure and Safety Act; awaiting signature with deadline of July 15, 2026."
+    "last_action_description": "SB 3001 (Artificial Intelligence Disclosure and Safety Act) enrolled to Governor Green on May 8; awaiting his action."
   },
   {
     "id": "us-hi-s3027-2026",
@@ -64991,7 +64991,7 @@
     "influenced": [],
     "official_text_url": "https://www.ilga.gov/legislation/BillStatus.asp?DocNum=3114&DocTypeID=SB&GA=104",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Creates the Transparency in Downcoding Act, provides that the Act applies to certain policies of health insurance amended, delivered, issued, or renewed on or after the effective date of the Act, except for employee or employer self-insured health benefit plans under the federal Employee Retirement Income Security Act and health care provided pursuant to the Workers' Compensation Act or the Workers' Occupational Diseases Act.",
     "notable": null,
     "ai_specific": true,
@@ -65009,7 +65009,7 @@
     "legal_citation": null,
     "legislative_stage": "passed_committee",
     "last_action_date": "2026-05-13",
-    "last_action_description": "Senate Floor Amendment No. 2 Recommendation to Adopt from Insurance Committee; pending Senate floor vote"
+    "last_action_description": "SB 3114 (Transparency in Downcoding Act — AI in health insurance) stalled in Senate Insurance Committee as of April 2026."
   },
   {
     "id": "us-il-s3180-2026",
@@ -72954,7 +72954,7 @@
     "bill_number": "HSB 647",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "health_ai",
@@ -72993,7 +72993,7 @@
     "influenced": [],
     "official_text_url": "https://www.legis.iowa.gov/legislation/BillBook?ba=HSB647&ga=91",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to chatbots, including deployer requirements and interactions with minors.",
     "notable": null,
     "ai_specific": true,
@@ -73010,9 +73010,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ia-hsb647-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_committee",
     "last_action_date": "2026-02-24",
-    "last_action_description": "Reported out of committee and renumbered as HF 2715 governing chatbot deployer requirements."
+    "last_action_description": "HSB 647 renumbered to HF 2715 after committee approval; HF 2715 did not become law as session adjourned sine die May 3, 2026."
   },
   {
     "id": "us-ia-hsb766-2026",
@@ -74963,7 +74962,7 @@
     "bill_number": "H 2715",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "health_ai",
@@ -75002,7 +75001,7 @@
     "influenced": [],
     "official_text_url": "https://www.legis.iowa.gov/legislation/BillBook?ba=HF2715&ga=91",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to chatbots, including deployer requirements and interactions with minors.",
     "notable": null,
     "ai_specific": true,
@@ -75019,9 +75018,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ia-h2715-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-03",
-    "last_action_description": "House companion chatbot bill superseded by SF 2417, which Governor Reynolds signed into law on May 3, 2026."
+    "last_action_description": "Iowa Legislature adjourned sine die May 3, 2026; companion SF 2417 was signed by Governor Reynolds — HF 2715 did not itself become law."
   },
   {
     "id": "us-ia-ssb3013-2026",
@@ -75245,7 +75243,7 @@
     "bill_number": "SSB 3118",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "health_ai"
@@ -75283,7 +75281,7 @@
     "influenced": [],
     "official_text_url": "https://www.legis.iowa.gov/legislation/BillBook?ba=SSB3118&ga=91",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to utilization review organizationsa use of artificial intelligence, prior authorization determinations and exemptions, and prepayment audits, includes applicability provisions.",
     "notable": null,
     "ai_specific": true,
@@ -75298,9 +75296,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ia-ssb3118-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_committee",
     "last_action_date": "2026-02-23",
-    "last_action_description": "Senate Health and Human Services Committee approved the bill on utilization review organizations' use of AI; renumbered as SF 2421."
+    "last_action_description": "SSB 3118 (utilization review AI) was renumbered to SF 2421; bill did not advance to enactment before Iowa adjourned sine die May 3, 2026."
   },
   {
     "id": "us-ia-s118-2025",
@@ -78160,7 +78157,7 @@
     "influenced": [],
     "official_text_url": "https://legis.la.gov/legis/BillInfo.aspx?s=2026RS&b=SB110&sbi=y",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Prohibits using a child's image to train artificial intelligence to produce child sexual abuse materials.",
     "notable": null,
     "ai_specific": true,
@@ -78178,7 +78175,7 @@
     "legal_citation": null,
     "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-13",
-    "last_action_description": "Bill prohibiting use of a child's image to train AI to produce CSAM was sent to the Governor on May 13, 2026."
+    "last_action_description": "House passed SB 110 (banning use of children's images to train AI for CSAM) 98-0 on May 7; enrolled to Governor Landry on May 12."
   },
   {
     "id": "us-la-h119-2026",
@@ -87717,7 +87714,7 @@
     "influenced": [],
     "official_text_url": "https://malegislature.gov/Bills/194/H83/House/Bill/Text",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to an investigation and study by a special legislative commission to study load growth due to AI and data centers.",
     "notable": null,
     "ai_specific": true,
@@ -88913,7 +88910,7 @@
     "influenced": [],
     "official_text_url": "https://malegislature.gov/Bills/194/S2632",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to the use of artificial intelligence and other software tools in healthcare decision-making.",
     "notable": null,
     "ai_specific": true,
@@ -90548,7 +90545,7 @@
     "influenced": [],
     "official_text_url": "https://malegislature.gov/Bills/194/H83/House/Bill/Text",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to an investigation and study by a special legislative commission to study load growth due to AI and data centers.",
     "notable": null,
     "ai_specific": true,
@@ -92939,7 +92936,7 @@
     "influenced": [],
     "official_text_url": "https://malegislature.gov/Bills/194/S2632",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to the use of artificial intelligence and other software tools in healthcare decision-making.",
     "notable": null,
     "ai_specific": true,
@@ -108545,7 +108542,7 @@
     "influenced": [],
     "official_text_url": "https://gencourt.state.nh.us/bill_Status/billinfo.aspx?id=657&inflect=2",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Creates a study commission to oversee the use of artificial intelligence in the state.",
     "notable": null,
     "ai_specific": true,
@@ -108569,9 +108566,9 @@
     "issue_positions": {},
     "text_path": "data/texts/us-nh-s657-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_committee",
+    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-05-05",
-    "last_action_description": "Committee voted Ought to Pass 23-0 on May 5, 2026 on bill establishing an AI oversight position with the Department of Justice."
+    "last_action_description": "Senate passed SB 657 (AI oversight position in DOJ; deceptive AI cause of action; study commission) by voice vote March 26; pending House Commerce & Consumer Affairs."
   },
   {
     "id": "us-nh-h1406-2026",
@@ -112507,7 +112504,7 @@
     "influenced": [],
     "official_text_url": "https://pub.njleg.gov/Bills/2026/S4000/3611_I1.HTM",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Directs planning boards to submit certain data center development plans to Board of Public Utilities and State Planning Commission and requires State Planning Commission approval for data center development under Municipal Land Use Law (MLUL), excludes data centers from economic development subsidies.",
     "notable": null,
     "ai_specific": true,
@@ -112646,7 +112643,7 @@
     "influenced": [],
     "official_text_url": "https://pub.njleg.gov/Bills/2026/S4000/3639_I1.HTM",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Requires Board of Public Utilities, Department of Community Affairs, and Department of Environmental Protection to establish expedited approval and permitting procedures for artificial intelligence data centers powered by small modular nuclear reactors.",
     "notable": null,
     "ai_specific": true,
@@ -119981,7 +119978,7 @@
     "influenced": [],
     "official_text_url": "https://nysenate.gov/legislation/bills/2025/S934",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Requires notices on generative artificial intelligence systems, provides the owner, licensee or operator of a generative artificial intelligence system shall clearly and conspicuously display a notice on the system's user interface that the outputs of the generative artificial intelligence system may be inaccurate.",
     "notable": null,
     "ai_specific": true,
@@ -119999,7 +119996,7 @@
     "legal_citation": null,
     "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-03-09",
-    "last_action_description": "Passed Senate (substituted for S934A); returned to Assembly — enrolled and delivered to Governor"
+    "last_action_description": "S 934 substituted by Assembly companion A 3411, which passed both chambers on March 9; bill (GenAI inaccuracy warnings) awaiting Governor Hochul signature."
   },
   {
     "id": "us-ny-s1169-2026",
@@ -120792,7 +120789,7 @@
     "bill_number": "A 6578",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "employment_ai",
@@ -120831,7 +120828,7 @@
     "influenced": [],
     "official_text_url": "https://nysenate.gov/legislation/bills/2025/A6578",
     "summary_url": null,
-    "last_verified": "2026-05-15",
+    "last_verified": "2026-05-18",
     "summary": "Establishes the artificial intelligence training data transparency act requiring developers of generative artificial intelligence models or services to post on the developer's website information regarding the data used by the developer to train the generative artificial intelligence model or service, includes a high-level summary of the datasets used in the development of such system or service.",
     "notable": null,
     "ai_specific": true,
@@ -120848,9 +120845,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ny-a6578-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2026-05-05",
-    "last_action_description": "Passed Assembly; delivered to Senate, referred to Internet and Technology"
+    "last_action_date": "2026-01-07",
+    "last_action_description": "A 6578 (AI Training Data Transparency Act) died in Senate on Jan 7, 2026 after being referred to Rules June 10, 2025; Assembly passed but Senate took no action before session reset."
   },
   {
     "id": "us-ny-a6767-2026",
@@ -138839,7 +138835,7 @@
     "influenced": [],
     "official_text_url": "https://www.oklegislature.gov/BillInfo.aspx?Bill=SB1521&Session=6001",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Prohibits the creation of certain artificial intelligence chatbots, requiring certain age verification measures and protections for user data.",
     "notable": null,
     "ai_specific": true,
@@ -138859,7 +138855,7 @@
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-04-28",
-    "last_action_description": "Passed full Senate 43-0 on March 23, 2026, then passed House 90-0 with amendments on April 28, 2026; bill returned to Senate for concurrence."
+    "last_action_description": "House passed SB 1521 (AI chatbot age-verification and prohibited categories) 90-0 on April 28; bill in reconciliation."
   },
   {
     "id": "us-ok-s1734-2026",
@@ -138871,9 +138867,9 @@
     "instrument_type": "bill",
     "instrument_binding": false,
     "bill_number": "S 1734",
-    "enacted_date": null,
+    "enacted_date": "2026-05-14",
     "effective_date": null,
-    "status": "proposed",
+    "status": "enacted_not_yet_effective",
     "superseded_by": null,
     "categories": [
       "education_ai"
@@ -138911,7 +138907,7 @@
     "influenced": [],
     "official_text_url": "https://www.oklegislature.gov/BillInfo.aspx?Bill=SB1734&Session=6001",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to schools, states legislative findings, creates the State Responsible Technology in Schools Act, provides purpose, defines terms, directs certain artificial intelligence tools to be implemented in public school districts under certain direction, requires artificial intelligence use to comply with certain provisions, directs school districts to provide certain parents and legal guardians with certain written disclosure with certain frequency, provides for contents of disclosure.",
     "notable": null,
     "ai_specific": true,
@@ -138926,9 +138922,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-ok-s1734-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2026-03-23",
-    "last_action_description": "Approved by full Senate 42-0 on March 23, 2026, and sent to House for consideration."
+    "last_action_date": "2026-05-14",
+    "last_action_description": "Governor Stitt signed SB 1734 (Oklahoma Responsible Technology in Schools Act) on May 14 as part of a batch of 48 bills."
   },
   {
     "id": "us-ok-h1782-2026",
@@ -139824,7 +139819,7 @@
     "influenced": [],
     "official_text_url": "https://www.oklegislature.gov/BillInfo.aspx?Bill=HB3545&Session=6001",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to technology, provides definitions, clarifies applicability of act, establishes prohibited uses of artificial intelligence (AI) by state agencies, establishes allowed uses of AI and applicable restrictions, directs state agencies to take action and report compliance to the Office of Management and Enterprise Services (OMES), requires future AI systems comply with act, directs OMES to provide report on AI systems used by state agencies, provides for codification, provides an effective date.",
     "notable": null,
     "ai_specific": true,
@@ -139895,7 +139890,7 @@
     "influenced": [],
     "official_text_url": "https://www.oklegislature.gov/BillInfo.aspx?Bill=HB3546&Session=6001",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to technology, prohibits the granting of personhood to artificial intelligence systems, environmental elements, nonhuman animals, and inanimate objects, clarifies act does not revoke personhood of entities currently recognized, provides for codification, provides an effective date.",
     "notable": null,
     "ai_specific": true,
@@ -143273,7 +143268,7 @@
     "influenced": [],
     "official_text_url": "https://www.legis.state.pa.us/cfdocs/billInfo/billInfo.cfm?sYear=2025&sInd=0&body=S&type=B&bn=1090",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Provides for disclosures and safeguards relating to the use of artificial intelligence, imposes duties on the Attorney General.",
     "notable": null,
     "ai_specific": true,
@@ -143292,7 +143287,7 @@
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-03-01",
-    "last_action_description": "The SAFECHAT Act passed the Pennsylvania Senate 49-1 and now awaits action by the House."
+    "last_action_description": "Senate passed SB 1090 (SAFECHAT Act — AI companion chatbot safeguards) 49-1; pending House consideration."
   },
   {
     "id": "us-pa-s1113-2026",
@@ -149454,7 +149449,7 @@
     "influenced": [],
     "official_text_url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/788.htm",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Provides definitions related to artificial intelligence and therapy or psychotherapy, provides that a licensed professional shall not be permitted to use artificial intelligence to assist in providing supplementary support in therapy or psychotherapy where the client's therapeutic session is recorded unless the patient is informed that artificial intelligence will be used and for what purpose and the patient consents to this use.",
     "notable": null,
     "ai_specific": true,
@@ -149472,7 +149467,7 @@
     "legal_citation": null,
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-04-29",
-    "last_action_description": "Engrossed after Senate passed the AI in therapy/psychotherapy bill 44-0 on April 28, 2026; referred to House Medical, Military, Public and Municipal Affairs Committee."
+    "last_action_description": "Senate unanimously passed S 788 (AI use restrictions in therapy/psychotherapy) on April 28; pending House consideration."
   },
   {
     "id": "us-sc-s896-2026",
@@ -154621,7 +154616,7 @@
     "influenced": [],
     "official_text_url": "https://wapp.capitol.tn.gov/apps/BillInfo/Default.aspx?BillNumber=SB677",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Requires the department to provide at least one professional development course that provides asynchronous instruction on the use of artificial intelligence in the classroom and that is made available, at no cost, to teachers in grades 6-12, requires such teachers to complete at least one department-approved professional development course on the use of artificial intelligence in the classroom by the specified date, or within two years of becoming licensed as a teacher in this state, whichever is later.",
     "notable": null,
     "ai_specific": true,
@@ -162894,7 +162889,7 @@
     "influenced": [],
     "official_text_url": "https://legislature.vermont.gov/bill/status/2025/H814",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to neurological rights and the use of artificial intelligence technology in health and human services.",
     "notable": null,
     "ai_specific": true,
@@ -162917,7 +162912,7 @@
     "legal_citation": null,
     "legislative_stage": "awaiting_signature",
     "last_action_date": "2026-05-12",
-    "last_action_description": "Delivered to Governor Phil Scott after Senate passed the neurological rights and AI in health/human services bill in concurrence with the House."
+    "last_action_description": "Vermont Senate passed H.814 (neurological rights and AI in health and human services) in concurrence with House on May 6; bill on Governor Scott's desk."
   },
   {
     "id": "us-vt-h816-2026",
@@ -162970,7 +162965,7 @@
     "influenced": [],
     "official_text_url": "https://legislature.vermont.gov/bill/status/2025/H816",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to regulating the use of artificial intelligence in the provision of mental health services.",
     "notable": null,
     "ai_specific": true,
@@ -162987,8 +162982,8 @@
     "text_path": "data/texts/us-vt-h816-2026.md",
     "legal_citation": null,
     "legislative_stage": "passed_legislature",
-    "last_action_date": "2026-05-08",
-    "last_action_description": "Read third time and passed in concurrence with proposal of amendment regulating AI in mental health services."
+    "last_action_date": "2026-05-13",
+    "last_action_description": "House refused to concur in Senate amendments to H.816 (mental health services AI restrictions); conference committee appointed."
   },
   {
     "id": "us-vt-h821-2026",
@@ -164344,7 +164339,7 @@
     "bill_number": "S 269",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "health_ai",
@@ -164383,7 +164378,7 @@
     "influenced": [],
     "official_text_url": "https://lis.virginia.gov/cgi-bin/legp604.exe?261+sum+SB269",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to use of artificial intelligence system by mental health service providers, relates to civil penalty, permits the use of an artificial intelligence system by mental health service providers for administrative support and supplementary support, as those terms are defined in the bill, and prohibits the use of an artificial intelligence system to provide therapy or counseling services without a mental health service provider, specifies that records kept by mental health service providers must.",
     "notable": null,
     "ai_specific": true,
@@ -164399,9 +164394,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-va-s269-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-02-23",
-    "last_action_description": "Passed Senate; House Communications, Technology and Innovation Committee voted to continue to 2027 session."
+    "last_action_description": "House Communications, Technology and Innovation Committee voted to carry SB 269 (AI in mental health) over to the 2027 session; did not advance in 2026."
   },
   {
     "id": "us-va-h310-2026",
@@ -164959,7 +164953,7 @@
     "bill_number": "S 586",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "health_ai",
@@ -164999,7 +164993,7 @@
     "influenced": [],
     "official_text_url": "https://lis.virginia.gov/cgi-bin/legp604.exe?261+sum+SB586",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to health carriers, relates to use of artificial intelligence, relates to disclosures, relates to right to expedited external review, relates to civil penalties, requires health carriers to disclose how artificial intelligence is used to manage claims coverage and to submit all information enabling decisions made by artificial intelligence to the State Corporation Commission upon request, prohibits health carriers from relying exclusively on artificial intelligence.",
     "notable": null,
     "ai_specific": true,
@@ -165017,9 +165011,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-va-s586-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-02-06",
-    "last_action_description": "Passed the Senate 22-18; subsequently referred to House Committee on Communications, Technology and Innovation."
+    "last_action_description": "Senate passed SB 586 (AI use by health carriers disclosure) 23-16; House continued it to 2027 session — did not advance in 2026."
   },
   {
     "id": "us-va-h635-2026",
@@ -165442,7 +165435,7 @@
     "bill_number": "S 796",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "health_ai",
@@ -165481,7 +165474,7 @@
     "influenced": [],
     "official_text_url": "https://lis.virginia.gov/cgi-bin/legp604.exe?261+sum+SB796",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Relates to Artificial Intelligence Companion Chatbots and Minors Act established, relates to enforcement, relates to civil penalties, relates to individual action, creates the Artificial Intelligence Chatbots and Minors Act to require that operators complete reasonable age verification to confirm users are at least 18 years of age prior to allowing any user to access a companion chatbot, defined the bill, provides that ensure that an operator of a widely used chatbot, defined in the bill.",
     "notable": null,
     "ai_specific": true,
@@ -165499,9 +165492,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-va-s796-2026.md",
     "legal_citation": null,
-    "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-02-24",
-    "last_action_description": "Passed the Senate 39-1; House committee voted to carry SB 796 over to 2027 and refer to the Joint Commission on Technology and Science."
+    "last_action_description": "House Communications, Technology and Innovation Committee voted to carry SB 796 (AI Chatbots and Minors Act) over to the 2027 session; did not advance in 2026."
   },
   {
     "id": "us-va-h797-2026",
@@ -171168,7 +171160,7 @@
     "bill_number": "H 1566",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "health_ai",
@@ -171207,7 +171199,7 @@
     "influenced": [],
     "official_text_url": "https://app.leg.wa.gov/billsummary?BillNumber=1566&Year=2025&Initiative=false",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Makes improvements to transparency and accountability in the prior authorization determination process.",
     "notable": null,
     "ai_specific": true,
@@ -171223,9 +171215,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-wa-h1566-2025.md",
     "legal_citation": null,
-    "legislative_stage": "passed_committee",
     "last_action_date": "2026-01-12",
-    "last_action_description": "Reintroduced and retained in present status; remains in House Appropriations Committee after favorable Health Care & Wellness Committee recommendation."
+    "last_action_description": "Washington legislature adjourned sine die March 12, 2026; bill did not advance from committee."
   },
   {
     "id": "us-wa-h1622-2025",
@@ -171239,7 +171230,7 @@
     "bill_number": "H 1622",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "employment_ai",
@@ -171278,7 +171269,7 @@
     "influenced": [],
     "official_text_url": "https://lawfilesext.leg.wa.gov/biennium/2025-26/Htm/Bills/House%20Bills/1622.htm",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Allows bargaining over matters related to the use of artificial intelligence.",
     "notable": null,
     "ai_specific": true,
@@ -171294,9 +171285,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-wa-h1622-2025.md",
     "legal_citation": null,
-    "legislative_stage": "passed_committee",
     "last_action_date": "2026-02-03",
-    "last_action_description": "Referred to House Rules Committee for second reading."
+    "last_action_description": "Washington legislature adjourned sine die March 12, 2026; bill did not advance from committee."
   },
   {
     "id": "us-wa-h1671-2025",
@@ -171380,7 +171370,7 @@
     "bill_number": "H 1672",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "employment_ai",
@@ -171419,7 +171409,7 @@
     "influenced": [],
     "official_text_url": "https://app.leg.wa.gov/billsummary?BillNumber=1672&Year=2025&Initiative=false",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Addresses technology, uses by employers in the workplace.",
     "notable": null,
     "ai_specific": true,
@@ -171435,9 +171425,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-wa-h1672-2025.md",
     "legal_citation": null,
-    "legislative_stage": "passed_committee",
     "last_action_date": "2026-01-12",
-    "last_action_description": "Reintroduced and retained in present status; remains in House Appropriations Committee after Labor & Workplace Standards Committee favorable recommendation."
+    "last_action_description": "Washington legislature adjourned sine die March 12, 2026; bill did not advance from committee."
   },
   {
     "id": "us-wa-h1833-2025",
@@ -171874,7 +171863,7 @@
     "bill_number": "S 5227",
     "enacted_date": null,
     "effective_date": null,
-    "status": "proposed",
+    "status": "failed",
     "superseded_by": null,
     "categories": [
       "synthetic_media_deepfake",
@@ -171913,7 +171902,7 @@
     "influenced": [],
     "official_text_url": "https://lawfilesext.leg.wa.gov/biennium/2025-26/Htm/Bills/Senate%20Bills/5227.htm",
     "summary_url": null,
-    "last_verified": "2026-05-14",
+    "last_verified": "2026-05-18",
     "summary": "Concerns offenses involving child sex dolls.",
     "notable": null,
     "ai_specific": true,
@@ -171929,9 +171918,8 @@
     "issue_positions": {},
     "text_path": "data/texts/us-wa-s5227-2025.md",
     "legal_citation": null,
-    "legislative_stage": "passed_committee",
     "last_action_date": "2026-02-26",
-    "last_action_description": "Placed on Senate Rules 'X' file."
+    "last_action_description": "Washington legislature adjourned sine die March 12, 2026; bill did not advance from committee."
   },
   {
     "id": "us-wa-s5395-2025",
@@ -194185,5 +194173,69 @@
     "legislative_stage": "introduced",
     "last_action_date": "2026-04-01",
     "last_action_description": "Senate Joint Resolution proposing a feasibility study for AI-Supported Precision Medicine program in Puerto Rico; no committee action confirmed"
+  },
+  {
+    "id": "us-co-sb189-2026",
+    "short_name": "Colorado SB 26-189 (Automated Decision-Making Technology)",
+    "full_name": "Colorado Senate Bill 26-189 — Automated Decision-Making Technology",
+    "country": "United States",
+    "jurisdiction": "Colorado",
+    "jurisdiction_type": "subnational",
+    "region": "US-CO",
+    "status": "enacted_not_yet_effective",
+    "enacted_date": "2026-05-14",
+    "effective_date": "2027-01-01",
+    "operative_dates": "Signed May 14, 2026; effective January 1, 2027; AG rulemaking required by January 1, 2027; 60-day cure period available through January 1, 2030.",
+    "last_verified": "2026-05-18",
+    "source_url": "https://leg.colorado.gov/bills/sb26-189",
+    "primary_category": "algorithmic_systems",
+    "categories": [
+      "algorithmic_systems",
+      "general_ai_governance"
+    ],
+    "legal_family": "us_consumer_protection",
+    "instrument_binding": true,
+    "ai_specific": true,
+    "summary": "Repeals and replaces the 2024 Colorado AI Act (SB 24-205) with a narrower consumer-protection framework focused on automated decision-making technology (ADMT) used in consequential decisions in employment, housing, lending, insurance, healthcare, education, and essential government services. Eliminates the prior law's mandatory impact assessments, risk-assessment programs, and duty of reasonable care to prevent algorithmic discrimination; instead requires developer technical documentation, consumer notice when ADMT is used, post-adverse-outcome explanations within 30 days, data access and correction rights, and meaningful human review. Enforced exclusively by the Colorado Attorney General as a deceptive trade practice under the Colorado Consumer Protection Act, with no private right of action.",
+    "provisions": {
+      "private_right_of_action": false,
+      "max_penalty_usd_approx": null,
+      "enforcement_body": "Colorado Attorney General",
+      "extraterritorial": false
+    },
+    "inspired_by": [
+      "us-co-sb205-2024"
+    ],
+    "influenced": [],
+    "text_path": "data/texts/us-co-sb189-2026.md"
+  },
+  {
+    "id": "fr-fr-presomptionia-2025",
+    "short_name": "France AI Cultural Content Use Presumption Bill",
+    "full_name": "Proposition de loi relative à l'instauration d'une présomption d'utilisation des contenus culturels par les fournisseurs d'intelligence artificielle",
+    "country": "France",
+    "jurisdiction": "France",
+    "jurisdiction_type": "national",
+    "region": "Europe",
+    "status": "proposed",
+    "bill_number": "PPL Sénat n° 220 (2025-2026)",
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2026-05-11",
+    "last_action_description": "Assemblée nationale Conference of Group Presidents (11 May 2026) declined to inscribe the bill on the upcoming bipartisan-week agenda; bill remains pending first reading at the AN after Senate adoption on 8 April 2026 and transmission on 9 April 2026.",
+    "last_verified": "2026-05-18",
+    "source_url": "https://www.senat.fr/dossier-legislatif/ppl25-220.html",
+    "official_text_url": "https://www.senat.fr/leg/ppl25-220.html",
+    "primary_category": "intellectual_property",
+    "categories": [
+      "intellectual_property",
+      "general_ai_governance"
+    ],
+    "legal_family": "standalone",
+    "instrument_binding": true,
+    "ai_specific": true,
+    "summary": "Senator Laure Darcos's bill would establish a rebuttable legal presumption that providers of generative AI systems used protected cultural content (texts, images, photographs, music, articles) when training their models, reversing the burden of proof so AI developers must demonstrate non-use rather than rights-holders proving infringement. Adopted by the French Senate on 8 April 2026 and transmitted to the Assemblée nationale on 9 April 2026, the bill is intended to give French and European cultural-content rights-holders a practical evidentiary tool against opaque generative AI training practices.",
+    "inspired_by": [],
+    "influenced": [],
+    "text_path": "data/texts/fr-fr-presomptionia-2025.md"
   }
 ]
