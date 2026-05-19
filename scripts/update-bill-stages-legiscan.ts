@@ -132,6 +132,7 @@ async function main() {
   const { sessions: allSessions } = await legiscan({ op: 'getSessionList', state: 'ALL' })
 
   const updates = new Map<string, Record<string, any>>()
+  const unmatchedIds: string[] = []
   let totalMatched = 0
 
   for (const [state, bills] of Object.entries(byState)) {
@@ -212,6 +213,7 @@ async function main() {
 
     totalMatched += matched.size
     const unmatched = bills.length - matched.size
+    bills.filter(b => !matched.has(b.id)).forEach(b => unmatchedIds.push(b.id))
     console.log(`  ${state}: ${matched.size}/${bills.length} matched${unmatched ? ` (${unmatched} not in LegiScan)` : ''}`)
   }
 
@@ -239,6 +241,9 @@ async function main() {
 
   writeFileSync(join(ROOT, 'data/regulations.json'), JSON.stringify(result, null, 2))
   console.log('Written to data/regulations.json')
+
+  writeFileSync('/tmp/legiscan-unmatched.json', JSON.stringify(unmatchedIds, null, 2))
+  console.log(`Unmatched: ${unmatchedIds.length} bill(s) → /tmp/legiscan-unmatched.json`)
 }
 
 main().catch(e => { console.error(e); process.exit(1) })

@@ -220,62 +220,294 @@ jobs:
           mv /tmp/regulations-promoted.json data/regulations.json
           echo "Promoted $PROMOTED law(s) to in_force"
 
-      # ── Step 3: Bill stage updates (US + international) ──────────────────────
-      - name: Update bill stages
+      # ── Step 3a: LegiScan — US state bills (authoritative API) ────────────────
+      - name: Bill stages — US states (LegiScan API)
+        continue-on-error: true
+        env:
+          LEGISCAN_API_KEY: ${{ secrets.LEGISCAN_API_KEY }}
+        run: |
+          if [ -z "$LEGISCAN_API_KEY" ]; then
+            echo "LEGISCAN_API_KEY not set — skipping LegiScan, all US bills go to fallback"
+            echo "[]" > /tmp/legiscan-unmatched.json
+          else
+            npx tsx scripts/update-bill-stages-legiscan.ts
+          fi
+
+      # ── Step 3b: Five parallel regional agents ────────────────────────────────
+      - name: Bill stages — regional agents (parallel)
+        continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           TODAY=$(date +%Y-%m-%d)
-          cat << PROMPT | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,Read,Write"
-          You are maintaining the GAIA bill stage database.
-          Today is $TODAY. The database is at data/regulations.json.
+          # Initialise output files so merge step always finds valid JSON
+          for region in europe apac americas africa-me us-fallback; do
+            printf '{}' > /tmp/updates-${region}.json
+          done
 
-          TASK 1 — Catch enacted and failed bills (US states):
-          Search for US state AI bills signed into law OR failed/died in the past 7 days:
-            "AI bill signed governor 2026"
-            "AI bill failed vetoed state legislature 2026"
-          For any bill found in data/regulations.json (match by bill_number or short_name):
-          - Signed: status → in_force or enacted_not_yet_effective, set enacted_date,
-            remove legislative_stage
-          - Failed/died/vetoed: status → failed or vetoed, remove legislative_stage
+          PIDS=()
 
-          TASK 2 — Catch enacted and failed international bills:
-          Search for AI bills enacted or failed in the past 7 days in these jurisdictions:
-          - UK: "UK artificial intelligence bill royal assent 2026" / "AI bill rejected Lords Commons"
-          - EU: check EUR-Lex for any AI legislative procedures moved to in_force this week
-          - Canada: "Canada artificial intelligence act passed 2026"
-          - Australia: "Australia AI bill passed 2026"
-          - Japan: "人工知能 法律 成立 2026" (AI law enacted)
-          - South Korea: "인공지능 법 통과 2026" (AI law passed)
-          - Brazil: "lei inteligência artificial sancionada 2026"
-          - Any other country where an AI bill was enacted or failed
-          Match against existing records and update status accordingly.
+          # ── Europe agent ──────────────────────────────────────────────────────
+          (cat << EUROPE_DONE | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,WebFetch,Read,Write"
+          You are the Europe bill-stage agent for GAIA — Global AI Atlas.
+          Today is $TODAY. You run in parallel with other regional agents — do NOT modify data/regulations.json.
 
-          TASK 3 — Advance high-momentum bills (all jurisdictions):
-          Read all records in data/regulations.json where status=proposed and
-          legislative_stage is awaiting_signature, passed_legislature, or
-          passed_one_chamber. Verify current status for each and update if changed.
+          YOUR JURISDICTIONS: UK, European Union (EP/Commission/Council), Germany, France, Netherlands, Italy, Spain, Sweden, Denmark, Norway, Finland, Switzerland, Belgium, Austria, Poland, Czech Republic, Hungary, Romania, Greece, Portugal, Ireland, Council of Europe, Iceland, Liechtenstein, Estonia, Latvia, Lithuania, Slovenia, Slovakia, Croatia, Bulgaria, Serbia, North Macedonia, Albania, Moldova, Ukraine, Georgia, Armenia, Azerbaijan, Kazakhstan, Uzbekistan, Kyrgyzstan, Tajikistan, Turkmenistan
 
-          Also check passed_committee records — search for whether they have had a floor vote.
+          TASK 1 — Load your bills.
+          Read data/regulations.json. Collect all records where:
+            - status = "proposed"
+            - country or jurisdiction is in your jurisdiction list
 
-          Priority sources by jurisdiction:
-          - US states: LegiScan, official state legislature websites, Ballotpedia
-          - UK: bills.parliament.uk
-          - EU: eur-lex.europa.eu/procedure
-          - Canada: parl.ca/legisinfo
-          - Australia: aph.gov.au/Bills_Legislation
-          - Japan: kokkai.ndl.go.jp
-          - Korea: assembly.go.kr
-          - Brazil: camara.leg.br / senado.leg.br
+          TASK 2 — Verify high-momentum bills first.
+          For each bill at stage awaiting_signature, passed_legislature, passed_one_chamber, or passed_committee:
+            - Use WebFetch to check the bill's source_url directly
+            - Search: "[jurisdiction] [bill_number or short_name] [year]"
 
-          For any updated record set:
-          - legislative_stage: updated value
-          - last_action_date: YYYY-MM-DD
-          - last_action_description: one plain-English sentence
-          - last_verified: $TODAY
+          TASK 3 — Broad enacted/failed search (past 7 days).
+          Run these searches:
+            "UK artificial intelligence bill 2026"
+            "EU AI Act implementing regulation 2026 official journal"
+            "European Parliament AI vote 2026"
+            "Bundestag KI Gesetz 2026"
+            "France assemblée nationale intelligence artificielle 2026"
+            "Russia artificial intelligence law 2026"
+            "Россия искусственный интеллект закон 2026"
 
-          Only update when you have a reliable source. If nothing changed, do not modify.
-          PROMPT
+          Key sources: bills.parliament.uk, eur-lex.europa.eu, europarl.europa.eu, bundestag.de, assemblee-nationale.fr, tweedekamer.nl, camera.it
+
+          TASK 4 — Update lower-momentum bills.
+          For in_committee or introduced bills: run targeted searches to check if they have advanced.
+          Focus on bills with no last_action_date or last_action_date older than 30 days.
+
+          TASK 5 — Write your results.
+          Write a single JSON object to /tmp/updates-europe.json:
+          {
+            "bill-id": {
+              "legislative_stage": "introduced|in_committee|passed_committee|passed_one_chamber|passed_legislature|awaiting_signature",
+              "last_action_date": "YYYY-MM-DD",
+              "last_action_description": "One plain-English sentence describing the action",
+              "last_verified": "$TODAY"
+            }
+          }
+          For terminal outcomes: set "status": "failed"|"vetoed"|"in_force" and omit legislative_stage.
+          For enacted bills: also set "enacted_date": "YYYY-MM-DD".
+          If no verified updates found: write exactly {}
+          Do NOT include records you could not verify from an official source.
+          EUROPE_DONE
+          ) > /tmp/log-europe.txt 2>&1 &
+          PIDS+=($!)
+
+          # ── APAC agent ────────────────────────────────────────────────────────
+          (cat << APAC_DONE | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,WebFetch,Read,Write"
+          You are the Asia-Pacific bill-stage agent for GAIA — Global AI Atlas.
+          Today is $TODAY. You run in parallel with other regional agents — do NOT modify data/regulations.json.
+
+          YOUR JURISDICTIONS: Japan, South Korea, Australia, India, China, Singapore, New Zealand, Indonesia, Malaysia, Philippines, Taiwan, Vietnam, Thailand, Bangladesh, Pakistan, Sri Lanka, Myanmar, Cambodia, Laos, Mongolia, Nepal, Bhutan, Maldives, Papua New Guinea, Fiji, Vanuatu, Tonga, Samoa
+
+          TASK 1 — Load your bills.
+          Read data/regulations.json. Collect all records where:
+            - status = "proposed"
+            - country or jurisdiction is in your jurisdiction list
+
+          TASK 2 — Verify high-momentum bills first.
+          For each bill at stage awaiting_signature, passed_legislature, passed_one_chamber, or passed_committee:
+            - Use WebFetch to check the bill's source_url directly
+            - Search: "[jurisdiction] [bill_number or short_name] [year]"
+
+          TASK 3 — Broad enacted/failed search (past 7 days).
+          Run these searches:
+            "Japan AI law 2026"
+            "人工知能 法律 成立 2026"
+            "인공지능 법 통과 2026"
+            "Australia AI bill passed 2026"
+            "India AI regulation bill Lok Sabha 2026"
+            "China AI regulation 2026"
+            "中国 人工智能 法规 2026"
+            "Singapore AI bill 2026"
+
+          Key sources: aph.gov.au, assembly.go.kr, kokkai.ndl.go.jp, loksabha.nic.in, parliament.gov.sg, npc.gov.cn
+
+          TASK 4 — Update lower-momentum bills.
+          For in_committee or introduced bills: run targeted searches to check if they have advanced.
+          Focus on bills with no last_action_date or last_action_date older than 30 days.
+
+          TASK 5 — Write your results.
+          Write a single JSON object to /tmp/updates-apac.json:
+          {
+            "bill-id": {
+              "legislative_stage": "introduced|in_committee|passed_committee|passed_one_chamber|passed_legislature|awaiting_signature",
+              "last_action_date": "YYYY-MM-DD",
+              "last_action_description": "One plain-English sentence describing the action",
+              "last_verified": "$TODAY"
+            }
+          }
+          For terminal outcomes: set "status": "failed"|"vetoed"|"in_force" and omit legislative_stage.
+          For enacted bills: also set "enacted_date": "YYYY-MM-DD".
+          If no verified updates found: write exactly {}
+          Do NOT include records you could not verify from an official source.
+          APAC_DONE
+          ) > /tmp/log-apac.txt 2>&1 &
+          PIDS+=($!)
+
+          # ── Americas agent ────────────────────────────────────────────────────
+          (cat << AMERICAS_DONE | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,WebFetch,Read,Write"
+          You are the Americas bill-stage agent for GAIA — Global AI Atlas.
+          Today is $TODAY. You run in parallel with other regional agents — do NOT modify data/regulations.json.
+
+          YOUR JURISDICTIONS: Canada, Brazil, Mexico, Argentina, Chile, Colombia, Peru, Uruguay, Ecuador, Bolivia, Costa Rica, Panama, Guatemala, Honduras, El Salvador, Nicaragua, Dominican Republic, Haiti, Jamaica, Trinidad and Tobago, Barbados, Guyana, Suriname, Venezuela, Paraguay, Cuba
+
+          TASK 1 — Load your bills.
+          Read data/regulations.json. Collect all records where:
+            - status = "proposed"
+            - country or jurisdiction is in your jurisdiction list
+
+          TASK 2 — Verify high-momentum bills first.
+          For each bill at stage awaiting_signature, passed_legislature, passed_one_chamber, or passed_committee:
+            - Use WebFetch to check the bill's source_url directly
+            - Search: "[jurisdiction] [bill_number or short_name] [year]"
+
+          TASK 3 — Broad enacted/failed search (past 7 days).
+          Run these searches:
+            "Canada artificial intelligence act passed 2026"
+            "Brazil inteligência artificial lei sancionada 2026"
+            "Mexico inteligencia artificial ley 2026"
+            "Colombia inteligencia artificial proyecto de ley 2026"
+            "Chile inteligencia artificial ley 2026"
+            "Argentina inteligencia artificial proyecto de ley 2026"
+
+          Key sources: parl.ca/legisinfo, camara.leg.br, senado.leg.br, congreso.gob.mx, congreso.gob.co
+
+          TASK 4 — Update lower-momentum bills.
+          For in_committee or introduced bills: run targeted searches to check if they have advanced.
+          Focus on bills with no last_action_date or last_action_date older than 30 days.
+
+          TASK 5 — Write your results.
+          Write a single JSON object to /tmp/updates-americas.json:
+          {
+            "bill-id": {
+              "legislative_stage": "introduced|in_committee|passed_committee|passed_one_chamber|passed_legislature|awaiting_signature",
+              "last_action_date": "YYYY-MM-DD",
+              "last_action_description": "One plain-English sentence describing the action",
+              "last_verified": "$TODAY"
+            }
+          }
+          For terminal outcomes: set "status": "failed"|"vetoed"|"in_force" and omit legislative_stage.
+          For enacted bills: also set "enacted_date": "YYYY-MM-DD".
+          If no verified updates found: write exactly {}
+          Do NOT include records you could not verify from an official source.
+          AMERICAS_DONE
+          ) > /tmp/log-americas.txt 2>&1 &
+          PIDS+=($!)
+
+          # ── Africa & Middle East agent ─────────────────────────────────────────
+          (cat << AFRICAME_DONE | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,WebFetch,Read,Write"
+          You are the Africa & Middle East bill-stage agent for GAIA — Global AI Atlas.
+          Today is $TODAY. You run in parallel with other regional agents — do NOT modify data/regulations.json.
+
+          YOUR JURISDICTIONS: South Africa, Nigeria, Kenya, Ghana, Rwanda, Ethiopia, Tanzania, Uganda, Senegal, Egypt, Morocco, Tunisia, Algeria, Libya, Sudan, Côte d'Ivoire, Cameroon, Mozambique, Zimbabwe, Zambia, Botswana, Namibia, Malawi, UAE, Saudi Arabia, Israel, Qatar, Kuwait, Bahrain, Oman, Jordan, Lebanon, Iraq, Iran, Syria, Yemen, Turkey
+
+          TASK 1 — Load your bills.
+          Read data/regulations.json. Collect all records where:
+            - status = "proposed"
+            - country or jurisdiction is in your jurisdiction list
+
+          TASK 2 — Verify high-momentum bills first.
+          For each bill at stage awaiting_signature, passed_legislature, passed_one_chamber, or passed_committee:
+            - Use WebFetch to check the bill's source_url directly
+            - Search: "[jurisdiction] [bill_number or short_name] [year]"
+
+          TASK 3 — Broad enacted/failed search (past 7 days).
+          Run these searches:
+            "South Africa AI bill 2026"
+            "Nigeria artificial intelligence bill 2026"
+            "Kenya data protection AI 2026"
+            "UAE artificial intelligence regulation 2026"
+            "Saudi Arabia AI regulation 2026"
+            "Israel artificial intelligence bill 2026"
+            "Turkey yapay zeka kanun 2026"
+            "Bahrain AI regulation 2026"
+
+          Key sources: parliament.gov.za, nass.gov.ng, parliament.go.ke, uaecabinet.ae, knesset.gov.il
+
+          TASK 4 — Update lower-momentum bills.
+          For in_committee or introduced bills: run targeted searches to check if they have advanced.
+          Focus on bills with no last_action_date or last_action_date older than 30 days.
+
+          TASK 5 — Write your results.
+          Write a single JSON object to /tmp/updates-africa-me.json:
+          {
+            "bill-id": {
+              "legislative_stage": "introduced|in_committee|passed_committee|passed_one_chamber|passed_legislature|awaiting_signature",
+              "last_action_date": "YYYY-MM-DD",
+              "last_action_description": "One plain-English sentence describing the action",
+              "last_verified": "$TODAY"
+            }
+          }
+          For terminal outcomes: set "status": "failed"|"vetoed"|"in_force" and omit legislative_stage.
+          For enacted bills: also set "enacted_date": "YYYY-MM-DD".
+          If no verified updates found: write exactly {}
+          Do NOT include records you could not verify from an official source.
+          AFRICAME_DONE
+          ) > /tmp/log-africa-me.txt 2>&1 &
+          PIDS+=($!)
+
+          # ── US fallback agent ─────────────────────────────────────────────────
+          (cat << USFALLBACK_DONE | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,WebFetch,Read,Write"
+          You are the US fallback bill-stage agent for GAIA — Global AI Atlas.
+          Today is $TODAY. You run in parallel with other regional agents — do NOT modify data/regulations.json.
+
+          YOUR SCOPE: Unmatched US state bills (not found by LegiScan) + US federal/Congress bills.
+
+          TASK 1 — Load unmatched US state bills.
+          Read /tmp/legiscan-unmatched.json (list of bill IDs LegiScan could not match).
+          If the file is missing or empty ([] or {}), skip US state fallback entirely.
+          For each unmatched bill ID: look it up in data/regulations.json to get short_name, bill_number, and region (state abbreviation).
+          Search: "[Full State Name] [bill_number] AI 2026"
+
+          TASK 2 — Check US Congress (federal level).
+          Read data/regulations.json. Collect all proposed bills where jurisdiction matches "US Congress" or "United States Congress".
+          Search congress.gov for their current status.
+          Broad searches:
+            "US Senate AI bill 2026"
+            "US Congress artificial intelligence act 2026"
+
+          Key sources: state legislature .gov sites, congress.gov, govtrack.us
+
+          TASK 3 — Write your results.
+          Write a single JSON object to /tmp/updates-us-fallback.json:
+          {
+            "bill-id": {
+              "legislative_stage": "introduced|in_committee|passed_committee|passed_one_chamber|passed_legislature|awaiting_signature",
+              "last_action_date": "YYYY-MM-DD",
+              "last_action_description": "One plain-English sentence describing the action",
+              "last_verified": "$TODAY"
+            }
+          }
+          For terminal outcomes: set "status": "failed"|"vetoed"|"in_force" and omit legislative_stage.
+          For enacted bills: also set "enacted_date": "YYYY-MM-DD".
+          If no verified updates found: write exactly {}
+          Do NOT include records you could not verify from an official source.
+          USFALLBACK_DONE
+          ) > /tmp/log-us-fallback.txt 2>&1 &
+          PIDS+=($!)
+
+          # ── Wait for all agents ───────────────────────────────────────────────
+          FAILURES=0
+          for pid in "${PIDS[@]}"; do
+            wait "$pid" || { echo "Agent $pid failed"; ((FAILURES++)) || true; }
+          done
+          echo "Regional agents complete: $FAILURES failure(s)"
+
+          # Print logs
+          for region in europe apac americas africa-me us-fallback; do
+            echo "=== $region ==="
+            cat /tmp/log-${region}.txt
+          done
+
+      # ── Step 3c: Merge regional updates ──────────────────────────────────────
+      - name: Merge regional bill stage updates
+        run: npx tsx scripts/apply-bill-updates.ts /tmp/updates-europe.json /tmp/updates-apac.json /tmp/updates-americas.json /tmp/updates-africa-me.json /tmp/updates-us-fallback.json
 
       # ── Step 4: Enforcement actions ───────────────────────────────────────────
       - name: Research new enforcement actions
