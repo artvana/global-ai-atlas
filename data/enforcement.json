@@ -1,5 +1,18 @@
 [
   {
+    "id": "enf-ftc-cmg-active-listening-2026",
+    "law_id": "us-ftc-aipolicy-2023",
+    "law_short_name": "FTC AI Policy Statement",
+    "date": "2026-05-21",
+    "enforcement_body": "FTC",
+    "respondent": "CMG Media Corporation (Cox Media Group), MindSift LLC, 1010 Digital Works LLC",
+    "violation_type": "Deceptive marketing of an 'Active Listening' AI service that falsely claimed to capture real-time consumer conversations via smart-device microphones for ad targeting",
+    "amount_usd": 930000,
+    "outcome": "Consent agreements — $880,000 from CMG plus $25,000 each from MindSift and 1010 Digital Works; prohibition on misrepresenting data collection methods or consumer consent",
+    "summary": "FTC settled with three firms over the 'Active Listening' service, which was marketed to small businesses as an AI-powered tool that captured real-time conversations from consumers' smart devices to target localized ads. The FTC found no consumer consent was actually obtained — the companies characterized routine click-through ToS acceptance as opt-in — and the underlying service was a resale of purchased email lists. The combined $930,000 settlement is the first FTC action specifically targeting AI-powered surveillance-marketing claims.",
+    "source_url": "https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-require-cox-media-group-two-other-firms-pay-nearly-1-million-settle-charges-they-deceived"
+  },
+  {
     "id": "enf-defiance-revenge-2024",
     "law_id": "us-fed-defiance-act-2024",
     "law_short_name": "DEFIANCE Act",

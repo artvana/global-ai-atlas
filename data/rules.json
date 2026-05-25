@@ -14115,6 +14115,14 @@
         "notes": "Virginia H 310 — Artificial Intelligence Workforce Impact Act (Virginia) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-ca-eo-n6-26-2026",
+        "relationship": "similar",
+        "citation": "Order ¶ 1",
+        "notes": "Both direct a government actor to study AI's workforce impact including disproportionate demographic effects, but the CA EO tasks state agencies (LWDA, GO-Biz, DOF) to deliver within 90 days a review of the existing academic research on California's labor market, rather than commissioning a new National Academies study.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
       }
     ]
   },
@@ -372899,6 +372907,101 @@
         "notes": "Rule introduced in Maryland S 198 — Aerospace Technology Studies Program (2026-04-10).",
         "instrument_binding": true,
         "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-ca-eo-n6-26-2026-warn-act-ai-review",
+    "rule_text": "The lead state labor agency must, within 180 days, review and recommend revisions to the state's mass-layoff notification law (WARN Act) so that it serves as an effective early-warning system for AI- and other technology-driven workforce disruption.",
+    "rule_text_technical": "Within 180 days of issuance, the Labor and Workforce Development Agency shall review and provide to the Governor recommendations on revisions and updates to the California Worker Adjustment and Retraining Notification (WARN) Act in a manner that is responsive to, and effectively provides early warning data on, emerging industry trends.",
+    "category": "employment",
+    "tags": [
+      "warn_act",
+      "layoff_notification",
+      "ai_workforce_disruption",
+      "study_mandate",
+      "early_warning"
+    ],
+    "first_instance": {
+      "law_id": "us-ca-eo-n6-26-2026",
+      "law_name": "California EO N-6-26 (AI Workforce Disruption)",
+      "citation": "Order ¶ 2",
+      "date": "2026-05-21"
+    },
+    "instances": [
+      {
+        "law_id": "us-ca-eo-n6-26-2026",
+        "relationship": "origin",
+        "citation": "Order ¶ 2",
+        "notes": "Rule introduced in California EO N-6-26 (2026-05-21); directs LWDA to submit WARN Act revision recommendations responsive to AI-driven layoffs within 180 days of May 21, 2026.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-ca-eo-n6-26-2026-ai-employment-dashboard",
+    "rule_text": "The state employment agency must, within 90 days, launch a public dashboard showing AI's impacts on employment across sectors using unemployment-insurance data, and may consult with leading AI labs that have published related data to build it out.",
+    "rule_text_technical": "Within 90 days of issuance, the Employment Development Department shall launch a dashboard showing AI's impacts on employment across various sectors using Unemployment Insurance data; EDD may consult with leading AI labs that have published related data to build out its dashboard.",
+    "category": "employment",
+    "tags": [
+      "ai_employment_dashboard",
+      "labor_market_data",
+      "unemployment_insurance",
+      "workforce_monitoring",
+      "transparency"
+    ],
+    "first_instance": {
+      "law_id": "us-ca-eo-n6-26-2026",
+      "law_name": "California EO N-6-26 (AI Workforce Disruption)",
+      "citation": "Order ¶ 7",
+      "date": "2026-05-21"
+    },
+    "instances": [
+      {
+        "law_id": "us-ca-eo-n6-26-2026",
+        "relationship": "origin",
+        "citation": "Order ¶ 7",
+        "notes": "Rule introduced in California EO N-6-26 (2026-05-21); directs EDD to launch an AI employment-impact dashboard using UI data within 90 days.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
+      },
+      {
+        "law_id": "us-ny-s8928-2026",
+        "relationship": "similar",
+        "citation": "§ 5(1)-(2)",
+        "notes": "Both place a government-run workforce-tracking instrument inside the state labor agency to monitor AI's labor-market impact, but the NY rule (in a bill) is a two-year pilot within the Department of Labor while CA's EO directs EDD to stand up a public-facing dashboard built on unemployment-insurance data within 90 days.",
+        "instrument_binding": false,
+        "instrument_type": "bill"
+      }
+    ]
+  },
+  {
+    "rule_id": "us-ca-eo-n6-26-2026-dislocated-worker-ai-playbook",
+    "rule_text": "The state employment agency, in partnership with local workforce development boards, must develop an AI playbook to expand dislocated-worker strategies for occupations exposed to AI and provide technical assistance on using federal workforce funds for AI-literacy programs.",
+    "rule_text_technical": "No later than October 15, 2026, the Employment Development Department, in partnership with local workforce development boards, shall develop an AI playbook to expand dislocated worker strategies for occupations exposed to AI and provide Local Boards with technical assistance on the utilization of Workforce Innovation and Opportunity Act resources for AI literacy-related programs.",
+    "category": "employment",
+    "tags": [
+      "dislocated_workers",
+      "ai_playbook",
+      "workforce_innovation_opportunity_act",
+      "ai_literacy",
+      "workforce_development"
+    ],
+    "first_instance": {
+      "law_id": "us-ca-eo-n6-26-2026",
+      "law_name": "California EO N-6-26 (AI Workforce Disruption)",
+      "citation": "Order ¶ 5",
+      "date": "2026-05-21"
+    },
+    "instances": [
+      {
+        "law_id": "us-ca-eo-n6-26-2026",
+        "relationship": "origin",
+        "citation": "Order ¶ 5",
+        "notes": "Rule introduced in California EO N-6-26 (2026-05-21); directs EDD with local workforce boards to develop an AI playbook for dislocated workers and provide WIOA technical assistance for AI literacy programs by October 15, 2026.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
       }
     ]
   }
