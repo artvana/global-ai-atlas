@@ -1,5 +1,191 @@
 [
   {
+    "date": "2026-05-25",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "us-ca-eo-n6-26-2026",
+        "name": "California EO N-6-26 (AI Workforce Disruption)",
+        "jurisdiction": "United States",
+        "status": "in_force"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-il-s2927-2026",
+        "name": "Illinois S 2927 — Commerce and Economic Opportunity Law",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s2993-2026",
+        "name": "Illinois S 2993 — Medical Practice Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s2995-2026",
+        "name": "Illinois S 2995 — Consumer Fraud and Deceptive Business Practices Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s2996-2026",
+        "name": "Illinois S 2996 — Election Code",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3027-2026",
+        "name": "Illinois S 3027 — Fair Patient Billing Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3180-2026",
+        "name": "Illinois S 3180 — Artificial Intelligence Data Privacy Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3261-2026",
+        "name": "Illinois S 3261 — Artificial Intelligence Safety",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3262-2026",
+        "name": "Illinois S 3262 — Companion Artificial Intelligence Protection Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3263-2026",
+        "name": "Illinois S 3263 — Artificial Intelligence Provenance Data Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3312-2026",
+        "name": "Illinois S 3312 — Artificial Intelligence Safety Measures Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3364-2026",
+        "name": "Illinois S 3364 — Human Rights Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3368-2026",
+        "name": "Illinois S 3368 — Chatbot Response Liability Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3384-2026",
+        "name": "Illinois S 3384 — Artificial Intelligence Companion Model Safety Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3444-2026",
+        "name": "Illinois S 3444 — Artificial Intelligence Safety Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3492-2026",
+        "name": "Illinois S 3492 — School Code",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3502-2026",
+        "name": "Illinois S 3502 — Artificial Intelligence Design Requirements Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3571-2026",
+        "name": "Illinois S 3571 — Worker Adjustment and Retraining Notifications",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3590-2026",
+        "name": "Illinois S 3590 — Artificial Intelligence Product Liability",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3601-2026",
+        "name": "Illinois S 3601 — Professional AI Oversight",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3678-2026",
+        "name": "Illinois S 3678 — Landlord and Tenant Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3702-2026",
+        "name": "Illinois S 3702 — Artificial Intelligence in Nurse Practice Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3735-2026",
+        "name": "Illinois S 3735 — Student Educational Technologies Rights Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3901-2026",
+        "name": "Illinois S 3901 — Marriage Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s1996-2025",
+        "name": "Illinois S 1996 — Algorithmic Rent Fixing Prevention",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s2255-2025",
+        "name": "Illinois S 2255 — Surveillance Based Price and Wage Discrimination Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s2273-2025",
+        "name": "Illinois S 2273 — Protect Health Data Privacy Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-la-s110-2026",
+        "name": "Louisiana S 110 — Crime and Punishment",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-tn-s677-2025",
+        "name": "Tennessee S 677 — Department of Education",
+        "from": "proposed",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 25,
+    "enforcement_added": 1,
+    "rules_added": 3,
+    "total_instruments": 2485
+  },
+  {
     "date": "2026-05-19",
     "trigger": "manual",
     "added": [
