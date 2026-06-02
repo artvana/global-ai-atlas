@@ -1,5 +1,82 @@
 [
   {
+    "date": "2026-06-01",
+    "trigger": "scheduled",
+    "added": [],
+    "promoted": [
+      {
+        "id": "sg-sg-onlinesafety-2025",
+        "name": "Singapore Online Safety (Relief) Act 2025",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-co-h1263-2026",
+        "name": "Colorado H 1263 — Conversational Artificial Intelligence Service Operator",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-ct-s4-2026",
+        "name": "Connecticut S 4 — Consumer Privacy",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ct-s5-2026",
+        "name": "Connecticut S 5 — Online Safety",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ct-h5003-2026",
+        "name": "Connecticut H 5003 — Workforce Development and Working Conditions",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ct-h5229-2026",
+        "name": "Connecticut H 5229 — Gaming",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-hi-h2319-2026",
+        "name": "Hawaii H 2319 — State Health Planning and Development Agency",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s1996-2026",
+        "name": "Illinois S 1996 — Algorithmic Rent Fixing Prevention",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ne-l172-2025",
+        "name": "Nebraska L 172 — Computer-Generated Child Pornography",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-tn-h545-2025",
+        "name": "Tennessee H 545 — Department of Education",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "cm-cm-pdplaw-2024",
+        "name": "Cameroon Personal Data Protection Law 2024",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 26,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2485
+  },
+  {
     "date": "2026-05-25",
     "trigger": "scheduled",
     "added": [
