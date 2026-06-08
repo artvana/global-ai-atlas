@@ -1,5 +1,59 @@
 [
   {
+    "date": "2026-06-08",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "us-fed-eo14409-2026",
+        "name": "EO 14409 — Promoting Advanced AI Innovation and Security",
+        "jurisdiction": "United States",
+        "status": "in_force"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-co-h1139-2026",
+        "name": "Colorado H 1139 — Use of Artificial Intelligence in Health Care",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-co-h1195-2026",
+        "name": "Colorado H 1195 — Psychotherapy Artificial Intelligence Restrictions",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ct-s417-2026",
+        "name": "Connecticut S 417 — Department of Economic and Community Development",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-la-s346-2026",
+        "name": "Louisiana S 346 — Schools",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-la-s347-2026",
+        "name": "Louisiana S 347 — Colleges and Universities",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-la-h639-2026",
+        "name": "Louisiana H 639 — Elections and Campaigns",
+        "from": "proposed",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 9,
+    "enforcement_added": 0,
+    "rules_added": 3,
+    "total_instruments": 2486
+  },
+  {
     "date": "2026-06-01",
     "trigger": "scheduled",
     "added": [],
