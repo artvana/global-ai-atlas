@@ -1,5 +1,113 @@
 [
   {
+    "date": "2026-06-22",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "mx-yucatan-penalai-2026",
+        "name": "Yucatán Penal Code AI & Digital Crimes Reform",
+        "jurisdiction": "Mexico",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-ny-sb8420a-2025",
+        "name": "New York SB 8420-A (Synthetic Performer Advertising Disclosure)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-az-h4040-2026",
+        "name": "Arizona H 4040 — School AI Policies",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-az-h4080-2026",
+        "name": "Arizona H 4080 — Artificial Intelligence",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-la-s42-2026",
+        "name": "Louisiana S 42 — Crime and Punishment",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-la-h119-2026",
+        "name": "Louisiana H 119 — Crime",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-la-h475-2026",
+        "name": "Louisiana H 475 — Health Care and Providers",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-la-h784-2026",
+        "name": "Louisiana H 784 — Sex Offense and Registry",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ny-a433-2025",
+        "name": "New York A 433 — Automated Employment Decision Making Tools",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ny-s823-2025",
+        "name": "New York S 823 — Model Management Group",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ny-a1417-2025",
+        "name": "New York A 1417 — Landlords",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ny-a8295-2025",
+        "name": "New York A 8295 — Automated Decision Making by Government Agencies",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ny-a8882-2025",
+        "name": "New York A 8882 — Right of Publicity",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ny-a8887-2025",
+        "name": "New York A 8887 — Disclosure of Use of Synthetic Performer in Ads",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-vt-h816-2026",
+        "name": "Vermont H 816 — AI in Mental Health Services",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-wa-s5886-2026",
+        "name": "Washington S 5886 — Forged Digital Likenesses",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 96,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2487
+  },
+  {
     "date": "2026-06-08",
     "trigger": "scheduled",
     "added": [
