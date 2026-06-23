@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-06-23",
+    "trigger": "manual",
+    "added": [],
+    "promoted": [
+      {
+        "id": "us-vt-h816-2026",
+        "name": "Vermont H 816 — Mental Health Services",
+        "from": "proposed",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 3,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2486
+  },
+  {
     "date": "2026-06-15",
     "trigger": "scheduled",
     "added": [],
