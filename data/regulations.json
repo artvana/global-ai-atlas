@@ -27519,7 +27519,7 @@
     "influenced": [],
     "official_text_url": "https://digital-strategy.ec.europa.eu/en/policies/digital-omnibus",
     "summary_url": null,
-    "last_verified": "2026-06-15",
+    "last_verified": "2026-06-23",
     "summary": "European Commission legislative proposal (19 November 2025) to amend the EU AI Act as part of the Digital Omnibus package. Key changes: defer Annex III high-risk AI obligations to 2 December 2027 and Annex I to 2 August 2028; narrow AI literacy obligations; expand SME/SMC exemptions; add legitimate interest legal basis for AI training data; postpone Article 50(2) watermarking obligations to 2 December 2026; add Article 5 prohibition on AI-generated CSAM and non-consensual intimate imagery. Council general approach adopted 13 March 2026; EP negotiating position adopted 26 March 2026 (569-45-23); second trilogue failed 28 April 2026; provisional trilogue agreement reached 7 May 2026.",
     "notable": "Provisional trilogue agreement reached 7 May 2026 after second trilogue stalled on Annex I conformity assessment architecture; formal adoption by co-legislators pending.",
     "legal_citation": null,
@@ -27624,8 +27624,8 @@
       "Sweden"
     ],
     "legislative_stage": "passed_one_chamber",
-    "last_action_date": "2026-06-02",
-    "last_action_description": "The European Parliament's IMCO and LIBE committees endorsed the provisional trilogue agreement on the Digital Omnibus AI Act amendments on 2 June 2026 (93-4-15), with a final plenary vote and formal Council adoption still pending."
+    "last_action_date": "2026-06-16",
+    "last_action_description": "The European Parliament gave final plenary approval to the Digital Omnibus AI Act amendments on 16 June 2026 (423 in favour, 57 against, 174 abstentions); formal Council adoption and legal-linguistic review remain pending before publication in the Official Journal."
   },
   {
     "id": "eu-eu-omnibus-reg-2025",
@@ -28131,7 +28131,7 @@
     "influenced": [],
     "official_text_url": "https://www.bmwk.de/Redaktion/DE/Artikel/Digitale-Welt/kuenstliche-intelligenz-regulierung.html",
     "summary_url": null,
-    "last_verified": "2026-05-25",
+    "last_verified": "2026-06-23",
     "summary": "German implementing legislation for the EU AI Act; designates the Federal Network Agency (BNetzA) as primary market surveillance authority and BaFin for financial sector AI. Establishes national enforcement procedures, a penalty scale mirroring AI Act maximums (up to €35M / 7% turnover), and an AI regulatory sandbox program. Provides for future establishment of a Federal Office for Artificial Intelligence Safety (BAIS). Cabinet adopted February 2026; before Bundestag as of May 2026.",
     "notable": "Cabinet adopted February 2026; legislative passage through Bundestag expected 2026.",
     "legal_citation": "KI-Marktüberwachungs- und Innovationsgesetz (KI-MIG)",
@@ -28212,9 +28212,9 @@
     "country": "Germany",
     "operative_dates": "Cabinet adopted 11 February 2026; Bundestag passage expected 2026; effective date TBD",
     "text_quality": "unavailable",
-    "legislative_stage": "in_committee",
-    "last_action_date": "2026-04-02",
-    "last_action_description": "Bundestag held first reading on March 20, 2026 (Drucksache 21/4594) and referred the bill to the Digital Committee, which held an expert hearing on March 23, 2026; the Bundesrat adopted its Stellungnahme on April 2, 2026."
+    "legislative_stage": "passed_one_chamber",
+    "last_action_date": "2026-06-11",
+    "last_action_description": "The Bundestag passed the KI-MIG (Gesetz zur Durchführung der KI-Verordnung) on 11 June 2026 with CDU/CSU and SPD voting in favour against AfD, Greens and Left; the law still requires the consent of the Bundesrat."
   },
   {
     "id": "uk-uk-admcode-2026",
@@ -28697,7 +28697,7 @@
     "influenced": [],
     "official_text_url": "https://www2.tbmm.gov.tr/d28/2/2-3358.pdf",
     "summary_url": null,
-    "last_verified": "2026-06-01",
+    "last_verified": "2026-06-23",
     "summary": "Turkish omnibus bill amending multiple laws to address AI: introduces statutory AI definition; mandates deepfake content labelling; creates 6-hour takedown obligation for AI-generated content violating personal rights; grants BTK emergency blocking powers for harmful AI-generated content; establishes joint liability for AI developers and platform operators; amends Internet Law (No. 5651), Turkish Penal Code, KVKK (Law 6698), Electronic Commerce Law, and Cybersecurity Law. Submitted to Grand National Assembly November 2025; passage timeline uncertain.",
     "notable": "Submitted to Grand National Assembly November 7, 2025; passage timeline uncertain. 6-hour takedown obligation is shorter than EU DSA timeframes.",
     "legal_citation": "Kanun Teklifi Esas No. 2/3358",
@@ -28782,7 +28782,7 @@
     "text_path": "data/texts/tr-tr-aibill-2025.md",
     "legislative_stage": "in_committee",
     "last_action_date": "2025-11-10",
-    "last_action_description": "Bill 2/3358 remains under review by the Industry, Trade, Energy, Natural Resources, Information and Technology Commission (primary), with the Justice and Digital Media commissions as secondary, following its 10 November 2025 referral; no committee report or chamber vote recorded."
+    "last_action_description": "Bill 2/3358 remains in committee (KOMİSYONDA) at the Grand National Assembly, assigned to the Industry/Trade/Energy/Technology Commission (primary) with the Justice and Digital Media commissions as secondary; no committee report or floor vote has been recorded."
   },
   {
     "id": "jp-jp-appi-2022",
@@ -162759,12 +162759,12 @@
     "region": "US-VT",
     "short_name": "Vermont H 816 — Mental Health Services",
     "full_name": "Vermont H 816 — Mental Health Services",
-    "instrument_type": "bill",
-    "instrument_binding": false,
+    "instrument_type": "statute",
+    "instrument_binding": true,
     "bill_number": "H 816",
-    "enacted_date": null,
+    "enacted_date": "2026-06-17",
     "effective_date": null,
-    "status": "proposed",
+    "status": "in_force",
     "superseded_by": null,
     "categories": [
       "health_ai",
@@ -162774,7 +162774,7 @@
     "scope": "single_issue",
     "who_regulated": [],
     "provisions": {
-      "ai_interaction_disclosure": false,
+      "ai_interaction_disclosure": true,
       "training_data_disclosure": false,
       "content_labelling": false,
       "risk_classification_system": false,
@@ -162788,7 +162788,7 @@
       "data_rights_re_training": false,
       "private_right_of_action": false,
       "safe_harbor": false,
-      "prohibited_categories": false,
+      "prohibited_categories": true,
       "agentic_ai_addressed": false,
       "algorithmic_pricing_addressed": false,
       "training_data_compensation": false
@@ -162801,10 +162801,10 @@
     "legal_family": "us_consumer_protection",
     "inspired_by": [],
     "influenced": [],
-    "official_text_url": "https://legislature.vermont.gov/bill/status/2025/H816",
+    "official_text_url": "https://legislature.vermont.gov/bill/status/2026/H.816",
     "summary_url": null,
-    "last_verified": "2026-06-15",
-    "summary": "Relates to regulating the use of artificial intelligence in the provision of mental health services.",
+    "last_verified": "2026-06-23",
+    "summary": "Enacted as Act 156, the law restricts the use of artificial intelligence in the provision of mental health services in Vermont. It bars AI systems from independently making mental-health diagnoses or treatment decisions or providing therapeutic guidance, while permitting supportive uses such as scheduling, billing, and transcription.",
     "notable": null,
     "ai_specific": true,
     "country": "United States",
@@ -162818,10 +162818,10 @@
     "key_obligations": [],
     "issue_positions": {},
     "text_path": "data/texts/us-vt-h816-2026.md",
-    "legal_citation": null,
-    "legislative_stage": "passed_legislature",
-    "last_action_date": "2026-05-29",
-    "last_action_description": "Delivered to the Governor on June 11, 2026"
+    "legal_citation": "2026 Vermont Acts and Resolves No. 156",
+    "legislative_stage": "enacted",
+    "last_action_date": "2026-06-17",
+    "last_action_description": "Signed by Governor on June 17, 2026 (Act 156)"
   },
   {
     "id": "us-vt-h821-2026",
@@ -179822,7 +179822,7 @@
     "influenced": [],
     "official_text_url": "https://www.shura.bh",
     "summary_url": null,
-    "last_verified": "2026-06-01",
+    "last_verified": "2026-06-23",
     "summary": "Submitted to the Bahrain Shura Council on 28 February 2024 by five members (Ref. 16 Q F6 D2), this 38-article proposed law would create the first binding AI regulatory framework in Bahrain, covering all persons residing in or operating from the Kingdom. It establishes: a licensing regime for commercial AI development and sale; an AI Unit within a designated Ministry for oversight, licensing, and enforcement; design requirements mandating human supervisability and non-discrimination; prohibitions on dangerous robots, deepfakes, and exclusive AI decision-making over life or freedom; civil liability for programmers and robot owners; and a tiered criminal penalty structure reaching imprisonment plus BD 20,000 (≈,000) for deepfake manipulation offenses. The explanatory memo explicitly cites inspiration from the EU AI Act and the Arab Guiding Law on AI, while emphasizing cultural and religious values. Entry into force would be six months after Gazette publication, with Executive Regulations due within three months. The proposal was cleared as legally admissible by the Shura Council Legal Advisors Authority.",
     "notable": "First proposed binding AI law in Bahrain, intended to complement the non-binding General AI Policy (iGA, 2025). Explicitly draws on the EU AI Act and Arab AI Guiding Law. Notable provisions: Art. 12 bars exclusive AI decisions over life/freedom/bodily integrity; Art. 8 requires patient consent for AI in surgery; Art. 33 allows dissolution of legal persons as penalty for recidivism. High-risk program classification tables delegated to Executive Regulations (Art. 36).",
     "legal_citation": "Proposed Law on Regulating Artificial Intelligence Technologies and Their Uses, Ref. 16 Q F6 D2, submitted to the Bahrain Shura Council 28 February 2024",
@@ -179918,7 +179918,7 @@
     "operative_dates": "Submitted to Shura Council 28 February 2024. Not yet enacted. If enacted, would enter into force six months after Gazette publication.",
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2024-11-23",
-    "last_action_description": "Bill remains under Council of Representatives review after unanimous Shura Council approval; the government's November 2024 written response urged a regulatory-sandbox alternative and no further chamber vote has been recorded."
+    "last_action_description": "Bill remains under Council of Representatives review after unanimous Shura Council approval; the government continues to favour a regulatory-sandbox alternative and no further chamber vote has been recorded."
   },
   {
     "id": "sg-sg-pdpcaiguidelines-2024",
@@ -186419,7 +186419,7 @@
     "influenced": [],
     "official_text_url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2025/110325-resumen-consejo-ministros.aspx",
     "summary_url": null,
-    "last_verified": "2026-06-15",
+    "last_verified": "2026-06-23",
     "summary": "Spain's draft national AI law (Anteproyecto) was approved by the Council of Ministers on March 11, 2025 under an urgent legislative procedure, with public consultation closing March 26, 2025. The draft establishes AESIA as the primary AI supervisor and introduces transparency labelling requirements for AI-generated content. Fines reach up to €35 million or 7% of global annual turnover, closely mirroring EU AI Act penalty levels, with prohibited AI practices and high-risk AI obligations aligned with the EU AI Act. Parliamentary passage had not occurred as of early 2026.",
     "notable": "First EU member state to introduce a standalone national AI law that mirrors and supplements the EU AI Act.",
     "legal_citation": "Anteproyecto de Ley, Council of Ministers, March 11, 2025",
@@ -186497,9 +186497,9 @@
     "instrument_binding": false,
     "country": "Spain",
     "operative_dates": null,
-    "legislative_stage": "introduced",
-    "last_action_date": "2026-05-26",
-    "last_action_description": "Spain's Council of Ministers approved sending the Organic Law for the good use and governance of AI to the Cortes Generales on 26 May 2026, opening its parliamentary passage."
+    "legislative_stage": "in_committee",
+    "last_action_date": "2026-06-12",
+    "last_action_description": "Spain's draft AI governance law (Proyecto de Ley Orgánica 121/000096) was published in the Boletín Oficial de las Cortes Generales on 12 June 2026, opening the amendment period in the Congreso de los Diputados until 30 June 2026."
   },
   {
     "id": "ro-ro-naistrategy-2024",
@@ -194059,8 +194059,8 @@
     "bill_number": "PPL Sénat n° 220 (2025-2026)",
     "legislative_stage": "passed_one_chamber",
     "last_action_date": "2026-06-02",
-    "last_action_description": "The Assemblee nationale's Cultural Affairs Committee adopted the bill's text on 2 June 2026; already passed by the Senat on 8 April 2026, it now awaits a plenary vote in the National Assembly.",
-    "last_verified": "2026-06-15",
+    "last_action_description": "Adopted by the Senat on 8 April 2026; the Assemblee nationale's Cultural Affairs Committee adopted its text (report no. 2864) on 2 June 2026, with a plenary vote in the National Assembly still pending.",
+    "last_verified": "2026-06-23",
     "source_url": "https://www.senat.fr/dossier-legislatif/ppl25-220.html",
     "official_text_url": "https://www.senat.fr/leg/ppl25-220.html",
     "primary_category": "intellectual_property",
