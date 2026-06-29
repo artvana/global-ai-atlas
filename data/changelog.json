@@ -1,5 +1,83 @@
 [
   {
+    "date": "2026-06-29",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "br-br-aiconsumer-2026",
+        "name": "Brazil AI Consumer Protection Bill (PL 4089/2024)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-ct-s483-2026",
+        "name": "Connecticut S 483 — Crime of Digital Forgery",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-la-s42-2026",
+        "name": "Louisiana S 42 — Crime and Punishment",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-la-h119-2026",
+        "name": "Louisiana H 119 — Crime",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-la-h784-2026",
+        "name": "Louisiana H 784 — Sex Offense and Registry",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ri-s2195-2026",
+        "name": "Rhode Island S 2195 — Artificial Intelligence Companion Models",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ri-s2197-2026",
+        "name": "Rhode Island S 2197 — Artificial Intelligence in Mental Health Care Treatment",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ri-s2570-2026",
+        "name": "Rhode Island S 2570 — Artificial Intelligence to Memorialize Patient Visits",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ri-h7349-2026",
+        "name": "Rhode Island H 7349 — Use of Artificial Intelligence in Mental Health Care",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ri-h7350-2026",
+        "name": "Rhode Island H 7350 — Artificial Intelligence Companion Models",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ri-h7538-2026",
+        "name": "Rhode Island H 7538 — Use of Artificial Intelligence by Healthcare Providers",
+        "from": "proposed",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 14,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2487
+  },
+  {
     "date": "2026-06-23",
     "trigger": "manual",
     "added": [],
