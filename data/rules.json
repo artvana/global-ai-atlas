@@ -222031,6 +222031,14 @@
         "notes": "Both rules require disclosure/notice to patients when AI is used for administrative support tasks, but Vermont H 816 focuses on compliance with patient confidentiality requirements for transcription/recording, while Maryland H 995 requires written and verbal notice that AI may be used for administrative support.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-ri-h7538-2026",
+        "relationship": "agrees",
+        "citation": "§ 23-106-3",
+        "notes": "Rhode Island's enacted Use of AI by Healthcare Providers Notification Act requires all healthcare providers and facilities that use AI to document in-person or telehealth visits to notify patients of that AI use; broader in provider scope than Maryland's behavioral-health rule but limited to documentation and lacking the written-and-verbal and risk-disclosure specifics.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
