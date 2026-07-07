@@ -1,5 +1,112 @@
 [
   {
+    "date": "2026-07-06",
+    "trigger": "scheduled",
+    "added": [],
+    "promoted": [
+      {
+        "id": "us-co-sb205-2024",
+        "name": "Colorado SB 24-205 (Colorado AI Act)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-tn-sb1580-2026",
+        "name": "Tennessee SB 1580 (Healthcare AI Chatbot)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-in-hb1271-2026",
+        "name": "Indiana HB 1271 (Health Insurer AI Claims)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ct-pa25113-2025",
+        "name": "Connecticut PA 25-113 (LLM Training Disclosure)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-sd-sb41-2026",
+        "name": "South Dakota SB 41 (NCII Deepfakes)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2025",
+        "name": "EU Digital Omnibus — AI Act Amendments",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-ca-s719-2026",
+        "name": "California S 719 — Department of Technology: Inventory",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a2148-2026",
+        "name": "California A 2148 — Elementary and secondary education",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-fl-h1159-2026",
+        "name": "Florida H 1159 — Sexual Offenses",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-h3851-2025",
+        "name": "Illinois H 3851 — Cyber Bullying",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ny-a433-2025",
+        "name": "New York A 433 — Automated Employment Decision Making Tools",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ny-s823-2025",
+        "name": "New York S 823 — Model Management Group",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ny-a1417-2025",
+        "name": "New York A 1417 — Landlords",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ny-a8295-2025",
+        "name": "New York A 8295 — Automated Decision Making by Government Agencies",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ny-a8882-2025",
+        "name": "New York A 8882 — Right of Publicity",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ny-a8887-2025",
+        "name": "New York A 8887 — Disclosure of Use of Synthetic Performer in Ads",
+        "from": "proposed",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 54,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2487
+  },
+  {
     "date": "2026-06-29",
     "trigger": "scheduled",
     "added": [
