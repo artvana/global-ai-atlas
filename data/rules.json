@@ -222036,7 +222036,7 @@
         "law_id": "us-ri-h7538-2026",
         "relationship": "agrees",
         "citation": "§ 23-106-3",
-        "notes": "Rhode Island's enacted Use of AI by Healthcare Providers Notification Act requires all healthcare providers and facilities that use AI to document in-person or telehealth visits to notify patients of that AI use; broader in provider scope than Maryland's behavioral-health rule but limited to documentation and lacking the written-and-verbal and risk-disclosure specifics.",
+        "notes": "Rhode Island H 7538 (enacted, binding) requires all healthcare providers and facilities using AI to document in-person or telehealth visits to notify patients of that use; broader provider scope than Maryland's behavioral-health administrative-task notice and without the written-and-verbal or risk-disclosure specifics.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -373100,6 +373100,35 @@
         "notes": "Rule introduced in EO 14409 (United States, 2026-06-02); directs prioritized criminal prosecution of AI- and AI-agent-enabled unauthorized computer access under existing federal statutes (18 U.S.C. 1028, 1030, 1343).",
         "instrument_binding": true,
         "instrument_type": "executive_order"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0001",
+    "rule_text": "If you are a healthcare provider or facility that uses AI to document in-person or telehealth patient visits, you must review the AI-generated documentation for accuracy.",
+    "rule_text_technical": "Under the Use of Artificial Intelligence by Healthcare Providers Notification Act (R.I. Gen. Laws ch. 23-106), healthcare providers and healthcare facilities that employ artificial intelligence to document in-person or telehealth visits must review the resulting AI-generated documentation for accuracy.",
+    "category": "human_oversight",
+    "tags": [
+      "healthcare",
+      "ai_documentation",
+      "human_review",
+      "accuracy",
+      "clinical_records"
+    ],
+    "first_instance": {
+      "law_id": "us-ri-h7538-2026",
+      "law_name": "Rhode Island H 7538 — Use of Artificial Intelligence by Healthcare Providers Notification Act",
+      "citation": "ch. 23-106",
+      "date": "2026-06-22"
+    },
+    "instances": [
+      {
+        "law_id": "us-ri-h7538-2026",
+        "relationship": "origin",
+        "citation": "ch. 23-106",
+        "notes": "Rhode Island H 7538 (enacted 2026-06-22, binding); accuracy-review duty reflected in the enacted act's official summary. The introduced-version bill text available (§ 23-106-3) states only the patient-notification obligation.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   }
