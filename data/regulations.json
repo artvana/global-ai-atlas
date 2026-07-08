@@ -23083,9 +23083,9 @@
     "influenced": [],
     "official_text_url": "https://sozd.duma.gov.ru/bill/1271570-8",
     "summary_url": null,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-07-08",
     "ai_specific": true,
-    "summary": "Russia's draft comprehensive AI governance framework law, submitted by the Government. Establishes foundational principles for AI development and deployment including risk-based regulation, disclosure obligations, data localisation requirements for trusted AI models, a register of certified trusted AI models for use in state systems, and liability provisions. Emphasises technological sovereignty and Russian value alignment. A sovereign AI model development programme supports domestic large foundation models. Mandatory human-in-the-loop rights for autonomous decisions affecting citizens. Watermarking/labelling requirements for AI-generated content. Enters into force 1 September 2027.",
+    "summary": "Russia's draft comprehensive AI governance framework law, submitted by the Government. Establishes foundational principles for AI development and deployment including risk-based regulation, disclosure obligations, data localisation requirements for trusted AI models, a register of certified trusted AI models for use in state systems, and liability provisions. Emphasises technological sovereignty and Russian value alignment. A sovereign AI model development programme supports domestic large foundation models. Mandatory human-in-the-loop rights for autonomous decisions affecting citizens. Watermarking/labelling requirements for AI-generated content. Enters into force 1 September 2026.",
     "notable": "Russia's first comprehensive horizontal AI law, replacing the 2020 Moscow sandbox as the primary AI governance framework. Introduces a 'trusted AI models' register for state procurement, sovereignty requirements for state-adjacent AI systems, and an explicit 'traditional values' compliance criterion — a globally distinctive feature. Draft status: submitted by government, not yet enacted.",
     "legal_citation": "Draft Federal Law submitted by the Government of the Russian Federation (2025/2026)",
     "topics": [
@@ -189995,142 +189995,6 @@
     "source_url": "http://www.kremlin.ru/acts/bank/50326"
   },
   {
-    "id": "ru-ru-ailaw-draft-2026",
-    "jurisdiction": "Russia",
-    "jurisdiction_type": "national",
-    "region": "Eurasia",
-    "short_name": "Draft Federal AI Law (Russia)",
-    "full_name": "Draft Federal Law \"On the Fundamentals of State Regulation of Artificial Intelligence Technologies\" (Russian Federation, Ministry of Digital Development)",
-    "instrument_type": "draft_law",
-    "bill_number": "1271570-8",
-    "enacted_date": null,
-    "effective_date": null,
-    "status": "proposed",
-    "superseded_by": null,
-    "categories": [
-      "general_ai_governance",
-      "algorithmic_systems"
-    ],
-    "primary_category": "general_ai_governance",
-    "scope": "comprehensive",
-    "who_regulated": [
-      "developers",
-      "deployers",
-      "government"
-    ],
-    "provisions": {
-      "ai_interaction_disclosure": true,
-      "training_data_disclosure": true,
-      "content_labelling": false,
-      "risk_classification_system": true,
-      "impact_assessment_required": false,
-      "anti_discrimination": false,
-      "anti_discrimination_standard": null,
-      "human_review_right": false,
-      "opt_out_right": false,
-      "biometric_protection": false,
-      "voice_likeness_protection": false,
-      "data_rights_re_training": false,
-      "private_right_of_action": false,
-      "safe_harbor": false,
-      "prohibited_categories": false,
-      "agentic_ai_addressed": false,
-      "algorithmic_pricing_addressed": false,
-      "training_data_compensation": false
-    },
-    "enforcement_body": [
-      "Ministry of Digital Development, Communications and Mass Media of Russia"
-    ],
-    "max_penalty": null,
-    "max_penalty_usd_approx": null,
-    "preemption_status": "low_risk",
-    "preemption_notes": null,
-    "legal_family": "standalone",
-    "inspired_by": [],
-    "influenced": [],
-    "official_text_url": "https://sozd.duma.gov.ru/bill/1271570-8",
-    "summary_url": null,
-    "last_verified": "2026-07-07",
-    "summary": "Russia's Ministry of Digital Development published a draft federal law in March 2026 that would constitute the country's first comprehensive AI-specific legislation. The draft provides Russia's first statutory definition of AI, establishes a trusted/certified AI model classification system, and introduces 'sovereign AI' requirements mandating that AI models be Russian-made or trained on Russian data. Public consultation closed April 15, 2026, with the law expected to enter into force on September 1, 2027 if enacted.",
-    "notable": "First comprehensive federal AI legislation proposed in Russia; introduces 'sovereign AI' requirements.",
-    "legal_citation": "Draft Federal Law \"On the Fundamentals of State Regulation of Artificial Intelligence Technologies\" (Russian Federation, 2026)",
-    "topics": [
-      "ai_governance",
-      "ai_sovereignty",
-      "ai_definition",
-      "certification",
-      "trusted_ai"
-    ],
-    "sector_tags": [
-      "all_sectors"
-    ],
-    "technology_tags": [
-      "general_ai_systems",
-      "foundation_models"
-    ],
-    "key_obligations": [
-      "Provide statutory definition of artificial intelligence",
-      "Establish trusted/certified AI model classification",
-      "Require AI models to meet 'sovereign AI' criteria (Russian-made or trained on Russian data)",
-      "Mandatory security verification by federal bodies for AI systems"
-    ],
-    "issue_positions": {
-      "impact_assessment": {
-        "position": "not_addressed",
-        "detail": "Not addressed in draft."
-      },
-      "prohibited_categories": {
-        "position": "not_addressed",
-        "detail": "Not addressed in draft."
-      },
-      "human_review_rights": {
-        "position": "not_addressed",
-        "detail": "Not addressed in draft."
-      },
-      "private_right_of_action": {
-        "position": "not_addressed",
-        "detail": "Not addressed in draft."
-      },
-      "synthetic_media": {
-        "position": "not_addressed",
-        "detail": "Not addressed in draft."
-      },
-      "biometric_data": {
-        "position": "not_addressed",
-        "detail": "Not addressed in draft."
-      },
-      "training_data_transparency": {
-        "position": "required",
-        "detail": "Sovereign AI requirements imply disclosure of whether models are trained on Russian data."
-      },
-      "content_labeling": {
-        "position": "not_addressed",
-        "detail": "Not addressed in draft."
-      },
-      "anti_discrimination": {
-        "position": "not_addressed",
-        "detail": "Not addressed in draft."
-      },
-      "risk_classification": {
-        "position": "required",
-        "detail": "Establishes trusted/certified AI model classification system."
-      },
-      "enforcement_model": {
-        "position": "government_led",
-        "detail": "Mandatory security verification by federal bodies."
-      }
-    },
-    "text_path": "data/texts/ru-ru-ailaw-draft-2026.md",
-    "ai_specific": true,
-    "instrument_binding": false,
-    "country": "Russia",
-    "operative_dates": null,
-    "legislative_stage": "first_reading",
-    "last_action_date": "2026-06-22",
-    "last_action_description": "The Russian government circulated a substantially revised draft on 22 June 2026 (cut from 21 to 13 articles, renamed 'On Supporting the Development of AI Technologies', dropping the trusted-model concept and the Russian-data-only training requirement); it has still not been submitted to the State Duma.",
-    "source_url": "https://sozd.duma.gov.ru/bill/1271570-8"
-  },
-  {
     "id": "ru-ru-cbraicodeethics-2025",
     "jurisdiction": "Russia",
     "jurisdiction_type": "national",
@@ -194173,8 +194037,8 @@
     "full_name": "Estrategia Nacional de Inteligencia Artificial de Costa Rica 2024-2027 (MICITT)",
     "instrument_type": "strategy",
     "bill_number": null,
-    "enacted_date": "2024-10-01",
-    "effective_date": "2024-10-01",
+    "enacted_date": "2024-10-24",
+    "effective_date": "2024-10-24",
     "status": "in_force",
     "superseded_by": null,
     "categories": [
@@ -194185,7 +194049,7 @@
     "official_text_url": "https://micitt.go.cr/el-sector-informa/micitt-presento-estrategia-nacional-de-inteligencia-artificial-enia",
     "source_url": "https://www.micitt.go.cr/gobierno_digital/inteligencia_artificial",
     "summary_url": null,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-07-08",
     "summary": "Costa Rica's first national AI public policy, launched by MICITT in October 2024, making it the first Central American country with a formal AI strategy. Built on ethical principles (human dignity and oversight, transparency, equity), it prioritizes digital infrastructure (5G, a National AI Center of Excellence), talent, and responsible/ethical AI adoption. Non-binding strategic framework with a 2024-2027 action plan.",
     "country": "Costa Rica",
     "ai_specific": true,
@@ -194886,8 +194750,8 @@
     "full_name": "Strategy for the Development of Artificial Intelligence in the Republic of Serbia for the period 2025-2030",
     "instrument_type": "strategy",
     "bill_number": null,
-    "enacted_date": "2025-01-01",
-    "effective_date": "2025-01-01",
+    "enacted_date": "2025-01-10",
+    "effective_date": "2025-01-10",
     "status": "in_force",
     "superseded_by": null,
     "categories": [
@@ -194898,7 +194762,7 @@
     "official_text_url": "https://www.srbija.gov.rs/tekst/en/149169/strategy-for-the-development-of-artificial-intelligence-in-the-republic-of-serbia.php",
     "source_url": "https://www.media.srbija.gov.rs/medsrp/dokumenti/strategy_artificial_intelligence.pdf",
     "summary_url": null,
-    "last_verified": "2026-07-07",
+    "last_verified": "2026-07-08",
     "summary": "Serbia's second national AI strategy (successor to the 2019-2025 strategy), adopted by the Government in January 2025 for 2025-2030. Focuses on legislation development, AI skills/education, R&D and innovation, and digital/compute infrastructure (National AI Platform). Plans an AI Agency and a register of high-risk AI systems, and anticipates a forthcoming EU-AI-Act-aligned Law on AI. Non-binding strategic framework.",
     "country": "Serbia",
     "ai_specific": true,

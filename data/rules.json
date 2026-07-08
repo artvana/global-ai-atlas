@@ -30192,7 +30192,7 @@
         "instrument_type": "executive_order"
       },
       {
-        "law_id": "ru-ru-ailaw-draft-2026",
+        "law_id": "ru-ru-ailaw-2025",
         "relationship": "similar",
         "citation": "Provision 4 (Security Checks by Federal Authorities)",
         "notes": "Both rules address Russian state security objectives for AI, but the existing rule is a binding strategic objective while this draft law provision is a voluntary recommendation for formal security checks by federal intelligence/information protection authorities, representing a more specific procedural mechanism than the existing general security objective.",
@@ -122938,14 +122938,6 @@
         "notes": "Rule introduced in Russia AI Foundations Law (Russia, null).",
         "instrument_binding": true,
         "instrument_type": "statute"
-      },
-      {
-        "law_id": "ru-ru-ailaw-draft-2026",
-        "relationship": "similar",
-        "citation": "Provision 2 (Classification of Trusted AI Models)",
-        "notes": "Both rules concern a register/classification of 'trusted' AI models subject to verification by state authorities, but the existing binding Russian law (ru-ru-ailaw-2025) mandates use of registered trusted models in state systems, while this draft provision is a voluntary/recommendation-level instrument proposing formal security verification for models classified as trusted.",
-        "instrument_binding": false,
-        "instrument_type": "draft_law"
       }
     ]
   },
@@ -123028,14 +123020,6 @@
         "notes": "Rule introduced in Russia AI Foundations Law (Russia, null).",
         "instrument_binding": true,
         "instrument_type": "statute"
-      },
-      {
-        "law_id": "ru-ru-ailaw-draft-2026",
-        "relationship": "similar",
-        "citation": "Provision 1 (Mandatory Testing for AI Operators)",
-        "notes": "Both rules require AI operators to test systems for uses contrary to Russian law, but this draft law is a voluntary/soft-law recommendation whereas the existing rule is a binding obligation under the enacted Russian AI law.",
-        "instrument_binding": false,
-        "instrument_type": "draft_law"
       }
     ]
   },
