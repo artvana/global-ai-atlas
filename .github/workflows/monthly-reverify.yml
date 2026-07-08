@@ -26,19 +26,22 @@ jobs:
       - name: Install Claude Code CLI
         run: npm install -g @anthropic-ai/claude-code
 
-      # Rotate through all in_force laws over ~10 months by sampling every 10th
-      # record, with the offset advancing each month so different laws are checked.
-      - name: Sample laws for this month
+      # Prioritise the STALEST records first. Sorting by last_verified ascending
+      # (records that have never been verified — null — sort first) guarantees the
+      # most-neglected laws are re-checked before anything else, and rotates
+      # automatically: once a record is verified its last_verified becomes today and
+      # it moves to the back of the queue. This replaces the previous modulo-index
+      # sampling, which drew from a US-dominated array and starved the ~250
+      # international records (most were months stale; several never verified).
+      - name: Sample the stalest laws for this month
         run: |
-          OFFSET=$(( ($(date +%-m) - 1) % 10 ))
-          jq --argjson offset "$OFFSET" '
+          jq '
             [.[] | select(.status == "in_force" and .instrument_binding == true)] |
-            to_entries |
-            map(select(.key % 10 == $offset)) |
-            map(.value) |
-            .[0:50]
+            sort_by(.last_verified // "0000-00-00") |
+            .[0:60]
           ' data/regulations.json > /tmp/sample-laws.json
-          echo "Sampled $(jq length /tmp/sample-laws.json) laws for re-verification (offset $OFFSET)"
+          echo "Sampled $(jq length /tmp/sample-laws.json) stalest laws for re-verification"
+          echo "Oldest last_verified in batch: $(jq -r 'min_by(.last_verified // "0000-00-00") | .last_verified' /tmp/sample-laws.json)"
 
       - name: Re-verify sampled laws
         env:

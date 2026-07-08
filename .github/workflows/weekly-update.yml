@@ -554,6 +554,55 @@ jobs:
           - If nothing new found, do not modify data/enforcement.json
           PROMPT
 
+      # ── Step 4b: Weekly re-verification of the stalest INTERNATIONAL laws ─────
+      # The regional agents above only advance status=proposed bills; enacted
+      # international laws were never refreshed weekly and decayed (US laws are kept
+      # fresh by LegiScan + heavy state coverage). This step re-verifies the 15
+      # stalest non-US in_force laws each week so international coverage stays current.
+      - name: Sample stalest international in_force laws
+        run: |
+          jq '
+            [.[] | select(
+              .status == "in_force" and .instrument_binding == true and
+              (.country // "") != "United States" and
+              ((.region // "") | startswith("US") | not) and
+              (.jurisdiction // "") != "United States"
+            )] |
+            sort_by(.last_verified // "0000-00-00") |
+            .[0:15]
+          ' data/regulations.json > /tmp/intl-reverify.json
+          echo "Sampled $(jq length /tmp/intl-reverify.json) international laws to re-verify"
+
+      - name: Re-verify stalest international laws
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        continue-on-error: true   # verification issues shouldn't block the weekly PR
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          if [ "$(jq length /tmp/intl-reverify.json)" = "0" ]; then
+            echo "No international laws to re-verify — skipping"
+            exit 0
+          fi
+          cat << PROMPT | claude --print --dangerously-skip-permissions --allowedTools "WebSearch,WebFetch,Read,Write"
+          You are re-verifying the stalest INTERNATIONAL (non-US) laws in the GAIA database.
+          Today is $TODAY. The database is at data/regulations.json.
+          The file /tmp/intl-reverify.json lists the sampled laws to re-verify.
+
+          For each law, check against official government / regulator / official-journal
+          sources (search in the local language where needed):
+          - Source URL health — fix source_url / official_text_url if dead or wrong.
+          - Status — correct status if the law was amended, repealed, superseded, or its
+            effective date has passed (enacted_not_yet_effective → in_force).
+          - Amendments — note material amendments in the summary; if substantial, add a new
+            record with superseded_by linking the old record to the new one.
+          - Metadata — spot-check enacted_date / effective_date / jurisdiction / country.
+
+          Rules:
+          - Update data/regulations.json directly for corrections found.
+          - ALWAYS set last_verified to $TODAY on every record you checked, even if unchanged.
+          - Only make changes verifiable from an official source. Be conservative.
+          PROMPT
+
       # ── Step 5: Extract rules for newly added laws ────────────────────────────
       - name: Identify newly added laws
         run: |
