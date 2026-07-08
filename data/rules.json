@@ -36790,6 +36790,14 @@
         "notes": "Both rules treat AI-generated/synthetic visual depictions indistinguishable from minors as child sexual abuse material, but Minnesota HF 2432 frames it as a definitional inclusion within existing CSAM law while Virginia SB 731 focuses on the prohibition against creating/adapting such depictions, and the specific statutory framing and scope differ.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "eu-eu-omnibus-ai-2026",
+        "relationship": "similar",
+        "citation": "Art. 1 (new Art. 5 AI Act prohibited practice)",
+        "notes": "EU omnibus adds an AI Act Article 5 prohibition on AI systems that generate child sexual abuse material (compliance by 2 Dec 2026); an EU-wide market prohibition on the AI practice itself rather than a criminal prohibition on individual creators.",
+        "instrument_binding": true,
+        "instrument_type": "regulation"
       }
     ]
   },
@@ -123548,6 +123556,14 @@
         "notes": "Rule introduced in EU Digital Omnibus — AI Act Amendments (European Union, null).",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      },
+      {
+        "law_id": "eu-eu-omnibus-ai-2026",
+        "relationship": "agrees",
+        "citation": "Art. 1 (amending Arts. 111 & 113 AI Act)",
+        "notes": "Enacted version of the AI-specific Digital Omnibus (Council final approval 2026-06-29) defers Annex III high-risk obligations from 2 Aug 2026 to 2 Dec 2027 and additionally defers Annex I embedded-product high-risk obligations from 2 Aug 2027 to 2 Aug 2028.",
+        "instrument_binding": true,
+        "instrument_type": "regulation"
       }
     ]
   },
@@ -123618,6 +123634,14 @@
         "relationship": "similar",
         "citation": "Annex IV",
         "notes": "Both concern technical documentation requirements for high-risk AI providers under the EU AI Act framework, but Annex IV specifies the mandatory detailed content elements while the Omnibus rule concerns simplified documentation for SMEs.",
+        "instrument_binding": true,
+        "instrument_type": "regulation"
+      },
+      {
+        "law_id": "eu-eu-omnibus-ai-2026",
+        "relationship": "agrees",
+        "citation": "Art. 1 (SME and mid-cap simplifications)",
+        "notes": "Enacted omnibus extends simplified technical-documentation and reduced compliance modalities for high-risk AI beyond SMEs to small mid-cap companies.",
         "instrument_binding": true,
         "instrument_type": "regulation"
       }
@@ -253225,6 +253249,22 @@
         "notes": "Both prohibit creating and disseminating digitally altered or AI-generated sexually explicit depictions of minors, but the Missouri rule also covers adults and requires a knowing intent, while this New York rule is limited to identifiable persons under 17 and does not require knowledge of the person's age for the creation prong.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "eu-eu-omnibus-ai-2026",
+        "relationship": "similar",
+        "citation": "Art. 1 (new Art. 5 AI Act prohibited practice)",
+        "notes": "EU omnibus adds an AI Act Article 5 prohibition on AI systems that generate non-consensual intimate imagery (compliance by 2 Dec 2026); a market prohibition on the AI practice EU-wide rather than a criminal offense targeting individual conduct.",
+        "instrument_binding": true,
+        "instrument_type": "regulation"
+      },
+      {
+        "law_id": "kr-kr-deepfakesexcrime-2024",
+        "relationship": "agrees",
+        "citation": "Sexual Violence Punishment Act Art. 14-2(1)-(2)",
+        "notes": "2024 amendments criminalize creating, editing, or distributing deepfake sexual content depicting a real person without consent, punishable by up to 7 years' imprisonment.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -324158,6 +324198,14 @@
         "notes": "Rule introduced in Spain Draft AI Law (Anteproyecto) (Spain, null).",
         "instrument_binding": false,
         "instrument_type": "draft_law"
+      },
+      {
+        "law_id": "eu-eu-omnibus-ai-2026",
+        "relationship": "agrees",
+        "citation": "Art. 1 (amending Art. 50(2) AI Act)",
+        "notes": "EU omnibus confirms the provider obligation to mark AI-generated synthetic audio, image, video and text in a machine-readable format detectable as artificially generated, extending the application date to 2 Dec 2026.",
+        "instrument_binding": true,
+        "instrument_type": "regulation"
       }
     ]
   },
@@ -373111,6 +373159,35 @@
         "relationship": "origin",
         "citation": "ch. 23-106",
         "notes": "Rhode Island H 7538 (enacted 2026-06-22, binding); accuracy-review duty reflected in the enacted act's official summary. The introduced-version bill text available (§ 23-106-3) states only the patient-notification obligation.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0002",
+    "rule_text": "You cannot possess, purchase, store, or view sexually explicit deepfake material depicting a real person that was made without that person's consent.",
+    "rule_text_technical": "Under the 2024 amendments to the Act on Special Cases Concerning the Punishment of Sexual Crimes, possessing, purchasing, storing, or viewing deepfake (AI-generated or digitally synthesized) sexual content depicting a real person produced without consent is a criminal offense punishable by up to 3 years' imprisonment or a fine of up to KRW 30 million.",
+    "category": "prohibited_applications",
+    "tags": [
+      "deepfake",
+      "nonconsensual_intimate_imagery",
+      "possession",
+      "viewing",
+      "criminal_penalty"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-deepfakesexcrime-2024",
+      "law_name": "South Korea Deepfake Sexual-Content Amendments 2024 (Act on Special Cases Concerning the Punishment of Sexual Crimes)",
+      "citation": "Sexual Violence Punishment Act Art. 14-2 (possession/viewing clause)",
+      "date": "2024-09-26"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-deepfakesexcrime-2024",
+        "relationship": "origin",
+        "citation": "Sexual Violence Punishment Act Art. 14-2 (possession/viewing clause)",
+        "notes": "New offense introduced in the 2024 amendments criminalizing mere possession, purchase, storage, or viewing of deepfake sexual material (South Korea, 2024-09-26).",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
