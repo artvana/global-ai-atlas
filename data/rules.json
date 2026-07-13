@@ -117652,6 +117652,14 @@
         "instrument_binding": true,
         "instrument_type": "statute",
         "variant_of": "us-ny-s8828-2026"
+      },
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "agrees",
+        "citation": "Public Act 104-0538 (SB 315) § 10",
+        "notes": "SB 315 requires large frontier developers to review and annually update their published frontier AI safety framework.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -117895,6 +117903,14 @@
         "relationship": "agrees",
         "citation": "§ 22757.13(g)",
         "notes": "Both require an office to produce and transmit annual reports to the legislature with anonymized frontier model data beginning in a future year, but California assigns this to the Office of Emergency Services and starts in 2027 while New York assigns it to the DFS office starting in 2028.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "agrees",
+        "citation": "Public Act 104-0538 (SB 315)",
+        "notes": "SB 315 directs the administering agency to publish annual compliance reports aggregating critical-safety-incident and frontier-model safety information.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -127298,6 +127314,14 @@
         "notes": "Both prohibit retaliation/contractual suppression of employee disclosures protected under Labor Code Section 1102.5, but this rule is independently enacted in a new statute with different citation and scope framing.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "agrees",
+        "citation": "Public Act 104-0538 (SB 315) (Whistleblower Act amendments)",
+        "notes": "SB 315 bars retaliation against covered employees for disclosing safety-related information about frontier AI development.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -127364,6 +127388,14 @@
         "relationship": "agrees",
         "citation": "Lab. Code § 1107.1(d)",
         "notes": "Both require clear notice to covered employees of whistleblower rights and responsibilities, drafted independently in a new statute but substantively equivalent to the SB 1047 notice obligation.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "agrees",
+        "citation": "Public Act 104-0538 (SB 315)",
+        "notes": "SB 315 requires frontier developers to give covered employees clear notice of their whistleblower rights on a specified cadence and in a specified form.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -195140,6 +195172,14 @@
         "instrument_binding": true,
         "instrument_type": "statute",
         "variant_of": "us-il-s3312-2026"
+      },
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "agrees",
+        "citation": "Public Act 104-0538 (SB 315) § 10",
+        "notes": "Enacted Illinois AI Safety Measures Act requires large frontier developers (annual gross revenue over $500M) to create, implement, publish, and annually update a frontier AI safety framework covering catastrophic-risk assessment, mitigation, governance, cybersecurity for model weights, third-party oversight, and internal-deployment risks.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -195224,6 +195264,14 @@
         "notes": "Both require large frontier developers to include summaries of catastrophic risk assessments and results in transparency reports, independently adopted with different phrasing and structural context.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "agrees",
+        "citation": "Public Act 104-0538 (SB 315) § 10",
+        "notes": "Before or when deploying a new or substantially modified frontier model, SB 315 developers must publish a transparency report including a communication mechanism for natural persons, supported languages, generally applicable use restrictions, and summaries of catastrophic-risk assessments.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -195282,6 +195330,14 @@
         "relationship": "agrees",
         "citation": "§ 22757.12(d)",
         "notes": "Both require large frontier developers to transmit a summary of catastrophic-risk assessments to a state emergency management agency, with the California rule specifying the Office of Emergency Services.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "agrees",
+        "citation": "Public Act 104-0538 (SB 315) § 10",
+        "notes": "SB 315 large frontier developers must periodically transmit to the Illinois Emergency Management Agency summaries of catastrophic-risk assessments arising from internal use of their frontier models.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -195387,6 +195443,14 @@
         "notes": "Both establish public-facing and confidential reporting mechanisms for critical safety incidents involving frontier AI models, but the Massachusetts rule assigns this to the Attorney General while the Illinois rule assigns it to the Illinois Emergency Management Agency, and the scope and structure differ.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "agrees",
+        "citation": "Public Act 104-0538 (SB 315) § 15",
+        "notes": "SB 315 directs the Illinois Emergency Management Agency to establish mechanisms for reporting critical safety incidents and for confidential submission of internal-use catastrophic-risk assessments.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -198242,6 +198306,14 @@
         "notes": "Both prohibit retaliation against employees who disclose violations, with the NY bill specifically referencing disclosure to the attorney general and the Illinois bill referencing Whistleblower Act protections.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "agrees",
+        "citation": "Public Act 104-0538 (SB 315) (Whistleblower Act amendments)",
+        "notes": "SB 315 prohibits a frontier developer from preventing a covered employee from disclosing safety-related information to the government or a person with authority over the employee.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -235885,6 +235957,14 @@
         "notes": "Both require reporting critical safety incidents involving frontier models to a designated authority within 15 days of discovery, independently drafted with different phrasing and different recipient agencies.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "agrees",
+        "citation": "Public Act 104-0538 (SB 315) § 20",
+        "notes": "SB 315 requires critical safety incidents to be reported to the Illinois Emergency Management Agency and Attorney General within 72 hours of forming a reasonable belief one occurred — a shorter deadline than the 15-day norm in comparable bills.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -235927,6 +236007,14 @@
         "relationship": "agrees",
         "citation": "§ 22757.13(c)(2)",
         "notes": "Both require disclosing critical safety incidents posing imminent risk of death or serious physical injury within 24 hours to appropriate law enforcement, independently adopted with near-identical substance.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "agrees",
+        "citation": "Public Act 104-0538 (SB 315) § 20",
+        "notes": "SB 315 requires disclosure within 24 hours to an appropriate law-enforcement or public-safety agency where a critical safety incident poses an imminent risk of death or serious physical injury.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -273751,6 +273839,14 @@
         "notes": "Utah H 286 — Artificial Intelligence Transparency Amendments (Utah) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "agrees",
+        "citation": "Public Act 104-0538 (SB 315)",
+        "notes": "SB 315 authorizes the Illinois Attorney General (exclusively; no private right of action) to recover civil penalties up to $1M for a first violation and $3M per subsequent violation.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -373188,6 +373284,36 @@
         "relationship": "origin",
         "citation": "Sexual Violence Punishment Act Art. 14-2 (possession/viewing clause)",
         "notes": "New offense introduced in the 2024 amendments criminalizing mere possession, purchase, storage, or viewing of deepfake sexual material (South Korea, 2024-09-26).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0003",
+    "rule_text": "If you are a large frontier developer, you must retain an independent third party to conduct an annual audit of your compliance with the frontier AI safety law, and the auditor's report must describe any material deviations and assess your internal controls.",
+    "rule_text_technical": "Under the Illinois Artificial Intelligence Safety Measures Act (Public Act 104-0538 / SB 315), large frontier developers (annual gross revenue over $500 million) must, beginning January 1, 2028, retain independent third parties to annually audit compliance with the Act; the auditor's report must include a description of any material deviations from the Act's requirements and an assessment of the developer's internal controls.",
+    "category": "risk_management",
+    "tags": [
+      "frontier_ai",
+      "third_party_audit",
+      "independent_audit",
+      "internal_controls",
+      "compliance",
+      "large_frontier_developer"
+    ],
+    "first_instance": {
+      "law_id": "us-il-sb315-2026",
+      "law_name": "Illinois Artificial Intelligence Safety Measures Act (Public Act 104-0538 / SB 315)",
+      "citation": "Public Act 104-0538 (SB 315)",
+      "date": "2026-07-06"
+    },
+    "instances": [
+      {
+        "law_id": "us-il-sb315-2026",
+        "relationship": "origin",
+        "citation": "Public Act 104-0538 (SB 315)",
+        "notes": "First-in-the-nation mandatory annual independent third-party audit of large frontier developers' compliance, internal controls, and material deviations; audits begin January 1, 2028.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }

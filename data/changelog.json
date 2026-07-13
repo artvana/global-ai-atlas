@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-07-13",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "us-il-sb315-2026",
+        "name": "Illinois AI Safety Measures Act (SB 315)",
+        "jurisdiction": "United States",
+        "status": "enacted_not_yet_effective"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "de-de-kimig-2026",
+        "name": "Germany KI-MIG",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-hi-h1682-2026",
+        "name": "Hawaii H 1682 — Disclosure of Intimate Images",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s2909-2026",
+        "name": "Illinois S 2909 — Evaluation of Certified Employees Article",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3114-2026",
+        "name": "Illinois S 3114 — Transparency in Downcoding Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-nc-s474-2025",
+        "name": "North Carolina S 474 — The DAVE Act",
+        "from": "proposed",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 8,
+    "enforcement_added": 0,
+    "rules_added": 1,
+    "total_instruments": 2509
+  },
+  {
     "date": "2026-07-06",
     "trigger": "scheduled",
     "added": [],
