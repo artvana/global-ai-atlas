@@ -310,5 +310,18 @@
     "outcome": "Settlement",
     "summary": "BIPA class action over Facebook's Tag Suggestions feature using facial recognition without Illinois users' consent; settled for $650 million — the largest privacy class action settlement in US history at the time.",
     "source_url": "https://www.ftc.gov/system/files/documents/cases/152_3109_facebook_consent_order.pdf"
+  },
+  {
+    "id": "enf-gdpr-character-ai-2026",
+    "law_id": "eu-eu-gdpr-2016",
+    "law_short_name": "GDPR",
+    "date": "2026-07-03",
+    "enforcement_body": "Italian Garante",
+    "respondent": "Character Technologies, Inc. (Character.AI)",
+    "violation_type": "Inadequate transparency on data processing for AI training, deficient age verification and default-public settings for minors, and delays in DPIA and EU representative designation",
+    "amount_usd": 181000,
+    "outcome": "Fine — €158,000 ($181K) plus corrective order to fix age verification, enforce a cooling-off period blocking re-registration by minors, and default minors' profiles to private; measures to be reported within 120 days",
+    "summary": "The Italian Garante fined Character Technologies €158,000 over its Character.AI chatbot platform, which lets users including teenagers interact with AI-generated personas. The authority found inadequate privacy disclosures about how personal data was used to train its language models, insufficient age-verification safeguards that left minors exposed to unsuitable content with public-by-default profiles, and late completion of a required DPIA and appointment of an EU representative. Character Technologies was ordered to set minors' profiles to private by default and report its remedial measures within 120 days.",
+    "source_url": "https://www.garanteprivacy.it/garante/doc.jsp?ID=10269571"
   }
 ]

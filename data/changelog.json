@@ -1,5 +1,83 @@
 [
   {
+    "date": "2026-07-20",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "br-br-pl3743-2026",
+        "name": "Brazil AI Tax Administration Transparency Bill (PL 3743/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-pl3695-2026",
+        "name": "Brazil AI Fraudulent Manipulation Crime Bill (PL 3695/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-hi-h1682-2026",
+        "name": "Hawaii H 1682 — Disclosure of Intimate Images",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-hi-h2137-2026",
+        "name": "Hawaii HB 2137 / Act 247 (AI Digital Imitations)",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-hi-s3001-2026",
+        "name": "Hawaii SB 3001 / Act 248 (AI Disclosure and Safety Act)",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s2909-2026",
+        "name": "Illinois S 2909 — Evaluation of Certified Employees Article",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3114-2026",
+        "name": "Illinois S 3114 — Transparency in Downcoding Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-mo-s1019-2026",
+        "name": "Missouri S 1019 — Hospital Investments and Service Areas",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-mo-h2372-2026",
+        "name": "Missouri H 2372 — Health Care",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-nc-s474-2025",
+        "name": "North Carolina S 474 — The DAVE Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "cn-cn-anthropomorphicai-2026",
+        "name": "Anthropomorphic AI Measures",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 8,
+    "enforcement_added": 1,
+    "rules_added": 0,
+    "total_instruments": 2510
+  },
+  {
     "date": "2026-07-06",
     "trigger": "scheduled",
     "added": [],
