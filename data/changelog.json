@@ -1,5 +1,65 @@
 [
   {
+    "date": "2026-07-22",
+    "trigger": "manual",
+    "added": [
+      {
+        "id": "kr-kr-aienforcementamend-2026",
+        "name": "South Korea AI Basic Act Enforcement Decree Amendment (July 2026)",
+        "jurisdiction": "South Korea",
+        "status": "in_force"
+      },
+      {
+        "id": "kr-kr-aibasicact-pubsec-2026",
+        "name": "South Korea AI Basic Act Amendment (Public-Sector AI Security)",
+        "jurisdiction": "South Korea",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-hi-h2137-2026",
+        "name": "Hawaii H 2137 — Artificial Intelligence",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-hi-s3001-2026",
+        "name": "Hawaii S 3001 — Artificial Intelligence",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-mo-s1019-2026",
+        "name": "Missouri S 1019 — Hospital Investments and Service Areas",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-mo-h2372-2026",
+        "name": "Missouri H 2372 — Health Care",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-nj-a3497-2026",
+        "name": "New Jersey A 3497 — Rental Property Owners Competition Agreements",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "cn-cn-anthropomorphicai-2026",
+        "name": "Anthropomorphic AI Measures",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 6,
+    "enforcement_added": 0,
+    "rules_added": 3,
+    "total_instruments": 2511
+  },
+  {
     "date": "2026-07-13",
     "trigger": "scheduled",
     "added": [
