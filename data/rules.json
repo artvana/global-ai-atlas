@@ -373318,5 +373318,96 @@
         "instrument_type": "statute"
       }
     ]
+  },
+  {
+    "rule_id": "r-0004",
+    "rule_text": "If you are a public institution procuring AI, you must give priority to AI products and services that have passed the official verification system, and verified products receive procurement advantages such as scoring bonuses and relaxed track-record requirements.",
+    "rule_text_technical": "Under the July 2026 amendment to the Enforcement Decree of the Act on the Development of Artificial Intelligence and Establishment of Trust Basis, public institutions must prioritise AI products and services certified under the newly established 'AI Product and Service Verification System' (verification requested through KOSA, technical review by TTA assessing substantive use of AI computing systems). Verified products receive procurement preferences effective August 2026: a 1.5-point technical bonus in total-price contract evaluations, relaxed Multiple Award Schedule (MAS) participation requirements, elimination of the prior three-delivery-record requirement for software unit-price contracts, and substitution of the verification certificate for patent/technical-evidence requirements in AI software innovation-product designation.",
+    "category": "institutional_framework",
+    "tags": [
+      "public_procurement",
+      "ai_verification",
+      "certification",
+      "procurement_preference",
+      "public_sector",
+      "industry_promotion"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-aienforcementamend-2026",
+      "law_name": "South Korea AI Basic Act Enforcement Decree Amendment (July 2026)",
+      "citation": "Enforcement Decree Amendment (2026) — AI Product and Service Verification System / public procurement provisions",
+      "date": "2026-07-14"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-aienforcementamend-2026",
+        "relationship": "origin",
+        "citation": "Enforcement Decree Amendment (2026) — AI Product and Service Verification System / public procurement provisions",
+        "notes": "Establishes a national AI verification scheme (KOSA/TTA) and requires public institutions to prioritise verified AI products/services in Korea's roughly KRW 243 trillion public procurement market, with procurement scoring bonuses and relaxed track-record rules effective August 2026.",
+        "instrument_binding": true,
+        "instrument_type": "regulation"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0005",
+    "rule_text": "If you are a public institution official making a decision to adopt AI products or services, you are exempt from liability for that decision provided there was no intentional misconduct or gross negligence.",
+    "rule_text_technical": "Under the July 2026 amendment to the Enforcement Decree of South Korea's AI Basic Act, officials of public institutions are granted a liability exemption (safe harbour) for decisions to adopt AI products and services, absent intentional misconduct or gross negligence, in order to encourage public-sector AI adoption.",
+    "category": "liability",
+    "tags": [
+      "safe_harbour",
+      "liability_exemption",
+      "public_officials",
+      "ai_adoption",
+      "good_faith",
+      "public_sector"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-aienforcementamend-2026",
+      "law_name": "South Korea AI Basic Act Enforcement Decree Amendment (July 2026)",
+      "citation": "Enforcement Decree Amendment (2026) — public-official liability exemption provision",
+      "date": "2026-07-14"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-aienforcementamend-2026",
+        "relationship": "origin",
+        "citation": "Enforcement Decree Amendment (2026) — public-official liability exemption provision",
+        "notes": "Shields public institution officials from liability for good-faith AI adoption decisions (no intentional misconduct or gross negligence), designed to reduce risk-aversion barriers to public-sector AI uptake.",
+        "instrument_binding": true,
+        "instrument_type": "regulation"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0006",
+    "rule_text": "Government agencies must establish criteria and procedures to provide AI service cost subsidies to AI-vulnerable groups, and the group of eligible beneficiaries is expanded to include jobseekers and women re-entering the workforce.",
+    "rule_text_technical": "Under the July 2026 amendment to the Enforcement Decree of South Korea's AI Basic Act, the definition of digitally/AI-vulnerable groups is broadened beyond persons with disabilities, seniors aged 65+, basic-livelihood recipients and near-poor households to add jobseekers and women with career interruptions re-entering the workforce. Central agencies and local governments must establish eligibility criteria and procedures under which such individuals may apply for AI service cost subsidies within budget limits, with additional support directed to non-capital-region university talent and STEM professionals to address regional infrastructure concentration.",
+    "category": "sector_specific",
+    "tags": [
+      "digital_inclusion",
+      "ai_vulnerable_groups",
+      "subsidy",
+      "jobseekers",
+      "women_workforce_reentry",
+      "regional_equity",
+      "access"
+    ],
+    "first_instance": {
+      "law_id": "kr-kr-aienforcementamend-2026",
+      "law_name": "South Korea AI Basic Act Enforcement Decree Amendment (July 2026)",
+      "citation": "Enforcement Decree Amendment (2026) — AI-vulnerable groups / AI service subsidy provisions",
+      "date": "2026-07-14"
+    },
+    "instances": [
+      {
+        "law_id": "kr-kr-aienforcementamend-2026",
+        "relationship": "origin",
+        "citation": "Enforcement Decree Amendment (2026) — AI-vulnerable groups / AI service subsidy provisions",
+        "notes": "Expands the AI-vulnerable-group definition to include jobseekers and women re-entering work and directs central/local government to set up criteria and budget-limited AI service cost subsidies, plus support for non-capital-region talent.",
+        "instrument_binding": true,
+        "instrument_type": "regulation"
+      }
+    ]
   }
 ]
