@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-07-27",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "eu-eu-art50guidelines-2026",
+        "name": "EU AI Act Article 50 Transparency Guidelines",
+        "jurisdiction": "European Union",
+        "status": "enacted_not_yet_effective"
+      },
+      {
+        "id": "ke-ke-aibill-2026",
+        "name": "Kenya Artificial Intelligence Bill 2026",
+        "jurisdiction": "Kenya",
+        "status": "proposed"
+      },
+      {
+        "id": "eu-eu-cada-2026",
+        "name": "EU Cloud and AI Development Act (CADA)",
+        "jurisdiction": "European Union",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "ru-ru-ailaw-2025",
+        "name": "Russia AI Foundations Law",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2025",
+        "name": "EU AI Omnibus (Reg. 2026/1744)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2026",
+        "name": "Digital Omnibus on AI",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 4,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2514
+  },
+  {
     "date": "2026-07-22",
     "trigger": "manual",
     "added": [
