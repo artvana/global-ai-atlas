@@ -1,5 +1,18 @@
 [
   {
+    "id": "enf-gdpr-character-ai-2026",
+    "law_id": "eu-eu-gdpr-2016",
+    "law_short_name": "GDPR",
+    "date": "2026-07-03",
+    "enforcement_body": "Italian Garante per la protezione dei dati personali",
+    "respondent": "Character Technologies Inc. (Character.AI)",
+    "violation_type": "Inadequate privacy notice, late DPIA and late appointment of EU representative for a generative AI companion service; deficient child-protection safeguards and age verification",
+    "amount_usd": 180000,
+    "outcome": "Fine — €158,000 (~$180,000) plus corrective measures; compliance report due within 120 days",
+    "summary": "Following an ex officio investigation, the Italian Garante fined Character Technologies Inc. €158,000 over its Character.AI generative AI service, which lets users — including minors — create and chat with virtual characters. The Authority found shortcomings in the privacy notice and that the data protection impact assessment and the appointment of an EU representative were both completed late, alongside concerns about safeguards for minors and age-verification procedures. Beyond the fine, the Garante ordered Character Technologies to ensure age-verification systems work correctly, make the 'cooling-off period' blocking re-registration by barred minors effective, and set minors' profiles to private by default, reporting back within 120 days. Decision adopted 3 July 2026; announced by press release on 9 July 2026.",
+    "source_url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10269594"
+  },
+  {
     "id": "enf-ftc-cmg-active-listening-2026",
     "law_id": "us-ftc-aipolicy-2023",
     "law_short_name": "FTC AI Policy Statement",

@@ -1,5 +1,59 @@
 [
   {
+    "date": "2026-08-03",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "de-de-kimvg-2026",
+        "name": "Germany AI in Migration Administration Act (KIMVG, draft)",
+        "jurisdiction": "Germany",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-ca-sb942-2024",
+        "name": "California SB 942 (AI Transparency Act)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "ru-ru-ailaw-2025",
+        "name": "Russia AI Technologies Support Law (243-FZ)",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-ca-ab853-2025",
+        "name": "California AB 853 (AI Transparency Act Technical Corrections)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2025",
+        "name": "EU Digital Omnibus — AI Act Amendments",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "de-de-kimig-2026",
+        "name": "Germany KI-MIG",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2026",
+        "name": "Digital Omnibus on AI",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 3,
+    "enforcement_added": 1,
+    "rules_added": 0,
+    "total_instruments": 2512
+  },
+  {
     "date": "2026-07-22",
     "trigger": "manual",
     "added": [
