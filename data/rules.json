@@ -36798,6 +36798,14 @@
         "notes": "EU omnibus adds an AI Act Article 5 prohibition on AI systems that generate child sexual abuse material (compliance by 2 Dec 2026); an EU-wide market prohibition on the AI practice itself rather than a criminal prohibition on individual creators.",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      },
+      {
+        "law_id": "br-br-aichildprotection-2026",
+        "relationship": "agrees",
+        "citation": "Art. 241-C, ECA (as amended by Art. 2 of Lei nº 15.487/2026)",
+        "notes": "Both criminalise creating, adapting or modifying a visual depiction so as to show a minor in sexual content; Brazil's art. 241-C reaches any technological means that alters the victim's image or voice, expressly including artificial intelligence, and carries 3 to 5 years' reclusão and a fine.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -85264,6 +85272,14 @@
         "relationship": "origin",
         "citation": "§ 827.071(1)(l)2",
         "notes": "Rule introduced in Florida HB 757 (AI Deepfake Criminal Prohibition) (Florida, 2025-06-01).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "br-br-aichildprotection-2026",
+        "relationship": "agrees",
+        "citation": "Art. 241-E, III and sole paragraph, ECA (as amended by Art. 2 of Lei nº 15.487/2026)",
+        "notes": "Both apply a contextual, multi-factor test to decide whether an image of a minor is sexual; Brazil's version expressly reaches poses, framing or context with sexual connotation even where the genitals are covered or not exposed, and directs assessment of the image's context, mode of production, framing and purpose.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -298885,6 +298901,14 @@
         "notes": "Rule introduced in South Carolina H 4675 — Surveillance Data Retention and Storage (South Carolina, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "br-br-aichildprotection-2026",
+        "relationship": "similar",
+        "citation": "Art. 190-F, §§ 2 and 3, ECA (as inserted by Art. 2 of Lei nº 15.487/2026)",
+        "notes": "Both permit warrantless access to data where life or physical integrity is at imminent risk, but Brazil's provision lets police or prosecutors requisition connection records and subscriber data directly from connection or application providers and requires the requisition to be reported to the competent court within 48 hours, with the data barred from use outside the originating investigation.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -307541,6 +307565,14 @@
         "notes": "Proposed in Texas H 5517 — Sexually Explicit Artificially Generated Images (Texas, null) but bill was failed — negative premise only.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "br-br-aichildprotection-2026",
+        "relationship": "similar",
+        "citation": "Art. 241-E, caput, ECA (as amended by Art. 2 of Lei nº 15.487/2026)",
+        "notes": "Both extend the child sexual abuse material definition to depictions produced, manipulated or generated with AI, but Brazil's art. 241-E drops any identifiability or 'virtually indistinguishable' threshold and covers representations of a real or fictitious child alike.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -373407,6 +373439,66 @@
         "notes": "Expands the AI-vulnerable-group definition to include jobseekers and women re-entering work and directs central/local government to set up criteria and budget-limited AI service cost subsidies, plus support for non-capital-region talent.",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0007",
+    "rule_text": "If you entice, harass, invite, instigate or coerce a child under 14 for a libidinous act, your sentence is increased by one-third to two-thirds where you used artificial intelligence, deepfakes, filters or any other technology to alter your own image and voice so as to pass yourself off as a child or adolescent.",
+    "rule_text_technical": "Art. 241-D of the Statute of the Child and Adolescent (Lei nº 8.069/1990), as amended by Art. 2 of Lei nº 15.487/2026, punishes enticing, harassing, inviting, instigating or coercing a person under 14 years of age with a view to a libidinous act with 3 to 5 years' reclusão and a fine. Art. 241-D, § 2, I increases that penalty by one-third to two-thirds where the offender commits the conduct described in the caput or § 1 'utilizando recursos de inteligência artificial, deepfake, filtros ou qualquer outro recurso tecnológico que permita ao autor alterar sua imagem e voz, fazendo-se passar por criança ou adolescente', with the aim of inducing the victim to display themselves lasciviously or in a sexually explicit manner, or to supply sexual or sensual photographs or videos.",
+    "category": "synthetic_media",
+    "tags": [
+      "deepfake",
+      "grooming",
+      "impersonation",
+      "voice_cloning",
+      "penalty_enhancement",
+      "child_protection"
+    ],
+    "first_instance": {
+      "law_id": "br-br-aichildprotection-2026",
+      "law_name": "Lei nº 15.487/2026 — Brazil Child Sexual Violence and AI Law",
+      "citation": "Art. 241-D, § 2, I, ECA",
+      "date": "2026-08-06"
+    },
+    "instances": [
+      {
+        "law_id": "br-br-aichildprotection-2026",
+        "relationship": "origin",
+        "citation": "Art. 241-D, § 2, I, ECA (as amended by Art. 2 of Lei nº 15.487/2026)",
+        "notes": "Rule introduced in Lei nº 15.487/2026 (Brazil, 2026-08-06); first provision in the database to treat real-time AI, deepfake or filter-based impersonation of a child by the offender as an aggravating circumstance for online grooming.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0008",
+    "rule_text": "Criminal prosecution bodies may lawfully conduct a 'virtual patrol' — running software strictly dedicated to identifying and collecting files shared in public digital environments in child sexual violence cases — without prior judicial authorization, provided the collection observes the criminal procedure rules on chain of custody.",
+    "rule_text_technical": "Art. 190-F of the Statute of the Child and Adolescent (Lei nº 8.069/1990), as inserted by Art. 2 of Lei nº 15.487/2026, declares lawful the 'ronda virtual' carried out by a criminal prosecution body using software strictly intended to identify and collect files made available in public digital environments and related to crimes of sexual violence against a child or adolescent. Under § 1, public digital environments are those in which any person, with or without registration, may view content made available to the public at large — peer-to-peer (P2P) networks, forums, sites, channels, social networks or comparable cyber environments — provided they are accessible without special entry mechanisms such as individual authorisation or prior permission. Under § 4, the activity constitutes neither interception of communications under Lei nº 9.296/1996 nor police infiltration under art. 190-A, and dispenses with prior judicial authorisation. Under § 5, the collection of files must observe the chain-of-custody provisions of the Code of Criminal Procedure (Decreto-Lei nº 3.689/1941).",
+    "category": "institutional_framework",
+    "tags": [
+      "law_enforcement",
+      "automated_detection",
+      "investigatory_powers",
+      "chain_of_custody",
+      "csam",
+      "judicial_authorization"
+    ],
+    "first_instance": {
+      "law_id": "br-br-aichildprotection-2026",
+      "law_name": "Lei nº 15.487/2026 — Brazil Child Sexual Violence and AI Law",
+      "citation": "Art. 190-F, ECA",
+      "date": "2026-08-06"
+    },
+    "instances": [
+      {
+        "law_id": "br-br-aichildprotection-2026",
+        "relationship": "origin",
+        "citation": "Art. 190-F, caput and §§ 1, 4 and 5, ECA (as inserted by Art. 2 of Lei nº 15.487/2026)",
+        "notes": "Rule introduced in Lei nº 15.487/2026 (Brazil, 2026-08-06); expressly classifies automated file-collection tooling used against public digital environments as neither interception nor police infiltration, so no prior warrant is needed.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   }

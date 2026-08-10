@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-08-10",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "br-br-aichildprotection-2026",
+        "name": "Brazil Child Sexual Violence and AI Law",
+        "jurisdiction": "Brazil",
+        "status": "in_force"
+      },
+      {
+        "id": "br-br-algorithmicintegrity-2026",
+        "name": "Brazil AI Consumer Algorithmic Integrity Bill (PL 4881/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-ca-sb942-2024",
+        "name": "California SB 942 (AI Transparency Act)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "ru-ru-ailaw-2025",
+        "name": "Russia AI Foundations Law",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-ab853-2025",
+        "name": "California AB 853 (AI Transparency Act Technical Corrections)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3020-2026",
+        "name": "Illinois S 3020 — Domestic Violence and Harassment",
+        "from": "proposed",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 7,
+    "enforcement_added": 1,
+    "rules_added": 2,
+    "total_instruments": 2513
+  },
+  {
     "date": "2026-07-22",
     "trigger": "manual",
     "added": [
