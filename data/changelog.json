@@ -1,5 +1,58 @@
 [
   {
+    "date": "2026-08-17",
+    "trigger": "scheduled",
+    "added": [],
+    "promoted": [
+      {
+        "id": "us-ca-sb942-2024",
+        "name": "California SB 942 (AI Transparency Act)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "ru-ru-ailaw-2025",
+        "name": "Russia AI Foundations Law",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-ca-ab853-2025",
+        "name": "California AB 853 (AI Transparency Act Technical Corrections)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2025",
+        "name": "EU Digital Omnibus — AI Act Amendments",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3020-2026",
+        "name": "Illinois S 3020 — Domestic Violence and Harassment",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-h5284-2026",
+        "name": "Illinois H 5284 — Menopause Equity and Care Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2026",
+        "name": "Digital Omnibus on AI",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 4,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2511
+  },
+  {
     "date": "2026-07-22",
     "trigger": "manual",
     "added": [
