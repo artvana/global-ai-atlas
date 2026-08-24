@@ -21963,6 +21963,14 @@
         "notes": "Both establish a dedicated national AI coordination body, but Rwanda's RAIO sits within MINICT while Mauritius's MAIC is a standalone council with ~10 members from public, private, and international expert sectors.",
         "instrument_binding": false,
         "instrument_type": "strategy"
+      },
+      {
+        "law_id": "tr-tr-aiactionplan-2026",
+        "relationship": "similar",
+        "citation": "Cumhurbaşkanlığı Genelgesi 2026/9 (operative directive)",
+        "notes": "Both designate a lead government body to coordinate national AI policy implementation, but Rwanda recommends creating a new Responsible AI Office inside MINICT, while the Turkish Circular assigns coordination of the 2026-2030 AI Action Plan to an existing ministry — the Ministry of Industry and Technology, which prepared the Plan and publishes it — as a binding instruction rather than a recommendation.",
+        "instrument_binding": true,
+        "instrument_type": "circular"
       }
     ]
   },
@@ -296203,6 +296211,14 @@
         "notes": "Rule introduced in Pennsylvania H 1625 — Keystone Artificial Intelligence Authority (Pennsylvania, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "tr-tr-aiactionplan-2026",
+        "relationship": "similar",
+        "citation": "Cumhurbaşkanlığı Genelgesi 2026/9 (operative directive)",
+        "notes": "Both impose a cross-government cooperation duty in AI governance, but the Pennsylvania rule requires agencies to cooperate with a named AI authority and furnish requested documentation, whereas the Turkish Circular requires all public institutions to meticulously provide whatever support and assistance is needed during implementation of the national AI Action Plan, without a documentation-production element; the Turkish instrument is also binding, unlike the Pennsylvania bill.",
+        "instrument_binding": true,
+        "instrument_type": "circular"
       }
     ]
   },
@@ -373407,6 +373423,36 @@
         "notes": "Expands the AI-vulnerable-group definition to include jobseekers and women re-entering work and directs central/local government to set up criteria and budget-limited AI service cost subsidies, plus support for non-capital-region talent.",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0007",
+    "rule_text": "If you are a public institution or organisation, you must carry out the duties and responsibilities assigned to you under the national AI action plan.",
+    "rule_text_technical": "Presidential Circular No. 2026/9 (Resmî Gazete No. 33344, 18 August 2026) directs that all public institutions and organisations ('tüm kamu kurum ve kuruluşları') shall diligently fulfil the duties and responsibilities falling to them under the Türkiye Yapay Zekâ Eylem Planı (2026-2030) — the Türkiye Artificial Intelligence Action Plan (2026-2030) — as published on the official website of the Ministry of Industry and Technology (www.sanayi.gov.tr). The Circular is a binding administrative instruction to the Turkish public administration for the 2026-2030 plan period; it prescribes no penalties and imposes no obligations on private AI developers or deployers.",
+    "category": "institutional_framework",
+    "tags": [
+      "national_ai_strategy",
+      "action_plan",
+      "public_sector",
+      "whole_of_government",
+      "implementation_duty",
+      "presidential_circular"
+    ],
+    "first_instance": {
+      "law_id": "tr-tr-aiactionplan-2026",
+      "law_name": "Türkiye AI Action Plan Circular (2026/9)",
+      "citation": "Cumhurbaşkanlığı Genelgesi 2026/9 (operative directive)",
+      "date": "2026-08-17"
+    },
+    "instances": [
+      {
+        "law_id": "tr-tr-aiactionplan-2026",
+        "relationship": "origin",
+        "citation": "Cumhurbaşkanlığı Genelgesi 2026/9 (operative directive)",
+        "notes": "Binding whole-of-government mandate: the Circular puts the Türkiye AI Action Plan (2026-2030) into force and obliges every public institution and organisation to execute the tasks allocated to it under the Plan, replacing the 2021/18 circular framework for the National AI Strategy (2021-2025).",
+        "instrument_binding": true,
+        "instrument_type": "circular"
       }
     ]
   }
