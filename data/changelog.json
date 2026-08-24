@@ -1,5 +1,172 @@
 [
   {
+    "date": "2026-08-24",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "tr-tr-aiactionplan-2026",
+        "name": "Türkiye AI Action Plan Circular (2026/9)",
+        "jurisdiction": "Turkey",
+        "status": "in_force"
+      },
+      {
+        "id": "br-br-aisusp-2026",
+        "name": "Brazil AI in Public Security Bill (PL 4356/2025)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aialgorithmicaudit-2026",
+        "name": "Brazil AI Data Use / Algorithmic Audit Bill (PL 6706/2025)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aiincentives-2026",
+        "name": "Brazil Brazilian-AI Incentives Bill (PL 1074/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aidigitaleducation-2026",
+        "name": "Brazil AI Digital Inclusion in Education Bill (PL 7135/2025)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "ke-ke-aibill-2026",
+        "name": "Kenya Artificial Intelligence Bill 2026",
+        "jurisdiction": "Kenya",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-ca-sb942-2024",
+        "name": "California SB 942 (AI Transparency Act)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "ru-ru-ailaw-2025",
+        "name": "Russia AI Foundations Law",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-ca-ab853-2025",
+        "name": "California AB 853 (AI Transparency Act Technical Corrections)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2025",
+        "name": "EU Digital Omnibus — AI Act Amendments",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "de-de-kimig-2026",
+        "name": "Germany KI-MIG",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1651-2026",
+        "name": "California A 1651 — State Bar of California: Artificial Intelligence",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-il-s3020-2026",
+        "name": "Illinois S 3020 — Domestic Violence and Harassment",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-h5284-2026",
+        "name": "Illinois H 5284 — Menopause Equity and Care Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2026",
+        "name": "Digital Omnibus on AI",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 14,
+    "enforcement_added": 0,
+    "rules_added": 1,
+    "total_instruments": 2517
+  },
+  {
+    "date": "2026-08-24",
+    "trigger": "international-reverification",
+    "added": [],
+    "promoted": [],
+    "stage_updates": 0,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2517,
+    "note": "Re-verified the 15 stalest international (non-US) records against official government, regulator and official-journal sources. Material amendments recorded: EU AI Act amended by Regulation (EU) 2026/1744 (Digital Omnibus on AI, in force 27 Jul 2026) deferring high-risk obligations to 2 Dec 2027 (Annex III) and 2 Aug 2028 (Annex I) and adding new Art. 5 prohibitions from 2 Dec 2026; UK Online Safety Act amended by the Crime and Policing Act 2026 (new OSA s. 216A on illegal AI-generated content and AI services); South Korea AI Basic Act amended by Act No. 21311 (in force 21 Jul 2026). Date corrections: India DPDP Act effective_date 2023-08-11 to 2025-11-13 (MeitY commencement notifications G.S.R. 843(E)-846(E)); Rwanda DPA effective_date to 2021-10-15 (Art. 70, Official Gazette Special of 15/10/2021); China GenAI training-data standards enacted_date to 2025-04-25 (SAMR). Dead or unofficial source URLs replaced with official ones for China PIPL (NPC), China deep synthesis / algorithmic recommendations / AI labelling (CAC), India DPDP Act (MeitY), Vietnam AI Law (Cong bao) and Korea AI Basic Act (law.go.kr). No record was repealed or superseded."
+  },
+  {
+    "date": "2026-08-24",
+    "trigger": "weekly-curation",
+    "added": [
+      {
+        "id": "tr-tr-aiactionplan-2026",
+        "name": "Türkiye AI Action Plan Circular (2026/9)",
+        "jurisdiction": "Turkey",
+        "status": "in_force"
+      },
+      {
+        "id": "br-br-aisusp-2026",
+        "name": "Brazil AI in Public Security Bill (PL 4356/2025)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aialgorithmicaudit-2026",
+        "name": "Brazil AI Data Use / Algorithmic Audit Bill (PL 6706/2025)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aiincentives-2026",
+        "name": "Brazil Brazilian-AI Incentives Bill (PL 1074/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aidigitaleducation-2026",
+        "name": "Brazil AI Digital Inclusion in Education Bill (PL 7135/2025)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "ke-ke-aibill-2026",
+        "name": "Kenya Artificial Intelligence Bill 2026",
+        "jurisdiction": "Kenya",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-ca-a1651-2026",
+        "name": "California A 1651 — State Bar of California: Artificial Intelligence",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      }
+    ],
+    "stage_updates": 1,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2517
+  },
+  {
     "date": "2026-07-22",
     "trigger": "manual",
     "added": [
