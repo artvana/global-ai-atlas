@@ -144270,6 +144270,14 @@
         "notes": "Rule introduced in California S 574 — Generative Artificial Intelligence (California, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "agrees",
+        "citation": "Requirement 2 (paras 9, 29)",
+        "notes": "Both require the user of generative AI to check that AI-assisted material is accurate before it is relied on, but the FWC Guidance Note applies the duty to any person lodging a document in a Commission case (not only attorneys) and adds a duty to state in the document that the check was done.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
       }
     ]
   },
@@ -144383,6 +144391,14 @@
         "notes": "Rule introduced in California S 574 — Generative Artificial Intelligence (California, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "agrees",
+        "citation": "Requirement 2 (paras 10, 30-31)",
+        "notes": "Both bar filing documents containing GenAI-supplied authorities that have not been personally verified by a human; the FWC version binds every party (not just the responsible attorney), extends to facts, evidence, textbooks, articles and quotes as well as cases and legislation, and expressly forbids using another GenAI tool to do the checking.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
       }
     ]
   },
@@ -212337,6 +212353,14 @@
         "instrument_binding": true,
         "instrument_type": "statute",
         "variant_of": "us-ky-h672-2025"
+      },
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "similar",
+        "citation": "para 31",
+        "notes": "Both insist that validation of generative AI output for correctness be performed by a human, but Kentucky imposes the duty on state entities deploying AI systems whereas the FWC Guidance Note imposes it on litigants and representatives checking documents to be lodged in a Commission case.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
       }
     ]
   },
@@ -237161,6 +237185,14 @@
         "notes": "Rule introduced in Michigan H 5899 — Artificial Intelligence (Michigan, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "similar",
+        "citation": "paras 14, 40",
+        "notes": "Both prohibit putting confidential information into generative AI that may not keep it secure from unauthorized disclosure, but the FWC provision is framed as a recommendation ('should not') addressed to participants in tribunal cases and also covers another person's personal information given to public GenAI such as ChatGPT, Claude, CoPilot or Gemini.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
       }
     ]
   },
@@ -373407,6 +373439,187 @@
         "notes": "Expands the AI-vulnerable-group definition to include jobseekers and women re-entering work and directs central/local government to set up criteria and budget-limited AI service cost subsidies, plus support for non-capital-region talent.",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0007",
+    "rule_text": "If you use generative AI to help prepare an application or any other document to be lodged in a tribunal case, you must state in the document that generative AI was used and how you used it.",
+    "rule_text_technical": "Under Requirement 1 of the Fair Work Commission's Guidance Note on the Use of Generative Artificial Intelligence in Commission Cases (paras 8, 25-27), any person who uses GenAI to create, write, edit, modify or otherwise prepare an application or other document to be lodged in a Commission case must state in the document both that GenAI was used and how it was used (for example, for legal research, organising facts or evidence, transcription or translation, or writing or editing content). The requirement may be satisfied by completing the GenAI section of a Commission form or template. Use of GenAI only for spell-checking, grammar or formatting is excluded (para 7), as are e-discovery software and search engines that merely identify existing content (para 46).",
+    "category": "disclosure",
+    "tags": [
+      "generative_ai",
+      "ai_use_disclosure",
+      "court_filings",
+      "tribunal_proceedings",
+      "litigants",
+      "access_to_justice"
+    ],
+    "first_instance": {
+      "law_id": "au-au-fwcgenaiguidance-2026",
+      "law_name": "Guidance Note: Use of Generative Artificial Intelligence in Commission Cases (Fair Work Commission)",
+      "citation": "Requirement 1 (paras 8, 25-27)",
+      "date": "2026-08-24"
+    },
+    "instances": [
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "origin",
+        "citation": "Requirement 1 (paras 8, 25-27)",
+        "notes": "Rule introduced in the Fair Work Commission GenAI Guidance Note (Australia, published 2026-08-24, commencing 2026-10-20); first mandatory party-side disclosure of GenAI use in documents lodged in a tribunal case in the database.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0008",
+    "rule_text": "If you use generative AI to help prepare a document to be lodged in a tribunal case, you must state in the document that you have checked it and that its details are correct and relevant to the case.",
+    "rule_text_technical": "Under Requirement 2 of the Fair Work Commission's GenAI Guidance Note (paras 9, 33), after checking the document and making any necessary changes the filer must state in the document that this has been done - for example by completing the GenAI section of a Commission form or by stating 'All details in this document have been checked. To the best of my knowledge they are correct and relevant to the case.' The Guidance Note reinforces the attestation by noting that knowingly giving false or misleading information to the Commission is an offence under s 137.1 of the Criminal Code, punishable by up to 12 months' imprisonment.",
+    "category": "accountability_governance",
+    "tags": [
+      "generative_ai",
+      "attestation",
+      "certification",
+      "verification",
+      "court_filings",
+      "tribunal_proceedings"
+    ],
+    "first_instance": {
+      "law_id": "au-au-fwcgenaiguidance-2026",
+      "law_name": "Guidance Note: Use of Generative Artificial Intelligence in Commission Cases (Fair Work Commission)",
+      "citation": "Requirement 2 (paras 9, 33)",
+      "date": "2026-08-24"
+    },
+    "instances": [
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "origin",
+        "citation": "Requirement 2 (paras 9, 33)",
+        "notes": "Rule introduced in the Fair Work Commission GenAI Guidance Note (Australia, 2026-08-24); pairs the substantive verification duty with an express on-document certification that the verification was performed.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0009",
+    "rule_text": "If generative AI was used to help prepare your witness statement or declaration, you must check and correct it so that it is based on your own knowledge and reflects your own words, and you must state that in the document and declare it is true to the best of your knowledge.",
+    "rule_text_technical": "Under Requirement 3 of the Fair Work Commission's GenAI Guidance Note (paras 12-13, 35-38), where GenAI is used to help create, write, edit, modify or otherwise prepare a witness statement or declaration, the witness or declarant must check the document and make any necessary changes so that it is based on their own knowledge, reflects their own words and is true to the best of their knowledge, and must then state that in the document and sign a declaration of truth. GenAI should not be used to create the factual content of a witness statement or declaration, although it may be used to transcribe speech or translate into English provided the document still reflects the witness's own words. Giving false or misleading sworn or affirmed evidence is an offence under s 678 of the Fair Work Act 2009 (Cth), punishable by up to 12 months' imprisonment.",
+    "category": "human_oversight",
+    "tags": [
+      "generative_ai",
+      "witness_statement",
+      "declaration",
+      "human_authorship",
+      "own_knowledge",
+      "tribunal_proceedings",
+      "evidence"
+    ],
+    "first_instance": {
+      "law_id": "au-au-fwcgenaiguidance-2026",
+      "law_name": "Guidance Note: Use of Generative Artificial Intelligence in Commission Cases (Fair Work Commission)",
+      "citation": "Requirement 3 (paras 12-13, 35-38)",
+      "date": "2026-08-24"
+    },
+    "instances": [
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "origin",
+        "citation": "Requirement 3 (paras 12-13, 35-38)",
+        "notes": "Rule introduced in the Fair Work Commission GenAI Guidance Note (Australia, 2026-08-24); first instance in the database of a human-authorship and declaration-of-truth requirement for AI-assisted witness evidence.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0010",
+    "rule_text": "If you are a lawyer, paid agent, HR adviser or union or employer-organisation officer representing another person, you must include in any document you lodge hyperlinks to all case law cited in it, where hyperlinks are available.",
+    "rule_text_technical": "Under para 45 of the Fair Work Commission's GenAI Guidance Note, a 'professional representative' (defined in para 46 as a lawyer or paid agent, including an employed one, an HR adviser employed by the represented person, or an employee or officer of a union, employer organisation, peak council or not-for-profit body) who uses GenAI in preparing any document to be lodged in a Commission case must include hyperlinks to all case law referred to in the document where hyperlinks are available. For other filers, hyperlinking is only recommended (paras 11, 32).",
+    "category": "accountability_governance",
+    "tags": [
+      "generative_ai",
+      "hyperlinks",
+      "case_law_citation",
+      "professional_representative",
+      "hallucinated_citations",
+      "tribunal_proceedings"
+    ],
+    "first_instance": {
+      "law_id": "au-au-fwcgenaiguidance-2026",
+      "law_name": "Guidance Note: Use of Generative Artificial Intelligence in Commission Cases (Fair Work Commission)",
+      "citation": "para 45",
+      "date": "2026-08-24"
+    },
+    "instances": [
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "origin",
+        "citation": "para 45",
+        "notes": "Rule introduced in the Fair Work Commission GenAI Guidance Note (Australia, 2026-08-24); imposes a verifiable-citation duty on professional representatives that is only a recommendation for self-represented parties.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0011",
+    "rule_text": "If you are a legal practitioner using generative AI in a tribunal case, you are held to a more onerous standard than other users: you must also maintain high ethical standards and comply with your professional obligations, and failure to do so may be referred to your legal services regulator.",
+    "rule_text_technical": "Under para 44 of the Fair Work Commission's GenAI Guidance Note, the standard for responsible use of GenAI in Commission cases is more onerous for a legal practitioner: in addition to complying with Requirements 1 to 3, a legal practitioner must maintain high ethical standards and comply with their professional obligations in any use of GenAI in a Commission case, and a failure to do so may result in a complaint being made to their legal services regulator.",
+    "category": "accountability_governance",
+    "tags": [
+      "generative_ai",
+      "legal_practitioner",
+      "professional_conduct",
+      "heightened_duty",
+      "legal_services_regulator",
+      "tribunal_proceedings"
+    ],
+    "first_instance": {
+      "law_id": "au-au-fwcgenaiguidance-2026",
+      "law_name": "Guidance Note: Use of Generative Artificial Intelligence in Commission Cases (Fair Work Commission)",
+      "citation": "para 44",
+      "date": "2026-08-24"
+    },
+    "instances": [
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "origin",
+        "citation": "para 44",
+        "notes": "Rule introduced in the Fair Work Commission GenAI Guidance Note (Australia, 2026-08-24); layers professional-conduct enforcement, via the practitioner's legal services regulator, on top of the generally applicable GenAI requirements.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0012",
+    "rule_text": "If you do not comply with the tribunal's generative AI requirements, your documents may be given less weight or disregarded, you may be ordered to pay another party's costs, or your case may be dismissed.",
+    "rule_text_technical": "Under paras 15 and 26 of the Fair Work Commission's GenAI Guidance Note, non-compliance with the disclosure, verification and witness-statement requirements may affect the party's case: documents may be given less weight or disregarded by the Commission, the Commission may order the party to pay costs incurred by another party, or the case may be dismissed. There is no monetary penalty regime; sanctions operate through the Commission's case-management, costs and dismissal powers under the Fair Work Act 2009 (Cth) and the Fair Work Commission Rules. Disclosing GenAI use does not itself affect how the merits of a document are treated (para 26).",
+    "category": "enforcement_penalties",
+    "tags": [
+      "generative_ai",
+      "procedural_sanctions",
+      "costs_order",
+      "evidentiary_weight",
+      "dismissal",
+      "tribunal_proceedings"
+    ],
+    "first_instance": {
+      "law_id": "au-au-fwcgenaiguidance-2026",
+      "law_name": "Guidance Note: Use of Generative Artificial Intelligence in Commission Cases (Fair Work Commission)",
+      "citation": "paras 15, 26",
+      "date": "2026-08-24"
+    },
+    "instances": [
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "origin",
+        "citation": "paras 15, 26",
+        "notes": "Rule introduced in the Fair Work Commission GenAI Guidance Note (Australia, 2026-08-24); enforcement runs through procedural consequences rather than fines, since the instrument is a tribunal practice document.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
       }
     ]
   }
