@@ -1,5 +1,119 @@
 [
   {
+    "date": "2026-08-31",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "au-au-fwcgenaiguidance-2026",
+        "name": "FWC GenAI Guidance Note",
+        "jurisdiction": "Australia",
+        "status": "enacted_not_yet_effective"
+      },
+      {
+        "id": "br-br-aiworkertraining-2026",
+        "name": "Brazil AI/Automation Worker Retraining Bill (PL 5178/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aisusp-2025",
+        "name": "Brazil AI in Public Security Bill (PL 4356/2025)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aidataaudit-2025",
+        "name": "Brazil AI Data Protection / Algorithmic Audit Bill (PL 6706/2025)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aidigitalinclusion-2025",
+        "name": "Brazil AI Digital Inclusion / Education Bill (PL 7135/2025)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aiincentives-2026",
+        "name": "Brazil Brazilian AI Development Incentives Bill (PL 1074/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "ke-ke-aibill-2026",
+        "name": "Kenya Artificial Intelligence Bill 2026",
+        "jurisdiction": "Kenya",
+        "status": "proposed"
+      },
+      {
+        "id": "ca-fed-c277-2026",
+        "name": "Canada Bill C-277 (Regulating the Online Use of Deepfakes Act)",
+        "jurisdiction": "Canada",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-ca-sb942-2024",
+        "name": "California SB 942 (AI Transparency Act)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "ru-ru-ailaw-2025",
+        "name": "Russia AI Foundations Law",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-ab853-2025",
+        "name": "California AB 853 (AI Transparency Act Technical Corrections)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-reg-2025",
+        "name": "EU Digital Omnibus — Digital Law Amendments",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s928-2026",
+        "name": "California S 928 — California State University: Faculty Employees",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s1133-2026",
+        "name": "California S 1133 — Pupil Instruction: Preventative Health Instruction",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1651-2026",
+        "name": "California A 1651 — State Bar of California: Artificial Intelligence",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3020-2026",
+        "name": "Illinois S 3020 — Domestic Violence and Harassment",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-h5284-2026",
+        "name": "Illinois H 5284 — Menopause Equity and Care Act",
+        "from": "proposed",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 26,
+    "enforcement_added": 2,
+    "rules_added": 6,
+    "total_instruments": 2519
+  },
+  {
     "date": "2026-07-22",
     "trigger": "manual",
     "added": [

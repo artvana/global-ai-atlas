@@ -310,5 +310,31 @@
     "outcome": "Settlement",
     "summary": "BIPA class action over Facebook's Tag Suggestions feature using facial recognition without Illinois users' consent; settled for $650 million — the largest privacy class action settlement in US history at the time.",
     "source_url": "https://www.ftc.gov/system/files/documents/cases/152_3109_facebook_consent_order.pdf"
+  },
+  {
+    "id": "enf-gdpr-characterai-2026",
+    "law_id": "eu-eu-gdpr-2016",
+    "law_short_name": "GDPR",
+    "date": "2026-07-03",
+    "enforcement_body": "Italian Garante per la protezione dei dati personali",
+    "respondent": "Character Technologies Inc. (Character.AI)",
+    "violation_type": "Inadequate privacy notice, late DPIA and EU representative designation, and insufficient age-verification safeguards for minors on a generative AI companion service",
+    "amount_usd": 185000,
+    "outcome": "Administrative fine of EUR 158,000 plus corrective measures ordered",
+    "summary": "Italy's Garante fined Character Technologies Inc. EUR 158,000 over its Character.AI generative AI chatbot service, finding gaps in its privacy information notice and that it carried out its data protection impact assessment and appointed an EU representative only belatedly. Because the service is a generative AI entertainment product accessible to minors, the Garante also ordered corrective measures: the age-verification system must work properly, mechanisms must effectively stop blocked minors from re-registering, and minors' profiles must be private by default. The company was given 120 days to document compliance.",
+    "source_url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10269594"
+  },
+  {
+    "id": "enf-sec-genesisai-2026",
+    "law_id": null,
+    "law_short_name": "Securities Act of 1933 s. 17(a)(2)",
+    "date": "2026-08-26",
+    "enforcement_body": "U.S. Securities and Exchange Commission (S.D. Fla.)",
+    "respondent": "GenesisAI Corp. and Archil Cheishvili",
+    "violation_type": "Negligent misrepresentation of revenue projections, valuation, partnerships and customer demand for a purported AI model marketplace in crowdfunded securities offerings",
+    "amount_usd": 109184,
+    "outcome": "Settled action; consented final judgments with permanent injunction, $50,000 disgorgement plus $9,184.53 prejudgment interest and a $50,000 civil penalty against Cheishvili",
+    "summary": "The SEC filed settled charges against AI start-up GenesisAI Corp. and founder/former CEO Archil Cheishvili over Regulation Crowdfunding and Regulation A offerings that raised more than $5.3 million from over 4,000 investors between December 2019 and December 2024. The SEC alleged the defendants promoted a marketplace for AI models using revenue projections rising to $250 million, valuations exceeding $200 million, and claims of up to 25 partnerships and a customer waitlist, when the marketplace stayed in testing until 2022 and was never commercially viable, the valuations rested on Cheishvili's subjective estimates, the partnerships were unenforceable and no waitlist existed. Without admitting the allegations, both consented to final judgments enjoining violations of Securities Act Section 17(a)(2), with Cheishvili ordered to pay disgorgement, prejudgment interest and a civil penalty.",
+    "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-26619"
   }
 ]
