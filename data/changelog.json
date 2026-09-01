@@ -1,5 +1,35 @@
 [
   {
+    "date": "2026-09-01",
+    "trigger": "reverification",
+    "note": "Re-verification pass over a 60-record sample of in_force US laws: source-URL health, amendment detection, status and metadata checks. 11 dead/wrong source URLs replaced, 3 status corrections, 17 date/citation corrections, 12 amendment or status notes added. last_verified set to 2026-09-01 on all 60.",
+    "added": [],
+    "promoted": [
+      {
+        "id": "us-nc-sb880-2024",
+        "name": "North Carolina SB 880 (AI in Elections)",
+        "from": "in_force",
+        "to": "failed"
+      },
+      {
+        "id": "us-nv-ab384-2024",
+        "name": "Nevada AB 384 (AI in Elections)",
+        "from": "in_force",
+        "to": "superseded"
+      },
+      {
+        "id": "us-il-aiea-2024",
+        "name": "Illinois AIEA (AI Employment Analytics)",
+        "from": "in_force",
+        "to": "superseded"
+      }
+    ],
+    "stage_updates": [],
+    "enforcement_added": [],
+    "rules_added": [],
+    "total_instruments": 2511
+  },
+  {
     "date": "2026-07-22",
     "trigger": "manual",
     "added": [
