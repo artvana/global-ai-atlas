@@ -1,5 +1,155 @@
 [
   {
+    "date": "2026-09-07",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "br-br-aisusp-2025",
+        "name": "Brazil AI in Public Security Bill (PL 4356/2025)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-algoaudit-2025",
+        "name": "Brazil Preventive Algorithmic Audit Bill (PL 6706/2025)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aiinclusion-2025",
+        "name": "Brazil AI Digital Inclusion Tax Incentive Bill (PL 7135/2025)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aiincentives-2026",
+        "name": "Brazil Domestic AI Development Incentives Bill (PL 1074/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aiforensic-2026",
+        "name": "Brazil AI in Legal Practice Transparency Bill (PL 3394/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aifraudcrime-2026",
+        "name": "Brazil AI Manipulation Criminal Offence Bill (PL 3695/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aigovcomplement-2026",
+        "name": "Brazil AI Governance Complements Bill (PL 3060/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-humanservice-2026",
+        "name": "Brazil Right to Human Customer Service Bill (PL 3017/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-autonomousliability-2026",
+        "name": "Brazil Autonomous Systems Liability Framework Bill (PL 1542/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "mx-mx-iaconstreform-2026",
+        "name": "Mexico Constitutional AI Reform Initiative (Arts. 6 and 73)",
+        "jurisdiction": "Mexico",
+        "status": "proposed"
+      },
+      {
+        "id": "coe-coe-ailiteracy-2026",
+        "name": "Council of Europe AI Literacy Recommendation CM/Rec(2026)12",
+        "jurisdiction": "Global / Regional",
+        "status": "in_force"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-ca-sb942-2024",
+        "name": "California SB 942 (AI Transparency Act)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "ru-ru-ailaw-2025",
+        "name": "Russia AI Foundations Law",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-ab853-2025",
+        "name": "California AB 853 (AI Transparency Act Technical Corrections)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2025",
+        "name": "EU Digital Omnibus — AI Act Amendments",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s928-2026",
+        "name": "California S 928 — California State University: Faculty Employees",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s1133-2026",
+        "name": "California S 1133 — Pupil Instruction: Preventative Health Instruction",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1651-2026",
+        "name": "California A 1651 — State Bar of California: Artificial Intelligence",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-de-h233-2026",
+        "name": "Delaware H 233 — Large Energy Use Facilities",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-de-h233-2025",
+        "name": "Delaware H 233 — Large Energy Use Facilities",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3020-2026",
+        "name": "Illinois S 3020 — Domestic Violence and Harassment",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-h5284-2026",
+        "name": "Illinois H 5284 — Menopause Equity and Care Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2026",
+        "name": "Digital Omnibus on AI",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 41,
+    "enforcement_added": 1,
+    "rules_added": 0,
+    "total_instruments": 2522
+  },
+  {
     "date": "2026-07-22",
     "trigger": "manual",
     "added": [
