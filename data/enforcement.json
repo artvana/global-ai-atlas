@@ -1,5 +1,18 @@
 [
   {
+    "id": "enf-gdpr-uber-2026",
+    "law_id": "eu-eu-gdpr-2016",
+    "law_short_name": "GDPR",
+    "date": "2026-08-24",
+    "enforcement_body": "Dutch DPA (Autoriteit Persoonsgegevens), lead authority, in cooperation with CNIL (France)",
+    "respondent": "Uber B.V. and Uber Technologies Inc.",
+    "violation_type": "Solely automated individual decision-making under GDPR Art. 22 — algorithmic deactivation of driver accounts for suspected fraud or low ratings without meaningful human intervention",
+    "amount_usd": 965000000,
+    "outcome": "Administrative fine of EUR 824,990,000 (approx. $965M); Uber has stated it disagrees and is appealing",
+    "summary": "The Dutch DPA fined Uber EUR 824,990,000 for deactivating platform drivers' accounts through fully automated decisions, both temporary suspensions triggered by fraud-detection algorithms and temporary or permanent deactivations based on low customer ratings, with no meaningful human review. Because deactivated drivers can no longer earn income, the authority found these were decisions with significant effects requiring human intervention and a right to contest under GDPR Article 22, and that affected drivers were not adequately informed. The case originated in a 2020 CNIL complaint by 171 French drivers supported by the Ligue des droits de l'Homme, and was handled by the Dutch AP as lead supervisory authority under the one-stop-shop mechanism; it is the second-largest GDPR fine to date after Meta's EUR 1.2 billion penalty.",
+    "source_url": "https://www.cnil.fr/en/automated-decisions-uber-fined-nearly-eur-825-million"
+  },
+  {
     "id": "enf-ftc-cmg-active-listening-2026",
     "law_id": "us-ftc-aipolicy-2023",
     "law_short_name": "FTC AI Policy Statement",
