@@ -1,5 +1,149 @@
 [
   {
+    "date": "2026-09-14",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "gb-uk-superintelligence-2026",
+        "name": "UK Artificial Superintelligence Bill",
+        "jurisdiction": "United Kingdom",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-pl5349-aicompanion-2026",
+        "name": "Brazil AI Companion Apps and Child Protection Bill (PL 5349/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-ca-sb942-2024",
+        "name": "California SB 942 (AI Transparency Act)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "ru-ru-ailaw-2025",
+        "name": "Russia AI Foundations Law",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-ab853-2025",
+        "name": "California AB 853 (AI Transparency Act Technical Corrections)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2025",
+        "name": "EU Digital Omnibus — AI Act Amendments",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s813-2026",
+        "name": "California SB 813 — AI Independent Verification Organizations",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-ca-s867-2026",
+        "name": "California SB 867 — Toys: Companion Chatbots",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-ca-s928-2026",
+        "name": "California S 928 — California State University: Faculty Employees",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s1119-2026",
+        "name": "California SB 1119 — Adam's Law (Companion Chatbots: Children's Safety)",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-ca-s1133-2026",
+        "name": "California S 1133 — Pupil Instruction: Preventative Health Instruction",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1159-2026",
+        "name": "California AB 1159 — Student Personal Information (HESIPA)",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-ca-s1276-2026",
+        "name": "California SB 1276 — AI-Generated Child Sexual Abuse Material",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-ca-a1651-2026",
+        "name": "California A 1651 — State Bar of California: Artificial Intelligence",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1946-2026",
+        "name": "California A 1946 — Reporting Mechanism: Child Sexual Abuse Material",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a2071-2026",
+        "name": "California A 2071 — Pupil Instruction: Digital Wellness",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1159-2025",
+        "name": "California A 1159 — Student Personal Information",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1405-2025",
+        "name": "California AB 1405 — AI Auditor Registry",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-de-h233-2026",
+        "name": "Delaware H 233 — Large Energy Use Facilities",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-de-h233-2025",
+        "name": "Delaware H 233 — Large Energy Use Facilities",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3020-2026",
+        "name": "Illinois S 3020 — Domestic Violence and Harassment",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-h5284-2026",
+        "name": "Illinois H 5284 — Menopause Equity and Care Act",
+        "from": "proposed",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 39,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2513
+  },
+  {
     "date": "2026-07-22",
     "trigger": "manual",
     "added": [
