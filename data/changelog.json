@@ -1,5 +1,227 @@
 [
   {
+    "date": "2026-09-21",
+    "trigger": "scheduled",
+    "added": [
+      {
+        "id": "us-ca-eo-n9-26-2026",
+        "name": "California EO N-9-26 (Frontier AI Oversight and Kill Switch)",
+        "jurisdiction": "United States",
+        "status": "in_force"
+      },
+      {
+        "id": "fr-fr-iaethique-2026",
+        "name": "France Ethical and Secure AI Systems Bill (PPL 3149)",
+        "jurisdiction": "France",
+        "status": "proposed"
+      },
+      {
+        "id": "br-br-aicsam-2026",
+        "name": "Brazil Fully Synthetic AI Child Sexual Abuse Material Bill (PL 5366/2026)",
+        "jurisdiction": "Brazil",
+        "status": "proposed"
+      },
+      {
+        "id": "gb-gb-superintelligence-2026",
+        "name": "UK Artificial Superintelligence Bill",
+        "jurisdiction": "United Kingdom",
+        "status": "proposed"
+      }
+    ],
+    "promoted": [
+      {
+        "id": "us-ca-sb942-2024",
+        "name": "California SB 942 (AI Transparency Act)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "ru-ru-ailaw-2025",
+        "name": "Russia AI Foundations Law",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-ab853-2025",
+        "name": "California AB 853 (AI Transparency Act Technical Corrections)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2025",
+        "name": "EU Digital Omnibus — AI Act Amendments",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s813-2026",
+        "name": "California S 813 — California AI Standards and Safety Commission",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s867-2026",
+        "name": "California S 867 — Toys: Companion Chatbots",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s928-2026",
+        "name": "California S 928 — California State University: Faculty Employees",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s1050-2026",
+        "name": "California S 1050 — False Advertising: Synthetic Digital Performers",
+        "from": "proposed",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-ca-s1119-2026",
+        "name": "California S 1119 — Companion Chatbots: Childrens Safety",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s1133-2026",
+        "name": "California S 1133 — Pupil Instruction: Preventative Health Instruction",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1159-2026",
+        "name": "California A 1159 — Student Personal Information",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s1276-2026",
+        "name": "California S 1276 — Crimes: Sexual Exploitation of a Child",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1651-2026",
+        "name": "California A 1651 — State Bar of California: Artificial Intelligence",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1792-2026",
+        "name": "California A 1792 — Pupil Instruction: Health Framework: Sexual Health",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1946-2026",
+        "name": "California A 1946 — Reporting Mechanism: Child Sexual Abuse Material",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a2071-2026",
+        "name": "California A 2071 — Pupil Instruction: Digital Wellness",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a2212-2026",
+        "name": "California A 2212 — Postsecondary Education: Sexual Harassment",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a2504-2026",
+        "name": "California A 2504 — Community Colleges: Artificial Intelligence: Pilot",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a502-2025",
+        "name": "California A 502 — Elections: Deceptive Media In Advertisements",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-s813-2025",
+        "name": "California S 813 — Multistakeholder Regulatory Organizations",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1159-2025",
+        "name": "California A 1159 — Student Personal Information",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-ca-a1405-2025",
+        "name": "California A 1405 — Artificial Intelligence: Auditors: Enrollment",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-de-h233-2026",
+        "name": "Delaware H 233 — Large Energy Use Facilities",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-de-h233-2025",
+        "name": "Delaware H 233 — Large Energy Use Facilities",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-s3020-2026",
+        "name": "Illinois S 3020 — Domestic Violence and Harassment",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "us-il-h5284-2026",
+        "name": "Illinois H 5284 — Menopause Equity and Care Act",
+        "from": "proposed",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2026",
+        "name": "Digital Omnibus on AI",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 27,
+    "enforcement_added": 0,
+    "rules_added": 2,
+    "total_instruments": 2515
+  },
+  {
+    "date": "2026-09-21",
+    "trigger": "manual",
+    "added": [],
+    "promoted": [
+      {
+        "id": "eu-eu-omnibus-ai-2026",
+        "name": "Digital Omnibus on AI — Regulation (EU) 2026/1744",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "eu-eu-omnibus-ai-2025",
+        "name": "EU Digital Omnibus — AI Act Amendments (Regulation (EU) 2026/1744)",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      }
+    ],
+    "stage_updates": 0,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2515,
+    "note": "Re-verification pass over the stalest international (non-US) records against official sources. Regulation (EU) 2026/1744 (Digital Omnibus on AI) confirmed published in OJ L on 24 July 2026 and in force from 27 July 2026, deferring the EU AI Act high-risk regime to 2 December 2027 (Annex III) and 2 August 2028 (Annex I). Corrections also applied to the Rwanda, Ethiopia, South Korea, Japan, Vietnam, India, UK and China records (effective dates, enforcement bodies, penalty ceilings, citations and official source URLs)."
+  },
+  {
     "date": "2026-07-22",
     "trigger": "manual",
     "added": [
