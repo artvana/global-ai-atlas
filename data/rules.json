@@ -162446,6 +162446,14 @@
         "notes": "Rule introduced in California A 1405 — Artificial Intelligence: Auditors: Enrollment (California, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-ca-eo-n9-26-2026",
+        "relationship": "agrees",
+        "citation": "Order ¶ 2",
+        "notes": "Directs the same agency (California Government Operations Agency) to complete the same Government Code § 11549.82(a) duty to stand up the AI auditor enrollment mechanism, but as a binding executive deadline of December 1, 2027 and coupled with an order to begin the § 11549.82(b) misconduct-report actions.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
       }
     ]
   },
@@ -285410,6 +285418,14 @@
         "notes": "Rule introduced in North Carolina S 735 — Artificial Intelligence Innovation Trust Fund (North Carolina, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-ca-eo-n9-26-2026",
+        "relationship": "similar",
+        "citation": "Order ¶ 3(c)",
+        "notes": "Addresses the same shutdown ('kill switch') capability for frontier models and adds ongoing verification of its efficacy by an independent verification organization, but only directs the agency to study and recommend such a requirement rather than imposing it on developers.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
       }
     ]
   },
@@ -373407,6 +373423,68 @@
         "notes": "Expands the AI-vulnerable-group definition to include jobseekers and women re-entering work and directs central/local government to set up criteria and budget-limited AI service cost subsidies, plus support for non-capital-region talent.",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0007",
+    "rule_text": "The state agency responsible for AI oversight must, by a fixed deadline, develop and publicly post the application requirements, procedures, and criteria that organizations must meet to be designated as independent verification organizations for AI models and systems.",
+    "rule_text_technical": "Cal. Exec. Order No. N-9-26 ¶ 1 (Sept. 18, 2026) orders that, no later than May 1, 2027, the Government Operations Agency shall complete the requirements of Section 8898.1 of the Government Code and develop application requirements, procedures, and criteria for independent verification organizations and publicly post them, as required by law.",
+    "category": "institutional_framework",
+    "tags": [
+      "independent_verification_organization",
+      "ivo_designation",
+      "application_criteria",
+      "implementation_deadline",
+      "government_operations_agency",
+      "frontier_ai"
+    ],
+    "first_instance": {
+      "law_id": "us-ca-eo-n9-26-2026",
+      "law_name": "California Executive Order N-9-26 (Frontier AI Oversight and Kill Switch)",
+      "citation": "Order ¶ 1",
+      "date": "2026-09-18"
+    },
+    "instances": [
+      {
+        "law_id": "us-ca-eo-n9-26-2026",
+        "relationship": "origin",
+        "citation": "Order ¶ 1",
+        "notes": "Rule introduced in California EO N-9-26 (2026-09-18); sets a firm May 1, 2027 executive deadline for GovOps to complete Gov. Code § 8898.1 and publicly post IVO application requirements, procedures, and criteria, accelerating the certification regime enacted by SB 813.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0008",
+    "rule_text": "The state AI oversight agency, working with the emergency services agency and national experts, must deliver recommendations to the head of government by a fixed deadline on strengthening AI safety law, covering at minimum onsite embedding of independent verifiers at large frontier developers, independent verification of frontier safety frameworks and risk assessments, a verified 'kill switch' for frontier models, and expanding reportable critical safety incidents to include loss-of-control events.",
+    "rule_text_technical": "Cal. Exec. Order No. N-9-26 ¶ 3 (Sept. 18, 2026) orders the Government Operations Agency, in consultation with the Governor's Office of Emergency Services, to submit to the Governor no later than November 16, 2026 recommendations developed in consultation with national experts addressing the technical feasibility and potential efficacy of amendments to existing state AI safety and security laws, including at least: (a) requiring all large frontier developers to embed designated independent verification organizations onsite in their labs for periodic audits and evaluations; (b) requiring that safety frameworks, transparency reports, and risk assessments filed by frontier AI companies be independently verified against standards determined adequate by an independent verification organization; (c) requiring creation of a 'kill switch' for frontier models whose efficacy is verified on an ongoing basis by an independent verification organization; and (d) updating the definition of critical safety incidents reportable by AI companies to include a range of loss-of-control incidents.",
+    "category": "institutional_framework",
+    "tags": [
+      "legislative_recommendations",
+      "frontier_models",
+      "kill_switch",
+      "independent_verification_organization",
+      "onsite_audit",
+      "critical_safety_incident",
+      "loss_of_control",
+      "feasibility_study"
+    ],
+    "first_instance": {
+      "law_id": "us-ca-eo-n9-26-2026",
+      "law_name": "California Executive Order N-9-26 (Frontier AI Oversight and Kill Switch)",
+      "citation": "Order ¶ 3",
+      "date": "2026-09-18"
+    },
+    "instances": [
+      {
+        "law_id": "us-ca-eo-n9-26-2026",
+        "relationship": "origin",
+        "citation": "Order ¶ 3",
+        "notes": "Rule introduced in California EO N-9-26 (2026-09-18); binds GovOps and Cal OES to report to the Governor by November 16, 2026, and is the first US state action to direct formal study of a mandatory, independently verified kill switch for frontier models and of loss-of-control incidents as reportable critical safety incidents.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
       }
     ]
   }
