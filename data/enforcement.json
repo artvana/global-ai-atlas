@@ -1,5 +1,18 @@
 [
   {
+    "id": "enf-copyright-ross-2026",
+    "law_id": null,
+    "law_short_name": "US Copyright Act (17 U.S.C.)",
+    "date": "2026-09-29",
+    "enforcement_body": "U.S. Court of Appeals for the Third Circuit",
+    "respondent": "ROSS Intelligence Inc.",
+    "violation_type": "Copyright infringement by copying Westlaw headnotes to train an AI legal research platform; fair use defense rejected",
+    "amount_usd": null,
+    "outcome": "Judgment affirming partial summary judgment for Thomson Reuters (interlocutory appeal); damages not yet determined",
+    "summary": "In Thomson Reuters v. ROSS Intelligence (No. 25-2153), the Third Circuit held that Westlaw's headnotes and Key Number System are original enough for copyright protection and that ROSS's use of them to train a competing AI legal research tool was not fair use. The court affirmed the District of Delaware's partial summary judgment for Thomson Reuters. The court noted that ROSS's platform is not generative AI, which sets it apart from the pending copyright cases against generative AI developers.",
+    "source_url": "https://www2.ca3.uscourts.gov/opinarch/252153p.pdf"
+  },
+  {
     "id": "enf-ftc-cmg-active-listening-2026",
     "law_id": "us-ftc-aipolicy-2023",
     "law_short_name": "FTC AI Policy Statement",
