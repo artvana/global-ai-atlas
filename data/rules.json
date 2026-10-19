@@ -51984,6 +51984,14 @@
         "notes": "Both recommend regulatory sandboxes for testing AI laws and regulations in controlled environments, but the UNESCO rule is a voluntary recommendation encompassing both policy prototypes and sandboxes, while the CoE Convention article is a binding obligation on Parties to enable such environments.",
         "instrument_binding": false,
         "instrument_type": "voluntary_framework"
+      },
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "similar",
+        "citation": "Art. 26",
+        "notes": "Establishes the Italian AI regulatory sandbox (Spazio di sperimentazione italiano per l'IA) under AI Act Art. 57 and the supervision of AgID and ACN, prioritising SMEs and start-ups; a binding implementation rather than a call to enable sandboxes.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -63253,6 +63261,14 @@
         "notes": "Both rules designate a national authority as the single point of contact under the EU AI Act, but Finland assigns this role to Traficom with additional coordination and expert support functions, while Lithuania assigns it to the state technology and innovation policy implementing institution.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "agrees",
+        "citation": "Art. 4",
+        "notes": "Designates AgID (Agenzia per l'Italia digitale) as Italy's notifying authority responsible for assessing, designating, notifying and monitoring conformity assessment bodies under the AI Act, operationalising the allocation in Law 132/2025.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -64617,6 +64633,14 @@
         "relationship": "agrees",
         "citation": "§ 23(1)-(2)",
         "notes": "Both set the same fine caps (€35M/7% for prohibited practices, €15M/3% for provider/representative/importer/deployer breaches) mirroring EU AI Act Article 99, but the Finnish rule is a domestic implementing provision with the same substantive thresholds.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "identical",
+        "citation": "Art. 23",
+        "notes": "Italy's national sanctions regime sets fines of up to €35 million or 7% of worldwide annual turnover, whichever is higher, for AI Act Art. 5 prohibited practices, unless the conduct constitutes a criminal offence.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -102149,6 +102173,14 @@
         "relationship": "similar",
         "citation": "§ 5 KI-MIG",
         "notes": "Both establish a central coordination body for EU AI Act implementation at the national level, but Germany creates a dedicated Coordination and Competence Centre at the Federal Network Agency with broader support functions, while Malta designates MDIA as a single point of contact.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "agrees",
+        "citation": "Art. 6",
+        "notes": "Designates the Agenzia per la Cybersicurezza Nazionale (ACN), which is also the general market surveillance authority (Art. 5), as Italy's single point of contact with the EU under the AI Act.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -156798,6 +156830,14 @@
         "relationship": "agrees",
         "citation": "EDSTA s. 15.1",
         "notes": "Both rules require that human decision-makers retain meaningful authority and cannot rely solely on AI output for consequential decisions affecting individuals, but Ontario Bill 194 frames it as a general public-sector obligation while the California rule targets specific employment decisions.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "agrees",
+        "citation": "Art. 41",
+        "notes": "Bars final hiring, modification, termination, disciplinary and performance-evaluation decisions based solely on automated processing, requiring a natural person with effective and autonomous decision-making power; broader than discipline/termination, worker consent is no exception, candidate screening is excluded, workers may obtain a human explanation including the AI's influence and main parameters, and non-compliant decisions are null and void.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -327999,6 +328039,14 @@
         "notes": "Both impose fines on providers of high-risk AI systems for specific violations, but the Finnish rule specifies particular domestic violations (lacking risk management system, improper testing) while the EU AI Act sets the overarching framework with percentage-based caps.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "identical",
+        "citation": "Art. 23",
+        "notes": "Mirrors the AI Act tier of up to €15 million or 3% of worldwide turnover for breaches of provider, importer, distributor, deployer and other operator obligations, with lower tiers of €7.5M/1% for misleading information and €1M/0.5% for Arts. 27 and 86 obligations; imposed by AgID and market surveillance authorities within their remits (Arts. 20-21).",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -373407,6 +373455,36 @@
         "notes": "Expands the AI-vulnerable-group definition to include jobseekers and women re-entering work and directs central/local government to set up criteria and budget-limited AI service cost subsidies, plus support for non-capital-region talent.",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0007",
+    "rule_text": "The data, algorithms and mathematical methods used to train AI systems can be protected as trade secrets, provided they meet the ordinary legal conditions for trade-secret protection.",
+    "rule_text_technical": "Under Legislative Decree No. 179 of 7 October 2026, Art. 52, a new paragraph 1-bis is added to Art. 98 of the Italian Industrial Property Code (D.Lgs. 30/2005), providing that, where the conditions of Art. 98(1) are met (information that is secret, has economic value because it is secret, and is subject to reasonable secrecy measures), protected trade secrets include the data, algorithms and mathematical methods used to train artificial intelligence systems.",
+    "category": "data_governance",
+    "tags": [
+      "trade_secrets",
+      "training_data",
+      "algorithms",
+      "intellectual_property",
+      "industrial_property_code",
+      "italy"
+    ],
+    "first_instance": {
+      "law_id": "it-it-dlgs179-2026",
+      "law_name": "Italy D.Lgs. 179/2026 (AI Act Adaptation Decree)",
+      "citation": "Art. 52 (adding Art. 98(1-bis) Industrial Property Code)",
+      "date": "2026-10-07"
+    },
+    "instances": [
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "origin",
+        "citation": "Art. 52 (adding Art. 98(1-bis) Industrial Property Code)",
+        "notes": "Clarifies that AI training data, algorithms and mathematical methods qualify for trade-secret protection under the Industrial Property Code when secrecy, economic value and reasonable protective measures are present.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   }
