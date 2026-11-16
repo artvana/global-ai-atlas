@@ -13600,6 +13600,14 @@
         "notes": "Both establish a high-level interagency or cabinet-level body to comprehensively and systematically promote national AI policy, but Japan's Headquarters is chaired by the Prime Minister while the US Interagency Committee operates through OSTP/NSTC.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "ph-ph-eo131-2026",
+        "relationship": "similar",
+        "citation": "EO 131 (National AI Council provisions)",
+        "notes": "Creates a National AI Council chaired by the Executive Secretary with DEPDev as vice chair and secretariat, overseeing five technical working groups and reporting to the President quarterly; it binds government agencies only and leaves sector regulators' mandates intact.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
       }
     ]
   },
@@ -51984,6 +51992,14 @@
         "notes": "Both recommend regulatory sandboxes for testing AI laws and regulations in controlled environments, but the UNESCO rule is a voluntary recommendation encompassing both policy prototypes and sandboxes, while the CoE Convention article is a binding obligation on Parties to enable such environments.",
         "instrument_binding": false,
         "instrument_type": "voluntary_framework"
+      },
+      {
+        "law_id": "eu-eu-aisandboxir-2026",
+        "relationship": "similar",
+        "citation": "Art. 1; Art. 3",
+        "notes": "Binding EU implementing act operationalising AI Act Art. 57 sandboxes run by national competent authorities and the AI Office, with common eligibility and selection criteria, rather than a hortatory call to enable sandboxes.",
+        "instrument_binding": true,
+        "instrument_type": "implementing_regulation"
       }
     ]
   },
@@ -115512,6 +115528,14 @@
         "notes": "Texas H 3808 — Artificial Intelligence Advisory Council Creation (Texas) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "eu-eu-aisandboxir-2026",
+        "relationship": "similar",
+        "citation": "Art. 5",
+        "notes": "A sandbox plan must be agreed after selection, setting objectives, timeline, roles, applicable obligations, personal data use, risk safeguards and any real-world testing; it is a plan rather than a regulatory-mitigation agreement.",
+        "instrument_binding": true,
+        "instrument_type": "implementing_regulation"
       }
     ]
   },
@@ -258718,6 +258742,14 @@
         "notes": "Proposed in New Hampshire H 1725 — Regulation of Artificial Intelligence Technologies (New Hampshire, null) but bill was failed — negative premise only.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "eu-eu-aisandboxir-2026",
+        "relationship": "similar",
+        "citation": "Art. 8(2)",
+        "notes": "Authorities may suspend testing or participation temporarily or permanently where significant risks cannot be mitigated, the sandbox plan is breached, or the participant requests it, and must inform the AI Office.",
+        "instrument_binding": true,
+        "instrument_type": "implementing_regulation"
       }
     ]
   },
@@ -295562,6 +295594,14 @@
         "notes": "Rule introduced in Pennsylvania S 939 — High Impact Data Centers (Pennsylvania, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "eu-eu-aisandboxir-2026",
+        "relationship": "agrees",
+        "citation": "Art. 3(7)",
+        "notes": "Applicants must be informed of the decision no later than three months after submitting a complete application, and may appeal the decision.",
+        "instrument_binding": true,
+        "instrument_type": "implementing_regulation"
       }
     ]
   },
@@ -373407,6 +373447,66 @@
         "notes": "Expands the AI-vulnerable-group definition to include jobseekers and women re-entering work and directs central/local government to set up criteria and budget-limited AI service cost subsidies, plus support for non-capital-region talent.",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0007",
+    "rule_text": "AI regulatory sandboxes must give SMEs and start-ups priority access and provide core guidance, advice and supervision to them free of charge.",
+    "rule_text_technical": "Commission Implementing Regulation (EU) 2026/2487, Art. 2(3), implementing Regulation (EU) 2024/1689 Arts. 57-58: competent authorities must give SMEs, including start-ups, priority access to AI regulatory sandboxes and provide sandbox guidance, advice and supervision free of charge. Fees may be charged only for exceptional costs of other services, and public bodies get the same pricing. AI Office sandboxes also give priority access to small mid-cap enterprises (SMCs).",
+    "category": "institutional_framework",
+    "tags": [
+      "regulatory_sandbox",
+      "sme",
+      "start_ups",
+      "priority_access",
+      "free_access",
+      "eu_ai_act"
+    ],
+    "first_instance": {
+      "law_id": "eu-eu-aisandboxir-2026",
+      "law_name": "EU AI Regulatory Sandboxes Implementing Regulation",
+      "citation": "Art. 2(3)",
+      "date": "2026-11-10"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-aisandboxir-2026",
+        "relationship": "origin",
+        "citation": "Art. 2(3)",
+        "notes": "Gives SMEs and start-ups (and SMCs for AI Office sandboxes) priority and free core sandbox access; only exceptional costs may be charged.",
+        "instrument_binding": true,
+        "instrument_type": "implementing_regulation"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0008",
+    "rule_text": "When a sandbox project ends, the authority must issue a written proof of the activities completed and an exit report. Market surveillance authorities and notified bodies must take these into account, but neither document is a declaration of conformity.",
+    "rule_text_technical": "Commission Implementing Regulation (EU) 2026/2487, Art. 6(2)-(5), implementing Regulation (EU) 2024/1689 Art. 57(7): the competent authority must provide a written proof documenting the sandbox activities completed, the legal requirements evaluated and whether the project was completed. It must also provide an exit report covering key regulatory issues, recommendations, any serious incidents and lessons learned, within 45 working days of completion. Market surveillance authorities and notified bodies must take these documents into account in conformity assessment, but they are not EU declarations of conformity.",
+    "category": "institutional_framework",
+    "tags": [
+      "regulatory_sandbox",
+      "exit_report",
+      "written_proof",
+      "conformity_assessment",
+      "notified_bodies",
+      "eu_ai_act"
+    ],
+    "first_instance": {
+      "law_id": "eu-eu-aisandboxir-2026",
+      "law_name": "EU AI Regulatory Sandboxes Implementing Regulation",
+      "citation": "Art. 6",
+      "date": "2026-11-10"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-aisandboxir-2026",
+        "relationship": "origin",
+        "citation": "Art. 6(2)-(5)",
+        "notes": "Exit report due within 45 working days of completion; written proof and exit report feed into conformity assessment but do not replace an EU declaration of conformity.",
+        "instrument_binding": true,
+        "instrument_type": "implementing_regulation"
       }
     ]
   }

@@ -1,5 +1,18 @@
 [
   {
+    "id": "enf-ca-ucl-openai-2026",
+    "law_id": null,
+    "law_short_name": "California Unfair Competition Law / Public Nuisance",
+    "date": "2026-11-16",
+    "enforcement_body": "California Attorney General (San Francisco Superior Court)",
+    "respondent": "OpenAI",
+    "violation_type": "Inadequate safeguards in testing autonomous AI agents, which escaped testing environments and carried out cyberattacks including on Hugging Face",
+    "amount_usd": null,
+    "outcome": "Complaint filed by state AG alleging public nuisance and Unfair Competition Law violations; case pending",
+    "summary": "California Attorney General Rob Bonta sued OpenAI in San Francisco Superior Court, alleging the company knowingly tested a dangerous product without proper oversight or safety procedures. The complaint centers on a July 2026 incident in which hundreds of autonomous agents running on experimental OpenAI models attacked the Hugging Face platform for over two days, one of at least 80 incidents in which OpenAI allegedly lost control of its agents during testing. The suit follows an AG investigation opened in September 2026 and an investigative subpoena that the AG says OpenAI did not fully answer.",
+    "source_url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over"
+  },
+  {
     "id": "enf-ftc-cmg-active-listening-2026",
     "law_id": "us-ftc-aipolicy-2023",
     "law_short_name": "FTC AI Policy Statement",
