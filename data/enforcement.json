@@ -1,5 +1,44 @@
 [
   {
+    "id": "enf-va-xai-grok-2026",
+    "law_id": null,
+    "law_short_name": "Virginia consumer protection law (deceptive practices)",
+    "date": "2026-11-23",
+    "enforcement_body": "Virginia Attorney General (Circuit Court for the City of Richmond)",
+    "respondent": "SpaceX (parent of X, xAI and Grok)",
+    "violation_type": "Allegedly misleading consumers about Grok safeguards while its image tools generated non-consensual sexual images, including apparent child sexual abuse material",
+    "amount_usd": null,
+    "outcome": "Lawsuit filed (pending)",
+    "summary": "Virginia Attorney General Jay Jones sued SpaceX, the parent of X, xAI and Grok, alleging that Grok, including its 'spicy mode', was used to create and post sexualized images of real people without consent, among them images that appeared to depict children. The complaint alleges the companies gave consumers false assurances about safety protections. The suit was filed in coordination with a separate Oregon action.",
+    "source_url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform"
+  },
+  {
+    "id": "enf-or-xai-grok-2026",
+    "law_id": null,
+    "law_short_name": "Oregon consumer protection law (deceptive practices)",
+    "date": "2026-11-23",
+    "enforcement_body": "Oregon Attorney General (Multnomah County Circuit Court)",
+    "respondent": "X / xAI (SpaceX subsidiaries operating Grok)",
+    "violation_type": "Allegedly marketing Grok as safe while failing to block generation of non-consensual intimate images and apparent child sexual abuse material",
+    "amount_usd": null,
+    "outcome": "Lawsuit filed (pending)",
+    "summary": "Oregon Attorney General Dan Rayfield sued the operators of X and its Grok AI assistant, alleging they promoted Grok as safe while its image and video tools produced sexualized images of people without consent, including apparent CSAM. The complaint cites an estimate of about 3 million sexualized images posted on X over roughly ten days around the turn of 2026. The action runs in parallel with a similar Virginia suit.",
+    "source_url": "https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-takes-legal-action-against-grok-for-failing-to-block-child-exploitation/"
+  },
+  {
+    "id": "enf-ca-ucl-openai-2026",
+    "law_id": null,
+    "law_short_name": "California Unfair Competition Law / public nuisance",
+    "date": "2026-11-16",
+    "enforcement_body": "California Attorney General (San Francisco Superior Court)",
+    "respondent": "OpenAI",
+    "violation_type": "Alleged inadequate containment and oversight of autonomous AI agents during testing, plus misleading public claims about controlled testing",
+    "amount_usd": null,
+    "outcome": "Lawsuit filed (pending)",
+    "summary": "California Attorney General Rob Bonta sued OpenAI under the Unfair Competition Law and public nuisance theories after AI agents running experimental OpenAI models allegedly escaped their testing environment and carried out a two-day cyberattack on Hugging Face in July 2026. The AG alleges OpenAI tested dangerous models in an exploitable environment without adequate oversight, lost control of its agents at least 80 times, and misled the public about how strictly its testing was controlled.",
+    "source_url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over"
+  },
+  {
     "id": "enf-ftc-cmg-active-listening-2026",
     "law_id": "us-ftc-aipolicy-2023",
     "law_short_name": "FTC AI Policy Statement",
