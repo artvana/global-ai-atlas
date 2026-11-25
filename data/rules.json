@@ -373998,7 +373998,7 @@
     "rule_id": "r-0022",
     "rule_text": "When police work with universities or private partners on AI research, the agreements must stop sensitive operational data from being shared and stop partners from acquiring or using AI trained for police work. They must also allocate intellectual property and data-protection roles, and the police must keep ownership of any model trained on operational data.",
     "rule_text_technical": "D.Lgs. 160/2026, Art. 4(2)-(3): research and experimentation collaborations between police forces and universities, research bodies and public or private entities must include clauses excluding the sharing of sensitive operational data and any direct or indirect acquisition or use by partners of AI systems, hardware/software or AI-integrated devices trained for police activity, save for synthetic, masked or pseudonymised data. Agreements must expressly regulate ownership of IP and economic exploitation rights in research results, derived models, training data and software, and assign controller, joint-controller or processor roles under D.Lgs. 51/2018. Models trained on sensitive operational data remain owned by the police forces.",
-    "category": "data_governance",
+    "category": "accountability_governance",
     "tags": [
       "law_enforcement",
       "research_collaboration",
@@ -374030,7 +374030,7 @@
     "rule_id": "r-0023",
     "rule_text": "Police video-surveillance systems with AI facial recognition may only run recognition after the images are captured (never in real time). The Ministry of the Interior is the data controller, a data protection impact assessment and consultation with the data protection authority are required in advance, and the data must be deleted automatically after seven days.",
     "rule_text_technical": "D.Lgs. 160/2026, Art. 10(1), (4)-(7), (12)-(13): legally authorised video-surveillance systems may be integrated with AI components, but facial-recognition components may be activated only after image acquisition, with a delay sufficient to avoid real-time remote biometric identification. At designated high-risk venues and events, face images and ticketing data are stored locally without biometric processing, and biometric comparison happens only after a crime. The Ministry of the Interior (Department of Public Security) is the controller (Art. 10(5)), must carry out a prior DPIA and consult the Garante under D.Lgs. 51/2018 arts. 23–24 (Art. 10(6)), and must keep the data in the reference database for seven days from collection, after which it is erased automatically (Art. 10(7)). Venue operators may install the systems but must lend them free of charge to the Questura for its exclusive use (Art. 10(13)).",
-    "category": "biometric",
+    "category": "biometric_data",
     "tags": [
       "facial_recognition",
       "post_remote_biometric_identification",
@@ -374061,7 +374061,7 @@
     "rule_id": "r-0024",
     "rule_text": "For real-time biometric identification, police may compare faces only against a reference database built specifically for each authorisation. That database may contain only the biometric data relevant to its purpose, must be deleted when the authorisation expires, and cannot be added to across successive authorisations.",
     "rule_text_technical": "D.Lgs. 160/2026, Art. 8(3) and new art. 359-ter(3) c.p.p. (Art. 13): biometric comparison takes place exclusively against a reference database appropriate to each authorised purpose, containing the biometric data and identifying information of the persons concerned. It may be drawn from police or other public-administration databases, or from lawfully acquired images and footage. Its content is formed specifically for each use, with only the biometric data relevant to the specific purpose, and is erased at the end of the authorisation's validity, so that the comparison set is specific to each authorisation and cannot grow incrementally across prior authorisations.",
-    "category": "biometric",
+    "category": "biometric_data",
     "tags": [
       "real_time_remote_biometric_identification",
       "reference_database",
@@ -374091,7 +374091,7 @@
     "rule_id": "r-0025",
     "rule_text": "It is a crime to fail to adopt required safety measures or human-oversight measures for a high-risk AI system, or to tamper with one, where this endangers life, public safety or state security. Professional users who intentionally skip human oversight are also liable.",
     "rule_text_technical": "D.Lgs. 160/2026, Art. 12, inserting art. 437-bis c.p.: anyone who fails to adopt the technical safety measures required for the design, training, production or placing on the market of high-risk AI systems that are suitable to prevent malfunctions or alterations, or fails to adopt human-oversight measures, is punished with 1–5 years' imprisonment where life or public or individual safety is endangered, and 2–8 years where state security is endangered. Outside those cases, altering a high-risk AI system is punished with 2–6 years (3–10 years if state security is endangered), unless a more serious offence applies. Grossly negligent commission of the first-paragraph offence reduces the penalty by one-third to one-sixth. A professional user who intentionally omits human-oversight measures faces the first-paragraph penalties.",
-    "category": "enforcement",
+    "category": "enforcement_penalties",
     "tags": [
       "criminal_liability",
       "high_risk_ai",
@@ -374122,7 +374122,7 @@
     "rule_id": "r-0026",
     "rule_text": "Companies and other organisations can be held liable and fined when the AI safety offence or the AI deepfake offence is committed in their interest, and they can face bans such as suspension of licences or exclusion from public contracts.",
     "rule_text_technical": "D.Lgs. 160/2026, Art. 15, inserting art. 25-vicies into D.Lgs. 231/2001 (administrative liability of entities): for the offence in art. 437-bis c.p. (omitted AI safety or human-oversight measures, or alteration of high-risk AI systems), the entity faces a fine of 600–1,000 quotas. For the offence in art. 612-quater c.p. (unlawful dissemination of AI-generated or altered content, introduced by Law 132/2025), it faces 200–700 quotas. In both cases the interdictive sanctions of art. 9(2)(b)-(e) D.Lgs. 231/2001 apply: suspension or revocation of authorisations, licences or concessions; a ban on contracting with the public administration; exclusion from or revocation of public benefits and funding; and a ban on advertising goods or services.",
-    "category": "enforcement",
+    "category": "enforcement_penalties",
     "tags": [
       "corporate_liability",
       "entity_liability",
@@ -374153,7 +374153,7 @@
     "rule_id": "r-0027",
     "rule_text": "A consumer harmed by an AI system can sue for damages in the court of the place where they live or are domiciled.",
     "rule_text_technical": "D.Lgs. 160/2026, Art. 16(1), (4): in actions for contractual or non-contractual damages caused by the use of an AI system, where the injured party is a natural person acting outside any business, commercial, craft or professional activity, the court of the place of the claimant's residence or domicile also has jurisdiction.",
-    "category": "liability",
+    "category": "private_redress",
     "tags": [
       "consumer_protection",
       "jurisdiction",
@@ -374183,7 +374183,7 @@
     "rule_id": "r-0028",
     "rule_text": "Complying with the EU AI Act, even with a conformity certificate, does not on its own protect an AI provider or user from liability for harm.",
     "rule_text_technical": "D.Lgs. 160/2026, Art. 19: without prejudice to the national transposition of Directive (EU) 2024/2853, an AI system's conformity with the obligations of Regulation (EU) 2024/1689, even when certified under Chapter III, Section 5 of that Regulation, does not by itself exclude the defendant's liability in actions for damages caused by the use of an AI system.",
-    "category": "liability",
+    "category": "private_redress",
     "tags": [
       "civil_liability",
       "conformity_assessment",
@@ -374213,7 +374213,7 @@
     "rule_id": "r-0029",
     "rule_text": "If you may be liable for AI-caused harm, you must tell a prospective claimant within 30 days whether you hold liability insurance and with which insurer. The injured person can then sue that insurer directly, up to the policy limits.",
     "rule_text_technical": "D.Lgs. 160/2026, Art. 20: a prospective claimant in an AI damages action may ask the person allegedly responsible whether they hold civil-liability insurance covering the damage. The request is not a precondition to suit. The recipient must disclose within 30 days whether such a policy exists, its details and the insurer's name, and an omitted or incomplete answer allows the court to draw adverse inferences under art. 116 c.p.c. The injured party has a direct action against the liability insurer within the insured sums. Policy defences arising before the loss can be raised against the injured party, the insurer has recourse against the insured where it could have refused or reduced payment, the alleged tortfeasor is a necessary party, and the same limitation period applies as against the tortfeasor.",
-    "category": "liability",
+    "category": "private_redress",
     "tags": [
       "insurance",
       "direct_action",
@@ -374243,7 +374243,7 @@
     "rule_id": "r-0030",
     "rule_text": "AI systems that police are already using, developing, testing or have under contract must be brought into line with the new rules on police AI within one year.",
     "rule_text_technical": "D.Lgs. 160/2026, Art. 21: AI systems which, on 30 September 2026, are the subject of contracts, are under development or experimentation for police purposes, or are already in use in police activity must be made compatible with Title I, Chapter II (Arts. 3–6: fundamental-rights-based use, qualified human review, human oversight, collaboration safeguards, sandboxes, training) by each police force within one year. Provisions that apply directly from or depend on the AI Act follow that Regulation's own application dates.",
-    "category": "sector_specific",
+    "category": "accountability_governance",
     "tags": [
       "law_enforcement",
       "transition_period",
