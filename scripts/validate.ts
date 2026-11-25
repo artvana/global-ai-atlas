@@ -167,6 +167,58 @@ for (const law of regulations) {
   }
 }
 
+// ── Possible duplicate records ─────────────────────────────────────────────
+// The same bill has been imported under two IDs (e.g. us-ny-a222-2025 and
+// us-ny-a222-2026 for one 2025-2026 carryover bill). Warn on:
+//   1. same ID stem once a trailing -YYYY is removed
+//   2. same jurisdiction + normalized bill_number
+// Pairs verified as different bills go in KNOWN_DISTINCT with the reason.
+const KNOWN_DISTINCT: Record<string, string> = {
+  'us-ms-s2437-2025|us-ms-s2437-2026':
+    'Mississippi numbers bills per session: 2025 SB 2437 (deepfakes act) and 2026 SB 2437 (AI definition) are different bills',
+}
+const pairKey = (a: string, b: string) => [a, b].sort().join('|')
+
+// "SB 0023", "S. 23", "S23" -> "S23"; WA substitutes ("ESSB 5105", "2SHB 1168") -> chamber letter.
+function normalizeBillNumber(raw: string): string {
+  const compact = raw.toUpperCase().replace(/[\s.\-–—]/g, '')
+  const m = compact.match(/^([A-Z0-9]*?[A-Z])(\d+)([A-Z]?)$/)
+  if (!m) return compact.replace(/[^A-Z0-9]/g, '')
+  const [, prefix, num, suffix] = m
+  const chamber: Record<string, string> = { AB: 'A', SB: 'S', HB: 'H', HF: 'H', SF: 'S', LB: 'L' }
+  let p = chamber[prefix] ?? prefix
+  const wa = prefix.match(/^E?\d?S?(S|H)B$/) // SSB, ESSB, E2SSB, SHB, ESHB, 2SHB...
+  if (wa) p = wa[1]
+  return `${p}${parseInt(num, 10)}${suffix}`
+}
+
+function warnGroups(groups: Map<string, string[]>, field: string, describe: (key: string) => string) {
+  for (const [key, members] of groups) {
+    if (members.length < 2) continue
+    for (let i = 0; i < members.length; i++) {
+      for (let j = i + 1; j < members.length; j++) {
+        const [a, b] = [members[i], members[j]]
+        if (KNOWN_DISTINCT[pairKey(a, b)]) continue
+        warn(a, field, `Possible duplicate of ${b} (${describe(key)})`)
+      }
+    }
+  }
+}
+
+const byStem = new Map<string, string[]>()
+const byBill = new Map<string, string[]>()
+for (const law of regulations) {
+  if (!law.id) continue
+  const stem = String(law.id).replace(/-\d{4}$/, '')
+  byStem.set(stem, [...(byStem.get(stem) ?? []), law.id])
+  if (law.bill_number && law.jurisdiction) {
+    const key = `${law.jurisdiction}::${normalizeBillNumber(String(law.bill_number))}`
+    byBill.set(key, [...(byBill.get(key) ?? []), law.id])
+  }
+}
+warnGroups(byStem, 'id', stem => `same ID stem "${stem}"`)
+warnGroups(byBill, 'bill_number', key => `same jurisdiction and bill number "${key.replace('::', ' ')}"`)
+
 // Write results
 const output = {
   run_date: today,
