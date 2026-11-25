@@ -8,110 +8,12 @@ status: in_force
 official_url: https://www.normattiva.it/eli/id/2026/09/15/26G00179
 fetched_date: 2026-11-25
 ---
- [![Logo Governo](/svg/logo-gov.svg) **Presidenza del Consiglio dei Ministri**](https://www.governo.it)
-
-[ITA](#)
-
--   [ITA](/?language=it)
--   [ENG](/?language=en)
-
-[
-
-![Logo Normattiva](/svg/Normattiva.svg)
-
-# Normattiva - Il portale della legge vigente
-
-
-
-](/)
-
-In caso di problemi di visualizzazione dell’atto clicca [qui](/atto/caricaDettaglioAtto?atto.dataPubblicazioneGazzetta=2026-09-15&atto.codiceRedazionale=26G00179&tipoDettaglio=singolavigenza&qId=&classica=true&dataVigenza=25/11/2026&generaTabId=true&bloccoAggiornamentoBreadCrumb=true&title=lbl.dettaglioAtto&tabID=)
-
-[Ricerca avanzata](<
-                        /ricerca/avanzata
-                        >)
-
- Date label
 
 ## DECRETO LEGISLATIVO 9 settembre 2026, n. 160
 
-### Adeguamento della normativa nazionale alle disposizioni del regolamento (UE) 2024/1689 del Parlamento europeo e del Consiglio, del 13 giugno 2024, che stabilisce regole armonizzate sull'intelligenza artificiale, in materia di utilizzo dei sistemi di intelligenza artificiale per l'attività di polizia e di responsabilità civile e penale. (26G00179)
+Adeguamento della normativa nazionale alle disposizioni del regolamento (UE) 2024/1689 del Parlamento europeo e del Consiglio, del 13 giugno 2024, che stabilisce regole armonizzate sull'intelligenza artificiale, in materia di utilizzo dei sistemi di intelligenza artificiale per l'attività di polizia e di responsabilità civile e penale. (GU Serie Generale n. 214 del 15-09-2026; entrata in vigore 30/09/2026)
 
-note: Entrata in vigore del provvedimento: 30/09/2026
-
-[(GU n.214 del 15-09-2026)](https://www.gazzettaufficiale.it/eli/gu/2026/09/15/214/sg/pdf) [visualizza atto intero](/esporta/attoCompleto?atto.dataPubblicazioneGazzetta=2026-09-15&atto.codiceRedazionale=26G00179)
-
-[nascondi](javascript:void\(0\))
-
-vigente al 25/11/2026
-
--   Articoli
--   Titolo I
-    
-    UTILIZZO DEI SISTEMI DI INTELLIGENZA ARTIFICIALE PER L'ATTIVITÀ DI POLIZIA  
-      
-    Capo I  
-    Disposizioni generali
-    
--   ![](/images/albero_atto/link_v2.png "elemento grafico")1
--   ![](/images/albero_atto/link_v2.png "elemento grafico")2
--   Capo II
-    
-    Disposizioni in materia di ricerca, sviluppo, addestramento, formazione, sperimentazione e utilizzo dei sistemi di intelligenza artificiale nelle attività di polizia
-    
--   ![](/images/albero_atto/link_v2.png "elemento grafico")3
--   ![](/images/albero_atto/link_v2.png "elemento grafico")4
--   ![](/images/albero_atto/link_v2.png "elemento grafico")5
--   ![](/images/albero_atto/link_v2.png "elemento grafico")6
--   Capo III
-    
-    Sistemi di intelligenza artificiale utilizzati nelle attività di polizia per l'etichettatura, il filtraggio e la categorizzazione di dati biometrici, per l'identificazione biometrica remota in tempo reale per finalità di prevenzione o di protezione e per il riconoscimento facciale a posteriori a fini di contrasto dei reati
-    
--   ![](/images/albero_atto/link_v2.png "elemento grafico")7
--   ![](/images/albero_atto/link_v2.png "elemento grafico")8
--   ![](/images/albero_atto/link_v2.png "elemento grafico")9
--   ![](/images/albero_atto/link_v2.png "elemento grafico")10
--   Titolo II
-    
-    DISPOSIZIONI PENALI, SOSTANZIALI E PROCESSUALI, IN MATERIA DI REALIZZAZIONE E IMPIEGO ILLECITI DEI SISTEMI DI INTELLIGENZA ARTIFICIALE E DISPOSIZIONI PROCESSUALI CIVILI IN MATERIA DI RISARCIMENTO DEI DANNI CAGIONATI DALL'UTILIZZO DEI MEDESIMI SISTEMI  
-      
-    Capo I  
-    Disposizioni sanzionatorie e in materia di procedimento penale
-    
--   ![](/images/albero_atto/link_v2.png "elemento grafico")11
--   ![](/images/albero_atto/link_v2.png "elemento grafico")12
--   ![](/images/albero_atto/link_v2.png "elemento grafico")13
--   ![](/images/albero_atto/link_v2.png "elemento grafico")14
--   ![](/images/albero_atto/link_v2.png "elemento grafico")15
--   Capo II
-    
-    Strumenti processuali civili per il risarcimento dei danni cagionati dall'utilizzo di sistemi di intelligenza artificiale
-    
--   ![](/images/albero_atto/link_v2.png "elemento grafico")16
--   ![](/images/albero_atto/link_v2.png "elemento grafico")17
--   ![](/images/albero_atto/link_v2.png "elemento grafico")18
--   ![](/images/albero_atto/link_v2.png "elemento grafico")19
--   ![](/images/albero_atto/link_v2.png "elemento grafico")20
--   Titolo III
-    
-    DISPOSIZIONI FINALI  
-      
-    Capo I  
-    Disposizioni transitorie e finanziarie
-    
--   ![](/images/albero_atto/link_v2.png "elemento grafico")21
--   ![](/images/albero_atto/link_v2.png "elemento grafico")22
--   ![](/images/albero_atto/chiusura.jpg "Elemento grafico")
-
-## Parole cercate:
-
-Presente nei seguenti articoli
-
-Articoli Approfondimenti e Funzioni
-
-[articolo successivo](javascript:)
-
-Testo in vigore dal:  30-9-2026
+Text of each article taken from Normattiva (https://www.normattiva.it/eli/id/2026/09/15/26G00179), without the editorial notes.
 
 ## IL PRESIDENTE DELLA REPUBBLICA
 
@@ -187,138 +89,374 @@ Oggetto e finalità
 
 3\. Il presente titolo non comporta nuovi obblighi rispetto a quelli previsti dal [regolamento (UE) 2024/1689](/uri-res/N2Ls?urn:nir::regolamento:2024;1689) per i sistemi e i modelli di intelligenza artificiale utilizzati nelle attività e per le finalità di polizia.  
 
-N O T E  
-  
-Avvertenza:  
-Il testo delle note qui pubblicato è stato redatto dall'amministrazione competente per materia, ai sensi dell'art. 10, commi 2 e 3, del testo unico delle disposizioni sulla promulgazione delle leggi, sull'emanazione dei decreti del Presidente della Repubblica e sulle pubblicazioni ufficiali della Repubblica italiana, approvato con [D.P.R. 28 dicembre 1985, n. 1092](/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1985-12-28;1092), al solo fine di facilitare la lettura delle disposizioni di legge modificate o alle quali è operato il rinvio. Restano invariati il valore e l'efficacia degli atti legislativi qui trascritti.  
-Per gli atti dell'Unione europea vengono forniti gli estremi di pubblicazione nella Gazzetta Ufficiale dell'Unione Europea (GUUE).  
-  
-Note alle premesse:  
-\- L'[art.76 della Costituzione](/uri-res/N2Ls?urn:nir:stato:costituzione:1947-12-27~art76) stabilisce che l'esercizio della funzione legislativa non può essere delegato al Governo se non con determinazione di principi e criteri direttivi e soltanto per tempo limitato e per oggetti definiti.  
-\- L'[art. 87, quinto comma, della Costituzione](/uri-res/N2Ls?urn:nir:stato:costituzione:1947-12-27~art87-com5) conferisce al Presidente della Repubblica il potere di promulgare le leggi ed emanare i decreti aventi valore di legge e i regolamenti.  
-\- Si riporta il testo dell'[articolo 14 della legge 23 agosto 1988, n. 400](/uri-res/N2Ls?urn:nir:stato:legge:1988-08-23;400~art14), recante: «Disciplina dell'attività di Governo e ordinamento della Presidenza del Consiglio dei ministri», [pubblicata nella Gazzetta Ufficiale n.214 del 12 settembre 1988](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=1988-09-12&numeroGazzetta=214):  
-«Art. 14 (Decreti legislativi). - 1. I decreti legislativi adottati dal Governo ai sensi dell'[articolo 76 della Costituzione](/uri-res/N2Ls?urn:nir:stato:costituzione:1947-12-27~art76) sono emanati dal Presidente della Repubblica con la denominazione di "decreto legislativo" e con l'indicazione, nel preambolo, della legge di delegazione, della deliberazione del Consiglio dei ministri e degli altri adempimenti del procedimento prescritti dalla legge di delegazione.  
-2\. L'emanazione del decreto legislativo deve avvenire entro il termine fissato dalla legge di delegazione; il testo del decreto legislativo adottato dal Governo è trasmesso al Presidente della Repubblica, per la emanazione, almeno venti giorni prima della scadenza.  
-3\. Se la delega legislativa si riferisce ad una pluralità di oggetti distinti suscettibili di separata disciplina, il Governo può esercitarla mediante più atti successivi per uno o più degli oggetti predetti. In relazione al termine finale stabilito dalla legge di delegazione, il Governo informa periodicamente le Camere sui criteri che segue nell'organizzazione dell'esercizio della delega.  
-4\. In ogni caso, qualora il termine previsto per l'esercizio della delega ecceda in due anni, il Governo è tenuto a richiedere il parere delle Camere sugli schemi dei decreti delegati. Il parere è espresso dalle Commissioni permanenti delle due Camere competenti per materia entro sessanta giorni, indicando specificamente le eventuali disposizioni non ritenute corrispondenti alle direttive della legge di delegazione. Il Governo, nei trenta giorni successivi, esaminato il parere, ritrasmette, con le sue osservazioni e con eventuali modificazioni, i testi alle Commissioni per il parere definitivo che deve essere espresso entro trenta giorni.».  
-\- La [legge 24 dicembre 2012, n. 234](/uri-res/N2Ls?urn:nir:stato:legge:2012-12-24;234), recante: «Norme generali sulla partecipazione dell'Italia alla formazione e all'attuazione della normativa e delle politiche dell'Unione europea», è [pubblicata nella Gazzetta Ufficiale n. 3 del 4 gennaio 2013](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2013-01-04&numeroGazzetta=3).  
-\- Si riporta il testo dell'[articolo 24 della legge 23 settembre 2025, n. 132](/uri-res/N2Ls?urn:nir:stato:legge:2025-09-23;132~art24), recante: «Disposizioni e deleghe al Governo in materia di intelligenza artificiale», [pubblicata nella Gazzetta Ufficiale n. 223 del 25 settembre 2025](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2025-09-25&numeroGazzetta=223):  
-«Art. 24 (Deleghe al Governo in materia di intelligenza artificiale). - 1. Il Governo è delegato ad adottare, entro dodici mesi dalla data di entrata in vigore della presente legge, con le procedure di cui all'[articolo 31 della legge 24 dicembre 2012, n. 234](/uri-res/N2Ls?urn:nir:stato:legge:2012-12-24;234~art31), acquisiti i pareri delle competenti Commissioni parlamentari, della Conferenza unificata di cui all'[articolo 8 del decreto legislativo 28 agosto 1997, n. 281](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-08-28;281~art8), e del Garante per la protezione dei dati personali, uno o più decreti legislativi per l'adeguamento della normativa nazionale al [regolamento (UE) 2024/1689](/uri-res/N2Ls?urn:nir::regolamento:2024;1689).  
-2\. Nell'esercizio della delega di cui al comma 1 il Governo si attiene, oltre che ai principi e criteri direttivi generali di cui all'[articolo 32 della legge 24 dicembre 2012, n. 234](/uri-res/N2Ls?urn:nir:stato:legge:2012-12-24;234~art32), ai seguenti principi e criteri direttivi specifici:  
-a) attribuire alle autorità di cui all'articolo 20, nei limiti della designazione operata ai sensi del medesimo articolo 20, tutti i poteri di vigilanza, ispettivi e sanzionatori previsti dal [regolamento (UE) 2024/1689](/uri-res/N2Ls?urn:nir::regolamento:2024;1689) per la verifica del rispetto delle norme del regolamento stesso e dalla normativa dell'Unione europea attuativa del medesimo regolamento;  
-b) apportare alla normativa vigente, ivi inclusa quella in materia di servizi bancari, finanziari, assicurativi e di pagamento, le modifiche, le integrazioni e le abrogazioni necessarie al corretto e integrale adeguamento al [regolamento (UE) 2024/1689](/uri-res/N2Ls?urn:nir::regolamento:2024;1689);  
-c) ricorrere alla disciplina secondaria adottata dalle autorità individuate ai sensi dell'articolo 20, ove opportuno e nel rispetto delle competenze alle stesse spettanti, nell'ambito e per le finalità specificamente previsti dal [regolamento (UE) 2024/1689](/uri-res/N2Ls?urn:nir::regolamento:2024;1689) e dalla normativa dell'Unione europea attuativa del medesimo regolamento;  
-d) attribuire alle autorità di cui all'articolo 20 il potere di imporre le sanzioni e le altre misure amministrative previste dall'[articolo 99 del regolamento (UE) 2024/1689](/uri-res/N2Ls?urn:nir::regolamento:2024;1689~art99) per la violazione delle norme del regolamento stesso e degli atti di attuazione, nel rispetto dei limiti edittali e delle procedure previsti dal medesimo articolo 99 e dalle disposizioni nazionali che disciplinano l'irrogazione delle sanzioni e l'applicazione delle altre misure amministrative da parte delle autorità anzidette;  
-e) previsione di percorsi di alfabetizzazione e formazione in materia di utilizzo dei sistemi di intelligenza artificiale;  
-f) previsione, da parte degli ordini professionali e delle associazioni di categoria maggiormente rappresentative, nonché da parte delle forme aggregative delle associazioni di cui all'[articolo 3 della legge 14 gennaio 2013, n. 4](/uri-res/N2Ls?urn:nir:stato:legge:2013-01-14;4~art3), di percorsi di alfabetizzazione e formazione, per i professionisti e per gli operatori dello specifico settore, all'uso dei sistemi di intelligenza artificiale; previsione della possibilità di riconoscimento di un equo compenso modulabile sulla base delle responsabilità e dei rischi connessi all'uso dei sistemi di intelligenza artificiale;  
-g) potenziamento, all'interno dei curricoli scolastici, dello sviluppo di competenze scientifiche, tecnologiche, ingegneristiche e matematiche legate alle discipline STEM, nonché artistiche, al fine di promuovere la scelta da parte delle studentesse e degli studenti, anche attraverso mirate attività di orientamento personalizzato, di percorsi di formazione superiore relativi alle menzionate discipline;  
-h) previsione di un'apposita disciplina per l'utilizzo di sistemi di intelligenza artificiale per l'attività di polizia;  
-i) previsione, nei corsi universitari e delle istituzioni di alta formazione artistica, musicale e coreutica (AFAM), nonché nei percorsi di istruzione tecnologica superiore offerti dagli istituti tecnologici superiori (ITS Academy), coerentemente con i rispettivi profili culturali e professionali, di attività formative per la comprensione tecnica e l'utilizzo consapevole anche sotto il profilo giuridico delle tecnologie, anche con riferimento ai sistemi di intelligenza artificiale come definiti dalla disciplina europea, nonché per la corretta interpretazione della produzione di tali sistemi in termini di previsioni, contenuti, raccomandazioni o decisioni;  
-l) valorizzazione delle attività di ricerca e di trasferimento tecnologico in materia di intelligenza artificiale svolte da università, istituzioni AFAM, ITS Academy ed enti pubblici di ricerca, mediante disposizioni finalizzate al perseguimento dei seguenti obiettivi:  
-1) agevolare il coinvolgimento del sistema dell'università e della ricerca nella promozione, nella realizzazione e nell'utilizzo di spazi di sperimentazione normativa in collaborazione con il mondo produttivo;  
-2) incentivare le attività di supporto e semplificare gli strumenti di collaborazione tra il sistema dell'università e della ricerca e degli ITS Academy e le Autorità nazionali di cui all'articolo 20;  
-m) definizione dei poteri di vigilanza dell'autorità di vigilanza del mercato che conferiscano all'autorità i poteri di imporre ai fornitori e ai potenziali fornitori di trasmettere informazioni, di effettuare ispezioni a distanza o in loco, anche senza preavviso, e di svolgere controlli sulla conduzione delle prove in condizioni reali e sui relativi sistemi di intelligenza artificiale ad alto rischio;  
-n) adeguamento del quadro sanzionatorio, anche in deroga ai criteri e ai limiti previsti dall'[articolo 32, comma 1, lettera d), della legge 24 dicembre 2012, n. 234](/uri-res/N2Ls?urn:nir:stato:legge:2012-12-24;234~art32-com1-letd), e alla [legge 24 novembre 1981, n. 689](/uri-res/N2Ls?urn:nir:stato:legge:1981-11-24;689), ivi compresa la definizione delle misure di esecuzione applicabili ai sensi del [regolamento (UE) 2024/1689](/uri-res/N2Ls?urn:nir::regolamento:2024;1689), nonché del procedimento applicabile per l'irrogazione delle sanzioni o l'applicazione delle misure di esecuzione, anche in coerenza con quanto previsto dall'[articolo 17, comma 4-quater, del decreto-legge 14 giugno 2021, n. 82](/uri-res/N2Ls?urn:nir:stato:decreto.legge:2021-06-14;82~art17-com4quater), convertito, con modificazioni, dalla [legge 4 agosto 2021, n. 109](/uri-res/N2Ls?urn:nir:stato:legge:2021-08-04;109).  
-3\. Il Governo è altresì delegato ad adottare, entro dodici mesi dalla data di entrata in vigore della presente legge, uno o più decreti legislativi per adeguare e specificare la disciplina dei casi di realizzazione e di impiego illeciti di sistemi di intelligenza artificiale.  
-4\. Gli schemi dei decreti legislativi di cui al comma 3 sono adottati su proposta del Presidente del Consiglio dei ministri e del Ministro della giustizia, di concerto con il Ministro dell'interno, e sono successivamente trasmessi alle Camere per l'espressione del parere delle Commissioni parlamentari competenti. Decorsi sessanta giorni dalla data della trasmissione, i decreti possono essere emanati anche in mancanza dei pareri. Qualora detto termine venga a scadere nei trenta giorni antecedenti alla scadenza del termine previsto per l'esercizio della delega o successivamente, quest'ultimo è prorogato di sessanta giorni.  
-5\. Nell'esercizio della delega di cui al comma 3, il Governo si attiene ai seguenti principi e criteri direttivi:  
-a) previsione di strumenti, anche cautelari, finalizzati a inibire la diffusione e a rimuovere contenuti generati illecitamente anche con sistemi di intelligenza artificiale, assistiti da un sistema di sanzioni effettive, proporzionate e dissuasive;  
-b) introduzione di autonome fattispecie di reato, punite a titolo di dolo o di colpa, incentrate sull'omessa adozione o sull'omesso adeguamento di misure di sicurezza per la produzione, la messa in circolazione e l'utilizzo professionale di sistemi di intelligenza artificiale, quando da tali omissioni deriva pericolo concreto per la vita o l'incolumità pubblica o individuale o per la sicurezza dello Stato;  
-c) precisazione dei criteri di imputazione della responsabilità penale delle persone fisiche e amministrativa degli enti per gli illeciti inerenti a sistemi di intelligenza artificiale, che tenga conto del livello effettivo di controllo dei sistemi predetti da parte dell'agente;  
-d) nei casi di responsabilità civile, previsione di strumenti di tutela del danneggiato, anche attraverso una specifica regolamentazione dei criteri di ripartizione dell'onere della prova, tenuto conto della classificazione dei sistemi di intelligenza artificiale e dei relativi obblighi come individuati dal [regolamento (UE) 2024/1689](/uri-res/N2Ls?urn:nir::regolamento:2024;1689);  
-e) regolazione dell'utilizzo dei sistemi di intelligenza artificiale nelle indagini preliminari, nel rispetto delle garanzie inerenti al diritto di difesa e ai dati personali dei terzi, nonché dei principi di proporzionalità, non discriminazione e trasparenza;  
-f) modifica, a fini di coordinamento e di razionalizzazione del sistema, della normativa sostanziale e processuale vigente, in conformità ai principi e ai criteri enunciati nelle lettere a), b), c), d) ed e).  
-5-bis. Per l'adozione delle misure relative all'attuazione del criterio di cui al comma 2, lettera e), può provvedersi nel limite complessivo di 100 milioni di euro a valere sulle risorse del programma nazionale «PN scuola 2021 - 2027».  
-6\. Fermo restando quanto previsto al comma 5-bis, dall'attuazione del presente articolo non devono derivare nuovi o maggiori oneri a carico della finanza pubblica. Le amministrazioni competenti provvedono ai relativi adempimenti con le risorse umane, strumentali e finanziarie disponibili a legislazione vigente.».  
-\- Il [regolamento (UE) 2024/1689 del Parlamento europeo e del Consiglio, del 13 giugno 2024](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1689), recante: «Regole armonizzate sull'intelligenza artificiale e modifica i [regolamenti (CE) n. 300/2008](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32008R0300), (UE) n. 167/2013, (UE) n. 168/2013, (UE) 2018/858, (UE) 2018/1139 e (UE) 2019/2144 e le [direttive 2014/90/UE](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32014L0090), [(UE) 2016/797](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32016L0797) e [(UE) 2020/1828](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32020L1828)» è pubblicato nella GUUE 12 luglio 2024, Serie L.  
-\- Il [regolamento (UE) n. 2016/679 del Parlamento europeo e del Consiglio, del 27 aprile 2016](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32016R0679), recante norme in materia di «Protezione delle persone fisiche con riguardo al trattamento dei dati personali, nonché alla libera circolazione di tali dati e che abroga la [direttiva 95/46/CE](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:31995L0046)» è pubblicato nella GUUE 4 maggio 2016, n. L 119.  
-\- La [direttiva (UE) n. 2016/680 del Parlamento europeo e del Consiglio, del 27 aprile 2016](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32016L0680), recante norme in materia di «Protezione delle persone fisiche con riguardo al trattamento dei dati personali da parte delle autorità competenti a fini di prevenzione, indagine, accertamento e perseguimento di reati o esecuzione di sanzioni penali, nonché alla libera circolazione di tali dati e che abroga la decisione quadro 2008/977/GAI del Consiglio», è pubblicata nella GUUE 4 maggio 2016, n. L 119.  
-\- La [direttiva (UE) 2024/2853 del Parlamento europeo e del Consiglio, del 23 ottobre 2024](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024L2853), recante norme in materia di «Responsabilità per danno da prodotti difettosi, che abroga la [direttiva 85/374/CEE del Consiglio](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:31985L0374)», è pubblicata nella Gazzetta Ufficiale Unione Europea 18 novembre 2024, Serie L.  
-\- Il [Regio decreto 19 ottobre 1930, n. 1398](/uri-res/N2Ls?urn:nir:stato:regio.decreto:1930-10-19;1398), recante: «Approvazione del testo definitivo del [codice penale](/uri-res/N2Ls?urn:nir:stato:codice.penale:1930-10-19;1398)» è [pubblicato nella Gazzetta Ufficiale n. 251 del 26 ottobre 1930](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=1930-10-26&numeroGazzetta=251).  
-\- Si riporta il testo dell'[articolo 116 del Regio decreto 28 ottobre 1940, n. 1443](/uri-res/N2Ls?urn:nir:stato:regio.decreto:1940-10-28;1443~art116), recante: «[Codice di procedura civile](/uri-res/N2Ls?urn:nir:stato:codice.procedura.civile:1940-10-28;1443)», [pubblicato nella Gazzetta Ufficiale n. 253 del 28 ottobre 1940](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=1940-10-28&numeroGazzetta=253):  
-«Art. 116 (Valutazione delle prove). - Il giudice deve valutare le prove secondo il suo prudente apprezzamento, salvo che la legge disponga altrimenti.  
-Il giudice può desumere argomenti di prova dalle risposte che le parti gli danno \[[c.p.c.](/uri-res/N2Ls?urn:nir:stato:codice.procedura.civile:1940-10-28;1443) 229\] a norma dell'articolo seguente, dal loro rifiuto ingiustificato a consentire le ispezioni che egli ha ordinate e, in generale, dal contegno delle parti stesse nel processo.».  
-\- Si riporta il testo degli [articoli 2050](/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art2050) e [2051 del regio decreto 16 marzo 1942, n. 262](/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262~art2051), recante: «Approvazione del testo del [Codice civile](/uri-res/N2Ls?urn:nir:stato:codice.civile:1942-03-16;262)», [pubblicato nella Gazzetta Ufficiale n. 79 del 4 aprile 1942](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=1942-04-04&numeroGazzetta=79):  
-«Art. 2050 (Responsabilità per l'esercizio di attività pericolose). - Chiunque cagiona danno ad altri nello svolgimento di un'attività pericolosa, per sua natura o per la natura dei mezzi adoperati, è tenuto al risarcimento, se non prova di avere adottato tutte le misure idonee a evitare il danno.»  
-«Art. 2051 (Danno cagionato da cosa in custodia). - Ciascuno è responsabile del danno cagionato dalle cose che ha in custodia, salvo che provi il caso fortuito.».  
-\- La [legge 23 aprile 1959, n. 189](/uri-res/N2Ls?urn:nir:stato:legge:1959-04-23;189), recante: «Ordinamento del Corpo della guardia di finanza» è [pubblicata nella Gazzetta Ufficiale n. 98 del 24 aprile 1959](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=1959-04-24&numeroGazzetta=98).  
-\- La [legge 1° aprile 1981, n. 121](/uri-res/N2Ls?urn:nir:stato:legge:1981-04-01;121), recante: «Nuovo ordinamento dell'Amministrazione della pubblica sicurezza» è [pubblicata nella Gazzetta Ufficiale n. 100 del 10 aprile 1981](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=1981-04-10&numeroGazzetta=100).  
-\- Il [decreto del Presidente della Repubblica 22 settembre 1988, n. 447](/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1988-09-22;447), recante: «Approvazione del [codice di procedura penale](/uri-res/N2Ls?urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447)» è [pubblicato nella Gazzetta Ufficiale n. 250 del 24 ottobre 1988](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=1988-10-24&numeroGazzetta=250).  
-\- Il [decreto legislativo 28 luglio 1989, n. 271](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1989-07-28;271), recante: «Norme di attuazione, di coordinamento e transitorie del [codice di procedura penale](/uri-res/N2Ls?urn:nir:presidente.repubblica:codice.procedura.penale:1988-09-22;447)» è [pubblicato nella Gazzetta Ufficiale n. 182 del 5 agosto 1989](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=1989-08-05&numeroGazzetta=182).  
-\- Il [decreto legislativo 19 marzo 2001, n. 68](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-19;68), recante: «Adeguamento dei compiti del Corpo della Guardia di finanza, a norma dell'[articolo 4 della legge 31 marzo 2000, n. 78](/uri-res/N2Ls?urn:nir:stato:legge:2000-03-31;78~art4)» è [pubblicato nella Gazzetta Ufficiale n. 71 del 26 marzo 2001](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2001-03-26&numeroGazzetta=71).  
-\- Il [decreto legislativo 8 giugno 2001, n. 231](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-06-08;231), recante: «Disciplina della responsabilità amministrativa delle persone giuridiche, delle società e delle associazioni anche prive di personalità giuridica, a norma dell'[articolo 11 della legge 29 settembre 2000, n. 300](/uri-res/N2Ls?urn:nir:stato:legge:2000-09-29;300~art11)» è [pubblicato nella Gazzetta Ufficiale n. 140 del 19 giugno 2001](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2001-06-19&numeroGazzetta=140).  
-\- Il [decreto legislativo 30 giugno 2003, n. 196](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196), recante: «[Codice in materia di protezione dei dati personali](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196), recante disposizioni per l'adeguamento dell'ordinamento nazionale al [regolamento (UE) n. 2016/679 del Parlamento europeo e del Consiglio, del 27 aprile 2016](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32016R0679), relativo alla protezione delle persone fisiche con riguardo al trattamento dei dati personali, nonché alla libera circolazione di tali dati e che abroga la [direttiva 95/46/CE](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:31995L0046)» è [pubblicato nella Gazzetta Ufficiale , n. 174 del 29 luglio 2003](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2003-07-29&numeroGazzetta=174).  
-\- Il [decreto legislativo 15 marzo 2010, n. 66](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2010-03-15;66), recante: «[Codice dell'ordinamento militare](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2010-03-15;66)», è [pubblicato nella Gazzetta Ufficiale n. 106 del 8 maggio 2010](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2010-05-08&numeroGazzetta=106).  
-\- Il [decreto legislativo 19 agosto 2016, n. 177](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2016-08-19;177), recante: «Disposizioni in materia di razionalizzazione delle funzioni di polizia e assorbimento del Corpo forestale dello Stato, ai sensi dell'[articolo 8, comma 1, lettera a), della legge 7 agosto 2015, n. 124](/uri-res/N2Ls?urn:nir:stato:legge:2015-08-07;124~art8-com1-leta), in materia di riorganizzazione delle amministrazioni pubbliche» è [pubblicato nella Gazzetta Ufficiale n. 213 del 12 settembre 2016](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2016-09-12&numeroGazzetta=213).  
-\- Il [decreto legislativo 18 maggio 2018, n. 51](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2018-05-18;51), recante: «Attuazione della [direttiva (UE) 2016/680 del Parlamento europeo e del Consiglio, del 27 aprile 2016](http://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32016L0680), relativa alla protezione delle persone fisiche con riguardo al trattamento dei dati personali da parte delle autorità competenti a fini di prevenzione, indagine, accertamento e perseguimento di reati o esecuzione di sanzioni penali, nonché alla libera circolazione di tali dati e che abroga la decisione quadro 2008/977/GAI del Consiglio» è [pubblicato nella Gazzetta Ufficiale n. 119 del 24 maggio 2018](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2018-05-24&numeroGazzetta=119).  
-\- Il [decreto del Presidente della Repubblica 29 gennaio 1999, n. 34](/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-01-29;34), recante: «Regolamento recante norme per la determinazione della struttura ordinativa del Corpo della Guardia di finanza, ai sensi dell'[articolo 27, commi 3](/uri-res/N2Ls?urn:nir:stato:legge:1997-12-27;449~art27-com3) e [4, della legge 27 dicembre 1997, n. 449](/uri-res/N2Ls?urn:nir:stato:legge:1997-12-27;449~art27-com4)», è [pubblicato nella Gazzetta Ufficiale n. 44 del 23 febbraio 1999](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=1999-02-23&numeroGazzetta=44).  
-\- Il [decreto del Presidente della Repubblica 15 gennaio 2018, n. 15](/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2018-01-15;15), recante «Regolamento a norma dell'[articolo 57 del decreto legislativo 30 giugno 2003, n. 196](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196~art57), recante l'individuazione delle modalità di attuazione dei principi del [Codice in materia di protezione dei dati personali](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-06-30;196) relativamente al trattamento dei dati effettuato, per le finalità di polizia, da organi, uffici e comandi di polizia», è [pubblicato nella Gazzetta Ufficiale n. 61 del 14 marzo 2018](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2018-03-14&numeroGazzetta=61).  
-\- Si riporta il testo dell'[articolo 8 del decreto legislativo 28 agosto 1997, n. 281](/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-08-28;281~art8), recante «Definizione ed ampliamento delle attribuzioni della Conferenza permanente per i rapporti tra lo Stato, le regioni e le province autonome di Trento e Bolzano ed unificazione, per le materie ed i compiti di interesse comune delle regioni, delle province e dei comuni, con la Conferenza Stato-città ed autonomie locali», [pubblicato nella Gazzetta Ufficiale n. 202 del 30 agosto 1997](http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=1997-08-30&numeroGazzetta=202):  
-«Art. 8 (Conferenza unificata). - 1. La Conferenza Stato-città ed autonomie locali è unificata per le materie ed i compiti di interesse comune delle regioni, delle province, dei comuni e delle comunità montane, con la Conferenza Stato-regioni.  
-2\. La Conferenza Stato-città ed autonomie locali è presieduta dal Presidente del Consiglio dei Ministri o, per sua delega, dal Ministro dell'interno o dal Ministro per gli affari regionali nella materia di rispettiva competenza; ne fanno parte altresì il Ministro del tesoro e del bilancio e della programmazione economica, il Ministro delle finanze, il Ministro dei lavori pubblici, il Ministro della sanità, il presidente dell'Associazione nazionale dei comuni d'Italia - ANCI, il presidente dell'Unione province d'Italia - UPI ed il presidente dell'Unione nazionale comuni, comunità ed enti montani - UNCEM. Ne fanno parte inoltre quattordici sindaci designati dall'ANCI e sei presidenti di provincia designati dall'UPI.  
-Dei quattordici sindaci designati dall'ANCI cinque rappresentano le città individuate dall'[articolo 17 della legge 8 giugno 1990, n. 142](/uri-res/N2Ls?urn:nir:stato:legge:1990-06-08;142~art17). Alle riunioni possono essere invitati altri membri del Governo, nonché rappresentanti di amministrazioni statali, locali o di enti pubblici.  
-3\. La Conferenza Stato-città ed autonomie locali è convocata almeno ogni tre mesi, e comunque in tutti i casi il presidente ne ravvisi la necessità o qualora ne faccia richiesta il presidente dell'ANCI, dell'UPI o dell'UNCEM  
-4\. La Conferenza unificata di cui al comma 1 è convocata dal Presidente del Consiglio dei Ministri. Le sedute sono presiedute dal Presidente del Consiglio dei Ministri o, su sua delega, dal Ministro per gli affari regionali o, se tale incarico non è conferito, dal Ministro dell'interno.».  
-  
-Note all'art. 1:  
-\- Per i riferimenti al [regolamento (UE) 2024/1689](/uri-res/N2Ls?urn:nir::regolamento:2024;1689) si vedano le note alle premesse.  
-\- Si riporta il testo dell'articolo 3 della citata [legge 23 settembre 2025, n. 132](/uri-res/N2Ls?urn:nir:stato:legge:2025-09-23;132):  
-«Art. 3 (Principi generali). - 1. La ricerca, la sperimentazione, lo sviluppo, l'adozione, l'applicazione e l'utilizzo di sistemi e di modelli di intelligenza artificiale per finalità generali avvengono nel rispetto dei diritti fondamentali e delle libertà previste dalla Costituzione, del diritto dell'Unione europea e dei principi di trasparenza, proporzionalità, sicurezza, protezione dei dati personali, riservatezza, accuratezza, non discriminazione, parità dei sessi e sostenibilità.  
-2\. Lo sviluppo di sistemi e di modelli di intelligenza artificiale per finalità generali avviene su dati e tramite processi di cui devono essere garantite e vigilate la correttezza, l'attendibilità, la sicurezza, la qualità, l'appropriatezza e la trasparenza, secondo il principio di proporzionalità in relazione ai settori nei quali sono utilizzati.  
-3\. I sistemi e i modelli di intelligenza artificiale per finalità generali devono essere sviluppati e applicati nel rispetto dell'autonomia e del potere decisionale dell'uomo, della prevenzione del danno, della conoscibilità, della trasparenza, della spiegabilità e dei principi di cui al comma 1, assicurando la sorveglianza e l'intervento umano.  
-4\. L'utilizzo di sistemi di intelligenza artificiale non deve pregiudicare lo svolgimento con metodo democratico della vita istituzionale e politica e l'esercizio delle competenze e funzioni delle istituzioni territoriali sulla base dei principi di autonomia e sussidiarietà e non deve altresì pregiudicare la libertà del dibattito democratico da interferenze illecite, da chiunque provocate, tutelando gli interessi della sovranità dello Stato nonché i diritti fondamentali di ogni cittadino riconosciuti dagli ordinamenti nazionale ed europeo.  
-5\. La presente legge non produce nuovi obblighi rispetto a quelli previsti dal [regolamento (UE) 2024/1689](/uri-res/N2Ls?urn:nir::regolamento:2024;1689) per i sistemi di intelligenza artificiale e per i modelli di intelligenza artificiale per finalità generali.  
-6\. Al fine di garantire il rispetto dei diritti e dei principi di cui al presente articolo deve essere assicurata, quale precondizione essenziale, la cybersicurezza lungo tutto il ciclo di vita dei sistemi e dei modelli di intelligenza artificiale per finalità generali, secondo un approccio proporzionale e basato sul rischio, nonché l'adozione di specifici controlli di sicurezza, anche al fine di assicurarne la resilienza contro tentativi di alterarne l'utilizzo, il comportamento previsto, le prestazioni o le impostazioni di sicurezza.  
-7\. La presente legge garantisce alle persone con disabilità il pieno accesso ai sistemi di intelligenza artificiale e alle relative funzionalità o estensioni, su base di uguaglianza e senza alcuna forma di discriminazione e di pregiudizio, in conformità alle disposizioni della Convenzione delle Nazioni Unite sui diritti delle persone con disabilità, fatta a New York il 13 dicembre 2006, ratificata e resa esecutiva in Italia ai sensi della [legge 3 marzo 2009, n. 18](/uri-res/N2Ls?urn:nir:stato:legge:2009-03-03;18).».  
+## Art. 2
 
-[articolo successivo](javascript:)
+Definizioni
 
-[nascondi](javascript:void\(0\))
+1. Ai fini del presente titolo, si intende per:
 
--   ### Approfondimenti
-    
--   aggiornamenti all'atto
--   atti aggiornati
--   atti correlati
--   note atto
--   lavori preparatori
--   relazioni
--   aggiornamenti al titolo
--   aggiornamenti alla struttura
--   atti parlamentari
--   atti attuativi
+a) «regolamento IA»: il regolamento (UE) 2024/1689 del Parlamento europeo e del Consiglio, del 13 giugno 2024, che stabilisce regole armonizzate sull'intelligenza artificiale e modifica i regolamenti (CE) n. 300/2008, (UE) n. 167/2013, (UE) n. 168/2013, (UE) 2018/858, (UE) 2018/1139 e (UE) 2019/2144 e le direttive 2014/90/UE, (UE) 2016/797 e (UE) 2020/1828 (regolamento sull'intelligenza artificiale);
 
--   ### Funzioni
-    
--   [esporta](/atto/vediMenuExport?atto.dataPubblicazioneGazzetta=2026-09-15&atto.codiceRedazionale=26G00179&currentSearch=)
--   [esporta in Akoma ntoso](/do/atto/caricaAKN?dataGU=20260915&codiceRedaz=26G00179&dataVigenza=20261125)
--   collegamento permanente
--   indice dell'atto
+b) «legge IA»: la legge 23 settembre 2025, n. 132, recante «Disposizioni e deleghe al Governo in materia di intelligenza artificiale»;
 
-#### lavori preparatori
+c) «sistema di IA»: un sistema di intelligenza artificiale definito dall'articolo 3, punto 1), del regolamento (UE) 2024/1689;
 
-#### aggiornamenti all'atto
+d) «pratiche vietate»: le pratiche di IA vietate a norma dell'articolo 5 del regolamento (UE) 2024/1689;
 
-#### atti aggiornati
+e) «sistema di IA ad alto rischio»: un sistema di IA classificato ad alto rischio, conformemente all'articolo 6 del regolamento (UE) 2024/1689 in combinato disposto con il suo allegato III;
 
-#### atti correlati
+f) «categorie particolari di dati personali»: le categorie di dati di cui all'articolo 3, punto 37), del regolamento (UE) 2024/1689;
 
-#### indice dell'atto
+g) «dati relativi a condanne penali e reati»: i dati personali di cui all'articolo 10 del regolamento (UE) 2016/679 del Parlamento europeo e del Consiglio, del 27 aprile 2016;
 
-#### aggiornamenti alla struttura
+h) «dati operativi sensibili»: i dati relativi ad attività di prevenzione, accertamento, indagine o perseguimento di reati, indicati dall'articolo 3, punto 38), del regolamento (UE) 2024/1689;
 
-#### aggiornamenti al titolo
+i) «output»: previsioni, contenuti, raccomandazioni o decisioni generate da un sistema di IA ai sensi dell'articolo 3, punto 1), del regolamento (UE) 2024/1689;
 
-#### relazioni
+l) «scraping non mirato»: l'estrazione e la raccolta automatizzata e indiscriminata, su larga scala, mediante l'utilizzo di un sistema di intelligenza artificiale, di immagini facciali dalla rete internet o da filmati di telecamere a circuito chiuso, allo scopo di creare o ampliare banche dati di riconoscimento facciale;
 
-#### note atto
+m) «Autorità nazionali per l'intelligenza artificiale»: l'Agenzia per l'Italia digitale (AgID) e l'Agenzia per la cybersicurezza nazionale (ACN), ai sensi dell'articolo 20, comma 1, della legge 23 settembre 2025, n. 132;
 
-#### collegamento permanente
+n) «Garante»: il Garante per la protezione dei dati personali, istituito dal codice in materia di protezione dei dati personali, di cui al decreto legislativo 30 giugno 2003, n. 196;
 
-## guida in linea
+o) «Forze di polizia»: le Forze di polizia di cui all'articolo 16 della legge 1° aprile 1981, n. 121;
 
-#### Aggiornamenti all'articolo
+p) «attività di polizia»: le attività di contrasto definite dall'articolo 3, punto 46), del regolamento (UE) 1689/2024, svolte, nell'esercizio delle rispettive attribuzioni e funzioni, dagli organi, uffici e comandi delle Forze di polizia;
 
-#### atti parlamentari
+q) «finalità di polizia»: i fini di prevenzione, indagine, accertamento o perseguimento di reati o esecuzione di sanzioni penali, incluse la salvaguardia contro le minacce alla sicurezza pubblica e la prevenzione delle stesse, richiamati nei punti 45) e 46) dell'articolo 3 del regolamento (UE) 1689/2024, e per i quali sono svolte le attività di polizia di cui alla lettera s);
 
-#### atti attuativi
+2. Per quanto non espressamente previsto dal presente decreto, si applicano le definizioni di cui all'articolo 2 della legge 23 settembre 2025, n. 132, e all'articolo 3 del regolamento (UE) 2024/1689.
+
+## Art. 3
+
+Ricerca, sperimentazione, sviluppo, addestramento, convalida e utilizzo di sistemi e modelli di intelligenza artificiale per le attività di polizia
+
+1. La ricerca, la sperimentazione, lo sviluppo, l'addestramento, l'adozione, l'applicazione, la convalida e l'utilizzo di sistemi e modelli di intelligenza artificiale per le attività e le finalità delle Forze di polizia avvengono nel rispetto dei diritti fondamentali e delle libertà previste dalla Costituzione, del diritto dell'Unione europea e dei principi di cui all'articolo 3 della legge IA, secondo un approccio antropocentrico, proporzionato e fondato sul rischio, che tenga conto della classificazione dei sistemi di IA e delle diverse categorie di interessati.
+
+2. Le attività di ricerca, sperimentazione, sviluppo e addestramento sono orientate al perseguimento della funzionalità e dell'affidabilità operativa dei sistemi e dei modelli di IA destinati a essere utilizzati dalle Forze di polizia, nella prospettiva di migliorare l'apporto tecnologico dell'intelligenza artificiale alle valutazioni e alle decisioni umane nella relativa attività.
+
+3. Le Forze di polizia, in conformità con l'assetto istituzionale vigente e nell'ambito delle proprie competenze, utilizzano i sistemi e i modelli di intelligenza artificiale e i relativi output in funzione strumentale e di supporto alle relative attività di polizia, allo scopo di incrementarne l'efficacia e l'efficienza.
+
+4. L'utilizzo dei sistemi e dei modelli di IA nell'attività di polizia, conformemente agli obblighi stabiliti dal regolamento IA e fermo restando quanto previsto dal comma 5 in ordine alla sorveglianza umana sui sistemi di IA ad alto rischio, deve prevedere adeguate forme di revisione umana qualificata dei risultati delle elaborazioni automatiche prima del loro impiego in atti e provvedimenti incidenti sulla sfera giuridica degli interessati, nel rispetto dell'autonomia e delle sfere di competenza dei procedimenti decisionali degli appartenenti alle Forze di polizia. La revisione è effettuata da personale individuato dalle procedure interne di ciascuna Forza di polizia ed è documentata in modo da assicurarne la tracciabilità.
+
+5. Le Forze di Polizia assicurano che per i sistemi di IA ad alto rischio la sorveglianza umana sia effettiva e conforme a quanto previsto dall'articolo 14 del regolamento IA e che il personale preposto possieda le necessarie competenze e formazione al fine di prevenire e ridurre al minimo i rischi per la salute, la sicurezza e i diritti fondamentali.
+
+6. Il trattamento di dati personali nelle attività di cui al comma 1, incluse le categorie particolari di dati personali, i dati operativi sensibili e i dati relativi a condanne penali e reati nella disponibilità delle Forze di polizia in forza di norme di legge o regolamentari ovvero di atti amministrativi generali, è svolto nel rispetto della normativa in materia di protezione dei dati personali, di cui al decreto legislativo 18 maggio 2018, n. 51, ferme restando le specifiche disposizioni dettate dal regolamento IA per i sistemi ad alto rischio e quelle contenute nel capo III del presente titolo.
+
+7. Le attività di cui al presente articolo sono effettuate senza nuovi od ulteriori obblighi rispetto a quanto disposto dal regolamento IA, ferme restando le esclusioni previste dallo stesso regolamento.
+
+## Art. 4
+
+Collaborazione nell'ambito della ricerca e sperimentazione scientifica finalizzata alla realizzazione di sistemi e modelli di intelligenza artificiale per l'attività di polizia
+
+1. Le Forze di polizia, nell'ambito di specifici progetti di ricerca e sperimentazione scientifica volti alla realizzazione di sistemi di intelligenza artificiale o di dispositivi che utilizzano tecnologie di intelligenza artificiale per l'attività di polizia, possono attivare collaborazioni con università, enti di ricerca e soggetti pubblici e privati, anche per il tramite di società in house o di società a totale partecipazione pubblica controllate dallo Stato, nel rispetto della disciplina dell'Unione europea in materia di concorrenza e di aiuti di Stato.
+
+2. Il trattamento di dati per le finalità di cui al comma 1 è svolto nel rispetto della normativa in materia di protezione dei dati personali, con la previsione di apposite clausole che escludano, in particolare, la condivisione di dati operativi sensibili e l'acquisizione o l'utilizzazione, anche indirette, da parte dei soggetti con i quali sono attivate le collaborazioni, di sistemi di IA e delle relative risorse hardware e software o di dispositivi integrati con componenti di IA che siano stati addestrati per l'attività di polizia, fatto salvo il ricorso a dati sintetici ovvero a dati reali sottoposti a tecniche di mascheramento o di pseudonimizzazione.
+
+3. I rapporti di collaborazione di cui al comma 1 disciplinano espressamente la titolarità dei diritti di proprietà intellettuale, industriale e di sfruttamento economico dei risultati della ricerca, dei modelli derivati, dei dati di addestramento e del software, nel rispetto del codice della proprietà industriale di cui al decreto legislativo 10 febbraio 2005, n. 30, dell'articolo 64 del decreto del Presidente della Repubblica 11 luglio 1980, n. 382, e della normativa di settore applicabile. I medesimi rapporti individuano altresì, nel rispetto del decreto legislativo n. 51 del 2018, i ruoli svolti dai soggetti coinvolti nel trattamento dei dati personali, specificando quando gli stessi operano quali titolari, contitolari o responsabili del trattamento e disciplinando i relativi obblighi e responsabilità, anche con riferimento alle misure di sicurezza e alla documentazione delle operazioni di trattamento. È in ogni caso assicurata la titolarità in capo alle Forze di polizia dei modelli addestrati su dati operativi sensibili.
+
+## Art. 5
+
+Sviluppo, realizzazione e prova di determinati sistemi di IA per finalità di polizia negli spazi di sperimentazione normativa
+
+1. Il presente articolo costituisce base giuridica ai sensi dell'articolo 59, paragrafo 2, del regolamento IA, nonché del decreto legislativo 18 maggio 2018, n. 51, per il trattamento di dati personali, inclusi i dati relativi a reati e le categorie particolari di dati di cui all'articolo 3, punto 37), dello stesso regolamento IA, effettuato dalle Forze di polizia nell'ambito di spazi di sperimentazione normativa per l'intelligenza artificiale, quando tale trattamento è necessario per finalità di polizia.
+
+2. La partecipazione delle Forze di polizia agli spazi di sperimentazione di cui al comma 1 è finalizzata allo sviluppo, alla realizzazione e alla prova di sistemi di IA, in particolare ad alto rischio, destinati alle attività di polizia, nel rispetto della protezione dei dati personali e della tutela dei diritti e delle libertà fondamentali.
+
+3. Negli spazi di cui al presente articolo, la sperimentazione avviene nel rispetto delle condizioni cumulativamente previste dall'articolo 59, paragrafo 1, del regolamento IA, prevede il coinvolgimento del Garante laddove la stessa comporti, per il suo funzionamento, il trattamento di dati personali, ed è oggetto di collaborazione e raccordo con le Autorità nazionali per l'intelligenza artificiale, fermo restando la tutela dei dati operativi sensibili e l'esclusiva titolarità e responsabilità del trattamento degli stessi da parte delle amministrazioni competenti.
+
+4. Con regolamento adottato con decreto del Presidente del Consiglio dei ministri, ai sensi dell'articolo 17, comma 3, della legge 23 agosto 1988, n. 400, su proposta delle Autorità nazionali per l'intelligenza artificiale, di concerto con il Ministro dell'interno, sentiti il Ministro dell'economia e delle finanze e il Garante, sono definite le modalità di coordinamento tra lo spazio di sperimentazione di cui all'articolo 57 del regolamento IA e le attività del presente articolo.
+
+## Art. 6
+
+Formazione del personale di polizia
+
+1. Le Forze di polizia provvedono ad attivare, presso i rispettivi istituti di formazione, specifici corsi in materia di intelligenza artificiale applicata alle attività di polizia, secondo modalità stabilite da ciascuna amministrazione nell'ambito delle risorse disponibili a legislazione vigente.
+
+2. I corsi di cui al comma 1 assicurano, in attuazione dell'articolo 4 del regolamento IA, il conseguimento dei seguenti risultati formativi minimi:
+
+a) comprensione dei principi di funzionamento e delle potenzialità dei sistemi di intelligenza artificiale, con particolare riferimento alle loro applicazioni nelle attività di polizia;
+
+b) conoscenza dei limiti, dei bias e degli errori dei sistemi di intelligenza artificiale, con specifica attenzione al riconoscimento biometrico e all'analisi predittiva;
+
+c) capacità di interpretazione critica degli output dei sistemi di intelligenza artificiale e consapevolezza del ruolo della sorveglianza umana qualificata;
+
+d) consapevolezza delle implicazioni giuridiche, etiche e di responsabilità connesse all'utilizzo dei sistemi di intelligenza artificiale a fini di polizia, con specifico riferimento alla disciplina di cui al regolamento IA, al regolamento (UE) 2016/679 del Parlamento europeo e del Consiglio, del 27 aprile 2016, e al decreto legislativo 18 maggio 2018, n. 51;
+
+e) consapevolezza dei rischi di cybersicurezza connessi all'utilizzo dei sistemi di intelligenza artificiale, anche con riferimento alle indicazioni dell'Agenzia per la cybersicurezza nazionale.
+
+3. I risultati formativi di cui al comma 2, lettere b), c) ed e), sono assicurati nell'ambito degli specifici corsi concernenti i sistemi di IA ad alto rischio in uso nelle attività di polizia ovvero destinati a essere utilizzati nelle medesime attività.
+
+## Art. 7
+
+Etichettatura, filtraggio e categorizzazione di dati biometrici nell'attività di polizia
+
+1. Nell'ambito delle attività di polizia, l'etichettatura, il filtraggio o la categorizzazione di set di dati biometrici acquisiti in conformità alla normativa vigente, ai sensi dell'articolo 5, paragrafo 1, lettera g), del regolamento IA, sono consentiti a condizione che:
+
+a) non siano finalizzati a inferire o dedurre le caratteristiche di cui all'articolo 5, paragrafo 1, lettera g), del regolamento IA;
+
+b) siano funzionali ad attività di comparazione o ricerca ovvero ad ulteriori attività, comunque effettuate conformemente alla normativa vigente ed esclusivamente per finalità di polizia;
+
+c) non costituiscano l'unico fondamento di decisioni che producono effetti giuridici nei confronti di persone fisiche;
+
+d) il titolare del trattamento adotti misure idonee a prevenire il reimpiego dei dati e dei risultati per finalità incompatibili con quelle per cui sono stati raccolti.
+
+2. Il trattamento di dati personali nelle attività di cui al comma 1 tiene conto, ai fini dell'adempimento dei connessi obblighi previsti dal regolamento IA, della classificazione dei sistemi di IA, avuto riguardo anche agli orientamenti della Commissione europea sull'attuazione pratica del regolamento IA, ai sensi degli articoli 6, paragrafo 5, e 96, dello stesso regolamento, ed è svolto nel rispetto di quanto previsto dal decreto legislativo 18 maggio 2018, n. 51.
+
+## Art. 8
+
+Sistemi di intelligenza artificiale per l'identificazione biometrica remota in tempo reale per finalità di prevenzione, nonché di ricerca delle persone scomparse e delle vittime di specifici reati
+
+1. Fermo restando quanto previsto dall'articolo 359-ter del codice di procedura penale, introdotto dall'articolo 13 del presente decreto, l'utilizzo di sistemi di intelligenza artificiale per l'identificazione biometrica remota in tempo reale in luoghi pubblici o aperti al pubblico da parte degli organi, uffici e comandi delle Forze di polizia è ammesso per le finalità di prevenzione di cui all'articolo 5, paragrafo 1, primo comma, lettera h), punto ii), del regolamento IA. I sistemi di cui al primo periodo possono essere utilizzati, altresì, per la ricerca di una persona scomparsa o di persone specifiche, vittime dei reati di sequestro di persona, tratta di esseri umani o sfruttamento sessuale, ai sensi dell'articolo 5, paragrafo 1, primo comma, lettera h), punto i), del regolamento IA.
+
+2. L'utilizzo dei sistemi di IA di cui al comma 1 è consentito esclusivamente per confermare l'identità delle persone di cui al medesimo comma 1 specificamente interessate ovvero per la ricerca mirata, anche in modo dinamico e compresa la localizzazione, di persone specificamente individuate o individuabili in relazione alla minaccia da prevenire o alla ricerca da eseguire.
+
+3. Il confronto biometrico avviene esclusivamente con una banca dati di riferimento adeguata per ciascuna delle finalità di cui al comma 1, contenente i dati biometrici e le relative informazioni identificative, ove disponibili, riferiti alle persone, anche non identificate anagraficamente, di cui al comma 2. La banca dati di cui al primo periodo può essere derivata da dati contenuti in banche dati in uso alle Forze di polizia o tenute da altre pubbliche amministrazioni e accessibili alle predette Forze, ovvero da immagini, filmati o altri elementi biometrici acquisiti legalmente nell'ambito delle attività di polizia. Il contenuto della banca dati di cui al primo periodo è formato appositamente per ciascun utilizzo, con i soli dati biometrici pertinenti alla specifica finalità, che sono cancellati al termine della validità dell'autorizzazione, in modo da garantire che il set di confronto sia specifico per ciascuna autorizzazione e non sia suscettibile di alimentazione incrementale rispetto alle autorizzazioni pregresse. È in ogni caso vietato l'uso di banche dati biometriche alimentate, in tutto o in parte, mediante tecniche di scraping non mirato ovvero costituite in violazione delle disposizioni vigenti in materia di protezione dei dati personali.
+
+4. L'utilizzo dei sistemi di IA di cui al comma 1 è subordinato a una richiesta del questore o del comandante provinciale dell'Arma dei carabinieri e della Guardia di finanza, ovvero dei responsabili dei Servizi centrali di cui all'articolo 12 del decreto-legge 13 maggio 1991, n. 152, convertito, con modificazioni, dalla legge 12 luglio 1991, n. 203, al procuratore della Repubblica presso il Tribunale del capoluogo del distretto nel quale sono emerse le esigenze di prevenzione ovvero di ricerca, con indicazione della finalità perseguita, della durata prevista, dell'area territoriale interessata, delle persone interessate e ricercate, delle banche dati di riferimento utilizzate e dei sistemi e delle tecnologie impiegati.
+
+5. L'autorizzazione deve essere concessa con riguardo a uno specifico evento o per il tempo strettamente necessario, in ogni caso non superiore a quindici giorni, prorogabili dal procuratore della Repubblica, con decreto motivato per periodi successivi di quindici giorni qualora permangano le condizioni di cui al comma 1, nonché con riferimento ad una area territoriale delimitata e alla indicazione delle persone specificamente interessate e ricercate. La medesima autorizzazione può essere concessa, altresì, soltanto previa effettuazione delle valutazioni di cui all'articolo 5, paragrafo 2, del regolamento IA.
+
+6. Nei casi d'urgenza, quando vi è fondato motivo di ritenere che dal ritardo possa derivare un pregiudizio grave e irreparabile per le finalità di cui al comma 1, l'utilizzo del sistema di IA può essere avviato, su disposizione del questore, dei comandanti o dei responsabili indicati al comma 4, dall'organo di polizia procedente, previa comunicazione, anche in forma orale, al procuratore della Repubblica, e a condizione che sia limitato a quanto strettamente necessario, in ogni caso con delimitazione dell'area interessata e indicazione delle persone ricercate.
+
+7. Nei casi di cui al comma 6, la richiesta di autorizzazione è trasmessa al procuratore della Repubblica senza ritardo e in ogni caso entro ventiquattro ore dall'inizio delle operazioni. Il procuratore della Repubblica, ove ritenga sussistenti le condizioni di cui al medesimo comma 6, provvede nelle successive ventiquattro ore.
+
+8. Se non sono osservate le condizioni e i termini previsti dai commi 4, 5, 6 e 7, ovvero in caso di mancata autorizzazione, l'uso del sistema di intelligenza artificiale oggetto dell'autorizzazione è immediatamente interrotto e tutti i dati personali, i risultati e gli output acquisiti e prodotti sono cancellati, fatti salvi gli elementi acquisiti legittimamente sotto altra base giuridica conforme al decreto legislativo n. 51 del 2018. I risultati forniti dai sistemi di intelligenza artificiale in violazione delle disposizioni del presente articolo non possono essere utilizzati.
+
+9. Si applicano le disposizioni di cui all'articolo 226, comma 5, delle norme di attuazione, di coordinamento e transitorie del codice di procedura penale, di cui all'allegato al decreto legislativo 28 luglio 1989, n. 271.
+
+## Art. 9
+
+Valutazione d'impatto sui diritti fondamentali, conservazione delle registrazioni e notifica dell'utilizzo dei sistemi di intelligenza artificiale per l'identificazione biometrica remota in tempo reale
+
+1. In conformità all'articolo 5, paragrafo 2, del regolamento IA, per l'utilizzo dei sistemi di IA per l'identificazione biometrica remota in tempo reale per le finalità di cui all'articolo 8 del presente decreto o di cui all'articolo 359-ter del codice di procedura penale, introdotto dall'articolo 13 del presente decreto, il titolare del trattamento completa in via preventiva una valutazione di impatto sui diritti fondamentali secondo quanto previsto dall'articolo 27 dello stesso regolamento IA, ed effettua la valutazione d'impatto sulla protezione dei dati di cui agli articoli 23 e 24 del decreto legislativo n. 51 del 2018.
+
+2. Ogni utilizzo di sistemi di intelligenza artificiale per l'identificazione biometrica remota in tempo reale per le finalità di cui al comma 1 è registrato automaticamente in appositi file di log, non modificabili, comprendenti necessariamente i dati previsti dall'articolo 12, paragrafo 3, del regolamento IA. I file di log sono conservati per cinque anni dall'accesso e dall'operazione, e resi accessibili esclusivamente alle sole autorità competenti per finalità di verifica della liceità del trattamento, di controllo interno e nell'ambito di un procedimento penale.
+
+3. Restano fermi i termini di conservazione dei dati personali previsti, per finalità di polizia, dall'articolo 10 del regolamento, di cui al decreto del Presidente della Repubblica 15 gennaio 2018, n. 15.
+
+4. Dopo l'utilizzo dei sistemi di cui al comma 1, il titolare del trattamento effettua notifica al Garante, in conformità a quanto previsto dall'articolo 5, paragrafo 4, del regolamento IA. La notifica, effettuata previo nulla osta dell'autorità giudiziaria competente che può differirlo per un periodo non superiore a tre mesi, rinnovabile per una sola volta, in presenza di specifiche esigenze di segretezza, contiene le informazioni essenziali sull'autorizzazione rilasciata e sul risultato conseguito con l'utilizzo del sistema, e non include dati operativi sensibili. Nel caso di più attivazioni del sistema di IA per l'identificazione biometrica remota in tempo reale nello stesso contesto operativo ovvero di più utilizzi omogenei del predetto sistema, la notifica di cui al presente comma può essere effettuata in modo periodico e cumulativo, secondo i termini previsti dal decreto di cui al comma 5, ferma restando la necessità del nulla osta preventivo dell'autorità giudiziaria nei termini di cui al secondo periodo.
+
+5. Con decreto del Ministro dell'interno, di concerto con il Ministro della giustizia, sentiti il Garante e le Autorità nazionali per l'intelligenza artificiale, coerentemente con le norme del regolamento IA, sono individuati, in relazione all'uso dei sistemi di IA per l'identificazione biometrica remota in tempo reale per le finalità di cui all'articolo 8 del presente decreto o di cui all'articolo 359-ter del codice di procedura penale, introdotto dall'articolo 13 del presente decreto:
+
+a) i requisiti tecnici minimi di affidabilità e accuratezza dei sistemi di IA per l'identificazione biometrica remota in tempo reale;
+
+b) le modalità di monitoraggio periodico delle prestazioni dei sistemi, con particolare riguardo alla rilevazione e alla mitigazione di eventuali bias o effetti discriminatori;
+
+c) i requisiti tecnici minimi delle banche dati di riferimento impiegate per il confronto biometrico, anche con riferimento alle relative misure di sicurezza, ai tempi e alle modalità di cancellazione dei dati e alle garanzie di non incrementalità del set di confronto per ogni singolo utilizzo autorizzato;
+
+d) le misure tecniche e organizzative necessarie a garantire un adeguato livello di sicurezza del trattamento;
+
+e) le misure tecniche e organizzative necessarie a impedire accessi illeciti ai dati;
+
+f) le informazioni che il titolare del trattamento è tenuto ad allegare alla richiesta di autorizzazione ai sensi dell'articolo 8 del presente decreto o dell'articolo 359-ter del codice di procedura penale, introdotto dall'articolo 13 del presente decreto, in ordine alle caratteristiche tecniche del sistema, ai risultati delle verifiche di accuratezza e ai meccanismi di gestione degli errori;
+
+g) le modalità di esecuzione della notifica di cui al comma 4;
+
+h) gli ulteriori adempimenti cui il titolare del trattamento è tenuto in conformità a quanto previsto dal regolamento IA.
+
+## Art. 10
+
+Disposizioni in materia di sistemi di videosorveglianza dotati della tecnologia di riconoscimento facciale a posteriori, integrata dall'intelligenza artificiale, per il contrasto dei reati
+
+1. In tutti i casi in cui specifiche disposizioni di legge consentono l'installazione di sistemi di videosorveglianza, tali sistemi possono essere integrati con componenti di intelligenza artificiale, nel rispetto della normativa in materia di protezione dei dati personali e del regolamento IA. Le componenti di intelligenza artificiale, destinate al riconoscimento facciale, non possono essere attivate se non nei casi, alle condizioni e con le modalità previste dai commi 2 e 3. L'attivazione è effettuata successivamente all'acquisizione delle immagini, con un intervallo di tempo tale da non configurare un'identificazione biometrica remota in tempo reale ai sensi del regolamento IA.
+
+2. Per procedere al riconoscimento facciale a posteriori, mediante i sistemi integrati di cui al comma 1 di una persona oggetto di ricerca mirata in quanto indiziata della commissione di un reato, il pubblico ministero, su istanza degli ufficiali di polizia giudiziaria che hanno avviato i predetti sistemi, chiede al giudice per le indagini preliminari l'autorizzazione all'utilizzo dei medesimi sistemi senza ritardo e comunque entro quarantotto ore dal loro avvio. Il giudice, qualora ne ricorrano i presupposti, autorizza l'utilizzo con decreto motivato entro le successive quarantotto ore.
+
+Se non sono osservati i termini previsti dal primo periodo ovvero in caso di mancata autorizzazione, l'uso delle tecnologie di riconoscimento facciale collegato alla richiesta di autorizzazione è immediatamente interrotto e tutti i dati personali, i risultati e gli output acquisiti e prodotti sono cancellati, salvo che costituiscano corpo del reato.
+
+3. In conformità all'articolo 26, paragrafo 10, primo comma, del regolamento IA, l'autorizzazione di cui al comma 2 non è richiesta quando le tecnologie di riconoscimento facciale di cui al comma 1 sono utilizzate esclusivamente dopo la commissione di un reato al solo fine dell'identificazione iniziale di una persona potenzialmente indiziata della commissione del reato, sulla base di elementi oggettivi e verificabili direttamente connessi al fatto di reato. Nei casi di cui al primo periodo, l'utilizzo delle tecnologie è effettuato sotto la diretta ed esclusiva responsabilità dell'ufficiale di pubblica sicurezza designato dal questore per la gestione dell'ordine e della sicurezza pubblica ovvero, fuori da tale ipotesi, dell'ufficiale di polizia giudiziaria di cui all'articolo 57, comma 1, lettere a) e b), del codice di procedura penale che procede in relazione al reato. Se non è osservato quanto previsto dal presente comma, i risultati ottenuti mediante le tecnologie di riconoscimento facciale di cui al comma 1 non possono essere utilizzati e tutti i dati personali, i risultati e gli output acquisiti o prodotti sono cancellati, salvo che costituiscano corpo del reato.
+
+4. Sulla base dei criteri di cui al comma 12, lettera a), l'utilizzo dei sistemi di videosorveglianza previsti dal comma 1, nei casi ivi contemplati, comporta il trattamento automatizzato, delle immagini del volto delle persone che accedono a luoghi o a eventi per i quali sussistono particolari esigenze di ordine e sicurezza pubblica, senza elaborazione dei relativi dati biometrici. Le immagini sono memorizzate, a livello locale, nella base dati di riferimento di cui al comma 12, lettera b). Nella medesima base dati sono altresì memorizzati, senza ricorrere a tecnologie di riconoscimento biometrico, i corrispondenti dati anagrafici e, ove previsto un posto assegnato, il relativo identificativo, acquisiti mediante la scansione elettronica dei titoli di accesso.
+
+Successivamente alla commissione di un fatto di reato, l'attivazione delle tecnologie di riconoscimento facciale comporta l'elaborazione dei dati biometrici delle immagini presenti nella base dati locale di cui al primo periodo, cui sono associati i dati memorizzati ai sensi del secondo periodo, per l'effettuazione del confronto a posteriori con i dati biometrici estratti dalle immagini del volto della persona indiziata del reato.
+
+5. Il titolare del trattamento dei dati personali effettuato con l'utilizzo dei sistemi integrati dalle componenti di IA e dalle tecnologie di cui al comma 1 è il Ministero dell'interno - Dipartimento della pubblica sicurezza.
+
+6. Per i trattamenti di dati personali svolti con i sistemi integrati di cui al comma 1, il titolare del trattamento di cui al comma 5 effettua in via preventiva la valutazione d'impatto sulla protezione dei dati e consulta il Garante ai sensi degli articoli 23 e 24 del decreto legislativo 18 maggio 2018, n. 51. È possibile effettuare un'unica valutazione d'impatto sulla protezione dei dati valida per tutti i sistemi analoghi.
+
+7. I dati personali trattati con i sistemi integrati ai sensi del comma 1 sono conservati nella base di dati di riferimento individuata ai sensi del comma 12, lettera b), per sette giorni dalla raccolta e sono cancellati automaticamente decorso tale termine.
+
+8. Gli accessi e le operazioni di trattamento sui sistemi di cui al presente articolo devono essere effettuati esclusivamente dalle persone autorizzate e registrati automaticamente in appositi file di log, non modificabili, conformemente a quanto previsto dall'articolo 12, paragrafo 3, del regolamento IA. I file di log sono conservati per cinque anni dall'accesso e dall'operazione, e resi accessibili per finalità di verifica della liceità del trattamento, di controllo interno e nell'ambito di un procedimento penale.
+
+9. Restano fermi i termini di conservazione dei dati personali previsti, per finalità di polizia, dall'articolo 10 del regolamento di cui al decreto del Presidente della Repubblica 15 gennaio 2018, n. 15.
+
+10. Nessuna decisione che produca effetti giuridici negativi sulla persona cui si riferiscono i dati oggetto del trattamento può essere basata unicamente sui risultati forniti dall'applicazione di riconoscimento facciale. Si osservano, altresì, le garanzie e i limiti di cui all'articolo 8 del decreto legislativo n. 51 del 2018.
+
+11. I sistemi di cui al comma 1 non possono essere in alcun caso utilizzati con l'attivazione delle tecnologie di riconoscimento facciale in modo non mirato, senza alcun collegamento con un reato o con un procedimento penale, ovvero a fini di controllo e di identificazione biometrica generalizzati o indiscriminati delle persone.
+
+12. Con decreto del Ministro dell'interno, sentito il Garante, sono indicati:
+
+a) i criteri per l'individuazione dei luoghi e degli eventi di cui al comma 4;
+
+b) le modalità del trattamento automatizzato delle immagini del volto, senza elaborazione dei dati biometrici, delle persone che accedono ai luoghi o agli eventi di cui al comma 4, e della loro memorizzazione a livello locale, ai sensi del primo e del secondo periodo del comma anzidetto, in una base dati di riferimento, per l'elaborazione e il confronto, esclusivamente a posteriori rispetto alla commissione di un fatto di reato, dei dati biometrici;
+
+c) le misure tecniche e organizzative necessarie a garantire un adeguato livello di sicurezza del trattamento;
+
+d) gli adempimenti cui il titolare del trattamento è tenuto in conformità a quanto previsto dal regolamento IA.
+
+13. All'installazione e alla manutenzione delle componenti di IA e delle tecnologie biometriche di cui al comma 1 possono provvedere, senza nuovi o maggiori oneri per la finanza pubblica, i gestori dei luoghi di cui al comma 4, gli organizzatori o promotori degli eventi di cui al medesimo comma, ovvero chi ha la disponibilità delle strutture ove tali eventi si svolgono, in accordo con i proprietari degli stessi luoghi o strutture, con particolare riferimento agli enti locali per le rispettive piattaforme di videosorveglianza, nonché, fermo quanto previsto al comma 5, in relazione ai ruoli svolti nel trattamento dei dati personali, nel rispetto del decreto legislativo n. 51 del 2018. Nelle ipotesi di cui al primo periodo, i predetti sistemi sono concessi in comodato gratuito alla questura, che ne acquisisce la completa ed esclusiva disponibilità.
+
+14. Dall'attuazione delle disposizioni di cui al presente articolo non devono derivare nuovi o maggiori oneri per la finanza pubblica.
+
+## Art. 11
+
+Definizioni
+
+1. Ai fini del presente titolo si applicano le definizioni di cui all'articolo 3 del regolamento (UE) 2024/1689 del Parlamento europeo e del Consiglio, del 13 giugno 2024.
+
+## Art. 12
+
+Modifiche al codice penale
+
+1. Al codice penale, dopo l'articolo 437 è inserito il seguente:
+
+«Art. 437-bis (Omessa adozione di misure di sicurezza nei sistemi di intelligenza artificiale e alterazione illecita dei sistemi). - Chiunque omette di adottare le misure tecniche di sicurezza, previste per la progettazione, l'addestramento, la produzione, l'immissione sul mercato di sistemi di intelligenza artificiale ad alto rischio, idonee a prevenire malfunzionamenti o alterazioni del funzionamento dei sistemi ovvero omette di adottare misure di sorveglianza umana è punito con la reclusione da uno a cinque anni, quando da tali omissioni derivi pericolo per la vita o l'incolumità pubblica o individuale. Qualora dal fatto derivi un pericolo per la sicurezza dello Stato, la pena è della reclusione da due a otto anni.
+
+Salvo che il fatto costituisca più grave reato, chiunque, al di fuori dei casi indicati al primo comma, altera sistemi di intelligenza artificiale ad alto rischio è punito, qualora dal fatto derivi un pericolo per la vita o l'incolumità pubblica o individuale, con la reclusione da due a sei anni. Qualora dal fatto derivi un pericolo per la sicurezza dello Stato, la pena è della reclusione da tre a dieci anni.
+
+Se taluno dei fatti previsti dal comma primo è commesso per colpa grave, la pena è ridotta da un terzo a un sesto.
+
+L'utilizzatore professionale di sistemi di intelligenza artificiale ad alto rischio che omette intenzionalmente di adottare misure di sorveglianza umana è punito con le pene previste dal primo comma, primo e secondo periodo, qualora da tale omissione derivi, rispettivamente, pericolo per la vita o l'incolumità pubblica o individuale oppure un pericolo per la sicurezza dello Stato».
+
+## Art. 13
+
+Modifiche al codice di procedura penale
+
+1. Al codice di procedura penale, dopo l'articolo 359-bis è inserito il seguente:
+
+«Art. 359-ter (Identificazione e localizzazione mediante sistemi di intelligenza artificiale per l'identificazione biometrica remota in tempo reale) - 1. Quando occorre confermare l'identificazione di una persona nei confronti della quale vi sono sufficienti indizi della commissione di uno dei delitti di cui all'allegato II al regolamento (UE) 2024/1689 del Parlamento europeo e del Consiglio, del 13 giugno 2024, puniti con la pena della reclusione non inferiore nel massimo a quattro anni, ovvero procedere alla ricerca mirata, ivi compresa la localizzazione, di una persona indiziata dei medesimi delitti, può essere autorizzato l'impiego di sistemi di intelligenza artificiale per l'identificazione biometrica remota in tempo reale.
+
+2. Quando occorre procedere alla ricerca di un latitante ai fini dell'esecuzione di un'ordinanza che dispone una misura cautelare coercitiva per uno dei delitti indicati al comma 1, ovvero di un ordine di esecuzione non sospeso che dispone la carcerazione per i medesimi delitti, può essere autorizzata la localizzazione della persona ricercata tramite identificazione biometrica remota in tempo reale con l'uso di sistemi di intelligenza artificiale, procedendo al confronto dei suoi dati biometrici con quelli di individui memorizzati in una banca dati di riferimento.
+
+3. Nei casi di cui ai commi 1 e 2, il confronto biometrico avviene esclusivamente con una banca dati di riferimento adeguata per ciascuna delle finalità di cui ai medesimi commi, contenente i dati biometrici e le relative informazioni identificative, ove disponibili, riferiti alle persone, anche non identificate, di cui ai medesimi commi 1 e 2. La banca dati di cui al primo periodo può essere derivata da dati contenuti in banche dati in uso alla polizia giudiziaria o tenute da altre pubbliche amministrazioni e accessibili alla stessa o all'autorità giudiziaria, ovvero da immagini, filmati o altri elementi biometrici acquisiti legalmente nell'ambito delle indagini. Il contenuto della banca dati di cui al primo periodo è formato appositamente per ciascun utilizzo, con i soli dati biometrici pertinenti alla specifica finalità, che sono cancellati al termine della validità dell'autorizzazione, in modo da garantire che il set di confronto sia specifico per ciascuna autorizzazione e non sia suscettibile di alimentazione incrementale rispetto alle autorizzazioni pregresse. È in ogni caso vietato l'uso di banche dati biometriche alimentate, in tutto o in parte, mediante tecniche di scraping non mirato, ovvero costituite in violazione delle disposizioni vigenti in materia di protezione dei dati personali.
+
+4. Con le stesse modalità di cui ai commi 1, 2 e 3 può essere autorizzata la ricerca mirata, nell'ambito di un procedimento penale, di specifiche vittime di sottrazione, tratta di esseri umani o sfruttamento sessuale di esseri umani.
+
+5. Nei casi di cui ai commi da 1 a 4 il pubblico ministero richiede l'autorizzazione all'impiego del sistema di intelligenza artificiale per l'identificazione biometrica remota in tempo reale al giudice per le indagini preliminari.
+
+6. Il giudice per le indagini preliminari autorizza l'impiego del sistema di intelligenza artificiale di cui al comma 5 con decreto motivato. Nel provvedimento di autorizzazione è delimitata l'area geografica di applicazione, sono indicate le persone specificamente ricercate ed è determinato il tempo strettamente necessario, che non può in ogni caso superare i quindici giorni, prorogabili dal giudice, con decreto motivato, su richiesta del pubblico ministero, per periodi successivi di quindici giorni, qualora permangano le condizioni. L'autorizzazione può essere concessa soltanto previa effettuazione delle valutazioni di cui all'articolo 5, paragrafo 2, del regolamento (UE) 2024/1689.
+
+7. Quando ricorrono ragioni di urgenza e vi è fondato motivo di ritenere che dal ritardo possa derivare pregiudizio grave e irreparabile per le finalità di cui ai commi da 1 a 4, il pubblico ministero, con provvedimento adottato nel rispetto delle indicazioni di cui al comma 6, secondo periodo, dispone l'utilizzo del sistema di intelligenza artificiale per l'identificazione biometrica remota in tempo reale con decreto motivato. Il decreto è comunicato immediatamente e comunque non oltre ventiquattro ore al giudice per le indagini preliminari, il quale, se ne ricorrono i presupposti, nelle successive quarantotto ore, convalida il provvedimento e autorizza la prosecuzione. Negli stessi casi di cui al primo periodo, se non sia possibile, per la situazione di urgenza, attendere il provvedimento del pubblico ministero, all'attivazione del sistema di identificazione biometrica remota in tempo reale provvedono gli ufficiali di polizia giudiziaria, i quali, senza ritardo e comunque entro le successive dodici ore, trasmettono la richiesta di autorizzazione al pubblico ministero, il quale, se ne ricorrono i presupposti, richiede al giudice la convalida entro ventiquattro ore dall'avvio del sistema. Il giudice, se ne ricorrono i presupposti, nelle successive quarantotto ore, convalida il provvedimento e autorizza la prosecuzione dell'attività, con le indicazioni di cui al comma 6.
+
+8. I risultati forniti dai sistemi di intelligenza artificiale non possono essere utilizzati qualora gli stessi siano stati impiegati fuori dei casi consentiti dalla legge o qualora non siano state osservate le disposizioni previste dai commi 6 e 7. In questi casi, tutti i dati personali, i risultati e gli output acquisiti e prodotti sono cancellati, salvo che costituiscano corpo del reato.».
+
+## Art. 14
+
+Modifica alle norme di attuazione, di coordinamento e transitorie del codice di procedura penale
+
+1. All'articolo 104, comma 1, delle norme di attuazione, di coordinamento e transitorie del codice di procedura penale, di cui all'allegato al decreto legislativo 28 luglio 1989, n. 271, alla lettera e-bis), le parole: «del profilo personale» sono sostituite dalle seguenti: «generati anche con sistemi di intelligenza artificiale».
+
+## Art. 15
+
+Modifiche al decreto legislativo 8 giugno 2001, n. 231
+
+1. Al decreto legislativo 8 giugno 2001, n. 231, dopo l'articolo 25-undevicies, è inserito il seguente:
+
+«Art. 25-vicies (Reati commessi con l'uso di sistemi di intelligenza artificiale). - 1. In relazione al delitto di cui all'articolo 437-bis del codice penale, si applica all'ente la sanzione pecuniaria da seicento a mille quote.
+
+2. In relazione al delitto di cui all'articolo 612-quater del codice penale, si applica all'ente la sanzione pecuniaria da duecento a settecento quote.
+
+3. Nei casi previsti dai commi 1 e 2 si applicano all'ente le sanzioni interdittive previste dall'articolo 9, comma 2, lettere b), c), d) ed e).».
+
+## Art. 16
+
+Ambito di applicazione e foro del consumatore
+
+1. Le disposizioni di cui all'articolo 17 si applicano alle azioni di risarcimento del danno, sia contrattuale sia extracontrattuale, cagionato nell'utilizzo di un sistema di intelligenza artificiale.
+
+2. Le disposizioni di cui agli articoli 18 e 19 si applicano alle azioni di risarcimento del danno di cui al comma 1 quando il danno deriva dalla violazione di uno o più obblighi previsti dal regolamento (UE) 2024/1689 del Parlamento europeo e del Consiglio, del 13 giugno 2024.
+
+3. Restano ferme le disposizioni di cui all'articolo 82 del regolamento (UE) 2016/679 del Parlamento europeo e del Consiglio, del 27 aprile 2016, e della normativa nazionale di recepimento della direttiva (UE) 2024/2853 del Parlamento europeo e del Consiglio, del 23 ottobre 2024.
+
+4. Nelle azioni di cui ai commi 1 e 2, quando il danneggiato è una persona fisica che agisce per scopi estranei all'attività imprenditoriale, commerciale, artigianale o professionale eventualmente svolta, è altresì competente il giudice del luogo in cui il danneggiato ha la residenza o il domicilio.
+
+## Art. 17
+
+Accesso alle prove
+
+1. Nelle azioni di risarcimento del danno di cui all'articolo 16, comma 1, il giudice, su istanza della parte che allega di avere subito il danno, ordina all'altra parte o al terzo che ne dispone, l'esibizione degli elementi di prova specificamente pertinenti relativi al funzionamento del sistema di intelligenza artificiale, quando l'istante presenta fatti ed elementi idonei a rendere verosimile la fondatezza della domanda, anche con riferimento al collegamento tra il risultato prodotto dal sistema di intelligenza artificiale e il danno lamentato.
+
+2. Tra gli elementi di prova di cui al comma 1 rientrano:
+
+a) i registri di cui all'articolo 12 del regolamento (UE) 2024/1689;
+
+b) la documentazione relativa al sistema di gestione dei rischi di cui all'articolo 9 del regolamento (UE) 2024/1689;
+
+c) le informazioni pertinenti contenute nella documentazione tecnica di cui all'articolo 11 del regolamento (UE) 2024/1689;
+
+d) le informazioni relative ai parametri e alle modalità di supervisione umana di cui all'articolo 14 del regolamento (UE) 2024/1689.
+
+3. L'ordine di esibizione è limitato a quanto necessario e proporzionato rispetto alla domanda. Il giudice tiene conto degli interessi di tutte le parti, con particolare riguardo alla tutela dei segreti commerciali e delle informazioni riservate.
+
+4. Quando l'esecuzione dell'ordine di cui al comma 1 comporta il rischio di divulgazione di segreti commerciali o di altre informazioni riservate, il giudice adotta le misure idonee a garantirne la tutela. Si applica l'articolo 121-ter del codice della proprietà industriale, di cui al decreto legislativo 10 febbraio 2005, n. 30.
+
+5. Se la parte, senza giustificato motivo, non adempie, anche parzialmente, all'ordine di esibizione, il giudice può desumere argomenti di prova ai sensi dell'articolo 116 del codice di procedura civile. Quando l'inadempimento riguarda la documentazione di cui al comma 2, il giudice, valutato ogni altro elemento di prova, ritiene come ammessi i fatti allegati dall'istante.
+
+6. Se il terzo, senza giustificato motivo, non adempie, anche parzialmente, all'ordine di esibizione, il giudice lo condanna a una pena pecuniaria da euro 1.500 a euro 10.000.
+
+## Art. 18
+
+Presunzione del nesso di causalità
+
+1. Quando il danno deriva dalla violazione di uno o più obblighi previsti dal regolamento (UE) 2024/1689, il nesso di causalità tra la violazione e il danno è presunto, salvo prova contraria.
+
+## Art. 19
+
+Rilevanza della conformità al regolamento (UE) 2024/1689
+
+1. Fermo quanto previsto dalla normativa nazionale di recepimento della direttiva (UE) 2024/2853, la conformità del sistema di intelligenza artificiale agli obblighi previsti dal regolamento (UE) 2024/1689, anche se certificata ai sensi del capo III, sezione 5, del medesimo regolamento, non esclude di per sé la responsabilità del convenuto.
+
+## Art. 20
+
+Azione diretta nei confronti dell'impresa di assicurazione
+
+1. Chi intende promuovere l'azione di cui all'articolo 16 può chiedere preventivamente al soggetto a cui ritiene che sia imputabile il danno se è assistito da un contratto di assicurazione della responsabilità civile relativo al danno medesimo. La richiesta di cui al primo periodo non costituisce condizione di procedibilità della domanda. Il soggetto nei cui confronti è formulata la richiesta comunica entro trenta giorni dalla sua ricezione, l'esistenza di un contratto di assicurazione della responsabilità civile relativo al danno dedotto, gli estremi del contratto e la denominazione dell'impresa di assicurazione. In caso di omessa o incompleta comunicazione, il giudice può desumere argomenti di prova ai sensi dell'articolo 116 del codice di procedura civile.
+
+2. Il danneggiato ha azione diretta per il risarcimento del danno nei confronti dell'impresa di assicurazione che presta la copertura della responsabilità civile al convenuto, nei limiti delle somme per le quali è stipulato il contratto di assicurazione.
+
+3. Sono opponibili al danneggiato le eccezioni derivanti dal contratto di assicurazione, purché anteriori al sinistro.
+
+4. L'impresa di assicurazione che effettua il pagamento ha diritto di rivalsa verso l'assicurato, nella misura in cui avrebbe avuto titolo contrattuale per rifiutare o ridurre la propria prestazione.
+
+5. Nel giudizio promosso ai sensi del comma 2 è litisconsorte necessario il soggetto individuato quale responsabile del danno.
+
+6. L'azione diretta di cui al comma 2 è soggetta al medesimo termine di prescrizione dell'azione nei confronti del soggetto individuato quale responsabile del danno.
+
+## Art. 21
+
+Disposizioni transitorie sull'utilizzo dei sistemi di intelligenza artificiale per l'attività di polizia
+
+1. I sistemi di IA che, alla data di entrata in vigore del presente decreto, formano oggetto di rapporti contrattuali o sono in fase di sviluppo o di sperimentazione per finalità di polizia ovvero sono già in uso nell'attività di polizia, sono resi compatibili con le disposizioni del capo II del titolo I, da ciascuna Forza di polizia per quanto di rispettiva competenza, entro un anno dalla predetta data.
+
+2. Per le disposizioni del titolo I la cui applicazione è prevista direttamente ovvero dipende dal regolamento IA, si osservano i termini di entrata in vigore e di compiuta attuazione dello stesso regolamento.
+
+## Art. 22
+
+Clausola di invarianza finanziaria
+
+1. Le amministrazioni interessate provvedono alle attività previste dal presente decreto mediante l'utilizzo delle risorse umane, strumentali e finanziarie disponibili a legislazione vigente e, comunque, senza nuovi o maggiori oneri a carico della finanza pubblica.
+
+Il presente decreto, munito del sigillo dello Stato, sarà inserito nella Raccolta ufficiale degli atti normativi della Repubblica italiana. È fatto obbligo a chiunque spetti di osservarlo e di farlo osservare.
+
+Dato a Roma, addì 9 settembre 2026
+
+MATTARELLA
+
+Meloni, Presidente del Consiglio dei ministri
+
+Foti, Ministro per gli affari
+
+europei, il PNRR e le politiche di coesione
+
+Piantedosi, Ministro dell'interno
+
+Nordio, Ministro della giustizia
+
+Tajani, Ministro degli affari esteri e della cooperazione internazionale
+
+Crosetto, Ministro della difesa
+
+Giorgetti, Ministro dell'economia e delle finanze
+
+Visto, il Guardasigilli: Nordio
