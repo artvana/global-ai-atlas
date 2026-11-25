@@ -2,6 +2,180 @@
   {
     "date": "2026-11-25",
     "trigger": "manual",
+    "added": [],
+    "promoted": [
+      {
+        "id": "us-ca-a1159-2025",
+        "name": "California AB 1159 — Student Personal Information (HESIPA)",
+        "from": "in_force",
+        "to": "enacted_not_yet_effective"
+      },
+      {
+        "id": "us-ca-a1337-2025",
+        "name": "California A 1337 — Information Practices Act of 1977",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ca-a412-2025",
+        "name": "California A 412 — Generative Artificial Intelligence: Training Data",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ga-h147-2025",
+        "name": "Georgia H 147 — Technology Authority",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ga-h171-2025",
+        "name": "Georgia H 171 — Ensuring Accountability for Illegal AI Activities Act",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ga-s9-2025",
+        "name": "Georgia S 9 — Election Interference",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-il-s1996-2025",
+        "name": "Illinois S 1996 — Algorithmic Rent Fixing Prevention",
+        "from": "in_force",
+        "to": "failed"
+      },
+      {
+        "id": "us-il-s2255-2025",
+        "name": "Illinois S 2255 — Surveillance Based Price and Wage Discrimination Act",
+        "from": "in_force",
+        "to": "failed"
+      },
+      {
+        "id": "us-ma-h1210-2025",
+        "name": "Massachusetts H 1210 — Artificial Intelligence Health Communications",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ma-h1479-2025",
+        "name": "Massachusetts H 1479 — Statewide Housing Policy Simulator",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ma-h1593-2025",
+        "name": "Massachusetts H 1593 — Penalty for Child Sexual Abuse Visual Materials",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ma-h1615-2025",
+        "name": "Massachusetts H 1615 — Exploitation of Image and Voice of Individual",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ma-h1931-2025",
+        "name": "Massachusetts H 1931 — Protections Against Child Exploitation",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ma-h2236-2025",
+        "name": "Massachusetts H 2236 — Petition",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ma-h3208-2025",
+        "name": "Massachusetts H 3208 — Sales Tax on Digital Advertising Services",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ma-h495-2025",
+        "name": "Massachusetts H 495 — Emissions from Artificial Intelligence",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ma-h81-2025",
+        "name": "Massachusetts H 81 — Artificial Intelligence Disclosures",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ma-h90-2025",
+        "name": "Massachusetts H 90 — Provenance Regarding Artificial Intelligence",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-ny-a3411-2025",
+        "name": "New York A 3411 — Owner or Operator of a Generative AI System",
+        "from": "proposed",
+        "to": "vetoed"
+      },
+      {
+        "id": "us-ny-s1169-2025",
+        "name": "New York S 1169 — Development and Use of Artificial Intelligence Systems",
+        "from": "in_force",
+        "to": "proposed"
+      },
+      {
+        "id": "us-ny-s934-2025",
+        "name": "New York S 934 — Owner of Generative Artificial Intelligence System",
+        "from": "proposed",
+        "to": "vetoed"
+      },
+      {
+        "id": "us-tn-s1363-2025",
+        "name": "Tennessee S 1363 — Consumer Protection",
+        "from": "in_force",
+        "to": "failed"
+      },
+      {
+        "id": "us-wa-h1833-2025",
+        "name": "Washington H 1833 — Artificial Intelligence Grant Program",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-wa-s5105-2025",
+        "name": "Washington S 5105 — Offenses Involving Fabricated Depictions of Minors",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-wa-s5395-2025",
+        "name": "Washington S 5395 — Prior Authorization Determination Process",
+        "from": "enacted_not_yet_effective",
+        "to": "in_force"
+      },
+      {
+        "id": "us-wa-s5469-2025",
+        "name": "Washington S 5469 — Rental Housing Market",
+        "from": "proposed",
+        "to": "failed"
+      },
+      {
+        "id": "us-wa-s5637-2025",
+        "name": "Washington S 5637 — Media Literacy and Civic Education",
+        "from": "proposed",
+        "to": "failed"
+      }
+    ],
+    "stage_updates": 0,
+    "enforcement_added": 0,
+    "rules_added": 0,
+    "total_instruments": 2440,
+    "note": "Merged 105 duplicate records stored under both -2025 and -2026 IDs (same bill, 2025-2026 biennium) into the -2025 ID; corrected statuses checked against official legislature pages or LegiScan. Mississippi SB 2437 (2025) and SB 2437 (2026) kept as separate bills."
+  },
+  {
+    "date": "2026-11-25",
+    "trigger": "manual",
     "added": [
       {
         "id": "it-it-dlgs160-2026",
@@ -24,7 +198,7 @@
         "to": "enacted_not_yet_effective"
       },
       {
-        "id": "us-ca-a1159-2026",
+        "id": "us-ca-a1159-2025",
         "name": "California AB 1159 — Student Personal Information (HESIPA)",
         "from": "in_force",
         "to": "enacted_not_yet_effective"
@@ -355,12 +529,6 @@
         "to": "in_force"
       },
       {
-        "id": "us-de-h233-2026",
-        "name": "Delaware H 233 — Large Energy Use Facilities",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
         "id": "us-de-h233-2025",
         "name": "Delaware H 233 — Large Energy Use Facilities",
         "from": "proposed",
@@ -541,7 +709,7 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2026",
+        "id": "us-ca-a1159-2025",
         "name": "California A 1159 — Student Personal Information",
         "from": "proposed",
         "to": "in_force"
@@ -661,12 +829,6 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2025",
-        "name": "California A 1159 — Student Personal Information",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
         "id": "us-ca-a1331-2025",
         "name": "California A 1331 — Workplace Surveillance",
         "from": "proposed",
@@ -675,12 +837,6 @@
       {
         "id": "us-ca-a1405-2025",
         "name": "California A 1405 — Artificial Intelligence: Auditors: Enrollment",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
-        "id": "us-de-h233-2026",
-        "name": "Delaware H 233 — Large Energy Use Facilities",
         "from": "proposed",
         "to": "in_force"
       },
@@ -719,12 +875,6 @@
         "name": "MAS AI Risk Management Guidelines",
         "from": "proposed",
         "to": "enacted_not_yet_effective"
-      },
-      {
-        "id": "eu-eu-omnibus-ai-2026",
-        "name": "Digital Omnibus on AI",
-        "from": "enacted_not_yet_effective",
-        "to": "in_force"
       }
     ],
     "stage_updates": 8,
@@ -846,7 +996,7 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2026",
+        "id": "us-ca-a1159-2025",
         "name": "California A 1159 — Student Personal Information",
         "from": "proposed",
         "to": "in_force"
@@ -966,12 +1116,6 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2025",
-        "name": "California A 1159 — Student Personal Information",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
         "id": "us-ca-a1331-2025",
         "name": "California A 1331 — Workplace Surveillance",
         "from": "proposed",
@@ -980,12 +1124,6 @@
       {
         "id": "us-ca-a1405-2025",
         "name": "California A 1405 — Artificial Intelligence: Auditors: Enrollment",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
-        "id": "us-de-h233-2026",
-        "name": "Delaware H 233 — Large Energy Use Facilities",
         "from": "proposed",
         "to": "in_force"
       },
@@ -1176,7 +1314,7 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2026",
+        "id": "us-ca-a1159-2025",
         "name": "California A 1159 — Student Personal Information",
         "from": "proposed",
         "to": "in_force"
@@ -1296,12 +1434,6 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2025",
-        "name": "California A 1159 — Student Personal Information",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
         "id": "us-ca-a1331-2025",
         "name": "California A 1331 — Workplace Surveillance",
         "from": "proposed",
@@ -1310,12 +1442,6 @@
       {
         "id": "us-ca-a1405-2025",
         "name": "California A 1405 — Artificial Intelligence: Auditors: Enrollment",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
-        "id": "us-de-h233-2026",
-        "name": "Delaware H 233 — Large Energy Use Facilities",
         "from": "proposed",
         "to": "in_force"
       },
@@ -1500,7 +1626,7 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2026",
+        "id": "us-ca-a1159-2025",
         "name": "California A 1159 — Student Personal Information",
         "from": "proposed",
         "to": "in_force"
@@ -1620,12 +1746,6 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2025",
-        "name": "California A 1159 — Student Personal Information",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
         "id": "us-ca-a1331-2025",
         "name": "California A 1331 — Workplace Surveillance",
         "from": "proposed",
@@ -1634,12 +1754,6 @@
       {
         "id": "us-ca-a1405-2025",
         "name": "California A 1405 — Artificial Intelligence: Auditors: Enrollment",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
-        "id": "us-de-h233-2026",
-        "name": "Delaware H 233 — Large Energy Use Facilities",
         "from": "proposed",
         "to": "in_force"
       },
@@ -1800,7 +1914,7 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2026",
+        "id": "us-ca-a1159-2025",
         "name": "California A 1159 — Student Personal Information",
         "from": "proposed",
         "to": "in_force"
@@ -1920,12 +2034,6 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2025",
-        "name": "California A 1159 — Student Personal Information",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
         "id": "us-ca-a1331-2025",
         "name": "California A 1331 — Workplace Surveillance",
         "from": "proposed",
@@ -1934,12 +2042,6 @@
       {
         "id": "us-ca-a1405-2025",
         "name": "California A 1405 — Artificial Intelligence: Auditors: Enrollment",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
-        "id": "us-de-h233-2026",
-        "name": "Delaware H 233 — Large Energy Use Facilities",
         "from": "proposed",
         "to": "in_force"
       },
@@ -2093,7 +2195,7 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2026",
+        "id": "us-ca-a1159-2025",
         "name": "California A 1159 — Student Personal Information",
         "from": "proposed",
         "to": "in_force"
@@ -2213,12 +2315,6 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2025",
-        "name": "California A 1159 — Student Personal Information",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
         "id": "us-ca-a1331-2025",
         "name": "California A 1331 — Workplace Surveillance",
         "from": "proposed",
@@ -2227,12 +2323,6 @@
       {
         "id": "us-ca-a1405-2025",
         "name": "California A 1405 — Artificial Intelligence: Auditors: Enrollment",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
-        "id": "us-de-h233-2026",
-        "name": "Delaware H 233 — Large Energy Use Facilities",
         "from": "proposed",
         "to": "in_force"
       },
@@ -2411,7 +2501,7 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2026",
+        "id": "us-ca-a1159-2025",
         "name": "California A 1159 — Student Personal Information",
         "from": "proposed",
         "to": "in_force"
@@ -2531,12 +2621,6 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2025",
-        "name": "California A 1159 — Student Personal Information",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
         "id": "us-ca-a1331-2025",
         "name": "California A 1331 — Workplace Surveillance",
         "from": "proposed",
@@ -2545,12 +2629,6 @@
       {
         "id": "us-ca-a1405-2025",
         "name": "California A 1405 — Artificial Intelligence: Auditors: Enrollment",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
-        "id": "us-de-h233-2026",
-        "name": "Delaware H 233 — Large Energy Use Facilities",
         "from": "proposed",
         "to": "in_force"
       },
@@ -2663,7 +2741,7 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2026",
+        "id": "us-ca-a1159-2025",
         "name": "California A 1159 — Student Personal Information",
         "from": "proposed",
         "to": "in_force"
@@ -2723,20 +2801,8 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2025",
-        "name": "California A 1159 — Student Personal Information",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
         "id": "us-ca-a1405-2025",
         "name": "California A 1405 — Artificial Intelligence: Auditors: Enrollment",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
-        "id": "us-de-h233-2026",
-        "name": "Delaware H 233 — Large Energy Use Facilities",
         "from": "proposed",
         "to": "in_force"
       },
@@ -2770,14 +2836,8 @@
     "added": [],
     "promoted": [
       {
-        "id": "eu-eu-omnibus-ai-2026",
-        "name": "Digital Omnibus on AI — Regulation (EU) 2026/1744",
-        "from": "enacted_not_yet_effective",
-        "to": "in_force"
-      },
-      {
         "id": "eu-eu-omnibus-ai-2025",
-        "name": "EU Digital Omnibus — AI Act Amendments (Regulation (EU) 2026/1744)",
+        "name": "Digital Omnibus on AI — Regulation (EU) 2026/1744",
         "from": "enacted_not_yet_effective",
         "to": "in_force"
       }
@@ -2879,7 +2939,7 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2026",
+        "id": "us-ca-a1159-2025",
         "name": "California A 1159 — Student Personal Information",
         "from": "proposed",
         "to": "in_force"
@@ -2939,20 +2999,8 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2025",
-        "name": "California A 1159 — Student Personal Information",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
         "id": "us-ca-a1405-2025",
         "name": "California A 1405 — Artificial Intelligence: Auditors: Enrollment",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
-        "id": "us-de-h233-2026",
-        "name": "Delaware H 233 — Large Energy Use Facilities",
         "from": "proposed",
         "to": "in_force"
       },
@@ -2972,12 +3020,6 @@
         "id": "us-il-h5284-2026",
         "name": "Illinois H 5284 — Menopause Equity and Care Act",
         "from": "proposed",
-        "to": "in_force"
-      },
-      {
-        "id": "eu-eu-omnibus-ai-2026",
-        "name": "Digital Omnibus on AI",
-        "from": "enacted_not_yet_effective",
         "to": "in_force"
       }
     ],
@@ -3059,7 +3101,7 @@
         "to": "in_force"
       },
       {
-        "id": "us-ca-a1159-2026",
+        "id": "us-ca-a1159-2025",
         "name": "California AB 1159 — Student Personal Information (HESIPA)",
         "from": "proposed",
         "to": "enacted_not_yet_effective"
@@ -3099,12 +3141,6 @@
         "name": "California AB 1405 — AI Auditor Registry",
         "from": "proposed",
         "to": "enacted_not_yet_effective"
-      },
-      {
-        "id": "us-de-h233-2026",
-        "name": "Delaware H 233 — Large Energy Use Facilities",
-        "from": "proposed",
-        "to": "in_force"
       },
       {
         "id": "us-de-h233-2025",
@@ -3245,12 +3281,6 @@
         "to": "in_force"
       },
       {
-        "id": "us-de-h233-2026",
-        "name": "Delaware H 233 — Large Energy Use Facilities",
-        "from": "proposed",
-        "to": "in_force"
-      },
-      {
         "id": "us-de-h233-2025",
         "name": "Delaware H 233 — Large Energy Use Facilities",
         "from": "proposed",
@@ -3266,12 +3296,6 @@
         "id": "us-il-h5284-2026",
         "name": "Illinois H 5284 — Menopause Equity and Care Act",
         "from": "proposed",
-        "to": "in_force"
-      },
-      {
-        "id": "eu-eu-omnibus-ai-2026",
-        "name": "Digital Omnibus on AI",
-        "from": "enacted_not_yet_effective",
         "to": "in_force"
       }
     ],
@@ -3578,12 +3602,6 @@
         "name": "Illinois H 5284 — Menopause Equity and Care Act",
         "from": "proposed",
         "to": "in_force"
-      },
-      {
-        "id": "eu-eu-omnibus-ai-2026",
-        "name": "Digital Omnibus on AI",
-        "from": "enacted_not_yet_effective",
-        "to": "in_force"
       }
     ],
     "stage_updates": 14,
@@ -3630,12 +3648,6 @@
         "id": "us-il-h5284-2026",
         "name": "Illinois H 5284 — Menopause Equity and Care Act",
         "from": "proposed",
-        "to": "in_force"
-      },
-      {
-        "id": "eu-eu-omnibus-ai-2026",
-        "name": "Digital Omnibus on AI",
-        "from": "enacted_not_yet_effective",
         "to": "in_force"
       }
     ],
@@ -3733,12 +3745,6 @@
         "name": "Germany KI-MIG",
         "from": "enacted_not_yet_effective",
         "to": "in_force"
-      },
-      {
-        "id": "eu-eu-omnibus-ai-2026",
-        "name": "Digital Omnibus on AI",
-        "from": "enacted_not_yet_effective",
-        "to": "in_force"
       }
     ],
     "stage_updates": 3,
@@ -3779,12 +3785,6 @@
       {
         "id": "eu-eu-omnibus-ai-2025",
         "name": "EU AI Omnibus (Reg. 2026/1744)",
-        "from": "enacted_not_yet_effective",
-        "to": "in_force"
-      },
-      {
-        "id": "eu-eu-omnibus-ai-2026",
-        "name": "Digital Omnibus on AI",
         "from": "enacted_not_yet_effective",
         "to": "in_force"
       }
@@ -4253,7 +4253,7 @@
         "to": "in_force"
       },
       {
-        "id": "us-il-s1996-2026",
+        "id": "us-il-s1996-2025",
         "name": "Illinois S 1996 — Algorithmic Rent Fixing Prevention",
         "from": "proposed",
         "to": "in_force"
