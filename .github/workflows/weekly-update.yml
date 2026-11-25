@@ -6,6 +6,12 @@ on:
   workflow_dispatch:        # Also runnable manually from the Actions tab
 
 
+# One data-update workflow at a time. A queued run starts after the current one
+# finishes, sees its PR in the check below, and stops.
+concurrency:
+  group: gaia-data-update
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -14,6 +20,33 @@ jobs:
       pull-requests: write
 
     steps:
+      # Stop before doing any work if an earlier automated data-update PR is
+      # still open. Every run starts from main, so running again before that PR
+      # is merged makes the agents re-add what the earlier run already found and
+      # creates duplicates. A failed scheduled run triggers GitHub's failure email.
+      - name: Stop if an earlier data-update PR is still open
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --label data-update \
+            --json number,title,url --jq '.[] | "#\(.number) \(.title) — \(.url)"')
+          if [ -n "$open" ]; then
+            while IFS= read -r pr; do
+              echo "::error title=Unmerged data-update PR::$pr is still open. Merge or close it, then re-run this workflow."
+            done <<< "$open"
+            {
+              echo "## Run stopped: an earlier data-update PR is still open"
+              echo
+              echo "Each run starts from main, so running again before this PR is merged would re-add the same records and create duplicates."
+              echo
+              echo "$open" | sed 's/^/- /'
+              echo
+              echo "Merge or close it, then re-run this workflow from the Actions tab."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          echo "No open data-update PRs. Continuing."
+
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
