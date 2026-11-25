@@ -196584,7 +196584,7 @@
       "Ministero dell'Interno",
       "courts"
     ],
-    "max_penalty": "Imprisonment of 1 to 5 years for failing to adopt or altering safety and human-oversight measures in high-risk AI systems (new art. 437-bis c.p.), up to 10 years where state security is endangered; corporate liability under D.Lgs. 231/2001.",
+    "max_penalty": "Up to 10 years' imprisonment under new art. 437-bis c.p.: 1–5 years for omitting required safety or human-oversight measures on high-risk AI systems (2–8 years where state security is endangered); 2–6 years for altering a high-risk AI system (3–10 years where state security is endangered). Entities face 600–1,000 quotas under art. 25-vicies D.Lgs. 231/2001 plus interdictive sanctions.",
     "max_penalty_usd_approx": null,
     "preemption_status": null,
     "preemption_notes": null,
@@ -196597,7 +196597,7 @@
     "official_text_url": "https://www.normattiva.it/eli/id/2026/09/15/26G00179",
     "summary_url": null,
     "last_verified": "2026-11-25",
-    "summary": "Italy's first implementing decree under the delegation in AI Law 132/2025 (art. 24) adapts national law to the EU AI Act for police use of AI and for civil and criminal liability. It sets rules for police AI systems, with the Ministry of the Interior as data controller: retrospective facial recognition aimed at a specific suspect needs a preliminary-investigations judge's authorisation within 48 hours, data is kept for 7 days, and mass scraping into biometric databases is banned. A new criminal code article 437-bis punishes failing to adopt, or altering, safety and human-oversight measures in high-risk AI systems, and real-time remote biometric identification requires judicial authorisation in 15-day periods (new art. 359-ter c.p.p.). Companies become liable for these offences under D.Lgs. 231/2001, and people harmed by AI gain court-ordered disclosure of logs and technical documentation, a rebuttable presumption of causation where AI Act duties were breached, and a home-court forum for consumers.",
+    "summary": "Italy's first implementing decree under the delegation in AI Law 132/2025 (art. 24) adapts national law to the EU AI Act for police use of AI and for civil and criminal liability. Police must have qualified staff review AI outputs before using them in acts that affect a person, may run facial recognition on CCTV footage only after capture (with the Ministry of the Interior as controller and data kept for 7 days), and must obtain a preliminary-investigations judge's authorisation to target a specific suspect. Untargeted facial recognition and biometric databases fed by untargeted scraping are banned, and real-time remote biometric identification needs judicial authorisation for periods of up to 15 days (new art. 359-ter c.p.p.). A new criminal offence (art. 437-bis c.p.) punishes failing to adopt safety or human-oversight measures for high-risk AI systems, or altering such systems, and companies become liable under D.Lgs. 231/2001. People harmed by AI gain court-ordered access to evidence, a rebuttable presumption of causation where AI Act duties were breached, a direct action against the defendant's liability insurer, and a home-court forum for consumers.",
     "notable": "Adopted by the Council of Ministers on 4 August 2026 together with D.Lgs. 179/2026, which covers authority powers, sanctions, the regulatory sandbox and AI training. It confirms AgID and ACN as national AI authorities by reference to art. 20 of Law 132/2025 rather than creating new bodies.",
     "legal_citation": "D.Lgs. 9 settembre 2026, n. 160 (GU Serie Generale n. 214 del 15-09-2026)",
     "topics": [
@@ -196617,12 +196617,14 @@
       "high_risk_ai_systems"
     ],
     "key_obligations": [
-      "Retrospective facial recognition targeting a specific suspect requires judicial (GIP) authorisation within 48 hours; data kept 7 days (art. 10)",
-      "Mass scraping of images into police biometric databases is prohibited (art. 10)",
-      "New offence of failing to adopt, or altering, safety and human-oversight measures in high-risk AI systems: 1–5 years, up to 10 where state security is endangered (art. 12, art. 437-bis c.p.)",
-      "Real-time remote biometric identification requires GIP authorisation, granted in 15-day periods (art. 13, art. 359-ter c.p.p.)",
-      "Corporate liability for AI offences under new art. 25-vicies of D.Lgs. 231/2001 (art. 15)",
-      "Courts may order disclosure of logs and technical documentation; rebuttable presumption of causation where AI Act obligations were breached; consumer home-court forum (arts. 16–18)"
+      "Qualified, documented human review of AI outputs before police use them in acts affecting a person's legal position (art. 3(4))",
+      "Retrospective facial recognition only after capture; targeting a specific suspect needs the prosecutor to seek judicial (GIP) authorisation within 48 hours of starting, with a ruling within the next 48; CCTV data kept 7 days (art. 10(1)-(2), (7))",
+      "Untargeted or generalised facial recognition is prohibited (art. 10(11)), as is using biometric databases fed by untargeted scraping (art. 8(3); art. 359-ter(3) c.p.p.)",
+      "Real-time remote biometric identification requires GIP authorisation for up to 15 days at a time, renewable (art. 13, new art. 359-ter(6) c.p.p.)",
+      "New offence (art. 437-bis c.p.): 1–5 years for omitting safety or human-oversight measures on high-risk AI (2–8 where state security is endangered); 2–6 years for altering a high-risk system (3–10) (art. 12)",
+      "Corporate liability for AI offences under new art. 25-vicies of D.Lgs. 231/2001: 600–1,000 quotas plus interdictive sanctions (art. 15)",
+      "Civil claims: access to evidence (art. 17), rebuttable presumption of causation where AI Act obligations were breached (art. 18), no safe harbour from AI Act conformity (art. 19), direct action against liability insurers (art. 20), consumer home forum (art. 16(4))",
+      "Police AI systems already in use or under contract must comply within one year, by 30 September 2027 (art. 21)"
     ],
     "issue_positions": {},
     "text_path": "data/texts/it-it-dlgs160-2026.md",
