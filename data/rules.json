@@ -5787,12 +5787,12 @@
         "instrument_type": "voluntary_framework"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.4(a)(10)-(12)",
         "notes": "Both address reporting societal risks and communicating with government bodies about AI, but this rule is a voluntary IVO plan recommendation covering societal risk/benefit reporting and federal/state coordination, whereas the Canadian directive is a binding requirement to publish fairness and transparency information on an open portal.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "cl-cl-airegbill-2024",
@@ -11153,8 +11153,8 @@
         "relationship": "similar",
         "citation": "§ 8898.4(a)(2)",
         "notes": "Both recommend that organizations address and mitigate AI-specific risks, but this rule is narrower and procedural—focused on IVO applicants specifying risk mitigation approaches within a multistakeholder verification context—while the Singapore framework speaks broadly to weighing commercial objectives against AI risks.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-pr-s68-2025",
@@ -22725,12 +22725,12 @@
         "instrument_type": "statute"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.3(d)",
         "notes": "Both rules allow a supervisory body to revoke or withdraw approval/designation when an approved entity systematically fails to adhere to its plan or engages in misleading conduct, but the California rule is a voluntary soft-law recommendation for an IVO designation scheme rather than a binding ethics committee mandate.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -22937,12 +22937,12 @@
         "instrument_type": "regulation"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.5(b)-(c)",
         "notes": "Both rules require designated/approved entities to adhere to their approved plans and provide for decertification or suspension of approval when requirements are not met, but the California rule is a voluntary soft-law recommendation for IVOs rather than a binding mandate with formal sanctions.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -28699,12 +28699,12 @@
         "instrument_type": "statute"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.2(c)",
         "notes": "Both call for a body to maintain liaison with government entities deploying AI and provide technical expertise, but S813 establishes a formal Commission with this as a defined function while the Israel rule is a recommendation to regulators to map AI use.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -34706,12 +34706,12 @@
         "instrument_type": "bill"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.4(a)(2)",
         "notes": "Both rules address risk mitigation planning, but this California voluntary rule is narrower in scope (specific to IVO applicants and their domain expertise) and is a recommendation rather than a binding protocol requirement.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-il-h3720-2025",
@@ -40144,12 +40144,12 @@
         "instrument_type": "bill"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.4(a)(3)",
         "notes": "Both require disclosure of risks and material changes by developers/deployers, but this California S 813 rule is a voluntary IVO applicant plan recommendation targeting an oversight body rather than a binding developer-to-deployer disclosure requirement.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ca-a1898-2026",
@@ -40164,14 +40164,6 @@
         "relationship": "similar",
         "citation": "§ 22756.1(c)",
         "notes": "Both require developers to make impact assessment statements available to deployers, but California S 420 is a voluntary recommendation for high-risk automated decision systems while Colorado SB205 is a binding disclosure mandate for high-risk AI systems.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ca-s813-2025",
-        "relationship": "similar",
-        "citation": "§ 8898.4(a)(3)",
-        "notes": "Both address disclosure of detected risks and material changes by developers/deployers, but this rule is a voluntary recommendation for IVO applicants to establish an approach for such disclosures including post-deployment changes, whereas Colorado SB205 is a binding mandate on developers to provide deployers with risk statements.",
         "instrument_binding": false,
         "instrument_type": "bill"
       },
@@ -40728,12 +40720,12 @@
         "instrument_type": "bill"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.4(a)(6)",
         "notes": "Both address public reporting on AI systems and risk management, but this rule is a voluntary IVO plan recommendation focused on data collection for public reporting from audited parties, whereas the Colorado rule is a binding deployer obligation to publish a public statement.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ca-s420-2025",
@@ -45508,12 +45500,12 @@
         "variant_of": "us-de-hb333-2024"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.1(f)",
         "notes": "Both rules set member term lengths and removal conditions for AI commission members, but S813 specifies four-year terms and explicit removal grounds while the Delaware rule allows terms up to three years without specifying removal grounds.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ga-s455-2026",
@@ -49604,12 +49596,12 @@
         "instrument_type": "regulation"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.2(e)-(f)",
         "notes": "Both rules require public or supervisory access to a registry/register of AI-related information and publication of findings, but the California bill is a voluntary/soft-law recommendation for a publicly accessible registry of IVO organizations and standards, whereas the Qatar rule mandates annual disclosure of a full AI systems Register to the QCB regulator.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -78644,8 +78636,8 @@
         "relationship": "similar",
         "citation": "§ 8898.5(d)",
         "notes": "Both require annual legislative reports covering activities and findings, but this rule requires a designated IVO to report to both the Legislature and a Commission on AI capabilities, societal risks/benefits, and adequacy of existing standards, whereas the North Dakota rule requires a research technology park to report research activities and accomplishments to an industrial commission.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-hi-s2585-2026",
@@ -98907,20 +98899,12 @@
         "instrument_type": "standard"
       },
       {
-        "law_id": "us-ca-s813-2026",
-        "relationship": "similar",
-        "citation": "§ 8898.4(a)(4)",
-        "notes": "Both rules require defining acceptable risk levels with measurable criteria, but this California voluntary rule is specific to IVO applicants and includes measurable metrics, target levels, and data sources as components of a verification plan, whereas the Canadian rule applies to financial institutions' model risk rating.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
         "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.4(a)(4)",
-        "notes": "Both require defining acceptable risk levels with measurable, quantitative criteria, but this rule applies in a voluntary IVO verification planning context rather than a binding institutional model risk rating framework.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "notes": "Both rules require defining acceptable risk levels with measurable criteria, but this California voluntary rule is specific to IVO applicants and includes measurable metrics, target levels, and data sources as components of a verification plan, whereas the Canadian rule applies to financial institutions' model risk rating.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ky-h672-2025",
@@ -106968,12 +106952,12 @@
         "instrument_type": "regulation"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.3(c)",
         "notes": "Both establish time-limited designations or exemptions for conformity/verification bodies (3-year IVO designation vs. 12-month sandbox exemption), but the contexts and mechanisms differ significantly.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ca-s1011-2026",
@@ -112389,12 +112373,12 @@
         "instrument_type": "bill"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.5(a)",
         "notes": "Both require verification/audit bodies to follow rigorous practices ensuring comprehensive and thorough assessments, but SB 813 focuses on IVOs ensuring developers and deployers comply with best practices for harm prevention, while SC H3431 focuses on independent auditor inspection practices.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ca-s1119-2026",
@@ -125901,26 +125885,18 @@
         "instrument_type": "bill"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.5(f)",
         "notes": "Both rules require retention of AI-related documents, but this rule sets a 10-year retention period as a voluntary recommendation for an IVO, while the existing SB 1047 rules impose binding retention obligations of varying durations on covered model developers and computing cluster operators.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ca-a412-2025",
         "relationship": "similar",
         "citation": "§ 3116(e)",
         "notes": "Both California rules require retaining documentation for as long as the model is commercially available, but CA A 412 applies to GenAI training data documentation while SB 1047 targets safety and security protocols for covered models; this is a voluntary/bill instrument covering a different document type.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ca-s813-2025",
-        "relationship": "similar",
-        "citation": "§ 8898.5(f)",
-        "notes": "Both rules require retention of documents related to AI oversight activities, but this voluntary rule specifies a 10-year retention period for IVO activity records, whereas the existing binding rule concerns retention of safety/security protocols for a different covered entity type and duration.",
         "instrument_binding": false,
         "instrument_type": "bill"
       },
@@ -127508,20 +127484,12 @@
         "instrument_type": "statute"
       },
       {
-        "law_id": "us-ca-s813-2026",
-        "relationship": "similar",
-        "citation": "§ 8898.4(a)(8)",
-        "notes": "Both rules address whistleblower protections in AI governance contexts, but this rule applies to IVO applicants and certified developers/deployers under a voluntary standards body framework, whereas SB1047's rule mandates anonymous internal disclosure processes for employees of covered model developers under binding California law.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
         "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.4(a)(8)",
-        "notes": "Both concern whistleblower protections in AI governance contexts, but the existing rule requires developers to provide an internal anonymous disclosure process as a binding mandate, whereas this voluntary rule recommends that IVO applicants describe how they will implement whistleblower protections among certified developers and deployers.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "notes": "Both rules address whistleblower protections in AI governance contexts, but this rule applies to IVO applicants and certified developers/deployers under a voluntary standards body framework, whereas SB1047's rule mandates anonymous internal disclosure processes for employees of covered model developers under binding California law.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ca-a1137-2025",
@@ -127760,12 +127728,12 @@
         "instrument_type": "bill"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.3(a)-(b)",
         "notes": "Both involve a California government body designating or establishing third-party auditing/verification organizations for AI, but SB 813 creates a Commission-designated IVO system with specific applicant criteria, while SB 1047 mandates the Government Operations Agency to issue binding auditing regulations by 2027.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ca-s503-2025",
@@ -127835,26 +127803,18 @@
         "instrument_type": "bill"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.2(a)",
         "notes": "Both involve a California state body reviewing AI standards and issuing guidance, but S813's Commission focuses on analyzing IVO frameworks and best practices while SB1047's mandate centers on preventing risks from covered frontier models.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ca-s1248-2026",
         "relationship": "similar",
         "citation": "§ 12898.2",
         "notes": "Both assign the Government Operations Agency a guidance-issuing role for state AI use, but SB1047 mandates annual guidance specifically targeting frontier model risks with a firm deadline, while S1248 makes guidance permissive ('may develop') and broader in scope covering automated decision systems generally.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ca-s813-2025",
-        "relationship": "similar",
-        "citation": "§ 8898.2(a)",
-        "notes": "Both require a California AI body to analyze and compare AI standards and frameworks, but S813 focuses on IVO-developed standards and certification frameworks as a recommendatory function, while SB1047 mandated binding guidance on preventing unreasonable risks.",
         "instrument_binding": false,
         "instrument_type": "bill"
       },
@@ -127903,26 +127863,18 @@
         "instrument_type": "statute"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.1(a)",
         "notes": "Both establish a state-level AI body within the Government Operations Agency in California, but SB1047 created a Board of Frontier Models while S813 proposes a broader AI Standards and Safety Commission with different scope and mandate.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ca-s69-2025",
         "relationship": "similar",
         "citation": "Gov. Code § 12525.6(a)",
         "notes": "Both establish California-level institutional AI expertise/capacity within state government, but this rule focuses on the AG's office building internal AI expertise broadly, while the matched rule creates a specific Board of Frontier Models within the Government Operations Agency.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ca-s813-2025",
-        "relationship": "similar",
-        "citation": "§ 8898.1(a)",
-        "notes": "Both establish a California AI oversight body within the Government Operations Agency, but SB1047 created a Board of Frontier Models while S813 proposes a broader AI Standards and Safety Commission; S813 is voluntary/recommendatory whereas SB1047 was binding.",
         "instrument_binding": false,
         "instrument_type": "bill"
       },
@@ -127978,12 +127930,12 @@
         "instrument_type": "statute"
       },
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "similar",
         "citation": "§ 8898.6",
         "notes": "Both authorize a California AI body to adopt regulations, but S813's Commission rulemaking covers IVO minimum requirements and conflict-of-interest rules, while SB1047's Board approval power covers regulations and guidance issued under that section.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -144568,122 +144520,6 @@
     ]
   },
   {
-    "rule_id": "us-ca-s813-2026-8898-1-c-2-4",
-    "rule_text": "Commission members should remain free from undue AI industry influence, refrain from incompatible occupations such as employment by AI developers/deployers during their term, and not own equity (except via mutual or exchange-traded funds) in companies whose business significantly involves developing AI models or applications (recommendation).",
-    "rule_text_technical": "The bill requires that a commission member shall remain free from undue influence from the AI industry, refrain from any action incompatible with the member's duties or from engaging in any incompatible occupation during the member's term (including employment by a developer or deployer of an AI model or application), and shall not own or acquire equity, directly or indirectly except through a mutual fund or exchange-traded fund, in any company whose business consists in significant part of developing AI models or applications.",
-    "category": "institutional_framework",
-    "tags": [
-      "conflict_of_interest",
-      "independence",
-      "commission_members",
-      "ethics"
-    ],
-    "first_instance": {
-      "law_id": "us-ca-s813-2026",
-      "law_name": "California S 813 — California AI Standards and Safety Commission",
-      "citation": "§ 8898.1(c)(2)-(4)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ca-s813-2026",
-        "relationship": "origin",
-        "citation": "§ 8898.1(c)(2)-(4)",
-        "notes": "Rule introduced in California S 813 — California AI Standards and Safety Commission (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ca-s813-2025",
-        "relationship": "similar",
-        "citation": "§ 8898.6",
-        "notes": "Both are from the same S813 bill and concern Commission governance rules including conflict of interest and regulatory authority; rule [7] covers the Commission's rulemaking power for minimum IVO plan requirements and conflict-of-interest disclosure, while the existing rule addresses member independence and incompatible occupation restrictions.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-oh-h628-2026",
-        "relationship": "similar",
-        "citation": "§ 3755.06(A)-(B)",
-        "notes": "Both rules establish an AI advisory/oversight body with independence requirements for members, but Ohio H 628 places the council within the attorney general's office jointly with the auditor of state, while California S 813 establishes a Commission with different structural details.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-ca-s813-2026-8898-1-e",
-    "rule_text": "Commission members should not, for one year after leaving the Commission, accept employment from an entity designated as an IVO or seek voluntary IVO designation (recommendation).",
-    "rule_text_technical": "The bill provides that a member of the commission shall not, for a period of one year after leaving the commission, accept employment from an entity designated as an IVO or seek voluntary IVO designation under this chapter.",
-    "category": "institutional_framework",
-    "tags": [
-      "revolving_door",
-      "post_employment",
-      "conflict_of_interest",
-      "ivo"
-    ],
-    "first_instance": {
-      "law_id": "us-ca-s813-2026",
-      "law_name": "California S 813 — California AI Standards and Safety Commission",
-      "citation": "§ 8898.1(e)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ca-s813-2026",
-        "relationship": "origin",
-        "citation": "§ 8898.1(e)",
-        "notes": "Rule introduced in California S 813 — California AI Standards and Safety Commission (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
-    "rule_id": "us-ca-s813-2026-8898-2-d",
-    "rule_text": "The Commission should submit a biennial report to the Legislature including summaries and analyses of IVO standards, identified gaps and emerging risks, recommendations for legislation and procurement, and an assessment of the state's AI risk landscape (recommendation).",
-    "rule_text_technical": "The bill provides that the commission shall submit every two years to the Legislature, pursuant to Section 9795, a report that includes summaries of IVOs and their standards, analyses of those standards, identified gaps or emerging risks relevant to public sector decisionmaking, recommendations for legislation, state procurement standards, or regulation, and an assessment of the state's AI risk landscape.",
-    "category": "institutional_framework",
-    "tags": [
-      "biennial_report",
-      "ai_risk_landscape",
-      "legislative_reporting",
-      "transparency"
-    ],
-    "first_instance": {
-      "law_id": "us-ca-s813-2026",
-      "law_name": "California S 813 — California AI Standards and Safety Commission",
-      "citation": "§ 8898.2(d)",
-      "date": null
-    },
-    "instances": [
-      {
-        "law_id": "us-ca-s813-2026",
-        "relationship": "origin",
-        "citation": "§ 8898.2(d)",
-        "notes": "Rule introduced in California S 813 — California AI Standards and Safety Commission (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ca-s813-2025",
-        "relationship": "similar",
-        "citation": "§ 8898.2(b)",
-        "notes": "Both involve the S813 Commission providing reports and recommendations to the Legislature and Governor; rule [3] covers ongoing written recommendations to the Governor, Legislature, and state agencies, while the existing rule covers a biennial report with specific content on IVO standards and gaps.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-oh-h628-2026",
-        "relationship": "similar",
-        "citation": "§ 3755.12(A)-(B)",
-        "notes": "Both rules require the attorney general/Commission to adopt rules addressing IVO conflict-of-interest, funding/board composition reporting, and plan elements, but Ohio H 628 assigns rulemaking to the attorney general while California S 813 requires the Commission to submit a biennial report, reflecting different mechanisms.",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      }
-    ]
-  },
-  {
     "rule_id": "us-ca-s813-2026-8898-4-a-5",
     "rule_text": "An IVO applicant's plan should specify the scope and duration of certification, including technical thresholds for updates that require renewed certification (recommendation).",
     "rule_text_technical": "The bill provides that the IVO applicant's plan shall include an approach to specifying the scope and duration of certification of an AI model or application, including technical thresholds for updates requiring renewed certification.",
@@ -144695,28 +144531,19 @@
       "thresholds"
     ],
     "first_instance": {
-      "law_id": "us-ca-s813-2026",
-      "law_name": "California S 813 — California AI Standards and Safety Commission",
+      "law_id": "us-ca-s813-2025",
+      "law_name": "California SB 813 — AI Independent Verification Organizations",
       "citation": "§ 8898.4(a)(5)",
       "date": null
     },
     "instances": [
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "origin",
         "citation": "§ 8898.4(a)(5)",
         "notes": "Rule introduced in California S 813 — California AI Standards and Safety Commission (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ca-s813-2025",
-        "relationship": "identical",
-        "citation": "§ 8898.4(a)(5)",
-        "notes": "This rule is substantively identical to the existing rule us-ca-s813-2026-8898-4-a-5, which covers the same requirement for IVO applicants to specify certification scope, duration, and technical thresholds for updates requiring renewed certification.",
-        "instrument_binding": false,
-        "instrument_type": "bill",
-        "variant_of": "us-ca-s813-2026"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-mn-s4636-2026",
@@ -144740,28 +144567,19 @@
       "evaluation"
     ],
     "first_instance": {
-      "law_id": "us-ca-s813-2026",
-      "law_name": "California S 813 — California AI Standards and Safety Commission",
+      "law_id": "us-ca-s813-2025",
+      "law_name": "California SB 813 — AI Independent Verification Organizations",
       "citation": "§ 8898.4(a)(7)",
       "date": null
     },
     "instances": [
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "origin",
         "citation": "§ 8898.4(a)(7)",
         "notes": "Rule introduced in California S 813 — California AI Standards and Safety Commission (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ca-s813-2025",
-        "relationship": "identical",
-        "citation": "§ 8898.4(a)(7)",
-        "notes": "This rule is substantively identical to the existing rule us-ca-s813-2026-8898-4-a-7, which covers the same requirement for IVO applicants to describe intended use of security vendors to evaluate AI developers, deployers, models, or applications.",
-        "instrument_binding": false,
-        "instrument_type": "bill",
-        "variant_of": "us-ca-s813-2026"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -144777,28 +144595,19 @@
       "enforcement"
     ],
     "first_instance": {
-      "law_id": "us-ca-s813-2026",
-      "law_name": "California S 813 — California AI Standards and Safety Commission",
+      "law_id": "us-ca-s813-2025",
+      "law_name": "California SB 813 — AI Independent Verification Organizations",
       "citation": "§ 8898.4(a)(9)",
       "date": null
     },
     "instances": [
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "origin",
         "citation": "§ 8898.4(a)(9)",
         "notes": "Rule introduced in California S 813 — California AI Standards and Safety Commission (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ca-s813-2025",
-        "relationship": "identical",
-        "citation": "§ 8898.4(a)(9)",
-        "notes": "The existing rule us-ca-s813-2026-8898-4-a-9 contains near-verbatim the same recommendation that IVO applicants describe their approach to remediation of postcertification noncompliance.",
-        "instrument_binding": false,
-        "instrument_type": "bill",
-        "variant_of": "us-ca-s813-2026"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-oh-h628-2026",
@@ -144822,28 +144631,19 @@
       "ivo_oversight"
     ],
     "first_instance": {
-      "law_id": "us-ca-s813-2026",
-      "law_name": "California S 813 — California AI Standards and Safety Commission",
+      "law_id": "us-ca-s813-2025",
+      "law_name": "California SB 813 — AI Independent Verification Organizations",
       "citation": "§ 8898.5(e)",
       "date": null
     },
     "instances": [
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "origin",
         "citation": "§ 8898.5(e)",
         "notes": "Rule introduced in California S 813 — California AI Standards and Safety Commission (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ca-s813-2025",
-        "relationship": "identical",
-        "citation": "§ 8898.5(e)",
-        "notes": "This rule is functionally identical to the existing rule requiring an IVO to annually audit its board composition, plan implementation resources, funding sources, and civil society representation to ensure independence.",
-        "instrument_binding": false,
-        "instrument_type": "bill",
-        "variant_of": "us-ca-s813-2026"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -144860,19 +144660,19 @@
       "scope"
     ],
     "first_instance": {
-      "law_id": "us-ca-s813-2026",
-      "law_name": "California S 813 — California AI Standards and Safety Commission",
+      "law_id": "us-ca-s813-2025",
+      "law_name": "California SB 813 — AI Independent Verification Organizations",
       "citation": "§ 8898",
       "date": null
     },
     "instances": [
       {
-        "law_id": "us-ca-s813-2026",
+        "law_id": "us-ca-s813-2025",
         "relationship": "origin",
         "citation": "§ 8898",
         "notes": "Rule introduced in California S 813 — California AI Standards and Safety Commission (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ca-s1011-2026",
@@ -144881,15 +144681,6 @@
         "notes": "Both California laws define key AI-related terms including 'AI model' and 'automated decision system,' but California S 1011 is a soft law/voluntary instrument focused on energy/utility infrastructure AI safety with sector-specific definitions, while us-ca-s813-2026 is a binding law with a broader scope of AI application definitions.",
         "instrument_binding": false,
         "instrument_type": "bill"
-      },
-      {
-        "law_id": "us-ca-s813-2025",
-        "relationship": "identical",
-        "citation": "§ 8898",
-        "notes": "The new rule's text defining key terms ('AI application,' 'AI model,' 'deployer,' 'developer,' 'IVO,' 'security vendor') from § 8898 matches the existing rule us-ca-s813-2026-8898 which covers the same definitions from the same section of the same law.",
-        "instrument_binding": false,
-        "instrument_type": "bill",
-        "variant_of": "us-ca-s813-2026"
       }
     ]
   },
@@ -160547,7 +160338,9 @@
       "conflict_of_interest",
       "independence",
       "commission",
-      "equity_restrictions"
+      "equity_restrictions",
+      "commission_members",
+      "ethics"
     ],
     "first_instance": {
       "law_id": "us-ca-s813-2025",
@@ -160561,8 +160354,8 @@
         "relationship": "origin",
         "citation": "§ 8898.1(c)(2)-(4)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-mn-h4544-2026",
@@ -160579,6 +160372,14 @@
         "notes": "Both rules prohibit council/commission members from undue industry influence and incompatible occupations including employment by AI developers/deployers, but the Minnesota rule applies to an AI Verification Organization council while the California rule applies to an IVO Commission, and the instruments differ (Minnesota is a bill/voluntary; California is also a proposed bill).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-oh-h628-2026",
+        "relationship": "similar",
+        "citation": "§ 3755.06(A)-(B)",
+        "notes": "Both rules establish an AI advisory/oversight body with independence requirements for members, but Ohio H 628 places the council within the attorney general's office jointly with the auditor of state, while California S 813 establishes a Commission with different structural details.",
+        "instrument_binding": false,
+        "instrument_type": "bill"
       }
     ]
   },
@@ -160591,7 +160392,8 @@
       "revolving_door",
       "cooling_off",
       "conflict_of_interest",
-      "ivo"
+      "ivo",
+      "post_employment"
     ],
     "first_instance": {
       "law_id": "us-ca-s813-2025",
@@ -160605,8 +160407,8 @@
         "relationship": "origin",
         "citation": "§ 8898.1(e)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -160633,8 +160435,8 @@
         "relationship": "origin",
         "citation": "§ 8898.2(c)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -160647,7 +160449,8 @@
       "biennial_report",
       "legislative_reporting",
       "risk_landscape",
-      "transparency"
+      "transparency",
+      "ai_risk_landscape"
     ],
     "first_instance": {
       "law_id": "us-ca-s813-2025",
@@ -160661,8 +160464,8 @@
         "relationship": "origin",
         "citation": "§ 8898.2(d)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-mn-s4636-2026",
@@ -160705,8 +160508,8 @@
         "relationship": "origin",
         "citation": "§ 8898.2(e)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-mn-s4636-2026",
@@ -160749,8 +160552,8 @@
         "relationship": "origin",
         "citation": "§ 8898.3(a)-(b)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-ma-h2236-2025",
@@ -160809,8 +160612,8 @@
         "relationship": "origin",
         "citation": "§ 8898.3(b)(2)(C)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-mn-h4544-2026",
@@ -160852,8 +160655,8 @@
         "relationship": "origin",
         "citation": "§ 8898.3(c)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-nj-a5822-2025",
@@ -160888,8 +160691,8 @@
         "relationship": "origin",
         "citation": "§ 8898.3(d)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-mn-h4544-2026",
@@ -160940,8 +160743,8 @@
         "relationship": "origin",
         "citation": "§ 8898.4(a)(1)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-il-h4705-2026",
@@ -160992,8 +160795,8 @@
         "relationship": "origin",
         "citation": "§ 8898.4(a)(6)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-oh-h628-2026",
@@ -161027,8 +160830,8 @@
         "relationship": "origin",
         "citation": "§ 8898.4(a)(10)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -161054,8 +160857,8 @@
         "relationship": "origin",
         "citation": "§ 8898.4(a)(11)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -161081,8 +160884,8 @@
         "relationship": "origin",
         "citation": "§ 8898.4(a)(12)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-mn-h4544-2026",
@@ -161124,8 +160927,8 @@
         "relationship": "origin",
         "citation": "§ 8898.4(c)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -161152,8 +160955,8 @@
         "relationship": "origin",
         "citation": "§ 8898.5(a)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-mn-h4544-2026",
@@ -161202,8 +161005,8 @@
         "relationship": "origin",
         "citation": "§ 8898.5(b)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -161229,8 +161032,8 @@
         "relationship": "origin",
         "citation": "§ 8898.5(c)",
         "notes": "Rule introduced in California S 813 — Multistakeholder Regulatory Organizations (California, null).",
-        "instrument_binding": false,
-        "instrument_type": "bill"
+        "instrument_binding": true,
+        "instrument_type": "statute"
       },
       {
         "law_id": "us-mn-h4544-2026",
