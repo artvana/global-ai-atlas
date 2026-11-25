@@ -13600,6 +13600,14 @@
         "notes": "Both establish a high-level interagency or cabinet-level body to comprehensively and systematically promote national AI policy, but Japan's Headquarters is chaired by the Prime Minister while the US Interagency Committee operates through OSTP/NSTC.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "ph-ph-eo131-2026",
+        "relationship": "similar",
+        "citation": "EO 131 (National AI Council provisions)",
+        "notes": "Creates a National AI Council chaired by the Executive Secretary with DEPDev as vice chair and secretariat, overseeing five technical working groups and reporting to the President quarterly; it binds government agencies only and leaves sector regulators' mandates intact.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
       }
     ]
   },
@@ -21963,6 +21971,14 @@
         "notes": "Both establish a dedicated national AI coordination body, but Rwanda's RAIO sits within MINICT while Mauritius's MAIC is a standalone council with ~10 members from public, private, and international expert sectors.",
         "instrument_binding": false,
         "instrument_type": "strategy"
+      },
+      {
+        "law_id": "tr-tr-aiactionplan-2026",
+        "relationship": "similar",
+        "citation": "Cumhurbaşkanlığı Genelgesi 2026/9 (operative directive)",
+        "notes": "Both designate a lead government body to coordinate national AI policy implementation, but Rwanda recommends creating a new Responsible AI Office inside MINICT, while the Turkish Circular assigns coordination of the 2026-2030 AI Action Plan to an existing ministry — the Ministry of Industry and Technology, which prepared the Plan and publishes it — as a binding instruction rather than a recommendation.",
+        "instrument_binding": true,
+        "instrument_type": "circular"
       }
     ]
   },
@@ -36798,6 +36814,14 @@
         "notes": "EU omnibus adds an AI Act Article 5 prohibition on AI systems that generate child sexual abuse material (compliance by 2 Dec 2026); an EU-wide market prohibition on the AI practice itself rather than a criminal prohibition on individual creators.",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      },
+      {
+        "law_id": "br-br-aichildprotection-2026",
+        "relationship": "agrees",
+        "citation": "Art. 241-C, ECA (as amended by Art. 2 of Lei nº 15.487/2026)",
+        "notes": "Both criminalise creating, adapting or modifying a visual depiction so as to show a minor in sexual content; Brazil's art. 241-C reaches any technological means that alters the victim's image or voice, expressly including artificial intelligence, and carries 3 to 5 years' reclusão and a fine.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -51984,6 +52008,22 @@
         "notes": "Both recommend regulatory sandboxes for testing AI laws and regulations in controlled environments, but the UNESCO rule is a voluntary recommendation encompassing both policy prototypes and sandboxes, while the CoE Convention article is a binding obligation on Parties to enable such environments.",
         "instrument_binding": false,
         "instrument_type": "voluntary_framework"
+      },
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "similar",
+        "citation": "Art. 26",
+        "notes": "Establishes the Italian AI regulatory sandbox (Spazio di sperimentazione italiano per l'IA) under AI Act Art. 57 and the supervision of AgID and ACN, prioritising SMEs and start-ups; a binding implementation rather than a call to enable sandboxes.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "eu-eu-aisandboxir-2026",
+        "relationship": "similar",
+        "citation": "Art. 1; Art. 3",
+        "notes": "Binding EU implementing act operationalising AI Act Art. 57 sandboxes run by national competent authorities and the AI Office, with common eligibility and selection criteria, rather than a hortatory call to enable sandboxes.",
+        "instrument_binding": true,
+        "instrument_type": "implementing_regulation"
       }
     ]
   },
@@ -63253,6 +63293,14 @@
         "notes": "Both rules designate a national authority as the single point of contact under the EU AI Act, but Finland assigns this role to Traficom with additional coordination and expert support functions, while Lithuania assigns it to the state technology and innovation policy implementing institution.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "agrees",
+        "citation": "Art. 4",
+        "notes": "Designates AgID (Agenzia per l'Italia digitale) as Italy's notifying authority responsible for assessing, designating, notifying and monitoring conformity assessment bodies under the AI Act, operationalising the allocation in Law 132/2025.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -64617,6 +64665,14 @@
         "relationship": "agrees",
         "citation": "§ 23(1)-(2)",
         "notes": "Both set the same fine caps (€35M/7% for prohibited practices, €15M/3% for provider/representative/importer/deployer breaches) mirroring EU AI Act Article 99, but the Finnish rule is a domestic implementing provision with the same substantive thresholds.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "identical",
+        "citation": "Art. 23",
+        "notes": "Italy's national sanctions regime sets fines of up to €35 million or 7% of worldwide annual turnover, whichever is higher, for AI Act Art. 5 prohibited practices, unless the conduct constitutes a criminal offence.",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -85266,6 +85322,14 @@
         "notes": "Rule introduced in Florida HB 757 (AI Deepfake Criminal Prohibition) (Florida, 2025-06-01).",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "br-br-aichildprotection-2026",
+        "relationship": "agrees",
+        "citation": "Art. 241-E, III and sole paragraph, ECA (as amended by Art. 2 of Lei nº 15.487/2026)",
+        "notes": "Both apply a contextual, multi-factor test to decide whether an image of a minor is sexual; Brazil's version expressly reaches poses, framing or context with sexual connotation even where the genitals are covered or not exposed, and directs assessment of the image's context, mode of production, framing and purpose.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -102151,6 +102215,14 @@
         "notes": "Both establish a central coordination body for EU AI Act implementation at the national level, but Germany creates a dedicated Coordination and Competence Centre at the Federal Network Agency with broader support functions, while Malta designates MDIA as a single point of contact.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "agrees",
+        "citation": "Art. 6",
+        "notes": "Designates the Agenzia per la Cybersicurezza Nazionale (ACN), which is also the general market surveillance authority (Art. 5), as Italy's single point of contact with the EU under the AI Act.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -115512,6 +115584,14 @@
         "notes": "Texas H 3808 — Artificial Intelligence Advisory Council Creation (Texas) proposed this rule but the bill was failed — negative premise.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "eu-eu-aisandboxir-2026",
+        "relationship": "similar",
+        "citation": "Art. 5",
+        "notes": "A sandbox plan must be agreed after selection, setting objectives, timeline, roles, applicable obligations, personal data use, risk safeguards and any real-world testing; it is a plan rather than a regulatory-mitigation agreement.",
+        "instrument_binding": true,
+        "instrument_type": "implementing_regulation"
       }
     ]
   },
@@ -144270,6 +144350,14 @@
         "notes": "Rule introduced in California S 574 — Generative Artificial Intelligence (California, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "agrees",
+        "citation": "Requirement 2 (paras 9, 29)",
+        "notes": "Both require the user of generative AI to check that AI-assisted material is accurate before it is relied on, but the FWC Guidance Note applies the duty to any person lodging a document in a Commission case (not only attorneys) and adds a duty to state in the document that the check was done.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
       }
     ]
   },
@@ -144383,6 +144471,14 @@
         "notes": "Rule introduced in California S 574 — Generative Artificial Intelligence (California, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "agrees",
+        "citation": "Requirement 2 (paras 10, 30-31)",
+        "notes": "Both bar filing documents containing GenAI-supplied authorities that have not been personally verified by a human; the FWC version binds every party (not just the responsible attorney), extends to facts, evidence, textbooks, articles and quotes as well as cases and legislation, and expressly forbids using another GenAI tool to do the checking.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
       }
     ]
   },
@@ -156800,6 +156896,14 @@
         "notes": "Both rules require that human decision-makers retain meaningful authority and cannot rely solely on AI output for consequential decisions affecting individuals, but Ontario Bill 194 frames it as a general public-sector obligation while the California rule targets specific employment decisions.",
         "instrument_binding": true,
         "instrument_type": "statute"
+      },
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "agrees",
+        "citation": "Art. 41",
+        "notes": "Bars final hiring, modification, termination, disciplinary and performance-evaluation decisions based solely on automated processing, requiring a natural person with effective and autonomous decision-making power; broader than discipline/termination, worker consent is no exception, candidate screening is excluded, workers may obtain a human explanation including the AI's influence and main parameters, and non-compliant decisions are null and void.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -162446,6 +162550,14 @@
         "notes": "Rule introduced in California A 1405 — Artificial Intelligence: Auditors: Enrollment (California, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-ca-eo-n9-26-2026",
+        "relationship": "agrees",
+        "citation": "Order ¶ 2",
+        "notes": "Directs the same agency (California Government Operations Agency) to complete the same Government Code § 11549.82(a) duty to stand up the AI auditor enrollment mechanism, but as a binding executive deadline of December 1, 2027 and coupled with an order to begin the § 11549.82(b) misconduct-report actions.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
       }
     ]
   },
@@ -212337,6 +212449,14 @@
         "instrument_binding": true,
         "instrument_type": "statute",
         "variant_of": "us-ky-h672-2025"
+      },
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "similar",
+        "citation": "para 31",
+        "notes": "Both insist that validation of generative AI output for correctness be performed by a human, but Kentucky imposes the duty on state entities deploying AI systems whereas the FWC Guidance Note imposes it on litigants and representatives checking documents to be lodged in a Commission case.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
       }
     ]
   },
@@ -237161,6 +237281,14 @@
         "notes": "Rule introduced in Michigan H 5899 — Artificial Intelligence (Michigan, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "similar",
+        "citation": "paras 14, 40",
+        "notes": "Both prohibit putting confidential information into generative AI that may not keep it secure from unauthorized disclosure, but the FWC provision is framed as a recommendation ('should not') addressed to participants in tribunal cases and also covers another person's personal information given to public GenAI such as ChatGPT, Claude, CoPilot or Gemini.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
       }
     ]
   },
@@ -258718,6 +258846,14 @@
         "notes": "Proposed in New Hampshire H 1725 — Regulation of Artificial Intelligence Technologies (New Hampshire, null) but bill was failed — negative premise only.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "eu-eu-aisandboxir-2026",
+        "relationship": "similar",
+        "citation": "Art. 8(2)",
+        "notes": "Authorities may suspend testing or participation temporarily or permanently where significant risks cannot be mitigated, the sandbox plan is breached, or the participant requests it, and must inform the AI Office.",
+        "instrument_binding": true,
+        "instrument_type": "implementing_regulation"
       }
     ]
   },
@@ -285410,6 +285546,14 @@
         "notes": "Rule introduced in North Carolina S 735 — Artificial Intelligence Innovation Trust Fund (North Carolina, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "us-ca-eo-n9-26-2026",
+        "relationship": "similar",
+        "citation": "Order ¶ 3(c)",
+        "notes": "Addresses the same shutdown ('kill switch') capability for frontier models and adds ongoing verification of its efficacy by an independent verification organization, but only directs the agency to study and recommend such a requirement rather than imposing it on developers.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
       }
     ]
   },
@@ -295562,6 +295706,14 @@
         "notes": "Rule introduced in Pennsylvania S 939 — High Impact Data Centers (Pennsylvania, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "eu-eu-aisandboxir-2026",
+        "relationship": "agrees",
+        "citation": "Art. 3(7)",
+        "notes": "Applicants must be informed of the decision no later than three months after submitting a complete application, and may appeal the decision.",
+        "instrument_binding": true,
+        "instrument_type": "implementing_regulation"
       }
     ]
   },
@@ -296203,6 +296355,14 @@
         "notes": "Rule introduced in Pennsylvania H 1625 — Keystone Artificial Intelligence Authority (Pennsylvania, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "tr-tr-aiactionplan-2026",
+        "relationship": "similar",
+        "citation": "Cumhurbaşkanlığı Genelgesi 2026/9 (operative directive)",
+        "notes": "Both impose a cross-government cooperation duty in AI governance, but the Pennsylvania rule requires agencies to cooperate with a named AI authority and furnish requested documentation, whereas the Turkish Circular requires all public institutions to meticulously provide whatever support and assistance is needed during implementation of the national AI Action Plan, without a documentation-production element; the Turkish instrument is also binding, unlike the Pennsylvania bill.",
+        "instrument_binding": true,
+        "instrument_type": "circular"
       }
     ]
   },
@@ -298885,6 +299045,14 @@
         "notes": "Rule introduced in South Carolina H 4675 — Surveillance Data Retention and Storage (South Carolina, null).",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "br-br-aichildprotection-2026",
+        "relationship": "similar",
+        "citation": "Art. 190-F, §§ 2 and 3, ECA (as inserted by Art. 2 of Lei nº 15.487/2026)",
+        "notes": "Both permit warrantless access to data where life or physical integrity is at imminent risk, but Brazil's provision lets police or prosecutors requisition connection records and subscriber data directly from connection or application providers and requires the requisition to be reported to the competent court within 48 hours, with the data barred from use outside the originating investigation.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -307541,6 +307709,14 @@
         "notes": "Proposed in Texas H 5517 — Sexually Explicit Artificially Generated Images (Texas, null) but bill was failed — negative premise only.",
         "instrument_binding": false,
         "instrument_type": "bill"
+      },
+      {
+        "law_id": "br-br-aichildprotection-2026",
+        "relationship": "similar",
+        "citation": "Art. 241-E, caput, ECA (as amended by Art. 2 of Lei nº 15.487/2026)",
+        "notes": "Both extend the child sexual abuse material definition to depictions produced, manipulated or generated with AI, but Brazil's art. 241-E drops any identifiability or 'virtually indistinguishable' threshold and covers representations of a real or fictitious child alike.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
       }
     ]
   },
@@ -327997,6 +328173,14 @@
         "relationship": "similar",
         "citation": "§ 14(1)",
         "notes": "Both impose fines on providers of high-risk AI systems for specific violations, but the Finnish rule specifies particular domestic violations (lacking risk management system, improper testing) while the EU AI Act sets the overarching framework with percentage-based caps.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      },
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "identical",
+        "citation": "Art. 23",
+        "notes": "Mirrors the AI Act tier of up to €15 million or 3% of worldwide turnover for breaches of provider, importer, distributor, deployer and other operator obligations, with lower tiers of €7.5M/1% for misleading information and €1M/0.5% for Arts. 27 and 86 obligations; imposed by AgID and market surveillance authorities within their remits (Arts. 20-21).",
         "instrument_binding": true,
         "instrument_type": "statute"
       }
@@ -373407,6 +373591,429 @@
         "notes": "Expands the AI-vulnerable-group definition to include jobseekers and women re-entering work and directs central/local government to set up criteria and budget-limited AI service cost subsidies, plus support for non-capital-region talent.",
         "instrument_binding": true,
         "instrument_type": "regulation"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0007",
+    "rule_text": "If you entice, harass, invite, instigate or coerce a child under 14 for a libidinous act, your sentence is increased by one-third to two-thirds where you used artificial intelligence, deepfakes, filters or any other technology to alter your own image and voice so as to pass yourself off as a child or adolescent.",
+    "rule_text_technical": "Art. 241-D of the Statute of the Child and Adolescent (Lei nº 8.069/1990), as amended by Art. 2 of Lei nº 15.487/2026, punishes enticing, harassing, inviting, instigating or coercing a person under 14 years of age with a view to a libidinous act with 3 to 5 years' reclusão and a fine. Art. 241-D, § 2, I increases that penalty by one-third to two-thirds where the offender commits the conduct described in the caput or § 1 'utilizando recursos de inteligência artificial, deepfake, filtros ou qualquer outro recurso tecnológico que permita ao autor alterar sua imagem e voz, fazendo-se passar por criança ou adolescente', with the aim of inducing the victim to display themselves lasciviously or in a sexually explicit manner, or to supply sexual or sensual photographs or videos.",
+    "category": "synthetic_media",
+    "tags": [
+      "deepfake",
+      "grooming",
+      "impersonation",
+      "voice_cloning",
+      "penalty_enhancement",
+      "child_protection"
+    ],
+    "first_instance": {
+      "law_id": "br-br-aichildprotection-2026",
+      "law_name": "Lei nº 15.487/2026 — Brazil Child Sexual Violence and AI Law",
+      "citation": "Art. 241-D, § 2, I, ECA",
+      "date": "2026-08-06"
+    },
+    "instances": [
+      {
+        "law_id": "br-br-aichildprotection-2026",
+        "relationship": "origin",
+        "citation": "Art. 241-D, § 2, I, ECA (as amended by Art. 2 of Lei nº 15.487/2026)",
+        "notes": "Rule introduced in Lei nº 15.487/2026 (Brazil, 2026-08-06); first provision in the database to treat real-time AI, deepfake or filter-based impersonation of a child by the offender as an aggravating circumstance for online grooming.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0008",
+    "rule_text": "Criminal prosecution bodies may lawfully conduct a 'virtual patrol' — running software strictly dedicated to identifying and collecting files shared in public digital environments in child sexual violence cases — without prior judicial authorization, provided the collection observes the criminal procedure rules on chain of custody.",
+    "rule_text_technical": "Art. 190-F of the Statute of the Child and Adolescent (Lei nº 8.069/1990), as inserted by Art. 2 of Lei nº 15.487/2026, declares lawful the 'ronda virtual' carried out by a criminal prosecution body using software strictly intended to identify and collect files made available in public digital environments and related to crimes of sexual violence against a child or adolescent. Under § 1, public digital environments are those in which any person, with or without registration, may view content made available to the public at large — peer-to-peer (P2P) networks, forums, sites, channels, social networks or comparable cyber environments — provided they are accessible without special entry mechanisms such as individual authorisation or prior permission. Under § 4, the activity constitutes neither interception of communications under Lei nº 9.296/1996 nor police infiltration under art. 190-A, and dispenses with prior judicial authorisation. Under § 5, the collection of files must observe the chain-of-custody provisions of the Code of Criminal Procedure (Decreto-Lei nº 3.689/1941).",
+    "category": "institutional_framework",
+    "tags": [
+      "law_enforcement",
+      "automated_detection",
+      "investigatory_powers",
+      "chain_of_custody",
+      "csam",
+      "judicial_authorization"
+    ],
+    "first_instance": {
+      "law_id": "br-br-aichildprotection-2026",
+      "law_name": "Lei nº 15.487/2026 — Brazil Child Sexual Violence and AI Law",
+      "citation": "Art. 190-F, ECA",
+      "date": "2026-08-06"
+    },
+    "instances": [
+      {
+        "law_id": "br-br-aichildprotection-2026",
+        "relationship": "origin",
+        "citation": "Art. 190-F, caput and §§ 1, 4 and 5, ECA (as inserted by Art. 2 of Lei nº 15.487/2026)",
+        "notes": "Rule introduced in Lei nº 15.487/2026 (Brazil, 2026-08-06); expressly classifies automated file-collection tooling used against public digital environments as neither interception nor police infiltration, so no prior warrant is needed.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0009",
+    "rule_text": "If you are a public institution or organisation, you must carry out the duties and responsibilities assigned to you under the national AI action plan.",
+    "rule_text_technical": "Presidential Circular No. 2026/9 (Resmî Gazete No. 33344, 18 August 2026) directs that all public institutions and organisations ('tüm kamu kurum ve kuruluşları') shall diligently fulfil the duties and responsibilities falling to them under the Türkiye Yapay Zekâ Eylem Planı (2026-2030) — the Türkiye Artificial Intelligence Action Plan (2026-2030) — as published on the official website of the Ministry of Industry and Technology (www.sanayi.gov.tr). The Circular is a binding administrative instruction to the Turkish public administration for the 2026-2030 plan period; it prescribes no penalties and imposes no obligations on private AI developers or deployers.",
+    "category": "institutional_framework",
+    "tags": [
+      "national_ai_strategy",
+      "action_plan",
+      "public_sector",
+      "whole_of_government",
+      "implementation_duty",
+      "presidential_circular"
+    ],
+    "first_instance": {
+      "law_id": "tr-tr-aiactionplan-2026",
+      "law_name": "Türkiye AI Action Plan Circular (2026/9)",
+      "citation": "Cumhurbaşkanlığı Genelgesi 2026/9 (operative directive)",
+      "date": "2026-08-17"
+    },
+    "instances": [
+      {
+        "law_id": "tr-tr-aiactionplan-2026",
+        "relationship": "origin",
+        "citation": "Cumhurbaşkanlığı Genelgesi 2026/9 (operative directive)",
+        "notes": "Binding whole-of-government mandate: the Circular puts the Türkiye AI Action Plan (2026-2030) into force and obliges every public institution and organisation to execute the tasks allocated to it under the Plan, replacing the 2021/18 circular framework for the National AI Strategy (2021-2025).",
+        "instrument_binding": true,
+        "instrument_type": "circular"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0010",
+    "rule_text": "If you use generative AI to help prepare an application or any other document to be lodged in a tribunal case, you must state in the document that generative AI was used and how you used it.",
+    "rule_text_technical": "Under Requirement 1 of the Fair Work Commission's Guidance Note on the Use of Generative Artificial Intelligence in Commission Cases (paras 8, 25-27), any person who uses GenAI to create, write, edit, modify or otherwise prepare an application or other document to be lodged in a Commission case must state in the document both that GenAI was used and how it was used (for example, for legal research, organising facts or evidence, transcription or translation, or writing or editing content). The requirement may be satisfied by completing the GenAI section of a Commission form or template. Use of GenAI only for spell-checking, grammar or formatting is excluded (para 7), as are e-discovery software and search engines that merely identify existing content (para 46).",
+    "category": "disclosure",
+    "tags": [
+      "generative_ai",
+      "ai_use_disclosure",
+      "court_filings",
+      "tribunal_proceedings",
+      "litigants",
+      "access_to_justice"
+    ],
+    "first_instance": {
+      "law_id": "au-au-fwcgenaiguidance-2026",
+      "law_name": "Guidance Note: Use of Generative Artificial Intelligence in Commission Cases (Fair Work Commission)",
+      "citation": "Requirement 1 (paras 8, 25-27)",
+      "date": "2026-08-24"
+    },
+    "instances": [
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "origin",
+        "citation": "Requirement 1 (paras 8, 25-27)",
+        "notes": "Rule introduced in the Fair Work Commission GenAI Guidance Note (Australia, published 2026-08-24, commencing 2026-10-20); first mandatory party-side disclosure of GenAI use in documents lodged in a tribunal case in the database.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0011",
+    "rule_text": "If you use generative AI to help prepare a document to be lodged in a tribunal case, you must state in the document that you have checked it and that its details are correct and relevant to the case.",
+    "rule_text_technical": "Under Requirement 2 of the Fair Work Commission's GenAI Guidance Note (paras 9, 33), after checking the document and making any necessary changes the filer must state in the document that this has been done - for example by completing the GenAI section of a Commission form or by stating 'All details in this document have been checked. To the best of my knowledge they are correct and relevant to the case.' The Guidance Note reinforces the attestation by noting that knowingly giving false or misleading information to the Commission is an offence under s 137.1 of the Criminal Code, punishable by up to 12 months' imprisonment.",
+    "category": "accountability_governance",
+    "tags": [
+      "generative_ai",
+      "attestation",
+      "certification",
+      "verification",
+      "court_filings",
+      "tribunal_proceedings"
+    ],
+    "first_instance": {
+      "law_id": "au-au-fwcgenaiguidance-2026",
+      "law_name": "Guidance Note: Use of Generative Artificial Intelligence in Commission Cases (Fair Work Commission)",
+      "citation": "Requirement 2 (paras 9, 33)",
+      "date": "2026-08-24"
+    },
+    "instances": [
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "origin",
+        "citation": "Requirement 2 (paras 9, 33)",
+        "notes": "Rule introduced in the Fair Work Commission GenAI Guidance Note (Australia, 2026-08-24); pairs the substantive verification duty with an express on-document certification that the verification was performed.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0012",
+    "rule_text": "If generative AI was used to help prepare your witness statement or declaration, you must check and correct it so that it is based on your own knowledge and reflects your own words, and you must state that in the document and declare it is true to the best of your knowledge.",
+    "rule_text_technical": "Under Requirement 3 of the Fair Work Commission's GenAI Guidance Note (paras 12-13, 35-38), where GenAI is used to help create, write, edit, modify or otherwise prepare a witness statement or declaration, the witness or declarant must check the document and make any necessary changes so that it is based on their own knowledge, reflects their own words and is true to the best of their knowledge, and must then state that in the document and sign a declaration of truth. GenAI should not be used to create the factual content of a witness statement or declaration, although it may be used to transcribe speech or translate into English provided the document still reflects the witness's own words. Giving false or misleading sworn or affirmed evidence is an offence under s 678 of the Fair Work Act 2009 (Cth), punishable by up to 12 months' imprisonment.",
+    "category": "human_oversight",
+    "tags": [
+      "generative_ai",
+      "witness_statement",
+      "declaration",
+      "human_authorship",
+      "own_knowledge",
+      "tribunal_proceedings",
+      "evidence"
+    ],
+    "first_instance": {
+      "law_id": "au-au-fwcgenaiguidance-2026",
+      "law_name": "Guidance Note: Use of Generative Artificial Intelligence in Commission Cases (Fair Work Commission)",
+      "citation": "Requirement 3 (paras 12-13, 35-38)",
+      "date": "2026-08-24"
+    },
+    "instances": [
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "origin",
+        "citation": "Requirement 3 (paras 12-13, 35-38)",
+        "notes": "Rule introduced in the Fair Work Commission GenAI Guidance Note (Australia, 2026-08-24); first instance in the database of a human-authorship and declaration-of-truth requirement for AI-assisted witness evidence.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0013",
+    "rule_text": "If you are a lawyer, paid agent, HR adviser or union or employer-organisation officer representing another person, you must include in any document you lodge hyperlinks to all case law cited in it, where hyperlinks are available.",
+    "rule_text_technical": "Under para 45 of the Fair Work Commission's GenAI Guidance Note, a 'professional representative' (defined in para 46 as a lawyer or paid agent, including an employed one, an HR adviser employed by the represented person, or an employee or officer of a union, employer organisation, peak council or not-for-profit body) who uses GenAI in preparing any document to be lodged in a Commission case must include hyperlinks to all case law referred to in the document where hyperlinks are available. For other filers, hyperlinking is only recommended (paras 11, 32).",
+    "category": "accountability_governance",
+    "tags": [
+      "generative_ai",
+      "hyperlinks",
+      "case_law_citation",
+      "professional_representative",
+      "hallucinated_citations",
+      "tribunal_proceedings"
+    ],
+    "first_instance": {
+      "law_id": "au-au-fwcgenaiguidance-2026",
+      "law_name": "Guidance Note: Use of Generative Artificial Intelligence in Commission Cases (Fair Work Commission)",
+      "citation": "para 45",
+      "date": "2026-08-24"
+    },
+    "instances": [
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "origin",
+        "citation": "para 45",
+        "notes": "Rule introduced in the Fair Work Commission GenAI Guidance Note (Australia, 2026-08-24); imposes a verifiable-citation duty on professional representatives that is only a recommendation for self-represented parties.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0014",
+    "rule_text": "If you are a legal practitioner using generative AI in a tribunal case, you are held to a more onerous standard than other users: you must also maintain high ethical standards and comply with your professional obligations, and failure to do so may be referred to your legal services regulator.",
+    "rule_text_technical": "Under para 44 of the Fair Work Commission's GenAI Guidance Note, the standard for responsible use of GenAI in Commission cases is more onerous for a legal practitioner: in addition to complying with Requirements 1 to 3, a legal practitioner must maintain high ethical standards and comply with their professional obligations in any use of GenAI in a Commission case, and a failure to do so may result in a complaint being made to their legal services regulator.",
+    "category": "accountability_governance",
+    "tags": [
+      "generative_ai",
+      "legal_practitioner",
+      "professional_conduct",
+      "heightened_duty",
+      "legal_services_regulator",
+      "tribunal_proceedings"
+    ],
+    "first_instance": {
+      "law_id": "au-au-fwcgenaiguidance-2026",
+      "law_name": "Guidance Note: Use of Generative Artificial Intelligence in Commission Cases (Fair Work Commission)",
+      "citation": "para 44",
+      "date": "2026-08-24"
+    },
+    "instances": [
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "origin",
+        "citation": "para 44",
+        "notes": "Rule introduced in the Fair Work Commission GenAI Guidance Note (Australia, 2026-08-24); layers professional-conduct enforcement, via the practitioner's legal services regulator, on top of the generally applicable GenAI requirements.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0015",
+    "rule_text": "If you do not comply with the tribunal's generative AI requirements, your documents may be given less weight or disregarded, you may be ordered to pay another party's costs, or your case may be dismissed.",
+    "rule_text_technical": "Under paras 15 and 26 of the Fair Work Commission's GenAI Guidance Note, non-compliance with the disclosure, verification and witness-statement requirements may affect the party's case: documents may be given less weight or disregarded by the Commission, the Commission may order the party to pay costs incurred by another party, or the case may be dismissed. There is no monetary penalty regime; sanctions operate through the Commission's case-management, costs and dismissal powers under the Fair Work Act 2009 (Cth) and the Fair Work Commission Rules. Disclosing GenAI use does not itself affect how the merits of a document are treated (para 26).",
+    "category": "enforcement_penalties",
+    "tags": [
+      "generative_ai",
+      "procedural_sanctions",
+      "costs_order",
+      "evidentiary_weight",
+      "dismissal",
+      "tribunal_proceedings"
+    ],
+    "first_instance": {
+      "law_id": "au-au-fwcgenaiguidance-2026",
+      "law_name": "Guidance Note: Use of Generative Artificial Intelligence in Commission Cases (Fair Work Commission)",
+      "citation": "paras 15, 26",
+      "date": "2026-08-24"
+    },
+    "instances": [
+      {
+        "law_id": "au-au-fwcgenaiguidance-2026",
+        "relationship": "origin",
+        "citation": "paras 15, 26",
+        "notes": "Rule introduced in the Fair Work Commission GenAI Guidance Note (Australia, 2026-08-24); enforcement runs through procedural consequences rather than fines, since the instrument is a tribunal practice document.",
+        "instrument_binding": true,
+        "instrument_type": "guidance"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0016",
+    "rule_text": "The state agency responsible for AI oversight must, by a fixed deadline, develop and publicly post the application requirements, procedures, and criteria that organizations must meet to be designated as independent verification organizations for AI models and systems.",
+    "rule_text_technical": "Cal. Exec. Order No. N-9-26 ¶ 1 (Sept. 18, 2026) orders that, no later than May 1, 2027, the Government Operations Agency shall complete the requirements of Section 8898.1 of the Government Code and develop application requirements, procedures, and criteria for independent verification organizations and publicly post them, as required by law.",
+    "category": "institutional_framework",
+    "tags": [
+      "independent_verification_organization",
+      "ivo_designation",
+      "application_criteria",
+      "implementation_deadline",
+      "government_operations_agency",
+      "frontier_ai"
+    ],
+    "first_instance": {
+      "law_id": "us-ca-eo-n9-26-2026",
+      "law_name": "California Executive Order N-9-26 (Frontier AI Oversight and Kill Switch)",
+      "citation": "Order ¶ 1",
+      "date": "2026-09-18"
+    },
+    "instances": [
+      {
+        "law_id": "us-ca-eo-n9-26-2026",
+        "relationship": "origin",
+        "citation": "Order ¶ 1",
+        "notes": "Rule introduced in California EO N-9-26 (2026-09-18); sets a firm May 1, 2027 executive deadline for GovOps to complete Gov. Code § 8898.1 and publicly post IVO application requirements, procedures, and criteria, accelerating the certification regime enacted by SB 813.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0017",
+    "rule_text": "The state AI oversight agency, working with the emergency services agency and national experts, must deliver recommendations to the head of government by a fixed deadline on strengthening AI safety law, covering at minimum onsite embedding of independent verifiers at large frontier developers, independent verification of frontier safety frameworks and risk assessments, a verified 'kill switch' for frontier models, and expanding reportable critical safety incidents to include loss-of-control events.",
+    "rule_text_technical": "Cal. Exec. Order No. N-9-26 ¶ 3 (Sept. 18, 2026) orders the Government Operations Agency, in consultation with the Governor's Office of Emergency Services, to submit to the Governor no later than November 16, 2026 recommendations developed in consultation with national experts addressing the technical feasibility and potential efficacy of amendments to existing state AI safety and security laws, including at least: (a) requiring all large frontier developers to embed designated independent verification organizations onsite in their labs for periodic audits and evaluations; (b) requiring that safety frameworks, transparency reports, and risk assessments filed by frontier AI companies be independently verified against standards determined adequate by an independent verification organization; (c) requiring creation of a 'kill switch' for frontier models whose efficacy is verified on an ongoing basis by an independent verification organization; and (d) updating the definition of critical safety incidents reportable by AI companies to include a range of loss-of-control incidents.",
+    "category": "institutional_framework",
+    "tags": [
+      "legislative_recommendations",
+      "frontier_models",
+      "kill_switch",
+      "independent_verification_organization",
+      "onsite_audit",
+      "critical_safety_incident",
+      "loss_of_control",
+      "feasibility_study"
+    ],
+    "first_instance": {
+      "law_id": "us-ca-eo-n9-26-2026",
+      "law_name": "California Executive Order N-9-26 (Frontier AI Oversight and Kill Switch)",
+      "citation": "Order ¶ 3",
+      "date": "2026-09-18"
+    },
+    "instances": [
+      {
+        "law_id": "us-ca-eo-n9-26-2026",
+        "relationship": "origin",
+        "citation": "Order ¶ 3",
+        "notes": "Rule introduced in California EO N-9-26 (2026-09-18); binds GovOps and Cal OES to report to the Governor by November 16, 2026, and is the first US state action to direct formal study of a mandatory, independently verified kill switch for frontier models and of loss-of-control incidents as reportable critical safety incidents.",
+        "instrument_binding": true,
+        "instrument_type": "executive_order"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0018",
+    "rule_text": "The data, algorithms and mathematical methods used to train AI systems can be protected as trade secrets, provided they meet the ordinary legal conditions for trade-secret protection.",
+    "rule_text_technical": "Under Legislative Decree No. 179 of 7 October 2026, Art. 52, a new paragraph 1-bis is added to Art. 98 of the Italian Industrial Property Code (D.Lgs. 30/2005), providing that, where the conditions of Art. 98(1) are met (information that is secret, has economic value because it is secret, and is subject to reasonable secrecy measures), protected trade secrets include the data, algorithms and mathematical methods used to train artificial intelligence systems.",
+    "category": "data_governance",
+    "tags": [
+      "trade_secrets",
+      "training_data",
+      "algorithms",
+      "intellectual_property",
+      "industrial_property_code",
+      "italy"
+    ],
+    "first_instance": {
+      "law_id": "it-it-dlgs179-2026",
+      "law_name": "Italy D.Lgs. 179/2026 (AI Act Adaptation Decree)",
+      "citation": "Art. 52 (adding Art. 98(1-bis) Industrial Property Code)",
+      "date": "2026-10-07"
+    },
+    "instances": [
+      {
+        "law_id": "it-it-dlgs179-2026",
+        "relationship": "origin",
+        "citation": "Art. 52 (adding Art. 98(1-bis) Industrial Property Code)",
+        "notes": "Clarifies that AI training data, algorithms and mathematical methods qualify for trade-secret protection under the Industrial Property Code when secrecy, economic value and reasonable protective measures are present.",
+        "instrument_binding": true,
+        "instrument_type": "statute"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0019",
+    "rule_text": "AI regulatory sandboxes must give SMEs and start-ups priority access and provide core guidance, advice and supervision to them free of charge.",
+    "rule_text_technical": "Commission Implementing Regulation (EU) 2026/2487, Art. 2(3), implementing Regulation (EU) 2024/1689 Arts. 57-58: competent authorities must give SMEs, including start-ups, priority access to AI regulatory sandboxes and provide sandbox guidance, advice and supervision free of charge. Fees may be charged only for exceptional costs of other services, and public bodies get the same pricing. AI Office sandboxes also give priority access to small mid-cap enterprises (SMCs).",
+    "category": "institutional_framework",
+    "tags": [
+      "regulatory_sandbox",
+      "sme",
+      "start_ups",
+      "priority_access",
+      "free_access",
+      "eu_ai_act"
+    ],
+    "first_instance": {
+      "law_id": "eu-eu-aisandboxir-2026",
+      "law_name": "EU AI Regulatory Sandboxes Implementing Regulation",
+      "citation": "Art. 2(3)",
+      "date": "2026-11-10"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-aisandboxir-2026",
+        "relationship": "origin",
+        "citation": "Art. 2(3)",
+        "notes": "Gives SMEs and start-ups (and SMCs for AI Office sandboxes) priority and free core sandbox access; only exceptional costs may be charged.",
+        "instrument_binding": true,
+        "instrument_type": "implementing_regulation"
+      }
+    ]
+  },
+  {
+    "rule_id": "r-0020",
+    "rule_text": "When a sandbox project ends, the authority must issue a written proof of the activities completed and an exit report. Market surveillance authorities and notified bodies must take these into account, but neither document is a declaration of conformity.",
+    "rule_text_technical": "Commission Implementing Regulation (EU) 2026/2487, Art. 6(2)-(5), implementing Regulation (EU) 2024/1689 Art. 57(7): the competent authority must provide a written proof documenting the sandbox activities completed, the legal requirements evaluated and whether the project was completed. It must also provide an exit report covering key regulatory issues, recommendations, any serious incidents and lessons learned, within 45 working days of completion. Market surveillance authorities and notified bodies must take these documents into account in conformity assessment, but they are not EU declarations of conformity.",
+    "category": "institutional_framework",
+    "tags": [
+      "regulatory_sandbox",
+      "exit_report",
+      "written_proof",
+      "conformity_assessment",
+      "notified_bodies",
+      "eu_ai_act"
+    ],
+    "first_instance": {
+      "law_id": "eu-eu-aisandboxir-2026",
+      "law_name": "EU AI Regulatory Sandboxes Implementing Regulation",
+      "citation": "Art. 6",
+      "date": "2026-11-10"
+    },
+    "instances": [
+      {
+        "law_id": "eu-eu-aisandboxir-2026",
+        "relationship": "origin",
+        "citation": "Art. 6(2)-(5)",
+        "notes": "Exit report due within 45 working days of completion; written proof and exit report feed into conformity assessment but do not replace an EU declaration of conformity.",
+        "instrument_binding": true,
+        "instrument_type": "implementing_regulation"
       }
     ]
   }
