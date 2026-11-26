@@ -373181,7 +373181,7 @@
     "rule_id": "us-ca-eo-n6-26-2026-warn-act-ai-review",
     "rule_text": "The lead state labor agency must, within 180 days, review and recommend revisions to the state's mass-layoff notification law (WARN Act) so that it serves as an effective early-warning system for AI- and other technology-driven workforce disruption.",
     "rule_text_technical": "Within 180 days of issuance, the Labor and Workforce Development Agency shall review and provide to the Governor recommendations on revisions and updates to the California Worker Adjustment and Retraining Notification (WARN) Act in a manner that is responsive to, and effectively provides early warning data on, emerging industry trends.",
-    "category": "employment",
+    "category": "employment_ai",
     "tags": [
       "warn_act",
       "layoff_notification",
@@ -373210,7 +373210,7 @@
     "rule_id": "us-ca-eo-n6-26-2026-ai-employment-dashboard",
     "rule_text": "The state employment agency must, within 90 days, launch a public dashboard showing AI's impacts on employment across sectors using unemployment-insurance data, and may consult with leading AI labs that have published related data to build it out.",
     "rule_text_technical": "Within 90 days of issuance, the Employment Development Department shall launch a dashboard showing AI's impacts on employment across various sectors using Unemployment Insurance data; EDD may consult with leading AI labs that have published related data to build out its dashboard.",
-    "category": "employment",
+    "category": "employment_ai",
     "tags": [
       "ai_employment_dashboard",
       "labor_market_data",
@@ -373247,7 +373247,7 @@
     "rule_id": "us-ca-eo-n6-26-2026-dislocated-worker-ai-playbook",
     "rule_text": "The state employment agency, in partnership with local workforce development boards, must develop an AI playbook to expand dislocated-worker strategies for occupations exposed to AI and provide technical assistance on using federal workforce funds for AI-literacy programs.",
     "rule_text_technical": "No later than October 15, 2026, the Employment Development Department, in partnership with local workforce development boards, shall develop an AI playbook to expand dislocated worker strategies for occupations exposed to AI and provide Local Boards with technical assistance on the utilization of Workforce Innovation and Opportunity Act resources for AI literacy-related programs.",
-    "category": "employment",
+    "category": "employment_ai",
     "tags": [
       "dislocated_workers",
       "ai_playbook",
@@ -373424,7 +373424,7 @@
     "rule_id": "r-0003",
     "rule_text": "If you are a large frontier developer, you must retain an independent third party to conduct an annual audit of your compliance with the frontier AI safety law, and the auditor's report must describe any material deviations and assess your internal controls.",
     "rule_text_technical": "Under the Illinois Artificial Intelligence Safety Measures Act (Public Act 104-0538 / SB 315), large frontier developers (annual gross revenue over $500 million) must, beginning January 1, 2028, retain independent third parties to annually audit compliance with the Act; the auditor's report must include a description of any material deviations from the Act's requirements and an assessment of the developer's internal controls.",
-    "category": "risk_management",
+    "category": "conformity_assessment",
     "tags": [
       "frontier_ai",
       "third_party_audit",
@@ -373484,7 +373484,7 @@
     "rule_id": "r-0005",
     "rule_text": "If you are a public institution official making a decision to adopt AI products or services, you are exempt from liability for that decision provided there was no intentional misconduct or gross negligence.",
     "rule_text_technical": "Under the July 2026 amendment to the Enforcement Decree of South Korea's AI Basic Act, officials of public institutions are granted a liability exemption (safe harbour) for decisions to adopt AI products and services, absent intentional misconduct or gross negligence, in order to encourage public-sector AI adoption.",
-    "category": "liability",
+    "category": "private_redress",
     "tags": [
       "safe_harbour",
       "liability_exemption",
@@ -373514,7 +373514,7 @@
     "rule_id": "r-0006",
     "rule_text": "Government agencies must establish criteria and procedures to provide AI service cost subsidies to AI-vulnerable groups, and the group of eligible beneficiaries is expanded to include jobseekers and women re-entering the workforce.",
     "rule_text_technical": "Under the July 2026 amendment to the Enforcement Decree of South Korea's AI Basic Act, the definition of digitally/AI-vulnerable groups is broadened beyond persons with disabilities, seniors aged 65+, basic-livelihood recipients and near-poor households to add jobseekers and women with career interruptions re-entering the workforce. Central agencies and local governments must establish eligibility criteria and procedures under which such individuals may apply for AI service cost subsidies within budget limits, with additional support directed to non-capital-region university talent and STEM professionals to address regional infrastructure concentration.",
-    "category": "sector_specific",
+    "category": "institutional_framework",
     "tags": [
       "digital_inclusion",
       "ai_vulnerable_groups",
@@ -373878,7 +373878,7 @@
     "rule_id": "r-0018",
     "rule_text": "The data, algorithms and mathematical methods used to train AI systems can be protected as trade secrets, provided they meet the ordinary legal conditions for trade-secret protection.",
     "rule_text_technical": "Under Legislative Decree No. 179 of 7 October 2026, Art. 52, a new paragraph 1-bis is added to Art. 98 of the Italian Industrial Property Code (D.Lgs. 30/2005), providing that, where the conditions of Art. 98(1) are met (information that is secret, has economic value because it is secret, and is subject to reasonable secrecy measures), protected trade secrets include the data, algorithms and mathematical methods used to train artificial intelligence systems.",
-    "category": "data_governance",
+    "category": "data_provenance",
     "tags": [
       "trade_secrets",
       "training_data",

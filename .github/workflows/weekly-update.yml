@@ -685,7 +685,7 @@ jobs:
             "rule_id": "r-XXXX",  ← use the next available 4-digit number after existing rules
             "rule_text": "Plain English statement of what the rule requires or prohibits",
             "rule_text_technical": "Precise legal/technical formulation with citations",
-            "category": "one of: definitions_scope | transparency | data_governance | risk_management | prohibited_uses | human_oversight | enforcement | institutional_framework | sector_specific | synthetic_media | biometric | employment | liability",
+            "category": "one of: biometric_data | prohibited_applications | conformity_assessment | human_oversight | data_subject_rights | disclosure | enforcement_penalties | risk_classification | training_data_quality | foundation_models | consent | employment_ai | synthetic_media | accountability_governance | data_provenance | private_redress | registration_notification | explainability | technical_documentation | institutional_framework | definitions_scope",
             "tags": ["relevant", "keywords"],
             "first_instance": {
               "law_id": "...",
