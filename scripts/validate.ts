@@ -1,13 +1,14 @@
 #!/usr/bin/env npx tsx
 import { readFileSync, writeFileSync, existsSync } from 'fs'
 import { join } from 'path'
+import { RULE_CATEGORY_LABELS } from '../src/types'
 
 const ROOT = join(import.meta.dirname, '..')
 const regulations = JSON.parse(readFileSync(join(ROOT, 'data/regulations.json'), 'utf8'))
 
 // Load rules to cross-check coverage
 const rulesPath = join(ROOT, 'data/rules.json')
-const rules: Array<{ instances: Array<{ law_id: string }> }> = existsSync(rulesPath)
+const rules: Array<{ rule_id: string; category: string; instances: Array<{ law_id: string }> }> = existsSync(rulesPath)
   ? JSON.parse(readFileSync(rulesPath, 'utf8'))
   : []
 const lawsWithInstances = new Set<string>()
@@ -164,6 +165,15 @@ for (const law of regulations) {
         warn(id, `provisions.${key}`, `Missing provision field: ${key}`)
       }
     }
+  }
+}
+
+// Rule categories must be ones the site has labels for (RULE_CATEGORY_LABELS in
+// src/types). Anything else shows up as a raw snake_case tile in the Rule Explorer.
+const validRuleCategories = new Set(Object.keys(RULE_CATEGORY_LABELS))
+for (const rule of rules) {
+  if (!validRuleCategories.has(rule.category)) {
+    error(rule.rule_id, 'category', `Unknown rule category "${rule.category}". Must be one of: ${[...validRuleCategories].join(' | ')}`)
   }
 }
 

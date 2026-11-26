@@ -132,10 +132,7 @@ jobs:
             "rule_id": "r-XXXX",   ← next available 4-digit number (check max in data/rules.json)
             "rule_text": "Plain English statement of the obligation or prohibition",
             "rule_text_technical": "Precise formulation with section citations",
-            "category": "one of: definitions_scope | transparency | data_governance |
-                         risk_management | prohibited_uses | human_oversight | enforcement |
-                         institutional_framework | sector_specific | synthetic_media |
-                         biometric | employment | liability",
+            "category": "one of: biometric_data | prohibited_applications | conformity_assessment | human_oversight | data_subject_rights | disclosure | enforcement_penalties | risk_classification | training_data_quality | foundation_models | consent | employment_ai | synthetic_media | accountability_governance | data_provenance | private_redress | registration_notification | explainability | technical_documentation | institutional_framework | definitions_scope",
             "tags": ["keyword1", "keyword2"],
             "first_instance": {
               "law_id": "...",
